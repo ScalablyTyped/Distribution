@@ -10,23 +10,19 @@ trait VolumetricLightScatteringPostProcess
   extends StObject
      with PostProcess {
   
-  /* private */ var _cachedDefines: js.Any = js.native
+  /* private */ var _createPass: Any = js.native
   
-  /* private */ var _createPass: js.Any = js.native
+  /* private */ var _isReady: Any = js.native
   
-  /* private */ var _isReady: js.Any = js.native
+  /* private */ var _meshExcluded: Any = js.native
   
-  /* private */ var _meshExcluded: js.Any = js.native
+  /* private */ var _screenCoordinates: Any = js.native
   
-  /* private */ var _screenCoordinates: js.Any = js.native
+  /* private */ var _updateMeshScreenCoordinates: Any = js.native
   
-  /* private */ var _updateMeshScreenCoordinates: js.Any = js.native
+  /* private */ var _viewPort: Any = js.native
   
-  /* private */ var _viewPort: js.Any = js.native
-  
-  /* private */ var _volumetricLightScatteringPass: js.Any = js.native
-  
-  /* private */ var _volumetricLightScatteringRTT: js.Any = js.native
+  /* private */ var _volumetricLightScatteringRTT: Any = js.native
   
   /**
     * If not undefined, the mesh position is computed from the attached node position
@@ -60,13 +56,13 @@ trait VolumetricLightScatteringPostProcess
   
   /**
     * Returns the light position for light scattering effect
-    * @return Vector3 The custom light position
+    * @returns Vector3 The custom light position
     */
   def getCustomMeshPosition(): Vector3 = js.native
   
   /**
     * Returns the render target texture used by the post-process
-    * @return the render target texture used by the post-process
+    * @returns the render target texture used by the post-process
     */
   def getPass(): RenderTargetTexture = js.native
   

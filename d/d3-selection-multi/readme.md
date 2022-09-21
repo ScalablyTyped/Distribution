@@ -10,10 +10,10 @@ Multi-value map syntax for D3 selections.
 | ------------------ | :-------------: |
 | Full name          | d3-selection-multi |
 | Keywords           | d3, d3-module, dom, selection |
-| # releases         | 0 |
-| # dependents       | 46 |
-| # downloads        | 1314831 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 110373.0 |
+| # stars            | 74.0 |
 
 ## Links
 - [Homepage](https://github.com/d3/d3-selection-multi)

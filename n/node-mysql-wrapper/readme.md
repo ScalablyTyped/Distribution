@@ -9,10 +9,10 @@ This is a node js module, written in TypeScript (module is compiled to JavaScrip
 | ------------------ | :-------------: |
 | Full name          | node-mysql-wrapper |
 | Keywords           | node-mysql-wrapper, node-mysql, mysql, mysql-wrapper |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 6216 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 543.6666666666666 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/node-mysql-wrapper)

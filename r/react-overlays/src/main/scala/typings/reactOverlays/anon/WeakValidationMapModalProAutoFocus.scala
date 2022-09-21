@@ -52,19 +52,31 @@ trait WeakValidationMapModalProAutoFocus extends StObject {
     Validator[js.UndefOr[(js.Function1[/* e */ SyntheticEvent[Element, Event], Unit]) | Null]]
   ] = js.undefined
   
-  var onEnter: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, js.Any]) | Null]]] = js.undefined
+  var onEnter: js.UndefOr[
+    Validator[
+      js.UndefOr[(js.Function2[/* node */ HTMLElement, /* isAppearing */ Boolean, Any]) | Null]
+    ]
+  ] = js.undefined
   
-  var onEntered: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, js.Any]) | Null]]] = js.undefined
+  var onEntered: js.UndefOr[
+    Validator[
+      js.UndefOr[(js.Function2[/* node */ HTMLElement, /* isAppearing */ Boolean, Any]) | Null]
+    ]
+  ] = js.undefined
   
-  var onEntering: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, js.Any]) | Null]]] = js.undefined
+  var onEntering: js.UndefOr[
+    Validator[
+      js.UndefOr[(js.Function2[/* node */ HTMLElement, /* isAppearing */ Boolean, Any]) | Null]
+    ]
+  ] = js.undefined
   
   var onEscapeKeyDown: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* e */ KeyboardEvent, Unit]) | Null]]] = js.undefined
   
-  var onExit: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, js.Any]) | Null]]] = js.undefined
+  var onExit: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, Any]) | Null]]] = js.undefined
   
-  var onExited: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, js.Any]) | Null]]] = js.undefined
+  var onExited: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, Any]) | Null]]] = js.undefined
   
-  var onExiting: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, js.Any]) | Null]]] = js.undefined
+  var onExiting: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, Any]) | Null]]] = js.undefined
   
   var onHide: js.UndefOr[Validator[js.UndefOr[js.Function0[Unit] | Null]]] = js.undefined
   
@@ -151,15 +163,27 @@ object WeakValidationMapModalProAutoFocus {
     
     inline def setOnBackdropClickUndefined: Self = StObject.set(x, "onBackdropClick", js.undefined)
     
-    inline def setOnEnter(value: Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, js.Any]) | Null]]): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
+    inline def setOnEnter(
+      value: Validator[
+          js.UndefOr[(js.Function2[/* node */ HTMLElement, /* isAppearing */ Boolean, Any]) | Null]
+        ]
+    ): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
     
     inline def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
     
-    inline def setOnEntered(value: Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, js.Any]) | Null]]): Self = StObject.set(x, "onEntered", value.asInstanceOf[js.Any])
+    inline def setOnEntered(
+      value: Validator[
+          js.UndefOr[(js.Function2[/* node */ HTMLElement, /* isAppearing */ Boolean, Any]) | Null]
+        ]
+    ): Self = StObject.set(x, "onEntered", value.asInstanceOf[js.Any])
     
     inline def setOnEnteredUndefined: Self = StObject.set(x, "onEntered", js.undefined)
     
-    inline def setOnEntering(value: Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, js.Any]) | Null]]): Self = StObject.set(x, "onEntering", value.asInstanceOf[js.Any])
+    inline def setOnEntering(
+      value: Validator[
+          js.UndefOr[(js.Function2[/* node */ HTMLElement, /* isAppearing */ Boolean, Any]) | Null]
+        ]
+    ): Self = StObject.set(x, "onEntering", value.asInstanceOf[js.Any])
     
     inline def setOnEnteringUndefined: Self = StObject.set(x, "onEntering", js.undefined)
     
@@ -167,15 +191,15 @@ object WeakValidationMapModalProAutoFocus {
     
     inline def setOnEscapeKeyDownUndefined: Self = StObject.set(x, "onEscapeKeyDown", js.undefined)
     
-    inline def setOnExit(value: Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, js.Any]) | Null]]): Self = StObject.set(x, "onExit", value.asInstanceOf[js.Any])
+    inline def setOnExit(value: Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, Any]) | Null]]): Self = StObject.set(x, "onExit", value.asInstanceOf[js.Any])
     
     inline def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
     
-    inline def setOnExited(value: Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, js.Any]) | Null]]): Self = StObject.set(x, "onExited", value.asInstanceOf[js.Any])
+    inline def setOnExited(value: Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, Any]) | Null]]): Self = StObject.set(x, "onExited", value.asInstanceOf[js.Any])
     
     inline def setOnExitedUndefined: Self = StObject.set(x, "onExited", js.undefined)
     
-    inline def setOnExiting(value: Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, js.Any]) | Null]]): Self = StObject.set(x, "onExiting", value.asInstanceOf[js.Any])
+    inline def setOnExiting(value: Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, Any]) | Null]]): Self = StObject.set(x, "onExiting", value.asInstanceOf[js.Any])
     
     inline def setOnExitingUndefined: Self = StObject.set(x, "onExiting", js.undefined)
     

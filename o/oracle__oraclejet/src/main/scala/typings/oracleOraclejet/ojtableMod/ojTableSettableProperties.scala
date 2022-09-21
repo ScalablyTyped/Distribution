@@ -114,7 +114,7 @@ object ojTableSettableProperties {
     
     inline def setColumnsNull: Self = StObject.set(x, "columns", null)
     
-    inline def setColumnsVarargs(value: (Field[K, D])*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: (Field[K, D])*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setCurrentRow(value: CurrentRow[K]): Self = StObject.set(x, "currentRow", value.asInstanceOf[js.Any])
     
@@ -156,7 +156,7 @@ object ojTableSettableProperties {
     
     inline def setSelectionVarargs(
       value: ((RowSelectionStart[K] & RowSelectionEnd[K]) | (ColumnSelectionStart[K] & ColumnSelectionEnd[K]))*
-    ): Self = StObject.set(x, "selection", js.Array(value :_*))
+    ): Self = StObject.set(x, "selection", js.Array(value*))
     
     inline def setTranslations(value: LabelAccSelectionAffordanceBottom): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "raw-body" : "2.4.1"
+      "raw-body" : "2.5.1"
     }
   ],
   "test-dependencies" : [
     {
-      "raw-body" : "2.4.1"
+      "raw-body" : "2.5.1"
     }
   ],
   "compile-devDependencies" : [

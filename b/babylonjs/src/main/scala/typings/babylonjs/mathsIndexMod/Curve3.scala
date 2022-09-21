@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Maths/index", "Curve3")
 @js.native
-class Curve3 protected ()
+open class Curve3 protected ()
   extends typings.babylonjs.mathMod.Curve3 {
   /**
     * A Curve3 object is a logical object, so not a mesh, to handle curves in the 3D geometric space.
@@ -23,6 +23,75 @@ object Curve3 {
   @JSImport("babylonjs/Maths/index", "Curve3")
   @js.native
   val ^ : js.Any = js.native
+  
+  /**
+    * Returns a Curve3 object along an arc through three vector3 points:
+    * The three points should not be colinear. When they are the Curve3 is empty.
+    * @param first (Vector3) the first point the arc must pass through.
+    * @param second (Vector3) the second point the arc must pass through.
+    * @param third (Vector3) the third point the arc must pass through.
+    * @param steps (number) the larger the number of steps the more detailed the arc.
+    * @param closed (boolean) optional with default false, when true forms the chord from the first and third point
+    * @param fullCircle Circle (boolean) optional with default false, when true forms the complete circle through the three points
+    * @returns the created Curve3
+    */
+  inline def ArcThru3Points(
+    first: typings.babylonjs.mathVectorMod.Vector3,
+    second: typings.babylonjs.mathVectorMod.Vector3,
+    third: typings.babylonjs.mathVectorMod.Vector3
+  ): typings.babylonjs.mathPathMod.Curve3 = (^.asInstanceOf[js.Dynamic].applyDynamic("ArcThru3Points")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathPathMod.Curve3]
+  inline def ArcThru3Points(
+    first: typings.babylonjs.mathVectorMod.Vector3,
+    second: typings.babylonjs.mathVectorMod.Vector3,
+    third: typings.babylonjs.mathVectorMod.Vector3,
+    steps: Double
+  ): typings.babylonjs.mathPathMod.Curve3 = (^.asInstanceOf[js.Dynamic].applyDynamic("ArcThru3Points")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], steps.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathPathMod.Curve3]
+  inline def ArcThru3Points(
+    first: typings.babylonjs.mathVectorMod.Vector3,
+    second: typings.babylonjs.mathVectorMod.Vector3,
+    third: typings.babylonjs.mathVectorMod.Vector3,
+    steps: Double,
+    closed: Boolean
+  ): typings.babylonjs.mathPathMod.Curve3 = (^.asInstanceOf[js.Dynamic].applyDynamic("ArcThru3Points")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], steps.asInstanceOf[js.Any], closed.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathPathMod.Curve3]
+  inline def ArcThru3Points(
+    first: typings.babylonjs.mathVectorMod.Vector3,
+    second: typings.babylonjs.mathVectorMod.Vector3,
+    third: typings.babylonjs.mathVectorMod.Vector3,
+    steps: Double,
+    closed: Boolean,
+    fullCircle: Boolean
+  ): typings.babylonjs.mathPathMod.Curve3 = (^.asInstanceOf[js.Dynamic].applyDynamic("ArcThru3Points")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], steps.asInstanceOf[js.Any], closed.asInstanceOf[js.Any], fullCircle.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathPathMod.Curve3]
+  inline def ArcThru3Points(
+    first: typings.babylonjs.mathVectorMod.Vector3,
+    second: typings.babylonjs.mathVectorMod.Vector3,
+    third: typings.babylonjs.mathVectorMod.Vector3,
+    steps: Double,
+    closed: Unit,
+    fullCircle: Boolean
+  ): typings.babylonjs.mathPathMod.Curve3 = (^.asInstanceOf[js.Dynamic].applyDynamic("ArcThru3Points")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], steps.asInstanceOf[js.Any], closed.asInstanceOf[js.Any], fullCircle.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathPathMod.Curve3]
+  inline def ArcThru3Points(
+    first: typings.babylonjs.mathVectorMod.Vector3,
+    second: typings.babylonjs.mathVectorMod.Vector3,
+    third: typings.babylonjs.mathVectorMod.Vector3,
+    steps: Unit,
+    closed: Boolean
+  ): typings.babylonjs.mathPathMod.Curve3 = (^.asInstanceOf[js.Dynamic].applyDynamic("ArcThru3Points")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], steps.asInstanceOf[js.Any], closed.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathPathMod.Curve3]
+  inline def ArcThru3Points(
+    first: typings.babylonjs.mathVectorMod.Vector3,
+    second: typings.babylonjs.mathVectorMod.Vector3,
+    third: typings.babylonjs.mathVectorMod.Vector3,
+    steps: Unit,
+    closed: Boolean,
+    fullCircle: Boolean
+  ): typings.babylonjs.mathPathMod.Curve3 = (^.asInstanceOf[js.Dynamic].applyDynamic("ArcThru3Points")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], steps.asInstanceOf[js.Any], closed.asInstanceOf[js.Any], fullCircle.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathPathMod.Curve3]
+  inline def ArcThru3Points(
+    first: typings.babylonjs.mathVectorMod.Vector3,
+    second: typings.babylonjs.mathVectorMod.Vector3,
+    third: typings.babylonjs.mathVectorMod.Vector3,
+    steps: Unit,
+    closed: Unit,
+    fullCircle: Boolean
+  ): typings.babylonjs.mathPathMod.Curve3 = (^.asInstanceOf[js.Dynamic].applyDynamic("ArcThru3Points")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], steps.asInstanceOf[js.Any], closed.asInstanceOf[js.Any], fullCircle.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathPathMod.Curve3]
   
   /**
     * Returns a Curve3 object along a CatmullRom Spline curve :

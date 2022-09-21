@@ -54,6 +54,9 @@ trait CanAddChildren extends StObject {
   /** Whether the current user can rename this shared drive. */
   var canRenameDrive: js.UndefOr[Boolean] = js.undefined
   
+  /** Whether the current user can reset the shared drive restrictions to defaults. */
+  var canResetDriveRestrictions: js.UndefOr[Boolean] = js.undefined
+  
   /** Whether the current user can share files or folders in this shared drive. */
   var canShare: js.UndefOr[Boolean] = js.undefined
   
@@ -132,6 +135,10 @@ object CanAddChildren {
     inline def setCanRenameDriveUndefined: Self = StObject.set(x, "canRenameDrive", js.undefined)
     
     inline def setCanRenameUndefined: Self = StObject.set(x, "canRename", js.undefined)
+    
+    inline def setCanResetDriveRestrictions(value: Boolean): Self = StObject.set(x, "canResetDriveRestrictions", value.asInstanceOf[js.Any])
+    
+    inline def setCanResetDriveRestrictionsUndefined: Self = StObject.set(x, "canResetDriveRestrictions", js.undefined)
     
     inline def setCanShare(value: Boolean): Self = StObject.set(x, "canShare", value.asInstanceOf[js.Any])
     

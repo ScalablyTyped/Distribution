@@ -97,8 +97,6 @@ trait ReferenceAreaProps extends StObject {
     normal | bold | bolder | lighter | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900` | inherit
   ] = js.undefined
   
-  var glyphOrientationVertical: js.UndefOr[String] = js.undefined
-  
   var height: js.UndefOr[Double] = js.undefined
   
   var ifOverflow: js.UndefOr[IfOverflowType] = js.undefined
@@ -109,7 +107,7 @@ trait ReferenceAreaProps extends StObject {
   
   var kerning: js.UndefOr[Double | String] = js.undefined
   
-  var label: js.UndefOr[String | Double | ContentRenderer[js.Any] | ReactElement] = js.undefined
+  var label: js.UndefOr[String | Double | ContentRenderer[Any] | ReactElement] = js.undefined
   
   var letterSpacing: js.UndefOr[String] = js.undefined
   
@@ -340,10 +338,6 @@ object ReferenceAreaProps {
     
     inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
-    inline def setGlyphOrientationVertical(value: String): Self = StObject.set(x, "glyphOrientationVertical", value.asInstanceOf[js.Any])
-    
-    inline def setGlyphOrientationVerticalUndefined: Self = StObject.set(x, "glyphOrientationVertical", js.undefined)
-    
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
@@ -364,9 +358,9 @@ object ReferenceAreaProps {
     
     inline def setKerningUndefined: Self = StObject.set(x, "kerning", js.undefined)
     
-    inline def setLabel(value: String | Double | ContentRenderer[js.Any] | ReactElement): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String | Double | ContentRenderer[Any] | ReactElement): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    inline def setLabelFunction1(value: js.Any => ReactNode): Self = StObject.set(x, "label", js.Any.fromFunction1(value))
+    inline def setLabelFunction1(value: Any => ReactNode): Self = StObject.set(x, "label", js.Any.fromFunction1(value))
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     

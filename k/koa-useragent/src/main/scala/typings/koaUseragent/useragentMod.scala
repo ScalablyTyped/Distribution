@@ -10,7 +10,7 @@ object useragentMod {
   
   @JSImport("koa-useragent/dist/lib/useragent", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with UserAgent {
     def this(source: String) = this()
@@ -19,7 +19,7 @@ object useragentMod {
     var browser: String = js.native
     
     /* CompleteClass */
-    var geoIp: StringDictionary[js.Any] = js.native
+    var geoIp: StringDictionary[Any] = js.native
     
     /* CompleteClass */
     var isAmaya: Boolean = js.native
@@ -89,6 +89,9 @@ object useragentMod {
     
     /* CompleteClass */
     var isMobile: Boolean = js.native
+    
+    /* CompleteClass */
+    var isMobileNative: Boolean = js.native
     
     /* CompleteClass */
     var isOmniWeb: Boolean = js.native
@@ -161,13 +164,13 @@ object useragentMod {
     
     def SilkAccelerated: Boolean = js.native
     
-    /* private */ val _agent: js.Any = js.native
+    /* private */ val _agent: Any = js.native
     
     @JSName("browser")
     def browser_MUserAgent: String = js.native
     
     @JSName("geoIp")
-    def geoIp_MUserAgent: StringDictionary[js.Any] = js.native
+    def geoIp_MUserAgent: StringDictionary[Any] = js.native
     
     def isAlamoFire: Boolean = js.native
     
@@ -240,6 +243,9 @@ object useragentMod {
     
     @JSName("isMac")
     def isMac_MUserAgent: Boolean = js.native
+    
+    @JSName("isMobileNative")
+    def isMobileNative_MUserAgent: Boolean = js.native
     
     @JSName("isMobile")
     def isMobile_MUserAgent: Boolean = js.native

@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PartialMountOptions extends StObject {
   
   var mount: js.UndefOr[FnCallNodeOptions] = js.undefined
+  
+  var strict: js.UndefOr[Boolean] = js.undefined
 }
 object PartialMountOptions {
   
@@ -21,5 +23,9 @@ object PartialMountOptions {
     inline def setMount(value: FnCallNodeOptions): Self = StObject.set(x, "mount", value.asInstanceOf[js.Any])
     
     inline def setMountUndefined: Self = StObject.set(x, "mount", js.undefined)
+    
+    inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+    
+    inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
   }
 }

@@ -21,7 +21,7 @@ trait ConversationHeader extends StObject {
   /* private */ @JSName("Outlook.ConversationHeader_typekey")
   var OutlookDotConversationHeader_typekey: ConversationHeader
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
 }
@@ -35,7 +35,7 @@ object ConversationHeader {
     GetConversation: () => Conversation,
     GetItems: () => SimpleItems,
     OutlookDotConversationHeader_typekey: ConversationHeader,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace
   ): ConversationHeader = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], ConversationID = ConversationID.asInstanceOf[js.Any], ConversationTopic = ConversationTopic.asInstanceOf[js.Any], GetConversation = js.Any.fromFunction0(GetConversation), GetItems = js.Any.fromFunction0(GetItems), Parent = Parent.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any])
@@ -59,7 +59,7 @@ object ConversationHeader {
     
     inline def setOutlookDotConversationHeader_typekey(value: ConversationHeader): Self = StObject.set(x, "Outlook.ConversationHeader_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }

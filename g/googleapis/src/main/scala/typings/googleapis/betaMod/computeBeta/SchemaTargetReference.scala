@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaTargetReference extends StObject {
   
-  var target: js.UndefOr[String] = js.undefined
+  var target: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaTargetReference {
   
@@ -18,6 +18,8 @@ object SchemaTargetReference {
   extension [Self <: SchemaTargetReference](x: Self) {
     
     inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    
+    inline def setTargetNull: Self = StObject.set(x, "target", null)
     
     inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }

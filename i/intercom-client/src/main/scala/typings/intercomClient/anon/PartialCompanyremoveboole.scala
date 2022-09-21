@@ -15,7 +15,7 @@ trait PartialCompanyremoveboole extends StObject {
   
   var created_at: js.UndefOr[Double] = js.undefined
   
-  var custom_attributes: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var custom_attributes: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   var id: js.UndefOr[String] = js.undefined
   
@@ -64,7 +64,7 @@ object PartialCompanyremoveboole {
     
     inline def setCreated_atUndefined: Self = StObject.set(x, "created_at", js.undefined)
     
-    inline def setCustom_attributes(value: StringDictionary[js.Any]): Self = StObject.set(x, "custom_attributes", value.asInstanceOf[js.Any])
+    inline def setCustom_attributes(value: StringDictionary[Any]): Self = StObject.set(x, "custom_attributes", value.asInstanceOf[js.Any])
     
     inline def setCustom_attributesUndefined: Self = StObject.set(x, "custom_attributes", js.undefined)
     

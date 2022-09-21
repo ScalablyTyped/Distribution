@@ -13,7 +13,7 @@ object bloomMergePostProcessMod {
   
   @JSImport("babylonjs/PostProcesses/bloomMergePostProcess", "BloomMergePostProcess")
   @js.native
-  class BloomMergePostProcess protected () extends PostProcess {
+  open class BloomMergePostProcess protected () extends PostProcess {
     /**
       * Creates a new instance of @see BloomMergePostProcess
       * @param name The name of the effect.

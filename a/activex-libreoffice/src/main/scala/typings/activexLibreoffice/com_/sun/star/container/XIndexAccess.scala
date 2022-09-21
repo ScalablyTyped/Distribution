@@ -23,7 +23,7 @@ trait XIndexAccess
     * @throws com::sun::star::lang::IndexOutOfBoundException if the index is not valid.
     * @throws com::sun::star::lang::WrappedTargetException If the implementation has internal reasons for exceptions, then wrap these in a {@link com.sun.star.
     */
-  def getByIndex(Index: Double): js.Any
+  def getByIndex(Index: Double): Any
   
   /** @returns the number of elements in this container. */
   def getCount(): Double
@@ -34,11 +34,11 @@ object XIndexAccess {
     Count: Double,
     ElementType: `type`,
     acquire: () => Unit,
-    getByIndex: Double => js.Any,
+    getByIndex: Double => Any,
     getCount: () => Double,
     getElementType: () => `type`,
     hasElements: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XIndexAccess = {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], ElementType = ElementType.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getByIndex = js.Any.fromFunction1(getByIndex), getCount = js.Any.fromFunction0(getCount), getElementType = js.Any.fromFunction0(getElementType), hasElements = js.Any.fromFunction0(hasElements), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -49,7 +49,7 @@ object XIndexAccess {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    inline def setGetByIndex(value: Double => js.Any): Self = StObject.set(x, "getByIndex", js.Any.fromFunction1(value))
+    inline def setGetByIndex(value: Double => Any): Self = StObject.set(x, "getByIndex", js.Any.fromFunction1(value))
     
     inline def setGetCount(value: () => Double): Self = StObject.set(x, "getCount", js.Any.fromFunction0(value))
   }

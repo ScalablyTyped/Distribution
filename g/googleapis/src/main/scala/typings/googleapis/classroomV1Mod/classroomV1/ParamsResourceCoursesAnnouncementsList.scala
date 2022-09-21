@@ -1,9 +1,5 @@
 package typings.googleapis.classroomV1Mod.classroomV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,42 +9,27 @@ trait ParamsResourceCoursesAnnouncementsList
      with StandardParameters {
   
   /**
-    * Restriction on the `state` of announcements returned. If this argument is
-    * left unspecified, the default value is `PUBLISHED`.
+    * Restriction on the `state` of announcements returned. If this argument is left unspecified, the default value is `PUBLISHED`.
     */
   var announcementStates: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Identifier of the course. This identifier can be either the
-    * Classroom-assigned identifier or an alias.
+    * Identifier of the course. This identifier can be either the Classroom-assigned identifier or an alias.
     */
   var courseId: js.UndefOr[String] = js.undefined
   
   /**
-    * Optional sort ordering for results. A comma-separated list of fields with
-    * an optional sort direction keyword. Supported field is `updateTime`.
-    * Supported direction keywords are `asc` and `desc`. If not specified,
-    * `updateTime desc` is the default behavior. Examples: `updateTime asc`,
-    * `updateTime`
+    * Optional sort ordering for results. A comma-separated list of fields with an optional sort direction keyword. Supported field is `updateTime`. Supported direction keywords are `asc` and `desc`. If not specified, `updateTime desc` is the default behavior. Examples: `updateTime asc`, `updateTime`
     */
   var orderBy: js.UndefOr[String] = js.undefined
   
   /**
-    * Maximum number of items to return. Zero or unspecified indicates that the
-    * server may assign a maximum.  The server may return fewer than the
-    * specified number of results.
+    * Maximum number of items to return. Zero or unspecified indicates that the server may assign a maximum. The server may return fewer than the specified number of results.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * nextPageToken value returned from a previous list call, indicating that
-    * the subsequent page of results should be returned.  The list request must
-    * be otherwise identical to the one that resulted in this token.
+    * nextPageToken value returned from a previous list call, indicating that the subsequent page of results should be returned. The list request must be otherwise identical to the one that resulted in this token.
     */
   var pageToken: js.UndefOr[String] = js.undefined
 }
@@ -65,11 +46,7 @@ object ParamsResourceCoursesAnnouncementsList {
     
     inline def setAnnouncementStatesUndefined: Self = StObject.set(x, "announcementStates", js.undefined)
     
-    inline def setAnnouncementStatesVarargs(value: String*): Self = StObject.set(x, "announcementStates", js.Array(value :_*))
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAnnouncementStatesVarargs(value: String*): Self = StObject.set(x, "announcementStates", js.Array(value*))
     
     inline def setCourseId(value: String): Self = StObject.set(x, "courseId", value.asInstanceOf[js.Any])
     

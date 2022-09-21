@@ -14,7 +14,7 @@ trait Collection extends StObject {
   
   var image: Image
   
-  var metafields: js.Array[js.Any]
+  var metafields: js.Array[Any]
   
   var published: Boolean
   
@@ -37,7 +37,7 @@ object Collection {
     handle: String,
     id: String,
     image: Image,
-    metafields: js.Array[js.Any],
+    metafields: js.Array[Any],
     published: Boolean,
     published_at: String,
     published_scope: String,
@@ -60,9 +60,9 @@ object Collection {
     
     inline def setImage(value: Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    inline def setMetafields(value: js.Array[js.Any]): Self = StObject.set(x, "metafields", value.asInstanceOf[js.Any])
+    inline def setMetafields(value: js.Array[Any]): Self = StObject.set(x, "metafields", value.asInstanceOf[js.Any])
     
-    inline def setMetafieldsVarargs(value: js.Any*): Self = StObject.set(x, "metafields", js.Array(value :_*))
+    inline def setMetafieldsVarargs(value: Any*): Self = StObject.set(x, "metafields", js.Array(value*))
     
     inline def setPublished(value: Boolean): Self = StObject.set(x, "published", value.asInstanceOf[js.Any])
     

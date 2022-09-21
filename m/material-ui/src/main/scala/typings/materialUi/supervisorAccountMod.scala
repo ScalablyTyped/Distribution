@@ -10,10 +10,10 @@ object supervisorAccountMod {
   
   @JSImport("material-ui/svg-icons/action/supervisor-account", JSImport.Default)
   @js.native
-  class default () extends ActionSupervisorAccount
+  open class default () extends ActionSupervisorAccount
   
   @JSImport("material-ui/svg-icons/action/supervisor-account", "ActionSupervisorAccount")
   @js.native
-  class ActionSupervisorAccount ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionSupervisorAccount ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

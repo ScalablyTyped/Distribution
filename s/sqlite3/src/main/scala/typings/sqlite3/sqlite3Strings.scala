@@ -11,12 +11,20 @@ object sqlite3Strings {
   inline def busyTimeout: busyTimeout = "busyTimeout".asInstanceOf[busyTimeout]
   
   @js.native
+  sealed trait change extends StObject
+  inline def change: change = "change".asInstanceOf[change]
+  
+  @js.native
   sealed trait close extends StObject
   inline def close: close = "close".asInstanceOf[close]
   
   @js.native
   sealed trait error extends StObject
   inline def error: error = "error".asInstanceOf[error]
+  
+  @js.native
+  sealed trait limit extends StObject
+  inline def limit: limit = "limit".asInstanceOf[limit]
   
   @js.native
   sealed trait open extends StObject

@@ -7,8 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** The WEBGL_debug_renderer_info extension is part of the WebGL API and exposes two constants with information about the graphics driver for debugging purposes. */
 trait WEBGLDebugRendererInfo extends StObject {
   
+  /* standard dom */
   val UNMASKED_RENDERER_WEBGL: GLenum
   
+  /* standard dom */
   val UNMASKED_VENDOR_WEBGL: GLenum
 }
 object WEBGLDebugRendererInfo {

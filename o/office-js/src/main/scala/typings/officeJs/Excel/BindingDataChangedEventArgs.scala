@@ -5,17 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Provides information about the binding that raised the data changed event.
   *
-  * Provides information about the binding that raised the DataChanged event.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.2]
   */
 trait BindingDataChangedEventArgs extends StObject {
   
   /**
+    * Gets a temporary `Binding` object that contains the ID of the `Binding` object that raised the event. Use that ID with `BindingCollection.getItem(id)` to get the binding.
     *
-    * Gets a temporary `Binding` object that contains the ID of the `Binding` object that raised the event. Use that ID with `BindingCollection.getItem(id)` to get the binding.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var binding: Binding

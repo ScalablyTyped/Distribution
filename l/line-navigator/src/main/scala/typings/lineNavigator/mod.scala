@@ -1,7 +1,6 @@
 package typings.lineNavigator
 
 import typings.std.File
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ object mod {
   
   @JSImport("line-navigator", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with LineNavigator {
     def this(file: String) = this()
@@ -24,10 +23,10 @@ object mod {
     def this(file: File, options: Options) = this()
     
     /* CompleteClass */
-    override def find(regex: RegExp, indexToStartWith: Double, callback: FindCallback): Unit = js.native
+    override def find(regex: js.RegExp, indexToStartWith: Double, callback: FindCallback): Unit = js.native
     
     /* CompleteClass */
-    override def findAll(regex: RegExp, indexToStartWith: Double, limit: Double, callback: FindAllCallback): Unit = js.native
+    override def findAll(regex: js.RegExp, indexToStartWith: Double, limit: Double, callback: FindAllCallback): Unit = js.native
     
     /* CompleteClass */
     override def readLines(indexToStartWith: Double, numberOfLines: Double, callback: ReadLinesCallback): Unit = js.native
@@ -37,7 +36,7 @@ object mod {
   }
   
   type FindAllCallback = js.Function4[
-    /* err */ js.Any, 
+    /* err */ Any, 
     /* index */ Double, 
     /* limitHit */ js.UndefOr[Boolean], 
     /* results */ js.UndefOr[js.Array[FindAllResult]], 
@@ -63,12 +62,7 @@ object mod {
     }
   }
   
-  type FindCallback = js.Function3[
-    /* err */ js.Any, 
-    /* index */ js.UndefOr[Double], 
-    /* match */ js.UndefOr[FindMatch], 
-    Unit
-  ]
+  type FindCallback = js.Function3[/* err */ Any, /* index */ js.UndefOr[Double], /* match */ js.UndefOr[FindMatch], Unit]
   
   trait FindMatch extends StObject {
     
@@ -97,9 +91,9 @@ object mod {
   
   trait LineNavigator extends StObject {
     
-    def find(regex: RegExp, indexToStartWith: Double, callback: FindCallback): Unit
+    def find(regex: js.RegExp, indexToStartWith: Double, callback: FindCallback): Unit
     
-    def findAll(regex: RegExp, indexToStartWith: Double, limit: Double, callback: FindAllCallback): Unit
+    def findAll(regex: js.RegExp, indexToStartWith: Double, limit: Double, callback: FindAllCallback): Unit
     
     def readLines(indexToStartWith: Double, numberOfLines: Double, callback: ReadLinesCallback): Unit
     
@@ -108,8 +102,8 @@ object mod {
   object LineNavigator {
     
     inline def apply(
-      find: (RegExp, Double, FindCallback) => Unit,
-      findAll: (RegExp, Double, Double, FindAllCallback) => Unit,
+      find: (js.RegExp, Double, FindCallback) => Unit,
+      findAll: (js.RegExp, Double, Double, FindAllCallback) => Unit,
       readLines: (Double, Double, ReadLinesCallback) => Unit,
       readSomeLines: (Double, ReadLinesCallback) => Unit
     ): LineNavigator = {
@@ -119,9 +113,9 @@ object mod {
     
     extension [Self <: LineNavigator](x: Self) {
       
-      inline def setFind(value: (RegExp, Double, FindCallback) => Unit): Self = StObject.set(x, "find", js.Any.fromFunction3(value))
+      inline def setFind(value: (js.RegExp, Double, FindCallback) => Unit): Self = StObject.set(x, "find", js.Any.fromFunction3(value))
       
-      inline def setFindAll(value: (RegExp, Double, Double, FindAllCallback) => Unit): Self = StObject.set(x, "findAll", js.Any.fromFunction4(value))
+      inline def setFindAll(value: (js.RegExp, Double, Double, FindAllCallback) => Unit): Self = StObject.set(x, "findAll", js.Any.fromFunction4(value))
       
       inline def setReadLines(value: (Double, Double, ReadLinesCallback) => Unit): Self = StObject.set(x, "readLines", js.Any.fromFunction3(value))
       
@@ -173,7 +167,7 @@ object mod {
   }
   
   type ReadLinesCallback = js.Function5[
-    /* err */ js.Any, 
+    /* err */ Any, 
     /* index */ Double, 
     /* lines */ js.UndefOr[js.Array[String]], 
     /* isEof */ js.UndefOr[Boolean], 

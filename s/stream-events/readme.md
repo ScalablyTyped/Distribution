@@ -11,9 +11,9 @@ Get an event when you're being sent data or asked for it.
 | Full name          | stream-events |
 | Keywords           | stream, events, read, write, duplexify, lazy-stream |
 | # releases         | 0 |
-| # dependents       | 23 |
-| # downloads        | 94912879 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9586009.666666666 |
+| # stars            | 7.0 |
 
 ## Links
 - [Homepage](https://github.com/stephenplusplus/stream-events)

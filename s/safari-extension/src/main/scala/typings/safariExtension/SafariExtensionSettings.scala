@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SafariExtensionSettings
   extends StObject
      with SafariEventTarget
-     with /* index */ NumberDictionary[js.Any]
-     with /* index */ StringDictionary[js.Any] {
+     with /* index */ NumberDictionary[Any]
+     with /* index */ StringDictionary[Any] {
   
   def clear(): Unit = js.native
   
-  def getItem(key: String): js.Any = js.native
+  def getItem(key: String): Any = js.native
   
   def removeItem(key: String): Unit = js.native
   
-  def setItem(key: String, value: js.Any): Unit = js.native
+  def setItem(key: String, value: Any): Unit = js.native
 }

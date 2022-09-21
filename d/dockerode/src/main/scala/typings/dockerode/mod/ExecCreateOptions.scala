@@ -1,5 +1,6 @@
 package typings.dockerode.mod
 
+import typings.std.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,6 +26,8 @@ trait ExecCreateOptions extends StObject {
   var User: js.UndefOr[String] = js.undefined
   
   var WorkingDir: js.UndefOr[String] = js.undefined
+  
+  var abortSignal: js.UndefOr[AbortSignal] = js.undefined
 }
 object ExecCreateOptions {
   
@@ -34,6 +37,10 @@ object ExecCreateOptions {
   }
   
   extension [Self <: ExecCreateOptions](x: Self) {
+    
+    inline def setAbortSignal(value: AbortSignal): Self = StObject.set(x, "abortSignal", value.asInstanceOf[js.Any])
+    
+    inline def setAbortSignalUndefined: Self = StObject.set(x, "abortSignal", js.undefined)
     
     inline def setAttachStderr(value: Boolean): Self = StObject.set(x, "AttachStderr", value.asInstanceOf[js.Any])
     
@@ -51,7 +58,7 @@ object ExecCreateOptions {
     
     inline def setCmdUndefined: Self = StObject.set(x, "Cmd", js.undefined)
     
-    inline def setCmdVarargs(value: String*): Self = StObject.set(x, "Cmd", js.Array(value :_*))
+    inline def setCmdVarargs(value: String*): Self = StObject.set(x, "Cmd", js.Array(value*))
     
     inline def setDetachKeys(value: String): Self = StObject.set(x, "DetachKeys", value.asInstanceOf[js.Any])
     
@@ -61,7 +68,7 @@ object ExecCreateOptions {
     
     inline def setEnvUndefined: Self = StObject.set(x, "Env", js.undefined)
     
-    inline def setEnvVarargs(value: String*): Self = StObject.set(x, "Env", js.Array(value :_*))
+    inline def setEnvVarargs(value: String*): Self = StObject.set(x, "Env", js.Array(value*))
     
     inline def setPrivileged(value: Boolean): Self = StObject.set(x, "Privileged", value.asInstanceOf[js.Any])
     

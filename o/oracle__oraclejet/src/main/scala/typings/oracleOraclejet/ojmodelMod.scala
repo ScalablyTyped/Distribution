@@ -24,7 +24,7 @@ object ojmodelMod {
   
   @JSImport("@oracle/oraclejet/ojmodel", "Collection")
   @js.native
-  class Collection () extends StObject {
+  open class Collection () extends StObject {
     def this(models: js.Array[Model]) = this()
     def this(models: js.Array[Model], options: js.Object) = this()
     def this(models: Unit, options: js.Object) = this()
@@ -83,10 +83,10 @@ object ojmodelMod {
     def findWhere(attrs: js.Object): Model | js.Promise[Model] = js.native
     def findWhere(attrs: js.Object, options: DictpropNameDeferred): Model | js.Promise[Model] = js.native
     
-    def first(): js.Array[Model] | Null | js.Promise[js.Any] = js.native
-    def first(n: Double): js.Array[Model] | Null | js.Promise[js.Any] = js.native
-    def first(n: Double, options: js.Object): js.Array[Model] | Null | js.Promise[js.Any] = js.native
-    def first(n: Unit, options: js.Object): js.Array[Model] | Null | js.Promise[js.Any] = js.native
+    def first(): js.Array[Model] | Null | js.Promise[Any] = js.native
+    def first(n: Double): js.Array[Model] | Null | js.Promise[Any] = js.native
+    def first(n: Double, options: js.Object): js.Array[Model] | Null | js.Promise[Any] = js.native
+    def first(n: Unit, options: js.Object): js.Array[Model] | Null | js.Promise[Any] = js.native
     
     def get(id: String): Model | Null | js.Promise[Model] = js.native
     def get(id: String, options: js.Object): Model | Null | js.Promise[Model] = js.native
@@ -243,13 +243,13 @@ object ojmodelMod {
     def reset(data: js.Object, options: DictpropNameSilent): Model | js.Array[Model] = js.native
     def reset(data: Unit, options: DictpropNameSilent): Model | js.Array[Model] = js.native
     
-    def rest(): js.Array[js.Object] | js.Promise[js.Any] = js.native
-    def rest(n: Double): js.Array[js.Object] | js.Promise[js.Any] = js.native
-    def rest(n: Double, options: js.Object): js.Array[js.Object] | js.Promise[js.Any] = js.native
-    def rest(n: Unit, options: js.Object): js.Array[js.Object] | js.Promise[js.Any] = js.native
+    def rest(): js.Array[js.Object] | js.Promise[Any] = js.native
+    def rest(n: Double): js.Array[js.Object] | js.Promise[Any] = js.native
+    def rest(n: Double, options: js.Object): js.Array[js.Object] | js.Promise[Any] = js.native
+    def rest(n: Unit, options: js.Object): js.Array[js.Object] | js.Promise[Any] = js.native
     
-    def set(models: js.Object): js.Promise[js.Any] | Null = js.native
-    def set(models: js.Object, options: Merge): js.Promise[js.Any] | Null = js.native
+    def set(models: js.Object): js.Promise[Any] | Null = js.native
+    def set(models: js.Object, options: Merge): js.Promise[Any] | Null = js.native
     
     def setFetchSize(n: Double): Unit = js.native
     
@@ -319,7 +319,7 @@ object ojmodelMod {
     
     var url: Null | String | js.Function0[String] = js.native
     
-    def whenReady(): js.Promise[js.Any] = js.native
+    def whenReady(): js.Promise[Any] = js.native
     
     def where(attrs: js.Array[js.Object]): js.Promise[js.Array[Model]] | js.Array[Model] = js.native
     def where(attrs: js.Array[js.Object], options: js.Object): js.Promise[js.Array[Model]] | js.Array[Model] = js.native
@@ -340,10 +340,10 @@ object ojmodelMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def extend(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")().asInstanceOf[js.Any]
-    inline def extend(properties: Unit, classProperties: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any], classProperties.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def extend(properties: Comparator): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def extend(properties: Comparator, classProperties: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any], classProperties.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def extend(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")().asInstanceOf[Any]
+    inline def extend(properties: Unit, classProperties: js.Object): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any], classProperties.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def extend(properties: Comparator): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def extend(properties: Comparator, classProperties: js.Object): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any], classProperties.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     // tslint:disable-next-line interface-over-type-literal
     trait CustomPagingOptionsReturn extends StObject {
@@ -411,7 +411,7 @@ object ojmodelMod {
         
         inline def setModels(value: js.Array[Model]): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
         
-        inline def setModelsVarargs(value: Model*): Self = StObject.set(x, "models", js.Array(value :_*))
+        inline def setModelsVarargs(value: Model*): Self = StObject.set(x, "models", js.Array(value*))
         
         inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       }
@@ -420,7 +420,7 @@ object ojmodelMod {
   
   @JSImport("@oracle/oraclejet/ojmodel", "Model")
   @js.native
-  class Model () extends StObject {
+  open class Model () extends StObject {
     def this(attributes: js.Object) = this()
     def this(attributes: js.Object, options: js.Object) = this()
     def this(attributes: Unit, options: js.Object) = this()
@@ -610,15 +610,15 @@ object ojmodelMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def extend(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")().asInstanceOf[js.Any]
-    inline def extend(properties: Unit, classProperties: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any], classProperties.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def extend(properties: Initialize): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def extend(properties: Initialize, classProperties: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any], classProperties.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def extend(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")().asInstanceOf[Any]
+    inline def extend(properties: Unit, classProperties: js.Object): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any], classProperties.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def extend(properties: Initialize): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def extend(properties: Initialize, classProperties: js.Object): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any], classProperties.asInstanceOf[js.Any])).asInstanceOf[Any]
   }
   
   @JSImport("@oracle/oraclejet/ojmodel", "OAuth")
   @js.native
-  class OAuth protected () extends StObject {
+  open class OAuth protected () extends StObject {
     def this(attributes: js.Object, header: String) = this()
     
     def cleanAccessTokenRequest(): Unit = js.native
@@ -642,5 +642,5 @@ object ojmodelMod {
   
   @JSImport("@oracle/oraclejet/ojmodel", "URLError")
   @js.native
-  class URLError () extends StObject
+  open class URLError () extends StObject
 }

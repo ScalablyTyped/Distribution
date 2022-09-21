@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.AnimationGroup")
 @js.native
-class AnimationGroup protected ()
+open class AnimationGroup protected ()
   extends StObject
      with typings.babylonjs.BABYLON.AnimationGroup {
   /**
     * Instantiates a new Animation Group.
     * This helps managing several animations at once.
-    * @see https://doc.babylonjs.com/how_to/group
+    * @see https://doc.babylonjs.com/divingDeeper/animation/groupAnimations
     * @param name Defines the name of the group
     * @param scene Defines the scene the group belongs to
     */
@@ -146,5 +146,5 @@ object AnimationGroup {
     * @param scene defines the scene that will receive the animationGroup
     * @returns a new AnimationGroup
     */
-  inline def Parse(parsedAnimationGroup: js.Any, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.AnimationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedAnimationGroup.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.AnimationGroup]
+  inline def Parse(parsedAnimationGroup: Any, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.AnimationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedAnimationGroup.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.AnimationGroup]
 }

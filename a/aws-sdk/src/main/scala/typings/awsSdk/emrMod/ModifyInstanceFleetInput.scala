@@ -12,7 +12,7 @@ trait ModifyInstanceFleetInput extends StObject {
   var ClusterId: typings.awsSdk.emrMod.ClusterId
   
   /**
-    * The unique identifier of the instance fleet.
+    * The configuration parameters of the instance fleet.
     */
   var InstanceFleet: InstanceFleetModifyConfig
 }

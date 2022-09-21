@@ -1,230 +1,54 @@
 package typings.firebaseAnalytics
 
+import typings.firebaseAnalytics.firebaseAnalyticsStrings.config
+import typings.firebaseAnalytics.firebaseAnalyticsStrings.consent
+import typings.firebaseAnalytics.firebaseAnalyticsStrings.event
+import typings.firebaseAnalytics.firebaseAnalyticsStrings.set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object constantsMod {
   
-  @JSImport("@firebase/analytics/dist/src/constants", "DYNAMIC_CONFIG_URL")
+  @JSImport("@firebase/analytics/dist/esm/src/constants", "ANALYTICS_TYPE")
+  @js.native
+  val ANALYTICS_TYPE: /* "analytics" */ String = js.native
+  
+  @JSImport("@firebase/analytics/dist/esm/src/constants", "DYNAMIC_CONFIG_URL")
   @js.native
   val DYNAMIC_CONFIG_URL: /* "https://firebase.googleapis.com/v1alpha/projects/-/apps/{app-id}/webConfig" */ String = js.native
   
-  @js.native
-  sealed trait EventName extends StObject
-  @JSImport("@firebase/analytics/dist/src/constants", "EventName")
-  @js.native
-  object EventName extends StObject {
-    
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[EventName & String] = js.native
-    
-    @js.native
-    sealed trait ADD_PAYMENT_INFO
-      extends StObject
-         with EventName
-    /* "add_payment_info" */ val ADD_PAYMENT_INFO: typings.firebaseAnalytics.constantsMod.EventName.ADD_PAYMENT_INFO & String = js.native
-    
-    @js.native
-    sealed trait ADD_SHIPPING_INFO
-      extends StObject
-         with EventName
-    /* "add_shipping_info" */ val ADD_SHIPPING_INFO: typings.firebaseAnalytics.constantsMod.EventName.ADD_SHIPPING_INFO & String = js.native
-    
-    @js.native
-    sealed trait ADD_TO_CART
-      extends StObject
-         with EventName
-    /* "add_to_cart" */ val ADD_TO_CART: typings.firebaseAnalytics.constantsMod.EventName.ADD_TO_CART & String = js.native
-    
-    @js.native
-    sealed trait ADD_TO_WISHLIST
-      extends StObject
-         with EventName
-    /* "add_to_wishlist" */ val ADD_TO_WISHLIST: typings.firebaseAnalytics.constantsMod.EventName.ADD_TO_WISHLIST & String = js.native
-    
-    @js.native
-    sealed trait BEGIN_CHECKOUT
-      extends StObject
-         with EventName
-    /* "begin_checkout" */ val BEGIN_CHECKOUT: typings.firebaseAnalytics.constantsMod.EventName.BEGIN_CHECKOUT & String = js.native
-    
-    /** @deprecated */
-    @js.native
-    sealed trait CHECKOUT_PROGRESS
-      extends StObject
-         with EventName
-    /* "checkout_progress" */ val CHECKOUT_PROGRESS: typings.firebaseAnalytics.constantsMod.EventName.CHECKOUT_PROGRESS & String = js.native
-    
-    @js.native
-    sealed trait EXCEPTION
-      extends StObject
-         with EventName
-    /* "exception" */ val EXCEPTION: typings.firebaseAnalytics.constantsMod.EventName.EXCEPTION & String = js.native
-    
-    @js.native
-    sealed trait GENERATE_LEAD
-      extends StObject
-         with EventName
-    /* "generate_lead" */ val GENERATE_LEAD: typings.firebaseAnalytics.constantsMod.EventName.GENERATE_LEAD & String = js.native
-    
-    @js.native
-    sealed trait LOGIN
-      extends StObject
-         with EventName
-    /* "login" */ val LOGIN: typings.firebaseAnalytics.constantsMod.EventName.LOGIN & String = js.native
-    
-    @js.native
-    sealed trait PAGE_VIEW
-      extends StObject
-         with EventName
-    /* "page_view" */ val PAGE_VIEW: typings.firebaseAnalytics.constantsMod.EventName.PAGE_VIEW & String = js.native
-    
-    @js.native
-    sealed trait PURCHASE
-      extends StObject
-         with EventName
-    /* "purchase" */ val PURCHASE: typings.firebaseAnalytics.constantsMod.EventName.PURCHASE & String = js.native
-    
-    @js.native
-    sealed trait REFUND
-      extends StObject
-         with EventName
-    /* "refund" */ val REFUND: typings.firebaseAnalytics.constantsMod.EventName.REFUND & String = js.native
-    
-    @js.native
-    sealed trait REMOVE_FROM_CART
-      extends StObject
-         with EventName
-    /* "remove_from_cart" */ val REMOVE_FROM_CART: typings.firebaseAnalytics.constantsMod.EventName.REMOVE_FROM_CART & String = js.native
-    
-    @js.native
-    sealed trait SCREEN_VIEW
-      extends StObject
-         with EventName
-    /* "screen_view" */ val SCREEN_VIEW: typings.firebaseAnalytics.constantsMod.EventName.SCREEN_VIEW & String = js.native
-    
-    @js.native
-    sealed trait SEARCH
-      extends StObject
-         with EventName
-    /* "search" */ val SEARCH: typings.firebaseAnalytics.constantsMod.EventName.SEARCH & String = js.native
-    
-    @js.native
-    sealed trait SELECT_CONTENT
-      extends StObject
-         with EventName
-    /* "select_content" */ val SELECT_CONTENT: typings.firebaseAnalytics.constantsMod.EventName.SELECT_CONTENT & String = js.native
-    
-    @js.native
-    sealed trait SELECT_ITEM
-      extends StObject
-         with EventName
-    /* "select_item" */ val SELECT_ITEM: typings.firebaseAnalytics.constantsMod.EventName.SELECT_ITEM & String = js.native
-    
-    @js.native
-    sealed trait SELECT_PROMOTION
-      extends StObject
-         with EventName
-    /* "select_promotion" */ val SELECT_PROMOTION: typings.firebaseAnalytics.constantsMod.EventName.SELECT_PROMOTION & String = js.native
-    
-    /** @deprecated */
-    @js.native
-    sealed trait SET_CHECKOUT_OPTION
-      extends StObject
-         with EventName
-    /* "set_checkout_option" */ val SET_CHECKOUT_OPTION: typings.firebaseAnalytics.constantsMod.EventName.SET_CHECKOUT_OPTION & String = js.native
-    
-    @js.native
-    sealed trait SHARE
-      extends StObject
-         with EventName
-    /* "share" */ val SHARE: typings.firebaseAnalytics.constantsMod.EventName.SHARE & String = js.native
-    
-    @js.native
-    sealed trait SIGN_UP
-      extends StObject
-         with EventName
-    /* "sign_up" */ val SIGN_UP: typings.firebaseAnalytics.constantsMod.EventName.SIGN_UP & String = js.native
-    
-    @js.native
-    sealed trait TIMING_COMPLETE
-      extends StObject
-         with EventName
-    /* "timing_complete" */ val TIMING_COMPLETE: typings.firebaseAnalytics.constantsMod.EventName.TIMING_COMPLETE & String = js.native
-    
-    @js.native
-    sealed trait VIEW_CART
-      extends StObject
-         with EventName
-    /* "view_cart" */ val VIEW_CART: typings.firebaseAnalytics.constantsMod.EventName.VIEW_CART & String = js.native
-    
-    @js.native
-    sealed trait VIEW_ITEM
-      extends StObject
-         with EventName
-    /* "view_item" */ val VIEW_ITEM: typings.firebaseAnalytics.constantsMod.EventName.VIEW_ITEM & String = js.native
-    
-    @js.native
-    sealed trait VIEW_ITEM_LIST
-      extends StObject
-         with EventName
-    /* "view_item_list" */ val VIEW_ITEM_LIST: typings.firebaseAnalytics.constantsMod.EventName.VIEW_ITEM_LIST & String = js.native
-    
-    @js.native
-    sealed trait VIEW_PROMOTION
-      extends StObject
-         with EventName
-    /* "view_promotion" */ val VIEW_PROMOTION: typings.firebaseAnalytics.constantsMod.EventName.VIEW_PROMOTION & String = js.native
-    
-    @js.native
-    sealed trait VIEW_SEARCH_RESULTS
-      extends StObject
-         with EventName
-    /* "view_search_results" */ val VIEW_SEARCH_RESULTS: typings.firebaseAnalytics.constantsMod.EventName.VIEW_SEARCH_RESULTS & String = js.native
-  }
-  
-  @JSImport("@firebase/analytics/dist/src/constants", "FETCH_TIMEOUT_MILLIS")
+  @JSImport("@firebase/analytics/dist/esm/src/constants", "FETCH_TIMEOUT_MILLIS")
   @js.native
   val FETCH_TIMEOUT_MILLIS: Double = js.native
   
-  @JSImport("@firebase/analytics/dist/src/constants", "GA_FID_KEY")
+  @JSImport("@firebase/analytics/dist/esm/src/constants", "GA_FID_KEY")
   @js.native
   val GA_FID_KEY: /* "firebase_id" */ String = js.native
   
-  @JSImport("@firebase/analytics/dist/src/constants", "GTAG_URL")
+  @JSImport("@firebase/analytics/dist/esm/src/constants", "GTAG_URL")
   @js.native
   val GTAG_URL: /* "https://www.googletagmanager.com/gtag/js" */ String = js.native
   
-  @js.native
-  sealed trait GtagCommand extends StObject
-  @JSImport("@firebase/analytics/dist/src/constants", "GtagCommand")
-  @js.native
-  object GtagCommand extends StObject {
-    
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[GtagCommand & String] = js.native
-    
-    @js.native
-    sealed trait CONFIG
-      extends StObject
-         with GtagCommand
-    /* "config" */ val CONFIG: typings.firebaseAnalytics.constantsMod.GtagCommand.CONFIG & String = js.native
-    
-    @js.native
-    sealed trait EVENT
-      extends StObject
-         with GtagCommand
-    /* "event" */ val EVENT: typings.firebaseAnalytics.constantsMod.GtagCommand.EVENT & String = js.native
-    
-    @js.native
-    sealed trait SET
-      extends StObject
-         with GtagCommand
-    /* "set" */ val SET: typings.firebaseAnalytics.constantsMod.GtagCommand.SET & String = js.native
-  }
-  
-  @JSImport("@firebase/analytics/dist/src/constants", "ORIGIN_KEY")
+  @JSImport("@firebase/analytics/dist/esm/src/constants", "ORIGIN_KEY")
   @js.native
   val ORIGIN_KEY: /* "origin" */ String = js.native
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.firebaseAnalytics.firebaseAnalyticsStrings.event
+    - typings.firebaseAnalytics.firebaseAnalyticsStrings.set
+    - typings.firebaseAnalytics.firebaseAnalyticsStrings.config
+    - typings.firebaseAnalytics.firebaseAnalyticsStrings.consent
+  */
+  trait GtagCommand extends StObject
+  object GtagCommand {
+    
+    inline def CONFIG: config = "config".asInstanceOf[config]
+    
+    inline def CONSENT: consent = "consent".asInstanceOf[consent]
+    
+    inline def EVENT: event = "event".asInstanceOf[event]
+    
+    inline def SET: set = "set".asInstanceOf[set]
+  }
 }

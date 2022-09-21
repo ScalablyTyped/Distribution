@@ -9,7 +9,6 @@ import typings.chromeApps.chrome.bluetoothSocket.OnReceiveEvent
 import typings.chromeApps.chrome.bluetoothSocket.SocketInfo
 import typings.chromeApps.chrome.bluetoothSocket.SocketProperties
 import typings.chromeApps.chrome.integer
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -168,8 +167,12 @@ object bluetoothSocket {
     * @param data The data to send.
     * @param [callback] Called with the number of bytes sent.
     */
-  inline def send(socketId: integer, data: ArrayBuffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(socketId.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def send(socketId: integer, data: ArrayBuffer, callback: js.Function1[/* bytesSent */ integer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(socketId.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def send(socketId: integer, data: js.typedarray.ArrayBuffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(socketId.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def send(
+    socketId: integer,
+    data: js.typedarray.ArrayBuffer,
+    callback: js.Function1[/* bytesSent */ integer, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(socketId.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Enables or disables a connected socket from

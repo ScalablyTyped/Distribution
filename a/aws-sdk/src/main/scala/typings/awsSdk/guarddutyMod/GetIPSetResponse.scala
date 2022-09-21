@@ -12,7 +12,7 @@ trait GetIPSetResponse extends StObject {
   var Format: IpSetFormat
   
   /**
-    * The URI of the file that contains the IPSet. For example: https://s3.us-west-2.amazonaws.com/my-bucket/my-object-key.
+    * The URI of the file that contains the IPSet.
     */
   var Location: typings.awsSdk.guarddutyMod.Location
   

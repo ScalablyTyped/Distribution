@@ -11,9 +11,9 @@ A high-level terminal interface library for node.js.
 | Full name          | blessed |
 | Keywords           | curses, tui, tput, terminfo, termcap |
 | # releases         | 1 |
-| # dependents       | 800 |
-| # downloads        | 27794776 |
-| # stars            | 125 |
+| # dependents       | 0.0 |
+| # downloads        | 5044904.0 |
+| # stars            | 10551.0 |
 
 ## Links
 - [Homepage](https://github.com/chjj/blessed)

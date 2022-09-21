@@ -1,6 +1,5 @@
 package typings.sumoLogger
 
-import typings.std.Date
 import typings.sumoLogger.anon.PartialPerMessageOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +14,7 @@ object mod {
     */
   @JSImport("sumo-logger", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with SumoLogger {
     def this(options: SumoLoggerOptions) = this()
@@ -24,22 +23,22 @@ object mod {
   trait PerMessageOptions extends StObject {
     
     /** Override a session key set in the `config` call. */
-    var sessionKey: String
+    var sessionKey: js.UndefOr[String] = js.undefined
     
     /**
       * Defaults to `new Date()` called when processing the log call.
       * Use this when the event being logged occurred
       * at a different time than when the log was sent.
       */
-    var timestamp: Date
+    var timestamp: js.UndefOr[js.Date] = js.undefined
     
     /** Override client URL set in the config call. (Node version only) */
-    var url: String
+    var url: js.UndefOr[String] = js.undefined
   }
   object PerMessageOptions {
     
-    inline def apply(sessionKey: String, timestamp: Date, url: String): PerMessageOptions = {
-      val __obj = js.Dynamic.literal(sessionKey = sessionKey.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    inline def apply(): PerMessageOptions = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PerMessageOptions]
     }
     
@@ -47,9 +46,15 @@ object mod {
       
       inline def setSessionKey(value: String): Self = StObject.set(x, "sessionKey", value.asInstanceOf[js.Any])
       
-      inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setSessionKeyUndefined: Self = StObject.set(x, "sessionKey", js.undefined)
+      
+      inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      
+      inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -87,8 +92,8 @@ object mod {
       * If you call the function with a JSON object, each field in the object is included as a separate field.
       * Fields called `sessionId`, `url`, and `timestamp` are sent in both cases.
       */
-    def log(message: String): Boolean | js.Promise[js.Any] = js.native
-    def log(message: String, options: PerMessageOptions): Boolean | js.Promise[js.Any] = js.native
+    def log(message: String): Boolean | js.Promise[Any] = js.native
+    def log(message: String, options: PerMessageOptions): Boolean | js.Promise[Any] = js.native
     /**
       * Set a log message to be sent.
       * All logs are sent as JSON objects.
@@ -96,7 +101,7 @@ object mod {
       * If you call the function with a JSON object, each field in the object is included as a separate field.
       * Fields called `sessionId`, `url`, and `timestamp` are sent in both cases.
       */
-    def log[T /* <: js.Object */](event: PartialPerMessageOptions & T): Boolean | js.Promise[js.Any] = js.native
+    def log[T /* <: js.Object */](event: PartialPerMessageOptions & T): Boolean | js.Promise[Any] = js.native
     
     /**
       * Start sending batched logs at the preconfigured interval

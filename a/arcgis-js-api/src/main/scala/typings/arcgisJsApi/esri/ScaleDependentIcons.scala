@@ -11,13 +11,6 @@ trait ScaleDependentIcons
      with Object {
   
   /**
-    * The only supported expression is `view.scale`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#ScaleDependentIcons)
-    */
-  var expression: js.UndefOr[String] = js.undefined
-  
-  /**
     * See [field](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#field).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#ScaleDependentIcons)
@@ -91,10 +84,6 @@ object ScaleDependentIcons {
   }
   
   extension [Self <: ScaleDependentIcons](x: Self) {
-    
-    inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
-    
-    inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Easing
   extends StObject
-     with _SpeedSettings[js.Any] {
+     with _SpeedSettings[Any] {
   
   /**
     * A string indicating which easing function to use for the transition.

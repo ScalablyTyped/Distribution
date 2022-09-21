@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SFS2X.Logger")
 @js.native
-class Logger ()
+open class Logger ()
   extends StObject
      with typings.smartFoxServer.SFS2X.Logger {
   

@@ -30,7 +30,7 @@ object PseudoElementSelectorPlain {
     
     inline def setChildrenNull: Self = StObject.set(x, "children", null)
     
-    inline def setChildrenVarargs(value: CssNodePlain*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: CssNodePlain*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

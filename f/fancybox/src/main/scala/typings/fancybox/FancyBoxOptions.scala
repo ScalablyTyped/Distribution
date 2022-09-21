@@ -175,7 +175,7 @@ trait FancyBoxOptions extends StObject {
     * Hash value when initializing manually,
     * set `false` to disable hash change
     */
-  var hash: js.UndefOr[js.Any] = js.undefined
+  var hash: js.UndefOr[Any] = js.undefined
   
   /**
     * Hide browser vertical scrollbars; use at your own risk
@@ -404,7 +404,7 @@ object FancyBoxOptions {
     
     inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    inline def setButtonsVarargs(value: (zoom | share | slideShow | fullScreen | download | thumbs | close)*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: (zoom | share | slideShow | fullScreen | download | thumbs | close)*): Self = StObject.set(x, "buttons", js.Array(value*))
     
     inline def setCaption(
       value: String | (js.Function2[/* instance */ FancyBoxInstance, /* current */ FancyBoxSlide, String])
@@ -482,7 +482,7 @@ object FancyBoxOptions {
     
     inline def setGutterUndefined: Self = StObject.set(x, "gutter", js.undefined)
     
-    inline def setHash(value: js.Any): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: Any): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
     inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
     

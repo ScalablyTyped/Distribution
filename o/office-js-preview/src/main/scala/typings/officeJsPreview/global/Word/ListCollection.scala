@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Contains a collection of {@link Word.List} objects.
   *
+  * @remarks
   * [Api set: WordApi 1.3]
   */
 @JSGlobal("Word.ListCollection")
 @js.native
-class ListCollection ()
+open class ListCollection ()
   extends StObject
      with typings.officeJsPreview.Word.ListCollection {
   

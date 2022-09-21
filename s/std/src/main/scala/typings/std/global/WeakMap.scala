@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("WeakMap")
 @js.native
-class WeakMap[K /* <: js.Object */, V] ()
+/* standard es2015.collection */
+open class WeakMap[K /* <: js.Object */, V] ()
   extends StObject
      with typings.std.WeakMap[K, V] {
   def this(entries: js.Array[js.Tuple2[K, V]]) = this()

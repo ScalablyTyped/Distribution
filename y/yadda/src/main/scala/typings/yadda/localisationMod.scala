@@ -44,7 +44,7 @@ object localisationMod {
   
   @JSImport("yadda/lib/localisation", "Language")
   @js.native
-  class Language[TLibrary /* <: typings.yadda.languageMod.Library */] protected () extends ^[TLibrary] {
+  open class Language[TLibrary /* <: typings.yadda.languageMod.Library */] protected () extends ^[TLibrary] {
     def this(name: String, vocabulary: Vocabulary) = this()
   }
   

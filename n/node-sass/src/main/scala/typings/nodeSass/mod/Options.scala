@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Options
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var data: js.UndefOr[String] = js.undefined
   
@@ -74,13 +74,13 @@ object Options {
     
     inline def setImporterUndefined: Self = StObject.set(x, "importer", js.undefined)
     
-    inline def setImporterVarargs(value: Importer*): Self = StObject.set(x, "importer", js.Array(value :_*))
+    inline def setImporterVarargs(value: Importer*): Self = StObject.set(x, "importer", js.Array(value*))
     
     inline def setIncludePaths(value: js.Array[String]): Self = StObject.set(x, "includePaths", value.asInstanceOf[js.Any])
     
     inline def setIncludePathsUndefined: Self = StObject.set(x, "includePaths", js.undefined)
     
-    inline def setIncludePathsVarargs(value: String*): Self = StObject.set(x, "includePaths", js.Array(value :_*))
+    inline def setIncludePathsVarargs(value: String*): Self = StObject.set(x, "includePaths", js.Array(value*))
     
     inline def setIndentType(value: String): Self = StObject.set(x, "indentType", value.asInstanceOf[js.Any])
     

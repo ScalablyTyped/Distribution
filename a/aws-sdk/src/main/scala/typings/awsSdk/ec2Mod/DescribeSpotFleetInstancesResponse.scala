@@ -34,7 +34,7 @@ object DescribeSpotFleetInstancesResponse {
     
     inline def setActiveInstancesUndefined: Self = StObject.set(x, "ActiveInstances", js.undefined)
     
-    inline def setActiveInstancesVarargs(value: ActiveInstance*): Self = StObject.set(x, "ActiveInstances", js.Array(value :_*))
+    inline def setActiveInstancesVarargs(value: ActiveInstance*): Self = StObject.set(x, "ActiveInstances", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

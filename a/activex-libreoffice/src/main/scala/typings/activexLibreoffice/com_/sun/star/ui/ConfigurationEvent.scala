@@ -18,17 +18,17 @@ trait ConfigurationEvent
   var ResourceURL: String
   
   /** contains additional information about this configuration event. The type depends on the specific implementation. */
-  var aInfo: js.Any
+  var aInfo: Any
 }
 object ConfigurationEvent {
   
   inline def apply(
-    Accessor: js.Any,
-    Element: js.Any,
-    ReplacedElement: js.Any,
+    Accessor: Any,
+    Element: Any,
+    ReplacedElement: Any,
     ResourceURL: String,
     Source: XInterface,
-    aInfo: js.Any
+    aInfo: Any
   ): ConfigurationEvent = {
     val __obj = js.Dynamic.literal(Accessor = Accessor.asInstanceOf[js.Any], Element = Element.asInstanceOf[js.Any], ReplacedElement = ReplacedElement.asInstanceOf[js.Any], ResourceURL = ResourceURL.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any], aInfo = aInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurationEvent]
@@ -36,7 +36,7 @@ object ConfigurationEvent {
   
   extension [Self <: ConfigurationEvent](x: Self) {
     
-    inline def setAInfo(value: js.Any): Self = StObject.set(x, "aInfo", value.asInstanceOf[js.Any])
+    inline def setAInfo(value: Any): Self = StObject.set(x, "aInfo", value.asInstanceOf[js.Any])
     
     inline def setResourceURL(value: String): Self = StObject.set(x, "ResourceURL", value.asInstanceOf[js.Any])
   }

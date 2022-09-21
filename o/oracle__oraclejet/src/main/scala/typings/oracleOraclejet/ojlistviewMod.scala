@@ -76,6 +76,7 @@ import typings.oracleOraclejet.oracleOraclejetStrings.sticky
 import typings.oracleOraclejet.oracleOraclejetStrings.translations
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
+import typings.std.CompositionEvent
 import typings.std.CustomEvent
 import typings.std.DragEvent
 import typings.std.Element
@@ -83,12 +84,15 @@ import typings.std.ErrorEvent
 import typings.std.Event
 import typings.std.EventTarget
 import typings.std.FocusEvent
+import typings.std.FormDataEvent
 import typings.std.HTMLElement
+import typings.std.InputEvent
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import typings.std.PointerEvent
 import typings.std.ProgressEvent
 import typings.std.SecurityPolicyViolationEvent
+import typings.std.SubmitEvent
 import typings.std.TouchEvent
 import typings.std.TransitionEvent
 import typings.std.UIEvent
@@ -106,37 +110,29 @@ object ojlistviewMod {
     
     def addEventListener(
       `type`: drillModeChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[collapsible | none], js.Any]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[collapsible | none], Any]
     ): Unit = js.native
     def addEventListener(
       `type`: drillModeChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[collapsible | none], js.Any],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[collapsible | none], Any],
       useCapture: Boolean
     ): Unit = js.native
     def addEventListener(
       `type`: groupHeaderPositionChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[static | sticky], js.Any]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[static | sticky], Any]
     ): Unit = js.native
     def addEventListener(
       `type`: groupHeaderPositionChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[static | sticky], js.Any],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[static | sticky], Any],
       useCapture: Boolean
     ): Unit = js.native
     def addEventListener(
       `type`: scrollPolicyChanged,
-      listener: js.ThisFunction1[
-          /* this */ HTMLElement, 
-          /* ev */ JetElementCustomEvent[auto | loadMoreOnScroll], 
-          js.Any
-        ]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | loadMoreOnScroll], Any]
     ): Unit = js.native
     def addEventListener(
       `type`: scrollPolicyChanged,
-      listener: js.ThisFunction1[
-          /* this */ HTMLElement, 
-          /* ev */ JetElementCustomEvent[auto | loadMoreOnScroll], 
-          js.Any
-        ],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | loadMoreOnScroll], Any],
       useCapture: Boolean
     ): Unit = js.native
     def addEventListener(
@@ -144,7 +140,7 @@ object ojlistviewMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ JetElementCustomEvent[none | single | multiple], 
-          js.Any
+          Any
         ]
     ): Unit = js.native
     def addEventListener(
@@ -152,85 +148,85 @@ object ojlistviewMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ JetElementCustomEvent[none | single | multiple], 
-          js.Any
+          Any
         ],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_asChanged(
       `type`: asChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], js.Any]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_asChanged(
       `type`: asChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], js.Any],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_currentItemChanged(
       `type`: currentItemChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[K], js.Any]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[K], Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_currentItemChanged(
       `type`: currentItemChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[K], js.Any],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[K], Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_dataChanged(
       `type`: dataChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[DataProvider[K, D]], js.Any]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[DataProvider[K, D]], Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_dataChanged(
       `type`: dataChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[DataProvider[K, D]], js.Any],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[DataProvider[K, D]], Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_dndChanged(
       `type`: dndChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[DragDrop], js.Any]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[DragDrop], Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_dndChanged(
       `type`: dndChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[DragDrop], js.Any],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[DragDrop], Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_expandedChanged(
       `type`: expandedChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[KeySet[K]], js.Any]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[KeySet[K]], Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_expandedChanged(
       `type`: expandedChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[KeySet[K]], js.Any],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[KeySet[K]], Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_firstSelectedItemChanged(
       `type`: firstSelectedItemChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Key[K, D]], js.Any]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Key[K, D]], Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_firstSelectedItemChanged(
       `type`: firstSelectedItemChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Key[K, D]], js.Any],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Key[K, D]], Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_itemChanged(
       `type`: itemChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Focusable[K, D]], js.Any]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Focusable[K, D]], Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_itemChanged(
       `type`: itemChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Focusable[K, D]], js.Any],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Focusable[K, D]], Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
@@ -239,7 +235,7 @@ object ojlistviewMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojlistviewMod.ojListView.ojAnimateEnd, 
-          js.Any
+          Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -248,7 +244,7 @@ object ojlistviewMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojlistviewMod.ojListView.ojAnimateEnd, 
-          js.Any
+          Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -258,7 +254,7 @@ object ojlistviewMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojlistviewMod.ojListView.ojAnimateStart, 
-          js.Any
+          Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -267,7 +263,7 @@ object ojlistviewMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojlistviewMod.ojListView.ojAnimateStart, 
-          js.Any
+          Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -277,7 +273,7 @@ object ojlistviewMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojlistviewMod.ojListView.ojBeforeCollapse[K], 
-          js.Any
+          Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -286,7 +282,7 @@ object ojlistviewMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojlistviewMod.ojListView.ojBeforeCollapse[K], 
-          js.Any
+          Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -296,7 +292,7 @@ object ojlistviewMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojlistviewMod.ojListView.ojBeforeCurrentItem[K], 
-          js.Any
+          Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -305,7 +301,7 @@ object ojlistviewMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojlistviewMod.ojListView.ojBeforeCurrentItem[K], 
-          js.Any
+          Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -315,7 +311,7 @@ object ojlistviewMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojlistviewMod.ojListView.ojBeforeExpand[K], 
-          js.Any
+          Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -324,7 +320,7 @@ object ojlistviewMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojlistviewMod.ojListView.ojBeforeExpand[K], 
-          js.Any
+          Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -334,7 +330,7 @@ object ojlistviewMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojlistviewMod.ojListView.ojCollapse[K], 
-          js.Any
+          Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -343,7 +339,7 @@ object ojlistviewMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojlistviewMod.ojListView.ojCollapse[K], 
-          js.Any
+          Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -353,7 +349,7 @@ object ojlistviewMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojlistviewMod.ojListView.ojCopy, 
-          js.Any
+          Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -362,7 +358,7 @@ object ojlistviewMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojlistviewMod.ojListView.ojCopy, 
-          js.Any
+          Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -372,7 +368,7 @@ object ojlistviewMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojlistviewMod.ojListView.ojCut, 
-          js.Any
+          Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -381,7 +377,7 @@ object ojlistviewMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojlistviewMod.ojListView.ojCut, 
-          js.Any
+          Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -391,7 +387,7 @@ object ojlistviewMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojlistviewMod.ojListView.ojExpand[K], 
-          js.Any
+          Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -400,7 +396,7 @@ object ojlistviewMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojlistviewMod.ojListView.ojExpand[K], 
-          js.Any
+          Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -410,7 +406,7 @@ object ojlistviewMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojlistviewMod.ojListView.ojPaste, 
-          js.Any
+          Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -419,7 +415,7 @@ object ojlistviewMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojlistviewMod.ojListView.ojPaste, 
-          js.Any
+          Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -429,7 +425,7 @@ object ojlistviewMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojlistviewMod.ojListView.ojReorder, 
-          js.Any
+          Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -438,52 +434,52 @@ object ojlistviewMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojlistviewMod.ojListView.ojReorder, 
-          js.Any
+          Any
         ],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_scrollPolicyOptionsChanged(
       `type`: scrollPolicyOptionsChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[FetchSize], js.Any]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[FetchSize], Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_scrollPolicyOptionsChanged(
       `type`: scrollPolicyOptionsChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[FetchSize], js.Any],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[FetchSize], Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_scrollPositionChanged(
       `type`: scrollPositionChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[OffsetX[K]], js.Any]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[OffsetX[K]], Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_scrollPositionChanged(
       `type`: scrollPositionChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[OffsetX[K]], js.Any],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[OffsetX[K]], Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_selectionChanged(
       `type`: selectionChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[K]], js.Any]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[K]], Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_selectionChanged(
       `type`: selectionChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[K]], js.Any],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[K]], Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_selectionRequiredChanged(
       `type`: selectionRequiredChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], js.Any]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_selectionRequiredChanged(
       `type`: selectionRequiredChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], js.Any],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], Any],
       useCapture: Boolean
     ): Unit = js.native
     
@@ -540,69 +536,66 @@ object ojlistviewMod {
     
     var item: Focusable[K, D] = js.native
     
-    var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], js.Any]) | Null = js.native
+    var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], Any]) | Null = js.native
     
-    var onCurrentItemChanged: (js.Function1[/* event */ JetElementCustomEvent[K], js.Any]) | Null = js.native
+    var onCurrentItemChanged: (js.Function1[/* event */ JetElementCustomEvent[K], Any]) | Null = js.native
     
-    var onDataChanged: (js.Function1[/* event */ JetElementCustomEvent[DataProvider[K, D]], js.Any]) | Null = js.native
+    var onDataChanged: (js.Function1[/* event */ JetElementCustomEvent[DataProvider[K, D]], Any]) | Null = js.native
     
-    var onDndChanged: (js.Function1[/* event */ JetElementCustomEvent[DragDrop], js.Any]) | Null = js.native
+    var onDndChanged: (js.Function1[/* event */ JetElementCustomEvent[DragDrop], Any]) | Null = js.native
     
-    var onDrillModeChanged: (js.Function1[/* event */ JetElementCustomEvent[collapsible | none], js.Any]) | Null = js.native
+    var onDrillModeChanged: (js.Function1[/* event */ JetElementCustomEvent[collapsible | none], Any]) | Null = js.native
     
-    var onExpandedChanged: (js.Function1[/* event */ JetElementCustomEvent[KeySet[K]], js.Any]) | Null = js.native
+    var onExpandedChanged: (js.Function1[/* event */ JetElementCustomEvent[KeySet[K]], Any]) | Null = js.native
     
-    var onFirstSelectedItemChanged: (js.Function1[/* event */ JetElementCustomEvent[Key[K, D]], js.Any]) | Null = js.native
+    var onFirstSelectedItemChanged: (js.Function1[/* event */ JetElementCustomEvent[Key[K, D]], Any]) | Null = js.native
     
-    var onGroupHeaderPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[static | sticky], js.Any]) | Null = js.native
+    var onGroupHeaderPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[static | sticky], Any]) | Null = js.native
     
-    var onItemChanged: (js.Function1[/* event */ JetElementCustomEvent[Focusable[K, D]], js.Any]) | Null = js.native
+    var onItemChanged: (js.Function1[/* event */ JetElementCustomEvent[Focusable[K, D]], Any]) | Null = js.native
     
-    var onOjAnimateEnd: (js.Function1[/* event */ typings.oracleOraclejet.ojlistviewMod.ojListView.ojAnimateEnd, js.Any]) | Null = js.native
+    var onOjAnimateEnd: (js.Function1[/* event */ typings.oracleOraclejet.ojlistviewMod.ojListView.ojAnimateEnd, Any]) | Null = js.native
     
-    var onOjAnimateStart: (js.Function1[
-        /* event */ typings.oracleOraclejet.ojlistviewMod.ojListView.ojAnimateStart, 
-        js.Any
-      ]) | Null = js.native
+    var onOjAnimateStart: (js.Function1[/* event */ typings.oracleOraclejet.ojlistviewMod.ojListView.ojAnimateStart, Any]) | Null = js.native
     
     var onOjBeforeCollapse: (js.Function1[
         /* event */ typings.oracleOraclejet.ojlistviewMod.ojListView.ojBeforeCollapse[K], 
-        js.Any
+        Any
       ]) | Null = js.native
     
     var onOjBeforeCurrentItem: (js.Function1[
         /* event */ typings.oracleOraclejet.ojlistviewMod.ojListView.ojBeforeCurrentItem[K], 
-        js.Any
+        Any
       ]) | Null = js.native
     
     var onOjBeforeExpand: (js.Function1[
         /* event */ typings.oracleOraclejet.ojlistviewMod.ojListView.ojBeforeExpand[K], 
-        js.Any
+        Any
       ]) | Null = js.native
     
-    var onOjCollapse: (js.Function1[/* event */ typings.oracleOraclejet.ojlistviewMod.ojListView.ojCollapse[K], js.Any]) | Null = js.native
+    var onOjCollapse: (js.Function1[/* event */ typings.oracleOraclejet.ojlistviewMod.ojListView.ojCollapse[K], Any]) | Null = js.native
     
-    var onOjCopy: (js.Function1[/* event */ typings.oracleOraclejet.ojlistviewMod.ojListView.ojCopy, js.Any]) | Null = js.native
+    var onOjCopy: (js.Function1[/* event */ typings.oracleOraclejet.ojlistviewMod.ojListView.ojCopy, Any]) | Null = js.native
     
-    var onOjCut: (js.Function1[/* event */ typings.oracleOraclejet.ojlistviewMod.ojListView.ojCut, js.Any]) | Null = js.native
+    var onOjCut: (js.Function1[/* event */ typings.oracleOraclejet.ojlistviewMod.ojListView.ojCut, Any]) | Null = js.native
     
-    var onOjExpand: (js.Function1[/* event */ typings.oracleOraclejet.ojlistviewMod.ojListView.ojExpand[K], js.Any]) | Null = js.native
+    var onOjExpand: (js.Function1[/* event */ typings.oracleOraclejet.ojlistviewMod.ojListView.ojExpand[K], Any]) | Null = js.native
     
-    var onOjPaste: (js.Function1[/* event */ typings.oracleOraclejet.ojlistviewMod.ojListView.ojPaste, js.Any]) | Null = js.native
+    var onOjPaste: (js.Function1[/* event */ typings.oracleOraclejet.ojlistviewMod.ojListView.ojPaste, Any]) | Null = js.native
     
-    var onOjReorder: (js.Function1[/* event */ typings.oracleOraclejet.ojlistviewMod.ojListView.ojReorder, js.Any]) | Null = js.native
+    var onOjReorder: (js.Function1[/* event */ typings.oracleOraclejet.ojlistviewMod.ojListView.ojReorder, Any]) | Null = js.native
     
-    var onScrollPolicyChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | loadMoreOnScroll], js.Any]) | Null = js.native
+    var onScrollPolicyChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | loadMoreOnScroll], Any]) | Null = js.native
     
-    var onScrollPolicyOptionsChanged: (js.Function1[/* event */ JetElementCustomEvent[FetchSize], js.Any]) | Null = js.native
+    var onScrollPolicyOptionsChanged: (js.Function1[/* event */ JetElementCustomEvent[FetchSize], Any]) | Null = js.native
     
-    var onScrollPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[OffsetX[K]], js.Any]) | Null = js.native
+    var onScrollPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[OffsetX[K]], Any]) | Null = js.native
     
-    var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[K]], js.Any]) | Null = js.native
+    var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[K]], Any]) | Null = js.native
     
-    var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[none | single | multiple], js.Any]) | Null = js.native
+    var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[none | single | multiple], Any]) | Null = js.native
     
-    var onSelectionRequiredChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], js.Any]) | Null = js.native
+    var onSelectionRequiredChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], Any]) | Null = js.native
     
     var scrollPolicy: auto | loadMoreOnScroll = js.native
     
@@ -620,15 +613,10 @@ object ojlistviewMod {
     
     def setProperties(properties: ojListViewSettablePropertiesLenient[K, D]): Unit = js.native
     
-    def setProperty(property: drillMode, value: collapsible): Unit = js.native
-    def setProperty(property: drillMode, value: none): Unit = js.native
-    def setProperty(property: groupHeaderPosition, value: static): Unit = js.native
-    def setProperty(property: groupHeaderPosition, value: sticky): Unit = js.native
-    def setProperty(property: scrollPolicy, value: auto): Unit = js.native
-    def setProperty(property: scrollPolicy, value: loadMoreOnScroll): Unit = js.native
-    def setProperty(property: selectionMode, value: multiple): Unit = js.native
-    def setProperty(property: selectionMode, value: none): Unit = js.native
-    def setProperty(property: selectionMode, value: single): Unit = js.native
+    def setProperty(property: drillMode, value: collapsible | none): Unit = js.native
+    def setProperty(property: groupHeaderPosition, value: static | sticky): Unit = js.native
+    def setProperty(property: scrollPolicy, value: auto | loadMoreOnScroll): Unit = js.native
+    def setProperty(property: selectionMode, value: none | single | multiple): Unit = js.native
     @JSName("setProperty")
     def setProperty_as(property: as, value: String): Unit = js.native
     @JSName("setProperty")
@@ -864,13 +852,16 @@ object ojlistviewMod {
       animationstart: AnimationEvent,
       asChanged: JetElementCustomEvent[String],
       auxclick: MouseEvent,
+      beforeinput: InputEvent,
       blur: FocusEvent,
-      cancel: Event,
       canplay: Event,
       canplaythrough: Event,
       change: Event,
       click: MouseEvent,
       close: Event,
+      compositionend: CompositionEvent,
+      compositionstart: CompositionEvent,
+      compositionupdate: CompositionEvent,
       contextmenu: MouseEvent,
       copy: ClipboardEvent,
       cuechange: Event,
@@ -882,7 +873,6 @@ object ojlistviewMod {
       drag: DragEvent,
       dragend: DragEvent,
       dragenter: DragEvent,
-      dragexit: Event,
       dragleave: DragEvent,
       dragover: DragEvent,
       dragstart: DragEvent,
@@ -897,6 +887,7 @@ object ojlistviewMod {
       focus: FocusEvent,
       focusin: FocusEvent,
       focusout: FocusEvent,
+      formdata: FormDataEvent,
       fullscreenchange: Event,
       fullscreenerror: Event,
       gotpointercapture: PointerEvent,
@@ -959,8 +950,9 @@ object ojlistviewMod {
       selectionRequiredChanged: JetElementCustomEvent[Boolean],
       selectionchange: Event,
       selectstart: Event,
+      slotchange: Event,
       stalled: Event,
-      submit: Event,
+      submit: SubmitEvent,
       suspend: Event,
       timeupdate: Event,
       toggle: Event,
@@ -975,9 +967,13 @@ object ojlistviewMod {
       translationsChanged: JetElementCustomEvent[js.Object | Null],
       volumechange: Event,
       waiting: Event,
+      webkitanimationend: Event,
+      webkitanimationiteration: Event,
+      webkitanimationstart: Event,
+      webkittransitionend: Event,
       wheel: WheelEvent
     ): ojListViewEventMap[K, D] = {
-      val __obj = js.Dynamic.literal(abort = abort.asInstanceOf[js.Any], animationcancel = animationcancel.asInstanceOf[js.Any], animationend = animationend.asInstanceOf[js.Any], animationiteration = animationiteration.asInstanceOf[js.Any], animationstart = animationstart.asInstanceOf[js.Any], asChanged = asChanged.asInstanceOf[js.Any], auxclick = auxclick.asInstanceOf[js.Any], blur = blur.asInstanceOf[js.Any], cancel = cancel.asInstanceOf[js.Any], canplay = canplay.asInstanceOf[js.Any], canplaythrough = canplaythrough.asInstanceOf[js.Any], change = change.asInstanceOf[js.Any], click = click.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any], contextmenu = contextmenu.asInstanceOf[js.Any], copy = copy.asInstanceOf[js.Any], cuechange = cuechange.asInstanceOf[js.Any], currentItemChanged = currentItemChanged.asInstanceOf[js.Any], cut = cut.asInstanceOf[js.Any], dataChanged = dataChanged.asInstanceOf[js.Any], dblclick = dblclick.asInstanceOf[js.Any], dndChanged = dndChanged.asInstanceOf[js.Any], drag = drag.asInstanceOf[js.Any], dragend = dragend.asInstanceOf[js.Any], dragenter = dragenter.asInstanceOf[js.Any], dragexit = dragexit.asInstanceOf[js.Any], dragleave = dragleave.asInstanceOf[js.Any], dragover = dragover.asInstanceOf[js.Any], dragstart = dragstart.asInstanceOf[js.Any], drillModeChanged = drillModeChanged.asInstanceOf[js.Any], drop = drop.asInstanceOf[js.Any], durationchange = durationchange.asInstanceOf[js.Any], emptied = emptied.asInstanceOf[js.Any], ended = ended.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], expandedChanged = expandedChanged.asInstanceOf[js.Any], firstSelectedItemChanged = firstSelectedItemChanged.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any], focusin = focusin.asInstanceOf[js.Any], focusout = focusout.asInstanceOf[js.Any], fullscreenchange = fullscreenchange.asInstanceOf[js.Any], fullscreenerror = fullscreenerror.asInstanceOf[js.Any], gotpointercapture = gotpointercapture.asInstanceOf[js.Any], groupHeaderPositionChanged = groupHeaderPositionChanged.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], invalid = invalid.asInstanceOf[js.Any], itemChanged = itemChanged.asInstanceOf[js.Any], keydown = keydown.asInstanceOf[js.Any], keypress = keypress.asInstanceOf[js.Any], keyup = keyup.asInstanceOf[js.Any], load = load.asInstanceOf[js.Any], loadeddata = loadeddata.asInstanceOf[js.Any], loadedmetadata = loadedmetadata.asInstanceOf[js.Any], loadstart = loadstart.asInstanceOf[js.Any], lostpointercapture = lostpointercapture.asInstanceOf[js.Any], mousedown = mousedown.asInstanceOf[js.Any], mouseenter = mouseenter.asInstanceOf[js.Any], mouseleave = mouseleave.asInstanceOf[js.Any], mousemove = mousemove.asInstanceOf[js.Any], mouseout = mouseout.asInstanceOf[js.Any], mouseover = mouseover.asInstanceOf[js.Any], mouseup = mouseup.asInstanceOf[js.Any], ojAnimateEnd = ojAnimateEnd.asInstanceOf[js.Any], ojAnimateStart = ojAnimateStart.asInstanceOf[js.Any], ojBeforeCollapse = ojBeforeCollapse.asInstanceOf[js.Any], ojBeforeCurrentItem = ojBeforeCurrentItem.asInstanceOf[js.Any], ojBeforeExpand = ojBeforeExpand.asInstanceOf[js.Any], ojCollapse = ojCollapse.asInstanceOf[js.Any], ojCopy = ojCopy.asInstanceOf[js.Any], ojCut = ojCut.asInstanceOf[js.Any], ojExpand = ojExpand.asInstanceOf[js.Any], ojPaste = ojPaste.asInstanceOf[js.Any], ojReorder = ojReorder.asInstanceOf[js.Any], paste = paste.asInstanceOf[js.Any], pause = pause.asInstanceOf[js.Any], play = play.asInstanceOf[js.Any], playing = playing.asInstanceOf[js.Any], pointercancel = pointercancel.asInstanceOf[js.Any], pointerdown = pointerdown.asInstanceOf[js.Any], pointerenter = pointerenter.asInstanceOf[js.Any], pointerleave = pointerleave.asInstanceOf[js.Any], pointermove = pointermove.asInstanceOf[js.Any], pointerout = pointerout.asInstanceOf[js.Any], pointerover = pointerover.asInstanceOf[js.Any], pointerup = pointerup.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], ratechange = ratechange.asInstanceOf[js.Any], reset = reset.asInstanceOf[js.Any], resize = resize.asInstanceOf[js.Any], scroll = scroll.asInstanceOf[js.Any], scrollPolicyChanged = scrollPolicyChanged.asInstanceOf[js.Any], scrollPolicyOptionsChanged = scrollPolicyOptionsChanged.asInstanceOf[js.Any], scrollPositionChanged = scrollPositionChanged.asInstanceOf[js.Any], securitypolicyviolation = securitypolicyviolation.asInstanceOf[js.Any], seeked = seeked.asInstanceOf[js.Any], seeking = seeking.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], selectionChanged = selectionChanged.asInstanceOf[js.Any], selectionModeChanged = selectionModeChanged.asInstanceOf[js.Any], selectionRequiredChanged = selectionRequiredChanged.asInstanceOf[js.Any], selectionchange = selectionchange.asInstanceOf[js.Any], selectstart = selectstart.asInstanceOf[js.Any], stalled = stalled.asInstanceOf[js.Any], submit = submit.asInstanceOf[js.Any], suspend = suspend.asInstanceOf[js.Any], timeupdate = timeupdate.asInstanceOf[js.Any], toggle = toggle.asInstanceOf[js.Any], touchcancel = touchcancel.asInstanceOf[js.Any], touchend = touchend.asInstanceOf[js.Any], touchmove = touchmove.asInstanceOf[js.Any], touchstart = touchstart.asInstanceOf[js.Any], transitioncancel = transitioncancel.asInstanceOf[js.Any], transitionend = transitionend.asInstanceOf[js.Any], transitionrun = transitionrun.asInstanceOf[js.Any], transitionstart = transitionstart.asInstanceOf[js.Any], translationsChanged = translationsChanged.asInstanceOf[js.Any], volumechange = volumechange.asInstanceOf[js.Any], waiting = waiting.asInstanceOf[js.Any], wheel = wheel.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(abort = abort.asInstanceOf[js.Any], animationcancel = animationcancel.asInstanceOf[js.Any], animationend = animationend.asInstanceOf[js.Any], animationiteration = animationiteration.asInstanceOf[js.Any], animationstart = animationstart.asInstanceOf[js.Any], asChanged = asChanged.asInstanceOf[js.Any], auxclick = auxclick.asInstanceOf[js.Any], beforeinput = beforeinput.asInstanceOf[js.Any], blur = blur.asInstanceOf[js.Any], canplay = canplay.asInstanceOf[js.Any], canplaythrough = canplaythrough.asInstanceOf[js.Any], change = change.asInstanceOf[js.Any], click = click.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any], compositionend = compositionend.asInstanceOf[js.Any], compositionstart = compositionstart.asInstanceOf[js.Any], compositionupdate = compositionupdate.asInstanceOf[js.Any], contextmenu = contextmenu.asInstanceOf[js.Any], copy = copy.asInstanceOf[js.Any], cuechange = cuechange.asInstanceOf[js.Any], currentItemChanged = currentItemChanged.asInstanceOf[js.Any], cut = cut.asInstanceOf[js.Any], dataChanged = dataChanged.asInstanceOf[js.Any], dblclick = dblclick.asInstanceOf[js.Any], dndChanged = dndChanged.asInstanceOf[js.Any], drag = drag.asInstanceOf[js.Any], dragend = dragend.asInstanceOf[js.Any], dragenter = dragenter.asInstanceOf[js.Any], dragleave = dragleave.asInstanceOf[js.Any], dragover = dragover.asInstanceOf[js.Any], dragstart = dragstart.asInstanceOf[js.Any], drillModeChanged = drillModeChanged.asInstanceOf[js.Any], drop = drop.asInstanceOf[js.Any], durationchange = durationchange.asInstanceOf[js.Any], emptied = emptied.asInstanceOf[js.Any], ended = ended.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], expandedChanged = expandedChanged.asInstanceOf[js.Any], firstSelectedItemChanged = firstSelectedItemChanged.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any], focusin = focusin.asInstanceOf[js.Any], focusout = focusout.asInstanceOf[js.Any], formdata = formdata.asInstanceOf[js.Any], fullscreenchange = fullscreenchange.asInstanceOf[js.Any], fullscreenerror = fullscreenerror.asInstanceOf[js.Any], gotpointercapture = gotpointercapture.asInstanceOf[js.Any], groupHeaderPositionChanged = groupHeaderPositionChanged.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], invalid = invalid.asInstanceOf[js.Any], itemChanged = itemChanged.asInstanceOf[js.Any], keydown = keydown.asInstanceOf[js.Any], keypress = keypress.asInstanceOf[js.Any], keyup = keyup.asInstanceOf[js.Any], load = load.asInstanceOf[js.Any], loadeddata = loadeddata.asInstanceOf[js.Any], loadedmetadata = loadedmetadata.asInstanceOf[js.Any], loadstart = loadstart.asInstanceOf[js.Any], lostpointercapture = lostpointercapture.asInstanceOf[js.Any], mousedown = mousedown.asInstanceOf[js.Any], mouseenter = mouseenter.asInstanceOf[js.Any], mouseleave = mouseleave.asInstanceOf[js.Any], mousemove = mousemove.asInstanceOf[js.Any], mouseout = mouseout.asInstanceOf[js.Any], mouseover = mouseover.asInstanceOf[js.Any], mouseup = mouseup.asInstanceOf[js.Any], ojAnimateEnd = ojAnimateEnd.asInstanceOf[js.Any], ojAnimateStart = ojAnimateStart.asInstanceOf[js.Any], ojBeforeCollapse = ojBeforeCollapse.asInstanceOf[js.Any], ojBeforeCurrentItem = ojBeforeCurrentItem.asInstanceOf[js.Any], ojBeforeExpand = ojBeforeExpand.asInstanceOf[js.Any], ojCollapse = ojCollapse.asInstanceOf[js.Any], ojCopy = ojCopy.asInstanceOf[js.Any], ojCut = ojCut.asInstanceOf[js.Any], ojExpand = ojExpand.asInstanceOf[js.Any], ojPaste = ojPaste.asInstanceOf[js.Any], ojReorder = ojReorder.asInstanceOf[js.Any], paste = paste.asInstanceOf[js.Any], pause = pause.asInstanceOf[js.Any], play = play.asInstanceOf[js.Any], playing = playing.asInstanceOf[js.Any], pointercancel = pointercancel.asInstanceOf[js.Any], pointerdown = pointerdown.asInstanceOf[js.Any], pointerenter = pointerenter.asInstanceOf[js.Any], pointerleave = pointerleave.asInstanceOf[js.Any], pointermove = pointermove.asInstanceOf[js.Any], pointerout = pointerout.asInstanceOf[js.Any], pointerover = pointerover.asInstanceOf[js.Any], pointerup = pointerup.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], ratechange = ratechange.asInstanceOf[js.Any], reset = reset.asInstanceOf[js.Any], resize = resize.asInstanceOf[js.Any], scroll = scroll.asInstanceOf[js.Any], scrollPolicyChanged = scrollPolicyChanged.asInstanceOf[js.Any], scrollPolicyOptionsChanged = scrollPolicyOptionsChanged.asInstanceOf[js.Any], scrollPositionChanged = scrollPositionChanged.asInstanceOf[js.Any], securitypolicyviolation = securitypolicyviolation.asInstanceOf[js.Any], seeked = seeked.asInstanceOf[js.Any], seeking = seeking.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], selectionChanged = selectionChanged.asInstanceOf[js.Any], selectionModeChanged = selectionModeChanged.asInstanceOf[js.Any], selectionRequiredChanged = selectionRequiredChanged.asInstanceOf[js.Any], selectionchange = selectionchange.asInstanceOf[js.Any], selectstart = selectstart.asInstanceOf[js.Any], slotchange = slotchange.asInstanceOf[js.Any], stalled = stalled.asInstanceOf[js.Any], submit = submit.asInstanceOf[js.Any], suspend = suspend.asInstanceOf[js.Any], timeupdate = timeupdate.asInstanceOf[js.Any], toggle = toggle.asInstanceOf[js.Any], touchcancel = touchcancel.asInstanceOf[js.Any], touchend = touchend.asInstanceOf[js.Any], touchmove = touchmove.asInstanceOf[js.Any], touchstart = touchstart.asInstanceOf[js.Any], transitioncancel = transitioncancel.asInstanceOf[js.Any], transitionend = transitionend.asInstanceOf[js.Any], transitionrun = transitionrun.asInstanceOf[js.Any], transitionstart = transitionstart.asInstanceOf[js.Any], translationsChanged = translationsChanged.asInstanceOf[js.Any], volumechange = volumechange.asInstanceOf[js.Any], waiting = waiting.asInstanceOf[js.Any], webkitanimationend = webkitanimationend.asInstanceOf[js.Any], webkitanimationiteration = webkitanimationiteration.asInstanceOf[js.Any], webkitanimationstart = webkitanimationstart.asInstanceOf[js.Any], webkittransitionend = webkittransitionend.asInstanceOf[js.Any], wheel = wheel.asInstanceOf[js.Any])
       __obj.asInstanceOf[ojListViewEventMap[K, D]]
     }
     
@@ -1130,7 +1126,7 @@ object ojlistviewMod {
       
       inline def setSelectionRequired(value: Boolean): Self = StObject.set(x, "selectionRequired", value.asInstanceOf[js.Any])
       
-      inline def setSelectionVarargs(value: K*): Self = StObject.set(x, "selection", js.Array(value :_*))
+      inline def setSelectionVarargs(value: K*): Self = StObject.set(x, "selection", js.Array(value*))
       
       inline def setTranslations(value: AccessibleNavigateSkipItems): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     }
@@ -1139,7 +1135,7 @@ object ojlistviewMod {
   /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojlistview.ojListViewSettableProperties<K, D>> */
   trait ojListViewSettablePropertiesLenient[K, D]
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var as: js.UndefOr[String] = js.undefined
     
@@ -1242,7 +1238,7 @@ object ojlistviewMod {
       
       inline def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
       
-      inline def setSelectionVarargs(value: K*): Self = StObject.set(x, "selection", js.Array(value :_*))
+      inline def setSelectionVarargs(value: K*): Self = StObject.set(x, "selection", js.Array(value*))
       
       inline def setTranslations(value: AccessibleNavigateSkipItems): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
       

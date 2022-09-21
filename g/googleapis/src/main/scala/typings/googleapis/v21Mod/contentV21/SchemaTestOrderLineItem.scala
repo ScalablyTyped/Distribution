@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaTestOrderLineItem extends StObject {
   
   /**
-    * Product data from the time of the order placement.
+    * Required. Product data from the time of the order placement.
     */
   var product: js.UndefOr[SchemaTestOrderLineItemProduct] = js.undefined
   
   /**
-    * Number of items ordered.
+    * Required. Number of items ordered.
     */
-  var quantityOrdered: js.UndefOr[Double] = js.undefined
+  var quantityOrdered: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * Details of the return policy for the line item.
+    * Required. Details of the return policy for the line item.
     */
   var returnInfo: js.UndefOr[SchemaOrderLineItemReturnInfo] = js.undefined
   
   /**
-    * Details of the requested shipping for the line item.
+    * Required. Details of the requested shipping for the line item.
     */
   var shippingDetails: js.UndefOr[SchemaOrderLineItemShippingDetails] = js.undefined
 }
@@ -40,6 +40,8 @@ object SchemaTestOrderLineItem {
     inline def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
     
     inline def setQuantityOrdered(value: Double): Self = StObject.set(x, "quantityOrdered", value.asInstanceOf[js.Any])
+    
+    inline def setQuantityOrderedNull: Self = StObject.set(x, "quantityOrdered", null)
     
     inline def setQuantityOrderedUndefined: Self = StObject.set(x, "quantityOrdered", js.undefined)
     

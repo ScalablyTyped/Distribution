@@ -1,5 +1,6 @@
 package typings.hapiHapi.anon
 
+import typings.hapiHapi.mod.AuthArtifacts
 import typings.hapiHapi.mod.AuthCredentials
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +12,7 @@ trait Artifacts extends StObject {
     * The artifacts are used to bypass the default authentication strategies,
     * and are validated directly as if they were received via an authentication scheme. Defaults to no artifacts.
     */
-  var artifacts: js.UndefOr[js.Object] = js.undefined
+  var artifacts: js.UndefOr[AuthArtifacts] = js.undefined
   
   /**
     * The credentials are used to bypass the default authentication strategies,
@@ -33,7 +34,7 @@ object Artifacts {
   
   extension [Self <: Artifacts](x: Self) {
     
-    inline def setArtifacts(value: js.Object): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
+    inline def setArtifacts(value: AuthArtifacts): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
     
     inline def setArtifactsUndefined: Self = StObject.set(x, "artifacts", js.undefined)
     

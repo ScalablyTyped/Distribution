@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-time
 
-Typings are for version 2.1.0
+Typings are for version 3.0.0
 
 ## Library description:
 Measure the time a promise takes to resolve
@@ -10,10 +10,10 @@ Measure the time a promise takes to resolve
 | ------------------ | :-------------: |
 | Full name          | p-time |
 | Keywords           | promise, time, timed, timing, timer, elapsed, measure, bench, resolve, execute |
-| # releases         | 3 |
-| # dependents       | 6 |
-| # downloads        | 9338 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 4271.666666666667 |
+| # stars            | 64.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/p-time#readme)

@@ -8,37 +8,37 @@ object mod {
   
   @JSImport("@storybook/channels", JSImport.Default)
   @js.native
-  class default () extends Channel {
+  open class default () extends Channel {
     def this(hasTransportAsync: ChannelArgs) = this()
   }
   
   @JSImport("@storybook/channels", "Channel")
   @js.native
-  class Channel () extends StObject {
+  open class Channel () extends StObject {
     def this(hasTransportAsync: ChannelArgs) = this()
     
     def addListener(eventName: String, listener: Listener): Unit = js.native
     
     def addPeerListener(eventName: String, listener: Listener): Unit = js.native
     
-    /* private */ var data: js.Any = js.native
+    /* private */ var data: Any = js.native
     
     def emit(
       eventName: String,
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: Any
     ): Unit = js.native
     
     def eventNames(): js.Array[String] = js.native
     
-    /* private */ var events: js.Any = js.native
+    /* private */ var events: Any = js.native
     
-    /* private */ var handleEvent: js.Any = js.native
+    /* private */ var handleEvent: Any = js.native
     
     def hasTransport: Boolean = js.native
     
     val isAsync: Boolean = js.native
     
-    def last(eventName: String): js.Any = js.native
+    def last(eventName: String): Any = js.native
     
     def listenerCount(eventName: String): Double = js.native
     
@@ -50,16 +50,16 @@ object mod {
     
     def once(eventName: String, listener: Listener): Unit = js.native
     
-    /* private */ var onceListener: js.Any = js.native
+    /* private */ var onceListener: Any = js.native
     
     def removeAllListeners(): Unit = js.native
     def removeAllListeners(eventName: String): Unit = js.native
     
     def removeListener(eventName: String, listener: Listener): Unit = js.native
     
-    /* private */ var sender: js.Any = js.native
+    /* private */ var sender: Any = js.native
     
-    /* private */ val transport: js.Any = js.native
+    /* private */ val transport: Any = js.native
   }
   
   trait ChannelArgs extends StObject {
@@ -89,7 +89,7 @@ object mod {
   
   trait ChannelEvent extends StObject {
     
-    var args: js.Array[js.Any]
+    var args: js.Array[Any]
     
     var from: String
     
@@ -97,7 +97,7 @@ object mod {
   }
   object ChannelEvent {
     
-    inline def apply(args: js.Array[js.Any], from: String, `type`: String): ChannelEvent = {
+    inline def apply(args: js.Array[Any], from: String, `type`: String): ChannelEvent = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChannelEvent]
@@ -105,9 +105,9 @@ object mod {
     
     extension [Self <: ChannelEvent](x: Self) {
       
-      inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: Any*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -121,10 +121,10 @@ object mod {
   trait ChannelTransport extends StObject {
     
     def send(event: ChannelEvent): Unit = js.native
-    def send(event: ChannelEvent, options: js.Any): Unit = js.native
+    def send(event: ChannelEvent, options: Any): Unit = js.native
     
     def setHandler(handler: ChannelHandler): Unit = js.native
   }
   
-  type Listener = js.Function1[/* repeated */ js.Any, Unit]
+  type Listener = js.Function1[/* repeated */ Any, Unit]
 }

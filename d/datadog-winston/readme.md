@@ -10,10 +10,10 @@ Ship winston logs to datadog without breaking a sweat
 | ------------------ | :-------------: |
 | Full name          | datadog-winston |
 | Keywords           | - |
-| # releases         | 11 |
-| # dependents       | 1 |
-| # downloads        | 67288 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 63261.0 |
+| # stars            | 16.0 |
 
 ## Links
 - [Homepage](https://github.com/itsfadnis/datadog-winston#readme)

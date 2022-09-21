@@ -1,17 +1,16 @@
 package typings.storybookComponents.anon
 
-import typings.popperjsCore.enumsMod.Placement
 import typings.react.mod.ReactNode
+import typings.storybookComponents.mod.WithHideFn
 import typings.storybookComponents.storybookComponentsStrings.`right-click`
 import typings.storybookComponents.storybookComponentsStrings.click
 import typings.storybookComponents.storybookComponentsStrings.hover
 import typings.storybookComponents.storybookComponentsStrings.none
-import typings.storybookComponents.withTooltipMod.WithHideFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined @storybook/components.@storybook/components/dist/tooltip/WithTooltip.WithTooltipPureProps & {  startOpen :boolean | undefined} */
+/* Inlined @storybook/components.@storybook/components.WithTooltipPureProps & {  startOpen :boolean | undefined} */
 trait WithTooltipPurePropsstart extends StObject {
   
   var children: ReactNode
@@ -24,9 +23,9 @@ trait WithTooltipPurePropsstart extends StObject {
   
   var onDoubleClick: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onVisibilityChange: js.UndefOr[js.Function1[/* visibility */ Boolean, Unit]] = js.undefined
+  var onVisibilityChange: js.UndefOr[js.Function1[/* visibility */ Boolean, Unit | Boolean]] = js.undefined
   
-  var placement: js.UndefOr[Placement] = js.undefined
+  var placement: js.UndefOr[typings.storybookComponents.popperjsCoreLibEnumsMod.Placement] = js.undefined
   
   var startOpen: js.UndefOr[Boolean] = js.undefined
   
@@ -63,17 +62,17 @@ object WithTooltipPurePropsstart {
     
     inline def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
     
-    inline def setModifiersVarargs(value: PartialModifierstring*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
+    inline def setModifiersVarargs(value: PartialModifierstring*): Self = StObject.set(x, "modifiers", js.Array(value*))
     
     inline def setOnDoubleClick(value: () => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction0(value))
     
     inline def setOnDoubleClickUndefined: Self = StObject.set(x, "onDoubleClick", js.undefined)
     
-    inline def setOnVisibilityChange(value: /* visibility */ Boolean => Unit): Self = StObject.set(x, "onVisibilityChange", js.Any.fromFunction1(value))
+    inline def setOnVisibilityChange(value: /* visibility */ Boolean => Unit | Boolean): Self = StObject.set(x, "onVisibilityChange", js.Any.fromFunction1(value))
     
     inline def setOnVisibilityChangeUndefined: Self = StObject.set(x, "onVisibilityChange", js.undefined)
     
-    inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+    inline def setPlacement(value: typings.storybookComponents.popperjsCoreLibEnumsMod.Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
     inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeResourcePolicyResponse extends StObject {
   
   /**
-    * The AWS Identity and Access Management policy for the resource. 
+    * The IAM policy for the resource. 
     */
   var Policy: js.UndefOr[PolicyString] = js.undefined
 }

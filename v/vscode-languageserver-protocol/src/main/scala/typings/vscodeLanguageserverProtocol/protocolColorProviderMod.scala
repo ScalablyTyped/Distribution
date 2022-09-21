@@ -1,13 +1,14 @@
 package typings.vscodeLanguageserverProtocol
 
-import typings.vscodeJsonrpc.mod.ProgressType
-import typings.vscodeJsonrpc.mod.RequestHandler
+import typings.vscodeJsonrpc.connectionMod.RequestHandler
+import typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection
 import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType
 import typings.vscodeLanguageserverProtocol.protocolMod.PartialResultParams
 import typings.vscodeLanguageserverProtocol.protocolMod.StaticRegistrationOptions
 import typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions
 import typings.vscodeLanguageserverProtocol.protocolMod.WorkDoneProgressOptions
 import typings.vscodeLanguageserverProtocol.protocolMod.WorkDoneProgressParams
+import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashcolorPresentation
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashdocumentColor
 import typings.vscodeLanguageserverTypes.mod.Color
 import typings.vscodeLanguageserverTypes.mod.ColorInformation
@@ -22,7 +23,15 @@ object protocolColorProviderMod {
   
   object ColorPresentationRequest {
     
-    @JSImport("vscode-languageserver-protocol/lib/protocol.colorProvider", "ColorPresentationRequest.type")
+    @JSImport("vscode-languageserver-protocol/lib/common/protocol.colorProvider", "ColorPresentationRequest.messageDirection")
+    @js.native
+    val messageDirection: MessageDirection = js.native
+    
+    @JSImport("vscode-languageserver-protocol/lib/common/protocol.colorProvider", "ColorPresentationRequest.method")
+    @js.native
+    val method: textDocumentSlashcolorPresentation = js.native
+    
+    @JSImport("vscode-languageserver-protocol/lib/common/protocol.colorProvider", "ColorPresentationRequest.type")
     @js.native
     val `type`: ProtocolRequestType[
         ColorPresentationParams, 
@@ -37,16 +46,15 @@ object protocolColorProviderMod {
   
   object DocumentColorRequest {
     
-    @JSImport("vscode-languageserver-protocol/lib/protocol.colorProvider", "DocumentColorRequest.method")
+    @JSImport("vscode-languageserver-protocol/lib/common/protocol.colorProvider", "DocumentColorRequest.messageDirection")
+    @js.native
+    val messageDirection: MessageDirection = js.native
+    
+    @JSImport("vscode-languageserver-protocol/lib/common/protocol.colorProvider", "DocumentColorRequest.method")
     @js.native
     val method: textDocumentSlashdocumentColor = js.native
     
-    /** @deprecated Use DocumentColorRequest.type */
-    @JSImport("vscode-languageserver-protocol/lib/protocol.colorProvider", "DocumentColorRequest.resultType")
-    @js.native
-    val resultType: ProgressType[js.Array[ColorInformation]] = js.native
-    
-    @JSImport("vscode-languageserver-protocol/lib/protocol.colorProvider", "DocumentColorRequest.type")
+    @JSImport("vscode-languageserver-protocol/lib/common/protocol.colorProvider", "DocumentColorRequest.type")
     @js.native
     val `type`: ProtocolRequestType[
         DocumentColorParams, 

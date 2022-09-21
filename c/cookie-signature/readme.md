@@ -10,10 +10,10 @@ Sign and unsign cookies
 | ------------------ | :-------------: |
 | Full name          | cookie-signature |
 | Keywords           | cookie, sign, unsign |
-| # releases         | 0 |
-| # dependents       | 373 |
-| # downloads        | 628744034 |
-| # stars            | 12 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 9.193659866666667E7 |
+| # stars            | 140.0 |
 
 ## Links
 - [Homepage](https://github.com/visionmedia/node-cookie-signature#readme)

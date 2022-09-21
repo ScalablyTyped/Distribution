@@ -20,12 +20,12 @@ trait IScroll extends StObject {
   def isReady(): Boolean = js.native
   
   def off(`type`: String): Unit = js.native
-  def off(`type`: String, fn: js.Function1[/* evt */ js.UndefOr[js.Any], Unit]): Unit = js.native
+  def off(`type`: String, fn: js.Function1[/* evt */ js.UndefOr[Any], Unit]): Unit = js.native
   
   // Events
   def on(`type`: String, fn: js.Function0[Unit]): Unit = js.native
   // Events
-  def on(`type`: String, fn: js.Function1[/* evt */ js.UndefOr[js.Any], Unit]): Unit = js.native
+  def on(`type`: String, fn: js.Function1[/* evt */ js.UndefOr[Any], Unit]): Unit = js.native
   
   def refresh(): Unit = js.native
   

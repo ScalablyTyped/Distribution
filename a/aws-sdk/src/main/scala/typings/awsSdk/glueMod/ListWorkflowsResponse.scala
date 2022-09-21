@@ -33,6 +33,6 @@ object ListWorkflowsResponse {
     
     inline def setWorkflowsUndefined: Self = StObject.set(x, "Workflows", js.undefined)
     
-    inline def setWorkflowsVarargs(value: NameString*): Self = StObject.set(x, "Workflows", js.Array(value :_*))
+    inline def setWorkflowsVarargs(value: NameString*): Self = StObject.set(x, "Workflows", js.Array(value*))
   }
 }

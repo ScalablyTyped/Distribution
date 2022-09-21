@@ -1,6 +1,5 @@
 package typings.winrt.Windows.UI.Notifications
 
-import typings.std.Date
 import typings.winrt.Windows.Data.Xml.Dom.XmlDocument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +10,7 @@ trait BadgeNotification
      with IBadgeNotification
 object BadgeNotification {
   
-  inline def apply(content: XmlDocument, expirationTime: Date): BadgeNotification = {
+  inline def apply(content: XmlDocument, expirationTime: js.Date): BadgeNotification = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], expirationTime = expirationTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[BadgeNotification]
   }

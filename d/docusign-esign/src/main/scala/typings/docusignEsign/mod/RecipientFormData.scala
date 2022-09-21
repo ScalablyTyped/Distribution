@@ -72,7 +72,7 @@ object RecipientFormData {
     
     inline def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
     
-    inline def setFormDataVarargs(value: FormDataItem*): Self = StObject.set(x, "formData", js.Array(value :_*))
+    inline def setFormDataVarargs(value: FormDataItem*): Self = StObject.set(x, "formData", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -1,5 +1,6 @@
 package typings.algoliasearch.anon
 
+import typings.algoliaClientSearch.mod.ApiKeyACLType
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,9 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined @algolia/client-search.@algolia/client-search.UpdateApiKeyOptions & std.Pick<@algolia/transporter.@algolia/transporter.RequestOptions, std.Exclude<keyof @algolia/transporter.@algolia/transporter.RequestOptions, 'queryParameters'>> */
 trait UpdateApiKeyOptionsPickRe extends StObject {
   
+  /**
+    * List of permissions the key contains.
+    */
+  val acl: js.UndefOr[js.Array[ApiKeyACLType]] = js.undefined
+  
   var cacheable: js.UndefOr[Boolean] = js.undefined
   
-  var data: js.UndefOr[Record[String, js.Any]] = js.undefined
+  var data: js.UndefOr[Record[String, Any]] = js.undefined
   
   /**
     * Specify a description of the API key. Used for informative purposes only. It has impact on the functionality of the API key.
@@ -61,11 +67,17 @@ object UpdateApiKeyOptionsPickRe {
   
   extension [Self <: UpdateApiKeyOptionsPickRe](x: Self) {
     
+    inline def setAcl(value: js.Array[ApiKeyACLType]): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
+    
+    inline def setAclUndefined: Self = StObject.set(x, "acl", js.undefined)
+    
+    inline def setAclVarargs(value: ApiKeyACLType*): Self = StObject.set(x, "acl", js.Array(value*))
+    
     inline def setCacheable(value: Boolean): Self = StObject.set(x, "cacheable", value.asInstanceOf[js.Any])
     
     inline def setCacheableUndefined: Self = StObject.set(x, "cacheable", js.undefined)
     
-    inline def setData(value: Record[String, js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Record[String, Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -81,7 +93,7 @@ object UpdateApiKeyOptionsPickRe {
     
     inline def setIndexesUndefined: Self = StObject.set(x, "indexes", js.undefined)
     
-    inline def setIndexesVarargs(value: String*): Self = StObject.set(x, "indexes", js.Array(value :_*))
+    inline def setIndexesVarargs(value: String*): Self = StObject.set(x, "indexes", js.Array(value*))
     
     inline def setMaxHitsPerQuery(value: Double): Self = StObject.set(x, "maxHitsPerQuery", value.asInstanceOf[js.Any])
     
@@ -99,7 +111,7 @@ object UpdateApiKeyOptionsPickRe {
     
     inline def setReferersUndefined: Self = StObject.set(x, "referers", js.undefined)
     
-    inline def setReferersVarargs(value: String*): Self = StObject.set(x, "referers", js.Array(value :_*))
+    inline def setReferersVarargs(value: String*): Self = StObject.set(x, "referers", js.Array(value*))
     
     inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     

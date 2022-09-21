@@ -12,20 +12,20 @@ trait BootstrapChartOptionChangedEventArgs
   
   val name: String
   
-  val previousValue: js.Any
+  val previousValue: Any
   
-  val value: js.Any
+  val value: Any
 }
 object BootstrapChartOptionChangedEventArgs {
   
   inline def apply(
-    component: js.Any,
-    element: js.Any,
+    component: Any,
+    element: Any,
     fullName: String,
     name: String,
-    previousValue: js.Any,
+    previousValue: Any,
     sender: Control,
-    value: js.Any
+    value: Any
   ): BootstrapChartOptionChangedEventArgs = {
     val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], fullName = fullName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], previousValue = previousValue.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootstrapChartOptionChangedEventArgs]
@@ -37,8 +37,8 @@ object BootstrapChartOptionChangedEventArgs {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setPreviousValue(value: js.Any): Self = StObject.set(x, "previousValue", value.asInstanceOf[js.Any])
+    inline def setPreviousValue(value: Any): Self = StObject.set(x, "previousValue", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -8,6 +8,7 @@ trait EcKeyImportParams
   extends StObject
      with Algorithm {
   
+  /* standard dom */
   var namedCurve: NamedCurve
 }
 object EcKeyImportParams {

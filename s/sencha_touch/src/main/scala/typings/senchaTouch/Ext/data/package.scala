@@ -1,24 +1,28 @@
 package typings.senchaTouch.Ext.data
 
+import typings.senchaTouch.Ext.IAbstractManager
+import typings.senchaTouch.Ext.IBase
+import typings.senchaTouch.Ext.data.proxy.IWebStorage
+import typings.senchaTouch.Ext.util.ICollection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type IJsonP = typings.senchaTouch.Ext.IBase
+type IJsonP = IBase
 
-type ILocalStorageProxy = typings.senchaTouch.Ext.data.proxy.IWebStorage
+type ILocalStorageProxy = IWebStorage
 
-type IModelManager = typings.senchaTouch.Ext.IAbstractManager
+type IModelManager = IAbstractManager
 
-type ISessionStorageProxy = typings.senchaTouch.Ext.data.proxy.IWebStorage
+type ISessionStorageProxy = IWebStorage
 
-type ISortTypes = typings.senchaTouch.Ext.IBase
+type ISortTypes = IBase
 
-type IStoreManager = typings.senchaTouch.Ext.util.ICollection
+type IStoreManager = ICollection
 
-type IStoreMgr = typings.senchaTouch.Ext.util.ICollection
+type IStoreMgr = ICollection
 
-type ITypes = typings.senchaTouch.Ext.IBase
+type ITypes = IBase
 
-type IValidations = typings.senchaTouch.Ext.IBase
+type IValidations = IBase

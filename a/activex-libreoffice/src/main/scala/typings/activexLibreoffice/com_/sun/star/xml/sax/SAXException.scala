@@ -20,17 +20,17 @@ trait SAXException
      with Exception {
   
   /** This field may contain a wrapped exception. */
-  var WrappedException: js.Any
+  var WrappedException: Any
 }
 object SAXException {
   
-  inline def apply(Context: XInterface, Message: String, WrappedException: js.Any): SAXException = {
+  inline def apply(Context: XInterface, Message: String, WrappedException: Any): SAXException = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], WrappedException = WrappedException.asInstanceOf[js.Any])
     __obj.asInstanceOf[SAXException]
   }
   
   extension [Self <: SAXException](x: Self) {
     
-    inline def setWrappedException(value: js.Any): Self = StObject.set(x, "WrappedException", value.asInstanceOf[js.Any])
+    inline def setWrappedException(value: Any): Self = StObject.set(x, "WrappedException", value.asInstanceOf[js.Any])
   }
 }

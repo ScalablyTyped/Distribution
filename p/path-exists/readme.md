@@ -1,7 +1,7 @@
 
 # Scala.js typings for path-exists
 
-Typings are for version 4.0.0
+Typings are for version 5.0.0
 
 ## Library description:
 Check if a path exists
@@ -11,9 +11,9 @@ Check if a path exists
 | Full name          | path-exists |
 | Keywords           | path, exists, exist, file, filepath, fs, filesystem, file-system, access, stat |
 | # releases         | 2 |
-| # dependents       | 951 |
-| # downloads        | 1726128876 |
-| # stars            | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 2.721976226666667E8 |
+| # stars            | 140.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/path-exists#readme)

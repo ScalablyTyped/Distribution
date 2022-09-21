@@ -1,55 +1,52 @@
 package typings.angularCompiler.mod
 
-import typings.angularCompiler.i18nAstMod.I18nMeta
-import typings.angularCompiler.mlParserAstMod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "Element")
 @js.native
-class Element protected ()
-  extends typings.angularCompiler.compilerMod.Element {
+open class Element protected () extends Element2 {
   def this(
     name: String,
-    attrs: js.Array[typings.angularCompiler.mlParserAstMod.Attribute],
-    children: js.Array[Node],
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    startSourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+    attrs: js.Array[Attribute],
+    children: js.Array[Node2],
+    sourceSpan: ParseSourceSpan,
+    startSourceSpan: ParseSourceSpan
   ) = this()
   def this(
     name: String,
-    attrs: js.Array[typings.angularCompiler.mlParserAstMod.Attribute],
-    children: js.Array[Node],
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    startSourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    endSourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+    attrs: js.Array[Attribute],
+    children: js.Array[Node2],
+    sourceSpan: ParseSourceSpan,
+    startSourceSpan: ParseSourceSpan,
+    endSourceSpan: ParseSourceSpan
   ) = this()
   def this(
     name: String,
-    attrs: js.Array[typings.angularCompiler.mlParserAstMod.Attribute],
-    children: js.Array[Node],
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    startSourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
+    attrs: js.Array[Attribute],
+    children: js.Array[Node2],
+    sourceSpan: ParseSourceSpan,
+    startSourceSpan: ParseSourceSpan,
     endSourceSpan: Null,
-    i18n: I18nMeta
+    i18n: I18nMeta2
   ) = this()
   def this(
     name: String,
-    attrs: js.Array[typings.angularCompiler.mlParserAstMod.Attribute],
-    children: js.Array[Node],
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    startSourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
+    attrs: js.Array[Attribute],
+    children: js.Array[Node2],
+    sourceSpan: ParseSourceSpan,
+    startSourceSpan: ParseSourceSpan,
     endSourceSpan: Unit,
-    i18n: I18nMeta
+    i18n: I18nMeta2
   ) = this()
   def this(
     name: String,
-    attrs: js.Array[typings.angularCompiler.mlParserAstMod.Attribute],
-    children: js.Array[Node],
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    startSourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    endSourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    i18n: I18nMeta
+    attrs: js.Array[Attribute],
+    children: js.Array[Node2],
+    sourceSpan: ParseSourceSpan,
+    startSourceSpan: ParseSourceSpan,
+    endSourceSpan: ParseSourceSpan,
+    i18n: I18nMeta2
   ) = this()
 }

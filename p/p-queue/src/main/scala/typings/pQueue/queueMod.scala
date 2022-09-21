@@ -20,5 +20,5 @@ object queueMod {
     var size: Double = js.native
   }
   
-  type RunFunction = js.Function0[js.Promise[js.Any]]
+  type RunFunction = js.Function0[js.Promise[Any]]
 }

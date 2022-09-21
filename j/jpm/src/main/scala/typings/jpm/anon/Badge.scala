@@ -21,9 +21,9 @@ trait Badge extends StObject {
   
   var label: String
   
-  var onChange: js.UndefOr[js.Function1[/* state */ ActionButtonState, js.Any]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* state */ ActionButtonState, Any]] = js.undefined
   
-  var onClick: js.UndefOr[js.Function1[/* state */ ActionButton, js.Any]] = js.undefined
+  var onClick: js.UndefOr[js.Function1[/* state */ ActionButton, Any]] = js.undefined
 }
 object Badge {
   
@@ -52,11 +52,11 @@ object Badge {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    inline def setOnChange(value: /* state */ ActionButtonState => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: /* state */ ActionButtonState => Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    inline def setOnClick(value: /* state */ ActionButton => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: /* state */ ActionButton => Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
   }

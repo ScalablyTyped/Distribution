@@ -4,20 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An observed value of a metric.
-  */
 trait SchemaGoogleCloudMlV1HyperparameterOutputHyperparameterMetric extends StObject {
   
   /**
     * The objective value at this training step.
     */
-  var objectiveValue: js.UndefOr[Double] = js.undefined
+  var objectiveValue: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * The global training step for this metric.
     */
-  var trainingStep: js.UndefOr[String] = js.undefined
+  var trainingStep: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGoogleCloudMlV1HyperparameterOutputHyperparameterMetric {
   
@@ -30,9 +27,13 @@ object SchemaGoogleCloudMlV1HyperparameterOutputHyperparameterMetric {
     
     inline def setObjectiveValue(value: Double): Self = StObject.set(x, "objectiveValue", value.asInstanceOf[js.Any])
     
+    inline def setObjectiveValueNull: Self = StObject.set(x, "objectiveValue", null)
+    
     inline def setObjectiveValueUndefined: Self = StObject.set(x, "objectiveValue", js.undefined)
     
     inline def setTrainingStep(value: String): Self = StObject.set(x, "trainingStep", value.asInstanceOf[js.Any])
+    
+    inline def setTrainingStepNull: Self = StObject.set(x, "trainingStep", null)
     
     inline def setTrainingStepUndefined: Self = StObject.set(x, "trainingStep", js.undefined)
   }

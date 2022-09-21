@@ -1,6 +1,5 @@
 package typings.checksum
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,8 +12,8 @@ object mod {
     * @param options    Allows to set the algorithm
     * @returns    Checksum
     */
-  inline def apply(value: js.Any): String = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def apply(value: js.Any, options: ChecksumOptions): String = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(value: Any): String = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(value: Any, options: ChecksumOptions): String = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("checksum", JSImport.Namespace)
   @js.native
@@ -25,7 +24,7 @@ object mod {
     * @param filename    The file name
     * @param callback    Callback which is called with the result or an error
     */
-  inline def file(filename: String, callback: js.Function2[/* error */ Error, /* hash */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(filename.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def file(filename: String, callback: js.Function2[/* error */ js.Error, /* hash */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(filename.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Generate the checksum for a file on disk
     * @param filename    The file name
@@ -35,7 +34,7 @@ object mod {
   inline def file(
     filename: String,
     options: ChecksumOptions,
-    callback: js.Function2[/* error */ Error, /* hash */ String, Unit]
+    callback: js.Function2[/* error */ js.Error, /* hash */ String, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
@@ -48,6 +47,12 @@ object mod {
       * Can be 'sha1' or 'md5'  (see module 'crypto').
       */
     var algorithm: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Encoding to use, default 'hex'
+      * Can be 'base64' (see NodeJS encoding support)
+      */
+    var encoding: js.UndefOr[String] = js.undefined
   }
   object ChecksumOptions {
     
@@ -61,6 +66,10 @@ object mod {
       inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
       inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
+      
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     }
   }
 }

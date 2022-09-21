@@ -12,9 +12,9 @@ trait DiagramNodes extends StObject {
   
   val Creator: Double
   
-  def Item(Index: js.Any): DiagramNode
+  def Item(Index: Any): DiagramNode
   
-  val Parent: js.Any
+  val Parent: Any
   
   def SelectAll(): Unit
   
@@ -27,8 +27,8 @@ object DiagramNodes {
     Application: Application,
     Count: Double,
     Creator: Double,
-    Item: js.Any => DiagramNode,
-    Parent: js.Any,
+    Item: Any => DiagramNode,
+    Parent: Any,
     SelectAll: () => Unit,
     WordDotDiagramNodes_typekey: DiagramNodes
   ): DiagramNodes = {
@@ -45,9 +45,9 @@ object DiagramNodes {
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => DiagramNode): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => DiagramNode): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSelectAll(value: () => Unit): Self = StObject.set(x, "SelectAll", js.Any.fromFunction0(value))
     

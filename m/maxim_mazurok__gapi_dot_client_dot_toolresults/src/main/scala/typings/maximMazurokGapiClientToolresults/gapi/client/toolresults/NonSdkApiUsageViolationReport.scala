@@ -31,7 +31,7 @@ object NonSdkApiUsageViolationReport {
     
     inline def setExampleApisUndefined: Self = StObject.set(x, "exampleApis", js.undefined)
     
-    inline def setExampleApisVarargs(value: NonSdkApi*): Self = StObject.set(x, "exampleApis", js.Array(value :_*))
+    inline def setExampleApisVarargs(value: NonSdkApi*): Self = StObject.set(x, "exampleApis", js.Array(value*))
     
     inline def setMinSdkVersion(value: Double): Self = StObject.set(x, "minSdkVersion", value.asInstanceOf[js.Any])
     

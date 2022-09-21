@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.GeneralizedHermite")
 @js.native
-class GeneralizedHermite ()
+open class GeneralizedHermite ()
   extends typings.ranjs.mod.dist.GeneralizedHermite {
   def this(a1: Double) = this()
   def this(a1: Double, am: Double) = this()

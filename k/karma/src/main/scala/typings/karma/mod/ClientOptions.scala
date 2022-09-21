@@ -66,7 +66,7 @@ object ClientOptions {
     
     inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
     
     inline def setCaptureConsole(value: Boolean): Self = StObject.set(x, "captureConsole", value.asInstanceOf[js.Any])
     

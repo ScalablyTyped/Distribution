@@ -12,23 +12,23 @@ object webGLClippingMod {
   
   @JSImport("three/src/renderers/webgl/WebGLClipping", "WebGLClipping")
   @js.native
-  class WebGLClipping protected () extends StObject {
+  open class WebGLClipping protected () extends StObject {
     def this(properties: WebGLProperties) = this()
     
     def beginShadows(): Unit = js.native
     
     def endShadows(): Unit = js.native
     
-    def init(planes: js.Array[js.Any], enableLocalClipping: Boolean, camera: Camera): Boolean = js.native
+    def init(planes: js.Array[Any], enableLocalClipping: Boolean, camera: Camera): Boolean = js.native
     
     /**
-    	 * @default 0
-    	 */
+      * @default 0
+      */
     var numIntersection: Double = js.native
     
     /**
-    	 * @default 0
-    	 */
+      * @default 0
+      */
     var numPlanes: Double = js.native
     
     def setState(material: Material, camera: Camera, useCache: Boolean): Unit = js.native

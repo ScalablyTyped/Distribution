@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateUserPoolRequest extends StObject {
   
   /**
-    * Use this setting to define which verified available method a user can use to recover their password when they call ForgotPassword. It allows you to define a preferred method when a user has more than one method available. With this setting, SMS does not qualify for a valid password recovery mechanism if the user also has SMS MFA enabled. In the absence of this setting, Cognito uses the legacy behavior to determine the recovery method where SMS is preferred over email.
+    * The available verified method a user can use to recover their password when they call ForgotPassword. You can use this setting to define a preferred method when a user has more than one method available. With this setting, SMS doesn't qualify for a valid password recovery mechanism if the user also has SMS multi-factor authentication (MFA) activated. In the absence of this setting, Amazon Cognito uses the legacy behavior to determine the recovery method where SMS is preferred through email.
     */
   var AccountRecoverySetting: js.UndefOr[AccountRecoverySettingType] = js.undefined
   
@@ -17,42 +17,42 @@ trait UpdateUserPoolRequest extends StObject {
   var AdminCreateUserConfig: js.UndefOr[AdminCreateUserConfigType] = js.undefined
   
   /**
-    * The attributes that are automatically verified when the Amazon Cognito service makes a request to update user pools.
+    * The attributes that are automatically verified when Amazon Cognito requests to update user pools.
     */
   var AutoVerifiedAttributes: js.UndefOr[VerifiedAttributesListType] = js.undefined
   
   /**
-    * Device configuration.
+    * The device-remembering configuration for a user pool. A null value indicates that you have deactivated device remembering in your user pool.  When you provide a value for any DeviceConfiguration field, you activate the Amazon Cognito device-remembering feature. 
     */
   var DeviceConfiguration: js.UndefOr[DeviceConfigurationType] = js.undefined
   
   /**
-    * Email configuration.
+    * The email configuration of your user pool. The email configuration type sets your preferred sending method, Amazon Web Services Region, and sender for email invitation and verification messages from your user pool.
     */
   var EmailConfiguration: js.UndefOr[EmailConfigurationType] = js.undefined
   
   /**
-    * The contents of the email verification message.
+    * This parameter is no longer used. See VerificationMessageTemplateType.
     */
   var EmailVerificationMessage: js.UndefOr[EmailVerificationMessageType] = js.undefined
   
   /**
-    * The subject of the email verification message.
+    * This parameter is no longer used. See VerificationMessageTemplateType.
     */
   var EmailVerificationSubject: js.UndefOr[EmailVerificationSubjectType] = js.undefined
   
   /**
-    * The AWS Lambda configuration information from the request to update the user pool.
+    * The Lambda configuration information from the request to update the user pool.
     */
   var LambdaConfig: js.UndefOr[LambdaConfigType] = js.undefined
   
   /**
-    * Can be one of the following values:    OFF - MFA tokens are not required and cannot be specified during user registration.    ON - MFA tokens are required for all user registrations. You can only specify required when you are initially creating a user pool.    OPTIONAL - Users have the option when registering to create an MFA token.  
+    * Possible values include:    OFF - MFA tokens aren't required and can't be specified during user registration.    ON - MFA tokens are required for all user registrations. You can only specify ON when you're initially creating a user pool. You can use the SetUserPoolMfaConfig API operation to turn MFA "ON" for existing user pools.     OPTIONAL - Users have the option when registering to create an MFA token.  
     */
   var MfaConfiguration: js.UndefOr[UserPoolMfaType] = js.undefined
   
   /**
-    * A container with the policies you wish to update in a user pool.
+    * A container with the policies you want to update in a user pool.
     */
   var Policies: js.UndefOr[UserPoolPolicyType] = js.undefined
   
@@ -62,17 +62,22 @@ trait UpdateUserPoolRequest extends StObject {
   var SmsAuthenticationMessage: js.UndefOr[SmsVerificationMessageType] = js.undefined
   
   /**
-    * SMS configuration.
+    * The SMS configuration with the settings that your Amazon Cognito user pool must use to send an SMS message from your Amazon Web Services account through Amazon Simple Notification Service. To send SMS messages with Amazon SNS in the Amazon Web Services Region that you want, the Amazon Cognito user pool uses an Identity and Access Management (IAM) role in your Amazon Web Services account.
     */
   var SmsConfiguration: js.UndefOr[SmsConfigurationType] = js.undefined
   
   /**
-    * A container with information about the SMS verification message.
+    * This parameter is no longer used. See VerificationMessageTemplateType.
     */
   var SmsVerificationMessage: js.UndefOr[SmsVerificationMessageType] = js.undefined
   
   /**
-    * Used to enable advanced security risk detection. Set the key AdvancedSecurityMode to the value "AUDIT".
+    * The settings for updates to user attributes. These settings include the property AttributesRequireVerificationBeforeUpdate, a user-pool setting that tells Amazon Cognito how to handle changes to the value of your users' email address and phone number attributes. For more information, see  Verifying updates to email addresses and phone numbers.
+    */
+  var UserAttributeUpdateSettings: js.UndefOr[UserAttributeUpdateSettingsType] = js.undefined
+  
+  /**
+    * Enables advanced security risk detection. Set the key AdvancedSecurityMode to the value "AUDIT".
     */
   var UserPoolAddOns: js.UndefOr[UserPoolAddOnsType] = js.undefined
   
@@ -112,7 +117,7 @@ object UpdateUserPoolRequest {
     
     inline def setAutoVerifiedAttributesUndefined: Self = StObject.set(x, "AutoVerifiedAttributes", js.undefined)
     
-    inline def setAutoVerifiedAttributesVarargs(value: VerifiedAttributeType*): Self = StObject.set(x, "AutoVerifiedAttributes", js.Array(value :_*))
+    inline def setAutoVerifiedAttributesVarargs(value: VerifiedAttributeType*): Self = StObject.set(x, "AutoVerifiedAttributes", js.Array(value*))
     
     inline def setDeviceConfiguration(value: DeviceConfigurationType): Self = StObject.set(x, "DeviceConfiguration", value.asInstanceOf[js.Any])
     
@@ -153,6 +158,10 @@ object UpdateUserPoolRequest {
     inline def setSmsVerificationMessage(value: SmsVerificationMessageType): Self = StObject.set(x, "SmsVerificationMessage", value.asInstanceOf[js.Any])
     
     inline def setSmsVerificationMessageUndefined: Self = StObject.set(x, "SmsVerificationMessage", js.undefined)
+    
+    inline def setUserAttributeUpdateSettings(value: UserAttributeUpdateSettingsType): Self = StObject.set(x, "UserAttributeUpdateSettings", value.asInstanceOf[js.Any])
+    
+    inline def setUserAttributeUpdateSettingsUndefined: Self = StObject.set(x, "UserAttributeUpdateSettings", js.undefined)
     
     inline def setUserPoolAddOns(value: UserPoolAddOnsType): Self = StObject.set(x, "UserPoolAddOns", value.asInstanceOf[js.Any])
     

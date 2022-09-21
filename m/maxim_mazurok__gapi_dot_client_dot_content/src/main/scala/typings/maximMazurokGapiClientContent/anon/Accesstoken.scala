@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientContent.anon
 
-import typings.maximMazurokGapiClientContent.gapi.client.content.AccountLabel
+import typings.maximMazurokGapiClientContent.gapi.client.content.AccountCredentials
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ trait Accesstoken extends StObject {
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
   
-  /** Required. The id of the account this label belongs to. */
+  /** Required. The merchant id of the account these credentials belong to. */
   var accountId: String
   
   /** Data format for response. */
@@ -39,7 +39,7 @@ trait Accesstoken extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: AccountLabel
+  var resource: AccountCredentials
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,7 +49,7 @@ trait Accesstoken extends StObject {
 }
 object Accesstoken {
   
-  inline def apply(accountId: String, resource: AccountLabel): Accesstoken = {
+  inline def apply(accountId: String, resource: AccountCredentials): Accesstoken = {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Accesstoken]
   }
@@ -94,7 +94,7 @@ object Accesstoken {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: AccountLabel): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: AccountCredentials): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

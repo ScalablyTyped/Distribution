@@ -4,36 +4,35 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Object to represent a person.
-  */
 trait SchemaPerson extends StObject {
   
   /**
-    * The person&#39;s email addresses
+    * The person's email addresses
     */
   var emailAddresses: js.UndefOr[js.Array[SchemaEmailAddress]] = js.undefined
   
   /**
-    * The resource name of the person to provide information about. See &lt;a
-    * href=&quot;https://developers.google.com/people/api/rest/v1/people/get&quot;&gt;
-    * People.get&lt;/a&gt; from Google People API.
+    * The resource name of the person to provide information about. See [`People.get`](https://developers.google.com/people/api/rest/v1/people/get) from the Google People API.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Obfuscated ID of a person.
     */
-  var obfuscatedId: js.UndefOr[String] = js.undefined
+  var obfuscatedId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The person&#39;s name
+    * The person's name
     */
   var personNames: js.UndefOr[js.Array[SchemaName]] = js.undefined
   
   /**
-    * A person&#39;s read-only photo. A picture shown next to the person&#39;s
-    * name to help others recognize the person in search results.
+    * The person's phone numbers
+    */
+  var phoneNumbers: js.UndefOr[js.Array[SchemaPhoneNumber]] = js.undefined
+  
+  /**
+    * A person's read-only photo. A picture shown next to the person's name to help others recognize the person in search results.
     */
   var photos: js.UndefOr[js.Array[SchemaPhoto]] = js.undefined
 }
@@ -50,13 +49,17 @@ object SchemaPerson {
     
     inline def setEmailAddressesUndefined: Self = StObject.set(x, "emailAddresses", js.undefined)
     
-    inline def setEmailAddressesVarargs(value: SchemaEmailAddress*): Self = StObject.set(x, "emailAddresses", js.Array(value :_*))
+    inline def setEmailAddressesVarargs(value: SchemaEmailAddress*): Self = StObject.set(x, "emailAddresses", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setObfuscatedId(value: String): Self = StObject.set(x, "obfuscatedId", value.asInstanceOf[js.Any])
+    
+    inline def setObfuscatedIdNull: Self = StObject.set(x, "obfuscatedId", null)
     
     inline def setObfuscatedIdUndefined: Self = StObject.set(x, "obfuscatedId", js.undefined)
     
@@ -64,12 +67,18 @@ object SchemaPerson {
     
     inline def setPersonNamesUndefined: Self = StObject.set(x, "personNames", js.undefined)
     
-    inline def setPersonNamesVarargs(value: SchemaName*): Self = StObject.set(x, "personNames", js.Array(value :_*))
+    inline def setPersonNamesVarargs(value: SchemaName*): Self = StObject.set(x, "personNames", js.Array(value*))
+    
+    inline def setPhoneNumbers(value: js.Array[SchemaPhoneNumber]): Self = StObject.set(x, "phoneNumbers", value.asInstanceOf[js.Any])
+    
+    inline def setPhoneNumbersUndefined: Self = StObject.set(x, "phoneNumbers", js.undefined)
+    
+    inline def setPhoneNumbersVarargs(value: SchemaPhoneNumber*): Self = StObject.set(x, "phoneNumbers", js.Array(value*))
     
     inline def setPhotos(value: js.Array[SchemaPhoto]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
     
     inline def setPhotosUndefined: Self = StObject.set(x, "photos", js.undefined)
     
-    inline def setPhotosVarargs(value: SchemaPhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
+    inline def setPhotosVarargs(value: SchemaPhoto*): Self = StObject.set(x, "photos", js.Array(value*))
   }
 }

@@ -10,10 +10,10 @@ object tabUnselectedMod {
   
   @JSImport("material-ui/svg-icons/action/tab-unselected", JSImport.Default)
   @js.native
-  class default () extends ActionTabUnselected
+  open class default () extends ActionTabUnselected
   
   @JSImport("material-ui/svg-icons/action/tab-unselected", "ActionTabUnselected")
   @js.native
-  class ActionTabUnselected ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionTabUnselected ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

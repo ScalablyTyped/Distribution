@@ -17,5 +17,5 @@ trait GroundConstructor
 Instantiable0[Ground]
      with Instantiable1[/* properties */ GroundProperties, Ground] {
   
-  def fromJSON(json: js.Any): Ground = js.native
+  def fromJSON(json: Any): Ground = js.native
 }

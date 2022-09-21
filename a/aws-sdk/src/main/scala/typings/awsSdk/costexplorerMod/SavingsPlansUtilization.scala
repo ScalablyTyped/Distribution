@@ -12,7 +12,7 @@ trait SavingsPlansUtilization extends StObject {
   var TotalCommitment: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * The amount of your Savings Plans commitment that was not consumed from Savings Plans eligible usage in a specific period.
+    * The amount of your Savings Plans commitment that wasn't consumed from Savings Plans eligible usage in a specific period.
     */
   var UnusedCommitment: js.UndefOr[GenericString] = js.undefined
   

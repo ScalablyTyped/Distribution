@@ -15,6 +15,10 @@ object maximMazurokGapiClientAssuredworkloadsStrings {
   inline def GoogleCloudAssuredworkloadsV1beta1Workload: GoogleCloudAssuredworkloadsV1beta1Workload = "GoogleCloudAssuredworkloadsV1beta1Workload".asInstanceOf[GoogleCloudAssuredworkloadsV1beta1Workload]
   
   @js.native
+  sealed trait GoogleCloudAssuredworkloadsVersioningV1mainWorkload extends StObject
+  inline def GoogleCloudAssuredworkloadsVersioningV1mainWorkload: GoogleCloudAssuredworkloadsVersioningV1mainWorkload = "GoogleCloudAssuredworkloadsVersioningV1mainWorkload".asInstanceOf[GoogleCloudAssuredworkloadsVersioningV1mainWorkload]
+  
+  @js.native
   sealed trait GoogleLongrunningOperation extends StObject
   inline def GoogleLongrunningOperation: GoogleLongrunningOperation = "GoogleLongrunningOperation".asInstanceOf[GoogleLongrunningOperation]
   

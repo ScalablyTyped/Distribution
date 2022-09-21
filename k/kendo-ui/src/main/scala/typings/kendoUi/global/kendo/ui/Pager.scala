@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.Pager")
 @js.native
-class Pager protected ()
+open class Pager protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.Pager {
   def this(element: Element) = this()

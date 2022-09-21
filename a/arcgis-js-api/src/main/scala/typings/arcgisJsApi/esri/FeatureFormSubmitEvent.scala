@@ -10,11 +10,11 @@ trait FeatureFormSubmitEvent extends StObject {
   
   var valid: js.Array[String]
   
-  var values: js.Any
+  var values: Any
 }
 object FeatureFormSubmitEvent {
   
-  inline def apply(invalid: js.Array[String], valid: js.Array[String], values: js.Any): FeatureFormSubmitEvent = {
+  inline def apply(invalid: js.Array[String], valid: js.Array[String], values: Any): FeatureFormSubmitEvent = {
     val __obj = js.Dynamic.literal(invalid = invalid.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureFormSubmitEvent]
   }
@@ -23,12 +23,12 @@ object FeatureFormSubmitEvent {
     
     inline def setInvalid(value: js.Array[String]): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
     
-    inline def setInvalidVarargs(value: String*): Self = StObject.set(x, "invalid", js.Array(value :_*))
+    inline def setInvalidVarargs(value: String*): Self = StObject.set(x, "invalid", js.Array(value*))
     
     inline def setValid(value: js.Array[String]): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
     
-    inline def setValidVarargs(value: String*): Self = StObject.set(x, "valid", js.Array(value :_*))
+    inline def setValidVarargs(value: String*): Self = StObject.set(x, "valid", js.Array(value*))
     
-    inline def setValues(value: js.Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
   }
 }

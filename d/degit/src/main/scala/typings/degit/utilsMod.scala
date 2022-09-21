@@ -16,19 +16,21 @@ object utilsMod {
   
   @JSImport("degit/utils", "DegitError")
   @js.native
-  class DegitError ()
+  open class DegitError ()
     extends StObject
        with Error {
     
     var code: DegitErrorCode = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     
-    var original: js.UndefOr[Error] = js.native
+    var original: js.UndefOr[js.Error] = js.native
     
     var ref: js.UndefOr[String] = js.native
     
@@ -51,8 +53,8 @@ object utilsMod {
   
   inline def stashFiles(dir: String, dest: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stashFiles")(dir.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def tryRequire(file: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("tryRequire")(file.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def tryRequire(file: String, opts: ClearCache): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("tryRequire")(file.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def tryRequire(file: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("tryRequire")(file.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def tryRequire(file: String, opts: ClearCache): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("tryRequire")(file.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def unstashFiles(dir: String, dest: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unstashFiles")(dir.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

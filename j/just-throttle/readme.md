@@ -1,7 +1,7 @@
 
 # Scala.js typings for just-throttle
 
-Typings are for version 1.1
+Typings are for version 4.1.1
 
 ## Library description:
 return a throttled function
@@ -10,10 +10,10 @@ return a throttled function
 | ------------------ | :-------------: |
 | Full name          | just-throttle |
 | Keywords           | function, throttle, no-dependencies, just |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 161429 |
-| # stars            | 0 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 54088.0 |
+| # stars            | 4414.0 |
 
 ## Links
 - [Homepage](https://github.com/angus-c/just#readme)
@@ -24,7 +24,7 @@ return a throttled function
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

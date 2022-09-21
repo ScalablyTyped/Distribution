@@ -1,6 +1,6 @@
 package typings.tensorflowTfjsBackendWebgl
 
-import typings.tensorflowTfjsBackendWebgl.anon.Attrs
+import typings.tensorflowTfjsBackendWebgl.anon.AttrsAvgPoolAttrs
 import typings.tensorflowTfjsCore.kernelRegistryMod.KernelConfig
 import typings.tensorflowTfjsCore.kernelRegistryMod.TensorInfo
 import org.scalablytyped.runtime.StObject
@@ -13,7 +13,7 @@ object avgPoolMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def avgPool(args: Attrs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
+  inline def avgPool(args: AttrsAvgPoolAttrs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/kernels/AvgPool", "avgPoolConfig")
   @js.native

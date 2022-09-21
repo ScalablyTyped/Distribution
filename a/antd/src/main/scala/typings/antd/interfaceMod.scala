@@ -1,20 +1,45 @@
 package typings.antd
 
+import typings.antd.generatePickerMod.PickerProps
+import typings.antd.generatePickerMod.RangePickerProps
+import typings.react.mod.Component
+import typings.react.mod.ComponentClass
+import typings.react.mod.ForwardedRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfaceMod {
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.left
-    - typings.antd.antdStrings.right
-  */
-  trait FormLabelAlign extends StObject
-  object FormLabelAlign {
+  trait CommonPickerMethods extends StObject {
     
-    inline def left: typings.antd.antdStrings.left = "left".asInstanceOf[typings.antd.antdStrings.left]
+    def blur(): Unit
     
-    inline def right: typings.antd.antdStrings.right = "right".asInstanceOf[typings.antd.antdStrings.right]
+    def focus(): Unit
   }
+  object CommonPickerMethods {
+    
+    inline def apply(blur: () => Unit, focus: () => Unit): CommonPickerMethods = {
+      val __obj = js.Dynamic.literal(blur = js.Any.fromFunction0(blur), focus = js.Any.fromFunction0(focus))
+      __obj.asInstanceOf[CommonPickerMethods]
+    }
+    
+    extension [Self <: CommonPickerMethods](x: Self) {
+      
+      inline def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
+      
+      inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+    }
+  }
+  
+  type DatePickRef[DateType] = PickerRef[PickerProps[DateType]]
+  
+  @js.native
+  trait PickerComponentClass[P, S]
+    extends StObject
+       with ComponentClass[P, S]
+  
+  type PickerRef[P] = ForwardedRef[(Component[P, js.Object, Any]) & CommonPickerMethods]
+  
+  type RangePickerRef[DateType] = PickerRef[RangePickerProps[DateType]]
 }

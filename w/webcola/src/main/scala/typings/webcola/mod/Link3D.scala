@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("webcola", "Link3D")
 @js.native
-class Link3D protected ()
+open class Link3D protected ()
   extends typings.webcola.layout3dMod.Link3D {
   def this(source: Double, target: Double) = this()
 }

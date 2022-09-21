@@ -8,7 +8,7 @@ object remoteCallbacksMod {
   
   @JSImport("nodegit/remote-callbacks", "RemoteCallbacks")
   @js.native
-  class RemoteCallbacks () extends StObject {
+  open class RemoteCallbacks () extends StObject {
     
     var certificateCheck: js.UndefOr[js.Function] = js.native
     

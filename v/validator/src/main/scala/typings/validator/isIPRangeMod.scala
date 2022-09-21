@@ -11,7 +11,10 @@ object isIPRangeMod {
   val ^ : js.Any = js.native
   
   /**
-    * Check if the string is an IP Range (version 4 only).
+    * Check if the string is an IP Range (version 4 or 6).
     */
   inline def default(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def default(str: String, version: typings.validator.mod.validator.IPVersion): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  type IPVersion = typings.validator.mod.validator.IPVersion
 }

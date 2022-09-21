@@ -114,13 +114,13 @@ object Commitment {
     
     inline def setReservationsUndefined: Self = StObject.set(x, "reservations", js.undefined)
     
-    inline def setReservationsVarargs(value: Reservation*): Self = StObject.set(x, "reservations", js.Array(value :_*))
+    inline def setReservationsVarargs(value: Reservation*): Self = StObject.set(x, "reservations", js.Array(value*))
     
     inline def setResources(value: js.Array[ResourceCommitment]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
     inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    inline def setResourcesVarargs(value: ResourceCommitment*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: ResourceCommitment*): Self = StObject.set(x, "resources", js.Array(value*))
     
     inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     

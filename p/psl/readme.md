@@ -10,10 +10,10 @@ Domain name parser based on the Public Suffix List
 | ------------------ | :-------------: |
 | Full name          | psl |
 | Keywords           | publicsuffix, publicsuffixlist |
-| # releases         | 11 |
-| # dependents       | 127 |
-| # downloads        | 905511603 |
-| # stars            | 4 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.04096462E8 |
+| # stars            | 285.0 |
 
 ## Links
 - [Homepage](https://github.com/lupomontero/psl#readme)

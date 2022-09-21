@@ -12,5 +12,5 @@ object detectStreamTypeMod {
   
   inline def getExtFromPath(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtFromPath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def getStreamType(url: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getStreamType")(url.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getStreamType(url: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getStreamType")(url.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SwitchStatement
   extends StObject
-     with Statement {
+     with Statement
+     with HasJSDoc {
   
   val caseBlock: CaseBlock = js.native
   

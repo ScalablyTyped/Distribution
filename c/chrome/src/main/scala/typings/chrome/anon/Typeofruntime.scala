@@ -35,6 +35,7 @@ trait Typeofruntime extends StObject {
   
   def getPackageDirectoryEntry(callback: js.Function1[/* directoryEntry */ DirectoryEntry, Unit]): Unit = js.native
   
+  def getPlatformInfo(): js.Promise[PlatformInfo] = js.native
   def getPlatformInfo(callback: js.Function1[/* platformInfo */ PlatformInfo, Unit]): Unit = js.native
   
   def getURL(path: String): String = js.native
@@ -80,30 +81,25 @@ trait Typeofruntime extends StObject {
   
   def restart(): Unit = js.native
   
-  def sendMessage(extensionId: String, message: js.Any): Unit = js.native
-  def sendMessage(extensionId: String, message: js.Any, options: MessageOptions): Unit = js.native
-  def sendMessage(
-    extensionId: String,
-    message: js.Any,
-    options: MessageOptions,
-    responseCallback: js.Function1[/* response */ js.Any, Unit]
-  ): Unit = js.native
-  def sendMessage(extensionId: String, message: js.Any, responseCallback: js.Function1[/* response */ js.Any, Unit]): Unit = js.native
-  def sendMessage(message: js.Any): Unit = js.native
-  def sendMessage(message: js.Any, options: MessageOptions): Unit = js.native
-  def sendMessage(
-    message: js.Any,
-    options: MessageOptions,
-    responseCallback: js.Function1[/* response */ js.Any, Unit]
-  ): Unit = js.native
-  def sendMessage(message: js.Any, responseCallback: js.Function1[/* response */ js.Any, Unit]): Unit = js.native
+  def restartAfterDelay(seconds: Double): Unit = js.native
+  def restartAfterDelay(seconds: Double, callback: js.Function0[Unit]): Unit = js.native
   
-  def sendNativeMessage(application: String, message: js.Object): Unit = js.native
-  def sendNativeMessage(
-    application: String,
-    message: js.Object,
-    responseCallback: js.Function1[/* response */ js.Any, Unit]
+  def sendMessage[M, R](extensionId: String, message: M): js.Promise[R] = js.native
+  def sendMessage[Message, Response](extensionId: String, message: Message, options: MessageOptions): js.Promise[Response] = js.native
+  def sendMessage[Message, Response](
+    extensionId: String,
+    message: Message,
+    options: MessageOptions,
+    responseCallback: js.Function1[/* response */ Response, Unit]
   ): Unit = js.native
+  def sendMessage[M, R](extensionId: String, message: M, responseCallback: js.Function1[/* response */ R, Unit]): Unit = js.native
+  def sendMessage[M, R](message: M): js.Promise[R] = js.native
+  def sendMessage[M, R](message: M, options: MessageOptions): js.Promise[R] = js.native
+  def sendMessage[M, R](message: M, options: MessageOptions, responseCallback: js.Function1[/* response */ R, Unit]): Unit = js.native
+  def sendMessage[M, R](message: M, responseCallback: js.Function1[/* response */ R, Unit]): Unit = js.native
+  
+  def sendNativeMessage(application: String, message: js.Object): js.Promise[Any] = js.native
+  def sendNativeMessage(application: String, message: js.Object, responseCallback: js.Function1[/* response */ Any, Unit]): Unit = js.native
   
   def setUninstallURL(url: String): Unit = js.native
   def setUninstallURL(url: String, callback: js.Function0[Unit]): Unit = js.native

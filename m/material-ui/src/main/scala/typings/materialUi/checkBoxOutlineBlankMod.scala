@@ -10,10 +10,10 @@ object checkBoxOutlineBlankMod {
   
   @JSImport("material-ui/svg-icons/toggle/check-box-outline-blank", JSImport.Default)
   @js.native
-  class default () extends ToggleCheckBoxOutlineBlank
+  open class default () extends ToggleCheckBoxOutlineBlank
   
   @JSImport("material-ui/svg-icons/toggle/check-box-outline-blank", "ToggleCheckBoxOutlineBlank")
   @js.native
-  class ToggleCheckBoxOutlineBlank ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ToggleCheckBoxOutlineBlank ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

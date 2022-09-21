@@ -4,31 +4,37 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A Drive item, such as a file or folder.
-  */
 trait SchemaDriveItem extends StObject {
   
   /**
     * The Drive item is a file.
     */
+  var driveFile: js.UndefOr[SchemaDriveFile] = js.undefined
+  
+  /**
+    * The Drive item is a folder. Includes information about the type of folder.
+    */
+  var driveFolder: js.UndefOr[SchemaDriveFolder] = js.undefined
+  
+  /**
+    * This field is deprecated; please use the `driveFile` field instead.
+    */
   var file: js.UndefOr[SchemaFile] = js.undefined
   
   /**
-    * The Drive item is a folder.
+    * This field is deprecated; please use the `driveFolder` field instead.
     */
   var folder: js.UndefOr[SchemaFolder] = js.undefined
   
   /**
-    * The MIME type of the Drive item.  See
-    * https://developers.google.com/drive/v3/web/mime-types.
+    * The MIME type of the Drive item. See https://developers.google.com/drive/v3/web/mime-types.
     */
-  var mimeType: js.UndefOr[String] = js.undefined
+  var mimeType: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The target Drive item. The format is &quot;items/ITEM_ID&quot;.
+    * The target Drive item. The format is `items/ITEM_ID`.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Information about the owner of this Drive item.
@@ -38,7 +44,7 @@ trait SchemaDriveItem extends StObject {
   /**
     * The title of the Drive item.
     */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaDriveItem {
   
@@ -48,6 +54,14 @@ object SchemaDriveItem {
   }
   
   extension [Self <: SchemaDriveItem](x: Self) {
+    
+    inline def setDriveFile(value: SchemaDriveFile): Self = StObject.set(x, "driveFile", value.asInstanceOf[js.Any])
+    
+    inline def setDriveFileUndefined: Self = StObject.set(x, "driveFile", js.undefined)
+    
+    inline def setDriveFolder(value: SchemaDriveFolder): Self = StObject.set(x, "driveFolder", value.asInstanceOf[js.Any])
+    
+    inline def setDriveFolderUndefined: Self = StObject.set(x, "driveFolder", js.undefined)
     
     inline def setFile(value: SchemaFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
@@ -59,9 +73,13 @@ object SchemaDriveItem {
     
     inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
+    inline def setMimeTypeNull: Self = StObject.set(x, "mimeType", null)
+    
     inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
@@ -70,6 +88,8 @@ object SchemaDriveItem {
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleNull: Self = StObject.set(x, "title", null)
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }

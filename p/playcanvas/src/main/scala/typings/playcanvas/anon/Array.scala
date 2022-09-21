@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Array extends StObject {
   
-  var default: js.UndefOr[js.Any] = js.undefined
+  var default: js.UndefOr[Any] = js.undefined
   
   var array: js.UndefOr[Boolean] = js.undefined
   
@@ -78,9 +78,9 @@ object Array {
     
     inline def setCurvesUndefined: Self = StObject.set(x, "curves", js.undefined)
     
-    inline def setCurvesVarargs(value: String*): Self = StObject.set(x, "curves", js.Array(value :_*))
+    inline def setCurvesVarargs(value: String*): Self = StObject.set(x, "curves", js.Array(value*))
     
-    inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
@@ -92,7 +92,7 @@ object Array {
     
     inline def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
     
-    inline def setEnumVarargs(value: js.Object*): Self = StObject.set(x, "enum", js.Array(value :_*))
+    inline def setEnumVarargs(value: js.Object*): Self = StObject.set(x, "enum", js.Array(value*))
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
@@ -106,7 +106,7 @@ object Array {
     
     inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
-    inline def setPlaceholderVarargs(value: String*): Self = StObject.set(x, "placeholder", js.Array(value :_*))
+    inline def setPlaceholderVarargs(value: String*): Self = StObject.set(x, "placeholder", js.Array(value*))
     
     inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
@@ -116,7 +116,7 @@ object Array {
     
     inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
-    inline def setSchemaVarargs(value: js.Object*): Self = StObject.set(x, "schema", js.Array(value :_*))
+    inline def setSchemaVarargs(value: js.Object*): Self = StObject.set(x, "schema", js.Array(value*))
     
     inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object valueMod {
   
-  @JSImport("@firebase/remote-config/dist/src/value", "Value")
+  @JSImport("@firebase/remote-config/dist/esm/src/value", "Value")
   @js.native
-  class Value protected ()
+  open class Value protected ()
     extends StObject
        with typings.firebaseRemoteConfigTypes.mod.Value {
     def this(_source: ValueSource) = this()
     def this(_source: ValueSource, _value: String) = this()
     
-    /* private */ val _source: js.Any = js.native
+    /* private */ val _source: Any = js.native
     
-    /* private */ val _value: js.Any = js.native
+    /* private */ val _value: Any = js.native
     
     /**
       * Gets the value as a boolean.

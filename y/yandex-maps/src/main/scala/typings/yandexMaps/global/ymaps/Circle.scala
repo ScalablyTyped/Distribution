@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ymaps.Circle")
 @js.native
-class Circle protected ()
+open class Circle protected ()
   extends typings.yandexMaps.mod.Circle {
   def this(geometry: js.Array[js.Array[js.Array[js.Array[ICircleGeometry]] | Double]]) = this()
   def this(geometry: js.Object) = this()

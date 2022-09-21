@@ -1,9 +1,5 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,13 +9,7 @@ trait ParamsResourceProjectsLocationsJobsMessagesList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Return only messages with timestamps < end_time. The default is now (i.e.
-    * return up to the latest messages available).
+    * Return only messages with timestamps < end_time. The default is now (i.e. return up to the latest messages available).
     */
   var endTime: js.UndefOr[String] = js.undefined
   
@@ -29,27 +19,22 @@ trait ParamsResourceProjectsLocationsJobsMessagesList
   var jobId: js.UndefOr[String] = js.undefined
   
   /**
-    * The [regional endpoint]
-    * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
-    * contains the job specified by job_id.
+    * The [regional endpoint] (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that contains the job specified by job_id.
     */
   var location: js.UndefOr[String] = js.undefined
   
   /**
-    * Filter to only get messages with importance >= level
+    * Filter to only get messages with importance \>= level
     */
   var minimumImportance: js.UndefOr[String] = js.undefined
   
   /**
-    * If specified, determines the maximum number of messages to return.  If
-    * unspecified, the service may choose an appropriate default, or may return
-    * an arbitrarily large number of results.
+    * If specified, determines the maximum number of messages to return. If unspecified, the service may choose an appropriate default, or may return an arbitrarily large number of results.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * If supplied, this should be the value of next_page_token returned by an
-    * earlier call. This will cause the next page of results to be returned.
+    * If supplied, this should be the value of next_page_token returned by an earlier call. This will cause the next page of results to be returned.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
@@ -59,8 +44,7 @@ trait ParamsResourceProjectsLocationsJobsMessagesList
   var projectId: js.UndefOr[String] = js.undefined
   
   /**
-    * If specified, return only messages with timestamps >= start_time. The
-    * default is the job creation time (i.e. beginning of messages).
+    * If specified, return only messages with timestamps \>= start_time. The default is the job creation time (i.e. beginning of messages).
     */
   var startTime: js.UndefOr[String] = js.undefined
 }
@@ -72,10 +56,6 @@ object ParamsResourceProjectsLocationsJobsMessagesList {
   }
   
   extension [Self <: ParamsResourceProjectsLocationsJobsMessagesList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

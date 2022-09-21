@@ -5,9 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A Compose request.
-  */
 trait SchemaComposeRequest extends StObject {
   
   /**
@@ -18,13 +15,12 @@ trait SchemaComposeRequest extends StObject {
   /**
     * The kind of item this is.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The list of source objects that will be concatenated into a single
-    * object.
+    * The list of source objects that will be concatenated into a single object.
     */
-  var sourceObjects: js.UndefOr[js.Array[Generation]] = js.undefined
+  var sourceObjects: js.UndefOr[js.Array[Generation] | Null] = js.undefined
 }
 object SchemaComposeRequest {
   
@@ -41,12 +37,16 @@ object SchemaComposeRequest {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
+    
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setSourceObjects(value: js.Array[Generation]): Self = StObject.set(x, "sourceObjects", value.asInstanceOf[js.Any])
     
+    inline def setSourceObjectsNull: Self = StObject.set(x, "sourceObjects", null)
+    
     inline def setSourceObjectsUndefined: Self = StObject.set(x, "sourceObjects", js.undefined)
     
-    inline def setSourceObjectsVarargs(value: Generation*): Self = StObject.set(x, "sourceObjects", js.Array(value :_*))
+    inline def setSourceObjectsVarargs(value: Generation*): Self = StObject.set(x, "sourceObjects", js.Array(value*))
   }
 }

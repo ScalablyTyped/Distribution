@@ -1,6 +1,8 @@
 package typings.jsYaml
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.jsYaml.jsYamlStrings.Apostrophe
+import typings.jsYaml.jsYamlStrings.Quotationmark
 import typings.jsYaml.jsYamlStrings.mapping
 import typings.jsYaml.jsYamlStrings.scalar
 import typings.jsYaml.jsYamlStrings.sequence
@@ -20,15 +22,10 @@ object mod {
   def CORE_SCHEMA: Schema = js.native
   inline def CORE_SCHEMA_=(x: Schema): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CORE_SCHEMA")(x.asInstanceOf[js.Any])
   
-  @JSImport("js-yaml", "DEFAULT_FULL_SCHEMA")
+  @JSImport("js-yaml", "DEFAULT_SCHEMA")
   @js.native
-  def DEFAULT_FULL_SCHEMA: Schema = js.native
-  inline def DEFAULT_FULL_SCHEMA_=(x: Schema): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_FULL_SCHEMA")(x.asInstanceOf[js.Any])
-  
-  @JSImport("js-yaml", "DEFAULT_SAFE_SCHEMA")
-  @js.native
-  def DEFAULT_SAFE_SCHEMA: Schema = js.native
-  inline def DEFAULT_SAFE_SCHEMA_=(x: Schema): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_SAFE_SCHEMA")(x.asInstanceOf[js.Any])
+  def DEFAULT_SCHEMA: Schema = js.native
+  inline def DEFAULT_SCHEMA_=(x: Schema): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_SCHEMA")(x.asInstanceOf[js.Any])
   
   @JSImport("js-yaml", "FAILSAFE_SCHEMA")
   @js.native
@@ -40,45 +37,26 @@ object mod {
   def JSON_SCHEMA: Schema = js.native
   inline def JSON_SCHEMA_=(x: Schema): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JSON_SCHEMA")(x.asInstanceOf[js.Any])
   
-  @JSImport("js-yaml", "MINIMAL_SCHEMA")
-  @js.native
-  def MINIMAL_SCHEMA: Schema = js.native
-  inline def MINIMAL_SCHEMA_=(x: Schema): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MINIMAL_SCHEMA")(x.asInstanceOf[js.Any])
-  
-  @JSImport("js-yaml", "SAFE_SCHEMA")
-  @js.native
-  def SAFE_SCHEMA: Schema = js.native
-  inline def SAFE_SCHEMA_=(x: Schema): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SAFE_SCHEMA")(x.asInstanceOf[js.Any])
-  
   @JSImport("js-yaml", "Schema")
   @js.native
-  class Schema protected ()
-    extends StObject
-       with SchemaDefinition {
+  open class Schema protected () extends StObject {
+    def this(definition: js.Array[Type]) = this()
     def this(definition: SchemaDefinition) = this()
-  }
-  /* static members */
-  object Schema {
+    def this(definition: Type) = this()
     
-    @JSImport("js-yaml", "Schema")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    inline def create(schemas: js.Array[Schema], types: js.Array[Type]): Schema = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(schemas.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[Schema]
-    inline def create(schemas: js.Array[Schema], types: Type): Schema = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(schemas.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[Schema]
-    inline def create(schemas: Schema, types: js.Array[Type]): Schema = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(schemas.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[Schema]
-    inline def create(schemas: Schema, types: Type): Schema = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(schemas.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[Schema]
-    inline def create(types: js.Array[Type]): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(types.asInstanceOf[js.Any]).asInstanceOf[Schema]
-    inline def create(types: Type): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(types.asInstanceOf[js.Any]).asInstanceOf[Schema]
+    def extend(types: js.Array[Type]): Schema = js.native
+    def extend(types: SchemaDefinition): Schema = js.native
+    def extend(types: Type): Schema = js.native
   }
   
   @JSImport("js-yaml", "Type")
   @js.native
-  class Type protected () extends StObject {
+  open class Type protected () extends StObject {
     def this(tag: String) = this()
     def this(tag: String, opts: TypeConstructorOptions) = this()
     
-    def construct(data: js.Any): js.Any = js.native
+    def construct(data: Any): Any = js.native
+    def construct(data: Any, `type`: String): Any = js.native
     
     var defaultStyle: String | Null = js.native
     
@@ -86,56 +64,54 @@ object mod {
     
     var kind: sequence | scalar | mapping | Null = js.native
     
+    var multi: Boolean = js.native
+    
     var predicate: (js.Function1[/* data */ js.Object, Boolean]) | Null = js.native
     
-    var represent: (js.Function1[/* data */ js.Object, js.Any]) | (StringDictionary[js.Function1[/* data */ js.Object, js.Any]]) | Null = js.native
+    var represent: (js.Function1[/* data */ js.Object, Any]) | (StringDictionary[js.Function1[/* data */ js.Object, Any]]) | Null = js.native
     
-    def resolve(data: js.Any): Boolean = js.native
+    var representName: (js.Function1[/* data */ js.Object, Any]) | Null = js.native
     
-    var styleAliases: StringDictionary[js.Any] = js.native
+    def resolve(data: Any): Boolean = js.native
+    
+    var styleAliases: StringDictionary[Any] = js.native
   }
   
   @JSImport("js-yaml", "YAMLException")
   @js.native
-  class YAMLException ()
+  open class YAMLException ()
     extends StObject
        with Error {
-    def this(reason: js.Any) = this()
-    def this(reason: js.Any, mark: js.Any) = this()
-    def this(reason: Unit, mark: js.Any) = this()
+    def this(reason: String) = this()
+    def this(reason: String, mark: Mark) = this()
+    def this(reason: Unit, mark: Mark) = this()
     
+    var mark: Mark = js.native
+    
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
+    
+    var reason: String = js.native
     
     def toString(compact: Boolean): String = js.native
   }
   
-  inline def dump(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dump")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def dump(obj: js.Any, opts: DumpOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("dump")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def dump(obj: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dump")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def dump(obj: Any, opts: DumpOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("dump")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def load(str: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def load(str: String, opts: LoadOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(str.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def load(str: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(str.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def load(str: String, opts: LoadOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(str.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def loadAll(str: String): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadAll")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
-  inline def loadAll(str: String, iterator: js.Function1[/* doc */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadAll")(str.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def loadAll(str: String, iterator: js.Function1[/* doc */ js.Any, Unit], opts: LoadOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadAll")(str.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def loadAll(str: String, iterator: Null, opts: LoadOptions): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadAll")(str.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-  inline def loadAll(str: String, iterator: Unit, opts: LoadOptions): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadAll")(str.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-  
-  inline def safeDump(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("safeDump")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def safeDump(obj: js.Any, opts: DumpOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("safeDump")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
-  
-  inline def safeLoad(str: String): js.UndefOr[String | js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("safeLoad")(str.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String | js.Object]]
-  inline def safeLoad(str: String, opts: LoadOptions): js.UndefOr[String | js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeLoad")(str.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | js.Object]]
-  
-  inline def safeLoadAll(str: String): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("safeLoadAll")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
-  inline def safeLoadAll(str: String, iterator: js.Function1[/* doc */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("safeLoadAll")(str.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def safeLoadAll(str: String, iterator: js.Function1[/* doc */ js.Any, Unit], opts: LoadOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("safeLoadAll")(str.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def safeLoadAll(str: String, iterator: Null, opts: LoadOptions): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeLoadAll")(str.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-  inline def safeLoadAll(str: String, iterator: Unit, opts: LoadOptions): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeLoadAll")(str.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def loadAll(str: String): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadAll")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
+  inline def loadAll(str: String, iterator: js.Function1[/* doc */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadAll")(str.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def loadAll(str: String, iterator: js.Function1[/* doc */ Any, Unit], opts: LoadOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadAll")(str.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def loadAll(str: String, iterator: Null, opts: LoadOptions): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadAll")(str.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+  inline def loadAll(str: String, iterator: Unit, opts: LoadOptions): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadAll")(str.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
   
   trait DumpOptions extends StObject {
     
@@ -147,6 +123,9 @@ object mod {
     
     /** specifies level of nesting, when to switch from block to flow style for collections. -1 means block style everwhere */
     var flowLevel: js.UndefOr[Double] = js.undefined
+    
+    /** if true, all non-key strings will be quoted even if they normally don't need to. (default: false) */
+    var forceQuotes: js.UndefOr[Boolean] = js.undefined
     
     /** indentation width to use (in spaces). */
     var indent: js.UndefOr[Double] = js.undefined
@@ -163,17 +142,23 @@ object mod {
     /** if true, don't convert duplicate objects into references (default: false) */
     var noRefs: js.UndefOr[Boolean] = js.undefined
     
+    /** strings will be quoted using this quoting style. If you specify single quotes, double quotes will still be used for non-printable characters. (default: `'`) */
+    var quotingType: js.UndefOr[Apostrophe | Quotationmark] = js.undefined
+    
+    /** callback `function (key, value)` called recursively on each key/value in source object (see `replacer` docs for `JSON.stringify`). */
+    var replacer: js.UndefOr[js.Function2[/* key */ String, /* value */ Any, Any]] = js.undefined
+    
     /** specifies a schema to use. */
-    var schema: js.UndefOr[SchemaDefinition] = js.undefined
+    var schema: js.UndefOr[Schema] = js.undefined
     
     /** do not throw on invalid types (like function in the safe schema) and skip pairs and single values with such types. */
     var skipInvalid: js.UndefOr[Boolean] = js.undefined
     
     /** if true, sort keys when dumping YAML. If a function, use the function to sort the keys. (default: false) */
-    var sortKeys: js.UndefOr[Boolean | (js.Function2[/* a */ js.Any, /* b */ js.Any, Double])] = js.undefined
+    var sortKeys: js.UndefOr[Boolean | (js.Function2[/* a */ Any, /* b */ Any, Double])] = js.undefined
     
     /** Each tag may have own set of styles.    - "tag" => "style" map. */
-    var styles: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var styles: js.UndefOr[StringDictionary[Any]] = js.undefined
   }
   object DumpOptions {
     
@@ -191,6 +176,10 @@ object mod {
       inline def setFlowLevel(value: Double): Self = StObject.set(x, "flowLevel", value.asInstanceOf[js.Any])
       
       inline def setFlowLevelUndefined: Self = StObject.set(x, "flowLevel", js.undefined)
+      
+      inline def setForceQuotes(value: Boolean): Self = StObject.set(x, "forceQuotes", value.asInstanceOf[js.Any])
+      
+      inline def setForceQuotesUndefined: Self = StObject.set(x, "forceQuotes", js.undefined)
       
       inline def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
@@ -212,7 +201,15 @@ object mod {
       
       inline def setNoRefsUndefined: Self = StObject.set(x, "noRefs", js.undefined)
       
-      inline def setSchema(value: SchemaDefinition): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setQuotingType(value: Apostrophe | Quotationmark): Self = StObject.set(x, "quotingType", value.asInstanceOf[js.Any])
+      
+      inline def setQuotingTypeUndefined: Self = StObject.set(x, "quotingType", js.undefined)
+      
+      inline def setReplacer(value: (/* key */ String, /* value */ Any) => Any): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
+      
+      inline def setReplacerUndefined: Self = StObject.set(x, "replacer", js.undefined)
+      
+      inline def setSchema(value: Schema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
       inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
       
@@ -220,13 +217,13 @@ object mod {
       
       inline def setSkipInvalidUndefined: Self = StObject.set(x, "skipInvalid", js.undefined)
       
-      inline def setSortKeys(value: Boolean | (js.Function2[/* a */ js.Any, /* b */ js.Any, Double])): Self = StObject.set(x, "sortKeys", value.asInstanceOf[js.Any])
+      inline def setSortKeys(value: Boolean | (js.Function2[/* a */ Any, /* b */ Any, Double])): Self = StObject.set(x, "sortKeys", value.asInstanceOf[js.Any])
       
-      inline def setSortKeysFunction2(value: (/* a */ js.Any, /* b */ js.Any) => Double): Self = StObject.set(x, "sortKeys", js.Any.fromFunction2(value))
+      inline def setSortKeysFunction2(value: (/* a */ Any, /* b */ Any) => Double): Self = StObject.set(x, "sortKeys", js.Any.fromFunction2(value))
       
       inline def setSortKeysUndefined: Self = StObject.set(x, "sortKeys", js.undefined)
       
-      inline def setStyles(value: StringDictionary[js.Any]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: StringDictionary[Any]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
       inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     }
@@ -261,7 +258,7 @@ object mod {
     var onWarning: js.UndefOr[js.ThisFunction1[/* this */ Null, /* e */ YAMLException, Unit]] = js.undefined
     
     /** specifies a schema to use. */
-    var schema: js.UndefOr[SchemaDefinition] = js.undefined
+    var schema: js.UndefOr[Schema] = js.undefined
   }
   object LoadOptions {
     
@@ -288,9 +285,46 @@ object mod {
       
       inline def setOnWarningUndefined: Self = StObject.set(x, "onWarning", js.undefined)
       
-      inline def setSchema(value: SchemaDefinition): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: Schema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
       inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+    }
+  }
+  
+  trait Mark extends StObject {
+    
+    var buffer: String
+    
+    var column: Double
+    
+    var line: Double
+    
+    var name: String
+    
+    var position: Double
+    
+    var snippet: String
+  }
+  object Mark {
+    
+    inline def apply(buffer: String, column: Double, line: Double, name: String, position: Double, snippet: String): Mark = {
+      val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], snippet = snippet.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Mark]
+    }
+    
+    extension [Self <: Mark](x: Self) {
+      
+      inline def setBuffer(value: String): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      
+      inline def setSnippet(value: String): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     }
   }
   
@@ -298,9 +332,7 @@ object mod {
     
     var explicit: js.UndefOr[js.Array[Type]] = js.undefined
     
-    var `implicit`: js.UndefOr[js.Array[js.Any]] = js.undefined
-    
-    var include: js.UndefOr[js.Array[Schema]] = js.undefined
+    var `implicit`: js.UndefOr[js.Array[Type]] = js.undefined
   }
   object SchemaDefinition {
     
@@ -315,19 +347,13 @@ object mod {
       
       inline def setExplicitUndefined: Self = StObject.set(x, "explicit", js.undefined)
       
-      inline def setExplicitVarargs(value: Type*): Self = StObject.set(x, "explicit", js.Array(value :_*))
+      inline def setExplicitVarargs(value: Type*): Self = StObject.set(x, "explicit", js.Array(value*))
       
-      inline def setImplicit(value: js.Array[js.Any]): Self = StObject.set(x, "implicit", value.asInstanceOf[js.Any])
+      inline def setImplicit(value: js.Array[Type]): Self = StObject.set(x, "implicit", value.asInstanceOf[js.Any])
       
       inline def setImplicitUndefined: Self = StObject.set(x, "implicit", js.undefined)
       
-      inline def setImplicitVarargs(value: js.Any*): Self = StObject.set(x, "implicit", js.Array(value :_*))
-      
-      inline def setInclude(value: js.Array[Schema]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
-      
-      inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
-      
-      inline def setIncludeVarargs(value: Schema*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setImplicitVarargs(value: Type*): Self = StObject.set(x, "implicit", js.Array(value*))
     }
   }
   
@@ -357,9 +383,9 @@ object mod {
     
     var position: Double
     
-    var result: js.Any
+    var result: Any
     
-    var schema: SchemaDefinition
+    var schema: Schema
     
     var version: Null | Double
   }
@@ -377,8 +403,8 @@ object mod {
       lineStart: Double,
       onWarning: YAMLException => Unit,
       position: Double,
-      result: js.Any,
-      schema: SchemaDefinition
+      result: Any,
+      schema: Schema
     ): State = {
       val __obj = js.Dynamic.literal(checkLineBreaks = checkLineBreaks.asInstanceOf[js.Any], implicitTypes = implicitTypes.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], json = json.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], lineIndent = lineIndent.asInstanceOf[js.Any], lineStart = lineStart.asInstanceOf[js.Any], onWarning = js.Any.fromFunction1(onWarning), position = position.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], filename = null, version = null)
       __obj.asInstanceOf[State]
@@ -394,7 +420,7 @@ object mod {
       
       inline def setImplicitTypes(value: js.Array[Type]): Self = StObject.set(x, "implicitTypes", value.asInstanceOf[js.Any])
       
-      inline def setImplicitTypesVarargs(value: Type*): Self = StObject.set(x, "implicitTypes", js.Array(value :_*))
+      inline def setImplicitTypesVarargs(value: Type*): Self = StObject.set(x, "implicitTypes", js.Array(value*))
       
       inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
@@ -414,9 +440,9 @@ object mod {
       
       inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
-      inline def setSchema(value: SchemaDefinition): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: Schema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
       inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
@@ -426,7 +452,7 @@ object mod {
   
   trait TypeConstructorOptions extends StObject {
     
-    var construct: js.UndefOr[js.Function1[/* data */ js.Any, js.Any]] = js.undefined
+    var construct: js.UndefOr[js.Function2[/* data */ Any, /* type */ js.UndefOr[String], Any]] = js.undefined
     
     var defaultStyle: js.UndefOr[String] = js.undefined
     
@@ -434,15 +460,19 @@ object mod {
     
     var kind: js.UndefOr[sequence | scalar | mapping] = js.undefined
     
+    var multi: js.UndefOr[Boolean] = js.undefined
+    
     var predicate: js.UndefOr[js.Function1[/* data */ js.Object, Boolean]] = js.undefined
     
     var represent: js.UndefOr[
-        (js.Function1[/* data */ js.Object, js.Any]) | (StringDictionary[js.Function1[/* data */ js.Object, js.Any]])
+        (js.Function1[/* data */ js.Object, Any]) | (StringDictionary[js.Function1[/* data */ js.Object, Any]])
       ] = js.undefined
     
-    var resolve: js.UndefOr[js.Function1[/* data */ js.Any, Boolean]] = js.undefined
+    var representName: js.UndefOr[js.Function1[/* data */ js.Object, Any]] = js.undefined
     
-    var styleAliases: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var resolve: js.UndefOr[js.Function1[/* data */ Any, Boolean]] = js.undefined
+    
+    var styleAliases: js.UndefOr[StringDictionary[Any]] = js.undefined
   }
   object TypeConstructorOptions {
     
@@ -453,7 +483,7 @@ object mod {
     
     extension [Self <: TypeConstructorOptions](x: Self) {
       
-      inline def setConstruct(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "construct", js.Any.fromFunction1(value))
+      inline def setConstruct(value: (/* data */ Any, /* type */ js.UndefOr[String]) => Any): Self = StObject.set(x, "construct", js.Any.fromFunction2(value))
       
       inline def setConstructUndefined: Self = StObject.set(x, "construct", js.undefined)
       
@@ -469,23 +499,31 @@ object mod {
       
       inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
       
+      inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
+      
+      inline def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
+      
       inline def setPredicate(value: /* data */ js.Object => Boolean): Self = StObject.set(x, "predicate", js.Any.fromFunction1(value))
       
       inline def setPredicateUndefined: Self = StObject.set(x, "predicate", js.undefined)
       
       inline def setRepresent(
-        value: (js.Function1[/* data */ js.Object, js.Any]) | (StringDictionary[js.Function1[/* data */ js.Object, js.Any]])
+        value: (js.Function1[/* data */ js.Object, Any]) | (StringDictionary[js.Function1[/* data */ js.Object, Any]])
       ): Self = StObject.set(x, "represent", value.asInstanceOf[js.Any])
       
-      inline def setRepresentFunction1(value: /* data */ js.Object => js.Any): Self = StObject.set(x, "represent", js.Any.fromFunction1(value))
+      inline def setRepresentFunction1(value: /* data */ js.Object => Any): Self = StObject.set(x, "represent", js.Any.fromFunction1(value))
+      
+      inline def setRepresentName(value: /* data */ js.Object => Any): Self = StObject.set(x, "representName", js.Any.fromFunction1(value))
+      
+      inline def setRepresentNameUndefined: Self = StObject.set(x, "representName", js.undefined)
       
       inline def setRepresentUndefined: Self = StObject.set(x, "represent", js.undefined)
       
-      inline def setResolve(value: /* data */ js.Any => Boolean): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
+      inline def setResolve(value: /* data */ Any => Boolean): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
       
       inline def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
       
-      inline def setStyleAliases(value: StringDictionary[js.Any]): Self = StObject.set(x, "styleAliases", value.asInstanceOf[js.Any])
+      inline def setStyleAliases(value: StringDictionary[Any]): Self = StObject.set(x, "styleAliases", value.asInstanceOf[js.Any])
       
       inline def setStyleAliasesUndefined: Self = StObject.set(x, "styleAliases", js.undefined)
     }

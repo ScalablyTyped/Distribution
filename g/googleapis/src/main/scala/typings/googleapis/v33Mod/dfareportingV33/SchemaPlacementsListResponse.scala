@@ -4,21 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Placement List Response
-  */
 trait SchemaPlacementsListResponse extends StObject {
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;dfareporting#placementsListResponse&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "dfareporting#placementsListResponse".
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Pagination token to be used for the next list operation.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Placement collection.
@@ -36,9 +32,13 @@ object SchemaPlacementsListResponse {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
+    
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
@@ -46,6 +46,6 @@ object SchemaPlacementsListResponse {
     
     inline def setPlacementsUndefined: Self = StObject.set(x, "placements", js.undefined)
     
-    inline def setPlacementsVarargs(value: SchemaPlacement*): Self = StObject.set(x, "placements", js.Array(value :_*))
+    inline def setPlacementsVarargs(value: SchemaPlacement*): Self = StObject.set(x, "placements", js.Array(value*))
   }
 }

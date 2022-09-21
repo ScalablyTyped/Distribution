@@ -72,7 +72,7 @@ object WebExtensionManifestChromeSettingsOverridesSearchProvider {
     
     inline def setAlternate_urlsUndefined: Self = StObject.set(x, "alternate_urls", js.undefined)
     
-    inline def setAlternate_urlsVarargs(value: String*): Self = StObject.set(x, "alternate_urls", js.Array(value :_*))
+    inline def setAlternate_urlsVarargs(value: String*): Self = StObject.set(x, "alternate_urls", js.Array(value*))
     
     inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
@@ -106,7 +106,7 @@ object WebExtensionManifestChromeSettingsOverridesSearchProvider {
     
     inline def setKeywordUndefined: Self = StObject.set(x, "keyword", js.undefined)
     
-    inline def setKeywordVarargs(value: String*): Self = StObject.set(x, "keyword", js.Array(value :_*))
+    inline def setKeywordVarargs(value: String*): Self = StObject.set(x, "keyword", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -114,7 +114,7 @@ object WebExtensionManifestChromeSettingsOverridesSearchProvider {
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    inline def setParamsVarargs(value: WebExtensionManifestChromeSettingsOverridesSearchProviderParams*): Self = StObject.set(x, "params", js.Array(value :_*))
+    inline def setParamsVarargs(value: WebExtensionManifestChromeSettingsOverridesSearchProviderParams*): Self = StObject.set(x, "params", js.Array(value*))
     
     inline def setPrepopulated_id(value: Double): Self = StObject.set(x, "prepopulated_id", value.asInstanceOf[js.Any])
     

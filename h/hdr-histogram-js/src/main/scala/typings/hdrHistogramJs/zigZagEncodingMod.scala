@@ -22,14 +22,14 @@ object zigZagEncodingMod {
     * As such, this encoder/decoder should NOT be used for encoding or decoding
     * "standard" LEB128 formats (e.g. Google Protocol Buffers).
     */
-  @JSImport("hdr-histogram-js/ZigZagEncoding", JSImport.Default)
+  @JSImport("hdr-histogram-js/dist/ZigZagEncoding", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with ZigZagEncoding
   object default {
     
-    @JSImport("hdr-histogram-js/ZigZagEncoding", JSImport.Default)
+    @JSImport("hdr-histogram-js/dist/ZigZagEncoding", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     

@@ -1,7 +1,7 @@
 package typings.prex
 
-import typings.esfxCancelable.distMod.Cancelable
-import typings.esfxDisposable.distMod.Disposable
+import typings.esfxCancelable.mod.Cancelable
+import typings.esfxDisposable.disposableMod.Disposable
 import typings.prex.cancellationMod.CancellationToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,57 +11,57 @@ object readerwriterlockMod {
   
   @JSImport("prex/out/lib/readerwriterlock", "ReaderWriterLock")
   @js.native
-  class ReaderWriterLock () extends StObject {
+  open class ReaderWriterLock () extends StObject {
     
-    /* private */ var _canTakeReadLock: js.Any = js.native
+    /* private */ var _canTakeReadLock: Any = js.native
     
-    /* private */ var _canTakeUpgradeLock: js.Any = js.native
+    /* private */ var _canTakeUpgradeLock: Any = js.native
     
-    /* private */ var _canTakeUpgradeableReadLock: js.Any = js.native
+    /* private */ var _canTakeUpgradeableReadLock: Any = js.native
     
-    /* private */ var _canTakeWriteLock: js.Any = js.native
+    /* private */ var _canTakeWriteLock: Any = js.native
     
-    /* private */ var _count: js.Any = js.native
+    /* private */ var _count: Any = js.native
     
-    /* private */ var _processLockRequests: js.Any = js.native
+    /* private */ var _processLockRequests: Any = js.native
     
-    /* private */ var _processReadLockRequests: js.Any = js.native
+    /* private */ var _processReadLockRequests: Any = js.native
     
-    /* private */ var _processUpgradeRequest: js.Any = js.native
+    /* private */ var _processUpgradeRequest: Any = js.native
     
-    /* private */ var _processUpgradeableReadLockRequest: js.Any = js.native
+    /* private */ var _processUpgradeableReadLockRequest: Any = js.native
     
-    /* private */ var _processWriteLockRequest: js.Any = js.native
+    /* private */ var _processWriteLockRequest: Any = js.native
     
-    /* private */ var _readers: js.Any = js.native
+    /* private */ var _readers: Any = js.native
     
-    /* private */ var _releaseReadLock: js.Any = js.native
+    /* private */ var _releaseReadLock: Any = js.native
     
-    /* private */ var _releaseUpgradeLock: js.Any = js.native
+    /* private */ var _releaseUpgradeLock: Any = js.native
     
-    /* private */ var _releaseUpgradeableReadLock: js.Any = js.native
+    /* private */ var _releaseUpgradeableReadLock: Any = js.native
     
-    /* private */ var _releaseWriteLock: js.Any = js.native
+    /* private */ var _releaseWriteLock: Any = js.native
     
-    /* private */ var _takeReadLock: js.Any = js.native
+    /* private */ var _takeReadLock: Any = js.native
     
-    /* private */ var _takeUpgradeLock: js.Any = js.native
+    /* private */ var _takeUpgradeLock: Any = js.native
     
-    /* private */ var _takeUpgradeableReadLock: js.Any = js.native
+    /* private */ var _takeUpgradeableReadLock: Any = js.native
     
-    /* private */ var _takeWriteLock: js.Any = js.native
+    /* private */ var _takeWriteLock: Any = js.native
     
-    /* private */ var _upgrade: js.Any = js.native
+    /* private */ var _upgrade: Any = js.native
     
-    /* private */ var _upgradeable: js.Any = js.native
+    /* private */ var _upgradeable: Any = js.native
     
-    /* private */ var _upgradeables: js.Any = js.native
+    /* private */ var _upgradeables: Any = js.native
     
-    /* private */ var _upgraded: js.Any = js.native
+    /* private */ var _upgraded: Any = js.native
     
-    /* private */ var _upgrades: js.Any = js.native
+    /* private */ var _upgrades: Any = js.native
     
-    /* private */ var _writers: js.Any = js.native
+    /* private */ var _writers: Any = js.native
     
     /**
       * Asynchronously waits for and takes a read lock on a resource.
@@ -93,9 +93,7 @@ object readerwriterlockMod {
   }
   
   @js.native
-  trait LockHandle
-    extends StObject
-       with Disposable {
+  trait LockHandle extends Disposable {
     
     /**
       * Releases the lock.
@@ -104,9 +102,7 @@ object readerwriterlockMod {
   }
   
   @js.native
-  trait UpgradeableLockHandle
-    extends StObject
-       with LockHandle {
+  trait UpgradeableLockHandle extends LockHandle {
     
     /**
       * Upgrades the lock to a write lock.

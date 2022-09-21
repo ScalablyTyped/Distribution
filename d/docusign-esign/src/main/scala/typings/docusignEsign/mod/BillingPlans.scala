@@ -123,6 +123,6 @@ object BillingPlans {
     
     inline def setSuccessorPlansUndefined: Self = StObject.set(x, "successorPlans", js.undefined)
     
-    inline def setSuccessorPlansVarargs(value: (/* Contains information about a billing plan. */ BillingPlan)*): Self = StObject.set(x, "successorPlans", js.Array(value :_*))
+    inline def setSuccessorPlansVarargs(value: (/* Contains information about a billing plan. */ BillingPlan)*): Self = StObject.set(x, "successorPlans", js.Array(value*))
   }
 }

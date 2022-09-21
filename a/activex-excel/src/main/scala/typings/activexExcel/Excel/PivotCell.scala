@@ -23,7 +23,7 @@ trait PivotCell extends StObject {
   
   val DataField: typings.activexExcel.Excel.PivotField
   
-  val DataSourceValue: js.Any
+  val DataSourceValue: Any
   
   def DiscardChange(): Unit
   
@@ -34,7 +34,7 @@ trait PivotCell extends StObject {
   
   val MDX: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   val PivotCellType: XlPivotCellType
   
@@ -69,12 +69,12 @@ object PivotCell {
     Creator: XlCreator,
     CustomSubtotalFunction: XlConsolidationFunction,
     DataField: PivotField,
-    DataSourceValue: js.Any,
+    DataSourceValue: Any,
     DiscardChange: () => Unit,
     Dummy18: String,
     ExcelDotPivotCell_typekey: PivotCell,
     MDX: String,
-    Parent: js.Any,
+    Parent: Any,
     PivotCellType: XlPivotCellType,
     PivotColumnLine: PivotLine,
     PivotField: PivotField,
@@ -105,7 +105,7 @@ object PivotCell {
     
     inline def setDataField(value: PivotField): Self = StObject.set(x, "DataField", value.asInstanceOf[js.Any])
     
-    inline def setDataSourceValue(value: js.Any): Self = StObject.set(x, "DataSourceValue", value.asInstanceOf[js.Any])
+    inline def setDataSourceValue(value: Any): Self = StObject.set(x, "DataSourceValue", value.asInstanceOf[js.Any])
     
     inline def setDiscardChange(value: () => Unit): Self = StObject.set(x, "DiscardChange", js.Any.fromFunction0(value))
     
@@ -115,7 +115,7 @@ object PivotCell {
     
     inline def setMDX(value: String): Self = StObject.set(x, "MDX", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPivotCellType(value: XlPivotCellType): Self = StObject.set(x, "PivotCellType", value.asInstanceOf[js.Any])
     

@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** The OES_standard_derivatives extension is part of the WebGL API and adds the GLSL derivative functions dFdx, dFdy, and fwidth. */
 trait OESStandardDerivatives extends StObject {
   
+  /* standard dom */
   val FRAGMENT_SHADER_DERIVATIVE_HINT_OES: GLenum
 }
 object OESStandardDerivatives {

@@ -1,17 +1,16 @@
 package typings.browserfs.zipFSMod
 
-import typings.node.Buffer
-import typings.std.Date
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("browserfs/dist/node/backend/ZipFS", "CentralDirectory")
 @js.native
-class CentralDirectory protected () extends StObject {
+open class CentralDirectory protected () extends StObject {
   def this(zipData: Buffer, data: Buffer) = this()
   
-  /* private */ var _filename: js.Any = js.native
+  /* private */ var _filename: Any = js.native
   
   def compressedSize(): Double = js.native
   
@@ -19,7 +18,7 @@ class CentralDirectory protected () extends StObject {
   
   def crc32(): Double = js.native
   
-  /* private */ var data: js.Any = js.native
+  /* private */ var data: Any = js.native
   
   def diskNumberStart(): Double = js.native
   
@@ -57,7 +56,7 @@ class CentralDirectory protected () extends StObject {
   
   def isFile(): Boolean = js.native
   
-  def lastModFileTime(): Date = js.native
+  def lastModFileTime(): js.Date = js.native
   
   def produceFilename(): String = js.native
   
@@ -77,5 +76,5 @@ class CentralDirectory protected () extends StObject {
   
   def versionNeeded(): Double = js.native
   
-  /* private */ var zipData: js.Any = js.native
+  /* private */ var zipData: Any = js.native
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "sdp" : "3.0.2"
+      "sdp" : "3.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "sdp" : "3.0.2"
+      "sdp" : "3.0.3"
     }
   ],
   "compile-devDependencies" : [

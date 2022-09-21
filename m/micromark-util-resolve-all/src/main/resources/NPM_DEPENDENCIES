@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "micromark-util-resolve-all" : "1.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "micromark-util-resolve-all" : "1.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

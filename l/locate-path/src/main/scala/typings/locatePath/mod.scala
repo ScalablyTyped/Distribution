@@ -2,61 +2,39 @@ package typings.locatePath
 
 import typings.locatePath.locatePathStrings.directory
 import typings.locatePath.locatePathStrings.file
-import typings.std.Iterable
+import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  /**
-  	Get the first path that exists on disk of multiple paths.
-  	@param paths - Paths to check.
-  	@returns The first path that exists or `undefined` if none exists.
-  	@example
-  	```
-  	import locatePath = require('locate-path');
-  	const files = [
-  		'unicorn.png',
-  		'rainbow.png', // Only this one actually exists on disk
-  		'pony.png'
-  	];
-  	(async () => {
-  		console(await locatePath(files));
-  		//=> 'rainbow'
-  	})();
-  	```
-  	*/
-  inline def apply(paths: Iterable[String]): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].apply(paths.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[String]]]
-  inline def apply(paths: Iterable[String], options: AsyncOptions): js.Promise[js.UndefOr[String]] = (^.asInstanceOf[js.Dynamic].apply(paths.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[String]]]
-  
   @JSImport("locate-path", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-  	Synchronously get the first path that exists on disk of multiple paths.
-  	@param paths - Paths to check.
-  	@returns The first path that exists or `undefined` if none exists.
-  	*/
-  inline def sync(paths: Iterable[String]): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(paths.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
-  inline def sync(paths: Iterable[String], options: Options): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(paths.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  inline def locatePath(paths: js.Iterable[String]): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("locatePath")(paths.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[String]]]
+  inline def locatePath(paths: js.Iterable[String], options: AsyncOptions): js.Promise[js.UndefOr[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("locatePath")(paths.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[String]]]
+  
+  inline def locatePathSync(paths: js.Iterable[String]): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("locatePathSync")(paths.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def locatePathSync(paths: js.Iterable[String], options: Options): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("locatePathSync")(paths.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
   
   trait AsyncOptions
     extends StObject
        with Options {
     
     /**
-    		Number of concurrently pending promises. Minimum: `1`.
-    		@default Infinity
-    		*/
+    	The number of concurrently pending promises.
+    	Minimum: `1`
+    	@default Infinity
+    	*/
     val concurrency: js.UndefOr[Double] = js.undefined
     
     /**
-    		Preserve `paths` order when searching.
-    		Disable this to improve performance if you don't care about the order.
-    		@default true
-    		*/
+    	Preserve `paths` order when searching.
+    	Disable this to improve performance if you don't care about the order.
+    	@default true
+    	*/
     val preserveOrder: js.UndefOr[Boolean] = js.undefined
   }
   object AsyncOptions {
@@ -81,21 +59,21 @@ object mod {
   trait Options extends StObject {
     
     /**
-    		Allow symbolic links to match if they point to the requested path type.
-    		@default true
-    		*/
+    	Allow symbolic links to match if they point to the requested path type.
+    	@default true
+    	*/
     val allowSymlinks: js.UndefOr[Boolean] = js.undefined
     
     /**
-    		Current working directory.
-    		@default process.cwd()
-    		*/
-    val cwd: js.UndefOr[String] = js.undefined
+    	The current working directory.
+    	@default process.cwd()
+    	*/
+    val cwd: js.UndefOr[URL | String] = js.undefined
     
     /**
-    		Type of path to match.
-    		@default 'file'
-    		*/
+    	The type of path to match.
+    	@default 'file'
+    	*/
     val `type`: js.UndefOr[file | directory] = js.undefined
   }
   object Options {
@@ -111,7 +89,7 @@ object mod {
       
       inline def setAllowSymlinksUndefined: Self = StObject.set(x, "allowSymlinks", js.undefined)
       
-      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: URL | String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
       inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       

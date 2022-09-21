@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(): js.Promise[Null] | Null = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[Null] | Null]
-  inline def apply(options: Options): js.Promise[Null] | Null = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Null] | Null]
+  inline def apply(): js.Promise[Unit] | Null = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[Unit] | Null]
+  inline def apply(options: Options): js.Promise[Unit] | Null = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit] | Null]
   
   @JSImport("canvas-confetti", JSImport.Namespace)
   @js.native
@@ -19,12 +19,14 @@ object mod {
     */
   @JSImport("canvas-confetti", "Promise")
   @js.native
-  def Promise: js.Any = js.native
-  inline def Promise_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Promise")(x.asInstanceOf[js.Any])
+  def Promise: Any = js.native
+  inline def Promise_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Promise")(x.asInstanceOf[js.Any])
   
   /**
     * This method creates an instance of the confetti function that uses a custom canvas.
     */
+  inline def create(): CreateTypes = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[CreateTypes]
+  inline def create(canvas: Unit, options: GlobalOptions): CreateTypes = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(canvas.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CreateTypes]
   inline def create(canvas: HTMLCanvasElement): CreateTypes = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(canvas.asInstanceOf[js.Any]).asInstanceOf[CreateTypes]
   inline def create(canvas: HTMLCanvasElement, options: GlobalOptions): CreateTypes = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(canvas.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CreateTypes]
   
@@ -33,8 +35,8 @@ object mod {
   @js.native
   trait CreateTypes extends StObject {
     
-    def apply(): js.Function0[js.Promise[Null] | Null] = js.native
-    def apply(options: Options): js.Function0[js.Promise[Null] | Null] = js.native
+    def apply(): js.Promise[Null] | Null = js.native
+    def apply(options: Options): js.Promise[Null] | Null = js.native
     
     def reset(): Unit = js.native
     @JSName("reset")
@@ -42,6 +44,12 @@ object mod {
   }
   
   trait GlobalOptions extends StObject {
+    
+    /**
+      * Disables confetti entirely for users that prefer reduced motion. When set to true, use of this
+      * confetti instance will always respect a user's request for reduced motion and disable confetti for them.
+      */
+    var disableForReducedMotion: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to allow setting the canvas image size, as well as keep it correctly sized if the window changes size
@@ -63,6 +71,10 @@ object mod {
     }
     
     extension [Self <: GlobalOptions](x: Self) {
+      
+      inline def setDisableForReducedMotion(value: Boolean): Self = StObject.set(x, "disableForReducedMotion", value.asInstanceOf[js.Any])
+      
+      inline def setDisableForReducedMotionUndefined: Self = StObject.set(x, "disableForReducedMotion", js.undefined)
       
       inline def setResize(value: Boolean): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
       
@@ -98,6 +110,13 @@ object mod {
       * @default false
       */
     var disableForReducedMotion: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * How much to the side the confetti will drift. The default is 0, meaning that they will fall straight down.
+      * Use a negative number for left and positive number for right
+      * @default 0
+      */
+    var drift: js.UndefOr[Double] = js.undefined
     
     /**
       * How quickly the particles are pulled down. 1 is full gravity, 0.5 is half gravity, etc., but there are no limits.
@@ -169,7 +188,7 @@ object mod {
       
       inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
       
-      inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value :_*))
+      inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value*))
       
       inline def setDecay(value: Double): Self = StObject.set(x, "decay", value.asInstanceOf[js.Any])
       
@@ -178,6 +197,10 @@ object mod {
       inline def setDisableForReducedMotion(value: Boolean): Self = StObject.set(x, "disableForReducedMotion", value.asInstanceOf[js.Any])
       
       inline def setDisableForReducedMotionUndefined: Self = StObject.set(x, "disableForReducedMotion", js.undefined)
+      
+      inline def setDrift(value: Double): Self = StObject.set(x, "drift", value.asInstanceOf[js.Any])
+      
+      inline def setDriftUndefined: Self = StObject.set(x, "drift", js.undefined)
       
       inline def setGravity(value: Double): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
       
@@ -199,7 +222,7 @@ object mod {
       
       inline def setShapesUndefined: Self = StObject.set(x, "shapes", js.undefined)
       
-      inline def setShapesVarargs(value: shape*): Self = StObject.set(x, "shapes", js.Array(value :_*))
+      inline def setShapesVarargs(value: shape*): Self = StObject.set(x, "shapes", js.Array(value*))
       
       inline def setSpread(value: Double): Self = StObject.set(x, "spread", value.asInstanceOf[js.Any])
       

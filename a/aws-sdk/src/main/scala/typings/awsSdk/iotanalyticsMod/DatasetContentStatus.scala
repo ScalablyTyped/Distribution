@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DatasetContentStatus extends StObject {
   
   /**
-    * The reason the data set contents are in this state.
+    * The reason the dataset contents are in this state.
     */
   var reason: js.UndefOr[Reason] = js.undefined
   
   /**
-    * The state of the data set contents. Can be one of READY, CREATING, SUCCEEDED, or FAILED.
+    * The state of the dataset contents. Can be one of READY, CREATING, SUCCEEDED, or FAILED.
     */
   var state: js.UndefOr[DatasetContentState] = js.undefined
 }

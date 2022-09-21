@@ -112,7 +112,7 @@ object TQuery {
     
     inline def setMatchesNull: Self = StObject.set(x, "matches", null)
     
-    inline def setMatchesVarargs(value: Double*): Self = StObject.set(x, "matches", js.Array(value :_*))
+    inline def setMatchesVarargs(value: Double*): Self = StObject.set(x, "matches", js.Array(value*))
     
     inline def setMetadata(value: TQueryMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

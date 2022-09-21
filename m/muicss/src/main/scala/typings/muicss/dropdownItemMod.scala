@@ -10,8 +10,8 @@ object dropdownItemMod {
   
   @JSImport("muicss/lib/react/dropdown-item", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[DropdownItemProps, js.Object, js.Any]
+  open class default ()
+    extends Component[DropdownItemProps, js.Object, Any]
   
-  type DropdownItem = Component[DropdownItemProps, js.Object, js.Any]
+  type DropdownItem = Component[DropdownItemProps, js.Object, Any]
 }

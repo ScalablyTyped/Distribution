@@ -155,7 +155,7 @@ object anon {
       
       inline def setEntries(value: js.Array[DataPoint]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
       
-      inline def setEntriesVarargs(value: DataPoint*): Self = StObject.set(x, "entries", js.Array(value :_*))
+      inline def setEntriesVarargs(value: DataPoint*): Self = StObject.set(x, "entries", js.Array(value*))
       
       inline def setToolTip(value: Entries): Self = StObject.set(x, "toolTip", value.asInstanceOf[js.Any])
     }

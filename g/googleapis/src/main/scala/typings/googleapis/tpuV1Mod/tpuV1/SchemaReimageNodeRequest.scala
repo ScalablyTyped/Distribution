@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request for ReimageNode.
-  */
 trait SchemaReimageNodeRequest extends StObject {
   
   /**
     * The version for reimage to create.
     */
-  var tensorflowVersion: js.UndefOr[String] = js.undefined
+  var tensorflowVersion: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaReimageNodeRequest {
   
@@ -24,6 +21,8 @@ object SchemaReimageNodeRequest {
   extension [Self <: SchemaReimageNodeRequest](x: Self) {
     
     inline def setTensorflowVersion(value: String): Self = StObject.set(x, "tensorflowVersion", value.asInstanceOf[js.Any])
+    
+    inline def setTensorflowVersionNull: Self = StObject.set(x, "tensorflowVersion", null)
     
     inline def setTensorflowVersionUndefined: Self = StObject.set(x, "tensorflowVersion", js.undefined)
   }

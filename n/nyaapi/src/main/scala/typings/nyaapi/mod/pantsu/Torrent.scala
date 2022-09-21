@@ -106,7 +106,7 @@ object Torrent {
     
     inline def setComments(value: js.Array[Comment]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
-    inline def setCommentsVarargs(value: Comment*): Self = StObject.set(x, "comments", js.Array(value :_*))
+    inline def setCommentsVarargs(value: Comment*): Self = StObject.set(x, "comments", js.Array(value*))
     
     inline def setCompleted(value: Double): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
     
@@ -118,7 +118,7 @@ object Torrent {
     
     inline def setFile_list(value: js.Array[String]): Self = StObject.set(x, "file_list", value.asInstanceOf[js.Any])
     
-    inline def setFile_listVarargs(value: String*): Self = StObject.set(x, "file_list", js.Array(value :_*))
+    inline def setFile_listVarargs(value: String*): Self = StObject.set(x, "file_list", js.Array(value*))
     
     inline def setFilesize(value: Double): Self = StObject.set(x, "filesize", value.asInstanceOf[js.Any])
     
@@ -128,7 +128,7 @@ object Torrent {
     
     inline def setLanguages(value: js.Array[String]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
     
-    inline def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value :_*))
+    inline def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value*))
     
     inline def setLast_scrape(value: String): Self = StObject.set(x, "last_scrape", value.asInstanceOf[js.Any])
     

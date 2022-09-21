@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Initializes a new instance of the ASPxClientCardViewFocusEventArgs class.
   */
-class ASPxClientCardViewFocusEventArgs ()
+open class ASPxClientCardViewFocusEventArgs ()
   extends StObject
      with typings.devexpressWeb.ASPxClientCardViewFocusEventArgs {
   

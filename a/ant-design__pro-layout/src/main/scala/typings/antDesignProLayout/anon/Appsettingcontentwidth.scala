@@ -57,6 +57,9 @@ trait Appsettingcontentwidth extends StObject {
   @JSName("app.setting.pagestyle.light")
   var appDotsettingDotpagestyleDotlight: String
   
+  @JSName("app.setting.pagestyle.realdark")
+  var appDotsettingDotpagestyleDotrealdark: String
+  
   @JSName("app.setting.production.hint")
   var appDotsettingDotproductionDothint: String
   
@@ -77,6 +80,15 @@ trait Appsettingcontentwidth extends StObject {
   
   @JSName("app.setting.sidemenu")
   var appDotsettingDotsidemenu: String
+  
+  @JSName("app.setting.sidermenutype")
+  var appDotsettingDotsidermenutype: String
+  
+  @JSName("app.setting.sidermenutype-group")
+  var `appDotsettingDotsidermenutype-group`: String
+  
+  @JSName("app.setting.sidermenutype-sub")
+  var `appDotsettingDotsidermenutype-sub`: String
   
   @JSName("app.setting.splitMenus")
   var appDotsettingDotsplitMenus: String
@@ -104,6 +116,9 @@ trait Appsettingcontentwidth extends StObject {
   
   @JSName("app.setting.themecolor.sunset")
   var appDotsettingDotthemecolorDotsunset: String
+  
+  @JSName("app.setting.themecolor.techBlue")
+  var appDotsettingDotthemecolorDottechBlue: String
   
   @JSName("app.setting.themecolor.volcano")
   var appDotsettingDotthemecolorDotvolcano: String
@@ -134,6 +149,7 @@ object Appsettingcontentwidth {
     appDotsettingDotpagestyle: String,
     appDotsettingDotpagestyleDotdark: String,
     appDotsettingDotpagestyleDotlight: String,
+    appDotsettingDotpagestyleDotrealdark: String,
     appDotsettingDotproductionDothint: String,
     appDotsettingDotregionalsettings: String,
     appDotsettingDotregionalsettingsDotfooter: String,
@@ -141,6 +157,9 @@ object Appsettingcontentwidth {
     appDotsettingDotregionalsettingsDotmenu: String,
     appDotsettingDotregionalsettingsDotmenuHeader: String,
     appDotsettingDotsidemenu: String,
+    appDotsettingDotsidermenutype: String,
+    `appDotsettingDotsidermenutype-group`: String,
+    `appDotsettingDotsidermenutype-sub`: String,
     appDotsettingDotsplitMenus: String,
     appDotsettingDotthemecolor: String,
     appDotsettingDotthemecolorDotcyan: String,
@@ -150,6 +169,7 @@ object Appsettingcontentwidth {
     appDotsettingDotthemecolorDotgreen: String,
     appDotsettingDotthemecolorDotpurple: String,
     appDotsettingDotthemecolorDotsunset: String,
+    appDotsettingDotthemecolorDottechBlue: String,
     appDotsettingDotthemecolorDotvolcano: String,
     appDotsettingDottopmenu: String,
     appDotsettingDotweakmode: String
@@ -172,6 +192,7 @@ object Appsettingcontentwidth {
     __obj.updateDynamic("app.setting.pagestyle")(appDotsettingDotpagestyle.asInstanceOf[js.Any])
     __obj.updateDynamic("app.setting.pagestyle.dark")(appDotsettingDotpagestyleDotdark.asInstanceOf[js.Any])
     __obj.updateDynamic("app.setting.pagestyle.light")(appDotsettingDotpagestyleDotlight.asInstanceOf[js.Any])
+    __obj.updateDynamic("app.setting.pagestyle.realdark")(appDotsettingDotpagestyleDotrealdark.asInstanceOf[js.Any])
     __obj.updateDynamic("app.setting.production.hint")(appDotsettingDotproductionDothint.asInstanceOf[js.Any])
     __obj.updateDynamic("app.setting.regionalsettings")(appDotsettingDotregionalsettings.asInstanceOf[js.Any])
     __obj.updateDynamic("app.setting.regionalsettings.footer")(appDotsettingDotregionalsettingsDotfooter.asInstanceOf[js.Any])
@@ -179,6 +200,9 @@ object Appsettingcontentwidth {
     __obj.updateDynamic("app.setting.regionalsettings.menu")(appDotsettingDotregionalsettingsDotmenu.asInstanceOf[js.Any])
     __obj.updateDynamic("app.setting.regionalsettings.menuHeader")(appDotsettingDotregionalsettingsDotmenuHeader.asInstanceOf[js.Any])
     __obj.updateDynamic("app.setting.sidemenu")(appDotsettingDotsidemenu.asInstanceOf[js.Any])
+    __obj.updateDynamic("app.setting.sidermenutype")(appDotsettingDotsidermenutype.asInstanceOf[js.Any])
+    __obj.updateDynamic("app.setting.sidermenutype-group")(`appDotsettingDotsidermenutype-group`.asInstanceOf[js.Any])
+    __obj.updateDynamic("app.setting.sidermenutype-sub")(`appDotsettingDotsidermenutype-sub`.asInstanceOf[js.Any])
     __obj.updateDynamic("app.setting.splitMenus")(appDotsettingDotsplitMenus.asInstanceOf[js.Any])
     __obj.updateDynamic("app.setting.themecolor")(appDotsettingDotthemecolor.asInstanceOf[js.Any])
     __obj.updateDynamic("app.setting.themecolor.cyan")(appDotsettingDotthemecolorDotcyan.asInstanceOf[js.Any])
@@ -188,6 +212,7 @@ object Appsettingcontentwidth {
     __obj.updateDynamic("app.setting.themecolor.green")(appDotsettingDotthemecolorDotgreen.asInstanceOf[js.Any])
     __obj.updateDynamic("app.setting.themecolor.purple")(appDotsettingDotthemecolorDotpurple.asInstanceOf[js.Any])
     __obj.updateDynamic("app.setting.themecolor.sunset")(appDotsettingDotthemecolorDotsunset.asInstanceOf[js.Any])
+    __obj.updateDynamic("app.setting.themecolor.techBlue")(appDotsettingDotthemecolorDottechBlue.asInstanceOf[js.Any])
     __obj.updateDynamic("app.setting.themecolor.volcano")(appDotsettingDotthemecolorDotvolcano.asInstanceOf[js.Any])
     __obj.updateDynamic("app.setting.topmenu")(appDotsettingDottopmenu.asInstanceOf[js.Any])
     __obj.updateDynamic("app.setting.weakmode")(appDotsettingDotweakmode.asInstanceOf[js.Any])
@@ -230,6 +255,8 @@ object Appsettingcontentwidth {
     
     inline def setAppDotsettingDotpagestyleDotlight(value: String): Self = StObject.set(x, "app.setting.pagestyle.light", value.asInstanceOf[js.Any])
     
+    inline def setAppDotsettingDotpagestyleDotrealdark(value: String): Self = StObject.set(x, "app.setting.pagestyle.realdark", value.asInstanceOf[js.Any])
+    
     inline def setAppDotsettingDotproductionDothint(value: String): Self = StObject.set(x, "app.setting.production.hint", value.asInstanceOf[js.Any])
     
     inline def setAppDotsettingDotregionalsettings(value: String): Self = StObject.set(x, "app.setting.regionalsettings", value.asInstanceOf[js.Any])
@@ -243,6 +270,12 @@ object Appsettingcontentwidth {
     inline def setAppDotsettingDotregionalsettingsDotmenuHeader(value: String): Self = StObject.set(x, "app.setting.regionalsettings.menuHeader", value.asInstanceOf[js.Any])
     
     inline def setAppDotsettingDotsidemenu(value: String): Self = StObject.set(x, "app.setting.sidemenu", value.asInstanceOf[js.Any])
+    
+    inline def setAppDotsettingDotsidermenutype(value: String): Self = StObject.set(x, "app.setting.sidermenutype", value.asInstanceOf[js.Any])
+    
+    inline def `setAppDotsettingDotsidermenutype-group`(value: String): Self = StObject.set(x, "app.setting.sidermenutype-group", value.asInstanceOf[js.Any])
+    
+    inline def `setAppDotsettingDotsidermenutype-sub`(value: String): Self = StObject.set(x, "app.setting.sidermenutype-sub", value.asInstanceOf[js.Any])
     
     inline def setAppDotsettingDotsplitMenus(value: String): Self = StObject.set(x, "app.setting.splitMenus", value.asInstanceOf[js.Any])
     
@@ -261,6 +294,8 @@ object Appsettingcontentwidth {
     inline def setAppDotsettingDotthemecolorDotpurple(value: String): Self = StObject.set(x, "app.setting.themecolor.purple", value.asInstanceOf[js.Any])
     
     inline def setAppDotsettingDotthemecolorDotsunset(value: String): Self = StObject.set(x, "app.setting.themecolor.sunset", value.asInstanceOf[js.Any])
+    
+    inline def setAppDotsettingDotthemecolorDottechBlue(value: String): Self = StObject.set(x, "app.setting.themecolor.techBlue", value.asInstanceOf[js.Any])
     
     inline def setAppDotsettingDotthemecolorDotvolcano(value: String): Self = StObject.set(x, "app.setting.themecolor.volcano", value.asInstanceOf[js.Any])
     

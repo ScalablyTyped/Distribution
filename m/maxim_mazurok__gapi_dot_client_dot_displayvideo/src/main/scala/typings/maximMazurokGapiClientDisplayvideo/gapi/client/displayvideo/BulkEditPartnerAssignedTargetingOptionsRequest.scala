@@ -25,12 +25,12 @@ object BulkEditPartnerAssignedTargetingOptionsRequest {
     
     inline def setCreateRequestsUndefined: Self = StObject.set(x, "createRequests", js.undefined)
     
-    inline def setCreateRequestsVarargs(value: CreateAssignedTargetingOptionsRequest*): Self = StObject.set(x, "createRequests", js.Array(value :_*))
+    inline def setCreateRequestsVarargs(value: CreateAssignedTargetingOptionsRequest*): Self = StObject.set(x, "createRequests", js.Array(value*))
     
     inline def setDeleteRequests(value: js.Array[DeleteAssignedTargetingOptionsRequest]): Self = StObject.set(x, "deleteRequests", value.asInstanceOf[js.Any])
     
     inline def setDeleteRequestsUndefined: Self = StObject.set(x, "deleteRequests", js.undefined)
     
-    inline def setDeleteRequestsVarargs(value: DeleteAssignedTargetingOptionsRequest*): Self = StObject.set(x, "deleteRequests", js.Array(value :_*))
+    inline def setDeleteRequestsVarargs(value: DeleteAssignedTargetingOptionsRequest*): Self = StObject.set(x, "deleteRequests", js.Array(value*))
   }
 }

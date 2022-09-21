@@ -11,7 +11,7 @@ object fileNameCasingRuleMod {
   
   @JSImport("tslint/lib/rules/fileNameCasingRule", "Rule")
   @js.native
-  class Rule protected () extends AbstractRule {
+  open class Rule protected () extends AbstractRule {
     def this(options: IOptions) = this()
   }
   /* static members */
@@ -23,8 +23,8 @@ object fileNameCasingRuleMod {
     
     @JSImport("tslint/lib/rules/fileNameCasingRule", "Rule.FAILURE_STRING")
     @js.native
-    def FAILURE_STRING: js.Any = js.native
-    inline def FAILURE_STRING_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING")(x.asInstanceOf[js.Any])
+    def FAILURE_STRING: Any = js.native
+    inline def FAILURE_STRING_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING")(x.asInstanceOf[js.Any])
     
     @JSImport("tslint/lib/rules/fileNameCasingRule", "Rule.metadata")
     @js.native
@@ -35,7 +35,7 @@ object fileNameCasingRuleMod {
     
     @JSImport("tslint/lib/rules/fileNameCasingRule", "Rule.stylizedNameForCasing")
     @js.native
-    def stylizedNameForCasing: js.Any = js.native
-    inline def stylizedNameForCasing_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stylizedNameForCasing")(x.asInstanceOf[js.Any])
+    def stylizedNameForCasing: Any = js.native
+    inline def stylizedNameForCasing_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stylizedNameForCasing")(x.asInstanceOf[js.Any])
   }
 }

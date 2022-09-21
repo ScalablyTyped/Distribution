@@ -11,14 +11,14 @@ object tabLinkMod {
   
   @JSImport("react-tabs-redux/TabLink", "TabLink")
   @js.native
-  class TabLink protected ()
-    extends Component[TabLinkProps, js.Object, js.Any] {
+  open class TabLink protected ()
+    extends Component[TabLinkProps, js.Object, Any] {
     def this(props: TabLinkProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: TabLinkProps, context: js.Any) = this()
+    def this(props: TabLinkProps, context: Any) = this()
   }
   
   trait TabLinkProps extends StObject {

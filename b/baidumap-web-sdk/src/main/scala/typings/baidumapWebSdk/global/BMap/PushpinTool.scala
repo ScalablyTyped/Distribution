@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMap.PushpinTool")
 @js.native
-class PushpinTool protected ()
+open class PushpinTool protected ()
   extends StObject
      with typings.baidumapWebSdk.BMap.PushpinTool {
   def this(map: typings.baidumapWebSdk.BMap.Map) = this()

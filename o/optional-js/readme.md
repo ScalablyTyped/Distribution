@@ -10,10 +10,10 @@ Optionals for JS - wrapper for possibly undefined values, inspired by Java Optio
 | ------------------ | :-------------: |
 | Full name          | optional-js |
 | Keywords           | optional, java, javascript |
-| # releases         | 4 |
-| # dependents       | 12 |
-| # downloads        | 4911044 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1158908.3333333333 |
+| # stars            | 75.0 |
 
 ## Links
 - [Homepage](https://github.com/JasonStorey/Optional.js)

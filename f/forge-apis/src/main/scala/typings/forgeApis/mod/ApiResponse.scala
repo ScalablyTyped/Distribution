@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ApiResponse extends StObject {
   
-  var body: js.Any
+  var body: Any
   
   var headers: StringDictionary[String]
   
@@ -15,14 +15,14 @@ trait ApiResponse extends StObject {
 }
 object ApiResponse {
   
-  inline def apply(body: js.Any, headers: StringDictionary[String], statusCode: Double): ApiResponse = {
+  inline def apply(body: Any, headers: StringDictionary[String], statusCode: Double): ApiResponse = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApiResponse]
   }
   
   extension [Self <: ApiResponse](x: Self) {
     
-    inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

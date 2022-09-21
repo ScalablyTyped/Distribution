@@ -17,9 +17,9 @@ trait SchemaBlogUserInfo extends StObject {
   var blog_user_info: js.UndefOr[SchemaBlogPerUserInfo] = js.undefined
   
   /**
-    * The kind of this entity. Always blogger#blogUserInfo
+    * The kind of this entity. Always blogger#blogUserInfo.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaBlogUserInfo {
   
@@ -39,6 +39,8 @@ object SchemaBlogUserInfo {
     inline def setBlog_user_infoUndefined: Self = StObject.set(x, "blog_user_info", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }

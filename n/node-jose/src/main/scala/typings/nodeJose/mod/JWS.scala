@@ -1,11 +1,12 @@
 package typings.nodeJose.mod
 
-import typings.node.Buffer
-import typings.nodeJose.anon.Alg
+import typings.node.bufferMod.global.Buffer
 import typings.nodeJose.anon.Algorithms
 import typings.nodeJose.anon.AllowEmbeddedKey
 import typings.nodeJose.mod.JWK.Key
 import typings.nodeJose.mod.JWK.KeyStore
+import typings.nodeJose.nodeJoseStrings.compact
+import typings.nodeJose.nodeJoseStrings.flattened
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,8 +19,8 @@ object JWS {
   
   inline def createSign(keys: js.Array[Key]): Signer = ^.asInstanceOf[js.Dynamic].applyDynamic("createSign")(keys.asInstanceOf[js.Any]).asInstanceOf[Signer]
   inline def createSign(keys: Key): Signer = ^.asInstanceOf[js.Dynamic].applyDynamic("createSign")(keys.asInstanceOf[js.Any]).asInstanceOf[Signer]
-  inline def createSign(options: Alg, key: js.Array[Key]): Signer = (^.asInstanceOf[js.Dynamic].applyDynamic("createSign")(options.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Signer]
-  inline def createSign(options: Alg, key: Key): Signer = (^.asInstanceOf[js.Dynamic].applyDynamic("createSign")(options.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Signer]
+  inline def createSign(options: SignOptions, key: js.Array[Key]): Signer = (^.asInstanceOf[js.Dynamic].applyDynamic("createSign")(options.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Signer]
+  inline def createSign(options: SignOptions, key: Key): Signer = (^.asInstanceOf[js.Dynamic].applyDynamic("createSign")(options.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Signer]
   
   /**
     * Using a keystore.
@@ -72,7 +73,7 @@ object JWS {
       
       inline def setProtected(value: js.Array[String]): Self = StObject.set(x, "protected", value.asInstanceOf[js.Any])
       
-      inline def setProtectedVarargs(value: String*): Self = StObject.set(x, "protected", js.Array(value :_*))
+      inline def setProtectedVarargs(value: String*): Self = StObject.set(x, "protected", js.Array(value*))
     }
   }
   
@@ -95,18 +96,55 @@ object JWS {
   
   trait Exp extends StObject {
     
-    def complete(jws: js.Any): js.Any
+    def complete(jws: Any): Any
   }
   object Exp {
     
-    inline def apply(complete: js.Any => js.Any): Exp = {
+    inline def apply(complete: Any => Any): Exp = {
       val __obj = js.Dynamic.literal(complete = js.Any.fromFunction1(complete))
       __obj.asInstanceOf[Exp]
     }
     
     extension [Self <: Exp](x: Self) {
       
-      inline def setComplete(value: js.Any => js.Any): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+      inline def setComplete(value: Any => Any): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+    }
+  }
+  
+  trait SignOptions extends StObject {
+    
+    var alg: js.UndefOr[String] = js.undefined
+    
+    var compact: js.UndefOr[Boolean] = js.undefined
+    
+    var fields: js.UndefOr[js.Object] = js.undefined
+    
+    var format: js.UndefOr[compact | flattened] = js.undefined
+  }
+  object SignOptions {
+    
+    inline def apply(): SignOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SignOptions]
+    }
+    
+    extension [Self <: SignOptions](x: Self) {
+      
+      inline def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
+      
+      inline def setAlgUndefined: Self = StObject.set(x, "alg", js.undefined)
+      
+      inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+      
+      inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
+      
+      inline def setFields(value: js.Object): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      
+      inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+      
+      inline def setFormat(value: compact | flattened): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     }
   }
   
@@ -178,7 +216,7 @@ object JWS {
       
       inline def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
       
-      inline def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value :_*))
+      inline def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value*))
       
       inline def setAllowEmbeddedKey(value: Boolean): Self = StObject.set(x, "allowEmbeddedKey", value.asInstanceOf[js.Any])
       

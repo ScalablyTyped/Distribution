@@ -10,10 +10,10 @@ A Bonjour/Zeroconf implementation in pure JavaScript
 | ------------------ | :-------------: |
 | Full name          | bonjour |
 | Keywords           | bonjour, zeroconf, zero, configuration, mdns, dns, service, discovery, multicast, broadcast, dns-sd |
-| # releases         | 0 |
-| # dependents       | 147 |
-| # downloads        | 319476936 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3.6863085333333336E7 |
+| # stars            | 569.0 |
 
 ## Links
 - [Homepage](https://github.com/watson/bonjour)

@@ -5,7 +5,6 @@ import typings.awsSdkClientPinpointBrowser.typesRawEmailMod.RawEmail
 import typings.awsSdkClientPinpointBrowser.typesRawEmailMod.UnmarshalledRawEmail
 import typings.awsSdkClientPinpointBrowser.typesSimpleEmailMod.SimpleEmail
 import typings.awsSdkClientPinpointBrowser.typesSimpleEmailMod.UnmarshalledSimpleEmail
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,7 +36,7 @@ object typesEmailMessageMod {
     /**
       * The reply-to email address(es) for the email. If the recipient replies to the email, each reply-to address will receive the reply.
       */
-    var ReplyToAddresses: js.UndefOr[js.Array[String] | Iterable[String]] = js.undefined
+    var ReplyToAddresses: js.UndefOr[js.Array[String] | js.Iterable[String]] = js.undefined
     
     /**
       * An email composed of a subject, a text part and a html part.
@@ -48,7 +47,7 @@ object typesEmailMessageMod {
       * Default message substitutions. Can be overridden by individual address substitutions.
       */
     var Substitutions: js.UndefOr[
-        (StringDictionary[js.Array[String] | Iterable[String]]) | (Iterable[js.Tuple2[String, js.Array[String] | Iterable[String]]])
+        (StringDictionary[js.Array[String] | js.Iterable[String]]) | (js.Iterable[js.Tuple2[String, js.Array[String] | js.Iterable[String]]])
       ] = js.undefined
   }
   object EmailMessage {
@@ -76,18 +75,18 @@ object typesEmailMessageMod {
       
       inline def setRawEmailUndefined: Self = StObject.set(x, "RawEmail", js.undefined)
       
-      inline def setReplyToAddresses(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "ReplyToAddresses", value.asInstanceOf[js.Any])
+      inline def setReplyToAddresses(value: js.Array[String] | js.Iterable[String]): Self = StObject.set(x, "ReplyToAddresses", value.asInstanceOf[js.Any])
       
       inline def setReplyToAddressesUndefined: Self = StObject.set(x, "ReplyToAddresses", js.undefined)
       
-      inline def setReplyToAddressesVarargs(value: String*): Self = StObject.set(x, "ReplyToAddresses", js.Array(value :_*))
+      inline def setReplyToAddressesVarargs(value: String*): Self = StObject.set(x, "ReplyToAddresses", js.Array(value*))
       
       inline def setSimpleEmail(value: SimpleEmail): Self = StObject.set(x, "SimpleEmail", value.asInstanceOf[js.Any])
       
       inline def setSimpleEmailUndefined: Self = StObject.set(x, "SimpleEmail", js.undefined)
       
       inline def setSubstitutions(
-        value: (StringDictionary[js.Array[String] | Iterable[String]]) | (Iterable[js.Tuple2[String, js.Array[String] | Iterable[String]]])
+        value: (StringDictionary[js.Array[String] | js.Iterable[String]]) | (js.Iterable[js.Tuple2[String, js.Array[String] | js.Iterable[String]]])
       ): Self = StObject.set(x, "Substitutions", value.asInstanceOf[js.Any])
       
       inline def setSubstitutionsUndefined: Self = StObject.set(x, "Substitutions", js.undefined)
@@ -139,7 +138,7 @@ object typesEmailMessageMod {
       
       inline def setReplyToAddressesUndefined: Self = StObject.set(x, "ReplyToAddresses", js.undefined)
       
-      inline def setReplyToAddressesVarargs(value: String*): Self = StObject.set(x, "ReplyToAddresses", js.Array(value :_*))
+      inline def setReplyToAddressesVarargs(value: String*): Self = StObject.set(x, "ReplyToAddresses", js.Array(value*))
       
       inline def setSimpleEmail(value: UnmarshalledSimpleEmail): Self = StObject.set(x, "SimpleEmail", value.asInstanceOf[js.Any])
       

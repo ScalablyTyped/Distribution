@@ -6,30 +6,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait plugin extends StObject {
   
-  def init(options: plotOptions): js.Any
+  def init(options: plotOptions): Any
   
   var name: js.UndefOr[String] = js.undefined
   
-  var options: js.UndefOr[js.Any] = js.undefined
+  var options: js.UndefOr[Any] = js.undefined
   
   var version: js.UndefOr[String] = js.undefined
 }
 object plugin {
   
-  inline def apply(init: plotOptions => js.Any): plugin = {
+  inline def apply(init: plotOptions => Any): plugin = {
     val __obj = js.Dynamic.literal(init = js.Any.fromFunction1(init))
     __obj.asInstanceOf[plugin]
   }
   
   extension [Self <: plugin](x: Self) {
     
-    inline def setInit(value: plotOptions => js.Any): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+    inline def setInit(value: plotOptions => Any): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     

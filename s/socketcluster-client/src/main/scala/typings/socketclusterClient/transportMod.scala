@@ -1,6 +1,6 @@
 package typings.socketclusterClient
 
-import typings.node.NodeJS.Timer
+import typings.node.timersMod.global.NodeJS.Timer
 import typings.socketclusterClient.authMod.AGAuthEngine
 import typings.socketclusterClient.authMod.AuthToken
 import typings.socketclusterClient.clientsocketMod.CallIdGenerator
@@ -11,7 +11,7 @@ import typings.socketclusterClient.socketclusterClientStrings.closed
 import typings.socketclusterClient.socketclusterClientStrings.connecting
 import typings.socketclusterClient.socketclusterClientStrings.open
 import typings.socketclusterServer.serverMod.CodecEngine
-import typings.std.Error
+import typings.ws.mod.WebSocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +20,7 @@ object transportMod {
   
   @JSImport("socketcluster-client/lib/transport", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with AGTransport {
     def this(authEngine: AGAuthEngine, codecEngine: CodecEngine, options: ClientOptions) = this()
@@ -78,16 +78,16 @@ object transportMod {
     
     var connectTimeout: Double = js.native
     
-    def decode(message: js.Any): js.Any = js.native
+    def decode(message: Any): Any = js.native
     
-    def encode(`object`: js.Any): js.Any = js.native
+    def encode(`object`: Any): Any = js.native
     
     def flushBatch(): Unit = js.native
     
     def invoke[T](event: String, data: T, options: InvokeOptions): js.Promise[T] = js.native
     
-    def invokeRaw(event: String, data: js.Any, options: InvokeOptions): Double | Null = js.native
-    def invokeRaw(event: String, data: js.Any, options: InvokeOptions, callback: EventObjectCallback): Double | Null = js.native
+    def invokeRaw(event: String, data: Any, options: InvokeOptions): Double | Null = js.native
+    def invokeRaw(event: String, data: Any, options: InvokeOptions, callback: EventObjectCallback): Double | Null = js.native
     
     var isBufferingBatch: Boolean = js.native
     
@@ -99,19 +99,19 @@ object transportMod {
     
     var protocolVersion: ProtocolVersions = js.native
     
-    def send(data: js.Any): Unit = js.native
+    def send(data: Any): Unit = js.native
     
-    def sendObject(`object`: js.Any): Unit = js.native
+    def sendObject(`object`: Any): Unit = js.native
     
-    def serializeObject(`object`: js.Any): js.Any = js.native
+    def serializeObject(`object`: Any): Any = js.native
     
-    var socket: typings.ws.mod.^ = js.native
+    var socket: WebSocket = js.native
     
     def startBatch(): Unit = js.native
     
     var state: States = js.native
     
-    def transmit(event: String, data: js.Any, options: TransmitOptions): js.Promise[Unit] = js.native
+    def transmit(event: String, data: Any, options: TransmitOptions): js.Promise[Unit] = js.native
     
     def transmitObject(eventObject: EventObject): Double | Null = js.native
     
@@ -126,7 +126,7 @@ object transportMod {
     
     var cid: js.UndefOr[Double] = js.undefined
     
-    var data: js.Any
+    var data: Any
     
     var event: String
     
@@ -134,14 +134,14 @@ object transportMod {
   }
   object EventObject {
     
-    inline def apply(data: js.Any, event: String): EventObject = {
+    inline def apply(data: Any, event: String): EventObject = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventObject]
     }
     
     extension [Self <: EventObject](x: Self) {
       
-      inline def setCallback(value: (/* error */ Error, /* eventObject */ EventObject) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+      inline def setCallback(value: (/* error */ js.Error, /* eventObject */ EventObject) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
       inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
@@ -149,7 +149,7 @@ object transportMod {
       
       inline def setCidUndefined: Self = StObject.set(x, "cid", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
@@ -159,7 +159,7 @@ object transportMod {
     }
   }
   
-  type EventObjectCallback = js.Function2[/* error */ Error, /* eventObject */ EventObject, Unit]
+  type EventObjectCallback = js.Function2[/* error */ js.Error, /* eventObject */ EventObject, Unit]
   
   trait InvokeOptions extends StObject {
     
@@ -215,37 +215,37 @@ object transportMod {
   
   trait OnErrorValue extends StObject {
     
-    var error: Error
+    var error: js.Error
   }
   object OnErrorValue {
     
-    inline def apply(error: Error): OnErrorValue = {
+    inline def apply(error: js.Error): OnErrorValue = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnErrorValue]
     }
     
     extension [Self <: OnErrorValue](x: Self) {
       
-      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
   }
   
   trait OnEventValue extends StObject {
     
-    var data: js.Any
+    var data: Any
     
     var event: String
   }
   object OnEventValue {
     
-    inline def apply(data: js.Any, event: String): OnEventValue = {
+    inline def apply(data: Any, event: String): OnEventValue = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnEventValue]
     }
     
     extension [Self <: OnEventValue](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     }
@@ -253,20 +253,20 @@ object transportMod {
   
   trait OnInboundInvokeValue extends StObject {
     
-    var data: js.Any
+    var data: Any
     
     var procedure: String
   }
   object OnInboundInvokeValue {
     
-    inline def apply(data: js.Any, procedure: String): OnInboundInvokeValue = {
+    inline def apply(data: Any, procedure: String): OnInboundInvokeValue = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], procedure = procedure.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnInboundInvokeValue]
     }
     
     extension [Self <: OnInboundInvokeValue](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setProcedure(value: String): Self = StObject.set(x, "procedure", value.asInstanceOf[js.Any])
     }
@@ -274,20 +274,20 @@ object transportMod {
   
   trait OnInboundTransmitValue extends StObject {
     
-    var data: js.Any
+    var data: Any
     
     var event: String
   }
   object OnInboundTransmitValue {
     
-    inline def apply(data: js.Any, event: String): OnInboundTransmitValue = {
+    inline def apply(data: Any, event: String): OnInboundTransmitValue = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnInboundTransmitValue]
     }
     
     extension [Self <: OnInboundTransmitValue](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     }

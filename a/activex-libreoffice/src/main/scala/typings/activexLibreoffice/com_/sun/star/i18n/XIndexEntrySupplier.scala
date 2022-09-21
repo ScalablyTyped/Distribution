@@ -34,7 +34,7 @@ object XIndexEntrySupplier {
     acquire: () => Unit,
     getIndexCharacter: (String, Locale, String) => String,
     getIndexFollowPageWord: (Boolean, Locale) => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XIndexEntrySupplier = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getIndexCharacter = js.Any.fromFunction3(getIndexCharacter), getIndexFollowPageWord = js.Any.fromFunction2(getIndexFollowPageWord), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

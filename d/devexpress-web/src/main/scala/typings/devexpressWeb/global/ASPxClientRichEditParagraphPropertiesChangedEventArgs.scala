@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientRichEditParagraphPropertiesChangedEventArgs")
 @js.native
-class ASPxClientRichEditParagraphPropertiesChangedEventArgs protected ()
+open class ASPxClientRichEditParagraphPropertiesChangedEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientRichEditParagraphPropertiesChangedEventArgs {
   /**

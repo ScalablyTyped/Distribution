@@ -11,9 +11,9 @@ Fast, flexible, simple data tables in React
 | Full name          | reactable |
 | Keywords           | react-component, react, table, data-tables |
 | # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 400818 |
-| # stars            | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 62504.666666666664 |
+| # stars            | 22.0 |
 
 ## Links
 - [Homepage](https://github.com/abdulrahman-khankan/reactable)

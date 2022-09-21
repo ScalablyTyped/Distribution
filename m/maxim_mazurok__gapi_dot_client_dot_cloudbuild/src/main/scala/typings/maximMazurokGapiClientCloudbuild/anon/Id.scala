@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientCloudbuild.anon
 
+import typings.maximMazurokGapiClientCloudbuild.gapi.client.cloudbuild.CancelBuildRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,9 +29,6 @@ trait Id extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** The name of the `Build` to retrieve. Format: `projects/{project}/locations/{location}/builds/{build}` */
-  var name: js.UndefOr[String] = js.undefined
-  
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
@@ -43,6 +41,9 @@ trait Id extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
+  /** Request body */
+  var resource: CancelBuildRequest
+  
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
   
@@ -51,8 +52,8 @@ trait Id extends StObject {
 }
 object Id {
   
-  inline def apply(id: String, projectId: String): Id = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any])
+  inline def apply(id: String, projectId: String, resource: CancelBuildRequest): Id = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Id]
   }
   
@@ -84,10 +85,6 @@ object Id {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    
-    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
-    
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
@@ -101,6 +98,8 @@ object Id {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+    
+    inline def setResource(value: CancelBuildRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

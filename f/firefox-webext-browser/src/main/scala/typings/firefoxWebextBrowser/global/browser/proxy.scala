@@ -4,7 +4,6 @@ import typings.firefoxWebextBrowser.WebExtEvent
 import typings.firefoxWebextBrowser.browser.proxy.OnRequestDetails
 import typings.firefoxWebextBrowser.browser.proxy.ProxyOnRequestEvent
 import typings.firefoxWebextBrowser.browser.types.Setting
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +20,7 @@ object proxy {
   /** Notifies about errors caused by the invalid use of the proxy API. */
   @JSGlobal("browser.proxy.onError")
   @js.native
-  val onError: WebExtEvent[js.Function1[/* error */ Error, Unit]] = js.native
+  val onError: WebExtEvent[js.Function1[/* error */ js.Error, Unit]] = js.native
   
   /* proxy events */
   /** Fired when proxy data is needed for a request. */

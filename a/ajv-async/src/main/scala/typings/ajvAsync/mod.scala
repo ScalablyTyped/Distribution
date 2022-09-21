@@ -1,13 +1,13 @@
 package typings.ajvAsync
 
-import typings.ajv.mod.Ajv
+import typings.ajv.mod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(ajv: Ajv): Ajv = ^.asInstanceOf[js.Dynamic].apply(ajv.asInstanceOf[js.Any]).asInstanceOf[Ajv]
+  inline def apply(ajv: default): default = ^.asInstanceOf[js.Dynamic].apply(ajv.asInstanceOf[js.Any]).asInstanceOf[default]
   
   @JSImport("ajv-async", JSImport.Namespace)
   @js.native

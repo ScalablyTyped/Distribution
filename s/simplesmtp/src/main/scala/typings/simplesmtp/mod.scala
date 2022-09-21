@@ -1,8 +1,7 @@
 package typings.simplesmtp
 
-import typings.node.NodeJS.ReadableStream
 import typings.node.eventsMod.EventEmitter
-import typings.std.Error
+import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ object mod {
   
   @JSImport("simplesmtp", "SMTPServer")
   @js.native
-  class SMTPServer () extends EventEmitter {
+  open class SMTPServer () extends EventEmitter {
     def this(options: SmtpServerOptions) = this()
     
     /**
@@ -33,12 +32,12 @@ object mod {
       * @param {Function} callback The callback function to run when the server is listening
       */
     def listen(port: Double, host: String): Unit = js.native
-    def listen(port: Double, host: String, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def listen(port: Double, host: String, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
   }
   
   @JSImport("simplesmtp", "SimpleServer")
   @js.native
-  class SimpleServer () extends EventEmitter {
+  open class SimpleServer () extends EventEmitter {
     def this(callback: js.Function1[/* connection */ SimpleServerConnection, Unit]) = this()
     def this(options: SmtpServerOptions) = this()
     def this(options: Unit, callback: js.Function1[/* connection */ SimpleServerConnection, Unit]) = this()
@@ -52,7 +51,7 @@ object mod {
       * @param {Function} callback The callback function to run when the server is listening
       */
     def listen(port: Double, host: String): Unit = js.native
-    def listen(port: Double, host: String, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def listen(port: Double, host: String, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     
     var server: SMTPServer = js.native
   }
@@ -66,7 +65,7 @@ object mod {
   @js.native
   trait SimpleServerConnection
     extends StObject
-       with ReadableStream {
+       with ReadableStream[Any] {
     
     /**
       * Accept the message with the selected ID
@@ -116,7 +115,7 @@ object mod {
     /**
       * TLS credentials
       */
-    var credentials: js.UndefOr[js.Any] = js.undefined
+    var credentials: js.UndefOr[Any] = js.undefined
     
     /**
       * if set to true, print out messages about the connection
@@ -186,9 +185,9 @@ object mod {
       
       inline def setAuthMethodsUndefined: Self = StObject.set(x, "authMethods", js.undefined)
       
-      inline def setAuthMethodsVarargs(value: String*): Self = StObject.set(x, "authMethods", js.Array(value :_*))
+      inline def setAuthMethodsVarargs(value: String*): Self = StObject.set(x, "authMethods", js.Array(value*))
       
-      inline def setCredentials(value: js.Any): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: Any): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
       inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       

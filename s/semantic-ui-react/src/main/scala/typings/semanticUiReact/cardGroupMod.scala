@@ -2,8 +2,8 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.FC
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.cardCardMod.CardProps
 import typings.semanticUiReact.genericMod.SemanticShorthandCollection
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
@@ -20,12 +20,12 @@ object cardGroupMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/views/Card/CardGroup", JSImport.Default)
   @js.native
-  val default: StatelessComponent[CardGroupProps] = js.native
+  val default: FC[CardGroupProps] = js.native
   
   trait CardGroupProps
     extends StObject
        with StrictCardGroupProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object CardGroupProps {
     
     inline def apply(): CardGroupProps = {
@@ -37,7 +37,7 @@ object cardGroupMod extends Shortcut {
   trait StrictCardGroupProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** A group of cards can center itself inside its container. */
     var centered: js.UndefOr[Boolean] = js.undefined
@@ -75,7 +75,7 @@ object cardGroupMod extends Shortcut {
     
     extension [Self <: StrictCardGroupProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -107,7 +107,7 @@ object cardGroupMod extends Shortcut {
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setItemsVarargs(value: SemanticShorthandItem[CardProps]*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: SemanticShorthandItem[CardProps]*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setStackable(value: Boolean): Self = StObject.set(x, "stackable", value.asInstanceOf[js.Any])
       
@@ -119,8 +119,8 @@ object cardGroupMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[CardGroupProps]
+  type _To = FC[CardGroupProps]
   
   /* This means you don't have to write `default`, but can instead just say `cardGroupMod.foo` */
-  override def _to: StatelessComponent[CardGroupProps] = default
+  override def _to: FC[CardGroupProps] = default
 }

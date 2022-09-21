@@ -3,11 +3,12 @@ package typings.three
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
-import typings.three.constantsMod.Mapping
-import typings.three.constantsMod.PixelFormat
-import typings.three.constantsMod.TextureDataType
-import typings.three.constantsMod.TextureFilter
-import typings.three.constantsMod.Wrapping
+import typings.std.ImageBitmap
+import typings.three.srcConstantsMod.Mapping
+import typings.three.srcConstantsMod.PixelFormat
+import typings.three.srcConstantsMod.TextureDataType
+import typings.three.srcConstantsMod.TextureFilter
+import typings.three.srcConstantsMod.Wrapping
 import typings.three.textureMod.Texture
 import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
@@ -18,21 +19,21 @@ object canvasTextureMod {
   
   @JSImport("three/src/textures/CanvasTexture", "CanvasTexture")
   @js.native
-  class CanvasTexture protected () extends Texture {
+  open class CanvasTexture protected () extends Texture {
     /**
-    	 * @param canvas
-    	 * @param [format=THREE.RGBAFormat]
-    	 * @param [type=THREE.UnsignedByteType]
-    	 * @param [mapping=THREE.Texture.DEFAULT_MAPPING]
-    	 * @param [wrapS=THREE.ClampToEdgeWrapping]
-    	 * @param [wrapT=THREE.ClampToEdgeWrapping]
-    	 * @param [magFilter=THREE.LinearFilter]
-    	 * @param [minFilter=THREE.LinearMipmapLinearFilter]
-    	 * @param [anisotropy=1]
-    	 * @param [encoding=THREE.LinearEncoding]
-    	 */
+      * @param canvas
+      * @param [format=THREE.RGBAFormat]
+      * @param [type=THREE.UnsignedByteType]
+      * @param [mapping=THREE.Texture.DEFAULT_MAPPING]
+      * @param [wrapS=THREE.ClampToEdgeWrapping]
+      * @param [wrapT=THREE.ClampToEdgeWrapping]
+      * @param [magFilter=THREE.LinearFilter]
+      * @param [minFilter=THREE.LinearMipmapLinearFilter]
+      * @param [anisotropy=1]
+      * @param [encoding=THREE.LinearEncoding]
+      */
     def this(
-      canvas: HTMLImageElement | HTMLCanvasElement | HTMLVideoElement,
+      canvas: HTMLImageElement | HTMLCanvasElement | HTMLVideoElement | ImageBitmap,
       mapping: js.UndefOr[Mapping],
       wrapS: js.UndefOr[Wrapping],
       wrapT: js.UndefOr[Wrapping],

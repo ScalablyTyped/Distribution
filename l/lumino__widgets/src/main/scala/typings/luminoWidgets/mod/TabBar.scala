@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @param options - The options for initializing the tab bar.
   */
-class TabBar[T] ()
+open class TabBar[T] ()
   extends typings.luminoWidgets.tabbarMod.TabBar[T] {
   def this(options: IOptions[T]) = this()
 }
@@ -26,11 +26,15 @@ object TabBar {
     */
   @JSImport("@lumino/widgets", "TabBar.Renderer")
   @js.native
-  /**
-    * Construct a new renderer.
-    */
-  class Renderer ()
+  open class Renderer ()
     extends typings.luminoWidgets.tabbarMod.TabBar.Renderer
+  
+  /**
+    * A selector which matches the add button node in the tab bar.
+    */
+  @JSImport("@lumino/widgets", "TabBar.addButtonSelector")
+  @js.native
+  val addButtonSelector: /* ".lm-TabBar-addButton" */ String = js.native
   
   /**
     * The default `Renderer` instance.

@@ -12,14 +12,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object spriteMod {
   
-  @JSImport("konva/types/shapes/Sprite", "Sprite")
+  @JSImport("konva/lib/shapes/Sprite", "Sprite")
   @js.native
-  class Sprite protected () extends Shape[SpriteConfig] {
-    def this(config: js.Any) = this()
+  open class Sprite protected () extends Shape[SpriteConfig] {
+    def this(config: Any) = this()
     
-    def _hitFunc(context: js.Any): Unit = js.native
+    def _hitFunc(context: Any): Unit = js.native
     
-    def _sceneFunc(context: js.Any): Unit = js.native
+    def _sceneFunc(context: Any): Unit = js.native
     
     def _setInterval(): Unit = js.native
     
@@ -34,20 +34,20 @@ object spriteMod {
     @JSName("animation")
     var animation_Original: GetSet[String, this.type] = js.native
     
-    def animations(): js.Any = js.native
-    def animations(v: js.Any): this.type = js.native
+    def animations(): Any = js.native
+    def animations(v: Any): this.type = js.native
     @JSName("animations")
-    var animations_Original: GetSet[js.Any, this.type] = js.native
+    var animations_Original: GetSet[Any, this.type] = js.native
     
     def frameIndex(): Double = js.native
     def frameIndex(v: Double): this.type = js.native
     @JSName("frameIndex")
     var frameIndex_Original: GetSet[Double, this.type] = js.native
     
-    def frameOffsets(): js.Any = js.native
-    def frameOffsets(v: js.Any): this.type = js.native
+    def frameOffsets(): Any = js.native
+    def frameOffsets(v: Any): this.type = js.native
     @JSName("frameOffsets")
-    var frameOffsets_Original: GetSet[js.Any, this.type] = js.native
+    var frameOffsets_Original: GetSet[Any, this.type] = js.native
     
     def frameRate(): Double = js.native
     def frameRate(v: Double): this.type = js.native
@@ -59,7 +59,7 @@ object spriteMod {
     @JSName("image")
     var image_Original: GetSet[CanvasImageSource, this.type] = js.native
     
-    var interval: js.Any = js.native
+    var interval: Any = js.native
     
     def isRunning(): Boolean = js.native
     
@@ -74,7 +74,7 @@ object spriteMod {
     
     var animation: String
     
-    var animations: js.Any
+    var animations: Any
     
     var frameIndex: js.UndefOr[Double] = js.undefined
     
@@ -84,7 +84,7 @@ object spriteMod {
   }
   object SpriteConfig {
     
-    inline def apply(animation: String, animations: js.Any, image: HTMLImageElement): SpriteConfig = {
+    inline def apply(animation: String, animations: Any, image: HTMLImageElement): SpriteConfig = {
       val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], animations = animations.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any])
       __obj.asInstanceOf[SpriteConfig]
     }
@@ -93,7 +93,7 @@ object spriteMod {
       
       inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
-      inline def setAnimations(value: js.Any): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
+      inline def setAnimations(value: Any): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
       
       inline def setFrameIndex(value: Double): Self = StObject.set(x, "frameIndex", value.asInstanceOf[js.Any])
       

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("business-rules-engine", "MessageLocalization")
 @js.native
-class MessageLocalization () extends StObject
+open class MessageLocalization () extends StObject
 /* static members */
 object MessageLocalization {
   
@@ -15,7 +15,7 @@ object MessageLocalization {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def GetValidationMessage(validator: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("GetValidationMessage")(validator.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def GetValidationMessage(validator: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("GetValidationMessage")(validator.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("business-rules-engine", "MessageLocalization.ValidationMessages")
   @js.native

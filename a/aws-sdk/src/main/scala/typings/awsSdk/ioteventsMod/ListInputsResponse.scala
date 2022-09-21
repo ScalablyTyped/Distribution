@@ -12,7 +12,7 @@ trait ListInputsResponse extends StObject {
   var inputSummaries: js.UndefOr[InputSummaries] = js.undefined
   
   /**
-    * A token to retrieve the next set of results, or null if there are no additional results.
+    * The token that you can use to return the next set of results, or null if there are no more results.
     */
   var nextToken: js.UndefOr[NextToken] = js.undefined
 }
@@ -29,7 +29,7 @@ object ListInputsResponse {
     
     inline def setInputSummariesUndefined: Self = StObject.set(x, "inputSummaries", js.undefined)
     
-    inline def setInputSummariesVarargs(value: InputSummary*): Self = StObject.set(x, "inputSummaries", js.Array(value :_*))
+    inline def setInputSummariesVarargs(value: InputSummary*): Self = StObject.set(x, "inputSummaries", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

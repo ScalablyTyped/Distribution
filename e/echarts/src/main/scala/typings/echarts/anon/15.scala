@@ -7,14 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `15` extends StObject {
   
   /**
-    * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis.itemStyle
+    * Color of the area.
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-map.data.itemStyle.areaColor
     */
-  var itemStyle: js.UndefOr[AreaColor] = js.undefined
-  
-  /**
-    * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis.label
-    */
-  var label: js.UndefOr[Rotate] = js.undefined
+  var areaColor: js.UndefOr[BorderType] = js.undefined
 }
 object `15` {
   
@@ -25,12 +23,8 @@ object `15` {
   
   extension [Self <: `15`](x: Self) {
     
-    inline def setItemStyle(value: AreaColor): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
+    inline def setAreaColor(value: BorderType): Self = StObject.set(x, "areaColor", value.asInstanceOf[js.Any])
     
-    inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
-    
-    inline def setLabel(value: Rotate): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
-    
-    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setAreaColorUndefined: Self = StObject.set(x, "areaColor", js.undefined)
   }
 }

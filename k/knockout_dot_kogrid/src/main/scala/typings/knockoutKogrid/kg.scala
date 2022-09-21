@@ -18,7 +18,7 @@ object kg {
       * @returns the display value
       * @example function(unixTimeTicks) { return new Date(unixTimeTicks); }
       */
-    var cellFormatter: js.UndefOr[js.Function1[/* val */ js.Any, String]] = js.undefined
+    var cellFormatter: js.UndefOr[js.Function1[/* val */ Any, String]] = js.undefined
     
     /**Sets the cell template for the column. See github wiki for more details.*/
     var cellTemplate: js.UndefOr[String | JQueryGenericPromise[String]] = js.undefined
@@ -42,7 +42,7 @@ object kg {
     var resizable: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the sort function for the column. Useful when you have data that is formatted in an unusal way or if you want to sort on an underlying data type. Example: function(a,b){return a > b} */
-    var sortFn: js.UndefOr[js.Function2[/* a */ js.Any, /* b */ js.Any, Double]] = js.undefined
+    var sortFn: js.UndefOr[js.Function2[/* a */ Any, /* b */ Any, Double]] = js.undefined
     
     /**Whether or not column is sortable. */
     var sortable: js.UndefOr[Boolean] = js.undefined
@@ -63,7 +63,7 @@ object kg {
       
       inline def setCellClassUndefined: Self = StObject.set(x, "cellClass", js.undefined)
       
-      inline def setCellFormatter(value: /* val */ js.Any => String): Self = StObject.set(x, "cellFormatter", js.Any.fromFunction1(value))
+      inline def setCellFormatter(value: /* val */ Any => String): Self = StObject.set(x, "cellFormatter", js.Any.fromFunction1(value))
       
       inline def setCellFormatterUndefined: Self = StObject.set(x, "cellFormatter", js.undefined)
       
@@ -93,7 +93,7 @@ object kg {
       
       inline def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
       
-      inline def setSortFn(value: (/* a */ js.Any, /* b */ js.Any) => Double): Self = StObject.set(x, "sortFn", js.Any.fromFunction2(value))
+      inline def setSortFn(value: (/* a */ Any, /* b */ Any) => Double): Self = StObject.set(x, "sortFn", js.Any.fromFunction2(value))
       
       inline def setSortFnUndefined: Self = StObject.set(x, "sortFn", js.undefined)
       
@@ -121,22 +121,22 @@ object kg {
   
   trait DomUtilityService extends StObject {
     
-    def BuildStyles(grid: Grid[js.Any]): Unit
+    def BuildStyles(grid: Grid[Any]): Unit
     
-    def UpdateGridLayout(grid: Grid[js.Any]): Unit
+    def UpdateGridLayout(grid: Grid[Any]): Unit
   }
   object DomUtilityService {
     
-    inline def apply(BuildStyles: Grid[js.Any] => Unit, UpdateGridLayout: Grid[js.Any] => Unit): DomUtilityService = {
+    inline def apply(BuildStyles: Grid[Any] => Unit, UpdateGridLayout: Grid[Any] => Unit): DomUtilityService = {
       val __obj = js.Dynamic.literal(BuildStyles = js.Any.fromFunction1(BuildStyles), UpdateGridLayout = js.Any.fromFunction1(UpdateGridLayout))
       __obj.asInstanceOf[DomUtilityService]
     }
     
     extension [Self <: DomUtilityService](x: Self) {
       
-      inline def setBuildStyles(value: Grid[js.Any] => Unit): Self = StObject.set(x, "BuildStyles", js.Any.fromFunction1(value))
+      inline def setBuildStyles(value: Grid[Any] => Unit): Self = StObject.set(x, "BuildStyles", js.Any.fromFunction1(value))
       
-      inline def setUpdateGridLayout(value: Grid[js.Any] => Unit): Self = StObject.set(x, "UpdateGridLayout", js.Any.fromFunction1(value))
+      inline def setUpdateGridLayout(value: Grid[Any] => Unit): Self = StObject.set(x, "UpdateGridLayout", js.Any.fromFunction1(value))
     }
   }
   
@@ -144,7 +144,7 @@ object kg {
     
     /** Variable to contain the current search filter */
     var filterText: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<string> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<string> */ Any
       ] = js.undefined
     
     /** Number of seconds to throttle before reapplying search */
@@ -163,7 +163,7 @@ object kg {
     extension [Self <: FilterOptions](x: Self) {
       
       inline def setFilterText(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<string> */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<string> */ Any
       ): Self = StObject.set(x, "filterText", value.asInstanceOf[js.Any])
       
       inline def setFilterTextUndefined: Self = StObject.set(x, "filterText", js.undefined)
@@ -237,7 +237,7 @@ object kg {
     
     /** definitions of columns as an array [], if not defined columns are auto-generated. See github wiki for more details. */
     var columnDefs: js.UndefOr[
-        js.Array[ColumnDef] | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<Array<ColumnDef>> */ js.Any)
+        js.Array[ColumnDef] | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<Array<ColumnDef>> */ Any)
       ] = js.undefined
     
     /** Column width of columns in grid. */
@@ -245,7 +245,7 @@ object kg {
     
     /** Data being displayed in the grid. Each item in the array is mapped to a row being displayed. */
     var data: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservableArray<EntityType> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservableArray<EntityType> */ Any
       ] = js.undefined
     
     /** Row selection check boxes appear as the first column. */
@@ -296,7 +296,7 @@ object kg {
     
     /** Maintains the column widths while resizing.
       Defaults to true when using *'s or undefined widths. Can be ovverriden by setting to false. */
-    var maintainColumnRatios: js.UndefOr[js.Any] = js.undefined
+    var maintainColumnRatios: js.UndefOr[Any] = js.undefined
     
     /** Set this to false if you only want one item selected at a time */
     var multiSelect: js.UndefOr[Boolean] = js.undefined
@@ -315,7 +315,7 @@ object kg {
     
     /** Defines the binding to select all at once */
     var selectAllState: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ Any
       ] = js.undefined
     
     /** Disable row selections by clicking on the row and only when the checkbox is clicked. */
@@ -323,7 +323,7 @@ object kg {
     
     /** all of the items selected in the grid. In single select mode there will only be one item in the array. */
     var selectedItems: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservableArray<any> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservableArray<any> */ Any
       ] = js.undefined
     
     /** Enables menu to choose which columns to display and group by.
@@ -341,7 +341,7 @@ object kg {
       You can also observe this variable to utilize server-side sorting (see useExternalSorting).
       Syntax is sortinfo: { fields: ['fieldName1',' fieldName2'], direction: 'ASC'/'asc' || 'desc'/'DESC'}*/
     var sortInfo: js.UndefOr[
-        SortInfo | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<SortInfo> */ js.Any)
+        SortInfo | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<SortInfo> */ Any)
       ] = js.undefined
     
     /** Set the tab index of the Vieport. */
@@ -373,19 +373,19 @@ object kg {
       inline def setCanSelectRowsUndefined: Self = StObject.set(x, "canSelectRows", js.undefined)
       
       inline def setColumnDefs(
-        value: js.Array[ColumnDef] | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<Array<ColumnDef>> */ js.Any)
+        value: js.Array[ColumnDef] | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<Array<ColumnDef>> */ Any)
       ): Self = StObject.set(x, "columnDefs", value.asInstanceOf[js.Any])
       
       inline def setColumnDefsUndefined: Self = StObject.set(x, "columnDefs", js.undefined)
       
-      inline def setColumnDefsVarargs(value: ColumnDef*): Self = StObject.set(x, "columnDefs", js.Array(value :_*))
+      inline def setColumnDefsVarargs(value: ColumnDef*): Self = StObject.set(x, "columnDefs", js.Array(value*))
       
       inline def setColumnWidth(value: Double): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
       
       inline def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
       
       inline def setData(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservableArray<EntityType> */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservableArray<EntityType> */ Any
       ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
@@ -424,7 +424,7 @@ object kg {
       
       inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
       
-      inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value*))
       
       inline def setHeaderRowHeight(value: Double): Self = StObject.set(x, "headerRowHeight", value.asInstanceOf[js.Any])
       
@@ -446,7 +446,7 @@ object kg {
       
       inline def setKeepLastSelectedUndefined: Self = StObject.set(x, "keepLastSelected", js.undefined)
       
-      inline def setMaintainColumnRatios(value: js.Any): Self = StObject.set(x, "maintainColumnRatios", value.asInstanceOf[js.Any])
+      inline def setMaintainColumnRatios(value: Any): Self = StObject.set(x, "maintainColumnRatios", value.asInstanceOf[js.Any])
       
       inline def setMaintainColumnRatiosUndefined: Self = StObject.set(x, "maintainColumnRatios", js.undefined)
       
@@ -462,7 +462,7 @@ object kg {
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      inline def setPluginsVarargs(value: Plugin[EntityType]*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: Plugin[EntityType]*): Self = StObject.set(x, "plugins", js.Array(value*))
       
       inline def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
       
@@ -473,7 +473,7 @@ object kg {
       inline def setRowTemplateUndefined: Self = StObject.set(x, "rowTemplate", js.undefined)
       
       inline def setSelectAllState(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ Any
       ): Self = StObject.set(x, "selectAllState", value.asInstanceOf[js.Any])
       
       inline def setSelectAllStateUndefined: Self = StObject.set(x, "selectAllState", js.undefined)
@@ -483,7 +483,7 @@ object kg {
       inline def setSelectWithCheckboxOnlyUndefined: Self = StObject.set(x, "selectWithCheckboxOnly", js.undefined)
       
       inline def setSelectedItems(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservableArray<any> */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservableArray<any> */ Any
       ): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
       
       inline def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
@@ -501,7 +501,7 @@ object kg {
       inline def setShowGroupPanelUndefined: Self = StObject.set(x, "showGroupPanel", js.undefined)
       
       inline def setSortInfo(
-        value: SortInfo | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<SortInfo> */ js.Any)
+        value: SortInfo | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<SortInfo> */ Any)
       ): Self = StObject.set(x, "sortInfo", value.asInstanceOf[js.Any])
       
       inline def setSortInfoUndefined: Self = StObject.set(x, "sortInfo", js.undefined)
@@ -520,22 +520,22 @@ object kg {
     
     /** currentPage: the uhm... current page. */
     var currentPage: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<number> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<number> */ Any
       ] = js.undefined
     
     /** pageSize: currently selected page size.  */
     var pageSize: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<number> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<number> */ Any
       ] = js.undefined
     
     /**  pageSizes: list of available page sizes.  */
     var pageSizes: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservableArray<number> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservableArray<number> */ Any
       ] = js.undefined
     
     /** totalServerItems: Total items are on the server.  */
     var totalServerItems: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<number> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<number> */ Any
       ] = js.undefined
   }
   object PagingOptions {
@@ -548,25 +548,25 @@ object kg {
     extension [Self <: PagingOptions](x: Self) {
       
       inline def setCurrentPage(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<number> */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<number> */ Any
       ): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
       
       inline def setCurrentPageUndefined: Self = StObject.set(x, "currentPage", js.undefined)
       
       inline def setPageSize(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<number> */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<number> */ Any
       ): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
       
       inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
       
       inline def setPageSizes(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservableArray<number> */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservableArray<number> */ Any
       ): Self = StObject.set(x, "pageSizes", value.asInstanceOf[js.Any])
       
       inline def setPageSizesUndefined: Self = StObject.set(x, "pageSizes", js.undefined)
       
       inline def setTotalServerItems(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<number> */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<number> */ Any
       ): Self = StObject.set(x, "totalServerItems", value.asInstanceOf[js.Any])
       
       inline def setTotalServerItemsUndefined: Self = StObject.set(x, "totalServerItems", js.undefined)
@@ -594,13 +594,13 @@ object kg {
     
     var entity: EntityType
     
-    var selected: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any
+    var selected: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ Any
   }
   object Row {
     
     inline def apply[EntityType](
       entity: EntityType,
-      selected: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any
+      selected: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ Any
     ): Row[EntityType] = {
       val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
       __obj.asInstanceOf[Row[EntityType]]
@@ -611,7 +611,7 @@ object kg {
       inline def setEntity(value: EntityType): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
       
       inline def setSelected(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ Any
       ): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     }
   }
@@ -631,7 +631,7 @@ object kg {
       
       inline def setRowCache(value: js.Array[Row[EntityType]]): Self = StObject.set(x, "rowCache", value.asInstanceOf[js.Any])
       
-      inline def setRowCacheVarargs(value: Row[EntityType]*): Self = StObject.set(x, "rowCache", js.Array(value :_*))
+      inline def setRowCacheVarargs(value: Row[EntityType]*): Self = StObject.set(x, "rowCache", js.Array(value*))
     }
   }
   
@@ -666,7 +666,7 @@ object kg {
     var field: String
     
     /** Sets the sort function for the column. Useful when you have data that is formatted in an unusal way or if you want to sort on an underlying data type. Example: function(a,b){return a > b} */
-    var sortingAlgorithm: js.UndefOr[js.Function2[/* a */ js.Any, /* b */ js.Any, Double]] = js.undefined
+    var sortingAlgorithm: js.UndefOr[js.Function2[/* a */ Any, /* b */ Any, Double]] = js.undefined
   }
   object SortColumn {
     
@@ -679,7 +679,7 @@ object kg {
       
       inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
-      inline def setSortingAlgorithm(value: (/* a */ js.Any, /* b */ js.Any) => Double): Self = StObject.set(x, "sortingAlgorithm", js.Any.fromFunction2(value))
+      inline def setSortingAlgorithm(value: (/* a */ Any, /* b */ Any) => Double): Self = StObject.set(x, "sortingAlgorithm", js.Any.fromFunction2(value))
       
       inline def setSortingAlgorithmUndefined: Self = StObject.set(x, "sortingAlgorithm", js.undefined)
     }

@@ -9,7 +9,7 @@ object data {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.yandexMaps.mod.IFreezable because var conflicts: events. Inlined freeze, isFrozen, unfreeze */ @JSImport("yandex-maps", "data.Manager")
   @js.native
-  class Manager ()
+  open class Manager ()
     extends StObject
        with IDataManager {
     def this(data: js.Object) = this()
@@ -60,8 +60,8 @@ object data {
     /* CompleteClass */
     var events: IEventManager[js.Object] = js.native
     
-    def fire(`type`: String, eventobject: js.Object): this.type = js.native
-    def fire(`type`: String, eventobject: IEvent[js.Object, js.Object]): this.type = js.native
+    def fire(`type`: String, eventObject: js.Object): this.type = js.native
+    def fire(`type`: String, eventObject: IEvent[js.Object, js.Object]): this.type = js.native
     
     def freeze(): IFreezable = js.native
     

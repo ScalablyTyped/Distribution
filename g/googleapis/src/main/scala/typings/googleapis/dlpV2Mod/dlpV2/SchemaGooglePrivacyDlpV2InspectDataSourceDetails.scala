@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The results of an inspect DataSource job.
-  */
 trait SchemaGooglePrivacyDlpV2InspectDataSourceDetails extends StObject {
   
   /**
@@ -15,7 +12,7 @@ trait SchemaGooglePrivacyDlpV2InspectDataSourceDetails extends StObject {
   var requestedOptions: js.UndefOr[SchemaGooglePrivacyDlpV2RequestedOptions] = js.undefined
   
   /**
-    * A summary of the outcome of this inspect job.
+    * A summary of the outcome of this inspection job.
     */
   var result: js.UndefOr[SchemaGooglePrivacyDlpV2Result] = js.undefined
 }

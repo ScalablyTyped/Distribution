@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "resource-loader" : "3.0.1"
+      "resource-loader" : "4.0.0-rc4"
     }
   ],
   "test-dependencies" : [
     {
-      "resource-loader" : "3.0.1"
+      "resource-loader" : "4.0.0-rc4"
     }
   ],
   "compile-devDependencies" : [

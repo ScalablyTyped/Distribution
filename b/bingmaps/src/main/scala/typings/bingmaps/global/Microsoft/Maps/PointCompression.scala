@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Microsoft.Maps.PointCompression")
 @js.native
-class PointCompression ()
+open class PointCompression ()
   extends StObject
      with typings.bingmaps.Microsoft.Maps.PointCompression
 /* static members */

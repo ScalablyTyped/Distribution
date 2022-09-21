@@ -9,10 +9,10 @@
 | ------------------ | :-------------: |
 | Full name          | gently |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 15649 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1795.0 |
+| # stars            | 142.0 |
 
 ## Links
 - [Homepage](https://github.com/felixge/node-gently#readme)

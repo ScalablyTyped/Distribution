@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait YieldExpression
   extends StObject
-     with BaseNode
-     with Expression {
+     with BaseNode {
   
   var argument: js.UndefOr[Expression | Null] = js.undefined
   

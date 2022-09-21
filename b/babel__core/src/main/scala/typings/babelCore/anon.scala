@@ -1,6 +1,8 @@
 package typings.babelCore
 
 import typings.babelCore.mod.TransformOptions
+import typings.babelParser.anon.ParseResultFile
+import typings.babelParser.mod.ParserOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,11 +26,11 @@ object anon {
       
       inline def setExported(value: js.Array[js.Object]): Self = StObject.set(x, "exported", value.asInstanceOf[js.Any])
       
-      inline def setExportedVarargs(value: js.Object*): Self = StObject.set(x, "exported", js.Array(value :_*))
+      inline def setExportedVarargs(value: js.Object*): Self = StObject.set(x, "exported", js.Array(value*))
       
       inline def setSpecifiers(value: js.Array[js.Object]): Self = StObject.set(x, "specifiers", value.asInstanceOf[js.Any])
       
-      inline def setSpecifiersVarargs(value: js.Object*): Self = StObject.set(x, "specifiers", js.Array(value :_*))
+      inline def setSpecifiersVarargs(value: js.Object*): Self = StObject.set(x, "specifiers", js.Array(value*))
     }
   }
   
@@ -69,7 +71,7 @@ object anon {
       
       inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
       
-      inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+      inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value*))
       
       inline def setSourceRoot(value: String): Self = StObject.set(x, "sourceRoot", value.asInstanceOf[js.Any])
       
@@ -81,12 +83,19 @@ object anon {
       
       inline def setSourcesContentUndefined: Self = StObject.set(x, "sourcesContent", js.undefined)
       
-      inline def setSourcesContentVarargs(value: String*): Self = StObject.set(x, "sourcesContent", js.Array(value :_*))
+      inline def setSourcesContentVarargs(value: String*): Self = StObject.set(x, "sourcesContent", js.Array(value*))
       
-      inline def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value :_*))
+      inline def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value*))
       
       inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
+  }
+  
+  @js.native
+  trait FnCall extends StObject {
+    
+    def apply(input: String): ParseResultFile = js.native
+    def apply(input: String, options: ParserOptions): ParseResultFile = js.native
   }
   
   trait Loc extends StObject {

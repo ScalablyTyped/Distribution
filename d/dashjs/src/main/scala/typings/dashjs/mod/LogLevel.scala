@@ -1,51 +1,35 @@
 package typings.dashjs.mod
 
+import typings.dashjs.dashjsNumbers.`0`
+import typings.dashjs.dashjsNumbers.`1`
+import typings.dashjs.dashjsNumbers.`2`
+import typings.dashjs.dashjsNumbers.`3`
+import typings.dashjs.dashjsNumbers.`4`
+import typings.dashjs.dashjsNumbers.`5`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait LogLevel extends StObject
-@JSImport("dashjs", "LogLevel")
-@js.native
-object LogLevel extends StObject {
+/* Rewritten from type alias, can be one of: 
+  - typings.dashjs.dashjsNumbers.`0`
+  - typings.dashjs.dashjsNumbers.`1`
+  - typings.dashjs.dashjsNumbers.`2`
+  - typings.dashjs.dashjsNumbers.`3`
+  - typings.dashjs.dashjsNumbers.`4`
+  - typings.dashjs.dashjsNumbers.`5`
+*/
+trait LogLevel extends StObject
+object LogLevel {
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[LogLevel & Double] = js.native
+  inline def LOG_LEVEL_DEBUG: `5` = 5.asInstanceOf[`5`]
   
-  @js.native
-  sealed trait LOG_LEVEL_DEBUG
-    extends StObject
-       with LogLevel
-  /* 5 */ val LOG_LEVEL_DEBUG: typings.dashjs.mod.LogLevel.LOG_LEVEL_DEBUG & Double = js.native
+  inline def LOG_LEVEL_ERROR: `2` = 2.asInstanceOf[`2`]
   
-  @js.native
-  sealed trait LOG_LEVEL_ERROR
-    extends StObject
-       with LogLevel
-  /* 2 */ val LOG_LEVEL_ERROR: typings.dashjs.mod.LogLevel.LOG_LEVEL_ERROR & Double = js.native
+  inline def LOG_LEVEL_FATAL: `1` = 1.asInstanceOf[`1`]
   
-  @js.native
-  sealed trait LOG_LEVEL_FATAL
-    extends StObject
-       with LogLevel
-  /* 1 */ val LOG_LEVEL_FATAL: typings.dashjs.mod.LogLevel.LOG_LEVEL_FATAL & Double = js.native
+  inline def LOG_LEVEL_INFO: `4` = 4.asInstanceOf[`4`]
   
-  @js.native
-  sealed trait LOG_LEVEL_INFO
-    extends StObject
-       with LogLevel
-  /* 4 */ val LOG_LEVEL_INFO: typings.dashjs.mod.LogLevel.LOG_LEVEL_INFO & Double = js.native
+  inline def LOG_LEVEL_NONE: `0` = 0.asInstanceOf[`0`]
   
-  @js.native
-  sealed trait LOG_LEVEL_NONE
-    extends StObject
-       with LogLevel
-  /* 0 */ val LOG_LEVEL_NONE: typings.dashjs.mod.LogLevel.LOG_LEVEL_NONE & Double = js.native
-  
-  @js.native
-  sealed trait LOG_LEVEL_WARNING
-    extends StObject
-       with LogLevel
-  /* 3 */ val LOG_LEVEL_WARNING: typings.dashjs.mod.LogLevel.LOG_LEVEL_WARNING & Double = js.native
+  inline def LOG_LEVEL_WARNING: `3` = 3.asInstanceOf[`3`]
 }

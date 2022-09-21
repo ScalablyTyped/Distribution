@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("yawn-yaml", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with YAWN {
     def this(content: String) = this()
@@ -17,7 +17,7 @@ object mod {
     override def getRemark(path: String): String = js.native
     
     /* CompleteClass */
-    var json: js.Any = js.native
+    var json: Any = js.native
     
     /* CompleteClass */
     override def setRemark(path: String, remark: String): Boolean = js.native
@@ -30,7 +30,7 @@ object mod {
     
     def getRemark(path: String): String
     
-    var json: js.Any
+    var json: Any
     
     def setRemark(path: String, remark: String): Boolean
     
@@ -38,7 +38,7 @@ object mod {
   }
   object YAWN {
     
-    inline def apply(getRemark: String => String, json: js.Any, setRemark: (String, String) => Boolean, yaml: String): YAWN = {
+    inline def apply(getRemark: String => String, json: Any, setRemark: (String, String) => Boolean, yaml: String): YAWN = {
       val __obj = js.Dynamic.literal(getRemark = js.Any.fromFunction1(getRemark), json = json.asInstanceOf[js.Any], setRemark = js.Any.fromFunction2(setRemark), yaml = yaml.asInstanceOf[js.Any])
       __obj.asInstanceOf[YAWN]
     }
@@ -47,7 +47,7 @@ object mod {
       
       inline def setGetRemark(value: String => String): Self = StObject.set(x, "getRemark", js.Any.fromFunction1(value))
       
-      inline def setJson(value: js.Any): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: Any): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
       inline def setSetRemark(value: (String, String) => Boolean): Self = StObject.set(x, "setRemark", js.Any.fromFunction2(value))
       

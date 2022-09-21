@@ -29,6 +29,6 @@ object PartitionIndex {
     
     inline def setKeys(value: KeyList): Self = StObject.set(x, "Keys", value.asInstanceOf[js.Any])
     
-    inline def setKeysVarargs(value: NameString*): Self = StObject.set(x, "Keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: NameString*): Self = StObject.set(x, "Keys", js.Array(value*))
   }
 }

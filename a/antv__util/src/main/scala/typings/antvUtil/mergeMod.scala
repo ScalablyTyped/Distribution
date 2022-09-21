@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mergeMod {
   
-  @JSImport("@antv/util/lib/merge", JSImport.Namespace)
+  @JSImport("@antv/util/lib/lodash/merge", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

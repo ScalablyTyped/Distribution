@@ -27,6 +27,6 @@ object DialogflowV1MessageOptionInfo {
     
     inline def setSynonymsUndefined: Self = StObject.set(x, "synonyms", js.undefined)
     
-    inline def setSynonymsVarargs(value: String*): Self = StObject.set(x, "synonyms", js.Array(value :_*))
+    inline def setSynonymsVarargs(value: String*): Self = StObject.set(x, "synonyms", js.Array(value*))
   }
 }

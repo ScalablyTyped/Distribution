@@ -12,7 +12,7 @@ trait WebXRDefaultExperience extends StObject {
   var baseExperience: WebXRExperienceHelper
   
   /**
-    * DIsposes of the experience helper
+    * Disposes of the experience helper
     */
   def dispose(): Unit
   
@@ -25,6 +25,11 @@ trait WebXRDefaultExperience extends StObject {
     * Input experience extension
     */
   var input: WebXRInput
+  
+  /**
+    * Enables near interaction for hands/controllers
+    */
+  var nearInteraction: WebXRNearInteraction
   
   /**
     * Enables laser pointer and selection
@@ -48,11 +53,12 @@ object WebXRDefaultExperience {
     dispose: () => Unit,
     enterExitUI: WebXREnterExitUI,
     input: WebXRInput,
+    nearInteraction: WebXRNearInteraction,
     pointerSelection: WebXRControllerPointerSelection,
     renderTarget: WebXRRenderTarget,
     teleportation: WebXRMotionControllerTeleportation
   ): WebXRDefaultExperience = {
-    val __obj = js.Dynamic.literal(baseExperience = baseExperience.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), enterExitUI = enterExitUI.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], pointerSelection = pointerSelection.asInstanceOf[js.Any], renderTarget = renderTarget.asInstanceOf[js.Any], teleportation = teleportation.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(baseExperience = baseExperience.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), enterExitUI = enterExitUI.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], nearInteraction = nearInteraction.asInstanceOf[js.Any], pointerSelection = pointerSelection.asInstanceOf[js.Any], renderTarget = renderTarget.asInstanceOf[js.Any], teleportation = teleportation.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebXRDefaultExperience]
   }
   
@@ -65,6 +71,8 @@ object WebXRDefaultExperience {
     inline def setEnterExitUI(value: WebXREnterExitUI): Self = StObject.set(x, "enterExitUI", value.asInstanceOf[js.Any])
     
     inline def setInput(value: WebXRInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    
+    inline def setNearInteraction(value: WebXRNearInteraction): Self = StObject.set(x, "nearInteraction", value.asInstanceOf[js.Any])
     
     inline def setPointerSelection(value: WebXRControllerPointerSelection): Self = StObject.set(x, "pointerSelection", value.asInstanceOf[js.Any])
     

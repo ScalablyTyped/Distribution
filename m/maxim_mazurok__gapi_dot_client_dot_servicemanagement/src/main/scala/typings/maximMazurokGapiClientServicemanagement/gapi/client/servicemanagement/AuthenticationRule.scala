@@ -39,7 +39,7 @@ object AuthenticationRule {
     
     inline def setRequirementsUndefined: Self = StObject.set(x, "requirements", js.undefined)
     
-    inline def setRequirementsVarargs(value: AuthRequirement*): Self = StObject.set(x, "requirements", js.Array(value :_*))
+    inline def setRequirementsVarargs(value: AuthRequirement*): Self = StObject.set(x, "requirements", js.Array(value*))
     
     inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     

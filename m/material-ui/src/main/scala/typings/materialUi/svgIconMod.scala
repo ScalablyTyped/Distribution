@@ -10,10 +10,10 @@ object svgIconMod {
   
   @JSImport("material-ui/SvgIcon", JSImport.Default)
   @js.native
-  class default () extends SvgIcon
+  open class default () extends SvgIcon
   
   @JSImport("material-ui/SvgIcon", "SvgIcon")
   @js.native
-  class SvgIcon ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class SvgIcon ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

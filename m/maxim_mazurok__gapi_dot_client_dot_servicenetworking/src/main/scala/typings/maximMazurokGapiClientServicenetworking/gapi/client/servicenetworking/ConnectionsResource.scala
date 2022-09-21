@@ -1,11 +1,13 @@
 package typings.maximMazurokGapiClientServicenetworking.gapi.client.servicenetworking
 
 import typings.gapiClient.gapi.client.Request
+import typings.maximMazurokGapiClientServicenetworking.anon.Alt
 import typings.maximMazurokGapiClientServicenetworking.anon.Fields
 import typings.maximMazurokGapiClientServicenetworking.anon.Force
 import typings.maximMazurokGapiClientServicenetworking.anon.Key
 import typings.maximMazurokGapiClientServicenetworking.anon.Name
 import typings.maximMazurokGapiClientServicenetworking.anon.Network
+import typings.maximMazurokGapiClientServicenetworking.anon.Oauthtoken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,11 +23,15 @@ trait ConnectionsResource extends StObject {
   def create(request: Fields): Request[Operation] = js.native
   def create(request: Key, body: Connection): Request[Operation] = js.native
   
+  def deleteConnection(request: Alt, body: DeleteConnectionRequest): Request[Operation] = js.native
+  /** Deletes a private service access connection. */
+  def deleteConnection(request: Name): Request[Operation] = js.native
+  
   /** List the private connections that are configured in a service consumer's VPC network. */
   def list(): Request[ListConnectionsResponse] = js.native
   def list(request: Network): Request[ListConnectionsResponse] = js.native
   
   /** Updates the allocated ranges that are assigned to a connection. */
   def patch(request: Force): Request[Operation] = js.native
-  def patch(request: Name, body: Connection): Request[Operation] = js.native
+  def patch(request: Oauthtoken, body: Connection): Request[Operation] = js.native
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("postmark", "Header")
 @js.native
-class Header protected ()
+open class Header protected ()
   extends typings.postmark.modelsMod.Header {
   def this(Name: String, Value: String) = this()
 }

@@ -10,12 +10,12 @@ object doObserverMod {
   
   @JSImport("wonder-frp/dist/commonjs/observer/DoObserver", "DoObserver")
   @js.native
-  class DoObserver protected () extends Observer {
+  open class DoObserver protected () extends Observer {
     def this(currentObserver: IObserver, prevObserver: IObserver) = this()
     
-    /* private */ var _currentObserver: js.Any = js.native
+    /* private */ var _currentObserver: Any = js.native
     
-    /* private */ var _prevObserver: js.Any = js.native
+    /* private */ var _prevObserver: Any = js.native
   }
   /* static members */
   object DoObserver {

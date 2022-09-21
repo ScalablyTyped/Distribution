@@ -20,10 +20,10 @@ object mod {
   
   @JSImport("node-horseman", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with horseman {
-    def this(options: js.Any) = this()
+    def this(options: Any) = this()
   }
   
   @js.native
@@ -45,7 +45,7 @@ object mod {
     def boundingRectangle(selector: String): ClientRect = js.native
     
     /** Clear an input field. */
-    def clear(selector: String): js.Any = js.native
+    def clear(selector: String): Any = js.native
     
     /** Click on a selector and fire a 'click event'. */
     def click(selector: String): this.type = js.native
@@ -71,9 +71,9 @@ object mod {
     def crop(area: js.Object, path: String): this.type = js.native
     
     /** Take a base64 encoded cropped screenshot. */
-    def cropBase64(area: String, `type`: String): js.Any = js.native
+    def cropBase64(area: String, `type`: String): Any = js.native
     @JSName("cropBase64")
-    def cropBase64_PNG(area: String, `type`: PNG): js.Any = js.native
+    def cropBase64_PNG(area: String, `type`: PNG): Any = js.native
     
     /** Get the value of an css property of a selector. */
     def cssProperty(selector: String, prop: String): String = js.native
@@ -86,7 +86,7 @@ object mod {
     
     /** Run a javascript function on the current page and optionally return the results. */
     def evaluate(fn: js.Function0[Unit]): this.type = js.native
-    def evaluate(fn: js.Function0[Unit], args: js.Array[js.Any]): this.type = js.native
+    def evaluate(fn: js.Function0[Unit], args: js.Array[Any]): this.type = js.native
     
     /** Determine if the selector exists, at least once, on the page. */
     def exists(selector: String): Boolean = js.native
@@ -137,7 +137,7 @@ object mod {
     
     /** Run javascript on the page. */
     def manipulate(fn: js.Function0[Unit]): this.type = js.native
-    def manipulate(fn: js.Function0[Unit], args: js.Array[js.Any]): this.type = js.native
+    def manipulate(fn: js.Function0[Unit], args: js.Array[Any]): this.type = js.native
     
     /** Fire a mouse event. */
     def mouseEvent(): this.type = js.native
@@ -157,6 +157,10 @@ object mod {
     def mouseEvent(`type`: Unit, x: Unit, y: Double, button: String): this.type = js.native
     def mouseEvent(`type`: Unit, x: Unit, y: Unit, button: String): this.type = js.native
     
+    def on(
+      event: timeout | tabCreated | tabClosed | resourceTimeout | urlChanged | resourceReceived | pageCreated | loadFinished,
+      func: js.Function1[/* repeated */ Any, Unit]
+    ): this.type = js.native
     /**
       * Handles page events.
       * eventType can be one of:
@@ -178,23 +182,7 @@ object mod {
       *  error - callback(msg, trace);
       *  timeout - callback(type)
       */
-    def on(event: String, func: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    @JSName("on")
-    def on_loadFinished(event: loadFinished, func: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    @JSName("on")
-    def on_pageCreated(event: pageCreated, func: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    @JSName("on")
-    def on_resourceReceived(event: resourceReceived, func: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    @JSName("on")
-    def on_resourceTimeout(event: resourceTimeout, func: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    @JSName("on")
-    def on_tabClosed(event: tabClosed, func: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    @JSName("on")
-    def on_tabCreated(event: tabCreated, func: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    @JSName("on")
-    def on_timeout(event: timeout, func: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    @JSName("on")
-    def on_urlChanged(event: urlChanged, func: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+    def on(event: String, func: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     
     /** Open a url in Phantom. */
     def open(url: String): this.type = js.native
@@ -206,7 +194,7 @@ object mod {
     @JSName("open")
     def open_GET(url: String, method: GET): this.type = js.native
     
-    def pageMaker(url: js.Any, _page: js.Any, args: js.Any*): js.Any = js.native
+    def pageMaker(url: Any, _page: Any, args: Any*): Any = js.native
     
     /** Save the current page as a pdf. */
     def pdf(path: String, paperSize: Format): this.type = js.native
@@ -227,15 +215,15 @@ object mod {
     def screenshot(path: String): this.type = js.native
     
     /** Take a base64 encoded screenshot, e.g., PNG. */
-    def screenshotBase64(`type`: String): js.Any = js.native
+    def screenshotBase64(`type`: String): Any = js.native
     @JSName("screenshotBase64")
-    def screenshotBase64_PNG(`type`: PNG): js.Any = js.native
+    def screenshotBase64_PNG(`type`: PNG): Any = js.native
     
     /** Scroll to a position on the page. */
     def scrollTo(top: Double, left: Double): this.type = js.native
     
     /** Select a value in an html select element. */
-    def select(selector: String, value: String): js.Any = js.native
+    def select(selector: String, value: String): Any = js.native
     
     /** Change the proxy settings. */
     def setProxy(ip: String, port: String, `type`: String, username: String, password: String): this.type = js.native
@@ -284,7 +272,7 @@ object mod {
     def url(): String = js.native
     
     /** Get or set the user agent for Phantom. */
-    def userAgent(args: js.Any*): js.Any = js.native
+    def userAgent(args: Any*): Any = js.native
     
     /** Get the value of an element. */
     def value(selector: String): String = js.native
@@ -303,7 +291,7 @@ object mod {
     def wait(milliseconds: Double): this.type = js.native
     
     /** Waits for a function to evaluate to a given value in browser. If optsOrFn is a function, use the classic signature waitFor(fn, arg1, arg2, value), If arg is an object, use waitFor(options). */
-    def waitFor(args: js.Any*): this.type = js.native
+    def waitFor(args: Any*): this.type = js.native
     
     /** Wait for a page load to occur */
     def waitForNextPage(): this.type = js.native

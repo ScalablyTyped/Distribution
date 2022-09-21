@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Materials/Node/Blocks/index", "MorphTargetsBlock")
 @js.native
-class MorphTargetsBlock protected ()
+open class MorphTargetsBlock protected ()
   extends typings.babylonjs.vertexIndexMod.MorphTargetsBlock {
   /**
     * Create a new MorphTargetsBlock

@@ -10,10 +10,10 @@ object simCardAlertMod {
   
   @JSImport("material-ui/svg-icons/notification/sim-card-alert", JSImport.Default)
   @js.native
-  class default () extends NotificationSimCardAlert
+  open class default () extends NotificationSimCardAlert
   
   @JSImport("material-ui/svg-icons/notification/sim-card-alert", "NotificationSimCardAlert")
   @js.native
-  class NotificationSimCardAlert ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NotificationSimCardAlert ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

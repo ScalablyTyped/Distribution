@@ -36,7 +36,7 @@ object HitKeywords {
     
     inline def setHitKeywordsUndefined: Self = StObject.set(x, "hitKeywords", js.undefined)
     
-    inline def setHitKeywordsVarargs(value: String*): Self = StObject.set(x, "hitKeywords", js.Array(value :_*))
+    inline def setHitKeywordsVarargs(value: String*): Self = StObject.set(x, "hitKeywords", js.Array(value*))
     
     inline def setScore(value: String): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     

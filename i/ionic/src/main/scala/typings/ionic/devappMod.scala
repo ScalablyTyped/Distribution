@@ -13,7 +13,7 @@ object devappMod {
   
   @JSImport("ionic/lib/devapp", "Publisher")
   @js.native
-  class Publisher protected ()
+  open class Publisher protected ()
     extends typings.ionicDiscover.mod.Publisher {
     def this(namespace: String, name: String, port: Double) = this()
     def this(namespace: String, name: String, port: Double, commPort: Double) = this()

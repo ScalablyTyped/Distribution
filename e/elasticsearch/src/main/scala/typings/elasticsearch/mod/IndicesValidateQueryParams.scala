@@ -30,7 +30,7 @@ trait IndicesValidateQueryParams
   
   var lowercaseExpandedTerms: js.UndefOr[Boolean] = js.undefined
   
-  var operationThreading: js.UndefOr[js.Any] = js.undefined
+  var operationThreading: js.UndefOr[Any] = js.undefined
   
   // even the docs don't know what this does
   var q: js.UndefOr[String] = js.undefined
@@ -82,7 +82,7 @@ object IndicesValidateQueryParams {
     
     inline def setIndex(value: NameList): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
+    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value*))
     
     inline def setLenient(value: Boolean): Self = StObject.set(x, "lenient", value.asInstanceOf[js.Any])
     
@@ -92,7 +92,7 @@ object IndicesValidateQueryParams {
     
     inline def setLowercaseExpandedTermsUndefined: Self = StObject.set(x, "lowercaseExpandedTerms", js.undefined)
     
-    inline def setOperationThreading(value: js.Any): Self = StObject.set(x, "operationThreading", value.asInstanceOf[js.Any])
+    inline def setOperationThreading(value: Any): Self = StObject.set(x, "operationThreading", value.asInstanceOf[js.Any])
     
     inline def setOperationThreadingUndefined: Self = StObject.set(x, "operationThreading", js.undefined)
     
@@ -108,6 +108,6 @@ object IndicesValidateQueryParams {
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value*))
   }
 }

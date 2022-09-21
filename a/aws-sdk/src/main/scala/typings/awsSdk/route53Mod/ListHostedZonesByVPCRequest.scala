@@ -22,7 +22,7 @@ trait ListHostedZonesByVPCRequest extends StObject {
   var VPCId: typings.awsSdk.route53Mod.VPCId
   
   /**
-    * For the Amazon VPC that you specified for VPCId, the AWS Region that you created the VPC in. 
+    * For the Amazon VPC that you specified for VPCId, the Amazon Web Services Region that you created the VPC in. 
     */
   var VPCRegion: typings.awsSdk.route53Mod.VPCRegion
 }

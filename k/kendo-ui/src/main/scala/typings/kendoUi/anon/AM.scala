@@ -49,7 +49,7 @@ object AM {
     
     inline def setAM(value: js.Array[String]): Self = StObject.set(x, "AM", value.asInstanceOf[js.Any])
     
-    inline def setAMVarargs(value: String*): Self = StObject.set(x, "AM", js.Array(value :_*))
+    inline def setAMVarargs(value: String*): Self = StObject.set(x, "AM", js.Array(value*))
     
     inline def setColon(value: String): Self = StObject.set(x, ":", value.asInstanceOf[js.Any])
     
@@ -61,7 +61,7 @@ object AM {
     
     inline def setPM(value: js.Array[String]): Self = StObject.set(x, "PM", value.asInstanceOf[js.Any])
     
-    inline def setPMVarargs(value: String*): Self = StObject.set(x, "PM", js.Array(value :_*))
+    inline def setPMVarargs(value: String*): Self = StObject.set(x, "PM", js.Array(value*))
     
     inline def setPatterns(value: D): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
     

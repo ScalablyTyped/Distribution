@@ -9,10 +9,20 @@ trait FragmentOutputBlock
   extends StObject
      with NodeMaterialBlock {
   
+  /* private */ var _gammaDefineName: Any = js.native
+  
+  /* private */ var _linearDefineName: Any = js.native
+  
   /**
     * Gets the a input component
     */
   def a: NodeMaterialConnectionPoint = js.native
+  
+  /** Gets or sets a boolean indicating if content needs to be converted to gamma space */
+  var convertToGammaSpace: Boolean = js.native
+  
+  /** Gets or sets a boolean indicating if content needs to be converted to linear space */
+  var convertToLinearSpace: Boolean = js.native
   
   /**
     * Gets the rgb input component
@@ -23,4 +33,7 @@ trait FragmentOutputBlock
     * Gets the rgba input component
     */
   def rgba: NodeMaterialConnectionPoint = js.native
+  
+  /** Gets or sets a boolean indicating if logarithmic depth should be used */
+  var useLogarithmicDepth: Boolean = js.native
 }

@@ -19,10 +19,10 @@ object mod {
   
   inline def EventContext(): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("EventContext")().asInstanceOf[js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit]]
   
-  inline def Lambda(): js.Function1[/* target */ js.Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Lambda")().asInstanceOf[js.Function1[/* target */ js.Any, Unit]]
-  inline def Lambda(lambdaConfig: LambdaConfig): js.Function1[/* target */ js.Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Lambda")(lambdaConfig.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* target */ js.Any, Unit]]
+  inline def Lambda(): js.Function1[/* target */ Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Lambda")().asInstanceOf[js.Function1[/* target */ Any, Unit]]
+  inline def Lambda(lambdaConfig: LambdaConfig): js.Function1[/* target */ Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Lambda")(lambdaConfig.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* target */ Any, Unit]]
   
-  inline def LambdaHandler(event: js.Any, context: js.Any, callback: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("LambdaHandler")(event.asInstanceOf[js.Any], context.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def LambdaHandler(event: Any, context: Any, callback: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("LambdaHandler")(event.asInstanceOf[js.Any], context.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def PostConstructor(): js.Function2[/* target */ js.Object, /* methodName */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("PostConstructor")().asInstanceOf[js.Function2[/* target */ js.Object, /* methodName */ String, Unit]]
   

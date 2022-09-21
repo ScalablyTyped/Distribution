@@ -23,7 +23,7 @@ trait PigJob extends StObject {
   var properties: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.PigJob & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.PigJob & TopLevel[Any]
   ] = js.undefined
   
   /** The HCFS URI of the script that contains the Pig queries. */
@@ -36,7 +36,7 @@ trait PigJob extends StObject {
   var scriptVariables: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.PigJob & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.PigJob & TopLevel[Any]
   ] = js.undefined
 }
 object PigJob {
@@ -56,7 +56,7 @@ object PigJob {
     
     inline def setJarFileUrisUndefined: Self = StObject.set(x, "jarFileUris", js.undefined)
     
-    inline def setJarFileUrisVarargs(value: String*): Self = StObject.set(x, "jarFileUris", js.Array(value :_*))
+    inline def setJarFileUrisVarargs(value: String*): Self = StObject.set(x, "jarFileUris", js.Array(value*))
     
     inline def setLoggingConfig(value: LoggingConfig): Self = StObject.set(x, "loggingConfig", value.asInstanceOf[js.Any])
     
@@ -65,7 +65,7 @@ object PigJob {
     inline def setProperties(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.PigJob & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.PigJob & TopLevel[Any]
     ): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
@@ -81,7 +81,7 @@ object PigJob {
     inline def setScriptVariables(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.PigJob & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.PigJob & TopLevel[Any]
     ): Self = StObject.set(x, "scriptVariables", value.asInstanceOf[js.Any])
     
     inline def setScriptVariablesUndefined: Self = StObject.set(x, "scriptVariables", js.undefined)

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "SearchTeamMembersRequest")
 @js.native
-class SearchTeamMembersRequest () extends StObject {
+open class SearchTeamMembersRequest () extends StObject {
   
   /**
     * The opaque cursor for fetching the next page.

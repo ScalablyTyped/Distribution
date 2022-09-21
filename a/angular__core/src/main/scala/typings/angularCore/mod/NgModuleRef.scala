@@ -9,8 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 abstract class NgModuleRef[T] () extends StObject {
   
   /**
-    * The resolver that can retrieve the component factories
-    * declared in the `entryComponents` property of the module.
+    * The resolver that can retrieve component factories in a context of this module.
+    *
+    * Note: since v13, dynamic component creation via
+    * [`ViewContainerRef.createComponent`](api/core/ViewContainerRef#createComponent)
+    * does **not** require resolving component factory: component class can be used directly.
+    *
+    * @deprecated Angular no longer requires Component factories. Please use other APIs where
+    *     Component class can be used directly.
     */
   def componentFactoryResolver: ComponentFactoryResolver = js.native
   
@@ -22,7 +28,7 @@ abstract class NgModuleRef[T] () extends StObject {
   /**
     * The injector that contains all of the providers of the `NgModule`.
     */
-  def injector: Injector = js.native
+  def injector: EnvironmentInjector = js.native
   
   /**
     * The `NgModule` instance.

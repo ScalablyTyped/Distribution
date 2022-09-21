@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object diacriticsMod {
   
-  @JSImport("react-select/src/diacritics", JSImport.Namespace)
+  @JSImport("react-select/dist/declarations/src/diacritics", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

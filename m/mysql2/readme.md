@@ -1,7 +1,7 @@
 
 # Scala.js typings for mysql2
 
-Typings are for version 2.2.5
+Typings are for version 2.3.3
 
 ## Library description:
 fast mysql driver. Implements core protocol, prepared statements, ssl and compression in native JS
@@ -10,10 +10,10 @@ fast mysql driver. Implements core protocol, prepared statements, ssl and compre
 | ------------------ | :-------------: |
 | Full name          | mysql2 |
 | Keywords           | mysql, client, server |
-| # releases         | 14 |
-| # dependents       | 1044 |
-| # downloads        | 18408934 |
-| # stars            | 46 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 4277207.666666667 |
+| # stars            | 3024.0 |
 
 ## Links
 - [Homepage](https://github.com/sidorares/node-mysql2#readme)

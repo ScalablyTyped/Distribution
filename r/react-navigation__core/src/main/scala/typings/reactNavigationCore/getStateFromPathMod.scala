@@ -15,36 +15,36 @@ object getStateFromPathMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(path: String): js.UndefOr[ResultState] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ResultState]]
-  inline def default(path: String, options: Options): js.UndefOr[ResultState] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ResultState]]
+  inline def default[ParamList /* <: js.Object */](path: String): js.UndefOr[ResultState] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ResultState]]
+  inline def default[ParamList /* <: js.Object */](path: String, options: Options[ParamList]): js.UndefOr[ResultState] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ResultState]]
   
-  trait Options extends StObject {
+  trait Options[ParamList /* <: js.Object */] extends StObject {
     
     var initialRouteName: js.UndefOr[String] = js.undefined
     
-    var screens: PathConfigMap
+    var screens: PathConfigMap[ParamList]
   }
   object Options {
     
-    inline def apply(screens: PathConfigMap): Options = {
+    inline def apply[ParamList /* <: js.Object */](screens: PathConfigMap[ParamList]): Options[ParamList] = {
       val __obj = js.Dynamic.literal(screens = screens.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Options]
+      __obj.asInstanceOf[Options[ParamList]]
     }
     
-    extension [Self <: Options](x: Self) {
+    extension [Self <: Options[?], ParamList /* <: js.Object */](x: Self & Options[ParamList]) {
       
       inline def setInitialRouteName(value: String): Self = StObject.set(x, "initialRouteName", value.asInstanceOf[js.Any])
       
       inline def setInitialRouteNameUndefined: Self = StObject.set(x, "initialRouteName", js.undefined)
       
-      inline def setScreens(value: PathConfigMap): Self = StObject.set(x, "screens", value.asInstanceOf[js.Any])
+      inline def setScreens(value: PathConfigMap[ParamList]): Self = StObject.set(x, "screens", value.asInstanceOf[js.Any])
     }
   }
   
   /* Inlined @react-navigation/routers.@react-navigation/routers.PartialState<@react-navigation/routers.@react-navigation/routers.NavigationState<@react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase>> & {  state :@react-navigation/core.@react-navigation/core/lib/typescript/src/getStateFromPath.ResultState | undefined} */
   trait ResultState extends StObject {
     
-    var history: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var history: js.UndefOr[js.Array[Any]] = js.undefined
     
     var index: js.UndefOr[Double] = js.undefined
     
@@ -92,11 +92,11 @@ object getStateFromPathMod {
     
     extension [Self <: ResultState](x: Self) {
       
-      inline def setHistory(value: js.Array[js.Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      inline def setHistory(value: js.Array[Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
       inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
       
-      inline def setHistoryVarargs(value: js.Any*): Self = StObject.set(x, "history", js.Array(value :_*))
+      inline def setHistoryVarargs(value: Any*): Self = StObject.set(x, "history", js.Array(value*))
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -122,7 +122,7 @@ object getStateFromPathMod {
               /* keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase */ String, 
               String
             ])*
-      ): Self = StObject.set(x, "routeNames", js.Array(value :_*))
+      ): Self = StObject.set(x, "routeNames", js.Array(value*))
       
       inline def setRoutes(
         value: js.Array[
@@ -142,7 +142,7 @@ object getStateFromPathMod {
                 js.UndefOr[js.Object]
               ]
             ])*
-      ): Self = StObject.set(x, "routes", js.Array(value :_*))
+      ): Self = StObject.set(x, "routes", js.Array(value*))
       
       inline def setStale(value: `true`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
       

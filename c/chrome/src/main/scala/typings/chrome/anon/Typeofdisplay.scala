@@ -27,9 +27,12 @@ trait Typeofdisplay extends StObject {
   
   def enableUnifiedDesktop(enabled: Boolean): Unit = js.native
   
+  def getDisplayLayout(): js.Promise[js.Array[DisplayLayout]] = js.native
   def getDisplayLayout(callback: js.Function1[/* layouts */ js.Array[DisplayLayout], Unit]): Unit = js.native
   
+  def getInfo(): js.Promise[js.Array[DisplayInfo]] = js.native
   def getInfo(callback: js.Function1[/* info */ js.Array[DisplayInfo], Unit]): Unit = js.native
+  def getInfo(flags: DisplayInfoFlags): js.Promise[js.Array[DisplayInfo]] = js.native
   def getInfo(flags: DisplayInfoFlags, callback: js.Function1[/* info */ js.Array[DisplayInfo], Unit]): Unit = js.native
   
   val onDisplayChanged: Event[js.Function0[Unit]] = js.native
@@ -44,13 +47,20 @@ trait Typeofdisplay extends StObject {
   
   def setDisplayLayout(layouts: js.Array[DisplayLayout]): Unit = js.native
   def setDisplayLayout(layouts: js.Array[DisplayLayout], callback: js.Function0[Unit]): Unit = js.native
+  @JSName("setDisplayLayout")
+  def setDisplayLayout_Promise(layouts: js.Array[DisplayLayout]): js.Promise[Unit] = js.native
   
   def setDisplayProperties(id: String, info: DisplayPropertiesInfo): Unit = js.native
   def setDisplayProperties(id: String, info: DisplayPropertiesInfo, callback: js.Function0[Unit]): Unit = js.native
+  @JSName("setDisplayProperties")
+  def setDisplayProperties_Promise(id: String, info: DisplayPropertiesInfo): js.Promise[Unit] = js.native
   
+  def setMirrorMode(info: MirrorModeInfo): js.Promise[Unit] = js.native
+  def setMirrorMode(info: MirrorModeInfoMixed): js.Promise[Unit] = js.native
   def setMirrorMode(info: MirrorModeInfoMixed, callback: js.Function0[Unit]): Unit = js.native
   def setMirrorMode(info: MirrorModeInfo, callback: js.Function0[Unit]): Unit = js.native
   
+  def showNativeTouchCalibration(id: String): js.Promise[Boolean] = js.native
   def showNativeTouchCalibration(id: String, callback: js.Function1[/* success */ Boolean, Unit]): Unit = js.native
   
   def startCustomTouchCalibration(id: String): Unit = js.native

@@ -1,16 +1,21 @@
 package typings.devextreme.anon
 
-import typings.devextreme.devextremeStrings.onClick
-import typings.devextreme.devextremeStrings.onHover
+import typings.devextreme.mod.DevExpress.common.SubmenuShowMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait DelayName extends StObject {
   
+  /**
+    * Specifies the delay of submenu show and hiding.
+    */
   var delay: js.UndefOr[Show | Double] = js.undefined
   
-  var name: js.UndefOr[onClick | onHover] = js.undefined
+  /**
+    * Specifies the mode name.
+    */
+  var name: js.UndefOr[SubmenuShowMode] = js.undefined
 }
 object DelayName {
   
@@ -25,7 +30,7 @@ object DelayName {
     
     inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
-    inline def setName(value: onClick | onHover): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: SubmenuShowMode): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }

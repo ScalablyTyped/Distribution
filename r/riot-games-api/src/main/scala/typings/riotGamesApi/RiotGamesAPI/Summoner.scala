@@ -55,7 +55,7 @@ object Summoner {
       
       inline def setMasteries(value: js.Array[MasteryDto]): Self = StObject.set(x, "masteries", value.asInstanceOf[js.Any])
       
-      inline def setMasteriesVarargs(value: MasteryDto*): Self = StObject.set(x, "masteries", js.Array(value :_*))
+      inline def setMasteriesVarargs(value: MasteryDto*): Self = StObject.set(x, "masteries", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -78,7 +78,7 @@ object Summoner {
       
       inline def setPages(value: js.Array[MasteryPageDto]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
       
-      inline def setPagesVarargs(value: MasteryPageDto*): Self = StObject.set(x, "pages", js.Array(value :_*))
+      inline def setPagesVarargs(value: MasteryPageDto*): Self = StObject.set(x, "pages", js.Array(value*))
       
       inline def setSummonerId(value: Double): Self = StObject.set(x, "summonerId", value.asInstanceOf[js.Any])
     }
@@ -111,7 +111,7 @@ object Summoner {
       
       inline def setSlots(value: js.Array[RuneSlotDto]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
       
-      inline def setSlotsVarargs(value: RuneSlotDto*): Self = StObject.set(x, "slots", js.Array(value :_*))
+      inline def setSlotsVarargs(value: RuneSlotDto*): Self = StObject.set(x, "slots", js.Array(value*))
     }
   }
   
@@ -132,7 +132,7 @@ object Summoner {
       
       inline def setPages(value: js.Array[RunePageDto]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
       
-      inline def setPagesVarargs(value: RunePageDto*): Self = StObject.set(x, "pages", js.Array(value :_*))
+      inline def setPagesVarargs(value: RunePageDto*): Self = StObject.set(x, "pages", js.Array(value*))
       
       inline def setSummonerId(value: Double): Self = StObject.set(x, "summonerId", value.asInstanceOf[js.Any])
     }

@@ -36,7 +36,7 @@ trait CreateTargetRequest extends StObject {
   var newWindow: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The initial URL the page will be navigated to.
+    * The initial URL the page will be navigated to. An empty string indicates about:blank.
     */
   var url: String
   

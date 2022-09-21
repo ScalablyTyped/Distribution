@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-stickynode
 
-Typings are for version 3.0
+Typings are for version 4.0
 
 ## Library description:
 A performant and comprehensive React sticky component
@@ -11,9 +11,9 @@ A performant and comprehensive React sticky component
 | Full name          | react-stickynode |
 | Keywords           | Sticky, React |
 | # releases         | 7 |
-| # dependents       | 18 |
-| # downloads        | 3030530 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 359349.3333333333 |
+| # stars            | 1048.0 |
 
 ## Links
 - [Homepage](https://github.com/yahoo/react-stickynode#readme)

@@ -14,12 +14,12 @@ trait ASPxClientNavBarItemEventArgs
   /**
     * Gets the HTML object that contains the processed navbar item.
     */
-  var htmlElement: js.Any
+  var htmlElement: Any
   
   /**
     * Gets a DHTML event object that relates to the processed event.
     */
-  var htmlEvent: js.Any
+  var htmlEvent: Any
   
   /**
     * Gets the item object related to the event.
@@ -28,16 +28,16 @@ trait ASPxClientNavBarItemEventArgs
 }
 object ASPxClientNavBarItemEventArgs {
   
-  inline def apply(htmlElement: js.Any, htmlEvent: js.Any, item: ASPxClientNavBarItem, processOnServer: Boolean): ASPxClientNavBarItemEventArgs = {
+  inline def apply(htmlElement: Any, htmlEvent: Any, item: ASPxClientNavBarItem, processOnServer: Boolean): ASPxClientNavBarItemEventArgs = {
     val __obj = js.Dynamic.literal(htmlElement = htmlElement.asInstanceOf[js.Any], htmlEvent = htmlEvent.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientNavBarItemEventArgs]
   }
   
   extension [Self <: ASPxClientNavBarItemEventArgs](x: Self) {
     
-    inline def setHtmlElement(value: js.Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
+    inline def setHtmlElement(value: Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
     
-    inline def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+    inline def setHtmlEvent(value: Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
     
     inline def setItem(value: ASPxClientNavBarItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
   }

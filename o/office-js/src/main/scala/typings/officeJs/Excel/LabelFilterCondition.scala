@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait LabelFilterCondition extends StObject
 /**
-  *
   * Enum representing all accepted conditions by which a label filter can be applied.
   Used to configure the type of PivotFilter that is applied to the field.
-  `PivotFilter.criteria.exclusive` can be set to true to invert many of these conditions.
+  `PivotFilter.criteria.exclusive` can be set to `true` to invert many of these conditions.
   *
+  * @remarks
   * [Api set: ExcelApi 1.12]
   */
 @JSGlobal("Excel.LabelFilterCondition")
@@ -23,7 +23,8 @@ object LabelFilterCondition extends StObject {
     
     Required Criteria: {`substring`}.
     Optional Criteria: {`exclusive`}.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait beginsWith
@@ -35,7 +36,8 @@ object LabelFilterCondition extends StObject {
     
     Required Criteria: {`lowerBound`, `upperBound`}.
     Optional Criteria: {`exclusive`}.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait between
@@ -47,7 +49,8 @@ object LabelFilterCondition extends StObject {
     
     Required Criteria: {`substring`}.
     Optional Criteria: {`exclusive`}.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait contains
@@ -59,7 +62,8 @@ object LabelFilterCondition extends StObject {
     
     Required Criteria: {`substring`}.
     Optional Criteria: {`exclusive`}.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait endsWith
@@ -71,7 +75,8 @@ object LabelFilterCondition extends StObject {
     
     Required Criteria: {`comparator`}.
     Optional Criteria: {`exclusive`}.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait equals
@@ -82,7 +87,8 @@ object LabelFilterCondition extends StObject {
     * Greater than comparator criterion.
     
     Required Criteria: {`comparator`}.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait greaterThan
@@ -93,7 +99,8 @@ object LabelFilterCondition extends StObject {
     * Greater than or equal to comparator criterion.
     
     Required Criteria: {`comparator`}.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait greaterThanOrEqualTo
@@ -104,7 +111,8 @@ object LabelFilterCondition extends StObject {
     * Less than comparator criterion.
     
     Required Criteria: {`comparator`}.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait lessThan
@@ -115,7 +123,8 @@ object LabelFilterCondition extends StObject {
     * Less than or equal to comparator criterion.
     
     Required Criteria: {`comparator`}.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait lessThanOrEqualTo
@@ -123,8 +132,9 @@ object LabelFilterCondition extends StObject {
        with LabelFilterCondition
   
   /**
-    * LabelFilterCondition is unknown or unsupported.
-    *
+    * `LabelFilterCondition` is unknown or unsupported.
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait unknown

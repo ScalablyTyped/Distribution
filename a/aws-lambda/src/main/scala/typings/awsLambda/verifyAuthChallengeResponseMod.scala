@@ -43,5 +43,5 @@ object verifyAuthChallengeResponseMod {
     }
   }
   
-  type VerifyAuthChallengeResponseTriggerHandler = Handler[VerifyAuthChallengeResponseTriggerEvent, js.Any]
+  type VerifyAuthChallengeResponseTriggerHandler = Handler[VerifyAuthChallengeResponseTriggerEvent, Any]
 }

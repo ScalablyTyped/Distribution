@@ -7,20 +7,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vscode", "Diagnostic")
 @js.native
-class Diagnostic protected () extends StObject {
+open class Diagnostic protected () extends StObject {
   /**
     * Creates a new diagnostic object.
     *
     * @param range The range to which this diagnostic applies.
     * @param message The human-readable message.
-    * @param severity The severity, default is [error](#DiagnosticSeverity.Error).
+    * @param severity The severity, default is {@link DiagnosticSeverity.Error error}.
     */
   def this(range: Range, message: String) = this()
   def this(range: Range, message: String, severity: DiagnosticSeverity) = this()
   
   /**
     * A code or identifier for this diagnostic.
-    * Should be used for later processing, e.g. when providing [code actions](#CodeActionContext).
+    * Should be used for later processing, e.g. when providing {@link CodeActionContext code actions}.
     */
   var code: js.UndefOr[String | Double | Target] = js.native
   
@@ -41,7 +41,7 @@ class Diagnostic protected () extends StObject {
   var relatedInformation: js.UndefOr[js.Array[DiagnosticRelatedInformation]] = js.native
   
   /**
-    * The severity, default is [error](#DiagnosticSeverity.Error).
+    * The severity, default is {@link DiagnosticSeverity.Error error}.
     */
   var severity: DiagnosticSeverity = js.native
   

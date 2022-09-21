@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elasticsearch", "errors.NotFound")
 @js.native
-class NotFound () extends Abstract
+open class NotFound () extends Abstract

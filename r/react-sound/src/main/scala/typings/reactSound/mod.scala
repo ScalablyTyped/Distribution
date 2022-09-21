@@ -16,10 +16,9 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-sound", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[ReactSoundProps, ComponentState, js.Any] {
+  open class default protected () extends Component[ReactSoundProps, ComponentState, Any] {
     def this(props: ReactSoundProps) = this()
-    def this(props: ReactSoundProps, context: js.Any) = this()
+    def this(props: ReactSoundProps, context: Any) = this()
   }
   @JSImport("react-sound", JSImport.Default)
   @js.native

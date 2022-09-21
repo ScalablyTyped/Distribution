@@ -12,7 +12,7 @@ trait AwsDynamoDbTableReplica extends StObject {
   var GlobalSecondaryIndexes: js.UndefOr[AwsDynamoDbTableReplicaGlobalSecondaryIndexList] = js.undefined
   
   /**
-    * The identifier of the AWS KMS customer master key (CMK) that will be used for AWS KMS encryption for the replica.
+    * The identifier of the KMS key that will be used for KMS encryption for the replica.
     */
   var KmsMasterKeyId: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -27,7 +27,7 @@ trait AwsDynamoDbTableReplica extends StObject {
   var RegionName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The current status of the replica.
+    * The current status of the replica. Valid values are as follows:    ACTIVE     CREATING     CREATION_FAILED     DELETING     UPDATING   
     */
   var ReplicaStatus: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -49,7 +49,7 @@ object AwsDynamoDbTableReplica {
     
     inline def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
     
-    inline def setGlobalSecondaryIndexesVarargs(value: AwsDynamoDbTableReplicaGlobalSecondaryIndex*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value :_*))
+    inline def setGlobalSecondaryIndexesVarargs(value: AwsDynamoDbTableReplicaGlobalSecondaryIndex*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value*))
     
     inline def setKmsMasterKeyId(value: NonEmptyString): Self = StObject.set(x, "KmsMasterKeyId", value.asInstanceOf[js.Any])
     

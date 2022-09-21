@@ -8,9 +8,9 @@ trait SourceControlResourceThemableDecorations extends StObject {
   
   /**
     * The icon path for a specific
-    * [source control resource state](#SourceControlResourceState).
+    * {@link SourceControlResourceState source control resource state}.
     */
-  val iconPath: js.UndefOr[String | Uri] = js.undefined
+  val iconPath: js.UndefOr[String | Uri | ThemeIcon] = js.undefined
 }
 object SourceControlResourceThemableDecorations {
   
@@ -21,7 +21,7 @@ object SourceControlResourceThemableDecorations {
   
   extension [Self <: SourceControlResourceThemableDecorations](x: Self) {
     
-    inline def setIconPath(value: String | Uri): Self = StObject.set(x, "iconPath", value.asInstanceOf[js.Any])
+    inline def setIconPath(value: String | Uri | ThemeIcon): Self = StObject.set(x, "iconPath", value.asInstanceOf[js.Any])
     
     inline def setIconPathUndefined: Self = StObject.set(x, "iconPath", js.undefined)
   }

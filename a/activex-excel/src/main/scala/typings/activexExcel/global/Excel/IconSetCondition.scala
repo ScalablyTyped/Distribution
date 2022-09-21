@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.IconSetCondition")
 @js.native
-/* private */ class IconSetCondition ()
+/* private */ open class IconSetCondition ()
   extends StObject
      with typings.activexExcel.Excel.IconSetCondition {
   
@@ -60,7 +60,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val PTCondition: Boolean = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var PercentileValues: Boolean = js.native

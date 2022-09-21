@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxReportUIElement")
 @js.native
-class ASPxReportUIElement ()
+open class ASPxReportUIElement ()
   extends StObject
      with typings.devexpressWeb.ASPxReportUIElement {
   
@@ -17,7 +17,7 @@ class ASPxReportUIElement ()
     * Provides access to an element model.
     */
   /* CompleteClass */
-  var model: js.Any = js.native
+  var model: Any = js.native
   
   /**
     * Provides access to the name of an HTML template used by an element.

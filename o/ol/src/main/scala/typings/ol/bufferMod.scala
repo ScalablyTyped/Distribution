@@ -1,9 +1,6 @@
 package typings.ol
 
-import typings.std.ArrayBuffer
-import typings.std.Float32Array
 import typings.std.Float32ArrayConstructor
-import typings.std.Uint32Array
 import typings.std.Uint32ArrayConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,7 +14,7 @@ object bufferMod {
   
   @JSImport("ol/webgl/Buffer", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with WebGLArrayBuffer {
     def this(`type`: Double) = this()
@@ -33,13 +30,13 @@ object bufferMod {
       * Populates the buffer with a raw binary array buffer.
       */
     /* CompleteClass */
-    override def fromArrayBuffer(buffer: ArrayBuffer): Unit = js.native
+    override def fromArrayBuffer(buffer: js.typedarray.ArrayBuffer): Unit = js.native
     
     /**
       * Will return null if the buffer was not initialized
       */
     /* CompleteClass */
-    override def getArray(): Float32Array | Uint32Array = js.native
+    override def getArray(): js.typedarray.Float32Array | js.typedarray.Uint32Array = js.native
     
     /**
       * Will return 0 if the buffer is not initialized
@@ -100,12 +97,12 @@ object bufferMod {
     /**
       * Populates the buffer with a raw binary array buffer.
       */
-    def fromArrayBuffer(buffer: ArrayBuffer): Unit
+    def fromArrayBuffer(buffer: js.typedarray.ArrayBuffer): Unit
     
     /**
       * Will return null if the buffer was not initialized
       */
-    def getArray(): Float32Array | Uint32Array
+    def getArray(): js.typedarray.Float32Array | js.typedarray.Uint32Array
     
     /**
       * Will return 0 if the buffer is not initialized
@@ -125,8 +122,8 @@ object bufferMod {
     
     inline def apply(
       fromArray: js.Array[Double] => Unit,
-      fromArrayBuffer: ArrayBuffer => Unit,
-      getArray: () => Float32Array | Uint32Array,
+      fromArrayBuffer: js.typedarray.ArrayBuffer => Unit,
+      getArray: () => js.typedarray.Float32Array | js.typedarray.Uint32Array,
       getSize: () => Double,
       getType: () => Double,
       getUsage: () => Double,
@@ -140,9 +137,9 @@ object bufferMod {
       
       inline def setFromArray(value: js.Array[Double] => Unit): Self = StObject.set(x, "fromArray", js.Any.fromFunction1(value))
       
-      inline def setFromArrayBuffer(value: ArrayBuffer => Unit): Self = StObject.set(x, "fromArrayBuffer", js.Any.fromFunction1(value))
+      inline def setFromArrayBuffer(value: js.typedarray.ArrayBuffer => Unit): Self = StObject.set(x, "fromArrayBuffer", js.Any.fromFunction1(value))
       
-      inline def setGetArray(value: () => Float32Array | Uint32Array): Self = StObject.set(x, "getArray", js.Any.fromFunction0(value))
+      inline def setGetArray(value: () => js.typedarray.Float32Array | js.typedarray.Uint32Array): Self = StObject.set(x, "getArray", js.Any.fromFunction0(value))
       
       inline def setGetSize(value: () => Double): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
       

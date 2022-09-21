@@ -31,7 +31,7 @@ trait ClassX509Crl
     * 
     * 
     */
-  def dump(): js.Array[js.Any] = js.native
+  def dump(): js.Array[Any] = js.native
   
   /**
     * 

@@ -34,7 +34,7 @@ object InvitedUserMessageInfo {
     
     inline def setCcRecipientsUndefined: Self = StObject.set(x, "ccRecipients", js.undefined)
     
-    inline def setCcRecipientsVarargs(value: Recipient*): Self = StObject.set(x, "ccRecipients", js.Array(value :_*))
+    inline def setCcRecipientsVarargs(value: Recipient*): Self = StObject.set(x, "ccRecipients", js.Array(value*))
     
     inline def setCustomizedMessageBody(value: NullableOption[String]): Self = StObject.set(x, "customizedMessageBody", value.asInstanceOf[js.Any])
     

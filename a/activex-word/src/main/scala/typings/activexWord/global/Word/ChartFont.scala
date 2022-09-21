@@ -6,60 +6,60 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.ChartFont")
 @js.native
-/* private */ class ChartFont ()
+/* private */ open class ChartFont ()
   extends StObject
      with typings.activexWord.Word.ChartFont {
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
-  var Background: js.Any = js.native
+  var Background: Any = js.native
   
   /* CompleteClass */
-  var Bold: js.Any = js.native
+  var Bold: Any = js.native
   
   /* CompleteClass */
-  var Color: js.Any = js.native
+  var Color: Any = js.native
   
   /* CompleteClass */
-  var ColorIndex: js.Any = js.native
+  var ColorIndex: Any = js.native
   
   /* CompleteClass */
   override val Creator: Double = js.native
   
   /* CompleteClass */
-  var FontStyle: js.Any = js.native
+  var FontStyle: Any = js.native
   
   /* CompleteClass */
-  var Italic: js.Any = js.native
+  var Italic: Any = js.native
   
   /* CompleteClass */
-  var Name: js.Any = js.native
+  var Name: Any = js.native
   
   /* CompleteClass */
-  var OutlineFont: js.Any = js.native
+  var OutlineFont: Any = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
-  var Shadow: js.Any = js.native
+  var Shadow: Any = js.native
   
   /* CompleteClass */
-  var Size: js.Any = js.native
+  var Size: Any = js.native
   
   /* CompleteClass */
-  var StrikeThrough: js.Any = js.native
+  var StrikeThrough: Any = js.native
   
   /* CompleteClass */
-  var Subscript: js.Any = js.native
+  var Subscript: Any = js.native
   
   /* CompleteClass */
-  var Superscript: js.Any = js.native
+  var Superscript: Any = js.native
   
   /* CompleteClass */
-  var Underline: js.Any = js.native
+  var Underline: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("Word.ChartFont_typekey")

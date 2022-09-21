@@ -1,6 +1,5 @@
 package typings.figma.mod.global
 
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ExportMixin extends StObject {
   
-  def exportAsync(): js.Promise[Uint8Array] = js.native
-  def exportAsync(settings: ExportSettings): js.Promise[Uint8Array] = js.native
+  def exportAsync(): js.Promise[js.typedarray.Uint8Array] = js.native
+  def exportAsync(settings: ExportSettings): js.Promise[js.typedarray.Uint8Array] = js.native
   
   var exportSettings: js.Array[ExportSettings] = js.native
 }

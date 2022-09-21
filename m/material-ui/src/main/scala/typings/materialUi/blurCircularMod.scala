@@ -10,10 +10,10 @@ object blurCircularMod {
   
   @JSImport("material-ui/svg-icons/image/blur-circular", JSImport.Default)
   @js.native
-  class default () extends ImageBlurCircular
+  open class default () extends ImageBlurCircular
   
   @JSImport("material-ui/svg-icons/image/blur-circular", "ImageBlurCircular")
   @js.native
-  class ImageBlurCircular ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageBlurCircular ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -62,14 +62,25 @@ object anon {
     
     var CLOSE_EVENT: String
     
+    var LIST_ITEM_ACTIVATED_SELECTOR: String
+    
+    var LIST_SELECTOR: String
+    
     var OPEN_EVENT: String
     
     var SCRIM_SELECTOR: String
   }
   object APPCONTENTSELECTOR {
     
-    inline def apply(APP_CONTENT_SELECTOR: String, CLOSE_EVENT: String, OPEN_EVENT: String, SCRIM_SELECTOR: String): APPCONTENTSELECTOR = {
-      val __obj = js.Dynamic.literal(APP_CONTENT_SELECTOR = APP_CONTENT_SELECTOR.asInstanceOf[js.Any], CLOSE_EVENT = CLOSE_EVENT.asInstanceOf[js.Any], OPEN_EVENT = OPEN_EVENT.asInstanceOf[js.Any], SCRIM_SELECTOR = SCRIM_SELECTOR.asInstanceOf[js.Any])
+    inline def apply(
+      APP_CONTENT_SELECTOR: String,
+      CLOSE_EVENT: String,
+      LIST_ITEM_ACTIVATED_SELECTOR: String,
+      LIST_SELECTOR: String,
+      OPEN_EVENT: String,
+      SCRIM_SELECTOR: String
+    ): APPCONTENTSELECTOR = {
+      val __obj = js.Dynamic.literal(APP_CONTENT_SELECTOR = APP_CONTENT_SELECTOR.asInstanceOf[js.Any], CLOSE_EVENT = CLOSE_EVENT.asInstanceOf[js.Any], LIST_ITEM_ACTIVATED_SELECTOR = LIST_ITEM_ACTIVATED_SELECTOR.asInstanceOf[js.Any], LIST_SELECTOR = LIST_SELECTOR.asInstanceOf[js.Any], OPEN_EVENT = OPEN_EVENT.asInstanceOf[js.Any], SCRIM_SELECTOR = SCRIM_SELECTOR.asInstanceOf[js.Any])
       __obj.asInstanceOf[APPCONTENTSELECTOR]
     }
     
@@ -78,6 +89,10 @@ object anon {
       inline def setAPP_CONTENT_SELECTOR(value: String): Self = StObject.set(x, "APP_CONTENT_SELECTOR", value.asInstanceOf[js.Any])
       
       inline def setCLOSE_EVENT(value: String): Self = StObject.set(x, "CLOSE_EVENT", value.asInstanceOf[js.Any])
+      
+      inline def setLIST_ITEM_ACTIVATED_SELECTOR(value: String): Self = StObject.set(x, "LIST_ITEM_ACTIVATED_SELECTOR", value.asInstanceOf[js.Any])
+      
+      inline def setLIST_SELECTOR(value: String): Self = StObject.set(x, "LIST_SELECTOR", value.asInstanceOf[js.Any])
       
       inline def setOPEN_EVENT(value: String): Self = StObject.set(x, "OPEN_EVENT", value.asInstanceOf[js.Any])
       

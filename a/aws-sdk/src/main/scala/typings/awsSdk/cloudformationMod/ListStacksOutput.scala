@@ -33,6 +33,6 @@ object ListStacksOutput {
     
     inline def setStackSummariesUndefined: Self = StObject.set(x, "StackSummaries", js.undefined)
     
-    inline def setStackSummariesVarargs(value: StackSummary*): Self = StObject.set(x, "StackSummaries", js.Array(value :_*))
+    inline def setStackSummariesVarargs(value: StackSummary*): Self = StObject.set(x, "StackSummaries", js.Array(value*))
   }
 }

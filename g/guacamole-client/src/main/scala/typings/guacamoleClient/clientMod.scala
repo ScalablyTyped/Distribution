@@ -6,13 +6,15 @@ import typings.guacamoleClient.clientMod.Client.ExportedState
 import typings.guacamoleClient.clientMod.Client.State
 import typings.guacamoleClient.displayMod.Display
 import typings.guacamoleClient.guacCommonMod.Mimetype
+import typings.guacamoleClient.guacamoleClientNumbers.`0`
+import typings.guacamoleClient.guacamoleClientNumbers.`1`
 import typings.guacamoleClient.inputStreamMod.InputStream
 import typings.guacamoleClient.objectMod.Object
 import typings.guacamoleClient.outputStreamMod.OutputStream
 import typings.guacamoleClient.statusMod.Status
+import typings.guacamoleClient.tunnelMod.Tunnel
 import typings.guacamoleClient.videoPlayerMod.VideoPlayer
 import typings.guacamoleClient.visibleLayerMod.VisibleLayer
-import typings.guacamoleClient.webSocketTunnelMod.WebSocketTunnel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,11 +23,11 @@ object clientMod {
   
   @JSImport("guacamole-client/lib/Client", "Client")
   @js.native
-  class Client protected () extends StObject {
+  open class Client protected () extends StObject {
     /**
       * @param tunnel The tunnel to use to send and receive Guacamole instructions.
       */
-    def this(tunnel: WebSocketTunnel) = this()
+    def this(tunnel: Tunnel) = this()
     
     /**
       * @description
@@ -37,7 +39,7 @@ object clientMod {
       * @throws {Guacamole.Status} If an error occurs during connection.
       */
     def connect(): Unit = js.native
-    def connect(data: js.Any): Unit = js.native
+    def connect(data: Any): Unit = js.native
     
     /**
       * Opens a new argument value stream for writing, having the given
@@ -320,17 +322,17 @@ object clientMod {
       * Sends a key event having the given properties as if the user
       * pressed or released a key.
       *
-      * @param pressed Whether the key is pressed (true) or released (false).
+      * @param pressed Whether the key is pressed (1) or released (0).
       * @param keysym The keysym of the key being pressed or released.
       */
-    def sendKeyEvent(pressed: Boolean, keysym: Double): Unit = js.native
+    def sendKeyEvent(pressed: `0` | `1`, keysym: Double): Unit = js.native
     
     /**
       * Sends a mouse event having the properties provided by the given mouse state.
       *
       * @param mouseState The state of the mouse to send in the mouse event.
       */
-    def sendMouseState(state: State): Unit = js.native
+    def sendMouseState(state: typings.guacamoleClient.mouseMod.Mouse.State): Unit = js.native
     
     /**
       * Sends the current size of the screen.
@@ -357,8 +359,8 @@ object clientMod {
       inline def ExportLayerBasexnumberynu(
         alpha: Double,
         height: Double,
-        matrix: js.Any,
-        parent: js.Any,
+        matrix: Any,
+        parent: Any,
         width: Double,
         x: Double,
         y: Double,

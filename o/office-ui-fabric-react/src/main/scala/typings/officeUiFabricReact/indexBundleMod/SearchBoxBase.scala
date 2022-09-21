@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "SearchBoxBase")
 @js.native
-class SearchBoxBase protected ()
+open class SearchBoxBase protected ()
   extends typings.officeUiFabricReact.mod.SearchBoxBase {
   def this(props: ISearchBoxProps) = this()
 }

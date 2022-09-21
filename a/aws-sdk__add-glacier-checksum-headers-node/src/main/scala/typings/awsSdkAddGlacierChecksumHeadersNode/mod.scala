@@ -15,16 +15,10 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def addChecksumHeaders(Sha256: HashConstructor, fromUtf8: Decoder): js.Function1[
-    /* next */ BuildHandler[js.Any, js.Any], 
-    js.Function1[
-      /* hasHasBodyHeadersRequestRestRest */ BuildHandlerArguments[js.Any], 
-      js.Promise[js.Any]
-    ]
+    /* next */ BuildHandler[Any, Any], 
+    js.Function1[/* hasHasBodyHeadersRequestRestRest */ BuildHandlerArguments[Any], js.Promise[Any]]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("addChecksumHeaders")(Sha256.asInstanceOf[js.Any], fromUtf8.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* next */ BuildHandler[js.Any, js.Any], 
-    js.Function1[
-      /* hasHasBodyHeadersRequestRestRest */ BuildHandlerArguments[js.Any], 
-      js.Promise[js.Any]
-    ]
+    /* next */ BuildHandler[Any, Any], 
+    js.Function1[/* hasHasBodyHeadersRequestRestRest */ BuildHandlerArguments[Any], js.Promise[Any]]
   ]]
 }

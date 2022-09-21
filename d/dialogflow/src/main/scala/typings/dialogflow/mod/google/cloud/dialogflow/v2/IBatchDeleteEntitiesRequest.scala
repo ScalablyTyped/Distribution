@@ -31,7 +31,7 @@ object IBatchDeleteEntitiesRequest {
     
     inline def setEntityValuesUndefined: Self = StObject.set(x, "entityValues", js.undefined)
     
-    inline def setEntityValuesVarargs(value: String*): Self = StObject.set(x, "entityValues", js.Array(value :_*))
+    inline def setEntityValuesVarargs(value: String*): Self = StObject.set(x, "entityValues", js.Array(value*))
     
     inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     

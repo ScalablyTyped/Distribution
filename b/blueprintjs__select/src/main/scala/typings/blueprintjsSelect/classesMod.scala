@@ -30,7 +30,15 @@ object classesMod {
   @js.native
   val SELECT: String = js.native
   
+  @JSImport("@blueprintjs/select/lib/esm/common/classes", "SELECT_MATCH_TARGET_WIDTH")
+  @js.native
+  val SELECT_MATCH_TARGET_WIDTH: String = js.native
+  
   @JSImport("@blueprintjs/select/lib/esm/common/classes", "SELECT_POPOVER")
   @js.native
   val SELECT_POPOVER: String = js.native
+  
+  @JSImport("@blueprintjs/select/lib/esm/common/classes", "SUGGEST_POPOVER")
+  @js.native
+  val SUGGEST_POPOVER: String = js.native
 }

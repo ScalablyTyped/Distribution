@@ -40,7 +40,7 @@ object ProcessesData {
     
     inline def setList(value: js.Array[ProcessesProcessData]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
-    inline def setListVarargs(value: ProcessesProcessData*): Self = StObject.set(x, "list", js.Array(value :_*))
+    inline def setListVarargs(value: ProcessesProcessData*): Self = StObject.set(x, "list", js.Array(value*))
     
     inline def setRunning(value: Double): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
     

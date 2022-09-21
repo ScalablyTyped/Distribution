@@ -8,8 +8,6 @@ trait CommandMetadataInput extends StObject {
   
   var name: String
   
-  var `private`: js.UndefOr[Boolean] = js.undefined
-  
   var summary: String
   
   var validators: js.UndefOr[js.Array[Validator]] = js.undefined
@@ -25,16 +23,12 @@ object CommandMetadataInput {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
-    
-    inline def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
-    
     inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
     inline def setValidators(value: js.Array[Validator]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
     
     inline def setValidatorsUndefined: Self = StObject.set(x, "validators", js.undefined)
     
-    inline def setValidatorsVarargs(value: Validator*): Self = StObject.set(x, "validators", js.Array(value :_*))
+    inline def setValidatorsVarargs(value: Validator*): Self = StObject.set(x, "validators", js.Array(value*))
   }
 }

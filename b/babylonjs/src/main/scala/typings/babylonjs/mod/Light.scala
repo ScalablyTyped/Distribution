@@ -12,7 +12,7 @@ abstract class Light protected ()
   /**
     * Creates a Light object in the scene.
     * Documentation : https://doc.babylonjs.com/babylon101/lights
-    * @param name The firendly name of the light
+    * @param name The friendly name of the light
     * @param scene The scene the light belongs too
     */
   def this(name: String, scene: typings.babylonjs.sceneMod.Scene) = this()
@@ -23,14 +23,6 @@ object Light {
   @JSImport("babylonjs", "Light")
   @js.native
   val ^ : js.Any = js.native
-  
-  /**
-    * Sort function to order lights for rendering.
-    * @param a First Light object to compare to second.
-    * @param b Second Light object to compare first.
-    * @return -1 to reduce's a's index relative to be, 0 for no change, 1 to increase a's index relative to b.
-    */
-  inline def CompareLightsPriority(a: typings.babylonjs.lightMod.Light, b: typings.babylonjs.lightMod.Light): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("CompareLightsPriority")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Falloff Default: light is falling off following the material specification:
@@ -172,5 +164,5 @@ object Light {
     * @param scene The scene to create the parsed light in
     * @returns the created light after parsing
     */
-  inline def Parse(parsedLight: js.Any, scene: typings.babylonjs.sceneMod.Scene): Nullable[typings.babylonjs.lightMod.Light] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedLight.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.lightMod.Light]]
+  inline def Parse(parsedLight: Any, scene: typings.babylonjs.sceneMod.Scene): Nullable[typings.babylonjs.lightMod.Light] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedLight.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.lightMod.Light]]
 }

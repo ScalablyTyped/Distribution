@@ -1,5 +1,6 @@
 package typings.vexflow.Vex.Flow
 
+import typings.vexflow.anon.FillStyle_
 import typings.vexflow.anon.GetContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,6 +22,8 @@ trait StaveModifier extends StObject {
   
   def getPosition(): Double
   
+  def getStyle(): FillStyle_
+  
   def getWidth(): Double
   
   def makeSpacer(padding: Double): GetContext
@@ -28,6 +31,9 @@ trait StaveModifier extends StObject {
   def placeGlyphOnLine(glyph: Glyph, stave: Stave, line: Double): Unit
   
   def setPadding(padding: Double): Unit
+  
+  // (StaveModifier extends Element in vexflow, but not in these definitions, probably because of a typing problem)
+  def setStyle(style: FillStyle_): StaveModifier
 }
 object StaveModifier {
   
@@ -39,12 +45,14 @@ object StaveModifier {
     getCategory: () => String,
     getPadding: Double => Double,
     getPosition: () => Double,
+    getStyle: () => FillStyle_,
     getWidth: () => Double,
     makeSpacer: Double => GetContext,
     placeGlyphOnLine: (Glyph, Stave, Double) => Unit,
-    setPadding: Double => Unit
+    setPadding: Double => Unit,
+    setStyle: FillStyle_ => StaveModifier
   ): StaveModifier = {
-    val __obj = js.Dynamic.literal(addEndModifier = js.Any.fromFunction0(addEndModifier), addModifier = js.Any.fromFunction0(addModifier), addToStave = js.Any.fromFunction2(addToStave), addToStaveEnd = js.Any.fromFunction2(addToStaveEnd), getCategory = js.Any.fromFunction0(getCategory), getPadding = js.Any.fromFunction1(getPadding), getPosition = js.Any.fromFunction0(getPosition), getWidth = js.Any.fromFunction0(getWidth), makeSpacer = js.Any.fromFunction1(makeSpacer), placeGlyphOnLine = js.Any.fromFunction3(placeGlyphOnLine), setPadding = js.Any.fromFunction1(setPadding))
+    val __obj = js.Dynamic.literal(addEndModifier = js.Any.fromFunction0(addEndModifier), addModifier = js.Any.fromFunction0(addModifier), addToStave = js.Any.fromFunction2(addToStave), addToStaveEnd = js.Any.fromFunction2(addToStaveEnd), getCategory = js.Any.fromFunction0(getCategory), getPadding = js.Any.fromFunction1(getPadding), getPosition = js.Any.fromFunction0(getPosition), getStyle = js.Any.fromFunction0(getStyle), getWidth = js.Any.fromFunction0(getWidth), makeSpacer = js.Any.fromFunction1(makeSpacer), placeGlyphOnLine = js.Any.fromFunction3(placeGlyphOnLine), setPadding = js.Any.fromFunction1(setPadding), setStyle = js.Any.fromFunction1(setStyle))
     __obj.asInstanceOf[StaveModifier]
   }
   
@@ -102,6 +110,8 @@ object StaveModifier {
     
     inline def setGetPosition(value: () => Double): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
     
+    inline def setGetStyle(value: () => FillStyle_): Self = StObject.set(x, "getStyle", js.Any.fromFunction0(value))
+    
     inline def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
     
     inline def setMakeSpacer(value: Double => GetContext): Self = StObject.set(x, "makeSpacer", js.Any.fromFunction1(value))
@@ -109,5 +119,7 @@ object StaveModifier {
     inline def setPlaceGlyphOnLine(value: (Glyph, Stave, Double) => Unit): Self = StObject.set(x, "placeGlyphOnLine", js.Any.fromFunction3(value))
     
     inline def setSetPadding(value: Double => Unit): Self = StObject.set(x, "setPadding", js.Any.fromFunction1(value))
+    
+    inline def setSetStyle(value: FillStyle_ => StaveModifier): Self = StObject.set(x, "setStyle", js.Any.fromFunction1(value))
   }
 }

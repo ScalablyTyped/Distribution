@@ -27,9 +27,9 @@ trait SocialAttachmentAction
 object SocialAttachmentAction {
   
   inline def apply(
-    customFromJson: js.Any => Boolean,
+    customFromJson: Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
-    fromJson: js.Any => Unit,
+    fromJson: Any => Unit,
     get_actionKind: () => SocialAttachmentActionKind,
     get_actionUri: () => String,
     get_typeId: () => String,

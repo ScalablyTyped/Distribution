@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Maths/index", "Scalar")
 @js.native
-class Scalar ()
+open class Scalar ()
   extends typings.babylonjs.mathScalarMod.Scalar
 /* static members */
 object Scalar {
@@ -47,16 +47,42 @@ object Scalar {
   inline def Denormalize(normalized: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Denormalize")(normalized.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
+    * Returns the highest common factor of two integers.
+    * @param a first parameter
+    * @param b second parameter
+    * @returns HCF of a and b
+    */
+  inline def HCF(a: Double, b: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("HCF")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  /**
     * Returns a new scalar located for "amount" (float) on the Hermite spline defined by the scalars "value1", "value3", "tangent1", "tangent2".
     * @see http://mathworld.wolfram.com/HermitePolynomial.html
-    * @param value1 spline value
-    * @param tangent1 spline value
-    * @param value2 spline value
-    * @param tangent2 spline value
-    * @param amount input value
+    * @param value1 defines the first control point
+    * @param tangent1 defines the first tangent
+    * @param value2 defines the second control point
+    * @param tangent2 defines the second tangent
+    * @param amount defines the amount on the interpolation spline (between 0 and 1)
     * @returns hermite result
     */
   inline def Hermite(value1: Double, tangent1: Double, value2: Double, tangent2: Double, amount: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  /**
+    * Returns a new scalar which is the 1st derivative of the Hermite spline defined by the scalars "value1", "value2", "tangent1", "tangent2".
+    * @param value1 defines the first control point
+    * @param tangent1 defines the first tangent
+    * @param value2 defines the second control point
+    * @param tangent2 defines the second tangent
+    * @param time define where the derivative must be done
+    * @returns 1st derivative
+    */
+  inline def Hermite1stDerivative(value1: Double, tangent1: Double, value2: Double, tangent2: Double, time: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite1stDerivative")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  /**
+    * the floor part of a log2 value.
+    * @param value the value to compute log2 of
+    * @returns the log2 of value.
+    */
+  inline def ILog2(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ILog2")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Calculates the linear parameter t that produces the interpolant value within the range [a, b].
@@ -129,7 +155,7 @@ object Scalar {
   /**
     * Returns the angle converted to equivalent value between -Math.PI and Math.PI radians.
     * @param angle The angle to normalize in radian.
-    * @return The converted angle.
+    * @returns The converted angle.
     */
   inline def NormalizeRadians(angle: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("NormalizeRadians")(angle.asInstanceOf[js.Any]).asInstanceOf[Double]
   

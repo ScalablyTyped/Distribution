@@ -15,5 +15,5 @@ object yDragBoxLayerMod {
     *
     * @constructor
     */
-  class YDragBoxLayer () extends DragBoxLayer
+  open class YDragBoxLayer () extends DragBoxLayer
 }

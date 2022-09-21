@@ -5,19 +5,21 @@ import typings.materialUi.materialUiStrings.right
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.HTMLAttributes
-import typings.react.mod.Key
 import typings.react.mod.LegacyRef
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Toolbar {
   
-  type Toolbar = Component[ToolbarProps, js.Object, js.Any]
+  type Toolbar = Component[ToolbarProps, js.Object, Any]
   
-  type ToolbarGroup = Component[ToolbarGroupProps, js.Object, js.Any]
+  type ToolbarGroup = Component[ToolbarGroupProps, js.Object, Any]
   
   trait ToolbarGroupProps extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -37,6 +39,10 @@ object Toolbar {
     }
     
     extension [Self <: ToolbarGroupProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -62,6 +68,8 @@ object Toolbar {
   
   trait ToolbarProps extends StObject {
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
     var noGutter: js.UndefOr[Boolean] = js.undefined
@@ -77,6 +85,10 @@ object Toolbar {
     
     extension [Self <: ToolbarProps](x: Self) {
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
@@ -91,7 +103,7 @@ object Toolbar {
     }
   }
   
-  type ToolbarSeparator = Component[ToolbarSeparatorProps, js.Object, js.Any]
+  type ToolbarSeparator = Component[ToolbarSeparatorProps, js.Object, Any]
   
   trait ToolbarSeparatorProps extends StObject {
     
@@ -118,16 +130,11 @@ object Toolbar {
     }
   }
   
-  @js.native
-  trait ToolbarTitle
-    extends Component[ToolbarTitleProps, js.Object, js.Any]
+  type ToolbarTitle = Component[ToolbarTitleProps, js.Object, Any]
   
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.react.mod.Props because var conflicts: children. Inlined ref, key */ trait ToolbarTitleProps
+  trait ToolbarTitleProps
     extends StObject
        with HTMLAttributes[js.Object] {
-    
-    var key: js.UndefOr[Key] = js.undefined
     
     var ref: js.UndefOr[LegacyRef[ToolbarTitle]] = js.undefined
     
@@ -141,10 +148,6 @@ object Toolbar {
     }
     
     extension [Self <: ToolbarTitleProps](x: Self) {
-      
-      inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
-      
-      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
       inline def setRef(value: LegacyRef[ToolbarTitle]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       

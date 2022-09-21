@@ -8,5 +8,5 @@ object replicaSettingsUpdateListMod {
   
   @JSImport("@aws-sdk/client-dynamodb-browser/model/_ReplicaSettingsUpdateList", "_ReplicaSettingsUpdateList")
   @js.native
-  val ReplicaSettingsUpdateList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val ReplicaSettingsUpdateList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

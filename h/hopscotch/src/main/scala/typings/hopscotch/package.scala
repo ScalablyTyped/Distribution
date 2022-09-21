@@ -5,4 +5,4 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type CallbackNameNamesOrDefinition = java.lang.String | js.Array[java.lang.String] | js.Function0[scala.Unit]
+type CallbackNameNamesOrDefinition = String | js.Array[String] | js.Function0[Unit]

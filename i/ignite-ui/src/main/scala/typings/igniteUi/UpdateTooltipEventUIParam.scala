@@ -9,32 +9,32 @@ trait UpdateTooltipEventUIParam extends StObject {
   /**
     * Used to obtain reference to jquery object which represents tooltip. Value of that member can be replaced by custom element.
     */
-  var element: js.UndefOr[js.Any] = js.undefined
+  var element: js.UndefOr[Any] = js.undefined
   
   /**
     * Used to obtain reference to item. Value of that member can be modified or replaced by custom item.
     */
-  var item: js.UndefOr[js.Any] = js.undefined
+  var item: js.UndefOr[Any] = js.undefined
   
   /**
     * Used to obtain reference to chart widget.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
   
   /**
     * Used to obtain html of tooltip. Value of that member can be modified. If modified value is null or empty string, then current content of tooltip keeps old value.
     */
-  var text: js.UndefOr[js.Any] = js.undefined
+  var text: js.UndefOr[Any] = js.undefined
   
   /**
     * Used to obtain left position of tooltip in pixels relative to widget. Value of that member can be modified.
     */
-  var x: js.UndefOr[js.Any] = js.undefined
+  var x: js.UndefOr[Any] = js.undefined
   
   /**
     * Used to obtain top position of tooltip in pixels relative to widget. Value of that member can be modified.
     */
-  var y: js.UndefOr[js.Any] = js.undefined
+  var y: js.UndefOr[Any] = js.undefined
 }
 object UpdateTooltipEventUIParam {
   
@@ -45,27 +45,27 @@ object UpdateTooltipEventUIParam {
   
   extension [Self <: UpdateTooltipEventUIParam](x: Self) {
     
-    inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    inline def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    inline def setText(value: js.Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    inline def setY(value: js.Any): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Any): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }

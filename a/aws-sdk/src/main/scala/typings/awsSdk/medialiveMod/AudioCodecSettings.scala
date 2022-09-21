@@ -10,6 +10,8 @@ trait AudioCodecSettings extends StObject {
   
   var Ac3Settings: js.UndefOr[typings.awsSdk.medialiveMod.Ac3Settings] = js.undefined
   
+  var Eac3AtmosSettings: js.UndefOr[typings.awsSdk.medialiveMod.Eac3AtmosSettings] = js.undefined
+  
   var Eac3Settings: js.UndefOr[typings.awsSdk.medialiveMod.Eac3Settings] = js.undefined
   
   var Mp2Settings: js.UndefOr[typings.awsSdk.medialiveMod.Mp2Settings] = js.undefined
@@ -34,6 +36,10 @@ object AudioCodecSettings {
     inline def setAc3Settings(value: Ac3Settings): Self = StObject.set(x, "Ac3Settings", value.asInstanceOf[js.Any])
     
     inline def setAc3SettingsUndefined: Self = StObject.set(x, "Ac3Settings", js.undefined)
+    
+    inline def setEac3AtmosSettings(value: Eac3AtmosSettings): Self = StObject.set(x, "Eac3AtmosSettings", value.asInstanceOf[js.Any])
+    
+    inline def setEac3AtmosSettingsUndefined: Self = StObject.set(x, "Eac3AtmosSettings", js.undefined)
     
     inline def setEac3Settings(value: Eac3Settings): Self = StObject.set(x, "Eac3Settings", value.asInstanceOf[js.Any])
     

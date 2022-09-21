@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientTab")
 @js.native
-class ASPxClientTab ()
+open class ASPxClientTab ()
   extends StObject
      with typings.devexpressWeb.ASPxClientTab {
   

@@ -10,10 +10,10 @@ Dependency free publish/subscribe library
 | ------------------ | :-------------: |
 | Full name          | pubsub-js |
 | Keywords           | pub/sub, pubsub, publish/subscribe, publish, subscribe |
-| # releases         | 4 |
-| # dependents       | 181 |
-| # downloads        | 2661727 |
-| # stars            | 15 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 342354.0 |
+| # stars            | 4179.0 |
 
 ## Links
 - [Homepage](https://github.com/mroderick/PubSubJS#readme)

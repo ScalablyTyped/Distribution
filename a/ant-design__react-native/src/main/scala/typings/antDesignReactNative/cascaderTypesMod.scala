@@ -2,6 +2,7 @@ package typings.antDesignReactNative
 
 import typings.react.mod.ReactNode
 import typings.reactNative.mod.StyleProp
+import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -30,7 +31,7 @@ object cascaderTypesMod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: CascaderDataItem*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: CascaderDataItem*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,7 @@ object cascaderTypesMod {
     
     var onScrollChange: js.UndefOr[js.Function1[/* value */ CascaderValue, Unit]] = js.undefined
     
-    var pickerItemStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+    var pickerItemStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
     var rootNativeProps: js.UndefOr[js.Object] = js.undefined
     
@@ -81,13 +82,13 @@ object cascaderTypesMod {
       
       inline def setData(value: js.Array[CascaderDataItem]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: CascaderDataItem*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: CascaderDataItem*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setDefaultValue(value: CascaderValue): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: CascaderOneValue*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: CascaderOneValue*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -107,7 +108,7 @@ object cascaderTypesMod {
       
       inline def setOnScrollChangeUndefined: Self = StObject.set(x, "onScrollChange", js.undefined)
       
-      inline def setPickerItemStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "pickerItemStyle", value.asInstanceOf[js.Any])
+      inline def setPickerItemStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "pickerItemStyle", value.asInstanceOf[js.Any])
       
       inline def setPickerItemStyleNull: Self = StObject.set(x, "pickerItemStyle", null)
       
@@ -127,7 +128,7 @@ object cascaderTypesMod {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: CascaderOneValue*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: CascaderOneValue*): Self = StObject.set(x, "value", js.Array(value*))
     }
   }
   

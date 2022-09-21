@@ -10,10 +10,10 @@ Node SDK for AWS Lambda
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/client-lambda-node |
 | Keywords           | - |
-| # releases         | 11 |
-| # dependents       | 0 |
-| # downloads        | 26838 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 417.3333333333333 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Fclient-lambda-node)

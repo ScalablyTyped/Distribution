@@ -12,9 +12,9 @@ object mod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FalcorModel.DataSource * / any */ @JSImport("falcor-http-datasource", JSImport.Default)
   @js.native
-  class default protected () extends StObject {
+  open class default protected () extends StObject {
     def this(jsonGraphUrl: String) = this()
-    def this(jsonGraphUrl: String, config: js.Any) = this()
+    def this(jsonGraphUrl: String, config: Any) = this()
   }
   
   /**
@@ -23,9 +23,9 @@ object mod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FalcorModel.DataSource * / any */ @JSImport("falcor-http-datasource", "XMlHttpSource")
   @js.native
-  class XMlHttpSource protected () extends StObject {
+  open class XMlHttpSource protected () extends StObject {
     def this(jsonGraphUrl: String) = this()
-    def this(jsonGraphUrl: String, config: js.Any) = this()
+    def this(jsonGraphUrl: String, config: Any) = this()
   }
   
   object FalcorHttpDataSource {
@@ -33,6 +33,6 @@ object mod {
     /**
       * A HttpDataSource object is a {@link DataSource} can be used to retrieve data from a remote JSONGraph object using the browser's XMLHttpRequest.
       **/
-    type XMlHttpSource = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FalcorModel.DataSource */ js.Any
+    type XMlHttpSource = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FalcorModel.DataSource */ Any
   }
 }

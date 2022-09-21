@@ -29,6 +29,6 @@ object ListReposResponse {
     
     inline def setReposUndefined: Self = StObject.set(x, "repos", js.undefined)
     
-    inline def setReposVarargs(value: Repo*): Self = StObject.set(x, "repos", js.Array(value :_*))
+    inline def setReposVarargs(value: Repo*): Self = StObject.set(x, "repos", js.Array(value*))
   }
 }

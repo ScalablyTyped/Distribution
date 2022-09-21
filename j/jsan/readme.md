@@ -10,10 +10,10 @@ handle circular references when stringifying and parsing
 | ------------------ | :-------------: |
 | Full name          | jsan |
 | Keywords           | json |
-| # releases         | 0 |
-| # dependents       | 41 |
-| # downloads        | 2777323 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 367863.0 |
+| # stars            | 87.0 |
 
 ## Links
 - [Homepage](https://github.com/kolodny/jsan)

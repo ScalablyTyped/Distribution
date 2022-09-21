@@ -18,32 +18,32 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("wepy.app")
     @js.native
-    class app () extends default
+    open class app () extends default
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("wepy.component")
     @js.native
-    class component ()
+    open class component ()
       extends typings.wepy.componentMod.default
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("wepy.event")
     @js.native
-    class event protected ()
+    open class event protected ()
       extends typings.wepy.eventMod.default {
-      def this(name: String, source: js.Any, `type`: js.Any) = this()
+      def this(name: String, source: Any, `type`: Any) = this()
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("wepy.mixin")
     @js.native
-    class mixin ()
+    open class mixin ()
       extends typings.wepy.mixinMod.default
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("wepy.page")
     @js.native
-    class page ()
+    open class page ()
       extends typings.wepy.pageMod.default
     
     type _To = DefaultExport

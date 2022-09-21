@@ -10,10 +10,10 @@ Immutable state tracker for async requests.
 | ------------------ | :-------------: |
 | Full name          | @eseb/request-state |
 | Keywords           | immutable, async, network, request, state, react, redux |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 524 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 51.333333333333336 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/eseb/request-state#readme)

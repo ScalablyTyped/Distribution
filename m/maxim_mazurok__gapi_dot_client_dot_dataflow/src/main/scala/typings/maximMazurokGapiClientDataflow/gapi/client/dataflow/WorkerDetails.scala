@@ -25,7 +25,7 @@ object WorkerDetails {
     
     inline def setWorkItemsUndefined: Self = StObject.set(x, "workItems", js.undefined)
     
-    inline def setWorkItemsVarargs(value: WorkItemDetails*): Self = StObject.set(x, "workItems", js.Array(value :_*))
+    inline def setWorkItemsVarargs(value: WorkItemDetails*): Self = StObject.set(x, "workItems", js.Array(value*))
     
     inline def setWorkerName(value: String): Self = StObject.set(x, "workerName", value.asInstanceOf[js.Any])
     

@@ -14,7 +14,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("validatorjs", JSImport.Namespace)
   @js.native
-  class ^[A] protected ()
+  open class ^[A] protected ()
     extends StObject
        with Validator[A] {
     def this(data: A, rules: Rules) = this()
@@ -24,7 +24,7 @@ object mod extends Shortcut {
   @js.native
   val ^ : js.Object & ValidatorStatic = js.native
   
-  type AttributeFormatter = js.Function1[/* attribute */ js.Any, js.Any]
+  type AttributeFormatter = js.Function1[/* attribute */ Any, Any]
   
   type AttributeNames = StringDictionary[String]
   
@@ -109,14 +109,14 @@ object mod extends Shortcut {
     }
   }
   
-  type TypeCheckingRule = StringDictionary[js.Array[js.Any]]
+  type TypeCheckingRule = StringDictionary[js.Array[Any]]
   
   type ValidationErrors = StringDictionary[js.Array[String]]
   
   @js.native
   trait Validator[A] extends StObject {
     
-    def attributeFormatter(attribute: js.Any): js.Any = js.native
+    def attributeFormatter(attribute: Any): Any = js.native
     @JSName("attributeFormatter")
     var attributeFormatter_Original: AttributeFormatter = js.native
     
@@ -181,7 +181,7 @@ object mod extends Shortcut {
     
     def setAttributeFormatter(func: AttributeFormatter): Unit = js.native
     
-    def setMessages(lang: String, messages: ErrorMessages): js.Any = js.native
+    def setMessages(lang: String, messages: ErrorMessages): Any = js.native
     
     def stopOnError(attributes: js.Array[String]): Unit = js.native
     def stopOnError(attributes: Boolean): Unit = js.native

@@ -1,6 +1,6 @@
 package typings.gitlab
 
-import typings.gitlab.anon.projectIdstringnumberundeDictkey
+import typings.gitlab.anon.projectIdstringnumberundeGroupId
 import typings.gitlab.baseServiceMod.BaseServiceOptions
 import typings.gitlab.infrastructureMod.BaseService
 import typings.gitlab.requestHelperMod.GetResponse
@@ -12,9 +12,9 @@ object searchMod {
   
   @JSImport("gitlab/dist/types/core/services/Search", "Search")
   @js.native
-  class Search () extends BaseService {
+  open class Search () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
-    def all(scope: String, search: String, hasProjectIdGroupIdOptions: projectIdstringnumberundeDictkey): js.Promise[GetResponse] = js.native
+    def all(scope: String, search: String, hasProjectIdGroupIdOptions: projectIdstringnumberundeGroupId): js.Promise[GetResponse] = js.native
   }
 }

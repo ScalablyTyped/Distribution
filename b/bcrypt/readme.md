@@ -1,7 +1,7 @@
 
 # Scala.js typings for bcrypt
 
-Typings are for version 3.0
+Typings are for version 5.0
 
 ## Library description:
 A bcrypt library for NodeJS.
@@ -10,15 +10,12 @@ A bcrypt library for NodeJS.
 | ------------------ | :-------------: |
 | Full name          | bcrypt |
 | Keywords           | bcrypt, password, auth, authentication, encryption, crypt, crypto |
-| # releases         | 8 |
-| # dependents       | 1628 |
-| # downloads        | 25711323 |
-| # stars            | 342 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 3847803.6666666665 |
+| # stars            | 6427.0 |
 
 ## Links
-- [Homepage](https://github.com/kelektiv/node.bcrypt.js#readme)
-- [Bugs](https://github.com/kelektiv/node.bcrypt.js/issues)
-- [Repository](https://github.com/kelektiv/node.bcrypt.js)
 - [Npm](https://www.npmjs.com/package/bcrypt)
     
 

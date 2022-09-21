@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("webcola", "PairingHeap")
 @js.native
-class PairingHeap[T] protected ()
+open class PairingHeap[T] protected ()
   extends typings.webcola.pqueueMod.PairingHeap[T] {
   def this(elem: T) = this()
 }

@@ -8,7 +8,7 @@ object anon {
   
   trait Credentials extends StObject {
     
-    var credentials: js.UndefOr[js.Any] = js.undefined
+    var credentials: js.UndefOr[Any] = js.undefined
     
     var isValid: Boolean
   }
@@ -21,7 +21,7 @@ object anon {
     
     extension [Self <: Credentials](x: Self) {
       
-      inline def setCredentials(value: js.Any): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: Any): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
       inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       
@@ -50,7 +50,7 @@ object anon {
       
       inline def setKey(value: String | js.Array[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      inline def setKeyVarargs(value: String*): Self = StObject.set(x, "key", js.Array(value :_*))
+      inline def setKeyVarargs(value: String*): Self = StObject.set(x, "key", js.Array(value*))
     }
   }
 }

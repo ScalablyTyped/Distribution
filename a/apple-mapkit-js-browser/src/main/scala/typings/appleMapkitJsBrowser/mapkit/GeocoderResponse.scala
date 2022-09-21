@@ -22,6 +22,6 @@ object GeocoderResponse {
     
     inline def setResults(value: js.Array[Place]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    inline def setResultsVarargs(value: Place*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: Place*): Self = StObject.set(x, "results", js.Array(value*))
   }
 }

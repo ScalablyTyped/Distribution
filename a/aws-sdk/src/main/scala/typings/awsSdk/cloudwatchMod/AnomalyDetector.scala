@@ -17,6 +17,11 @@ trait AnomalyDetector extends StObject {
   var Dimensions: js.UndefOr[typings.awsSdk.cloudwatchMod.Dimensions] = js.undefined
   
   /**
+    * The CloudWatch metric math expression for this anomaly detector.
+    */
+  var MetricMathAnomalyDetector: js.UndefOr[typings.awsSdk.cloudwatchMod.MetricMathAnomalyDetector] = js.undefined
+  
+  /**
     * The name of the metric associated with the anomaly detection model.
     */
   var MetricName: js.UndefOr[typings.awsSdk.cloudwatchMod.MetricName] = js.undefined
@@ -25,6 +30,11 @@ trait AnomalyDetector extends StObject {
     * The namespace of the metric associated with the anomaly detection model.
     */
   var Namespace: js.UndefOr[typings.awsSdk.cloudwatchMod.Namespace] = js.undefined
+  
+  /**
+    * The CloudWatch metric and statistic for this anomaly detector.
+    */
+  var SingleMetricAnomalyDetector: js.UndefOr[typings.awsSdk.cloudwatchMod.SingleMetricAnomalyDetector] = js.undefined
   
   /**
     * The statistic associated with the anomaly detection model.
@@ -53,7 +63,11 @@ object AnomalyDetector {
     
     inline def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
     
-    inline def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "Dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "Dimensions", js.Array(value*))
+    
+    inline def setMetricMathAnomalyDetector(value: MetricMathAnomalyDetector): Self = StObject.set(x, "MetricMathAnomalyDetector", value.asInstanceOf[js.Any])
+    
+    inline def setMetricMathAnomalyDetectorUndefined: Self = StObject.set(x, "MetricMathAnomalyDetector", js.undefined)
     
     inline def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     
@@ -62,6 +76,10 @@ object AnomalyDetector {
     inline def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
     
     inline def setNamespaceUndefined: Self = StObject.set(x, "Namespace", js.undefined)
+    
+    inline def setSingleMetricAnomalyDetector(value: SingleMetricAnomalyDetector): Self = StObject.set(x, "SingleMetricAnomalyDetector", value.asInstanceOf[js.Any])
+    
+    inline def setSingleMetricAnomalyDetectorUndefined: Self = StObject.set(x, "SingleMetricAnomalyDetector", js.undefined)
     
     inline def setStat(value: AnomalyDetectorMetricStat): Self = StObject.set(x, "Stat", value.asInstanceOf[js.Any])
     

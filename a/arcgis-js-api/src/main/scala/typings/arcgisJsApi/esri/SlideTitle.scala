@@ -23,7 +23,7 @@ object SlideTitle {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    set: (js.UndefOr[js.Function2[/* propertyName */ String, /* value */ js.Any, SlideTitle]]) & (js.UndefOr[js.Function1[/* props */ HashMap[js.Any], SlideTitle]])
+    set: (js.UndefOr[js.Function2[/* propertyName */ String, /* value */ Any, SlideTitle]]) & (js.UndefOr[js.Function1[/* props */ HashMap[Any], SlideTitle]])
   ): SlideTitle = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), set = set.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlideTitle]

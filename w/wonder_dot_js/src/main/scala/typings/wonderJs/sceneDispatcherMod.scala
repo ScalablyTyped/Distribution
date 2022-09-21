@@ -11,13 +11,13 @@ object sceneDispatcherMod {
   
   @JSImport("wonder.js/dist/es2015/core/entityObject/scene/SceneDispatcher", "SceneDispatcher")
   @js.native
-  class SceneDispatcher () extends EntityObject {
+  open class SceneDispatcher () extends EntityObject {
     
+    def addChildren(children: js.Array[EntityObject]): Any = js.native
     def addChildren(
-      children: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<EntityObject> */ js.Any
-    ): js.Any = js.native
-    def addChildren(children: js.Array[EntityObject]): js.Any = js.native
-    def addChildren(children: EntityObject): js.Any = js.native
+      children: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<EntityObject> */ Any
+    ): Any = js.native
+    def addChildren(children: EntityObject): Any = js.native
     
     var currentCamera: GameObject = js.native
     

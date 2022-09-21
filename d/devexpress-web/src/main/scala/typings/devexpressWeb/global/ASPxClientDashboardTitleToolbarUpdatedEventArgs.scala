@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientDashboardTitleToolbarUpdatedEventArgs")
 @js.native
-class ASPxClientDashboardTitleToolbarUpdatedEventArgs ()
+open class ASPxClientDashboardTitleToolbarUpdatedEventArgs ()
   extends StObject
      with typings.devexpressWeb.ASPxClientDashboardTitleToolbarUpdatedEventArgs {
   
@@ -17,5 +17,5 @@ class ASPxClientDashboardTitleToolbarUpdatedEventArgs ()
     * Provides access to dashboard title options.
     */
   /* CompleteClass */
-  var Options: js.Any = js.native
+  var Options: Any = js.native
 }

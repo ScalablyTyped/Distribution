@@ -24,24 +24,24 @@ trait ChangesEvent
     *
     * Type and value of the accessor depend on the service.
     */
-  var Base: js.Any
+  var Base: Any
   
   /** contains the changes which occurred. */
   var Changes: ChangesSet
 }
 object ChangesEvent {
   
-  inline def apply(Base: js.Any, Changes: ChangesSet, Source: XInterface): ChangesEvent = {
+  inline def apply(Base: Any, Changes: ChangesSet, Source: XInterface): ChangesEvent = {
     val __obj = js.Dynamic.literal(Base = Base.asInstanceOf[js.Any], Changes = Changes.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangesEvent]
   }
   
   extension [Self <: ChangesEvent](x: Self) {
     
-    inline def setBase(value: js.Any): Self = StObject.set(x, "Base", value.asInstanceOf[js.Any])
+    inline def setBase(value: Any): Self = StObject.set(x, "Base", value.asInstanceOf[js.Any])
     
     inline def setChanges(value: ChangesSet): Self = StObject.set(x, "Changes", value.asInstanceOf[js.Any])
     
-    inline def setChangesVarargs(value: ElementChange*): Self = StObject.set(x, "Changes", js.Array(value :_*))
+    inline def setChangesVarargs(value: ElementChange*): Self = StObject.set(x, "Changes", js.Array(value*))
   }
 }

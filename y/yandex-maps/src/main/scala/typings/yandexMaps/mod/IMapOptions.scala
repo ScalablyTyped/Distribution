@@ -35,7 +35,7 @@ trait IMapOptions extends StObject {
   
   var projection: js.UndefOr[IProjection] = js.undefined
   
-  var restrictMapArea: js.UndefOr[Boolean] = js.undefined
+  var restrictMapArea: js.UndefOr[Boolean | js.Array[js.Array[Double]]] = js.undefined
   
   var suppressMapOpenBlock: js.UndefOr[Boolean] = js.undefined
   
@@ -106,9 +106,11 @@ object IMapOptions {
     
     inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
     
-    inline def setRestrictMapArea(value: Boolean): Self = StObject.set(x, "restrictMapArea", value.asInstanceOf[js.Any])
+    inline def setRestrictMapArea(value: Boolean | js.Array[js.Array[Double]]): Self = StObject.set(x, "restrictMapArea", value.asInstanceOf[js.Any])
     
     inline def setRestrictMapAreaUndefined: Self = StObject.set(x, "restrictMapArea", js.undefined)
+    
+    inline def setRestrictMapAreaVarargs(value: js.Array[Double]*): Self = StObject.set(x, "restrictMapArea", js.Array(value*))
     
     inline def setSuppressMapOpenBlock(value: Boolean): Self = StObject.set(x, "suppressMapOpenBlock", value.asInstanceOf[js.Any])
     

@@ -23,10 +23,10 @@ object Focus {
     
     inline def setAction(value: js.Array[ChildActionListener]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    inline def setActionVarargs(value: ChildActionListener*): Self = StObject.set(x, "action", js.Array(value :_*))
+    inline def setActionVarargs(value: ChildActionListener*): Self = StObject.set(x, "action", js.Array(value*))
     
     inline def setFocus(value: js.Array[FocusedNavigationListener]): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
-    inline def setFocusVarargs(value: FocusedNavigationListener*): Self = StObject.set(x, "focus", js.Array(value :_*))
+    inline def setFocusVarargs(value: FocusedNavigationListener*): Self = StObject.set(x, "focus", js.Array(value*))
   }
 }

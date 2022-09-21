@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CapSegments extends StObject {
   
+  var calculateTangents: js.UndefOr[Boolean] = js.undefined
+  
   var capSegments: js.UndefOr[Double] = js.undefined
   
   var height: js.UndefOr[Double] = js.undefined
@@ -22,6 +24,10 @@ object CapSegments {
   }
   
   extension [Self <: CapSegments](x: Self) {
+    
+    inline def setCalculateTangents(value: Boolean): Self = StObject.set(x, "calculateTangents", value.asInstanceOf[js.Any])
+    
+    inline def setCalculateTangentsUndefined: Self = StObject.set(x, "calculateTangents", js.undefined)
     
     inline def setCapSegments(value: Double): Self = StObject.set(x, "capSegments", value.asInstanceOf[js.Any])
     

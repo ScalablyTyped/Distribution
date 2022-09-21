@@ -4,6 +4,13 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import typings.tuyaPanelKit.anon.Title
+import typings.tuyaPanelKit.tuyaPanelKitStrings.bottom
+import typings.tuyaPanelKit.tuyaPanelKitStrings.large
+import typings.tuyaPanelKit.tuyaPanelKitStrings.left
+import typings.tuyaPanelKit.tuyaPanelKitStrings.normal
+import typings.tuyaPanelKit.tuyaPanelKitStrings.right
+import typings.tuyaPanelKit.tuyaPanelKitStrings.small
+import typings.tuyaPanelKit.tuyaPanelKitStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,20 +21,70 @@ trait PopupDropdownProps extends StObject {
   
   var cornerColor: js.UndefOr[String] = js.undefined
   
-  var cornerDirection: js.UndefOr[String] = js.undefined
+  /**
+    * @language zh-CN
+    * @description 弹框区域的位置
+    * @defaultValue 'top'
+    */
+  /**
+    * @language en-US
+    * @description Location of the pop-up area
+    * @defaultValue 'top'
+    */
+  var cornerDirection: js.UndefOr[top | bottom | left | right] = js.undefined
   
   var cornerDirectionValue: js.UndefOr[String] = js.undefined
   
-  var cornerSize: js.UndefOr[String] = js.undefined
+  /**
+    * @language zh-CN
+    * @description 顶部边框宽度大小
+    * @defaultValue 'normal'
+    */
+  /**
+    * @language en-US
+    * @description Top border width size
+    * @defaultValue 'normal'
+    */
+  var cornerSize: js.UndefOr[small | large | normal] = js.undefined
   
   var cornerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 自定义顶部边框宽度大小
+    * @defaultValue ''
+    */
+  /**
+    * @language en-US
+    * @description Custom top border width size
+    * @defaultValue ''
+    */
   var customCornerSize: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 数据源
+    * @defaultValue []
+    */
+  /**
+    * @language en-US
+    * @description DataSource
+    * @defaultValue []
+    */
   var data: js.Array[Title]
   
   var listStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 选中回调
+    * @defaultValue () => {}
+    */
+  /**
+    * @language en-US
+    * @description Select callback
+    * @defaultValue () => {}
+    */
   var onSelect: js.UndefOr[js.Function1[/* value */ js.UndefOr[Double | String], Unit]] = js.undefined
   
   var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
@@ -49,7 +106,7 @@ object PopupDropdownProps {
     
     inline def setCornerColorUndefined: Self = StObject.set(x, "cornerColor", js.undefined)
     
-    inline def setCornerDirection(value: String): Self = StObject.set(x, "cornerDirection", value.asInstanceOf[js.Any])
+    inline def setCornerDirection(value: top | bottom | left | right): Self = StObject.set(x, "cornerDirection", value.asInstanceOf[js.Any])
     
     inline def setCornerDirectionUndefined: Self = StObject.set(x, "cornerDirection", js.undefined)
     
@@ -57,7 +114,7 @@ object PopupDropdownProps {
     
     inline def setCornerDirectionValueUndefined: Self = StObject.set(x, "cornerDirectionValue", js.undefined)
     
-    inline def setCornerSize(value: String): Self = StObject.set(x, "cornerSize", value.asInstanceOf[js.Any])
+    inline def setCornerSize(value: small | large | normal): Self = StObject.set(x, "cornerSize", value.asInstanceOf[js.Any])
     
     inline def setCornerSizeUndefined: Self = StObject.set(x, "cornerSize", js.undefined)
     
@@ -75,7 +132,7 @@ object PopupDropdownProps {
     
     inline def setData(value: js.Array[Title]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: Title*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Title*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setListStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "listStyle", value.asInstanceOf[js.Any])
     

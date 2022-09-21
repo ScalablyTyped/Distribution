@@ -13,7 +13,7 @@ object mod {
   
   @JSImport("expo-sqlite", "SQLError")
   @js.native
-  class SQLError ()
+  open class SQLError ()
     extends typings.expoSqlite.sqliteTypesMod.SQLError
   /* static members */
   object SQLError {

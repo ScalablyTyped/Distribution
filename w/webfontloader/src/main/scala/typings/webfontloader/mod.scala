@@ -76,7 +76,7 @@ object mod {
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      inline def setContextVarargs(value: String*): Self = StObject.set(x, "context", js.Array(value :_*))
+      inline def setContextVarargs(value: String*): Self = StObject.set(x, "context", js.Array(value*))
       
       inline def setCustom(value: Custom): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       
@@ -149,7 +149,7 @@ object mod {
       
       inline def setFamiliesUndefined: Self = StObject.set(x, "families", js.undefined)
       
-      inline def setFamiliesVarargs(value: String*): Self = StObject.set(x, "families", js.Array(value :_*))
+      inline def setFamiliesVarargs(value: String*): Self = StObject.set(x, "families", js.Array(value*))
       
       inline def setTestStrings(value: StringDictionary[String]): Self = StObject.set(x, "testStrings", value.asInstanceOf[js.Any])
       
@@ -159,7 +159,7 @@ object mod {
       
       inline def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
       
-      inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
+      inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value*))
     }
   }
   
@@ -205,7 +205,7 @@ object mod {
       
       inline def setFamilies(value: js.Array[String]): Self = StObject.set(x, "families", value.asInstanceOf[js.Any])
       
-      inline def setFamiliesVarargs(value: String*): Self = StObject.set(x, "families", js.Array(value :_*))
+      inline def setFamiliesVarargs(value: String*): Self = StObject.set(x, "families", js.Array(value*))
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       

@@ -14,10 +14,6 @@ import typings.phaser.Phaser.Input.Pointer
 import typings.phaser.Phaser.Renderer.Canvas.CanvasRenderer
 import typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer
 import typings.phaser.Phaser.Textures.Texture
-import typings.phaser.integer
-import typings.std.ArrayBuffer
-import typings.std.Float32Array
-import typings.std.Uint8Array
 import typings.std.WebGLBuffer
 import typings.std.WebGLFramebuffer
 import typings.std.WebGLProgram
@@ -43,7 +39,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * {
   *     this.load.glsl('fire', 'shaders/fire.glsl.js');
   * }
-  *  
+  * 
   * function create ()
   * {
   *     this.add.shader('fire', 400, 300, 512, 512);
@@ -83,7 +79,7 @@ trait Shader
   /**
     * Uint8 view to the vertex raw buffer. Used for uploading vertex buffer resources to the GPU.
     */
-  var bytes: Uint8Array = js.native
+  var bytes: js.typedarray.Uint8Array = js.native
   
   /**
     * Called automatically during render.
@@ -102,7 +98,7 @@ trait Shader
     * Returns the uniform object for the given key, or `null` if the uniform couldn't be found.
     * @param key The key of the uniform to return the value for.
     */
-  def getUniform(key: String): js.Any = js.native
+  def getUniform(key: String): Any = js.native
   
   /**
     * The WebGL context belonging to the renderer.
@@ -156,7 +152,7 @@ trait Shader
   /**
     * The projection matrix the shader uses during rendering.
     */
-  val projectionMatrix: Float32Array = js.native
+  val projectionMatrix: js.typedarray.Float32Array = js.native
   
   /**
     * A flag that indicates if this Shader has been set to render to a texture instead of the display list.
@@ -182,7 +178,7 @@ trait Shader
     * @param textureData Additional texture data.
     */
   def setChannel0(textureKey: String): this.type = js.native
-  def setChannel0(textureKey: String, textureData: js.Any): this.type = js.native
+  def setChannel0(textureKey: String, textureData: Any): this.type = js.native
   
   /**
     * A short-cut method that will directly set the texture being used by the `iChannel1` sampler2D uniform.
@@ -193,7 +189,7 @@ trait Shader
     * @param textureData Additional texture data.
     */
   def setChannel1(textureKey: String): this.type = js.native
-  def setChannel1(textureKey: String, textureData: js.Any): this.type = js.native
+  def setChannel1(textureKey: String, textureData: Any): this.type = js.native
   
   /**
     * A short-cut method that will directly set the texture being used by the `iChannel2` sampler2D uniform.
@@ -204,7 +200,7 @@ trait Shader
     * @param textureData Additional texture data.
     */
   def setChannel2(textureKey: String): this.type = js.native
-  def setChannel2(textureKey: String, textureData: js.Any): this.type = js.native
+  def setChannel2(textureKey: String, textureData: Any): this.type = js.native
   
   /**
     * A short-cut method that will directly set the texture being used by the `iChannel3` sampler2D uniform.
@@ -215,7 +211,7 @@ trait Shader
     * @param textureData Additional texture data.
     */
   def setChannel3(textureKey: String): this.type = js.native
-  def setChannel3(textureKey: String, textureData: js.Any): this.type = js.native
+  def setChannel3(textureKey: String, textureData: Any): this.type = js.native
   
   /**
     * Binds a Phaser Pointer object to this Shader.
@@ -278,9 +274,9 @@ trait Shader
     * @param textureData Additional texture data.
     */
   def setSampler2D(uniformKey: String, textureKey: String): this.type = js.native
-  def setSampler2D(uniformKey: String, textureKey: String, textureIndex: Unit, textureData: js.Any): this.type = js.native
-  def setSampler2D(uniformKey: String, textureKey: String, textureIndex: integer): this.type = js.native
-  def setSampler2D(uniformKey: String, textureKey: String, textureIndex: integer, textureData: js.Any): this.type = js.native
+  def setSampler2D(uniformKey: String, textureKey: String, textureIndex: Double): this.type = js.native
+  def setSampler2D(uniformKey: String, textureKey: String, textureIndex: Double, textureData: Any): this.type = js.native
+  def setSampler2D(uniformKey: String, textureKey: String, textureIndex: Unit, textureData: Any): this.type = js.native
   
   /**
     * Sets a sampler2D uniform on this shader where the source texture is a WebGLTexture.
@@ -307,23 +303,23 @@ trait Shader
     * @param textureIndex The texture index. Default 0.
     * @param textureData Additional texture data.
     */
-  def setSampler2DBuffer(uniformKey: String, texture: WebGLTexture, width: integer, height: integer): this.type = js.native
+  def setSampler2DBuffer(uniformKey: String, texture: WebGLTexture, width: Double, height: Double): this.type = js.native
+  def setSampler2DBuffer(uniformKey: String, texture: WebGLTexture, width: Double, height: Double, textureIndex: Double): this.type = js.native
   def setSampler2DBuffer(
     uniformKey: String,
     texture: WebGLTexture,
-    width: integer,
-    height: integer,
-    textureIndex: Unit,
-    textureData: js.Any
+    width: Double,
+    height: Double,
+    textureIndex: Double,
+    textureData: Any
   ): this.type = js.native
-  def setSampler2DBuffer(uniformKey: String, texture: WebGLTexture, width: integer, height: integer, textureIndex: integer): this.type = js.native
   def setSampler2DBuffer(
     uniformKey: String,
     texture: WebGLTexture,
-    width: integer,
-    height: integer,
-    textureIndex: integer,
-    textureData: js.Any
+    width: Double,
+    height: Double,
+    textureIndex: Unit,
+    textureData: Any
   ): this.type = js.native
   
   /**
@@ -336,12 +332,12 @@ trait Shader
     */
   def setShader(key: String): this.type = js.native
   def setShader(key: String, textures: js.Array[String]): this.type = js.native
-  def setShader(key: String, textures: js.Array[String], textureData: js.Any): this.type = js.native
-  def setShader(key: String, textures: Unit, textureData: js.Any): this.type = js.native
+  def setShader(key: String, textures: js.Array[String], textureData: Any): this.type = js.native
+  def setShader(key: String, textures: Unit, textureData: Any): this.type = js.native
   def setShader(key: BaseShader): this.type = js.native
   def setShader(key: BaseShader, textures: js.Array[String]): this.type = js.native
-  def setShader(key: BaseShader, textures: js.Array[String], textureData: js.Any): this.type = js.native
-  def setShader(key: BaseShader, textures: Unit, textureData: js.Any): this.type = js.native
+  def setShader(key: BaseShader, textures: js.Array[String], textureData: Any): this.type = js.native
+  def setShader(key: BaseShader, textures: Unit, textureData: Any): this.type = js.native
   
   /**
     * Sets a property of a uniform already present on this shader.
@@ -362,7 +358,7 @@ trait Shader
     * @param key The key of the uniform to modify. Use dots for deep properties, i.e. `resolution.value.x`.
     * @param value The value to set into the uniform.
     */
-  def setUniform(key: String, value: js.Any): this.type = js.native
+  def setUniform(key: String, value: Any): this.type = js.native
   
   /**
     * The underlying shader object being used.
@@ -390,7 +386,7 @@ trait Shader
     * `sampleRate` (1f) - Sound sample rate. 44100 by default.
     * `iChannel0...3` (sampler2D) - Input channels 0 to 3. `null` by default.
     */
-  var uniforms: js.Any = js.native
+  var uniforms: Any = js.native
   
   /**
     * The WebGL vertex buffer object this shader uses.
@@ -400,15 +396,15 @@ trait Shader
   /**
     * Raw byte buffer of vertices this Shader uses.
     */
-  var vertexData: ArrayBuffer = js.native
+  var vertexData: js.typedarray.ArrayBuffer = js.native
   
   /**
     * Float32 view of the array buffer containing the shaders vertices.
     */
-  var vertexViewF32: Float32Array = js.native
+  var vertexViewF32: js.typedarray.Float32Array = js.native
   
   /**
     * The view matrix the shader uses during rendering.
     */
-  val viewMatrix: Float32Array = js.native
+  val viewMatrix: js.typedarray.Float32Array = js.native
 }

@@ -11,7 +11,7 @@ trait IgGridSummaries
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Specifies when calculations are made.
@@ -42,7 +42,7 @@ trait IgGridSummaries
     * Auto will use True if the maximum number of visible summaries is one or less and False otherwise.
     *
     */
-  var compactRenderingMode: js.UndefOr[js.Any] = js.undefined
+  var compactRenderingMode: js.UndefOr[Any] = js.undefined
   
   /**
     * This option has been removed as of 2017.2 Volume release.
@@ -260,9 +260,9 @@ object IgGridSummaries {
     
     inline def setColumnSettingsUndefined: Self = StObject.set(x, "columnSettings", js.undefined)
     
-    inline def setColumnSettingsVarargs(value: IgGridSummariesColumnSetting*): Self = StObject.set(x, "columnSettings", js.Array(value :_*))
+    inline def setColumnSettingsVarargs(value: IgGridSummariesColumnSetting*): Self = StObject.set(x, "columnSettings", js.Array(value*))
     
-    inline def setCompactRenderingMode(value: js.Any): Self = StObject.set(x, "compactRenderingMode", value.asInstanceOf[js.Any])
+    inline def setCompactRenderingMode(value: Any): Self = StObject.set(x, "compactRenderingMode", value.asInstanceOf[js.Any])
     
     inline def setCompactRenderingModeUndefined: Self = StObject.set(x, "compactRenderingMode", js.undefined)
     

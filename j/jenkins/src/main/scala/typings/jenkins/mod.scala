@@ -12,7 +12,6 @@ import typings.jenkins.anon.Destroy
 import typings.jenkins.anon.Get
 import typings.jenkins.anon.Item
 import typings.jenkins.anon.Log
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +30,7 @@ object mod {
     
     var build: Get
     
-    def info(callback: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit
+    def info(callback: js.Function2[/* err */ js.Error, /* data */ Any, Unit]): Unit
     
     var job: Build
     
@@ -45,7 +44,7 @@ object mod {
     
     inline def apply(
       build: Get,
-      info: js.Function2[/* err */ Error, /* data */ js.Any, Unit] => Unit,
+      info: js.Function2[/* err */ js.Error, /* data */ Any, Unit] => Unit,
       job: Build,
       node: Config,
       queue: Cancel,
@@ -59,7 +58,7 @@ object mod {
       
       inline def setBuild(value: Get): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
       
-      inline def setInfo(value: js.Function2[/* err */ Error, /* data */ js.Any, Unit] => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
+      inline def setInfo(value: js.Function2[/* err */ js.Error, /* data */ Any, Unit] => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
       
       inline def setJob(value: Build): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
       
@@ -77,9 +76,9 @@ object mod {
     
     var crumbIssuer: js.UndefOr[Boolean] = js.undefined
     
-    var headers: js.UndefOr[js.Any] = js.undefined
+    var headers: js.UndefOr[Any] = js.undefined
     
-    var promisify: js.UndefOr[Boolean | (js.Function1[/* repeated */ js.Any, js.Any])] = js.undefined
+    var promisify: js.UndefOr[Boolean | (js.Function1[/* repeated */ Any, Any])] = js.undefined
   }
   object JenkinsClientOptions {
     
@@ -98,13 +97,13 @@ object mod {
       
       inline def setCrumbIssuerUndefined: Self = StObject.set(x, "crumbIssuer", js.undefined)
       
-      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setPromisify(value: Boolean | (js.Function1[/* repeated */ js.Any, js.Any])): Self = StObject.set(x, "promisify", value.asInstanceOf[js.Any])
+      inline def setPromisify(value: Boolean | (js.Function1[/* repeated */ Any, Any])): Self = StObject.set(x, "promisify", value.asInstanceOf[js.Any])
       
-      inline def setPromisifyFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "promisify", js.Any.fromFunction1(value))
+      inline def setPromisifyFunction1(value: /* repeated */ Any => Any): Self = StObject.set(x, "promisify", js.Any.fromFunction1(value))
       
       inline def setPromisifyUndefined: Self = StObject.set(x, "promisify", js.undefined)
     }
@@ -114,7 +113,7 @@ object mod {
     
     var build: Log
     
-    def info(): js.Promise[js.Any]
+    def info(): js.Promise[Any]
     
     var job: Copy
     
@@ -126,7 +125,7 @@ object mod {
   }
   object JenkinsPromisifiedAPI {
     
-    inline def apply(build: Log, info: () => js.Promise[js.Any], job: Copy, node: Create, queue: Item, view: Destroy): JenkinsPromisifiedAPI = {
+    inline def apply(build: Log, info: () => js.Promise[Any], job: Copy, node: Create, queue: Item, view: Destroy): JenkinsPromisifiedAPI = {
       val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], info = js.Any.fromFunction0(info), job = job.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], queue = queue.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
       __obj.asInstanceOf[JenkinsPromisifiedAPI]
     }
@@ -135,7 +134,7 @@ object mod {
       
       inline def setBuild(value: Log): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
       
-      inline def setInfo(value: () => js.Promise[js.Any]): Self = StObject.set(x, "info", js.Any.fromFunction0(value))
+      inline def setInfo(value: () => js.Promise[Any]): Self = StObject.set(x, "info", js.Any.fromFunction0(value))
       
       inline def setJob(value: Copy): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
       
@@ -151,7 +150,7 @@ object mod {
     
     var name: String
     
-    var parameters: js.UndefOr[js.Any] = js.undefined
+    var parameters: js.UndefOr[Any] = js.undefined
     
     var token: js.UndefOr[String] = js.undefined
   }
@@ -166,7 +165,7 @@ object mod {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setParameters(value: js.Any): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: Any): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
       inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
       

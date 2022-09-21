@@ -11,7 +11,7 @@ trait Sheet
   * Indexing with a cell address string maps to a cell object
   * Special keys start with '!'
   */
-/* cell */ StringDictionary[CellObject | SheetKeys | js.Any] {
+/* cell */ StringDictionary[CellObject | SheetKeys | Any] {
   
   /** Page Margins */
   @JSName("!margins")

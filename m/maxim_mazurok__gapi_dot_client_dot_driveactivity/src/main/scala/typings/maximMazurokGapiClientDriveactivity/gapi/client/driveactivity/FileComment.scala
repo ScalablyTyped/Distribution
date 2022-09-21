@@ -15,7 +15,7 @@ trait FileComment extends StObject {
     */
   var legacyDiscussionId: js.UndefOr[String] = js.undefined
   
-  /** The link to the discussion thread containing this comment, for example, "https://docs.google.com/DOCUMENT_ID/edit?disco=THREAD_ID". */
+  /** The link to the discussion thread containing this comment, for example, `https://docs.google.com/DOCUMENT_ID/edit?disco=THREAD_ID`. */
   var linkToDiscussion: js.UndefOr[String] = js.undefined
   
   /** The Drive item containing this comment. */

@@ -9,7 +9,7 @@ object routerMod {
   
   @JSImport("sodiumjs/dist/typings/sodium/Router", "Router")
   @js.native
-  class Router[A, K] protected () extends StObject {
+  open class Router[A, K] protected () extends StObject {
     def this(inStream: Stream[A], selector: js.Function1[/* a */ A, js.Array[K]]) = this()
     def this(
       inStream: Stream[A],
@@ -17,11 +17,11 @@ object routerMod {
       keyToStr: js.Function1[/* k */ K, String]
     ) = this()
     
-    /* private */ var _inStream: js.Any = js.native
+    /* private */ var _inStream: Any = js.native
     
-    /* private */ var _table: js.Any = js.native
+    /* private */ var _table: Any = js.native
     
-    /* private */ var _vertex: js.Any = js.native
+    /* private */ var _vertex: Any = js.native
     
     def filterMatches(k: K): Stream[A] = js.native
   }

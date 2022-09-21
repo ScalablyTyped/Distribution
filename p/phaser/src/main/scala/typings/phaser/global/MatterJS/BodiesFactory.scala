@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MatterJS.BodiesFactory")
 @js.native
-class BodiesFactory ()
+open class BodiesFactory ()
   extends StObject
      with typings.phaser.MatterJS.BodiesFactory

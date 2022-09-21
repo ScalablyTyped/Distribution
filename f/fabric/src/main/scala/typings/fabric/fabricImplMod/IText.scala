@@ -7,7 +7,6 @@ import typings.std.CanvasRenderingContext2D
 import typings.std.Event
 import typings.std.HTMLTextAreaElement
 import typings.std.MouseEvent
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fabric.fabricImplMod.IObjectOptions because Already inherited
 - typings.fabric.fabricImplMod.TextOptions because Already inherited
-- typings.fabric.fabricImplMod.ITextOptions because var conflicts: aCoords, absolutePositioned, angle, backgroundColor, borderColor, borderDashArray, borderOpacityWhenMoving, borderScaleFactor, cacheProperties, canvas, centeredRotation, centeredScaling, charSpacing, clipPath, clipTo, cornerColor, cornerDashArray, cornerSize, cornerStrokeColor, cornerStyle, data, deltaY, dirty, evented, excludeFromExport, fill, fillRule, flipX, flipY, fontFamily, fontSize, fontStyle, fontWeight, globalCompositeOperation, group, hasBorders, hasControls, hasRotatingPoint, height, hoverCursor, includeDefaultValues, inverted, left, lineHeight, linethrough, lockMovementX, lockMovementY, lockRotation, lockScalingFlip, lockScalingX, lockScalingY, lockSkewingX, lockSkewingY, lockUniScaling, matrixCache, minScaleLimit, moveCursor, name, noScaleCache, oCoords, objectCaching, opacity, originX, originY, overline, ownMatrixCache, padding, paintFirst, perPixelTargetFind, rotatingPointOffset, scaleX, scaleY, selectable, selectionBackgroundColor, shadow, skewX, skewY, snapAngle, snapThreshold, stateProperties, statefullCache, stroke, strokeDashArray, strokeDashOffset, strokeLineCap, strokeLineJoin, strokeMiterLimit, strokeUniform, strokeWidth, styles, subscript, superscript, text, textAlign, textBackgroundColor, top, transformMatrix, transparentCorners, `type`, underline, visible, width. Inlined selectionStart, selectionEnd, selectionColor, selected, isEditing, editable, editingBorderColor, cursorWidth, cursorColor, cursorDelay, cursorDuration, caching, inCompositionMode, path, useNative, ctrlKeysMapDown, ctrlKeysMapUp, keysMap, hiddenTextarea */ @JSImport("fabric/fabric-impl", "IText")
+- typings.fabric.fabricImplMod.ITextOptions because var conflicts: aCoords, absolutePositioned, angle, backgroundColor, borderColor, borderDashArray, borderOpacityWhenMoving, borderScaleFactor, cacheProperties, canvas, centeredRotation, centeredScaling, charSpacing, clipPath, cornerColor, cornerDashArray, cornerSize, cornerStrokeColor, cornerStyle, data, deltaY, direction, dirty, evented, excludeFromExport, fill, fillRule, flipX, flipY, fontFamily, fontSize, fontStyle, fontWeight, globalCompositeOperation, group, hasBorders, hasControls, hasRotatingPoint, height, hoverCursor, includeDefaultValues, inverted, left, lineHeight, linethrough, lockMovementX, lockMovementY, lockRotation, lockScalingFlip, lockScalingX, lockScalingY, lockSkewingX, lockSkewingY, lockUniScaling, matrixCache, minScaleLimit, moveCursor, name, noScaleCache, oCoords, objectCaching, opacity, originX, originY, overline, ownMatrixCache, padding, paintFirst, perPixelTargetFind, rotatingPointOffset, scaleX, scaleY, selectable, selectionBackgroundColor, shadow, skewX, skewY, snapAngle, snapThreshold, stateProperties, statefullCache, stroke, strokeDashArray, strokeDashOffset, strokeLineCap, strokeLineJoin, strokeMiterLimit, strokeUniform, strokeWidth, styles, subscript, superscript, text, textAlign, textBackgroundColor, top, transparentCorners, `type`, underline, visible, width. Inlined selectionStart, selectionEnd, selectionColor, selected, isEditing, editable, editingBorderColor, cursorWidth, cursorColor, cursorDelay, cursorDuration, caching, inCompositionMode, path, useNative, ctrlKeysMapDown, ctrlKeysMapUp, keysMap, hiddenTextarea */ @JSImport("fabric/fabric-impl", "IText")
 @js.native
-class IText protected () extends Text {
+open class IText protected () extends Text {
   /**
     * Constructor
     * @param text Text string
@@ -50,12 +49,12 @@ class IText protected () extends Text {
     * @private
     * @param {Object} Options (seems to have an event `e` parameter
     */
-  def _mouseDownHandler(options: js.Any): Unit = js.native
+  def _mouseDownHandler(options: Any): Unit = js.native
   
   /**
     * @private
     */
-  var _reSpace: RegExp = js.native
+  var _reSpace: js.RegExp = js.native
   
   /**
     * @private
@@ -87,12 +86,12 @@ class IText protected () extends Text {
   /**
     * For functionalities on keyDown + ctrl || cmd
     */
-  var ctrlKeysMapDown: js.UndefOr[js.Any] = js.native
+  var ctrlKeysMapDown: js.UndefOr[Any] = js.native
   
   /**
     * For functionalities on keyUp + ctrl || cmd
     */
-  var ctrlKeysMapUp: js.UndefOr[js.Any] = js.native
+  var ctrlKeysMapUp: js.UndefOr[Any] = js.native
   
   /**
     * Color of default cursor (when not overwritten by character style)
@@ -299,7 +298,7 @@ class IText protected () extends Text {
     * @param {Number} quantity number Style object to insert, if given
     * @param {Array} copiedStyle array of style objecs
     */
-  def insertCharStyleObject(lineIndex: Double, charIndex: Double, quantity: Double, copiedStyle: js.Array[js.Any]): Unit = js.native
+  def insertCharStyleObject(lineIndex: Double, charIndex: Double, quantity: Double, copiedStyle: js.Array[Any]): Unit = js.native
   
   /**
     * insert characters at start position, before start position.
@@ -313,7 +312,7 @@ class IText protected () extends Text {
     * @param {Number} start
     * @param {Number} end default to start + 1
     */
-  def insertChars(text: String, style: js.Array[js.Any], start: Double, end: Double): Unit = js.native
+  def insertChars(text: String, style: js.Array[Any], start: Double, end: Double): Unit = js.native
   
   /**
     * Inserts style object(s)
@@ -321,8 +320,8 @@ class IText protected () extends Text {
     * @param {Number} start cursor index for inserting style
     * @param {Array} [copiedStyle] array of style objects to insert.
     */
-  def insertNewStyleBlock(insertedText: js.Array[js.Any], start: Double): Unit = js.native
-  def insertNewStyleBlock(insertedText: js.Array[js.Any], start: Double, copiedStyle: js.Array[js.Any]): Unit = js.native
+  def insertNewStyleBlock(insertedText: js.Array[Any], start: Double): Unit = js.native
+  def insertNewStyleBlock(insertedText: js.Array[Any], start: Double, copiedStyle: js.Array[Any]): Unit = js.native
   
   /**
     * Inserts new style object
@@ -331,7 +330,7 @@ class IText protected () extends Text {
     * @param {Number} qty number of lines to add
     * @param {Array} copiedStyle Array of objects styles
     */
-  def insertNewlineStyleObject(lineIndex: Double, charIndex: Double, qty: Double, copiedStyle: js.Array[js.Any]): Unit = js.native
+  def insertNewlineStyleObject(lineIndex: Double, charIndex: Double, qty: Double, copiedStyle: js.Array[Any]): Unit = js.native
   
   /**
     * Indicates whether text is in editing mode
@@ -350,7 +349,7 @@ class IText protected () extends Text {
     * this.keysMap = fabric.util.object.clone(this.keysMap);
     * The function must be in fabric.Itext.prototype.myFunction And will receive event as args[0]
     */
-  var keysMap: js.UndefOr[js.Any] = js.native
+  var keysMap: js.UndefOr[Any] = js.native
   
   /**
     * Moves cursor down
@@ -470,7 +469,7 @@ class IText protected () extends Text {
     * @param {Object} boundaries
     * @param {CanvasRenderingContext2D} ctx transformed context to draw on
     */
-  def renderCursor(boundaries: js.Any, ctx: CanvasRenderingContext2D): Unit = js.native
+  def renderCursor(boundaries: Any, ctx: CanvasRenderingContext2D): Unit = js.native
   
   /**
     * Renders cursor or selection (depending on what exists)
@@ -482,7 +481,7 @@ class IText protected () extends Text {
     * @param {Object} boundaries Object with left/top/leftOffset/topOffset
     * @param {CanvasRenderingContext2D} ctx transformed context to draw on
     */
-  def renderSelection(boundaries: js.Any, ctx: CanvasRenderingContext2D): Unit = js.native
+  def renderSelection(boundaries: Any, ctx: CanvasRenderingContext2D): Unit = js.native
   
   /**
     * Finds index corresponding to beginning or end of a word
@@ -589,6 +588,6 @@ object IText {
     * @param {Object} object Object to create an instance from
     * @param {function} [callback] invoked with new instance as argument
     */
-  inline def fromObject(`object`: js.Any): IText = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[IText]
-  inline def fromObject(`object`: js.Any, callback: js.Function): IText = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IText]
+  inline def fromObject(`object`: Any): IText = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[IText]
+  inline def fromObject(`object`: Any, callback: js.Function): IText = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IText]
 }

@@ -33,12 +33,12 @@ object IStandaloneThemeData {
     
     inline def setEncodedTokensColorsUndefined: Self = StObject.set(x, "encodedTokensColors", js.undefined)
     
-    inline def setEncodedTokensColorsVarargs(value: String*): Self = StObject.set(x, "encodedTokensColors", js.Array(value :_*))
+    inline def setEncodedTokensColorsVarargs(value: String*): Self = StObject.set(x, "encodedTokensColors", js.Array(value*))
     
     inline def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
     
     inline def setRules(value: js.Array[ITokenThemeRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    inline def setRulesVarargs(value: ITokenThemeRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: ITokenThemeRule*): Self = StObject.set(x, "rules", js.Array(value*))
   }
 }

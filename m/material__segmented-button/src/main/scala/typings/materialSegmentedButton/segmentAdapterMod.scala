@@ -1,6 +1,6 @@
 package typings.materialSegmentedButton
 
-import typings.std.ClientRect
+import typings.std.DOMRect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ object segmentAdapterMod {
     /**
       * @return Returns bounding rectangle for ripple effect
       */
-    def getRootBoundingClientRect(): ClientRect
+    def getRootBoundingClientRect(): DOMRect
     
     /**
       * @param className Class of interest
@@ -67,7 +67,7 @@ object segmentAdapterMod {
     inline def apply(
       addClass: String => Unit,
       getAttr: String => String | Null,
-      getRootBoundingClientRect: () => ClientRect,
+      getRootBoundingClientRect: () => DOMRect,
       hasClass: String => Boolean,
       isSingleSelect: () => Boolean,
       notifySelectedChange: Boolean => Unit,
@@ -84,7 +84,7 @@ object segmentAdapterMod {
       
       inline def setGetAttr(value: String => String | Null): Self = StObject.set(x, "getAttr", js.Any.fromFunction1(value))
       
-      inline def setGetRootBoundingClientRect(value: () => ClientRect): Self = StObject.set(x, "getRootBoundingClientRect", js.Any.fromFunction0(value))
+      inline def setGetRootBoundingClientRect(value: () => DOMRect): Self = StObject.set(x, "getRootBoundingClientRect", js.Any.fromFunction0(value))
       
       inline def setHasClass(value: String => Boolean): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
       

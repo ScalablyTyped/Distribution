@@ -10,13 +10,13 @@ object defaultButtonMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Button/DefaultButton/DefaultButton", "DefaultButton")
   @js.native
-  class DefaultButton protected ()
-    extends Component[IButtonProps, js.Object, js.Any] {
+  open class DefaultButton protected ()
+    extends Component[IButtonProps, js.Object, Any] {
     def this(props: IButtonProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: IButtonProps, context: js.Any) = this()
+    def this(props: IButtonProps, context: Any) = this()
   }
 }

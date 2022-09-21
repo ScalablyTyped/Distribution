@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "estree-util-build-jsx" : "2.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "estree-util-build-jsx" : "2.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

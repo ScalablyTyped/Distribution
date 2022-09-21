@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Attachment added to student assignment work.  When creating attachments,
-  * setting the `form` field is not supported.
-  */
 trait SchemaAttachment extends StObject {
   
   /**

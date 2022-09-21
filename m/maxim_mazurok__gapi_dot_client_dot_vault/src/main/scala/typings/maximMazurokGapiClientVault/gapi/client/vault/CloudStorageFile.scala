@@ -7,18 +7,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CloudStorageFile extends StObject {
   
   /**
-    * The cloud storage bucket name of this export file. Can be used in cloud storage JSON/XML API, but not to list the bucket contents. Instead, you can get individual export files by
-    * object name.
+    * The name of the Cloud Storage bucket for the export file. You can use this value in the [Cloud Storage JSON or XML APIs](https://cloud.google.com/storage/docs/apis), but not to list
+    * the bucket contents. Instead, you can [get individual export files](https://cloud.google.com/storage/docs/json_api/v1/objects/get) by object name.
     */
   var bucketName: js.UndefOr[String] = js.undefined
   
   /** The md5 hash of the file. */
   var md5Hash: js.UndefOr[String] = js.undefined
   
-  /** The cloud storage object name of this export file. Can be used in cloud storage JSON/XML API. */
+  /** The name of the Cloud Storage object for the export file. You can use this value in the [Cloud Storage JSON or XML APIs](https://cloud.google.com/storage/docs/apis). */
   var objectName: js.UndefOr[String] = js.undefined
   
-  /** The size of the export file. */
+  /** The export file size. */
   var size: js.UndefOr[String] = js.undefined
 }
 object CloudStorageFile {

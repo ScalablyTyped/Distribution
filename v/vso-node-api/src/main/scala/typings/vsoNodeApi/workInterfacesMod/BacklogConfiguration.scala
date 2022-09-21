@@ -67,11 +67,11 @@ object BacklogConfiguration {
     
     inline def setHiddenBacklogs(value: js.Array[String]): Self = StObject.set(x, "hiddenBacklogs", value.asInstanceOf[js.Any])
     
-    inline def setHiddenBacklogsVarargs(value: String*): Self = StObject.set(x, "hiddenBacklogs", js.Array(value :_*))
+    inline def setHiddenBacklogsVarargs(value: String*): Self = StObject.set(x, "hiddenBacklogs", js.Array(value*))
     
     inline def setPortfolioBacklogs(value: js.Array[BacklogLevelConfiguration]): Self = StObject.set(x, "portfolioBacklogs", value.asInstanceOf[js.Any])
     
-    inline def setPortfolioBacklogsVarargs(value: BacklogLevelConfiguration*): Self = StObject.set(x, "portfolioBacklogs", js.Array(value :_*))
+    inline def setPortfolioBacklogsVarargs(value: BacklogLevelConfiguration*): Self = StObject.set(x, "portfolioBacklogs", js.Array(value*))
     
     inline def setRequirementBacklog(value: BacklogLevelConfiguration): Self = StObject.set(x, "requirementBacklog", value.asInstanceOf[js.Any])
     
@@ -81,6 +81,6 @@ object BacklogConfiguration {
     
     inline def setWorkItemTypeMappedStates(value: js.Array[WorkItemTypeStateInfo]): Self = StObject.set(x, "workItemTypeMappedStates", value.asInstanceOf[js.Any])
     
-    inline def setWorkItemTypeMappedStatesVarargs(value: WorkItemTypeStateInfo*): Self = StObject.set(x, "workItemTypeMappedStates", js.Array(value :_*))
+    inline def setWorkItemTypeMappedStatesVarargs(value: WorkItemTypeStateInfo*): Self = StObject.set(x, "workItemTypeMappedStates", js.Array(value*))
   }
 }

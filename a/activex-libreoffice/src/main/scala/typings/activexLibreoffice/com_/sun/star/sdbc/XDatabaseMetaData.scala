@@ -410,7 +410,7 @@ trait XDatabaseMetaData
     * @returns each row is a column description
     * @throws SQLException if a database access error occurs.
     */
-  def getBestRowIdentifier(catalog: js.Any, schema: String, table: String, scope: Double, nullable: Boolean): XResultSet
+  def getBestRowIdentifier(catalog: Any, schema: String, table: String, scope: Double, nullable: Boolean): XResultSet
   
   /**
     * return the separator between catalog and table name
@@ -455,7 +455,7 @@ trait XDatabaseMetaData
     * @returns each row is a column privilege description
     * @throws SQLException if a database access error occurs.
     */
-  def getColumnPrivileges(catalog: js.Any, schema: String, table: String, columnNamePattern: String): XResultSet
+  def getColumnPrivileges(catalog: Any, schema: String, table: String, columnNamePattern: String): XResultSet
   
   /**
     * gets a description of table columns available in the specified catalog.
@@ -482,7 +482,7 @@ trait XDatabaseMetaData
     * @returns each row is a column description
     * @throws SQLException if a database access error occurs.
     */
-  def getColumns(catalog: js.Any, schemaPattern: String, tableNamePattern: String, columnNamePattern: String): XResultSet
+  def getColumns(catalog: Any, schemaPattern: String, tableNamePattern: String, columnNamePattern: String): XResultSet
   
   /**
     * retrieves the connection that produced this metadata object.
@@ -521,10 +521,10 @@ trait XDatabaseMetaData
     * @throws SQLException if a database access error occurs.
     */
   def getCrossReference(
-    primaryCatalog: js.Any,
+    primaryCatalog: Any,
     primarySchema: String,
     primaryTable: String,
-    foreignCatalog: js.Any,
+    foreignCatalog: Any,
     foreignSchema: String,
     foreignTable: String
   ): XResultSet
@@ -580,7 +580,7 @@ trait XDatabaseMetaData
     * @returns each row is a foreign key column description
     * @throws SQLException if a database access error occurs.
     */
-  def getExportedKeys(catalog: js.Any, schema: String, table: String): XResultSet
+  def getExportedKeys(catalog: Any, schema: String, table: String): XResultSet
   
   /**
     * gets all the "extra" characters that can be used in unquoted identifier names (those beyond a-z, A-Z, 0-9 and _).
@@ -622,7 +622,7 @@ trait XDatabaseMetaData
     * @returns each row is a primary key column description
     * @throws SQLException if a database access error occurs.
     */
-  def getImportedKeys(catalog: js.Any, schema: String, table: String): XResultSet
+  def getImportedKeys(catalog: Any, schema: String, table: String): XResultSet
   
   /**
     * gets a description of a table's indices and statistics. They are ordered by NON_UNIQUE, TYPE, INDEX_NAME, and ORDINAL_POSITION.
@@ -648,7 +648,7 @@ trait XDatabaseMetaData
     * @returns each row is an index column description
     * @throws SQLException if a database access error occurs.
     */
-  def getIndexInfo(catalog: js.Any, schema: String, table: String, unique: Boolean, approximate: Boolean): XResultSet
+  def getIndexInfo(catalog: Any, schema: String, table: String, unique: Boolean, approximate: Boolean): XResultSet
   
   /**
     * return the maximal number of hex characters in an inline binary literal
@@ -811,7 +811,7 @@ trait XDatabaseMetaData
     * @returns each row is a primary key column description
     * @throws SQLException if a database access error occurs.
     */
-  def getPrimaryKeys(catalog: js.Any, schema: String, table: String): XResultSet
+  def getPrimaryKeys(catalog: Any, schema: String, table: String): XResultSet
   
   /**
     * gets a description of a catalog's stored procedure parameters and result columns.
@@ -838,7 +838,7 @@ trait XDatabaseMetaData
     * @returns each row describes a stored procedure parameter or column
     * @throws SQLException if a database access error occurs.
     */
-  def getProcedureColumns(catalog: js.Any, schemaPattern: String, procedureNamePattern: String, columnNamePattern: String): XResultSet
+  def getProcedureColumns(catalog: Any, schemaPattern: String, procedureNamePattern: String, columnNamePattern: String): XResultSet
   
   /**
     * return the database vendor's preferred term for "procedure"
@@ -864,7 +864,7 @@ trait XDatabaseMetaData
     * @returns each row is a procedure description
     * @throws SQLException if a database access error occurs.
     */
-  def getProcedures(catalog: js.Any, schemaPattern: String, procedureNamePattern: String): XResultSet
+  def getProcedures(catalog: Any, schemaPattern: String, procedureNamePattern: String): XResultSet
   
   /**
     * gets a comma-separated list of all a database's SQL keywords that are NOT also SQL92 keywords.
@@ -935,7 +935,7 @@ trait XDatabaseMetaData
     * @returns each row is a table privilege description
     * @throws SQLException if a database access error occurs.
     */
-  def getTablePrivileges(catalog: js.Any, schemaPattern: String, tableNamePattern: String): XResultSet
+  def getTablePrivileges(catalog: Any, schemaPattern: String, tableNamePattern: String): XResultSet
   
   /**
     * gets the table types available in this database. The results are ordered by table type.
@@ -968,7 +968,7 @@ trait XDatabaseMetaData
     * @returns each row is a table description
     * @throws SQLException if a database access error occurs.
     */
-  def getTables(catalog: js.Any, schemaPattern: String, tableNamePattern: String, types: SeqEquiv[String]): XResultSet
+  def getTables(catalog: Any, schemaPattern: String, tableNamePattern: String, types: SeqEquiv[String]): XResultSet
   
   /**
     * gets a comma-separated list of time and date functions.
@@ -1017,7 +1017,7 @@ trait XDatabaseMetaData
     * @returns each row is a type description
     * @throws SQLException if a database access error occurs.
     */
-  def getUDTs(catalog: js.Any, schemaPattern: String, typeNamePattern: String, types: SeqEquiv[Double]): XResultSet
+  def getUDTs(catalog: Any, schemaPattern: String, typeNamePattern: String, types: SeqEquiv[Double]): XResultSet
   
   /** returns the URL for the database connection */
   def getURL(): String
@@ -1040,7 +1040,7 @@ trait XDatabaseMetaData
     * @returns each row is a column description
     * @throws SQLException if a database access error occurs.
     */
-  def getVersionColumns(catalog: js.Any, schema: String, table: String): XResultSet
+  def getVersionColumns(catalog: Any, schema: String, table: String): XResultSet
   
   /**
     * indicates whether or not a visible row insert can be detected by calling {@link com.sun.star.sdbc.XResultSet.rowInserted()} .()
@@ -1687,14 +1687,14 @@ object XDatabaseMetaData {
     dataDefinitionIgnoredInTransactions: () => Boolean,
     deletesAreDetected: Double => Boolean,
     doesMaxRowSizeIncludeBlobs: () => Boolean,
-    getBestRowIdentifier: (js.Any, String, String, Double, Boolean) => XResultSet,
+    getBestRowIdentifier: (Any, String, String, Double, Boolean) => XResultSet,
     getCatalogSeparator: () => String,
     getCatalogTerm: () => String,
     getCatalogs: () => XResultSet,
-    getColumnPrivileges: (js.Any, String, String, String) => XResultSet,
-    getColumns: (js.Any, String, String, String) => XResultSet,
+    getColumnPrivileges: (Any, String, String, String) => XResultSet,
+    getColumns: (Any, String, String, String) => XResultSet,
     getConnection: () => XConnection,
-    getCrossReference: (js.Any, String, String, js.Any, String, String) => XResultSet,
+    getCrossReference: (Any, String, String, Any, String, String) => XResultSet,
     getDatabaseProductName: () => String,
     getDatabaseProductVersion: () => String,
     getDefaultTransactionIsolation: () => Double,
@@ -1702,11 +1702,11 @@ object XDatabaseMetaData {
     getDriverMinorVersion: () => Double,
     getDriverName: () => String,
     getDriverVersion: () => String,
-    getExportedKeys: (js.Any, String, String) => XResultSet,
+    getExportedKeys: (Any, String, String) => XResultSet,
     getExtraNameCharacters: () => String,
     getIdentifierQuoteString: () => String,
-    getImportedKeys: (js.Any, String, String) => XResultSet,
-    getIndexInfo: (js.Any, String, String, Boolean, Boolean) => XResultSet,
+    getImportedKeys: (Any, String, String) => XResultSet,
+    getIndexInfo: (Any, String, String, Boolean, Boolean) => XResultSet,
     getMaxBinaryLiteralLength: () => Double,
     getMaxCatalogNameLength: () => Double,
     getMaxCharLiteralLength: () => Double,
@@ -1728,25 +1728,25 @@ object XDatabaseMetaData {
     getMaxTablesInSelect: () => Double,
     getMaxUserNameLength: () => Double,
     getNumericFunctions: () => String,
-    getPrimaryKeys: (js.Any, String, String) => XResultSet,
-    getProcedureColumns: (js.Any, String, String, String) => XResultSet,
+    getPrimaryKeys: (Any, String, String) => XResultSet,
+    getProcedureColumns: (Any, String, String, String) => XResultSet,
     getProcedureTerm: () => String,
-    getProcedures: (js.Any, String, String) => XResultSet,
+    getProcedures: (Any, String, String) => XResultSet,
     getSQLKeywords: () => String,
     getSchemaTerm: () => String,
     getSchemas: () => XResultSet,
     getSearchStringEscape: () => String,
     getStringFunctions: () => String,
     getSystemFunctions: () => String,
-    getTablePrivileges: (js.Any, String, String) => XResultSet,
+    getTablePrivileges: (Any, String, String) => XResultSet,
     getTableTypes: () => XResultSet,
-    getTables: (js.Any, String, String, SeqEquiv[String]) => XResultSet,
+    getTables: (Any, String, String, SeqEquiv[String]) => XResultSet,
     getTimeDateFunctions: () => String,
     getTypeInfo: () => XResultSet,
-    getUDTs: (js.Any, String, String, SeqEquiv[Double]) => XResultSet,
+    getUDTs: (Any, String, String, SeqEquiv[Double]) => XResultSet,
     getURL: () => String,
     getUserName: () => String,
-    getVersionColumns: (js.Any, String, String) => XResultSet,
+    getVersionColumns: (Any, String, String) => XResultSet,
     insertsAreDetected: Double => Boolean,
     isCatalogAtStart: () => Boolean,
     isReadOnly: () => Boolean,
@@ -1761,7 +1761,7 @@ object XDatabaseMetaData {
     ownDeletesAreVisible: Double => Boolean,
     ownInsertsAreVisible: Double => Boolean,
     ownUpdatesAreVisible: Double => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     storesLowerCaseIdentifiers: () => Boolean,
     storesLowerCaseQuotedIdentifiers: () => Boolean,
@@ -1875,7 +1875,7 @@ object XDatabaseMetaData {
     
     inline def setExtraNameCharacters(value: String): Self = StObject.set(x, "ExtraNameCharacters", value.asInstanceOf[js.Any])
     
-    inline def setGetBestRowIdentifier(value: (js.Any, String, String, Double, Boolean) => XResultSet): Self = StObject.set(x, "getBestRowIdentifier", js.Any.fromFunction5(value))
+    inline def setGetBestRowIdentifier(value: (Any, String, String, Double, Boolean) => XResultSet): Self = StObject.set(x, "getBestRowIdentifier", js.Any.fromFunction5(value))
     
     inline def setGetCatalogSeparator(value: () => String): Self = StObject.set(x, "getCatalogSeparator", js.Any.fromFunction0(value))
     
@@ -1883,13 +1883,13 @@ object XDatabaseMetaData {
     
     inline def setGetCatalogs(value: () => XResultSet): Self = StObject.set(x, "getCatalogs", js.Any.fromFunction0(value))
     
-    inline def setGetColumnPrivileges(value: (js.Any, String, String, String) => XResultSet): Self = StObject.set(x, "getColumnPrivileges", js.Any.fromFunction4(value))
+    inline def setGetColumnPrivileges(value: (Any, String, String, String) => XResultSet): Self = StObject.set(x, "getColumnPrivileges", js.Any.fromFunction4(value))
     
-    inline def setGetColumns(value: (js.Any, String, String, String) => XResultSet): Self = StObject.set(x, "getColumns", js.Any.fromFunction4(value))
+    inline def setGetColumns(value: (Any, String, String, String) => XResultSet): Self = StObject.set(x, "getColumns", js.Any.fromFunction4(value))
     
     inline def setGetConnection(value: () => XConnection): Self = StObject.set(x, "getConnection", js.Any.fromFunction0(value))
     
-    inline def setGetCrossReference(value: (js.Any, String, String, js.Any, String, String) => XResultSet): Self = StObject.set(x, "getCrossReference", js.Any.fromFunction6(value))
+    inline def setGetCrossReference(value: (Any, String, String, Any, String, String) => XResultSet): Self = StObject.set(x, "getCrossReference", js.Any.fromFunction6(value))
     
     inline def setGetDatabaseProductName(value: () => String): Self = StObject.set(x, "getDatabaseProductName", js.Any.fromFunction0(value))
     
@@ -1905,15 +1905,15 @@ object XDatabaseMetaData {
     
     inline def setGetDriverVersion(value: () => String): Self = StObject.set(x, "getDriverVersion", js.Any.fromFunction0(value))
     
-    inline def setGetExportedKeys(value: (js.Any, String, String) => XResultSet): Self = StObject.set(x, "getExportedKeys", js.Any.fromFunction3(value))
+    inline def setGetExportedKeys(value: (Any, String, String) => XResultSet): Self = StObject.set(x, "getExportedKeys", js.Any.fromFunction3(value))
     
     inline def setGetExtraNameCharacters(value: () => String): Self = StObject.set(x, "getExtraNameCharacters", js.Any.fromFunction0(value))
     
     inline def setGetIdentifierQuoteString(value: () => String): Self = StObject.set(x, "getIdentifierQuoteString", js.Any.fromFunction0(value))
     
-    inline def setGetImportedKeys(value: (js.Any, String, String) => XResultSet): Self = StObject.set(x, "getImportedKeys", js.Any.fromFunction3(value))
+    inline def setGetImportedKeys(value: (Any, String, String) => XResultSet): Self = StObject.set(x, "getImportedKeys", js.Any.fromFunction3(value))
     
-    inline def setGetIndexInfo(value: (js.Any, String, String, Boolean, Boolean) => XResultSet): Self = StObject.set(x, "getIndexInfo", js.Any.fromFunction5(value))
+    inline def setGetIndexInfo(value: (Any, String, String, Boolean, Boolean) => XResultSet): Self = StObject.set(x, "getIndexInfo", js.Any.fromFunction5(value))
     
     inline def setGetMaxBinaryLiteralLength(value: () => Double): Self = StObject.set(x, "getMaxBinaryLiteralLength", js.Any.fromFunction0(value))
     
@@ -1957,13 +1957,13 @@ object XDatabaseMetaData {
     
     inline def setGetNumericFunctions(value: () => String): Self = StObject.set(x, "getNumericFunctions", js.Any.fromFunction0(value))
     
-    inline def setGetPrimaryKeys(value: (js.Any, String, String) => XResultSet): Self = StObject.set(x, "getPrimaryKeys", js.Any.fromFunction3(value))
+    inline def setGetPrimaryKeys(value: (Any, String, String) => XResultSet): Self = StObject.set(x, "getPrimaryKeys", js.Any.fromFunction3(value))
     
-    inline def setGetProcedureColumns(value: (js.Any, String, String, String) => XResultSet): Self = StObject.set(x, "getProcedureColumns", js.Any.fromFunction4(value))
+    inline def setGetProcedureColumns(value: (Any, String, String, String) => XResultSet): Self = StObject.set(x, "getProcedureColumns", js.Any.fromFunction4(value))
     
     inline def setGetProcedureTerm(value: () => String): Self = StObject.set(x, "getProcedureTerm", js.Any.fromFunction0(value))
     
-    inline def setGetProcedures(value: (js.Any, String, String) => XResultSet): Self = StObject.set(x, "getProcedures", js.Any.fromFunction3(value))
+    inline def setGetProcedures(value: (Any, String, String) => XResultSet): Self = StObject.set(x, "getProcedures", js.Any.fromFunction3(value))
     
     inline def setGetSQLKeywords(value: () => String): Self = StObject.set(x, "getSQLKeywords", js.Any.fromFunction0(value))
     
@@ -1977,23 +1977,23 @@ object XDatabaseMetaData {
     
     inline def setGetSystemFunctions(value: () => String): Self = StObject.set(x, "getSystemFunctions", js.Any.fromFunction0(value))
     
-    inline def setGetTablePrivileges(value: (js.Any, String, String) => XResultSet): Self = StObject.set(x, "getTablePrivileges", js.Any.fromFunction3(value))
+    inline def setGetTablePrivileges(value: (Any, String, String) => XResultSet): Self = StObject.set(x, "getTablePrivileges", js.Any.fromFunction3(value))
     
     inline def setGetTableTypes(value: () => XResultSet): Self = StObject.set(x, "getTableTypes", js.Any.fromFunction0(value))
     
-    inline def setGetTables(value: (js.Any, String, String, SeqEquiv[String]) => XResultSet): Self = StObject.set(x, "getTables", js.Any.fromFunction4(value))
+    inline def setGetTables(value: (Any, String, String, SeqEquiv[String]) => XResultSet): Self = StObject.set(x, "getTables", js.Any.fromFunction4(value))
     
     inline def setGetTimeDateFunctions(value: () => String): Self = StObject.set(x, "getTimeDateFunctions", js.Any.fromFunction0(value))
     
     inline def setGetTypeInfo(value: () => XResultSet): Self = StObject.set(x, "getTypeInfo", js.Any.fromFunction0(value))
     
-    inline def setGetUDTs(value: (js.Any, String, String, SeqEquiv[Double]) => XResultSet): Self = StObject.set(x, "getUDTs", js.Any.fromFunction4(value))
+    inline def setGetUDTs(value: (Any, String, String, SeqEquiv[Double]) => XResultSet): Self = StObject.set(x, "getUDTs", js.Any.fromFunction4(value))
     
     inline def setGetURL(value: () => String): Self = StObject.set(x, "getURL", js.Any.fromFunction0(value))
     
     inline def setGetUserName(value: () => String): Self = StObject.set(x, "getUserName", js.Any.fromFunction0(value))
     
-    inline def setGetVersionColumns(value: (js.Any, String, String) => XResultSet): Self = StObject.set(x, "getVersionColumns", js.Any.fromFunction3(value))
+    inline def setGetVersionColumns(value: (Any, String, String) => XResultSet): Self = StObject.set(x, "getVersionColumns", js.Any.fromFunction3(value))
     
     inline def setIdentifierQuoteString(value: String): Self = StObject.set(x, "IdentifierQuoteString", value.asInstanceOf[js.Any])
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DnsConfigChange extends StObject {
   
   /**
-    * An array that contains one DnsRecord object for each Route 53 record that you want AWS Cloud Map to create when you register an instance.
+    * An array that contains one DnsRecord object for each Route 53 record that you want Cloud Map to create when you register an instance.
     */
   var DnsRecords: DnsRecordList
 }
@@ -22,6 +22,6 @@ object DnsConfigChange {
     
     inline def setDnsRecords(value: DnsRecordList): Self = StObject.set(x, "DnsRecords", value.asInstanceOf[js.Any])
     
-    inline def setDnsRecordsVarargs(value: DnsRecord*): Self = StObject.set(x, "DnsRecords", js.Array(value :_*))
+    inline def setDnsRecordsVarargs(value: DnsRecord*): Self = StObject.set(x, "DnsRecords", js.Array(value*))
   }
 }

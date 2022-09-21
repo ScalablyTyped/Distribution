@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.buildInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.coreInterfacesMod.TeamProjectReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +10,7 @@ trait DefinitionReference extends StObject {
   /**
     * The date the definition was created.
     */
-  var createdDate: Date
+  var createdDate: js.Date
   
   /**
     * The ID of the referenced definition.
@@ -61,7 +60,7 @@ trait DefinitionReference extends StObject {
 object DefinitionReference {
   
   inline def apply(
-    createdDate: Date,
+    createdDate: js.Date,
     id: Double,
     name: String,
     path: String,
@@ -79,7 +78,7 @@ object DefinitionReference {
   
   extension [Self <: DefinitionReference](x: Self) {
     
-    inline def setCreatedDate(value: Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

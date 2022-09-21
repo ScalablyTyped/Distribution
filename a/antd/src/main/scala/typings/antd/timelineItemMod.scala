@@ -18,7 +18,7 @@ object timelineItemMod extends Shortcut {
     extends StObject
        with TimelineItemProps {
     
-    var __deprecated_do_not_use_it__ : js.UndefOr[js.Any] = js.undefined
+    var __deprecated_do_not_use_it__ : js.UndefOr[Any] = js.undefined
   }
   object TimeLineItemProps_ {
     
@@ -29,13 +29,15 @@ object timelineItemMod extends Shortcut {
     
     extension [Self <: TimeLineItemProps_](x: Self) {
       
-      inline def set__deprecated_do_not_use_it__(value: js.Any): Self = StObject.set(x, "__deprecated_do_not_use_it__", value.asInstanceOf[js.Any])
+      inline def set__deprecated_do_not_use_it__(value: Any): Self = StObject.set(x, "__deprecated_do_not_use_it__", value.asInstanceOf[js.Any])
       
       inline def set__deprecated_do_not_use_it__Undefined: Self = StObject.set(x, "__deprecated_do_not_use_it__", js.undefined)
     }
   }
   
   trait TimelineItemProps extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -61,6 +63,10 @@ object timelineItemMod extends Shortcut {
     }
     
     extension [Self <: TimelineItemProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

@@ -8,11 +8,11 @@ object mimeMod {
   
   @JSImport("@lumino/coreutils/types/mime", "MimeData")
   @js.native
-  class MimeData () extends StObject {
+  open class MimeData () extends StObject {
     
-    /* private */ var _types: js.Any = js.native
+    /* private */ var _types: Any = js.native
     
-    /* private */ var _values: js.Any = js.native
+    /* private */ var _values: Any = js.native
     
     /**
       * Remove all data entries from the dataset.
@@ -37,7 +37,7 @@ object mimeMod {
       * @returns The value for the given MIME type, or `undefined` if
       *   the dataset does not contain a value for the type.
       */
-    def getData(mime: String): js.UndefOr[js.Any] = js.native
+    def getData(mime: String): js.UndefOr[Any] = js.native
     
     /**
       * Test whether the dataset has an entry for the given type.
@@ -59,7 +59,7 @@ object mimeMod {
       * #### Notes
       * This will overwrite any previous entry for the MIME type.
       */
-    def setData(mime: String, data: js.Any): Unit = js.native
+    def setData(mime: String, data: Any): Unit = js.native
     
     /**
       * Get an array of the MIME types contained within the dataset.

@@ -1,7 +1,7 @@
 
 # Scala.js typings for d3-time-format
 
-Typings are for version 3.0
+Typings are for version 4.0
 
 ## Library description:
 A JavaScript time formatter and parser inspired by strftime and strptime.
@@ -10,10 +10,10 @@ A JavaScript time formatter and parser inspired by strftime and strptime.
 | ------------------ | :-------------: |
 | Full name          | d3-time-format |
 | Keywords           | d3, d3-module, time, format, strftime, strptime |
-| # releases         | 8 |
-| # dependents       | 295 |
-| # downloads        | 87272692 |
-| # stars            | 2 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 1.6622041666666666E7 |
+| # stars            | 283.0 |
 
 ## Links
 - [Homepage](https://d3js.org/d3-time-format/)

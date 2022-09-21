@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientControlCoordinates")
 @js.native
-class ASPxClientControlCoordinates ()
+open class ASPxClientControlCoordinates ()
   extends StObject
      with typings.devexpressWeb.ASPxClientControlCoordinates {
   

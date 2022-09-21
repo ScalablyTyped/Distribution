@@ -36,7 +36,7 @@ object StorageConnector {
     
     inline def setDomainsUndefined: Self = StObject.set(x, "Domains", js.undefined)
     
-    inline def setDomainsVarargs(value: Domain*): Self = StObject.set(x, "Domains", js.Array(value :_*))
+    inline def setDomainsVarargs(value: Domain*): Self = StObject.set(x, "Domains", js.Array(value*))
     
     inline def setResourceIdentifier(value: ResourceIdentifier): Self = StObject.set(x, "ResourceIdentifier", value.asInstanceOf[js.Any])
     

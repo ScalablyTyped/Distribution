@@ -12,7 +12,7 @@ trait ShapeNodes extends StObject {
   def apply(Index: String): ShapeNode = js.native
   def apply(Index: Double): ShapeNode = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Count: Double = js.native
   
@@ -185,7 +185,7 @@ trait ShapeNodes extends StObject {
   def Item(Index: String): ShapeNode = js.native
   def Item(Index: Double): ShapeNode = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def SetEditingType(Index: Double, EditingType: MsoEditingType): Unit = js.native
   

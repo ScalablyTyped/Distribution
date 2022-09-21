@@ -20,6 +20,6 @@ object OnGetWifiListCallbackResult {
     
     inline def setWifiList(value: js.Array[WifiInfo]): Self = StObject.set(x, "wifiList", value.asInstanceOf[js.Any])
     
-    inline def setWifiListVarargs(value: WifiInfo*): Self = StObject.set(x, "wifiList", js.Array(value :_*))
+    inline def setWifiListVarargs(value: WifiInfo*): Self = StObject.set(x, "wifiList", js.Array(value*))
   }
 }

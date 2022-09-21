@@ -14,7 +14,7 @@ trait TableOfAuthoritiesCategory extends StObject {
   
   var Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.TableOfAuthoritiesCategory_typekey")
   var WordDotTableOfAuthoritiesCategory_typekey: TableOfAuthoritiesCategory
@@ -26,7 +26,7 @@ object TableOfAuthoritiesCategory {
     Creator: Double,
     Index: Double,
     Name: String,
-    Parent: js.Any,
+    Parent: Any,
     WordDotTableOfAuthoritiesCategory_typekey: TableOfAuthoritiesCategory
   ): TableOfAuthoritiesCategory = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Index = Index.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
@@ -44,7 +44,7 @@ object TableOfAuthoritiesCategory {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotTableOfAuthoritiesCategory_typekey(value: TableOfAuthoritiesCategory): Self = StObject.set(x, "Word.TableOfAuthoritiesCategory_typekey", value.asInstanceOf[js.Any])
   }

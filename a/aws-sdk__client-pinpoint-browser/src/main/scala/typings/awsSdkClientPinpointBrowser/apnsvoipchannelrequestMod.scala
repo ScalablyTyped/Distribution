@@ -8,5 +8,5 @@ object apnsvoipchannelrequestMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/_APNSVoipChannelRequest", "_APNSVoipChannelRequest")
   @js.native
-  val APNSVoipChannelRequest: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val APNSVoipChannelRequest: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

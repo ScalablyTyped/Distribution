@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap", "Badge")
 @js.native
-class Badge ()
+open class Badge ()
   extends typings.reactBootstrap.libMod.Badge

@@ -1,14 +1,20 @@
 package typings.babylonjs.global.BABYLON
 
+import typings.babylonjs.anon.Default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.StandardMaterialDefines")
 @js.native
-class StandardMaterialDefines ()
+/**
+  * Initializes the Standard Material defines.
+  * @param externalProperties The external properties
+  */
+open class StandardMaterialDefines ()
   extends StObject
      with typings.babylonjs.BABYLON.StandardMaterialDefines {
+  def this(externalProperties: org.scalablytyped.runtime.StringDictionary[Default]) = this()
   
   /* CompleteClass */
   var COLORCURVES: Boolean = js.native
@@ -21,6 +27,9 @@ class StandardMaterialDefines ()
   
   /* CompleteClass */
   var CONTRAST: Boolean = js.native
+  
+  /* CompleteClass */
+  var DITHER: Boolean = js.native
   
   /* CompleteClass */
   var EXPOSURE: Boolean = js.native
@@ -36,6 +45,9 @@ class StandardMaterialDefines ()
   
   /* CompleteClass */
   var SAMPLER3DGREENDEPTH: Boolean = js.native
+  
+  /* CompleteClass */
+  var SKIPFINALCOLORCLAMP: Boolean = js.native
   
   /* CompleteClass */
   var TONEMAPPING: Boolean = js.native

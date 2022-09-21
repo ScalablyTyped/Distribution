@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response to quick previewing a workspace.
-  */
 trait SchemaQuickPreviewResponse extends StObject {
   
   /**
     * Were there compiler errors or not.
     */
-  var compilerError: js.UndefOr[Boolean] = js.undefined
+  var compilerError: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * The quick previewed container version.
@@ -20,8 +17,7 @@ trait SchemaQuickPreviewResponse extends StObject {
   var containerVersion: js.UndefOr[SchemaContainerVersion] = js.undefined
   
   /**
-    * Whether quick previewing failed when syncing the workspace to the latest
-    * container version.
+    * Whether quick previewing failed when syncing the workspace to the latest container version.
     */
   var syncStatus: js.UndefOr[SchemaSyncStatus] = js.undefined
 }
@@ -35,6 +31,8 @@ object SchemaQuickPreviewResponse {
   extension [Self <: SchemaQuickPreviewResponse](x: Self) {
     
     inline def setCompilerError(value: Boolean): Self = StObject.set(x, "compilerError", value.asInstanceOf[js.Any])
+    
+    inline def setCompilerErrorNull: Self = StObject.set(x, "compilerError", null)
     
     inline def setCompilerErrorUndefined: Self = StObject.set(x, "compilerError", js.undefined)
     

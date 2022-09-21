@@ -20,7 +20,7 @@ trait TabStop extends StObject {
   
   val Next: TabStop
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Position: Double
   
@@ -39,7 +39,7 @@ object TabStop {
     CustomTab: Boolean,
     Leader: WdTabLeader,
     Next: TabStop,
-    Parent: js.Any,
+    Parent: Any,
     Position: Double,
     Previous: TabStop,
     WordDotTabStop_typekey: TabStop
@@ -65,7 +65,7 @@ object TabStop {
     
     inline def setNext(value: TabStop): Self = StObject.set(x, "Next", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     

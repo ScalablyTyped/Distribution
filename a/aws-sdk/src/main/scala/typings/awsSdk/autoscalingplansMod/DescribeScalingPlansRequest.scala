@@ -27,7 +27,7 @@ trait DescribeScalingPlansRequest extends StObject {
   var ScalingPlanNames: js.UndefOr[typings.awsSdk.autoscalingplansMod.ScalingPlanNames] = js.undefined
   
   /**
-    * The version number of the scaling plan. If you specify a scaling plan version, you must also specify a scaling plan name.
+    * The version number of the scaling plan. Currently, the only valid value is 1.  If you specify a scaling plan version, you must also specify a scaling plan name. 
     */
   var ScalingPlanVersion: js.UndefOr[typings.awsSdk.autoscalingplansMod.ScalingPlanVersion] = js.undefined
 }
@@ -44,7 +44,7 @@ object DescribeScalingPlansRequest {
     
     inline def setApplicationSourcesUndefined: Self = StObject.set(x, "ApplicationSources", js.undefined)
     
-    inline def setApplicationSourcesVarargs(value: ApplicationSource*): Self = StObject.set(x, "ApplicationSources", js.Array(value :_*))
+    inline def setApplicationSourcesVarargs(value: ApplicationSource*): Self = StObject.set(x, "ApplicationSources", js.Array(value*))
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
@@ -58,7 +58,7 @@ object DescribeScalingPlansRequest {
     
     inline def setScalingPlanNamesUndefined: Self = StObject.set(x, "ScalingPlanNames", js.undefined)
     
-    inline def setScalingPlanNamesVarargs(value: ScalingPlanName*): Self = StObject.set(x, "ScalingPlanNames", js.Array(value :_*))
+    inline def setScalingPlanNamesVarargs(value: ScalingPlanName*): Self = StObject.set(x, "ScalingPlanNames", js.Array(value*))
     
     inline def setScalingPlanVersion(value: ScalingPlanVersion): Self = StObject.set(x, "ScalingPlanVersion", value.asInstanceOf[js.Any])
     

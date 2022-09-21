@@ -1,6 +1,6 @@
 package typings.vfile
 
-import typings.vfile.mod.BufferEncoding
+import typings.vfile.libMod.BufferEncoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,6 +18,12 @@ object vfileStrings {
     extends StObject
        with BufferEncoding
   inline def base64: base64 = "base64".asInstanceOf[base64]
+  
+  @js.native
+  sealed trait base64url
+    extends StObject
+       with BufferEncoding
+  inline def base64url: base64url = "base64url".asInstanceOf[base64url]
   
   @js.native
   sealed trait binary

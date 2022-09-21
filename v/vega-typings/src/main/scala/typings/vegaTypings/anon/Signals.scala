@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Signals extends StObject {
   
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
-  var signals: js.UndefOr[js.Any] = js.undefined
+  var signals: js.UndefOr[Any] = js.undefined
 }
 object Signals {
   
@@ -19,11 +19,11 @@ object Signals {
   
   extension [Self <: Signals](x: Self) {
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setSignals(value: js.Any): Self = StObject.set(x, "signals", value.asInstanceOf[js.Any])
+    inline def setSignals(value: Any): Self = StObject.set(x, "signals", value.asInstanceOf[js.Any])
     
     inline def setSignalsUndefined: Self = StObject.set(x, "signals", js.undefined)
   }

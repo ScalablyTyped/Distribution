@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("recharts", "RadialBar")
 @js.native
-class RadialBar protected ()
-  extends Component[RadialBarProps, js.Object, js.Any] {
+open class RadialBar protected ()
+  extends Component[RadialBarProps, js.Object, Any] {
   def this(props: RadialBarProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: RadialBarProps, context: js.Any) = this()
+  def this(props: RadialBarProps, context: Any) = this()
 }

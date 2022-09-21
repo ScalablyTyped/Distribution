@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.babelTypes.mod._Node because Already inherited */ trait TSQualifiedName_
   extends StObject
      with BaseNode
-     with TSEntityName {
+     with TSEntityName
+     with TypeScript {
   
   var left: TSEntityName
   

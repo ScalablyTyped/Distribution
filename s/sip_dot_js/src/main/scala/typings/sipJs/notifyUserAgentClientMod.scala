@@ -12,7 +12,7 @@ object notifyUserAgentClientMod {
   
   @JSImport("sip.js/lib/core/user-agents/notify-user-agent-client", "NotifyUserAgentClient")
   @js.native
-  class NotifyUserAgentClient protected () extends UserAgentClient {
+  open class NotifyUserAgentClient protected () extends UserAgentClient {
     def this(dialog: SessionDialog) = this()
     def this(dialog: SessionDialog, delegate: OutgoingRequestDelegate) = this()
     def this(dialog: SessionDialog, delegate: Unit, options: RequestOptions) = this()

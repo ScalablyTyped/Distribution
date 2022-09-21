@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExportTableToPointInTimeInput extends StObject {
   
   /**
-    * Providing a ClientToken makes the call to ExportTableToPointInTimeInput idempotent, meaning that multiple identical calls have the same effect as one single call. A client token is valid for 8 hours after the first request that uses it is completed. After 8 hours, any request with the same client token is treated as a new request. Do not resubmit the same request with the same client token for more than 8 hours, or the result might not be idempotent. If you submit a request with the same client token but a change in other parameters within the 8-hour idempotency window, DynamoDB returns an IdempotentParameterMismatch exception.
+    * Providing a ClientToken makes the call to ExportTableToPointInTimeInput idempotent, meaning that multiple identical calls have the same effect as one single call. A client token is valid for 8 hours after the first request that uses it is completed. After 8 hours, any request with the same client token is treated as a new request. Do not resubmit the same request with the same client token for more than 8 hours, or the result might not be idempotent. If you submit a request with the same client token but a change in other parameters within the 8-hour idempotency window, DynamoDB returns an ImportConflictException.
     */
   var ClientToken: js.UndefOr[typings.awsSdk.dynamodbMod.ClientToken] = js.undefined
   
@@ -17,9 +17,9 @@ trait ExportTableToPointInTimeInput extends StObject {
   var ExportFormat: js.UndefOr[typings.awsSdk.dynamodbMod.ExportFormat] = js.undefined
   
   /**
-    * Time in the past from which to export table data. The table export will be a snapshot of the table's state at this point in time.
+    * Time in the past from which to export table data, counted in seconds from the start of the Unix epoch. The table export will be a snapshot of the table's state at this point in time.
     */
-  var ExportTime: js.UndefOr[typings.awsSdk.dynamodbMod.ExportTime] = js.undefined
+  var ExportTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the Amazon S3 bucket to export the snapshot to.
@@ -27,7 +27,7 @@ trait ExportTableToPointInTimeInput extends StObject {
   var S3Bucket: typings.awsSdk.dynamodbMod.S3Bucket
   
   /**
-    * The ID of the AWS account that owns the bucket the export will be stored in.
+    * The ID of the Amazon Web Services account that owns the bucket the export will be stored in.
     */
   var S3BucketOwner: js.UndefOr[typings.awsSdk.dynamodbMod.S3BucketOwner] = js.undefined
   
@@ -37,12 +37,12 @@ trait ExportTableToPointInTimeInput extends StObject {
   var S3Prefix: js.UndefOr[typings.awsSdk.dynamodbMod.S3Prefix] = js.undefined
   
   /**
-    * Type of encryption used on the bucket where export data will be stored. Valid values for S3SseAlgorithm are:    AES256 - server-side encryption with Amazon S3 managed keys    KMS - server-side encryption with AWS KMS managed keys  
+    * Type of encryption used on the bucket where export data will be stored. Valid values for S3SseAlgorithm are:    AES256 - server-side encryption with Amazon S3 managed keys    KMS - server-side encryption with KMS managed keys  
     */
   var S3SseAlgorithm: js.UndefOr[typings.awsSdk.dynamodbMod.S3SseAlgorithm] = js.undefined
   
   /**
-    * The ID of the AWS KMS managed key used to encrypt the S3 bucket where export data will be stored (if applicable).
+    * The ID of the KMS managed key used to encrypt the S3 bucket where export data will be stored (if applicable).
     */
   var S3SseKmsKeyId: js.UndefOr[typings.awsSdk.dynamodbMod.S3SseKmsKeyId] = js.undefined
   
@@ -68,7 +68,7 @@ object ExportTableToPointInTimeInput {
     
     inline def setExportFormatUndefined: Self = StObject.set(x, "ExportFormat", js.undefined)
     
-    inline def setExportTime(value: ExportTime): Self = StObject.set(x, "ExportTime", value.asInstanceOf[js.Any])
+    inline def setExportTime(value: js.Date): Self = StObject.set(x, "ExportTime", value.asInstanceOf[js.Any])
     
     inline def setExportTimeUndefined: Self = StObject.set(x, "ExportTime", js.undefined)
     

@@ -8,33 +8,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object filtersMod {
   
-  @JSImport("react-select/src/filters", JSImport.Namespace)
+  @JSImport("react-select/dist/declarations/src/filters", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createFilter(): js.Function2[/* option */ Option, /* rawInput */ String, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFilter")().asInstanceOf[js.Function2[/* option */ Option, /* rawInput */ String, Boolean]]
-  inline def createFilter(config: Config): js.Function2[/* option */ Option, /* rawInput */ String, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFilter")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* option */ Option, /* rawInput */ String, Boolean]]
+  inline def createFilter[Option](): js.Function2[/* option */ FilterOptionOption[Option], /* rawInput */ String, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFilter")().asInstanceOf[js.Function2[/* option */ FilterOptionOption[Option], /* rawInput */ String, Boolean]]
+  inline def createFilter[Option](config: Config[Option]): js.Function2[/* option */ FilterOptionOption[Option], /* rawInput */ String, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFilter")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* option */ FilterOptionOption[Option], /* rawInput */ String, Boolean]]
   
-  trait Config extends StObject {
+  trait Config[Option] extends StObject {
     
-    var ignoreAccents: js.UndefOr[Boolean] = js.undefined
+    val ignoreAccents: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreCase: js.UndefOr[Boolean] = js.undefined
+    val ignoreCase: js.UndefOr[Boolean] = js.undefined
     
-    var matchFrom: js.UndefOr[any | start] = js.undefined
+    val matchFrom: js.UndefOr[any | start] = js.undefined
     
-    var stringify: js.UndefOr[js.Function1[/* obj */ js.Any, String]] = js.undefined
+    val stringify: js.UndefOr[js.Function1[/* option */ FilterOptionOption[Option], String]] = js.undefined
     
-    var trim: js.UndefOr[Boolean] = js.undefined
+    val trim: js.UndefOr[Boolean] = js.undefined
   }
   object Config {
     
-    inline def apply(): Config = {
+    inline def apply[Option](): Config[Option] = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Config]
+      __obj.asInstanceOf[Config[Option]]
     }
     
-    extension [Self <: Config](x: Self) {
+    extension [Self <: Config[?], Option](x: Self & Config[Option]) {
       
       inline def setIgnoreAccents(value: Boolean): Self = StObject.set(x, "ignoreAccents", value.asInstanceOf[js.Any])
       
@@ -48,7 +48,7 @@ object filtersMod {
       
       inline def setMatchFromUndefined: Self = StObject.set(x, "matchFrom", js.undefined)
       
-      inline def setStringify(value: /* obj */ js.Any => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
+      inline def setStringify(value: /* option */ FilterOptionOption[Option] => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
       
       inline def setStringifyUndefined: Self = StObject.set(x, "stringify", js.undefined)
       
@@ -58,24 +58,24 @@ object filtersMod {
     }
   }
   
-  trait Option extends StObject {
+  trait FilterOptionOption[Option] extends StObject {
     
-    var data: js.Any
+    val data: Option
     
-    var label: String
+    val label: String
     
-    var value: String
+    val value: String
   }
-  object Option {
+  object FilterOptionOption {
     
-    inline def apply(data: js.Any, label: String, value: String): Option = {
+    inline def apply[Option](data: Option, label: String, value: String): FilterOptionOption[Option] = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Option]
+      __obj.asInstanceOf[FilterOptionOption[Option]]
     }
     
-    extension [Self <: Option](x: Self) {
+    extension [Self <: FilterOptionOption[?], Option](x: Self & FilterOptionOption[Option]) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Option): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       

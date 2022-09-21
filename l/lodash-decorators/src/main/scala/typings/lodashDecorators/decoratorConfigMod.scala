@@ -9,7 +9,7 @@ object decoratorConfigMod {
   
   @JSImport("lodash-decorators/factory/DecoratorConfig", "DecoratorConfig")
   @js.native
-  class DecoratorConfig protected () extends StObject {
+  open class DecoratorConfig protected () extends StObject {
     def this(execute: js.Function, applicator: Applicator) = this()
     def this(execute: js.Function, applicator: Applicator, options: DecoratorConfigOptions) = this()
     

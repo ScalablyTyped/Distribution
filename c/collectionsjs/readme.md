@@ -10,10 +10,10 @@ A Collection class for working with JavaScript arrays similiar to Laravel's coll
 | ------------------ | :-------------: |
 | Full name          | collectionsjs |
 | Keywords           | collections, arrays, laravel |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 1016 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 82.33333333333333 |
+| # stars            | 23.0 |
 
 ## Links
 - [Homepage](https://github.com/logaretm/collectionsjs#readme)

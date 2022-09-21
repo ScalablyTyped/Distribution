@@ -15,6 +15,15 @@ trait BaseMeta[ComponentType] extends StObject {
   var component: js.UndefOr[ComponentType] = js.undefined
   
   /**
+    * Manually set the id of a story, which in particular is useful if you want to rename stories without breaking permalinks.
+    *
+    * Storybook will prioritize the id over the title for ID generation, if provided, and will prioritize the story.storyName over the export key for display.
+    *
+    * @see [Sidebar and URLs](https://storybook.js.org/docs/react/configure/sidebar-and-urls#permalinking-to-stories)
+    */
+  var id: js.UndefOr[String] = js.undefined
+  
+  /**
     * Auxiliary subcomponents that are part of the stories.
     *
     * Used by addons for automatic prop table generation and display of other component metadata.
@@ -36,6 +45,8 @@ trait BaseMeta[ComponentType] extends StObject {
     *
     * Stories can be organized in a nested structure using "/" as a separator.
     *
+    * Since CSF 3.0 this property is optional.
+    *
     * @example
     * export default {
     *   ...
@@ -44,12 +55,12 @@ trait BaseMeta[ComponentType] extends StObject {
     *
     * @see [Story Hierarchy](https://storybook.js.org/docs/basics/writing-stories/#story-hierarchy)
     */
-  var title: String
+  var title: js.UndefOr[String] = js.undefined
 }
 object BaseMeta {
   
-  inline def apply[ComponentType](title: String): BaseMeta[ComponentType] = {
-    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
+  inline def apply[ComponentType](): BaseMeta[ComponentType] = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BaseMeta[ComponentType]]
   }
   
@@ -59,10 +70,16 @@ object BaseMeta {
     
     inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
     inline def setSubcomponents(value: Record[String, ComponentType]): Self = StObject.set(x, "subcomponents", value.asInstanceOf[js.Any])
     
     inline def setSubcomponentsUndefined: Self = StObject.set(x, "subcomponents", js.undefined)
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

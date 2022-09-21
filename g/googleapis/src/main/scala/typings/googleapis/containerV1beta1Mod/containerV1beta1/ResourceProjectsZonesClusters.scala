@@ -4,30 +4,17 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/container/v1beta1", "container_v1beta1.Resource$Projects$Zones$Clusters")
 @js.native
-class ResourceProjectsZonesClusters protected () extends StObject {
+open class ResourceProjectsZonesClusters protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
-  /**
-    * container.projects.zones.clusters.addons
-    * @desc Sets the addons for a specific cluster.
-    * @alias container.projects.zones.clusters.addons
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.clusterId Deprecated. The name of the cluster to upgrade. This field has been deprecated and replaced by the name field.
-    * @param {string} params.projectId Deprecated. The Google Developers Console [project ID or project number](https://support.google.com/cloud/answer/6158840). This field has been deprecated and replaced by the name field.
-    * @param {string} params.zone Deprecated. The name of the Google Compute Engine [zone](/compute/docs/zones#available) in which the cluster resides. This field has been deprecated and replaced by the name field.
-    * @param {().SetAddonsConfigRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def addons(): GaxiosPromise[SchemaOperation] = js.native
   def addons(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def addons(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -35,8 +22,8 @@ class ResourceProjectsZonesClusters protected () extends StObject {
   def addons(params: ParamsResourceProjectsZonesClustersAddons, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def addons(
     params: ParamsResourceProjectsZonesClustersAddons,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def addons(params: ParamsResourceProjectsZonesClustersAddons, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def addons(
@@ -44,22 +31,93 @@ class ResourceProjectsZonesClusters protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * container.projects.zones.clusters.completeIpRotation
-    * @desc Completes master IP rotation.
-    * @alias container.projects.zones.clusters.completeIpRotation
-    * @memberOf! ()
+    * Sets the addons for a specific cluster.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/container.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.clusterId Deprecated. The name of the cluster. This field has been deprecated and replaced by the name field.
-    * @param {string} params.projectId Deprecated. The Google Developers Console [project ID or project number](https://developers.google.com/console/help/new/#projectnumber). This field has been deprecated and replaced by the name field.
-    * @param {string} params.zone Deprecated. The name of the Google Compute Engine [zone](/compute/docs/zones#available) in which the cluster resides. This field has been deprecated and replaced by the name field.
-    * @param {().CompleteIPRotationRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const container = google.container('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await container.projects.zones.clusters.addons({
+    *     // Required. Deprecated. The name of the cluster to upgrade. This field has been deprecated and replaced by the name field.
+    *     clusterId: 'placeholder-value',
+    *     // Required. Deprecated. The Google Developers Console [project ID or project number](https://cloud.google.com/resource-manager/docs/creating-managing-projects). This field has been deprecated and replaced by the name field.
+    *     projectId: 'placeholder-value',
+    *     // Required. Deprecated. The name of the Google Compute Engine [zone](https://cloud.google.com/compute/docs/zones#available) in which the cluster resides. This field has been deprecated and replaced by the name field.
+    *     zone: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "addonsConfig": {},
+    *       //   "clusterId": "my_clusterId",
+    *       //   "name": "my_name",
+    *       //   "projectId": "my_projectId",
+    *       //   "zone": "my_zone"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clusterConditions": [],
+    *   //   "detail": "my_detail",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "location": "my_location",
+    *   //   "name": "my_name",
+    *   //   "nodepoolConditions": [],
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": {},
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def addons(params: ParamsResourceProjectsZonesClustersAddons, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def addons(
+    params: ParamsResourceProjectsZonesClustersAddons,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def completeIpRotation(): GaxiosPromise[SchemaOperation] = js.native
   def completeIpRotation(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def completeIpRotation(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -70,8 +128,8 @@ class ResourceProjectsZonesClusters protected () extends StObject {
   ): Unit = js.native
   def completeIpRotation(
     params: ParamsResourceProjectsZonesClustersCompleteiprotation,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def completeIpRotation(params: ParamsResourceProjectsZonesClustersCompleteiprotation, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def completeIpRotation(
@@ -79,31 +137,94 @@ class ResourceProjectsZonesClusters protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  /**
+    * Completes master IP rotation.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/container.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const container = google.container('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await container.projects.zones.clusters.completeIpRotation({
+    *     // Required. Deprecated. The name of the cluster. This field has been deprecated and replaced by the name field.
+    *     clusterId: 'placeholder-value',
+    *     // Required. Deprecated. The Google Developers Console [project ID or project number](https://cloud.google.com/resource-manager/docs/creating-managing-projects). This field has been deprecated and replaced by the name field.
+    *     projectId: 'placeholder-value',
+    *     // Required. Deprecated. The name of the Google Compute Engine [zone](https://cloud.google.com/compute/docs/zones#available) in which the cluster resides. This field has been deprecated and replaced by the name field.
+    *     zone: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "clusterId": "my_clusterId",
+    *       //   "name": "my_name",
+    *       //   "projectId": "my_projectId",
+    *       //   "zone": "my_zone"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clusterConditions": [],
+    *   //   "detail": "my_detail",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "location": "my_location",
+    *   //   "name": "my_name",
+    *   //   "nodepoolConditions": [],
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": {},
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def completeIpRotation(params: ParamsResourceProjectsZonesClustersCompleteiprotation, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def completeIpRotation(
+    params: ParamsResourceProjectsZonesClustersCompleteiprotation,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
   
   var context: APIRequestContext = js.native
   
-  /**
-    * container.projects.zones.clusters.create
-    * @desc Creates a cluster, consisting of the specified number and type of
-    * Google Compute Engine instances.  By default, the cluster is created in
-    * the project's [default
-    * network](/compute/docs/networks-and-firewalls#networks).  One firewall is
-    * added for the cluster. After cluster creation, the cluster creates routes
-    * for each node to allow the containers on that node to communicate with
-    * all other instances in the cluster.  Finally, an entry is added to the
-    * project's global metadata indicating which CIDR range is being used by
-    * the cluster.
-    * @alias container.projects.zones.clusters.create
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.projectId Deprecated. The Google Developers Console [project ID or project number](https://support.google.com/cloud/answer/6158840). This field has been deprecated and replaced by the parent field.
-    * @param {string} params.zone Deprecated. The name of the Google Compute Engine [zone](/compute/docs/zones#available) in which the cluster resides. This field has been deprecated and replaced by the parent field.
-    * @param {().CreateClusterRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def create(): GaxiosPromise[SchemaOperation] = js.native
   def create(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -111,8 +232,8 @@ class ResourceProjectsZonesClusters protected () extends StObject {
   def create(params: ParamsResourceProjectsZonesClustersCreate, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def create(
     params: ParamsResourceProjectsZonesClustersCreate,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def create(params: ParamsResourceProjectsZonesClustersCreate, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def create(
@@ -120,26 +241,90 @@ class ResourceProjectsZonesClusters protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * container.projects.zones.clusters.delete
-    * @desc Deletes the cluster, including the Kubernetes endpoint and all
-    * worker nodes.  Firewalls and routes that were configured during cluster
-    * creation are also deleted.  Other Google Compute Engine resources that
-    * might be in use by the cluster (e.g. load balancer resources) will not be
-    * deleted if they weren't present at the initial create time.
-    * @alias container.projects.zones.clusters.delete
-    * @memberOf! ()
+    * Creates a cluster, consisting of the specified number and type of Google Compute Engine instances. By default, the cluster is created in the project's [default network](https://cloud.google.com/compute/docs/networks-and-firewalls#networks). One firewall is added for the cluster. After cluster creation, the Kubelet creates routes for each node to allow the containers on that node to communicate with all other instances in the cluster. Finally, an entry is added to the project's global metadata indicating which CIDR range the cluster is using.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/container.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.clusterId Deprecated. The name of the cluster to delete. This field has been deprecated and replaced by the name field.
-    * @param {string=} params.name The name (project, location, cluster) of the cluster to delete. Specified in the format 'projects/x/locations/x/clusters/x'.
-    * @param {string} params.projectId Deprecated. The Google Developers Console [project ID or project number](https://support.google.com/cloud/answer/6158840). This field has been deprecated and replaced by the name field.
-    * @param {string} params.zone Deprecated. The name of the Google Compute Engine [zone](/compute/docs/zones#available) in which the cluster resides. This field has been deprecated and replaced by the name field.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const container = google.container('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await container.projects.zones.clusters.create({
+    *     // Required. Deprecated. The Google Developers Console [project ID or project number](https://cloud.google.com/resource-manager/docs/creating-managing-projects). This field has been deprecated and replaced by the parent field.
+    *     projectId: 'placeholder-value',
+    *     // Required. Deprecated. The name of the Google Compute Engine [zone](https://cloud.google.com/compute/docs/zones#available) in which the cluster resides. This field has been deprecated and replaced by the parent field.
+    *     zone: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "cluster": {},
+    *       //   "parent": "my_parent",
+    *       //   "projectId": "my_projectId",
+    *       //   "zone": "my_zone"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clusterConditions": [],
+    *   //   "detail": "my_detail",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "location": "my_location",
+    *   //   "name": "my_name",
+    *   //   "nodepoolConditions": [],
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": {},
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def create(params: ParamsResourceProjectsZonesClustersCreate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def create(
+    params: ParamsResourceProjectsZonesClustersCreate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -147,8 +332,8 @@ class ResourceProjectsZonesClusters protected () extends StObject {
   def delete(params: ParamsResourceProjectsZonesClustersDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
     params: ParamsResourceProjectsZonesClustersDelete,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def delete(params: ParamsResourceProjectsZonesClustersDelete, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(
@@ -156,22 +341,83 @@ class ResourceProjectsZonesClusters protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * container.projects.zones.clusters.get
-    * @desc Gets the details for a specific cluster.
-    * @alias container.projects.zones.clusters.get
-    * @memberOf! ()
+    * Deletes the cluster, including the Kubernetes endpoint and all worker nodes. Firewalls and routes that were configured during cluster creation are also deleted. Other Google Compute Engine resources that might be in use by the cluster, such as load balancer resources, are not deleted if they weren't present when the cluster was initially created.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/container.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.clusterId Deprecated. The name of the cluster to retrieve. This field has been deprecated and replaced by the name field.
-    * @param {string=} params.name The name (project, location, cluster) of the cluster to retrieve. Specified in the format 'projects/x/locations/x/clusters/x'.
-    * @param {string} params.projectId Deprecated. The Google Developers Console [project ID or project number](https://support.google.com/cloud/answer/6158840). This field has been deprecated and replaced by the name field.
-    * @param {string} params.zone Deprecated. The name of the Google Compute Engine [zone](/compute/docs/zones#available) in which the cluster resides. This field has been deprecated and replaced by the name field.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const container = google.container('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await container.projects.zones.clusters.delete({
+    *     // Required. Deprecated. The name of the cluster to delete. This field has been deprecated and replaced by the name field.
+    *     clusterId: 'placeholder-value',
+    *     // The name (project, location, cluster) of the cluster to delete. Specified in the format `projects/x/locations/x/clusters/x`.
+    *     name: 'placeholder-value',
+    *     // Required. Deprecated. The Google Developers Console [project ID or project number](https://cloud.google.com/resource-manager/docs/creating-managing-projects). This field has been deprecated and replaced by the name field.
+    *     projectId: 'placeholder-value',
+    *     // Required. Deprecated. The name of the Google Compute Engine [zone](https://cloud.google.com/compute/docs/zones#available) in which the cluster resides. This field has been deprecated and replaced by the name field.
+    *     zone: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clusterConditions": [],
+    *   //   "detail": "my_detail",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "location": "my_location",
+    *   //   "name": "my_name",
+    *   //   "nodepoolConditions": [],
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": {},
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def delete(params: ParamsResourceProjectsZonesClustersDelete, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def delete(
+    params: ParamsResourceProjectsZonesClustersDelete,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def get(): GaxiosPromise[SchemaCluster] = js.native
   def get(callback: BodyResponseCallback[SchemaCluster]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCluster] = js.native
@@ -179,8 +425,8 @@ class ResourceProjectsZonesClusters protected () extends StObject {
   def get(params: ParamsResourceProjectsZonesClustersGet, callback: BodyResponseCallback[SchemaCluster]): Unit = js.native
   def get(
     params: ParamsResourceProjectsZonesClustersGet,
-    options: BodyResponseCallback[SchemaCluster],
-    callback: BodyResponseCallback[SchemaCluster]
+    options: BodyResponseCallback[Readable | SchemaCluster],
+    callback: BodyResponseCallback[Readable | SchemaCluster]
   ): Unit = js.native
   def get(params: ParamsResourceProjectsZonesClustersGet, options: MethodOptions): GaxiosPromise[SchemaCluster] = js.native
   def get(
@@ -188,22 +434,139 @@ class ResourceProjectsZonesClusters protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCluster]
   ): Unit = js.native
-  
   /**
-    * container.projects.zones.clusters.legacyAbac
-    * @desc Enables or disables the ABAC authorization mechanism on a cluster.
-    * @alias container.projects.zones.clusters.legacyAbac
-    * @memberOf! ()
+    * Gets the details for a specific cluster.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/container.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.clusterId Deprecated. The name of the cluster to update. This field has been deprecated and replaced by the name field.
-    * @param {string} params.projectId Deprecated. The Google Developers Console [project ID or project number](https://support.google.com/cloud/answer/6158840). This field has been deprecated and replaced by the name field.
-    * @param {string} params.zone Deprecated. The name of the Google Compute Engine [zone](/compute/docs/zones#available) in which the cluster resides. This field has been deprecated and replaced by the name field.
-    * @param {().SetLegacyAbacRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const container = google.container('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await container.projects.zones.clusters.get({
+    *     // Required. Deprecated. The name of the cluster to retrieve. This field has been deprecated and replaced by the name field.
+    *     clusterId: 'placeholder-value',
+    *     // The name (project, location, cluster) of the cluster to retrieve. Specified in the format `projects/x/locations/x/clusters/x`.
+    *     name: 'placeholder-value',
+    *     // Required. Deprecated. The Google Developers Console [project ID or project number](https://cloud.google.com/resource-manager/docs/creating-managing-projects). This field has been deprecated and replaced by the name field.
+    *     projectId: 'placeholder-value',
+    *     // Required. Deprecated. The name of the Google Compute Engine [zone](https://cloud.google.com/compute/docs/zones#available) in which the cluster resides. This field has been deprecated and replaced by the name field.
+    *     zone: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "addonsConfig": {},
+    *   //   "authenticatorGroupsConfig": {},
+    *   //   "autopilot": {},
+    *   //   "autoscaling": {},
+    *   //   "binaryAuthorization": {},
+    *   //   "clusterIpv4Cidr": "my_clusterIpv4Cidr",
+    *   //   "clusterTelemetry": {},
+    *   //   "conditions": [],
+    *   //   "confidentialNodes": {},
+    *   //   "costManagementConfig": {},
+    *   //   "createTime": "my_createTime",
+    *   //   "currentMasterVersion": "my_currentMasterVersion",
+    *   //   "currentNodeCount": 0,
+    *   //   "currentNodeVersion": "my_currentNodeVersion",
+    *   //   "databaseEncryption": {},
+    *   //   "defaultMaxPodsConstraint": {},
+    *   //   "description": "my_description",
+    *   //   "enableKubernetesAlpha": false,
+    *   //   "enableTpu": false,
+    *   //   "endpoint": "my_endpoint",
+    *   //   "expireTime": "my_expireTime",
+    *   //   "id": "my_id",
+    *   //   "identityServiceConfig": {},
+    *   //   "initialClusterVersion": "my_initialClusterVersion",
+    *   //   "initialNodeCount": 0,
+    *   //   "instanceGroupUrls": [],
+    *   //   "ipAllocationPolicy": {},
+    *   //   "labelFingerprint": "my_labelFingerprint",
+    *   //   "legacyAbac": {},
+    *   //   "location": "my_location",
+    *   //   "locations": [],
+    *   //   "loggingConfig": {},
+    *   //   "loggingService": "my_loggingService",
+    *   //   "maintenancePolicy": {},
+    *   //   "master": {},
+    *   //   "masterAuth": {},
+    *   //   "masterAuthorizedNetworksConfig": {},
+    *   //   "masterIpv4CidrBlock": "my_masterIpv4CidrBlock",
+    *   //   "meshCertificates": {},
+    *   //   "monitoringConfig": {},
+    *   //   "monitoringService": "my_monitoringService",
+    *   //   "name": "my_name",
+    *   //   "network": "my_network",
+    *   //   "networkConfig": {},
+    *   //   "networkPolicy": {},
+    *   //   "nodeConfig": {},
+    *   //   "nodeIpv4CidrSize": 0,
+    *   //   "nodePoolAutoConfig": {},
+    *   //   "nodePoolDefaults": {},
+    *   //   "nodePools": [],
+    *   //   "notificationConfig": {},
+    *   //   "podSecurityPolicyConfig": {},
+    *   //   "privateCluster": false,
+    *   //   "privateClusterConfig": {},
+    *   //   "protectConfig": {},
+    *   //   "releaseChannel": {},
+    *   //   "resourceLabels": {},
+    *   //   "resourceUsageExportConfig": {},
+    *   //   "selfLink": "my_selfLink",
+    *   //   "servicesIpv4Cidr": "my_servicesIpv4Cidr",
+    *   //   "shieldedNodes": {},
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "subnetwork": "my_subnetwork",
+    *   //   "tpuConfig": {},
+    *   //   "tpuIpv4CidrBlock": "my_tpuIpv4CidrBlock",
+    *   //   "verticalPodAutoscaling": {},
+    *   //   "workloadAltsConfig": {},
+    *   //   "workloadCertificates": {},
+    *   //   "workloadIdentityConfig": {},
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def get(params: ParamsResourceProjectsZonesClustersGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceProjectsZonesClustersGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def legacyAbac(): GaxiosPromise[SchemaOperation] = js.native
   def legacyAbac(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def legacyAbac(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -214,8 +577,8 @@ class ResourceProjectsZonesClusters protected () extends StObject {
   ): Unit = js.native
   def legacyAbac(
     params: ParamsResourceProjectsZonesClustersLegacyabac,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def legacyAbac(params: ParamsResourceProjectsZonesClustersLegacyabac, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def legacyAbac(
@@ -223,22 +586,93 @@ class ResourceProjectsZonesClusters protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * container.projects.zones.clusters.list
-    * @desc Lists all clusters owned by a project in either the specified zone
-    * or all zones.
-    * @alias container.projects.zones.clusters.list
-    * @memberOf! ()
+    * Enables or disables the ABAC authorization mechanism on a cluster.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/container.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string=} params.parent The parent (project and location) where the clusters will be listed. Specified in the format 'projects/x/locations/x'. Location "-" matches all zones and all regions.
-    * @param {string} params.projectId Deprecated. The Google Developers Console [project ID or project number](https://support.google.com/cloud/answer/6158840). This field has been deprecated and replaced by the parent field.
-    * @param {string} params.zone Deprecated. The name of the Google Compute Engine [zone](/compute/docs/zones#available) in which the cluster resides, or "-" for all zones. This field has been deprecated and replaced by the parent field.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const container = google.container('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await container.projects.zones.clusters.legacyAbac({
+    *     // Required. Deprecated. The name of the cluster to update. This field has been deprecated and replaced by the name field.
+    *     clusterId: 'placeholder-value',
+    *     // Required. Deprecated. The Google Developers Console [project ID or project number](https://cloud.google.com/resource-manager/docs/creating-managing-projects). This field has been deprecated and replaced by the name field.
+    *     projectId: 'placeholder-value',
+    *     // Required. Deprecated. The name of the Google Compute Engine [zone](https://cloud.google.com/compute/docs/zones#available) in which the cluster resides. This field has been deprecated and replaced by the name field.
+    *     zone: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "clusterId": "my_clusterId",
+    *       //   "enabled": false,
+    *       //   "name": "my_name",
+    *       //   "projectId": "my_projectId",
+    *       //   "zone": "my_zone"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clusterConditions": [],
+    *   //   "detail": "my_detail",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "location": "my_location",
+    *   //   "name": "my_name",
+    *   //   "nodepoolConditions": [],
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": {},
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def legacyAbac(params: ParamsResourceProjectsZonesClustersLegacyabac, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def legacyAbac(
+    params: ParamsResourceProjectsZonesClustersLegacyabac,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaListClustersResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListClustersResponse]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListClustersResponse] = js.native
@@ -249,8 +683,8 @@ class ResourceProjectsZonesClusters protected () extends StObject {
   ): Unit = js.native
   def list(
     params: ParamsResourceProjectsZonesClustersList,
-    options: BodyResponseCallback[SchemaListClustersResponse],
-    callback: BodyResponseCallback[SchemaListClustersResponse]
+    options: BodyResponseCallback[Readable | SchemaListClustersResponse],
+    callback: BodyResponseCallback[Readable | SchemaListClustersResponse]
   ): Unit = js.native
   def list(params: ParamsResourceProjectsZonesClustersList, options: MethodOptions): GaxiosPromise[SchemaListClustersResponse] = js.native
   def list(
@@ -258,22 +692,68 @@ class ResourceProjectsZonesClusters protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListClustersResponse]
   ): Unit = js.native
-  
   /**
-    * container.projects.zones.clusters.locations
-    * @desc Sets the locations for a specific cluster.
-    * @alias container.projects.zones.clusters.locations
-    * @memberOf! ()
+    * Lists all clusters owned by a project in either the specified zone or all zones.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/container.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.clusterId Deprecated. The name of the cluster to upgrade. This field has been deprecated and replaced by the name field.
-    * @param {string} params.projectId Deprecated. The Google Developers Console [project ID or project number](https://support.google.com/cloud/answer/6158840). This field has been deprecated and replaced by the name field.
-    * @param {string} params.zone Deprecated. The name of the Google Compute Engine [zone](/compute/docs/zones#available) in which the cluster resides. This field has been deprecated and replaced by the name field.
-    * @param {().SetLocationsRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const container = google.container('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await container.projects.zones.clusters.list({
+    *     // The parent (project and location) where the clusters will be listed. Specified in the format `projects/x/locations/x`. Location "-" matches all zones and all regions.
+    *     parent: 'placeholder-value',
+    *     // Required. Deprecated. The Google Developers Console [project ID or project number](https://cloud.google.com/resource-manager/docs/creating-managing-projects). This field has been deprecated and replaced by the parent field.
+    *     projectId: 'placeholder-value',
+    *     // Required. Deprecated. The name of the Google Compute Engine [zone](https://cloud.google.com/compute/docs/zones#available) in which the cluster resides, or "-" for all zones. This field has been deprecated and replaced by the parent field.
+    *     zone: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clusters": [],
+    *   //   "missingZones": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def list(params: ParamsResourceProjectsZonesClustersList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceProjectsZonesClustersList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def locations(): GaxiosPromise[SchemaOperation] = js.native
   def locations(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def locations(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -284,8 +764,8 @@ class ResourceProjectsZonesClusters protected () extends StObject {
   ): Unit = js.native
   def locations(
     params: ParamsResourceProjectsZonesClustersLocations,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def locations(params: ParamsResourceProjectsZonesClustersLocations, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def locations(
@@ -293,22 +773,93 @@ class ResourceProjectsZonesClusters protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * container.projects.zones.clusters.logging
-    * @desc Sets the logging service for a specific cluster.
-    * @alias container.projects.zones.clusters.logging
-    * @memberOf! ()
+    * Sets the locations for a specific cluster. Deprecated. Use [projects.locations.clusters.update](https://cloud.google.com/kubernetes-engine/docs/reference/rest/v1beta1/projects.locations.clusters/update) instead.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/container.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.clusterId Deprecated. The name of the cluster to upgrade. This field has been deprecated and replaced by the name field.
-    * @param {string} params.projectId Deprecated. The Google Developers Console [project ID or project number](https://support.google.com/cloud/answer/6158840). This field has been deprecated and replaced by the name field.
-    * @param {string} params.zone Deprecated. The name of the Google Compute Engine [zone](/compute/docs/zones#available) in which the cluster resides. This field has been deprecated and replaced by the name field.
-    * @param {().SetLoggingServiceRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const container = google.container('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await container.projects.zones.clusters.locations({
+    *     // Required. Deprecated. The name of the cluster to upgrade. This field has been deprecated and replaced by the name field.
+    *     clusterId: 'placeholder-value',
+    *     // Required. Deprecated. The Google Developers Console [project ID or project number](https://cloud.google.com/resource-manager/docs/creating-managing-projects). This field has been deprecated and replaced by the name field.
+    *     projectId: 'placeholder-value',
+    *     // Required. Deprecated. The name of the Google Compute Engine [zone](https://cloud.google.com/compute/docs/zones#available) in which the cluster resides. This field has been deprecated and replaced by the name field.
+    *     zone: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "clusterId": "my_clusterId",
+    *       //   "locations": [],
+    *       //   "name": "my_name",
+    *       //   "projectId": "my_projectId",
+    *       //   "zone": "my_zone"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clusterConditions": [],
+    *   //   "detail": "my_detail",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "location": "my_location",
+    *   //   "name": "my_name",
+    *   //   "nodepoolConditions": [],
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": {},
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def locations(params: ParamsResourceProjectsZonesClustersLocations, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def locations(
+    params: ParamsResourceProjectsZonesClustersLocations,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def logging(): GaxiosPromise[SchemaOperation] = js.native
   def logging(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def logging(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -319,8 +870,8 @@ class ResourceProjectsZonesClusters protected () extends StObject {
   ): Unit = js.native
   def logging(
     params: ParamsResourceProjectsZonesClustersLogging,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def logging(params: ParamsResourceProjectsZonesClustersLogging, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def logging(
@@ -328,22 +879,93 @@ class ResourceProjectsZonesClusters protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * container.projects.zones.clusters.master
-    * @desc Updates the master for a specific cluster.
-    * @alias container.projects.zones.clusters.master
-    * @memberOf! ()
+    * Sets the logging service for a specific cluster.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/container.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.clusterId Deprecated. The name of the cluster to upgrade. This field has been deprecated and replaced by the name field.
-    * @param {string} params.projectId Deprecated. The Google Developers Console [project ID or project number](https://support.google.com/cloud/answer/6158840). This field has been deprecated and replaced by the name field.
-    * @param {string} params.zone Deprecated. The name of the Google Compute Engine [zone](/compute/docs/zones#available) in which the cluster resides. This field has been deprecated and replaced by the name field.
-    * @param {().UpdateMasterRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const container = google.container('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await container.projects.zones.clusters.logging({
+    *     // Required. Deprecated. The name of the cluster to upgrade. This field has been deprecated and replaced by the name field.
+    *     clusterId: 'placeholder-value',
+    *     // Required. Deprecated. The Google Developers Console [project ID or project number](https://cloud.google.com/resource-manager/docs/creating-managing-projects). This field has been deprecated and replaced by the name field.
+    *     projectId: 'placeholder-value',
+    *     // Required. Deprecated. The name of the Google Compute Engine [zone](https://cloud.google.com/compute/docs/zones#available) in which the cluster resides. This field has been deprecated and replaced by the name field.
+    *     zone: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "clusterId": "my_clusterId",
+    *       //   "loggingService": "my_loggingService",
+    *       //   "name": "my_name",
+    *       //   "projectId": "my_projectId",
+    *       //   "zone": "my_zone"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clusterConditions": [],
+    *   //   "detail": "my_detail",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "location": "my_location",
+    *   //   "name": "my_name",
+    *   //   "nodepoolConditions": [],
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": {},
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def logging(params: ParamsResourceProjectsZonesClustersLogging, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def logging(
+    params: ParamsResourceProjectsZonesClustersLogging,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def master(): GaxiosPromise[SchemaOperation] = js.native
   def master(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def master(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -351,8 +973,8 @@ class ResourceProjectsZonesClusters protected () extends StObject {
   def master(params: ParamsResourceProjectsZonesClustersMaster, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def master(
     params: ParamsResourceProjectsZonesClustersMaster,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def master(params: ParamsResourceProjectsZonesClustersMaster, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def master(
@@ -360,22 +982,93 @@ class ResourceProjectsZonesClusters protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * container.projects.zones.clusters.monitoring
-    * @desc Sets the monitoring service for a specific cluster.
-    * @alias container.projects.zones.clusters.monitoring
-    * @memberOf! ()
+    * Updates the master for a specific cluster.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/container.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.clusterId Deprecated. The name of the cluster to upgrade. This field has been deprecated and replaced by the name field.
-    * @param {string} params.projectId Deprecated. The Google Developers Console [project ID or project number](https://support.google.com/cloud/answer/6158840). This field has been deprecated and replaced by the name field.
-    * @param {string} params.zone Deprecated. The name of the Google Compute Engine [zone](/compute/docs/zones#available) in which the cluster resides. This field has been deprecated and replaced by the name field.
-    * @param {().SetMonitoringServiceRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const container = google.container('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await container.projects.zones.clusters.master({
+    *     // Required. Deprecated. The name of the cluster to upgrade. This field has been deprecated and replaced by the name field.
+    *     clusterId: 'placeholder-value',
+    *     // Required. Deprecated. The Google Developers Console [project ID or project number](https://cloud.google.com/resource-manager/docs/creating-managing-projects). This field has been deprecated and replaced by the name field.
+    *     projectId: 'placeholder-value',
+    *     // Required. Deprecated. The name of the Google Compute Engine [zone](https://cloud.google.com/compute/docs/zones#available) in which the cluster resides. This field has been deprecated and replaced by the name field.
+    *     zone: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "clusterId": "my_clusterId",
+    *       //   "masterVersion": "my_masterVersion",
+    *       //   "name": "my_name",
+    *       //   "projectId": "my_projectId",
+    *       //   "zone": "my_zone"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clusterConditions": [],
+    *   //   "detail": "my_detail",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "location": "my_location",
+    *   //   "name": "my_name",
+    *   //   "nodepoolConditions": [],
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": {},
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def master(params: ParamsResourceProjectsZonesClustersMaster, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def master(
+    params: ParamsResourceProjectsZonesClustersMaster,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def monitoring(): GaxiosPromise[SchemaOperation] = js.native
   def monitoring(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def monitoring(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -386,8 +1079,8 @@ class ResourceProjectsZonesClusters protected () extends StObject {
   ): Unit = js.native
   def monitoring(
     params: ParamsResourceProjectsZonesClustersMonitoring,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def monitoring(params: ParamsResourceProjectsZonesClustersMonitoring, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def monitoring(
@@ -395,24 +1088,95 @@ class ResourceProjectsZonesClusters protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
+  /**
+    * Sets the monitoring service for a specific cluster.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/container.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const container = google.container('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await container.projects.zones.clusters.monitoring({
+    *     // Required. Deprecated. The name of the cluster to upgrade. This field has been deprecated and replaced by the name field.
+    *     clusterId: 'placeholder-value',
+    *     // Required. Deprecated. The Google Developers Console [project ID or project number](https://cloud.google.com/resource-manager/docs/creating-managing-projects). This field has been deprecated and replaced by the name field.
+    *     projectId: 'placeholder-value',
+    *     // Required. Deprecated. The name of the Google Compute Engine [zone](https://cloud.google.com/compute/docs/zones#available) in which the cluster resides. This field has been deprecated and replaced by the name field.
+    *     zone: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "clusterId": "my_clusterId",
+    *       //   "monitoringService": "my_monitoringService",
+    *       //   "name": "my_name",
+    *       //   "projectId": "my_projectId",
+    *       //   "zone": "my_zone"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clusterConditions": [],
+    *   //   "detail": "my_detail",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "location": "my_location",
+    *   //   "name": "my_name",
+    *   //   "nodepoolConditions": [],
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": {},
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def monitoring(params: ParamsResourceProjectsZonesClustersMonitoring, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def monitoring(
+    params: ParamsResourceProjectsZonesClustersMonitoring,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
   
   var nodePools: ResourceProjectsZonesClustersNodepools = js.native
   
-  /**
-    * container.projects.zones.clusters.resourceLabels
-    * @desc Sets labels on a cluster.
-    * @alias container.projects.zones.clusters.resourceLabels
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.clusterId Deprecated. The name of the cluster. This field has been deprecated and replaced by the name field.
-    * @param {string} params.projectId Deprecated. The Google Developers Console [project ID or project number](https://developers.google.com/console/help/new/#projectnumber). This field has been deprecated and replaced by the name field.
-    * @param {string} params.zone Deprecated. The name of the Google Compute Engine [zone](/compute/docs/zones#available) in which the cluster resides. This field has been deprecated and replaced by the name field.
-    * @param {().SetLabelsRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def resourceLabels(): GaxiosPromise[SchemaOperation] = js.native
   def resourceLabels(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def resourceLabels(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -423,8 +1187,8 @@ class ResourceProjectsZonesClusters protected () extends StObject {
   ): Unit = js.native
   def resourceLabels(
     params: ParamsResourceProjectsZonesClustersResourcelabels,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def resourceLabels(params: ParamsResourceProjectsZonesClustersResourcelabels, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def resourceLabels(
@@ -432,22 +1196,94 @@ class ResourceProjectsZonesClusters protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * container.projects.zones.clusters.setMaintenancePolicy
-    * @desc Sets the maintenance policy for a cluster.
-    * @alias container.projects.zones.clusters.setMaintenancePolicy
-    * @memberOf! ()
+    * Sets labels on a cluster.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/container.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.clusterId The name of the cluster to update.
-    * @param {string} params.projectId The Google Developers Console [project ID or project number](https://support.google.com/cloud/answer/6158840).
-    * @param {string} params.zone The name of the Google Compute Engine [zone](/compute/docs/zones#available) in which the cluster resides.
-    * @param {().SetMaintenancePolicyRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const container = google.container('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await container.projects.zones.clusters.resourceLabels({
+    *     // Required. Deprecated. The name of the cluster. This field has been deprecated and replaced by the name field.
+    *     clusterId: 'placeholder-value',
+    *     // Required. Deprecated. The Google Developers Console [project ID or project number](https://cloud.google.com/resource-manager/docs/creating-managing-projects). This field has been deprecated and replaced by the name field.
+    *     projectId: 'placeholder-value',
+    *     // Required. Deprecated. The name of the Google Compute Engine [zone](https://cloud.google.com/compute/docs/zones#available) in which the cluster resides. This field has been deprecated and replaced by the name field.
+    *     zone: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "clusterId": "my_clusterId",
+    *       //   "labelFingerprint": "my_labelFingerprint",
+    *       //   "name": "my_name",
+    *       //   "projectId": "my_projectId",
+    *       //   "resourceLabels": {},
+    *       //   "zone": "my_zone"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clusterConditions": [],
+    *   //   "detail": "my_detail",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "location": "my_location",
+    *   //   "name": "my_name",
+    *   //   "nodepoolConditions": [],
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": {},
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def resourceLabels(params: ParamsResourceProjectsZonesClustersResourcelabels, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def resourceLabels(
+    params: ParamsResourceProjectsZonesClustersResourcelabels,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def setMaintenancePolicy(): GaxiosPromise[SchemaOperation] = js.native
   def setMaintenancePolicy(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setMaintenancePolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -458,8 +1294,8 @@ class ResourceProjectsZonesClusters protected () extends StObject {
   ): Unit = js.native
   def setMaintenancePolicy(
     params: ParamsResourceProjectsZonesClustersSetmaintenancepolicy,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def setMaintenancePolicy(params: ParamsResourceProjectsZonesClustersSetmaintenancepolicy, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setMaintenancePolicy(
@@ -467,25 +1303,93 @@ class ResourceProjectsZonesClusters protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * container.projects.zones.clusters.setMasterAuth
-    * @desc Used to set master auth materials. Currently supports :- Changing
-    * the admin password for a specific cluster. This can be either via
-    * password generation or explicitly set. Modify basic_auth.csv and reset
-    * the K8S API server.
-    * @alias container.projects.zones.clusters.setMasterAuth
-    * @memberOf! ()
+    * Sets the maintenance policy for a cluster.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/container.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.clusterId Deprecated. The name of the cluster to upgrade. This field has been deprecated and replaced by the name field.
-    * @param {string} params.projectId Deprecated. The Google Developers Console [project ID or project number](https://support.google.com/cloud/answer/6158840). This field has been deprecated and replaced by the name field.
-    * @param {string} params.zone Deprecated. The name of the Google Compute Engine [zone](/compute/docs/zones#available) in which the cluster resides. This field has been deprecated and replaced by the name field.
-    * @param {().SetMasterAuthRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const container = google.container('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await container.projects.zones.clusters.setMaintenancePolicy({
+    *     // Required. The name of the cluster to update.
+    *     clusterId: 'placeholder-value',
+    *     // Required. The Google Developers Console [project ID or project number](https://cloud.google.com/resource-manager/docs/creating-managing-projects).
+    *     projectId: 'placeholder-value',
+    *     // Required. The name of the Google Compute Engine [zone](https://cloud.google.com/compute/docs/zones#available) in which the cluster resides.
+    *     zone: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "clusterId": "my_clusterId",
+    *       //   "maintenancePolicy": {},
+    *       //   "name": "my_name",
+    *       //   "projectId": "my_projectId",
+    *       //   "zone": "my_zone"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clusterConditions": [],
+    *   //   "detail": "my_detail",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "location": "my_location",
+    *   //   "name": "my_name",
+    *   //   "nodepoolConditions": [],
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": {},
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def setMaintenancePolicy(params: ParamsResourceProjectsZonesClustersSetmaintenancepolicy, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def setMaintenancePolicy(
+    params: ParamsResourceProjectsZonesClustersSetmaintenancepolicy,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def setMasterAuth(): GaxiosPromise[SchemaOperation] = js.native
   def setMasterAuth(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setMasterAuth(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -496,8 +1400,8 @@ class ResourceProjectsZonesClusters protected () extends StObject {
   ): Unit = js.native
   def setMasterAuth(
     params: ParamsResourceProjectsZonesClustersSetmasterauth,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def setMasterAuth(params: ParamsResourceProjectsZonesClustersSetmasterauth, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setMasterAuth(
@@ -505,22 +1409,94 @@ class ResourceProjectsZonesClusters protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * container.projects.zones.clusters.setNetworkPolicy
-    * @desc Enables/Disables Network Policy for a cluster.
-    * @alias container.projects.zones.clusters.setNetworkPolicy
-    * @memberOf! ()
+    * Sets master auth materials. Currently supports changing the admin password or a specific cluster, either via password generation or explicitly setting the password.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/container.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.clusterId Deprecated. The name of the cluster. This field has been deprecated and replaced by the name field.
-    * @param {string} params.projectId Deprecated. The Google Developers Console [project ID or project number](https://developers.google.com/console/help/new/#projectnumber). This field has been deprecated and replaced by the name field.
-    * @param {string} params.zone Deprecated. The name of the Google Compute Engine [zone](/compute/docs/zones#available) in which the cluster resides. This field has been deprecated and replaced by the name field.
-    * @param {().SetNetworkPolicyRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const container = google.container('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await container.projects.zones.clusters.setMasterAuth({
+    *     // Required. Deprecated. The name of the cluster to upgrade. This field has been deprecated and replaced by the name field.
+    *     clusterId: 'placeholder-value',
+    *     // Required. Deprecated. The Google Developers Console [project ID or project number](https://cloud.google.com/resource-manager/docs/creating-managing-projects). This field has been deprecated and replaced by the name field.
+    *     projectId: 'placeholder-value',
+    *     // Required. Deprecated. The name of the Google Compute Engine [zone](https://cloud.google.com/compute/docs/zones#available) in which the cluster resides. This field has been deprecated and replaced by the name field.
+    *     zone: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "action": "my_action",
+    *       //   "clusterId": "my_clusterId",
+    *       //   "name": "my_name",
+    *       //   "projectId": "my_projectId",
+    *       //   "update": {},
+    *       //   "zone": "my_zone"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clusterConditions": [],
+    *   //   "detail": "my_detail",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "location": "my_location",
+    *   //   "name": "my_name",
+    *   //   "nodepoolConditions": [],
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": {},
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def setMasterAuth(params: ParamsResourceProjectsZonesClustersSetmasterauth, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def setMasterAuth(
+    params: ParamsResourceProjectsZonesClustersSetmasterauth,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def setNetworkPolicy(): GaxiosPromise[SchemaOperation] = js.native
   def setNetworkPolicy(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setNetworkPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -531,8 +1507,8 @@ class ResourceProjectsZonesClusters protected () extends StObject {
   ): Unit = js.native
   def setNetworkPolicy(
     params: ParamsResourceProjectsZonesClustersSetnetworkpolicy,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def setNetworkPolicy(params: ParamsResourceProjectsZonesClustersSetnetworkpolicy, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setNetworkPolicy(
@@ -540,22 +1516,93 @@ class ResourceProjectsZonesClusters protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * container.projects.zones.clusters.startIpRotation
-    * @desc Start master IP rotation.
-    * @alias container.projects.zones.clusters.startIpRotation
-    * @memberOf! ()
+    * Enables or disables Network Policy for a cluster.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/container.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.clusterId Deprecated. The name of the cluster. This field has been deprecated and replaced by the name field.
-    * @param {string} params.projectId Deprecated. The Google Developers Console [project ID or project number](https://developers.google.com/console/help/new/#projectnumber). This field has been deprecated and replaced by the name field.
-    * @param {string} params.zone Deprecated. The name of the Google Compute Engine [zone](/compute/docs/zones#available) in which the cluster resides. This field has been deprecated and replaced by the name field.
-    * @param {().StartIPRotationRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const container = google.container('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await container.projects.zones.clusters.setNetworkPolicy({
+    *     // Required. Deprecated. The name of the cluster. This field has been deprecated and replaced by the name field.
+    *     clusterId: 'placeholder-value',
+    *     // Required. Deprecated. The Google Developers Console [project ID or project number](https://cloud.google.com/resource-manager/docs/creating-managing-projects). This field has been deprecated and replaced by the name field.
+    *     projectId: 'placeholder-value',
+    *     // Required. Deprecated. The name of the Google Compute Engine [zone](https://cloud.google.com/compute/docs/zones#available) in which the cluster resides. This field has been deprecated and replaced by the name field.
+    *     zone: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "clusterId": "my_clusterId",
+    *       //   "name": "my_name",
+    *       //   "networkPolicy": {},
+    *       //   "projectId": "my_projectId",
+    *       //   "zone": "my_zone"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clusterConditions": [],
+    *   //   "detail": "my_detail",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "location": "my_location",
+    *   //   "name": "my_name",
+    *   //   "nodepoolConditions": [],
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": {},
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def setNetworkPolicy(params: ParamsResourceProjectsZonesClustersSetnetworkpolicy, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def setNetworkPolicy(
+    params: ParamsResourceProjectsZonesClustersSetnetworkpolicy,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def startIpRotation(): GaxiosPromise[SchemaOperation] = js.native
   def startIpRotation(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def startIpRotation(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -566,8 +1613,8 @@ class ResourceProjectsZonesClusters protected () extends StObject {
   ): Unit = js.native
   def startIpRotation(
     params: ParamsResourceProjectsZonesClustersStartiprotation,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def startIpRotation(params: ParamsResourceProjectsZonesClustersStartiprotation, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def startIpRotation(
@@ -575,22 +1622,93 @@ class ResourceProjectsZonesClusters protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * container.projects.zones.clusters.update
-    * @desc Updates the settings for a specific cluster.
-    * @alias container.projects.zones.clusters.update
-    * @memberOf! ()
+    * Starts master IP rotation.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/container.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.clusterId Deprecated. The name of the cluster to upgrade. This field has been deprecated and replaced by the name field.
-    * @param {string} params.projectId Deprecated. The Google Developers Console [project ID or project number](https://support.google.com/cloud/answer/6158840). This field has been deprecated and replaced by the name field.
-    * @param {string} params.zone Deprecated. The name of the Google Compute Engine [zone](/compute/docs/zones#available) in which the cluster resides. This field has been deprecated and replaced by the name field.
-    * @param {().UpdateClusterRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const container = google.container('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await container.projects.zones.clusters.startIpRotation({
+    *     // Required. Deprecated. The name of the cluster. This field has been deprecated and replaced by the name field.
+    *     clusterId: 'placeholder-value',
+    *     // Required. Deprecated. The Google Developers Console [project ID or project number](https://cloud.google.com/resource-manager/docs/creating-managing-projects). This field has been deprecated and replaced by the name field.
+    *     projectId: 'placeholder-value',
+    *     // Required. Deprecated. The name of the Google Compute Engine [zone](https://cloud.google.com/compute/docs/zones#available) in which the cluster resides. This field has been deprecated and replaced by the name field.
+    *     zone: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "clusterId": "my_clusterId",
+    *       //   "name": "my_name",
+    *       //   "projectId": "my_projectId",
+    *       //   "rotateCredentials": false,
+    *       //   "zone": "my_zone"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clusterConditions": [],
+    *   //   "detail": "my_detail",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "location": "my_location",
+    *   //   "name": "my_name",
+    *   //   "nodepoolConditions": [],
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": {},
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def startIpRotation(params: ParamsResourceProjectsZonesClustersStartiprotation, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def startIpRotation(
+    params: ParamsResourceProjectsZonesClustersStartiprotation,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def update(): GaxiosPromise[SchemaOperation] = js.native
   def update(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -598,13 +1716,99 @@ class ResourceProjectsZonesClusters protected () extends StObject {
   def update(params: ParamsResourceProjectsZonesClustersUpdate, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def update(
     params: ParamsResourceProjectsZonesClustersUpdate,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def update(params: ParamsResourceProjectsZonesClustersUpdate, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def update(
     params: ParamsResourceProjectsZonesClustersUpdate,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
+  ): Unit = js.native
+  /**
+    * Updates the settings for a specific cluster.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/container.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const container = google.container('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await container.projects.zones.clusters.update({
+    *     // Required. Deprecated. The name of the cluster to upgrade. This field has been deprecated and replaced by the name field.
+    *     clusterId: 'placeholder-value',
+    *     // Required. Deprecated. The Google Developers Console [project ID or project number](https://cloud.google.com/resource-manager/docs/creating-managing-projects). This field has been deprecated and replaced by the name field.
+    *     projectId: 'placeholder-value',
+    *     // Required. Deprecated. The name of the Google Compute Engine [zone](https://cloud.google.com/compute/docs/zones#available) in which the cluster resides. This field has been deprecated and replaced by the name field.
+    *     zone: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "clusterId": "my_clusterId",
+    *       //   "name": "my_name",
+    *       //   "projectId": "my_projectId",
+    *       //   "update": {},
+    *       //   "zone": "my_zone"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clusterConditions": [],
+    *   //   "detail": "my_detail",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "location": "my_location",
+    *   //   "name": "my_name",
+    *   //   "nodepoolConditions": [],
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": {},
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def update(params: ParamsResourceProjectsZonesClustersUpdate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def update(
+    params: ParamsResourceProjectsZonesClustersUpdate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

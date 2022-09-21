@@ -2,8 +2,8 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.FC
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,12 +13,12 @@ object dividerDividerMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/elements/Divider/Divider", JSImport.Default)
   @js.native
-  val default: StatelessComponent[DividerProps] = js.native
+  val default: FC[DividerProps] = js.native
   
   trait DividerProps
     extends StObject
        with StrictDividerProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object DividerProps {
     
     inline def apply(): DividerProps = {
@@ -30,7 +30,7 @@ object dividerDividerMod extends Shortcut {
   trait StrictDividerProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -71,7 +71,7 @@ object dividerDividerMod extends Shortcut {
     
     extension [Self <: StrictDividerProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -117,8 +117,8 @@ object dividerDividerMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[DividerProps]
+  type _To = FC[DividerProps]
   
   /* This means you don't have to write `default`, but can instead just say `dividerDividerMod.foo` */
-  override def _to: StatelessComponent[DividerProps] = default
+  override def _to: FC[DividerProps] = default
 }

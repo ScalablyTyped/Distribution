@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("webcola", "Module")
 @js.native
-class Module protected ()
+open class Module protected ()
   extends typings.webcola.powergraphMod.Module {
   def this(id: Double) = this()
   def this(id: Double, outgoing: typings.webcola.powergraphMod.LinkSets) = this()
@@ -35,54 +35,54 @@ class Module protected ()
     incoming: typings.webcola.powergraphMod.LinkSets,
     children: typings.webcola.powergraphMod.ModuleSet
   ) = this()
-  def this(id: Double, outgoing: Unit, incoming: Unit, children: Unit, definition: js.Any) = this()
+  def this(id: Double, outgoing: Unit, incoming: Unit, children: Unit, definition: Any) = this()
   def this(
     id: Double,
     outgoing: Unit,
     incoming: Unit,
     children: typings.webcola.powergraphMod.ModuleSet,
-    definition: js.Any
+    definition: Any
   ) = this()
   def this(
     id: Double,
     outgoing: Unit,
     incoming: typings.webcola.powergraphMod.LinkSets,
     children: Unit,
-    definition: js.Any
+    definition: Any
   ) = this()
   def this(
     id: Double,
     outgoing: Unit,
     incoming: typings.webcola.powergraphMod.LinkSets,
     children: typings.webcola.powergraphMod.ModuleSet,
-    definition: js.Any
+    definition: Any
   ) = this()
   def this(
     id: Double,
     outgoing: typings.webcola.powergraphMod.LinkSets,
     incoming: Unit,
     children: Unit,
-    definition: js.Any
+    definition: Any
   ) = this()
   def this(
     id: Double,
     outgoing: typings.webcola.powergraphMod.LinkSets,
     incoming: Unit,
     children: typings.webcola.powergraphMod.ModuleSet,
-    definition: js.Any
+    definition: Any
   ) = this()
   def this(
     id: Double,
     outgoing: typings.webcola.powergraphMod.LinkSets,
     incoming: typings.webcola.powergraphMod.LinkSets,
     children: Unit,
-    definition: js.Any
+    definition: Any
   ) = this()
   def this(
     id: Double,
     outgoing: typings.webcola.powergraphMod.LinkSets,
     incoming: typings.webcola.powergraphMod.LinkSets,
     children: typings.webcola.powergraphMod.ModuleSet,
-    definition: js.Any
+    definition: Any
   ) = this()
 }

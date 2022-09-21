@@ -12,12 +12,12 @@ trait DBCluster extends StObject {
   var ActivityStreamKinesisStreamName: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS KMS key identifier used for encrypting messages in the database activity stream.
+    * The Amazon Web Services KMS key identifier used for encrypting messages in the database activity stream. The Amazon Web Services KMS key identifier is the key ARN, key ID, alias ARN, or alias name for the KMS key.
     */
   var ActivityStreamKmsKeyId: js.UndefOr[String] = js.undefined
   
   /**
-    * The mode of the database activity stream. Database events such as a change or access generate an activity stream event. The database session can handle these events either synchronously or asynchronously. 
+    * The mode of the database activity stream. Database events such as a change or access generate an activity stream event. The database session can handle these events either synchronously or asynchronously.
     */
   var ActivityStreamMode: js.UndefOr[typings.awsSdk.rdsMod.ActivityStreamMode] = js.undefined
   
@@ -32,9 +32,19 @@ trait DBCluster extends StObject {
   var AllocatedStorage: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
-    * Provides a list of the AWS Identity and Access Management (IAM) roles that are associated with the DB cluster. IAM roles that are associated with a DB cluster grant permission for the DB cluster to access other AWS services on your behalf.
+    * Provides a list of the Amazon Web Services Identity and Access Management (IAM) roles that are associated with the DB cluster. IAM roles that are associated with a DB cluster grant permission for the DB cluster to access other Amazon Web Services on your behalf.
     */
   var AssociatedRoles: js.UndefOr[DBClusterRoles] = js.undefined
+  
+  /**
+    * A value that indicates that minor version patches are applied automatically. This setting is only for non-Aurora Multi-AZ DB clusters.
+    */
+  var AutoMinorVersionUpgrade: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * The time when a stopped DB cluster is restarted automatically.
+    */
+  var AutomaticRestartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Provides the list of Availability Zones (AZs) where instances in the DB cluster can be created.
@@ -57,7 +67,7 @@ trait DBCluster extends StObject {
   var BackupRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
-    * The current capacity of an Aurora Serverless DB cluster. The capacity is 0 (zero) when the cluster is paused. For more information about Aurora Serverless, see Using Amazon Aurora Serverless in the Amazon Aurora User Guide.
+    * The current capacity of an Aurora Serverless v1 DB cluster. The capacity is 0 (zero) when the cluster is paused. For more information about Aurora Serverless v1, see Using Amazon Aurora Serverless v1 in the Amazon Aurora User Guide.
     */
   var Capacity: js.UndefOr[IntegerOptional] = js.undefined
   
@@ -74,7 +84,7 @@ trait DBCluster extends StObject {
   /**
     * Specifies the time when the DB cluster was created, in Universal Coordinated Time (UTC).
     */
-  var ClusterCreateTime: js.UndefOr[TStamp] = js.undefined
+  var ClusterCreateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Specifies whether tags are copied from the DB cluster to snapshots of the DB cluster.
@@ -82,7 +92,7 @@ trait DBCluster extends StObject {
   var CopyTagsToSnapshot: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
-    * Specifies whether the DB cluster is a clone of a DB cluster owned by a different AWS account.
+    * Specifies whether the DB cluster is a clone of a DB cluster owned by a different Amazon Web Services account.
     */
   var CrossAccountClone: js.UndefOr[BooleanOptional] = js.undefined
   
@@ -100,6 +110,11 @@ trait DBCluster extends StObject {
     * Contains a user-supplied DB cluster identifier. This identifier is the unique key that identifies a DB cluster.
     */
   var DBClusterIdentifier: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The name of the compute and memory capacity class of the DB instance. This setting is only for non-Aurora Multi-AZ DB clusters.
+    */
+  var DBClusterInstanceClass: js.UndefOr[String] = js.undefined
   
   /**
     * Provides the list of instances that make up the DB cluster.
@@ -127,12 +142,12 @@ trait DBCluster extends StObject {
   var DatabaseName: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS Region-unique, immutable identifier for the DB cluster. This identifier is found in AWS CloudTrail log entries whenever the AWS KMS key for the DB cluster is accessed.
+    * The Amazon Web Services Region-unique, immutable identifier for the DB cluster. This identifier is found in Amazon Web Services CloudTrail log entries whenever the KMS key for the DB cluster is accessed.
     */
   var DbClusterResourceId: js.UndefOr[String] = js.undefined
   
   /**
-    * Indicates if the DB cluster has deletion protection enabled. The database can't be deleted when deletion protection is enabled. 
+    * Indicates if the DB cluster has deletion protection enabled. The database can't be deleted when deletion protection is enabled.
     */
   var DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined
   
@@ -144,12 +159,12 @@ trait DBCluster extends StObject {
   /**
     * The earliest time to which a DB cluster can be backtracked.
     */
-  var EarliestBacktrackTime: js.UndefOr[TStamp] = js.undefined
+  var EarliestBacktrackTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The earliest time to which a database can be restored with point-in-time restore.
     */
-  var EarliestRestorableTime: js.UndefOr[TStamp] = js.undefined
+  var EarliestRestorableTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A list of log types that this DB cluster is configured to export to CloudWatch Logs. Log types vary by DB engine. For information about the log types for each DB engine, see Amazon RDS Database Log Files in the Amazon Aurora User Guide. 
@@ -192,24 +207,29 @@ trait DBCluster extends StObject {
   var HostedZoneId: js.UndefOr[String] = js.undefined
   
   /**
-    * A value that indicates whether the HTTP endpoint for an Aurora Serverless DB cluster is enabled. When enabled, the HTTP endpoint provides a connectionless web service API for running SQL queries on the Aurora Serverless DB cluster. You can also query your database from inside the RDS console with the query editor. For more information, see Using the Data API for Aurora Serverless in the Amazon Aurora User Guide.
+    * A value that indicates whether the HTTP endpoint for an Aurora Serverless v1 DB cluster is enabled. When enabled, the HTTP endpoint provides a connectionless web service API for running SQL queries on the Aurora Serverless v1 DB cluster. You can also query your database from inside the RDS console with the query editor. For more information, see Using the Data API for Aurora Serverless v1 in the Amazon Aurora User Guide.
     */
   var HttpEndpointEnabled: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
-    * A value that indicates whether the mapping of AWS Identity and Access Management (IAM) accounts to database accounts is enabled.
+    * A value that indicates whether the mapping of Amazon Web Services Identity and Access Management (IAM) accounts to database accounts is enabled.
     */
   var IAMDatabaseAuthenticationEnabled: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
-    * If StorageEncrypted is enabled, the AWS KMS key identifier for the encrypted DB cluster.
+    * The Provisioned IOPS (I/O operations per second) value. This setting is only for non-Aurora Multi-AZ DB clusters.
+    */
+  var Iops: js.UndefOr[IntegerOptional] = js.undefined
+  
+  /**
+    * If StorageEncrypted is enabled, the Amazon Web Services KMS key identifier for the encrypted DB cluster. The Amazon Web Services KMS key identifier is the key ARN, key ID, alias ARN, or alias name for the KMS key.
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the latest time to which a database can be restored with point-in-time restore.
     */
-  var LatestRestorableTime: js.UndefOr[TStamp] = js.undefined
+  var LatestRestorableTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Contains the master username for the DB cluster.
@@ -217,9 +237,29 @@ trait DBCluster extends StObject {
   var MasterUsername: js.UndefOr[String] = js.undefined
   
   /**
+    * The interval, in seconds, between points when Enhanced Monitoring metrics are collected for the DB cluster. This setting is only for non-Aurora Multi-AZ DB clusters.
+    */
+  var MonitoringInterval: js.UndefOr[IntegerOptional] = js.undefined
+  
+  /**
+    * The ARN for the IAM role that permits RDS to send Enhanced Monitoring metrics to Amazon CloudWatch Logs. This setting is only for non-Aurora Multi-AZ DB clusters.
+    */
+  var MonitoringRoleArn: js.UndefOr[String] = js.undefined
+  
+  /**
     * Specifies whether the DB cluster has instances in multiple Availability Zones.
     */
   var MultiAZ: js.UndefOr[BooleanOptional] = js.undefined
+  
+  /**
+    * The network type of the DB instance. Valid values:    IPV4     DUAL    The network type is determined by the DBSubnetGroup specified for the DB cluster. A DBSubnetGroup can support only the IPv4 protocol or the IPv4 and the IPv6 protocols (DUAL). For more information, see  Working with a DB instance in a VPC in the Amazon Aurora User Guide.  This setting is only for Aurora DB clusters.
+    */
+  var NetworkType: js.UndefOr[String] = js.undefined
+  
+  /**
+    * A value that specifies that changes to the DB cluster are pending. This element is only included when changes are pending. Specific changes are identified by subelements.
+    */
+  var PendingModifiedValues: js.UndefOr[ClusterPendingModifiedValues] = js.undefined
   
   /**
     * Specifies the progress of the operation as a percentage.
@@ -227,12 +267,27 @@ trait DBCluster extends StObject {
   var PercentProgress: js.UndefOr[String] = js.undefined
   
   /**
+    * True if Performance Insights is enabled for the DB cluster, and otherwise false. This setting is only for non-Aurora Multi-AZ DB clusters.
+    */
+  var PerformanceInsightsEnabled: js.UndefOr[BooleanOptional] = js.undefined
+  
+  /**
+    * The Amazon Web Services KMS key identifier for encryption of Performance Insights data. The Amazon Web Services KMS key identifier is the key ARN, key ID, alias ARN, or alias name for the KMS key. This setting is only for non-Aurora Multi-AZ DB clusters.
+    */
+  var PerformanceInsightsKMSKeyId: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The number of days to retain Performance Insights data. The default is 7 days. The following values are valid:   7    month * 31, where month is a number of months from 1-23   731   For example, the following values are valid:   93 (3 months * 31)   341 (11 months * 31)   589 (19 months * 31)   731   This setting is only for non-Aurora Multi-AZ DB clusters.
+    */
+  var PerformanceInsightsRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined
+  
+  /**
     * Specifies the port that the database engine is listening on.
     */
   var Port: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
-    * Specifies the daily time range during which automated backups are created if automated backups are enabled, as determined by the BackupRetentionPeriod. 
+    * Specifies the daily time range during which automated backups are created if automated backups are enabled, as determined by the BackupRetentionPeriod.
     */
   var PreferredBackupWindow: js.UndefOr[String] = js.undefined
   
@@ -242,12 +297,17 @@ trait DBCluster extends StObject {
   var PreferredMaintenanceWindow: js.UndefOr[String] = js.undefined
   
   /**
+    * Specifies the accessibility options for the DB instance. When the DB instance is publicly accessible, its Domain Name System (DNS) endpoint resolves to the private IP address from within the DB instance's virtual private cloud (VPC). It resolves to the public IP address from outside of the DB instance's VPC. Access to the DB instance is ultimately controlled by the security group it uses. That public access is not permitted if the security group assigned to the DB instance doesn't permit it. When the DB instance isn't publicly accessible, it is an internal DB instance with a DNS name that resolves to a private IP address. For more information, see CreateDBInstance. This setting is only for non-Aurora Multi-AZ DB clusters.
+    */
+  var PubliclyAccessible: js.UndefOr[BooleanOptional] = js.undefined
+  
+  /**
     * Contains one or more identifiers of the read replicas associated with this DB cluster.
     */
   var ReadReplicaIdentifiers: js.UndefOr[ReadReplicaIdentifierList] = js.undefined
   
   /**
-    * The reader endpoint for the DB cluster. The reader endpoint for a DB cluster load-balances connections across the Aurora Replicas that are available in a DB cluster. As clients request new connections to the reader endpoint, Aurora distributes the connection requests among the Aurora Replicas in the DB cluster. This functionality can help balance your read workload across multiple Aurora Replicas in your DB cluster.  If a failover occurs, and the Aurora Replica that you are connected to is promoted to be the primary instance, your connection is dropped. To continue sending your read workload to other Aurora Replicas in the cluster, you can then reconnect to the reader endpoint.
+    * The reader endpoint for the DB cluster. The reader endpoint for a DB cluster load-balances connections across the Aurora Replicas that are available in a DB cluster. As clients request new connections to the reader endpoint, Aurora distributes the connection requests among the Aurora Replicas in the DB cluster. This functionality can help balance your read workload across multiple Aurora Replicas in your DB cluster. If a failover occurs, and the Aurora Replica that you are connected to is promoted to be the primary instance, your connection is dropped. To continue sending your read workload to other Aurora Replicas in the cluster, you can then reconnect to the reader endpoint.
     */
   var ReaderEndpoint: js.UndefOr[String] = js.undefined
   
@@ -258,6 +318,8 @@ trait DBCluster extends StObject {
   
   var ScalingConfigurationInfo: js.UndefOr[typings.awsSdk.rdsMod.ScalingConfigurationInfo] = js.undefined
   
+  var ServerlessV2ScalingConfiguration: js.UndefOr[ServerlessV2ScalingConfigurationInfo] = js.undefined
+  
   /**
     * Specifies the current state of this DB cluster.
     */
@@ -267,6 +329,11 @@ trait DBCluster extends StObject {
     * Specifies whether the DB cluster is encrypted.
     */
   var StorageEncrypted: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * The storage type associated with the DB cluster. This setting is only for non-Aurora Multi-AZ DB clusters.
+    */
+  var StorageType: js.UndefOr[String] = js.undefined
   
   var TagList: js.UndefOr[typings.awsSdk.rdsMod.TagList] = js.undefined
   
@@ -308,13 +375,21 @@ object DBCluster {
     
     inline def setAssociatedRolesUndefined: Self = StObject.set(x, "AssociatedRoles", js.undefined)
     
-    inline def setAssociatedRolesVarargs(value: DBClusterRole*): Self = StObject.set(x, "AssociatedRoles", js.Array(value :_*))
+    inline def setAssociatedRolesVarargs(value: DBClusterRole*): Self = StObject.set(x, "AssociatedRoles", js.Array(value*))
+    
+    inline def setAutoMinorVersionUpgrade(value: Boolean): Self = StObject.set(x, "AutoMinorVersionUpgrade", value.asInstanceOf[js.Any])
+    
+    inline def setAutoMinorVersionUpgradeUndefined: Self = StObject.set(x, "AutoMinorVersionUpgrade", js.undefined)
+    
+    inline def setAutomaticRestartTime(value: js.Date): Self = StObject.set(x, "AutomaticRestartTime", value.asInstanceOf[js.Any])
+    
+    inline def setAutomaticRestartTimeUndefined: Self = StObject.set(x, "AutomaticRestartTime", js.undefined)
     
     inline def setAvailabilityZones(value: AvailabilityZones): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     
     inline def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
     
-    inline def setAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
+    inline def setAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "AvailabilityZones", js.Array(value*))
     
     inline def setBacktrackConsumedChangeRecords(value: LongOptional): Self = StObject.set(x, "BacktrackConsumedChangeRecords", value.asInstanceOf[js.Any])
     
@@ -340,7 +415,7 @@ object DBCluster {
     
     inline def setCloneGroupIdUndefined: Self = StObject.set(x, "CloneGroupId", js.undefined)
     
-    inline def setClusterCreateTime(value: TStamp): Self = StObject.set(x, "ClusterCreateTime", value.asInstanceOf[js.Any])
+    inline def setClusterCreateTime(value: js.Date): Self = StObject.set(x, "ClusterCreateTime", value.asInstanceOf[js.Any])
     
     inline def setClusterCreateTimeUndefined: Self = StObject.set(x, "ClusterCreateTime", js.undefined)
     
@@ -356,7 +431,7 @@ object DBCluster {
     
     inline def setCustomEndpointsUndefined: Self = StObject.set(x, "CustomEndpoints", js.undefined)
     
-    inline def setCustomEndpointsVarargs(value: String*): Self = StObject.set(x, "CustomEndpoints", js.Array(value :_*))
+    inline def setCustomEndpointsVarargs(value: String*): Self = StObject.set(x, "CustomEndpoints", js.Array(value*))
     
     inline def setDBClusterArn(value: String): Self = StObject.set(x, "DBClusterArn", value.asInstanceOf[js.Any])
     
@@ -366,17 +441,21 @@ object DBCluster {
     
     inline def setDBClusterIdentifierUndefined: Self = StObject.set(x, "DBClusterIdentifier", js.undefined)
     
+    inline def setDBClusterInstanceClass(value: String): Self = StObject.set(x, "DBClusterInstanceClass", value.asInstanceOf[js.Any])
+    
+    inline def setDBClusterInstanceClassUndefined: Self = StObject.set(x, "DBClusterInstanceClass", js.undefined)
+    
     inline def setDBClusterMembers(value: DBClusterMemberList): Self = StObject.set(x, "DBClusterMembers", value.asInstanceOf[js.Any])
     
     inline def setDBClusterMembersUndefined: Self = StObject.set(x, "DBClusterMembers", js.undefined)
     
-    inline def setDBClusterMembersVarargs(value: DBClusterMember*): Self = StObject.set(x, "DBClusterMembers", js.Array(value :_*))
+    inline def setDBClusterMembersVarargs(value: DBClusterMember*): Self = StObject.set(x, "DBClusterMembers", js.Array(value*))
     
     inline def setDBClusterOptionGroupMemberships(value: DBClusterOptionGroupMemberships): Self = StObject.set(x, "DBClusterOptionGroupMemberships", value.asInstanceOf[js.Any])
     
     inline def setDBClusterOptionGroupMembershipsUndefined: Self = StObject.set(x, "DBClusterOptionGroupMemberships", js.undefined)
     
-    inline def setDBClusterOptionGroupMembershipsVarargs(value: DBClusterOptionGroupStatus*): Self = StObject.set(x, "DBClusterOptionGroupMemberships", js.Array(value :_*))
+    inline def setDBClusterOptionGroupMembershipsVarargs(value: DBClusterOptionGroupStatus*): Self = StObject.set(x, "DBClusterOptionGroupMemberships", js.Array(value*))
     
     inline def setDBClusterParameterGroup(value: String): Self = StObject.set(x, "DBClusterParameterGroup", value.asInstanceOf[js.Any])
     
@@ -402,13 +481,13 @@ object DBCluster {
     
     inline def setDomainMembershipsUndefined: Self = StObject.set(x, "DomainMemberships", js.undefined)
     
-    inline def setDomainMembershipsVarargs(value: DomainMembership*): Self = StObject.set(x, "DomainMemberships", js.Array(value :_*))
+    inline def setDomainMembershipsVarargs(value: DomainMembership*): Self = StObject.set(x, "DomainMemberships", js.Array(value*))
     
-    inline def setEarliestBacktrackTime(value: TStamp): Self = StObject.set(x, "EarliestBacktrackTime", value.asInstanceOf[js.Any])
+    inline def setEarliestBacktrackTime(value: js.Date): Self = StObject.set(x, "EarliestBacktrackTime", value.asInstanceOf[js.Any])
     
     inline def setEarliestBacktrackTimeUndefined: Self = StObject.set(x, "EarliestBacktrackTime", js.undefined)
     
-    inline def setEarliestRestorableTime(value: TStamp): Self = StObject.set(x, "EarliestRestorableTime", value.asInstanceOf[js.Any])
+    inline def setEarliestRestorableTime(value: js.Date): Self = StObject.set(x, "EarliestRestorableTime", value.asInstanceOf[js.Any])
     
     inline def setEarliestRestorableTimeUndefined: Self = StObject.set(x, "EarliestRestorableTime", js.undefined)
     
@@ -416,7 +495,7 @@ object DBCluster {
     
     inline def setEnabledCloudwatchLogsExportsUndefined: Self = StObject.set(x, "EnabledCloudwatchLogsExports", js.undefined)
     
-    inline def setEnabledCloudwatchLogsExportsVarargs(value: String*): Self = StObject.set(x, "EnabledCloudwatchLogsExports", js.Array(value :_*))
+    inline def setEnabledCloudwatchLogsExportsVarargs(value: String*): Self = StObject.set(x, "EnabledCloudwatchLogsExports", js.Array(value*))
     
     inline def setEndpoint(value: String): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
     
@@ -454,11 +533,15 @@ object DBCluster {
     
     inline def setIAMDatabaseAuthenticationEnabledUndefined: Self = StObject.set(x, "IAMDatabaseAuthenticationEnabled", js.undefined)
     
+    inline def setIops(value: IntegerOptional): Self = StObject.set(x, "Iops", value.asInstanceOf[js.Any])
+    
+    inline def setIopsUndefined: Self = StObject.set(x, "Iops", js.undefined)
+    
     inline def setKmsKeyId(value: String): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
     inline def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
-    inline def setLatestRestorableTime(value: TStamp): Self = StObject.set(x, "LatestRestorableTime", value.asInstanceOf[js.Any])
+    inline def setLatestRestorableTime(value: js.Date): Self = StObject.set(x, "LatestRestorableTime", value.asInstanceOf[js.Any])
     
     inline def setLatestRestorableTimeUndefined: Self = StObject.set(x, "LatestRestorableTime", js.undefined)
     
@@ -466,13 +549,41 @@ object DBCluster {
     
     inline def setMasterUsernameUndefined: Self = StObject.set(x, "MasterUsername", js.undefined)
     
+    inline def setMonitoringInterval(value: IntegerOptional): Self = StObject.set(x, "MonitoringInterval", value.asInstanceOf[js.Any])
+    
+    inline def setMonitoringIntervalUndefined: Self = StObject.set(x, "MonitoringInterval", js.undefined)
+    
+    inline def setMonitoringRoleArn(value: String): Self = StObject.set(x, "MonitoringRoleArn", value.asInstanceOf[js.Any])
+    
+    inline def setMonitoringRoleArnUndefined: Self = StObject.set(x, "MonitoringRoleArn", js.undefined)
+    
     inline def setMultiAZ(value: BooleanOptional): Self = StObject.set(x, "MultiAZ", value.asInstanceOf[js.Any])
     
     inline def setMultiAZUndefined: Self = StObject.set(x, "MultiAZ", js.undefined)
     
+    inline def setNetworkType(value: String): Self = StObject.set(x, "NetworkType", value.asInstanceOf[js.Any])
+    
+    inline def setNetworkTypeUndefined: Self = StObject.set(x, "NetworkType", js.undefined)
+    
+    inline def setPendingModifiedValues(value: ClusterPendingModifiedValues): Self = StObject.set(x, "PendingModifiedValues", value.asInstanceOf[js.Any])
+    
+    inline def setPendingModifiedValuesUndefined: Self = StObject.set(x, "PendingModifiedValues", js.undefined)
+    
     inline def setPercentProgress(value: String): Self = StObject.set(x, "PercentProgress", value.asInstanceOf[js.Any])
     
     inline def setPercentProgressUndefined: Self = StObject.set(x, "PercentProgress", js.undefined)
+    
+    inline def setPerformanceInsightsEnabled(value: BooleanOptional): Self = StObject.set(x, "PerformanceInsightsEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setPerformanceInsightsEnabledUndefined: Self = StObject.set(x, "PerformanceInsightsEnabled", js.undefined)
+    
+    inline def setPerformanceInsightsKMSKeyId(value: String): Self = StObject.set(x, "PerformanceInsightsKMSKeyId", value.asInstanceOf[js.Any])
+    
+    inline def setPerformanceInsightsKMSKeyIdUndefined: Self = StObject.set(x, "PerformanceInsightsKMSKeyId", js.undefined)
+    
+    inline def setPerformanceInsightsRetentionPeriod(value: IntegerOptional): Self = StObject.set(x, "PerformanceInsightsRetentionPeriod", value.asInstanceOf[js.Any])
+    
+    inline def setPerformanceInsightsRetentionPeriodUndefined: Self = StObject.set(x, "PerformanceInsightsRetentionPeriod", js.undefined)
     
     inline def setPort(value: IntegerOptional): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
@@ -486,11 +597,15 @@ object DBCluster {
     
     inline def setPreferredMaintenanceWindowUndefined: Self = StObject.set(x, "PreferredMaintenanceWindow", js.undefined)
     
+    inline def setPubliclyAccessible(value: BooleanOptional): Self = StObject.set(x, "PubliclyAccessible", value.asInstanceOf[js.Any])
+    
+    inline def setPubliclyAccessibleUndefined: Self = StObject.set(x, "PubliclyAccessible", js.undefined)
+    
     inline def setReadReplicaIdentifiers(value: ReadReplicaIdentifierList): Self = StObject.set(x, "ReadReplicaIdentifiers", value.asInstanceOf[js.Any])
     
     inline def setReadReplicaIdentifiersUndefined: Self = StObject.set(x, "ReadReplicaIdentifiers", js.undefined)
     
-    inline def setReadReplicaIdentifiersVarargs(value: String*): Self = StObject.set(x, "ReadReplicaIdentifiers", js.Array(value :_*))
+    inline def setReadReplicaIdentifiersVarargs(value: String*): Self = StObject.set(x, "ReadReplicaIdentifiers", js.Array(value*))
     
     inline def setReaderEndpoint(value: String): Self = StObject.set(x, "ReaderEndpoint", value.asInstanceOf[js.Any])
     
@@ -504,6 +619,10 @@ object DBCluster {
     
     inline def setScalingConfigurationInfoUndefined: Self = StObject.set(x, "ScalingConfigurationInfo", js.undefined)
     
+    inline def setServerlessV2ScalingConfiguration(value: ServerlessV2ScalingConfigurationInfo): Self = StObject.set(x, "ServerlessV2ScalingConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setServerlessV2ScalingConfigurationUndefined: Self = StObject.set(x, "ServerlessV2ScalingConfiguration", js.undefined)
+    
     inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
@@ -512,16 +631,20 @@ object DBCluster {
     
     inline def setStorageEncryptedUndefined: Self = StObject.set(x, "StorageEncrypted", js.undefined)
     
+    inline def setStorageType(value: String): Self = StObject.set(x, "StorageType", value.asInstanceOf[js.Any])
+    
+    inline def setStorageTypeUndefined: Self = StObject.set(x, "StorageType", js.undefined)
+    
     inline def setTagList(value: TagList): Self = StObject.set(x, "TagList", value.asInstanceOf[js.Any])
     
     inline def setTagListUndefined: Self = StObject.set(x, "TagList", js.undefined)
     
-    inline def setTagListVarargs(value: Tag*): Self = StObject.set(x, "TagList", js.Array(value :_*))
+    inline def setTagListVarargs(value: Tag*): Self = StObject.set(x, "TagList", js.Array(value*))
     
     inline def setVpcSecurityGroups(value: VpcSecurityGroupMembershipList): Self = StObject.set(x, "VpcSecurityGroups", value.asInstanceOf[js.Any])
     
     inline def setVpcSecurityGroupsUndefined: Self = StObject.set(x, "VpcSecurityGroups", js.undefined)
     
-    inline def setVpcSecurityGroupsVarargs(value: VpcSecurityGroupMembership*): Self = StObject.set(x, "VpcSecurityGroups", js.Array(value :_*))
+    inline def setVpcSecurityGroupsVarargs(value: VpcSecurityGroupMembership*): Self = StObject.set(x, "VpcSecurityGroups", js.Array(value*))
   }
 }

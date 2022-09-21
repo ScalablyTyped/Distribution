@@ -24,6 +24,6 @@ object PredictorExecutionDetails {
     
     inline def setPredictorExecutionsUndefined: Self = StObject.set(x, "PredictorExecutions", js.undefined)
     
-    inline def setPredictorExecutionsVarargs(value: PredictorExecution*): Self = StObject.set(x, "PredictorExecutions", js.Array(value :_*))
+    inline def setPredictorExecutionsVarargs(value: PredictorExecution*): Self = StObject.set(x, "PredictorExecutions", js.Array(value*))
   }
 }

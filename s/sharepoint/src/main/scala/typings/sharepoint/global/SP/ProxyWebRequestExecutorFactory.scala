@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.ProxyWebRequestExecutorFactory")
 @js.native
-class ProxyWebRequestExecutorFactory protected ()
+open class ProxyWebRequestExecutorFactory protected ()
   extends StObject
      with typings.sharepoint.SP.ProxyWebRequestExecutorFactory {
   def this(url: String) = this()
-  def this(url: String, options: js.Any) = this()
+  def this(url: String, options: Any) = this()
   
   /* CompleteClass */
   override def createWebRequestExecutor(): WebRequestExecutor = js.native

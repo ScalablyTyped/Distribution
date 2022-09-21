@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object subscriptionLoggableMod {
   
-  @JSImport("rxjs/internal/testing/SubscriptionLoggable", "SubscriptionLoggable")
+  @JSImport("rxjs/dist/types/internal/testing/SubscriptionLoggable", "SubscriptionLoggable")
   @js.native
-  class SubscriptionLoggable () extends StObject {
+  open class SubscriptionLoggable () extends StObject {
     
     def logSubscribedFrame(): Double = js.native
     

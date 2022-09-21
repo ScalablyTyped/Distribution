@@ -93,7 +93,7 @@ object iconTypesMod {
   
   trait IIconProps
     extends StObject
-       with IBaseProps[js.Any]
+       with IBaseProps[Any]
        with HTMLAttributes[HTMLElement] {
     
     /**

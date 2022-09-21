@@ -28,14 +28,14 @@ object ColorPalette {
     destroy: () => Unit,
     hide: () => Unit,
     html: HTMLElement,
-    layoutOptions: StringDictionary[js.Any],
+    layoutOptions: StringDictionary[Any],
     name: String,
     offsetHeight: Double,
     offsetWidth: Double,
     palette: js.Array[js.Array[String]],
     parent: Widget,
     parentName: String,
-    registerCallback: (String, String, js.Function, js.Any) => Unit,
+    registerCallback: (String, String, js.Function, Any) => Unit,
     removeCallback: String => Unit,
     removeClass: String => Unit,
     show: () => Unit,
@@ -54,7 +54,7 @@ object ColorPalette {
     
     inline def setPalette(value: js.Array[js.Array[String]]): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
     
-    inline def setPaletteVarargs(value: js.Array[String]*): Self = StObject.set(x, "palette", js.Array(value :_*))
+    inline def setPaletteVarargs(value: js.Array[String]*): Self = StObject.set(x, "palette", js.Array(value*))
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

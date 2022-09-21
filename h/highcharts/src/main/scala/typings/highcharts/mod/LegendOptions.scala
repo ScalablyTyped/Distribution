@@ -65,6 +65,12 @@ trait LegendOptions extends StObject {
   var bubbleLegend: js.UndefOr[LegendBubbleLegendOptions] = js.undefined
   
   /**
+    * (Highcharts, Highstock, Highmaps, Gantt) A CSS class name to apply to the
+    * legend group.
+    */
+  var className: js.UndefOr[String] = js.undefined
+  
+  /**
     * (Highcharts, Highstock, Highmaps, Gantt) Enable or disable the legend.
     * There is also a series-specific option, showInLegend, that can hide the
     * series from the legend. In some series types this is `false` by default,
@@ -196,7 +202,7 @@ trait LegendOptions extends StObject {
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to show the symbol on
     * the right side of the text rather than the left side. This is common in
-    * Arabic and Hebraic.
+    * Arabic and Hebrew.
     */
   var rtl: js.UndefOr[Boolean] = js.undefined
   
@@ -336,6 +342,10 @@ object LegendOptions {
     inline def setBubbleLegend(value: LegendBubbleLegendOptions): Self = StObject.set(x, "bubbleLegend", value.asInstanceOf[js.Any])
     
     inline def setBubbleLegendUndefined: Self = StObject.set(x, "bubbleLegend", js.undefined)
+    
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

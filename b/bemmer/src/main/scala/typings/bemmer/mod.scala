@@ -11,15 +11,15 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def create(classnames: String*): Builder = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(classnames.asInstanceOf[js.Any]).asInstanceOf[Builder]
+  inline def create(classnames: String*): Builder = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(classnames.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Builder]
   
-  inline def createBuilder(classnames: String*): Builder = ^.asInstanceOf[js.Dynamic].applyDynamic("createBuilder")(classnames.asInstanceOf[js.Any]).asInstanceOf[Builder]
+  inline def createBuilder(classnames: String*): Builder = ^.asInstanceOf[js.Dynamic].applyDynamic("createBuilder")(classnames.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Builder]
   
-  inline def isBuilder(target: js.Any): /* is bemmer.bemmer.Builder */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBuilder")(target.asInstanceOf[js.Any]).asInstanceOf[/* is bemmer.bemmer.Builder */ Boolean]
+  inline def isBuilder(target: Any): /* is bemmer.bemmer.Builder */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBuilder")(target.asInstanceOf[js.Any]).asInstanceOf[/* is bemmer.bemmer.Builder */ Boolean]
   
   type Builder = js.Function2[
     /* classname */ js.UndefOr[String], 
-    /* modifiers */ js.UndefOr[StringDictionary[js.Any]], 
+    /* modifiers */ js.UndefOr[StringDictionary[Any]], 
     String
   ]
 }

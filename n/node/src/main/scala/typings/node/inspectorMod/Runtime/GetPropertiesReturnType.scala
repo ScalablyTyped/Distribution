@@ -38,10 +38,10 @@ object GetPropertiesReturnType {
     
     inline def setInternalPropertiesUndefined: Self = StObject.set(x, "internalProperties", js.undefined)
     
-    inline def setInternalPropertiesVarargs(value: InternalPropertyDescriptor*): Self = StObject.set(x, "internalProperties", js.Array(value :_*))
+    inline def setInternalPropertiesVarargs(value: InternalPropertyDescriptor*): Self = StObject.set(x, "internalProperties", js.Array(value*))
     
     inline def setResult(value: js.Array[PropertyDescriptor]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    inline def setResultVarargs(value: PropertyDescriptor*): Self = StObject.set(x, "result", js.Array(value :_*))
+    inline def setResultVarargs(value: PropertyDescriptor*): Self = StObject.set(x, "result", js.Array(value*))
   }
 }

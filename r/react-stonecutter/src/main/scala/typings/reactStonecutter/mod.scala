@@ -14,26 +14,26 @@ object mod {
   
   @JSImport("react-stonecutter", "CSSGrid")
   @js.native
-  class CSSGrid protected ()
-    extends Component[CSSGridProps, js.Object, js.Any] {
+  open class CSSGrid protected ()
+    extends Component[CSSGridProps, js.Object, Any] {
     def this(props: CSSGridProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: CSSGridProps, context: js.Any) = this()
+    def this(props: CSSGridProps, context: Any) = this()
   }
   
   @JSImport("react-stonecutter", "SpringGrid")
   @js.native
-  class SpringGrid protected ()
-    extends Component[SpringGridProps, js.Object, js.Any] {
+  open class SpringGrid protected ()
+    extends Component[SpringGridProps, js.Object, Any] {
     def this(props: SpringGridProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: SpringGridProps, context: js.Any) = this()
+    def this(props: SpringGridProps, context: Any) = this()
   }
   
   @JSImport("react-stonecutter", "easings")
@@ -48,43 +48,43 @@ object mod {
     
     @JSImport("react-stonecutter", "enterExitStyle.foldUp")
     @js.native
-    def foldUp: js.Any = js.native
-    inline def foldUp_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("foldUp")(x.asInstanceOf[js.Any])
+    def foldUp: Any = js.native
+    inline def foldUp_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("foldUp")(x.asInstanceOf[js.Any])
     
     @JSImport("react-stonecutter", "enterExitStyle.fromBottom")
     @js.native
-    def fromBottom: js.Any = js.native
-    inline def fromBottom_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromBottom")(x.asInstanceOf[js.Any])
+    def fromBottom: Any = js.native
+    inline def fromBottom_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromBottom")(x.asInstanceOf[js.Any])
     
     @JSImport("react-stonecutter", "enterExitStyle.fromCenter")
     @js.native
-    def fromCenter: js.Any = js.native
-    inline def fromCenter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromCenter")(x.asInstanceOf[js.Any])
+    def fromCenter: Any = js.native
+    inline def fromCenter_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromCenter")(x.asInstanceOf[js.Any])
     
     @JSImport("react-stonecutter", "enterExitStyle.fromLeftToRight")
     @js.native
-    def fromLeftToRight: js.Any = js.native
-    inline def fromLeftToRight_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromLeftToRight")(x.asInstanceOf[js.Any])
+    def fromLeftToRight: Any = js.native
+    inline def fromLeftToRight_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromLeftToRight")(x.asInstanceOf[js.Any])
     
     @JSImport("react-stonecutter", "enterExitStyle.fromTop")
     @js.native
-    def fromTop: js.Any = js.native
-    inline def fromTop_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromTop")(x.asInstanceOf[js.Any])
+    def fromTop: Any = js.native
+    inline def fromTop_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromTop")(x.asInstanceOf[js.Any])
     
     @JSImport("react-stonecutter", "enterExitStyle.newspaper")
     @js.native
-    def newspaper: js.Any = js.native
-    inline def newspaper_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("newspaper")(x.asInstanceOf[js.Any])
+    def newspaper: Any = js.native
+    inline def newspaper_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("newspaper")(x.asInstanceOf[js.Any])
     
     @JSImport("react-stonecutter", "enterExitStyle.simple")
     @js.native
-    def simple: js.Any = js.native
-    inline def simple_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("simple")(x.asInstanceOf[js.Any])
+    def simple: Any = js.native
+    inline def simple_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("simple")(x.asInstanceOf[js.Any])
     
     @JSImport("react-stonecutter", "enterExitStyle.skew")
     @js.native
-    def skew: js.Any = js.native
-    inline def skew_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("skew")(x.asInstanceOf[js.Any])
+    def skew: Any = js.native
+    inline def skew_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("skew")(x.asInstanceOf[js.Any])
   }
   
   object layout {
@@ -173,30 +173,15 @@ object mod {
       * By default the item's scale and opacity go from 0 to 1 and back to 0 on exit
       */
     var enter: js.UndefOr[
-        js.Function3[
-          /* itemProps */ js.Array[js.Any], 
-          /* gridProps */ js.Array[js.Any], 
-          /* gridState */ js.Any, 
-          js.Any
-        ]
+        js.Function3[/* itemProps */ js.Array[Any], /* gridProps */ js.Array[Any], /* gridState */ Any, Any]
       ] = js.undefined
     
     var entered: js.UndefOr[
-        js.Function3[
-          /* itemProps */ js.Array[js.Any], 
-          /* gridProps */ js.Array[js.Any], 
-          /* gridState */ js.Any, 
-          js.Any
-        ]
+        js.Function3[/* itemProps */ js.Array[Any], /* gridProps */ js.Array[Any], /* gridState */ Any, Any]
       ] = js.undefined
     
     var exit: js.UndefOr[
-        js.Function3[
-          /* itemProps */ js.Array[js.Any], 
-          /* gridProps */ js.Array[js.Any], 
-          /* gridState */ js.Any, 
-          js.Any
-        ]
+        js.Function3[/* itemProps */ js.Array[Any], /* gridProps */ js.Array[Any], /* gridState */ Any, Any]
       ] = js.undefined
     
     /**
@@ -251,21 +236,15 @@ object mod {
       
       inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      inline def setEnter(
-        value: (/* itemProps */ js.Array[js.Any], /* gridProps */ js.Array[js.Any], /* gridState */ js.Any) => js.Any
-      ): Self = StObject.set(x, "enter", js.Any.fromFunction3(value))
+      inline def setEnter(value: (/* itemProps */ js.Array[Any], /* gridProps */ js.Array[Any], /* gridState */ Any) => Any): Self = StObject.set(x, "enter", js.Any.fromFunction3(value))
       
       inline def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
       
-      inline def setEntered(
-        value: (/* itemProps */ js.Array[js.Any], /* gridProps */ js.Array[js.Any], /* gridState */ js.Any) => js.Any
-      ): Self = StObject.set(x, "entered", js.Any.fromFunction3(value))
+      inline def setEntered(value: (/* itemProps */ js.Array[Any], /* gridProps */ js.Array[Any], /* gridState */ Any) => Any): Self = StObject.set(x, "entered", js.Any.fromFunction3(value))
       
       inline def setEnteredUndefined: Self = StObject.set(x, "entered", js.undefined)
       
-      inline def setExit(
-        value: (/* itemProps */ js.Array[js.Any], /* gridProps */ js.Array[js.Any], /* gridState */ js.Any) => js.Any
-      ): Self = StObject.set(x, "exit", js.Any.fromFunction3(value))
+      inline def setExit(value: (/* itemProps */ js.Array[Any], /* gridProps */ js.Array[Any], /* gridState */ Any) => Any): Self = StObject.set(x, "exit", js.Any.fromFunction3(value))
       
       inline def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
       
@@ -277,7 +256,7 @@ object mod {
       
       inline def setGutterWidthUndefined: Self = StObject.set(x, "gutterWidth", js.undefined)
       
-      inline def setLayout(value: (/* itemProps */ js.Array[js.Any], /* gridProps */ js.Array[js.Any]) => Layout_): Self = StObject.set(x, "layout", js.Any.fromFunction2(value))
+      inline def setLayout(value: (/* itemProps */ js.Array[Any], /* gridProps */ js.Array[Any]) => Layout_): Self = StObject.set(x, "layout", js.Any.fromFunction2(value))
       
       inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
       
@@ -429,7 +408,7 @@ object mod {
     }
   }
   
-  type LayoutFunction = js.Function2[/* itemProps */ js.Array[js.Any], /* gridProps */ js.Array[js.Any], Layout_]
+  type LayoutFunction = js.Function2[/* itemProps */ js.Array[Any], /* gridProps */ js.Array[Any], Layout_]
   
   trait Layout_ extends StObject {
     
@@ -463,7 +442,7 @@ object mod {
       
       inline def setPositions(value: js.Array[Coordinates]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
       
-      inline def setPositionsVarargs(value: Coordinates*): Self = StObject.set(x, "positions", js.Array(value :_*))
+      inline def setPositionsVarargs(value: Coordinates*): Self = StObject.set(x, "positions", js.Array(value*))
     }
   }
   
@@ -562,7 +541,7 @@ object mod {
       * Configuration of the React-Motion spring.
       * See the React-Motion docs for more info. Default: { stiffness: 60, damping: 14, precision: 0.1 }.
       */
-    var springConfig: js.UndefOr[js.Any] = js.undefined
+    var springConfig: js.UndefOr[Any] = js.undefined
   }
   object SpringGridProps {
     
@@ -573,7 +552,7 @@ object mod {
     
     extension [Self <: SpringGridProps](x: Self) {
       
-      inline def setSpringConfig(value: js.Any): Self = StObject.set(x, "springConfig", value.asInstanceOf[js.Any])
+      inline def setSpringConfig(value: Any): Self = StObject.set(x, "springConfig", value.asInstanceOf[js.Any])
       
       inline def setSpringConfigUndefined: Self = StObject.set(x, "springConfig", js.undefined)
     }

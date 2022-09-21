@@ -23,6 +23,6 @@ object GridAreaProps {
     
     inline def setGridAreaUndefined: Self = StObject.set(x, "gridArea", js.undefined)
     
-    inline def setGridAreaVarargs(value: String*): Self = StObject.set(x, "gridArea", js.Array(value :_*))
+    inline def setGridAreaVarargs(value: String*): Self = StObject.set(x, "gridArea", js.Array(value*))
   }
 }

@@ -71,6 +71,22 @@ trait WorkMail extends Service {
   ): Request[CreateAliasResponse, AWSError] = js.native
   
   /**
+    * Creates an AvailabilityConfiguration for the given WorkMail organization and domain.
+    */
+  def createAvailabilityConfiguration(): Request[CreateAvailabilityConfigurationResponse, AWSError] = js.native
+  def createAvailabilityConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateAvailabilityConfigurationResponse, Unit]
+  ): Request[CreateAvailabilityConfigurationResponse, AWSError] = js.native
+  /**
+    * Creates an AvailabilityConfiguration for the given WorkMail organization and domain.
+    */
+  def createAvailabilityConfiguration(params: CreateAvailabilityConfigurationRequest): Request[CreateAvailabilityConfigurationResponse, AWSError] = js.native
+  def createAvailabilityConfiguration(
+    params: CreateAvailabilityConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateAvailabilityConfigurationResponse, Unit]
+  ): Request[CreateAvailabilityConfigurationResponse, AWSError] = js.native
+  
+  /**
     * Creates a group that can be used in Amazon WorkMail by calling the RegisterToWorkMail operation.
     */
   def createGroup(): Request[CreateGroupResponse, AWSError] = js.native
@@ -83,6 +99,20 @@ trait WorkMail extends Service {
     params: CreateGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateGroupResponse, Unit]
   ): Request[CreateGroupResponse, AWSError] = js.native
+  
+  /**
+    * Creates a new mobile device access rule for the specified Amazon WorkMail organization.
+    */
+  def createMobileDeviceAccessRule(): Request[CreateMobileDeviceAccessRuleResponse, AWSError] = js.native
+  def createMobileDeviceAccessRule(callback: js.Function2[/* err */ AWSError, /* data */ CreateMobileDeviceAccessRuleResponse, Unit]): Request[CreateMobileDeviceAccessRuleResponse, AWSError] = js.native
+  /**
+    * Creates a new mobile device access rule for the specified Amazon WorkMail organization.
+    */
+  def createMobileDeviceAccessRule(params: CreateMobileDeviceAccessRuleRequest): Request[CreateMobileDeviceAccessRuleResponse, AWSError] = js.native
+  def createMobileDeviceAccessRule(
+    params: CreateMobileDeviceAccessRuleRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateMobileDeviceAccessRuleResponse, Unit]
+  ): Request[CreateMobileDeviceAccessRuleResponse, AWSError] = js.native
   
   /**
     * Creates a new Amazon WorkMail organization. Optionally, you can choose to associate an existing AWS Directory Service directory with your organization. If an AWS Directory Service directory ID is specified, the organization alias must match the directory alias. If you choose not to associate an existing directory with your organization, then we create a new Amazon WorkMail directory for you. For more information, see Adding an organization in the Amazon WorkMail Administrator Guide. You can associate multiple email domains with an organization, then set your default email domain from the Amazon WorkMail console. You can also associate a domain that is managed in an Amazon Route 53 public hosted zone. For more information, see Adding a domain and Choosing the default domain in the Amazon WorkMail Administrator Guide. Optionally, you can use a customer managed master key from AWS Key Management Service (AWS KMS) to encrypt email for your organization. If you don't associate an AWS KMS key, Amazon WorkMail creates a default AWS managed master key for you.
@@ -127,12 +157,12 @@ trait WorkMail extends Service {
   ): Request[CreateUserResponse, AWSError] = js.native
   
   /**
-    * Deletes an access control rule for the specified WorkMail organization.
+    * Deletes an access control rule for the specified WorkMail organization.  Deleting already deleted and non-existing rules does not produce an error. In those cases, the service sends back an HTTP 200 response with an empty HTTP body. 
     */
   def deleteAccessControlRule(): Request[DeleteAccessControlRuleResponse, AWSError] = js.native
   def deleteAccessControlRule(callback: js.Function2[/* err */ AWSError, /* data */ DeleteAccessControlRuleResponse, Unit]): Request[DeleteAccessControlRuleResponse, AWSError] = js.native
   /**
-    * Deletes an access control rule for the specified WorkMail organization.
+    * Deletes an access control rule for the specified WorkMail organization.  Deleting already deleted and non-existing rules does not produce an error. In those cases, the service sends back an HTTP 200 response with an empty HTTP body. 
     */
   def deleteAccessControlRule(params: DeleteAccessControlRuleRequest): Request[DeleteAccessControlRuleResponse, AWSError] = js.native
   def deleteAccessControlRule(
@@ -153,6 +183,38 @@ trait WorkMail extends Service {
     params: DeleteAliasRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteAliasResponse, Unit]
   ): Request[DeleteAliasResponse, AWSError] = js.native
+  
+  /**
+    * Deletes the AvailabilityConfiguration for the given WorkMail organization and domain.
+    */
+  def deleteAvailabilityConfiguration(): Request[DeleteAvailabilityConfigurationResponse, AWSError] = js.native
+  def deleteAvailabilityConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteAvailabilityConfigurationResponse, Unit]
+  ): Request[DeleteAvailabilityConfigurationResponse, AWSError] = js.native
+  /**
+    * Deletes the AvailabilityConfiguration for the given WorkMail organization and domain.
+    */
+  def deleteAvailabilityConfiguration(params: DeleteAvailabilityConfigurationRequest): Request[DeleteAvailabilityConfigurationResponse, AWSError] = js.native
+  def deleteAvailabilityConfiguration(
+    params: DeleteAvailabilityConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteAvailabilityConfigurationResponse, Unit]
+  ): Request[DeleteAvailabilityConfigurationResponse, AWSError] = js.native
+  
+  /**
+    * Deletes the email monitoring configuration for a specified organization.
+    */
+  def deleteEmailMonitoringConfiguration(): Request[DeleteEmailMonitoringConfigurationResponse, AWSError] = js.native
+  def deleteEmailMonitoringConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteEmailMonitoringConfigurationResponse, Unit]
+  ): Request[DeleteEmailMonitoringConfigurationResponse, AWSError] = js.native
+  /**
+    * Deletes the email monitoring configuration for a specified organization.
+    */
+  def deleteEmailMonitoringConfiguration(params: DeleteEmailMonitoringConfigurationRequest): Request[DeleteEmailMonitoringConfigurationResponse, AWSError] = js.native
+  def deleteEmailMonitoringConfiguration(
+    params: DeleteEmailMonitoringConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteEmailMonitoringConfigurationResponse, Unit]
+  ): Request[DeleteEmailMonitoringConfigurationResponse, AWSError] = js.native
   
   /**
     * Deletes a group from Amazon WorkMail.
@@ -181,6 +243,36 @@ trait WorkMail extends Service {
     params: DeleteMailboxPermissionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteMailboxPermissionsResponse, Unit]
   ): Request[DeleteMailboxPermissionsResponse, AWSError] = js.native
+  
+  /**
+    * Deletes the mobile device access override for the given WorkMail organization, user, and device.  Deleting already deleted and non-existing overrides does not produce an error. In those cases, the service sends back an HTTP 200 response with an empty HTTP body. 
+    */
+  def deleteMobileDeviceAccessOverride(): Request[DeleteMobileDeviceAccessOverrideResponse, AWSError] = js.native
+  def deleteMobileDeviceAccessOverride(
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteMobileDeviceAccessOverrideResponse, Unit]
+  ): Request[DeleteMobileDeviceAccessOverrideResponse, AWSError] = js.native
+  /**
+    * Deletes the mobile device access override for the given WorkMail organization, user, and device.  Deleting already deleted and non-existing overrides does not produce an error. In those cases, the service sends back an HTTP 200 response with an empty HTTP body. 
+    */
+  def deleteMobileDeviceAccessOverride(params: DeleteMobileDeviceAccessOverrideRequest): Request[DeleteMobileDeviceAccessOverrideResponse, AWSError] = js.native
+  def deleteMobileDeviceAccessOverride(
+    params: DeleteMobileDeviceAccessOverrideRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteMobileDeviceAccessOverrideResponse, Unit]
+  ): Request[DeleteMobileDeviceAccessOverrideResponse, AWSError] = js.native
+  
+  /**
+    * Deletes a mobile device access rule for the specified Amazon WorkMail organization.  Deleting already deleted and non-existing rules does not produce an error. In those cases, the service sends back an HTTP 200 response with an empty HTTP body. 
+    */
+  def deleteMobileDeviceAccessRule(): Request[DeleteMobileDeviceAccessRuleResponse, AWSError] = js.native
+  def deleteMobileDeviceAccessRule(callback: js.Function2[/* err */ AWSError, /* data */ DeleteMobileDeviceAccessRuleResponse, Unit]): Request[DeleteMobileDeviceAccessRuleResponse, AWSError] = js.native
+  /**
+    * Deletes a mobile device access rule for the specified Amazon WorkMail organization.  Deleting already deleted and non-existing rules does not produce an error. In those cases, the service sends back an HTTP 200 response with an empty HTTP body. 
+    */
+  def deleteMobileDeviceAccessRule(params: DeleteMobileDeviceAccessRuleRequest): Request[DeleteMobileDeviceAccessRuleResponse, AWSError] = js.native
+  def deleteMobileDeviceAccessRule(
+    params: DeleteMobileDeviceAccessRuleRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteMobileDeviceAccessRuleResponse, Unit]
+  ): Request[DeleteMobileDeviceAccessRuleResponse, AWSError] = js.native
   
   /**
     * Deletes an Amazon WorkMail organization and all underlying AWS resources managed by Amazon WorkMail as part of the organization. You can choose whether to delete the associated directory. For more information, see Removing an organization in the Amazon WorkMail Administrator Guide.
@@ -253,6 +345,36 @@ trait WorkMail extends Service {
   ): Request[DeregisterFromWorkMailResponse, AWSError] = js.native
   
   /**
+    * Removes a domain from Amazon WorkMail, stops email routing to WorkMail, and removes the authorization allowing WorkMail use. SES keeps the domain because other applications may use it. You must first remove any email address used by WorkMail entities before you remove the domain.
+    */
+  def deregisterMailDomain(): Request[DeregisterMailDomainResponse, AWSError] = js.native
+  def deregisterMailDomain(callback: js.Function2[/* err */ AWSError, /* data */ DeregisterMailDomainResponse, Unit]): Request[DeregisterMailDomainResponse, AWSError] = js.native
+  /**
+    * Removes a domain from Amazon WorkMail, stops email routing to WorkMail, and removes the authorization allowing WorkMail use. SES keeps the domain because other applications may use it. You must first remove any email address used by WorkMail entities before you remove the domain.
+    */
+  def deregisterMailDomain(params: DeregisterMailDomainRequest): Request[DeregisterMailDomainResponse, AWSError] = js.native
+  def deregisterMailDomain(
+    params: DeregisterMailDomainRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeregisterMailDomainResponse, Unit]
+  ): Request[DeregisterMailDomainResponse, AWSError] = js.native
+  
+  /**
+    * Describes the current email monitoring configuration for a specified organization.
+    */
+  def describeEmailMonitoringConfiguration(): Request[DescribeEmailMonitoringConfigurationResponse, AWSError] = js.native
+  def describeEmailMonitoringConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeEmailMonitoringConfigurationResponse, Unit]
+  ): Request[DescribeEmailMonitoringConfigurationResponse, AWSError] = js.native
+  /**
+    * Describes the current email monitoring configuration for a specified organization.
+    */
+  def describeEmailMonitoringConfiguration(params: DescribeEmailMonitoringConfigurationRequest): Request[DescribeEmailMonitoringConfigurationResponse, AWSError] = js.native
+  def describeEmailMonitoringConfiguration(
+    params: DescribeEmailMonitoringConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeEmailMonitoringConfigurationResponse, Unit]
+  ): Request[DescribeEmailMonitoringConfigurationResponse, AWSError] = js.native
+  
+  /**
     * Returns the data available for the group.
     */
   def describeGroup(): Request[DescribeGroupResponse, AWSError] = js.native
@@ -265,6 +387,20 @@ trait WorkMail extends Service {
     params: DescribeGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeGroupResponse, Unit]
   ): Request[DescribeGroupResponse, AWSError] = js.native
+  
+  /**
+    * Lists the settings in a DMARC policy for a specified organization.
+    */
+  def describeInboundDmarcSettings(): Request[DescribeInboundDmarcSettingsResponse, AWSError] = js.native
+  def describeInboundDmarcSettings(callback: js.Function2[/* err */ AWSError, /* data */ DescribeInboundDmarcSettingsResponse, Unit]): Request[DescribeInboundDmarcSettingsResponse, AWSError] = js.native
+  /**
+    * Lists the settings in a DMARC policy for a specified organization.
+    */
+  def describeInboundDmarcSettings(params: DescribeInboundDmarcSettingsRequest): Request[DescribeInboundDmarcSettingsResponse, AWSError] = js.native
+  def describeInboundDmarcSettings(
+    params: DescribeInboundDmarcSettingsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeInboundDmarcSettingsResponse, Unit]
+  ): Request[DescribeInboundDmarcSettingsResponse, AWSError] = js.native
   
   /**
     * Describes the current status of a mailbox export job.
@@ -381,6 +517,20 @@ trait WorkMail extends Service {
   ): Request[GetDefaultRetentionPolicyResponse, AWSError] = js.native
   
   /**
+    * Gets details for a mail domain, including domain records required to configure your domain with recommended security.
+    */
+  def getMailDomain(): Request[GetMailDomainResponse, AWSError] = js.native
+  def getMailDomain(callback: js.Function2[/* err */ AWSError, /* data */ GetMailDomainResponse, Unit]): Request[GetMailDomainResponse, AWSError] = js.native
+  /**
+    * Gets details for a mail domain, including domain records required to configure your domain with recommended security.
+    */
+  def getMailDomain(params: GetMailDomainRequest): Request[GetMailDomainResponse, AWSError] = js.native
+  def getMailDomain(
+    params: GetMailDomainRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetMailDomainResponse, Unit]
+  ): Request[GetMailDomainResponse, AWSError] = js.native
+  
+  /**
     * Requests a user's mailbox details for a specified organization and user.
     */
   def getMailboxDetails(): Request[GetMailboxDetailsResponse, AWSError] = js.native
@@ -393,6 +543,34 @@ trait WorkMail extends Service {
     params: GetMailboxDetailsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetMailboxDetailsResponse, Unit]
   ): Request[GetMailboxDetailsResponse, AWSError] = js.native
+  
+  /**
+    * Simulates the effect of the mobile device access rules for the given attributes of a sample access event. Use this method to test the effects of the current set of mobile device access rules for the Amazon WorkMail organization for a particular user's attributes.
+    */
+  def getMobileDeviceAccessEffect(): Request[GetMobileDeviceAccessEffectResponse, AWSError] = js.native
+  def getMobileDeviceAccessEffect(callback: js.Function2[/* err */ AWSError, /* data */ GetMobileDeviceAccessEffectResponse, Unit]): Request[GetMobileDeviceAccessEffectResponse, AWSError] = js.native
+  /**
+    * Simulates the effect of the mobile device access rules for the given attributes of a sample access event. Use this method to test the effects of the current set of mobile device access rules for the Amazon WorkMail organization for a particular user's attributes.
+    */
+  def getMobileDeviceAccessEffect(params: GetMobileDeviceAccessEffectRequest): Request[GetMobileDeviceAccessEffectResponse, AWSError] = js.native
+  def getMobileDeviceAccessEffect(
+    params: GetMobileDeviceAccessEffectRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetMobileDeviceAccessEffectResponse, Unit]
+  ): Request[GetMobileDeviceAccessEffectResponse, AWSError] = js.native
+  
+  /**
+    * Gets the mobile device access override for the given WorkMail organization, user, and device.
+    */
+  def getMobileDeviceAccessOverride(): Request[GetMobileDeviceAccessOverrideResponse, AWSError] = js.native
+  def getMobileDeviceAccessOverride(callback: js.Function2[/* err */ AWSError, /* data */ GetMobileDeviceAccessOverrideResponse, Unit]): Request[GetMobileDeviceAccessOverrideResponse, AWSError] = js.native
+  /**
+    * Gets the mobile device access override for the given WorkMail organization, user, and device.
+    */
+  def getMobileDeviceAccessOverride(params: GetMobileDeviceAccessOverrideRequest): Request[GetMobileDeviceAccessOverrideResponse, AWSError] = js.native
+  def getMobileDeviceAccessOverride(
+    params: GetMobileDeviceAccessOverrideRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetMobileDeviceAccessOverrideResponse, Unit]
+  ): Request[GetMobileDeviceAccessOverrideResponse, AWSError] = js.native
   
   /**
     * Lists the access control rules for the specified organization.
@@ -423,6 +601,22 @@ trait WorkMail extends Service {
   ): Request[ListAliasesResponse, AWSError] = js.native
   
   /**
+    * List all the AvailabilityConfiguration's for the given WorkMail organization.
+    */
+  def listAvailabilityConfigurations(): Request[ListAvailabilityConfigurationsResponse, AWSError] = js.native
+  def listAvailabilityConfigurations(
+    callback: js.Function2[/* err */ AWSError, /* data */ ListAvailabilityConfigurationsResponse, Unit]
+  ): Request[ListAvailabilityConfigurationsResponse, AWSError] = js.native
+  /**
+    * List all the AvailabilityConfiguration's for the given WorkMail organization.
+    */
+  def listAvailabilityConfigurations(params: ListAvailabilityConfigurationsRequest): Request[ListAvailabilityConfigurationsResponse, AWSError] = js.native
+  def listAvailabilityConfigurations(
+    params: ListAvailabilityConfigurationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListAvailabilityConfigurationsResponse, Unit]
+  ): Request[ListAvailabilityConfigurationsResponse, AWSError] = js.native
+  
+  /**
     * Returns an overview of the members of a group. Users and groups can be members of a group.
     */
   def listGroupMembers(): Request[ListGroupMembersResponse, AWSError] = js.native
@@ -451,6 +645,20 @@ trait WorkMail extends Service {
   ): Request[ListGroupsResponse, AWSError] = js.native
   
   /**
+    * Lists the mail domains in a given Amazon WorkMail organization.
+    */
+  def listMailDomains(): Request[ListMailDomainsResponse, AWSError] = js.native
+  def listMailDomains(callback: js.Function2[/* err */ AWSError, /* data */ ListMailDomainsResponse, Unit]): Request[ListMailDomainsResponse, AWSError] = js.native
+  /**
+    * Lists the mail domains in a given Amazon WorkMail organization.
+    */
+  def listMailDomains(params: ListMailDomainsRequest): Request[ListMailDomainsResponse, AWSError] = js.native
+  def listMailDomains(
+    params: ListMailDomainsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListMailDomainsResponse, Unit]
+  ): Request[ListMailDomainsResponse, AWSError] = js.native
+  
+  /**
     * Lists the mailbox export jobs started for the specified organization within the last seven days.
     */
   def listMailboxExportJobs(): Request[ListMailboxExportJobsResponse, AWSError] = js.native
@@ -477,6 +685,36 @@ trait WorkMail extends Service {
     params: ListMailboxPermissionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListMailboxPermissionsResponse, Unit]
   ): Request[ListMailboxPermissionsResponse, AWSError] = js.native
+  
+  /**
+    * Lists all the mobile device access overrides for any given combination of WorkMail organization, user, or device.
+    */
+  def listMobileDeviceAccessOverrides(): Request[ListMobileDeviceAccessOverridesResponse, AWSError] = js.native
+  def listMobileDeviceAccessOverrides(
+    callback: js.Function2[/* err */ AWSError, /* data */ ListMobileDeviceAccessOverridesResponse, Unit]
+  ): Request[ListMobileDeviceAccessOverridesResponse, AWSError] = js.native
+  /**
+    * Lists all the mobile device access overrides for any given combination of WorkMail organization, user, or device.
+    */
+  def listMobileDeviceAccessOverrides(params: ListMobileDeviceAccessOverridesRequest): Request[ListMobileDeviceAccessOverridesResponse, AWSError] = js.native
+  def listMobileDeviceAccessOverrides(
+    params: ListMobileDeviceAccessOverridesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListMobileDeviceAccessOverridesResponse, Unit]
+  ): Request[ListMobileDeviceAccessOverridesResponse, AWSError] = js.native
+  
+  /**
+    * Lists the mobile device access rules for the specified Amazon WorkMail organization.
+    */
+  def listMobileDeviceAccessRules(): Request[ListMobileDeviceAccessRulesResponse, AWSError] = js.native
+  def listMobileDeviceAccessRules(callback: js.Function2[/* err */ AWSError, /* data */ ListMobileDeviceAccessRulesResponse, Unit]): Request[ListMobileDeviceAccessRulesResponse, AWSError] = js.native
+  /**
+    * Lists the mobile device access rules for the specified Amazon WorkMail organization.
+    */
+  def listMobileDeviceAccessRules(params: ListMobileDeviceAccessRulesRequest): Request[ListMobileDeviceAccessRulesResponse, AWSError] = js.native
+  def listMobileDeviceAccessRules(
+    params: ListMobileDeviceAccessRulesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListMobileDeviceAccessRulesResponse, Unit]
+  ): Request[ListMobileDeviceAccessRulesResponse, AWSError] = js.native
   
   /**
     * Returns summaries of the customer's organizations.
@@ -563,6 +801,36 @@ trait WorkMail extends Service {
   ): Request[PutAccessControlRuleResponse, AWSError] = js.native
   
   /**
+    * Creates or updates the email monitoring configuration for a specified organization.
+    */
+  def putEmailMonitoringConfiguration(): Request[PutEmailMonitoringConfigurationResponse, AWSError] = js.native
+  def putEmailMonitoringConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ PutEmailMonitoringConfigurationResponse, Unit]
+  ): Request[PutEmailMonitoringConfigurationResponse, AWSError] = js.native
+  /**
+    * Creates or updates the email monitoring configuration for a specified organization.
+    */
+  def putEmailMonitoringConfiguration(params: PutEmailMonitoringConfigurationRequest): Request[PutEmailMonitoringConfigurationResponse, AWSError] = js.native
+  def putEmailMonitoringConfiguration(
+    params: PutEmailMonitoringConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutEmailMonitoringConfigurationResponse, Unit]
+  ): Request[PutEmailMonitoringConfigurationResponse, AWSError] = js.native
+  
+  /**
+    * Enables or disables a DMARC policy for a given organization.
+    */
+  def putInboundDmarcSettings(): Request[PutInboundDmarcSettingsResponse, AWSError] = js.native
+  def putInboundDmarcSettings(callback: js.Function2[/* err */ AWSError, /* data */ PutInboundDmarcSettingsResponse, Unit]): Request[PutInboundDmarcSettingsResponse, AWSError] = js.native
+  /**
+    * Enables or disables a DMARC policy for a given organization.
+    */
+  def putInboundDmarcSettings(params: PutInboundDmarcSettingsRequest): Request[PutInboundDmarcSettingsResponse, AWSError] = js.native
+  def putInboundDmarcSettings(
+    params: PutInboundDmarcSettingsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutInboundDmarcSettingsResponse, Unit]
+  ): Request[PutInboundDmarcSettingsResponse, AWSError] = js.native
+  
+  /**
     * Sets permissions for a user, group, or resource. This replaces any pre-existing permissions.
     */
   def putMailboxPermissions(): Request[PutMailboxPermissionsResponse, AWSError] = js.native
@@ -577,6 +845,20 @@ trait WorkMail extends Service {
   ): Request[PutMailboxPermissionsResponse, AWSError] = js.native
   
   /**
+    * Creates or updates a mobile device access override for the given WorkMail organization, user, and device.
+    */
+  def putMobileDeviceAccessOverride(): Request[PutMobileDeviceAccessOverrideResponse, AWSError] = js.native
+  def putMobileDeviceAccessOverride(callback: js.Function2[/* err */ AWSError, /* data */ PutMobileDeviceAccessOverrideResponse, Unit]): Request[PutMobileDeviceAccessOverrideResponse, AWSError] = js.native
+  /**
+    * Creates or updates a mobile device access override for the given WorkMail organization, user, and device.
+    */
+  def putMobileDeviceAccessOverride(params: PutMobileDeviceAccessOverrideRequest): Request[PutMobileDeviceAccessOverrideResponse, AWSError] = js.native
+  def putMobileDeviceAccessOverride(
+    params: PutMobileDeviceAccessOverrideRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutMobileDeviceAccessOverrideResponse, Unit]
+  ): Request[PutMobileDeviceAccessOverrideResponse, AWSError] = js.native
+  
+  /**
     * Puts a retention policy to the specified organization.
     */
   def putRetentionPolicy(): Request[PutRetentionPolicyResponse, AWSError] = js.native
@@ -589,6 +871,20 @@ trait WorkMail extends Service {
     params: PutRetentionPolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutRetentionPolicyResponse, Unit]
   ): Request[PutRetentionPolicyResponse, AWSError] = js.native
+  
+  /**
+    * Registers a new domain in Amazon WorkMail and SES, and configures it for use by WorkMail. Emails received by SES for this domain are routed to the specified WorkMail organization, and WorkMail has permanent permission to use the specified domain for sending your users' emails.
+    */
+  def registerMailDomain(): Request[RegisterMailDomainResponse, AWSError] = js.native
+  def registerMailDomain(callback: js.Function2[/* err */ AWSError, /* data */ RegisterMailDomainResponse, Unit]): Request[RegisterMailDomainResponse, AWSError] = js.native
+  /**
+    * Registers a new domain in Amazon WorkMail and SES, and configures it for use by WorkMail. Emails received by SES for this domain are routed to the specified WorkMail organization, and WorkMail has permanent permission to use the specified domain for sending your users' emails.
+    */
+  def registerMailDomain(params: RegisterMailDomainRequest): Request[RegisterMailDomainResponse, AWSError] = js.native
+  def registerMailDomain(
+    params: RegisterMailDomainRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RegisterMailDomainResponse, Unit]
+  ): Request[RegisterMailDomainResponse, AWSError] = js.native
   
   /**
     * Registers an existing and disabled user, group, or resource for Amazon WorkMail use by associating a mailbox and calendaring capabilities. It performs no change if the user, group, or resource is enabled and fails if the user, group, or resource is deleted. This operation results in the accumulation of costs. For more information, see Pricing. The equivalent console functionality for this operation is Enable.  Users can either be created by calling the CreateUser API operation or they can be synchronized from your directory. For more information, see DeregisterFromWorkMail.
@@ -647,6 +943,20 @@ trait WorkMail extends Service {
   ): Request[TagResourceResponse, AWSError] = js.native
   
   /**
+    * Performs a test on an availability provider to ensure that access is allowed. For EWS, it verifies the provided credentials can be used to successfully log in. For Lambda, it verifies that the Lambda function can be invoked and that the resource access policy was configured to deny anonymous access. An anonymous invocation is one done without providing either a SourceArn or SourceAccount header.  The request must contain either one provider definition (EwsProvider or LambdaProvider) or the DomainName parameter. If the DomainName parameter is provided, the configuration stored under the DomainName will be tested.  
+    */
+  def testAvailabilityConfiguration(): Request[TestAvailabilityConfigurationResponse, AWSError] = js.native
+  def testAvailabilityConfiguration(callback: js.Function2[/* err */ AWSError, /* data */ TestAvailabilityConfigurationResponse, Unit]): Request[TestAvailabilityConfigurationResponse, AWSError] = js.native
+  /**
+    * Performs a test on an availability provider to ensure that access is allowed. For EWS, it verifies the provided credentials can be used to successfully log in. For Lambda, it verifies that the Lambda function can be invoked and that the resource access policy was configured to deny anonymous access. An anonymous invocation is one done without providing either a SourceArn or SourceAccount header.  The request must contain either one provider definition (EwsProvider or LambdaProvider) or the DomainName parameter. If the DomainName parameter is provided, the configuration stored under the DomainName will be tested.  
+    */
+  def testAvailabilityConfiguration(params: TestAvailabilityConfigurationRequest): Request[TestAvailabilityConfigurationResponse, AWSError] = js.native
+  def testAvailabilityConfiguration(
+    params: TestAvailabilityConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ TestAvailabilityConfigurationResponse, Unit]
+  ): Request[TestAvailabilityConfigurationResponse, AWSError] = js.native
+  
+  /**
     * Untags the specified tags from the specified Amazon WorkMail organization resource.
     */
   def untagResource(): Request[UntagResourceResponse, AWSError] = js.native
@@ -661,6 +971,36 @@ trait WorkMail extends Service {
   ): Request[UntagResourceResponse, AWSError] = js.native
   
   /**
+    * Updates an existing AvailabilityConfiguration for the given WorkMail organization and domain.
+    */
+  def updateAvailabilityConfiguration(): Request[UpdateAvailabilityConfigurationResponse, AWSError] = js.native
+  def updateAvailabilityConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateAvailabilityConfigurationResponse, Unit]
+  ): Request[UpdateAvailabilityConfigurationResponse, AWSError] = js.native
+  /**
+    * Updates an existing AvailabilityConfiguration for the given WorkMail organization and domain.
+    */
+  def updateAvailabilityConfiguration(params: UpdateAvailabilityConfigurationRequest): Request[UpdateAvailabilityConfigurationResponse, AWSError] = js.native
+  def updateAvailabilityConfiguration(
+    params: UpdateAvailabilityConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateAvailabilityConfigurationResponse, Unit]
+  ): Request[UpdateAvailabilityConfigurationResponse, AWSError] = js.native
+  
+  /**
+    * Updates the default mail domain for an organization. The default mail domain is used by the WorkMail AWS Console to suggest an email address when enabling a mail user. You can only have one default domain.
+    */
+  def updateDefaultMailDomain(): Request[UpdateDefaultMailDomainResponse, AWSError] = js.native
+  def updateDefaultMailDomain(callback: js.Function2[/* err */ AWSError, /* data */ UpdateDefaultMailDomainResponse, Unit]): Request[UpdateDefaultMailDomainResponse, AWSError] = js.native
+  /**
+    * Updates the default mail domain for an organization. The default mail domain is used by the WorkMail AWS Console to suggest an email address when enabling a mail user. You can only have one default domain.
+    */
+  def updateDefaultMailDomain(params: UpdateDefaultMailDomainRequest): Request[UpdateDefaultMailDomainResponse, AWSError] = js.native
+  def updateDefaultMailDomain(
+    params: UpdateDefaultMailDomainRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateDefaultMailDomainResponse, Unit]
+  ): Request[UpdateDefaultMailDomainResponse, AWSError] = js.native
+  
+  /**
     * Updates a user's current mailbox quota for a specified organization and user.
     */
   def updateMailboxQuota(): Request[UpdateMailboxQuotaResponse, AWSError] = js.native
@@ -673,6 +1013,20 @@ trait WorkMail extends Service {
     params: UpdateMailboxQuotaRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateMailboxQuotaResponse, Unit]
   ): Request[UpdateMailboxQuotaResponse, AWSError] = js.native
+  
+  /**
+    * Updates a mobile device access rule for the specified Amazon WorkMail organization.
+    */
+  def updateMobileDeviceAccessRule(): Request[UpdateMobileDeviceAccessRuleResponse, AWSError] = js.native
+  def updateMobileDeviceAccessRule(callback: js.Function2[/* err */ AWSError, /* data */ UpdateMobileDeviceAccessRuleResponse, Unit]): Request[UpdateMobileDeviceAccessRuleResponse, AWSError] = js.native
+  /**
+    * Updates a mobile device access rule for the specified Amazon WorkMail organization.
+    */
+  def updateMobileDeviceAccessRule(params: UpdateMobileDeviceAccessRuleRequest): Request[UpdateMobileDeviceAccessRuleResponse, AWSError] = js.native
+  def updateMobileDeviceAccessRule(
+    params: UpdateMobileDeviceAccessRuleRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateMobileDeviceAccessRuleResponse, Unit]
+  ): Request[UpdateMobileDeviceAccessRuleResponse, AWSError] = js.native
   
   /**
     * Updates the primary email for a user, group, or resource. The current email is moved into the list of aliases (or swapped between an existing alias and the current primary email), and the email provided in the input is promoted as the primary.

@@ -10,10 +10,10 @@ object favoriteMod {
   
   @JSImport("material-ui/svg-icons/action/favorite", JSImport.Default)
   @js.native
-  class default () extends ActionFavorite
+  open class default () extends ActionFavorite
   
   @JSImport("material-ui/svg-icons/action/favorite", "ActionFavorite")
   @js.native
-  class ActionFavorite ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionFavorite ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -1,5 +1,8 @@
 package typings.mapboxMapboxSdk.directionsMod
 
+import typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.unlimited
+import typings.mapboxMapboxSdk.mapiRequestMod.Coordinates
+import typings.mapboxMapboxSdk.mapiRequestMod.DirectionsApproach
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,57 +10,56 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Waypoint extends StObject {
   
   /**
-    * Used to filter the road segment the waypoint will be placed on by direction and dictates the angle of approach.
-    * This option should always be used in conjunction with the  radiuses parameter. The parameter takes two values per waypoint.
-    * The first value is an angle clockwise from true north between 0 and 360, and the second is the range of degrees the angle can deviate by.
-    * The recommended value for the range is 45° or 90°, as bearing measurements tend to be inaccurate.
-    * This is useful for making sure the new routes of rerouted vehicles continue traveling in their current direction.
-    * A request that does this would provide bearing and radius values for the first waypoint and leave the remaining values empty.
-    * If provided, the list of bearings must be the same length as the list of waypoints.
+    * Used to indicate how requested routes consider from which side of the road to approach a waypoint.
+    * Accepts unrestricted (default) or  curb . If set to  unrestricted , the routes can approach waypoints from either side of the road.
+    * If set to  curb , the route will be returned so that on arrival, the waypoint will be found on the side that corresponds with the
+    * driving_side of the region in which the returned route is located. Note that the  approaches parameter influences how you arrive at a waypoint,
+    * while  bearings influences how you start from a waypoint. If provided, the list of approaches must be the same length as the list of waypoints.
     * However, you can skip a coordinate and show its position in the list with the  ; separator.
     */
-  var bearing: js.UndefOr[js.Array[Double]] = js.undefined
+  var approach: js.UndefOr[DirectionsApproach] = js.undefined
   
   /**
-    * Array of [ longitude, latitude ] for the snapped coordinate.
+    * Used to filter the road segment the waypoint will be placed on by direction and dicates the anlge of approach.
+    * This option should always be used in conjunction with a `radius`. The first values is angle clockwise from true
+    * north between 0 and 360, and the second is the range of degrees the angle can deviate by.
     */
-  var location: js.Array[Double]
+  var bearing: js.UndefOr[Coordinates] = js.undefined
   
   /**
-    * String with the name of the way the coordinate snapped to.
+    * Semicolon-separated list of  {longitude},{latitude} coordinate pairs to visit in order. There can be between 2 and 25 coordinates.
     */
-  var name: String
+  var coordinates: Coordinates
   
   /**
-    * Custom names for waypoints used for the arrival instruction in banners and voice instructions, each separated by  ; .
-    * Values can be any string and total number of all characters cannot exceed 500. If provided, the list of waypoint_names must be the same
-    * length as the list of waypoints, but you can skip a coordinate and show its position with the  ; separator.
+    * Maximum distance in meters that each coordinate is allowed to move when snapped to a nearby road segment.
+    * There must be as many radiuses as there are coordinates in the request, each separated by ';'.
+    * Values can be any number greater than 0 or the string 'unlimited'.
+    * A  NoSegment error is returned if no routable road is found within the radius.
     */
-  var waypointName: js.UndefOr[String] = js.undefined
+  var radius: js.UndefOr[Double | unlimited] = js.undefined
 }
 object Waypoint {
   
-  inline def apply(location: js.Array[Double], name: String): Waypoint = {
-    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  inline def apply(coordinates: Coordinates): Waypoint = {
+    val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
     __obj.asInstanceOf[Waypoint]
   }
   
   extension [Self <: Waypoint](x: Self) {
     
-    inline def setBearing(value: js.Array[Double]): Self = StObject.set(x, "bearing", value.asInstanceOf[js.Any])
+    inline def setApproach(value: DirectionsApproach): Self = StObject.set(x, "approach", value.asInstanceOf[js.Any])
+    
+    inline def setApproachUndefined: Self = StObject.set(x, "approach", js.undefined)
+    
+    inline def setBearing(value: Coordinates): Self = StObject.set(x, "bearing", value.asInstanceOf[js.Any])
     
     inline def setBearingUndefined: Self = StObject.set(x, "bearing", js.undefined)
     
-    inline def setBearingVarargs(value: Double*): Self = StObject.set(x, "bearing", js.Array(value :_*))
+    inline def setCoordinates(value: Coordinates): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     
-    inline def setLocation(value: js.Array[Double]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double | unlimited): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    inline def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value :_*))
-    
-    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    
-    inline def setWaypointName(value: String): Self = StObject.set(x, "waypointName", value.asInstanceOf[js.Any])
-    
-    inline def setWaypointNameUndefined: Self = StObject.set(x, "waypointName", js.undefined)
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
   }
 }

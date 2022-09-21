@@ -29,6 +29,6 @@ object ListUserPermissionsResponse {
     
     inline def setUserPermissionUndefined: Self = StObject.set(x, "userPermission", js.undefined)
     
-    inline def setUserPermissionVarargs(value: UserPermission*): Self = StObject.set(x, "userPermission", js.Array(value :_*))
+    inline def setUserPermissionVarargs(value: UserPermission*): Self = StObject.set(x, "userPermission", js.Array(value*))
   }
 }

@@ -5,7 +5,7 @@ import typings.ethereumjsVm.exceptionsMod.VmError
 import typings.ethereumjsVm.interpreterMod.InterpreterOpts
 import typings.ethereumjsVm.interpreterMod.RunState
 import typings.ethereumjsVm.typesMod.PrecompileFunc
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,10 +18,10 @@ object evmMod {
   
   @JSImport("ethereumjs-vm/dist/evm/evm", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with EVM {
-    def this(vm: js.Any, txContext: typings.ethereumjsVm.txContextMod.default, block: js.Any) = this()
+    def this(vm: Any, txContext: typings.ethereumjsVm.txContextMod.default, block: Any) = this()
   }
   
   inline def OOGResult(gasLimit: typings.bnJs.mod.^): ExecResult = ^.asInstanceOf[js.Dynamic].applyDynamic("OOGResult")(gasLimit.asInstanceOf[js.Any]).asInstanceOf[ExecResult]
@@ -31,7 +31,7 @@ object evmMod {
     
     def _addToBalance(toAccount: typings.ethereumjsAccount.mod.default, message: typings.ethereumjsVm.messageMod.default): js.Promise[Unit] = js.native
     
-    var _block: js.Any = js.native
+    var _block: Any = js.native
     
     def _executeCall(message: typings.ethereumjsVm.messageMod.default): js.Promise[EVMResult] = js.native
     
@@ -54,7 +54,7 @@ object evmMod {
     
     var _tx: typings.ethereumjsVm.txContextMod.default = js.native
     
-    var _vm: js.Any = js.native
+    var _vm: Any = js.native
     
     /**
       * Executes an EVM message, determining whether it's a call or create
@@ -143,7 +143,7 @@ object evmMod {
     /**
       * Array of logs that the contract emitted
       */
-    var logs: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var logs: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Return value from the contract
@@ -180,11 +180,11 @@ object evmMod {
       
       inline def setGasUsed(value: typings.bnJs.mod.^): Self = StObject.set(x, "gasUsed", value.asInstanceOf[js.Any])
       
-      inline def setLogs(value: js.Array[js.Any]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
+      inline def setLogs(value: js.Array[Any]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
       
       inline def setLogsUndefined: Self = StObject.set(x, "logs", js.undefined)
       
-      inline def setLogsVarargs(value: js.Any*): Self = StObject.set(x, "logs", js.Array(value :_*))
+      inline def setLogsVarargs(value: Any*): Self = StObject.set(x, "logs", js.Array(value*))
       
       inline def setReturnValue(value: Buffer): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
       

@@ -1,9 +1,5 @@
 package typings.googleapis.loggingV2Mod.loggingV2
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,15 +9,7 @@ trait ParamsResourceOrganizationsSinksCreate
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Required. The resource in which to create the sink:
-    * "projects/[PROJECT_ID]" "organizations/[ORGANIZATION_ID]"
-    * "billingAccounts/[BILLING_ACCOUNT_ID]" "folders/[FOLDER_ID]" Examples:
-    * "projects/my-logging-project", "organizations/123456789".
+    * Required. The resource in which to create the sink: "projects/[PROJECT_ID]" "organizations/[ORGANIZATION_ID]" "billingAccounts/[BILLING_ACCOUNT_ID]" "folders/[FOLDER_ID]" For examples:"projects/my-project" "organizations/123456789"
     */
   var parent: js.UndefOr[String] = js.undefined
   
@@ -31,16 +19,7 @@ trait ParamsResourceOrganizationsSinksCreate
   var requestBody: js.UndefOr[SchemaLogSink] = js.undefined
   
   /**
-    * Optional. Determines the kind of IAM identity returned as writer_identity
-    * in the new sink. If this value is omitted or set to false, and if the
-    * sink's parent is a project, then the value returned as writer_identity is
-    * the same group or service account used by Logging before the addition of
-    * writer identities to this API. The sink's destination must be in the same
-    * project as the sink itself.If this field is set to true, or if the sink
-    * is owned by a non-project resource such as an organization, then the
-    * value of writer_identity will be a unique service account used only for
-    * exports from the new sink. For more information, see writer_identity in
-    * LogSink.
+    * Optional. Determines the kind of IAM identity returned as writer_identity in the new sink. If this value is omitted or set to false, and if the sink's parent is a project, then the value returned as writer_identity is the same group or service account used by Cloud Logging before the addition of writer identities to this API. The sink's destination must be in the same project as the sink itself.If this field is set to true, or if the sink is owned by a non-project resource such as an organization, then the value of writer_identity will be a unique service account used only for exports from the new sink. For more information, see writer_identity in LogSink.
     */
   var uniqueWriterIdentity: js.UndefOr[Boolean] = js.undefined
 }
@@ -52,10 +31,6 @@ object ParamsResourceOrganizationsSinksCreate {
   }
   
   extension [Self <: ParamsResourceOrganizationsSinksCreate](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

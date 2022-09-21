@@ -12,7 +12,7 @@ trait SizeConstraintStatement extends StObject {
   var ComparisonOperator: typings.awsSdk.wafv2Mod.ComparisonOperator
   
   /**
-    * The part of a web request that you want AWS WAF to inspect. For more information, see FieldToMatch. 
+    * The part of the web request that you want WAF to inspect. 
     */
   var FieldToMatch: typings.awsSdk.wafv2Mod.FieldToMatch
   
@@ -22,7 +22,7 @@ trait SizeConstraintStatement extends StObject {
   var Size: typings.awsSdk.wafv2Mod.Size
   
   /**
-    * Text transformations eliminate some of the unusual formatting that attackers use in web requests in an effort to bypass detection. If you specify one or more transformations in a rule statement, AWS WAF performs all transformations on the content of the request component identified by FieldToMatch, starting from the lowest priority setting, before inspecting the content for a match.
+    * Text transformations eliminate some of the unusual formatting that attackers use in web requests in an effort to bypass detection. If you specify one or more transformations in a rule statement, WAF performs all transformations on the content of the request component identified by FieldToMatch, starting from the lowest priority setting, before inspecting the content for a match.
     */
   var TextTransformations: typings.awsSdk.wafv2Mod.TextTransformations
 }
@@ -48,6 +48,6 @@ object SizeConstraintStatement {
     
     inline def setTextTransformations(value: TextTransformations): Self = StObject.set(x, "TextTransformations", value.asInstanceOf[js.Any])
     
-    inline def setTextTransformationsVarargs(value: TextTransformation*): Self = StObject.set(x, "TextTransformations", js.Array(value :_*))
+    inline def setTextTransformationsVarargs(value: TextTransformation*): Self = StObject.set(x, "TextTransformations", js.Array(value*))
   }
 }

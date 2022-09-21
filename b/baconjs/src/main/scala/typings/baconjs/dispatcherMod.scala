@@ -13,7 +13,7 @@ object dispatcherMod {
   
   @JSImport("baconjs/types/internal/dispatcher", JSImport.Default)
   @js.native
-  class default[V, O] protected ()
+  open class default[V, O] protected ()
     extends StObject
        with Dispatcher[V, O] {
     def this(observable: O, _subscribe: Subscribe[V]) = this()
@@ -29,22 +29,22 @@ object dispatcherMod {
     var ended: Boolean = js.native
     
     /* CompleteClass */
-    override def handleEvent(event: Event[V]): js.Any = js.native
+    override def handleEvent(event: Event[V]): Any = js.native
     
     /* CompleteClass */
     override def hasSubscribers(): Boolean = js.native
     
     /* CompleteClass */
-    override def inspect(): js.Any = js.native
+    override def inspect(): Any = js.native
     
     /* CompleteClass */
     var observable: O = js.native
     
     /* CompleteClass */
-    var prevError: js.Any = js.native
+    var prevError: Any = js.native
     
     /* CompleteClass */
-    override def push(event: Event[V]): js.Any = js.native
+    override def push(event: Event[V]): Any = js.native
     
     /* CompleteClass */
     override def pushIt(event: Event[V]): js.UndefOr[Reply] = js.native
@@ -81,17 +81,17 @@ object dispatcherMod {
     
     var ended: Boolean
     
-    def handleEvent(event: Event[V]): js.Any
+    def handleEvent(event: Event[V]): Any
     
     def hasSubscribers(): Boolean
     
-    def inspect(): js.Any
+    def inspect(): Any
     
     var observable: O
     
-    var prevError: js.Any
+    var prevError: Any
     
-    def push(event: Event[V]): js.Any
+    def push(event: Event[V]): Any
     
     def pushIt(event: Event[V]): js.UndefOr[Reply]
     
@@ -116,12 +116,12 @@ object dispatcherMod {
     inline def apply[V, O](
       _subscribe: /* arg */ EventSink[V] => Unsub,
       ended: Boolean,
-      handleEvent: Event[V] => js.Any,
+      handleEvent: Event[V] => Any,
       hasSubscribers: () => Boolean,
-      inspect: () => js.Any,
+      inspect: () => Any,
       observable: O,
-      prevError: js.Any,
-      push: Event[V] => js.Any,
+      prevError: Any,
+      push: Event[V] => Any,
       pushIt: Event[V] => js.UndefOr[Reply],
       pushToSubscriptions: Event[V] => Boolean,
       pushing: Boolean,
@@ -139,17 +139,17 @@ object dispatcherMod {
       
       inline def setEnded(value: Boolean): Self = StObject.set(x, "ended", value.asInstanceOf[js.Any])
       
-      inline def setHandleEvent(value: Event[V] => js.Any): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
+      inline def setHandleEvent(value: Event[V] => Any): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
       
       inline def setHasSubscribers(value: () => Boolean): Self = StObject.set(x, "hasSubscribers", js.Any.fromFunction0(value))
       
-      inline def setInspect(value: () => js.Any): Self = StObject.set(x, "inspect", js.Any.fromFunction0(value))
+      inline def setInspect(value: () => Any): Self = StObject.set(x, "inspect", js.Any.fromFunction0(value))
       
       inline def setObservable(value: O): Self = StObject.set(x, "observable", value.asInstanceOf[js.Any])
       
-      inline def setPrevError(value: js.Any): Self = StObject.set(x, "prevError", value.asInstanceOf[js.Any])
+      inline def setPrevError(value: Any): Self = StObject.set(x, "prevError", value.asInstanceOf[js.Any])
       
-      inline def setPush(value: Event[V] => js.Any): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+      inline def setPush(value: Event[V] => Any): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
       
       inline def setPushIt(value: Event[V] => js.UndefOr[Reply]): Self = StObject.set(x, "pushIt", js.Any.fromFunction1(value))
       
@@ -159,7 +159,7 @@ object dispatcherMod {
       
       inline def setQueue(value: js.Array[Event[V]]): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
       
-      inline def setQueueVarargs(value: Event[V]*): Self = StObject.set(x, "queue", js.Array(value :_*))
+      inline def setQueueVarargs(value: Event[V]*): Self = StObject.set(x, "queue", js.Array(value*))
       
       inline def setRemoveSub(value: Subscription[V] => js.Array[Subscription[V]]): Self = StObject.set(x, "removeSub", js.Any.fromFunction1(value))
       
@@ -167,7 +167,7 @@ object dispatcherMod {
       
       inline def setSubscriptions(value: js.Array[Subscription[V]]): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
       
-      inline def setSubscriptionsVarargs(value: Subscription[V]*): Self = StObject.set(x, "subscriptions", js.Array(value :_*))
+      inline def setSubscriptionsVarargs(value: Subscription[V]*): Self = StObject.set(x, "subscriptions", js.Array(value*))
       
       inline def setUnsubSrc(value: () => Unit): Self = StObject.set(x, "unsubSrc", js.Any.fromFunction0(value))
       

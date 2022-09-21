@@ -10,10 +10,10 @@ Generate beautiful CSS3 powered animations
 | ------------------ | :-------------: |
 | Full name          | bounce.js |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 30530 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2631.3333333333335 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/bounce.js)

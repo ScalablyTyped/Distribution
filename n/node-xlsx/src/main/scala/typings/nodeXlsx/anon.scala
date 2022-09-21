@@ -8,22 +8,22 @@ object anon {
   
   trait Data extends StObject {
     
-    var data: js.Array[js.Array[js.Any]]
+    var data: js.Array[js.Array[Any]]
     
     var name: String
   }
   object Data {
     
-    inline def apply(data: js.Array[js.Array[js.Any]], name: String): Data = {
+    inline def apply(data: js.Array[js.Array[Any]], name: String): Data = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data]
     }
     
     extension [Self <: Data](x: Self) {
       
-      inline def setData(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[js.Array[Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: js.Array[Any]*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -31,7 +31,7 @@ object anon {
   
   trait Name extends StObject {
     
-    var data: js.Array[js.Array[js.Any]]
+    var data: js.Array[js.Array[Any]]
     
     var name: String
     
@@ -39,16 +39,16 @@ object anon {
   }
   object Name {
     
-    inline def apply(data: js.Array[js.Array[js.Any]], name: String): Name = {
+    inline def apply(data: js.Array[js.Array[Any]], name: String): Name = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Name]
     }
     
     extension [Self <: Name](x: Self) {
       
-      inline def setData(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[js.Array[Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: js.Array[Any]*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

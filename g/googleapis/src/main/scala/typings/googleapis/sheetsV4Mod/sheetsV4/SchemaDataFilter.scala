@@ -4,20 +4,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Filter that describes what data should be selected or returned from a
-  * request.
-  */
 trait SchemaDataFilter extends StObject {
   
   /**
     * Selects data that matches the specified A1 range.
     */
-  var a1Range: js.UndefOr[String] = js.undefined
+  var a1Range: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Selects data associated with the developer metadata matching the criteria
-    * described by this DeveloperMetadataLookup.
+    * Selects data associated with the developer metadata matching the criteria described by this DeveloperMetadataLookup.
     */
   var developerMetadataLookup: js.UndefOr[SchemaDeveloperMetadataLookup] = js.undefined
   
@@ -36,6 +31,8 @@ object SchemaDataFilter {
   extension [Self <: SchemaDataFilter](x: Self) {
     
     inline def setA1Range(value: String): Self = StObject.set(x, "a1Range", value.asInstanceOf[js.Any])
+    
+    inline def setA1RangeNull: Self = StObject.set(x, "a1Range", null)
     
     inline def setA1RangeUndefined: Self = StObject.set(x, "a1Range", js.undefined)
     

@@ -17,9 +17,9 @@ trait ReadonlyWaitablePromiseSaWait extends StObject {
 object ReadonlyWaitablePromiseSaWait {
   
   inline def apply(
-    `catch`: () => js.Promise[SaveSynonymResponse | js.Any],
+    `catch`: () => js.Promise[SaveSynonymResponse | Any],
     `finally`: () => js.Promise[SaveSynonymResponse],
-    `then`: () => js.Promise[js.Any | js.Any]
+    `then`: () => js.Promise[Any | Any]
   ): ReadonlyWaitablePromiseSaWait = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("catch")(js.Any.fromFunction0(`catch`))
@@ -30,10 +30,10 @@ object ReadonlyWaitablePromiseSaWait {
   
   extension [Self <: ReadonlyWaitablePromiseSaWait](x: Self) {
     
-    inline def setCatch(value: () => js.Promise[SaveSynonymResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
+    inline def setCatch(value: () => js.Promise[SaveSynonymResponse | Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
     
     inline def setFinally(value: () => js.Promise[SaveSynonymResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
     
-    inline def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
+    inline def setThen(value: () => js.Promise[Any | Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
   }
 }

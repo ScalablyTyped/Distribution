@@ -12,17 +12,17 @@ object adamaxOptimizerMod {
   
   @JSImport("@tensorflow/tfjs-core/dist/optimizers/adamax_optimizer", "AdamaxOptimizer")
   @js.native
-  class AdamaxOptimizer protected () extends Optimizer {
+  open class AdamaxOptimizer protected () extends Optimizer {
     def this(learningRate: Double, beta1: Double, beta2: Double) = this()
     def this(learningRate: Double, beta1: Double, beta2: Double, epsilon: Double) = this()
     def this(learningRate: Double, beta1: Double, beta2: Double, epsilon: Double, decay: Double) = this()
     def this(learningRate: Double, beta1: Double, beta2: Double, epsilon: Unit, decay: Double) = this()
     
-    /* private */ var accBeta1: js.Any = js.native
+    /* private */ var accBeta1: Any = js.native
     
-    /* private */ var accumulatedFirstMoment: js.Any = js.native
+    /* private */ var accumulatedFirstMoment: Any = js.native
     
-    /* private */ var accumulatedWeightedInfNorm: js.Any = js.native
+    /* private */ var accumulatedWeightedInfNorm: Any = js.native
     
     /* protected */ var beta1: Double = js.native
     
@@ -32,7 +32,7 @@ object adamaxOptimizerMod {
     
     /* protected */ var epsilon: Double = js.native
     
-    /* private */ var iteration: js.Any = js.native
+    /* private */ var iteration: Any = js.native
     
     /* protected */ var learningRate: Double = js.native
   }

@@ -17,7 +17,7 @@ object axis {
        with IObservable {
     
     /** [Config Option] (Object) */
-    var background: js.UndefOr[js.Any] = js.undefined
+    var background: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Ext.chart.AbstractChart) */
     var chart: js.UndefOr[IAbstractChart] = js.undefined
@@ -28,7 +28,7 @@ object axis {
     /** [Method] Returns the value of background
       * @returns Object
       */
-    var getBackground: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getBackground: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of chart
       * @returns Ext.chart.AbstractChart
@@ -44,7 +44,7 @@ object axis {
       */
     var getCoordFor: js.UndefOr[
         js.Function4[
-          /* value */ js.UndefOr[js.Any], 
+          /* value */ js.UndefOr[Any], 
           /* field */ js.UndefOr[String], 
           /* idx */ js.UndefOr[Double], 
           /* items */ js.UndefOr[IMixedCollection], 
@@ -60,7 +60,7 @@ object axis {
     /** [Method] Returns the value of grid
       * @returns Object
       */
-    var getGrid: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getGrid: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of hidden
       * @returns Boolean
@@ -75,7 +75,7 @@ object axis {
     /** [Method] Returns the value of label
       * @returns Object
       */
-    var getLabel: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getLabel: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of labelInSpan
       * @returns Boolean
@@ -85,7 +85,7 @@ object axis {
     /** [Method] Returns the value of layout
       * @returns Object|Ext.chart.axis.layout.Layout
       */
-    var getLayout: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getLayout: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of majorTickSteps
       * @returns Number
@@ -135,22 +135,22 @@ object axis {
     /** [Method] Returns the value of renderer
       * @returns Function
       */
-    var getRenderer: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getRenderer: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of segmenter
       * @returns Object|Ext.chart.axis.segmenter.Segmenter
       */
-    var getSegmenter: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getSegmenter: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of style
       * @returns Object
       */
-    var getStyle: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getStyle: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of title
       * @returns String|Object
       */
-    var getTitle: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getTitle: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of titleMargin
       * @returns Number
@@ -163,7 +163,7 @@ object axis {
     var getVisibleRange: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Config Option] (Object) */
-    var grid: js.UndefOr[js.Any] = js.undefined
+    var grid: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Boolean) */
     var hidden: js.UndefOr[Boolean] = js.undefined
@@ -172,13 +172,13 @@ object axis {
     var increment: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Object) */
-    var label: js.UndefOr[js.Any] = js.undefined
+    var label: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Boolean) */
     var labelInSpan: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Object|Ext.chart.axis.layout.Layout) */
-    var layout: js.UndefOr[js.Any] = js.undefined
+    var layout: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Number) */
     var majorTickSteps: js.UndefOr[Double] = js.undefined
@@ -214,22 +214,22 @@ object axis {
       */
     @JSName("relayEvents")
     var relayEvents_IAxis: js.UndefOr[
-        js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
+        js.Function2[/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any], IObservable]
       ] = js.undefined
     
     /** [Method] Invokes renderFrame on this axis s surface s  */
     var renderFrame: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Function) */
-    var renderer: js.UndefOr[js.Any] = js.undefined
+    var renderer: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Object|Ext.chart.axis.segmenter.Segmenter) */
-    var segmenter: js.UndefOr[js.Any] = js.undefined
+    var segmenter: js.UndefOr[Any] = js.undefined
     
     /** [Method] Sets the value of background
       * @param background Object The new value.
       */
-    var setBackground: js.UndefOr[js.Function1[/* background */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setBackground: js.UndefOr[js.Function1[/* background */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of chart
       * @param chart Ext.chart.AbstractChart The new value.
@@ -244,7 +244,7 @@ object axis {
     /** [Method] Sets the value of grid
       * @param grid Object The new value.
       */
-    var setGrid: js.UndefOr[js.Function1[/* grid */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setGrid: js.UndefOr[js.Function1[/* grid */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of hidden
       * @param hidden Boolean The new value.
@@ -259,7 +259,7 @@ object axis {
     /** [Method] Sets the value of label
       * @param label Object The new value.
       */
-    var setLabel: js.UndefOr[js.Function1[/* label */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setLabel: js.UndefOr[js.Function1[/* label */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of labelInSpan
       * @param labelInSpan Boolean The new value.
@@ -269,7 +269,7 @@ object axis {
     /** [Method] Sets the value of layout
       * @param layout Object|Ext.chart.axis.layout.Layout The new value.
       */
-    var setLayout: js.UndefOr[js.Function1[/* layout */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setLayout: js.UndefOr[js.Function1[/* layout */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of majorTickSteps
       * @param majorTickSteps Number The new value.
@@ -315,22 +315,22 @@ object axis {
       * @param renderer Function The new value.
       * @returns String The label to display.
       */
-    var setRenderer: js.UndefOr[js.Function1[/* renderer */ js.UndefOr[js.Any], String]] = js.undefined
+    var setRenderer: js.UndefOr[js.Function1[/* renderer */ js.UndefOr[Any], String]] = js.undefined
     
     /** [Method] Sets the value of segmenter
       * @param segmenter Object|Ext.chart.axis.segmenter.Segmenter The new value.
       */
-    var setSegmenter: js.UndefOr[js.Function1[/* segmenter */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setSegmenter: js.UndefOr[js.Function1[/* segmenter */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of style
       * @param style Object The new value.
       */
-    var setStyle: js.UndefOr[js.Function1[/* style */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setStyle: js.UndefOr[js.Function1[/* style */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of title
       * @param title String|Object The new value.
       */
-    var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of titleMargin
       * @param titleMargin Number The new value.
@@ -343,10 +343,10 @@ object axis {
     var setVisibleRange: js.UndefOr[js.Function1[/* visibleRange */ js.UndefOr[Array], Unit]] = js.undefined
     
     /** [Config Option] (Object) */
-    var style: js.UndefOr[js.Any] = js.undefined
+    var style: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String|Object) */
-    var title: js.UndefOr[js.Any] = js.undefined
+    var title: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Number) */
     var titleMargin: js.UndefOr[Double] = js.undefined
@@ -363,7 +363,7 @@ object axis {
     
     extension [Self <: IAxis](x: Self) {
       
-      inline def setBackground(value: js.Any): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: Any): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
       inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
@@ -375,7 +375,7 @@ object axis {
       
       inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      inline def setGetBackground(value: () => js.Any): Self = StObject.set(x, "getBackground", js.Any.fromFunction0(value))
+      inline def setGetBackground(value: () => Any): Self = StObject.set(x, "getBackground", js.Any.fromFunction0(value))
       
       inline def setGetBackgroundUndefined: Self = StObject.set(x, "getBackground", js.undefined)
       
@@ -384,7 +384,7 @@ object axis {
       inline def setGetChartUndefined: Self = StObject.set(x, "getChart", js.undefined)
       
       inline def setGetCoordFor(
-        value: (/* value */ js.UndefOr[js.Any], /* field */ js.UndefOr[String], /* idx */ js.UndefOr[Double], /* items */ js.UndefOr[IMixedCollection]) => Double
+        value: (/* value */ js.UndefOr[Any], /* field */ js.UndefOr[String], /* idx */ js.UndefOr[Double], /* items */ js.UndefOr[IMixedCollection]) => Double
       ): Self = StObject.set(x, "getCoordFor", js.Any.fromFunction4(value))
       
       inline def setGetCoordForUndefined: Self = StObject.set(x, "getCoordFor", js.undefined)
@@ -393,7 +393,7 @@ object axis {
       
       inline def setGetFieldsUndefined: Self = StObject.set(x, "getFields", js.undefined)
       
-      inline def setGetGrid(value: () => js.Any): Self = StObject.set(x, "getGrid", js.Any.fromFunction0(value))
+      inline def setGetGrid(value: () => Any): Self = StObject.set(x, "getGrid", js.Any.fromFunction0(value))
       
       inline def setGetGridUndefined: Self = StObject.set(x, "getGrid", js.undefined)
       
@@ -405,7 +405,7 @@ object axis {
       
       inline def setGetIncrementUndefined: Self = StObject.set(x, "getIncrement", js.undefined)
       
-      inline def setGetLabel(value: () => js.Any): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
+      inline def setGetLabel(value: () => Any): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
       
       inline def setGetLabelInSpan(value: () => Boolean): Self = StObject.set(x, "getLabelInSpan", js.Any.fromFunction0(value))
       
@@ -413,7 +413,7 @@ object axis {
       
       inline def setGetLabelUndefined: Self = StObject.set(x, "getLabel", js.undefined)
       
-      inline def setGetLayout(value: () => js.Any): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
+      inline def setGetLayout(value: () => Any): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
       
       inline def setGetLayoutUndefined: Self = StObject.set(x, "getLayout", js.undefined)
       
@@ -453,19 +453,19 @@ object axis {
       
       inline def setGetRangeUndefined: Self = StObject.set(x, "getRange", js.undefined)
       
-      inline def setGetRenderer(value: () => js.Any): Self = StObject.set(x, "getRenderer", js.Any.fromFunction0(value))
+      inline def setGetRenderer(value: () => Any): Self = StObject.set(x, "getRenderer", js.Any.fromFunction0(value))
       
       inline def setGetRendererUndefined: Self = StObject.set(x, "getRenderer", js.undefined)
       
-      inline def setGetSegmenter(value: () => js.Any): Self = StObject.set(x, "getSegmenter", js.Any.fromFunction0(value))
+      inline def setGetSegmenter(value: () => Any): Self = StObject.set(x, "getSegmenter", js.Any.fromFunction0(value))
       
       inline def setGetSegmenterUndefined: Self = StObject.set(x, "getSegmenter", js.undefined)
       
-      inline def setGetStyle(value: () => js.Any): Self = StObject.set(x, "getStyle", js.Any.fromFunction0(value))
+      inline def setGetStyle(value: () => Any): Self = StObject.set(x, "getStyle", js.Any.fromFunction0(value))
       
       inline def setGetStyleUndefined: Self = StObject.set(x, "getStyle", js.undefined)
       
-      inline def setGetTitle(value: () => js.Any): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
+      inline def setGetTitle(value: () => Any): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
       
       inline def setGetTitleMargin(value: () => Double): Self = StObject.set(x, "getTitleMargin", js.Any.fromFunction0(value))
       
@@ -477,7 +477,7 @@ object axis {
       
       inline def setGetVisibleRangeUndefined: Self = StObject.set(x, "getVisibleRange", js.undefined)
       
-      inline def setGrid(value: js.Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+      inline def setGrid(value: Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
       
       inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
       
@@ -489,7 +489,7 @@ object axis {
       
       inline def setIncrementUndefined: Self = StObject.set(x, "increment", js.undefined)
       
-      inline def setLabel(value: js.Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
       inline def setLabelInSpan(value: Boolean): Self = StObject.set(x, "labelInSpan", value.asInstanceOf[js.Any])
       
@@ -497,7 +497,7 @@ object axis {
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      inline def setLayout(value: js.Any): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: Any): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
       inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
       
@@ -537,7 +537,7 @@ object axis {
       
       inline def setProcessDataUndefined: Self = StObject.set(x, "processData", js.undefined)
       
-      inline def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
+      inline def setRelayEvents(value: (/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
       
       inline def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
       
@@ -545,15 +545,15 @@ object axis {
       
       inline def setRenderFrameUndefined: Self = StObject.set(x, "renderFrame", js.undefined)
       
-      inline def setRenderer(value: js.Any): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+      inline def setRenderer(value: Any): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
       
       inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
       
-      inline def setSegmenter(value: js.Any): Self = StObject.set(x, "segmenter", value.asInstanceOf[js.Any])
+      inline def setSegmenter(value: Any): Self = StObject.set(x, "segmenter", value.asInstanceOf[js.Any])
       
       inline def setSegmenterUndefined: Self = StObject.set(x, "segmenter", js.undefined)
       
-      inline def setSetBackground(value: /* background */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setBackground", js.Any.fromFunction1(value))
+      inline def setSetBackground(value: /* background */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setBackground", js.Any.fromFunction1(value))
       
       inline def setSetBackgroundUndefined: Self = StObject.set(x, "setBackground", js.undefined)
       
@@ -565,7 +565,7 @@ object axis {
       
       inline def setSetFieldsUndefined: Self = StObject.set(x, "setFields", js.undefined)
       
-      inline def setSetGrid(value: /* grid */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setGrid", js.Any.fromFunction1(value))
+      inline def setSetGrid(value: /* grid */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setGrid", js.Any.fromFunction1(value))
       
       inline def setSetGridUndefined: Self = StObject.set(x, "setGrid", js.undefined)
       
@@ -577,7 +577,7 @@ object axis {
       
       inline def setSetIncrementUndefined: Self = StObject.set(x, "setIncrement", js.undefined)
       
-      inline def setSetLabel(value: /* label */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setLabel", js.Any.fromFunction1(value))
+      inline def setSetLabel(value: /* label */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setLabel", js.Any.fromFunction1(value))
       
       inline def setSetLabelInSpan(value: /* labelInSpan */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setLabelInSpan", js.Any.fromFunction1(value))
       
@@ -585,7 +585,7 @@ object axis {
       
       inline def setSetLabelUndefined: Self = StObject.set(x, "setLabel", js.undefined)
       
-      inline def setSetLayout(value: /* layout */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setLayout", js.Any.fromFunction1(value))
+      inline def setSetLayout(value: /* layout */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setLayout", js.Any.fromFunction1(value))
       
       inline def setSetLayoutUndefined: Self = StObject.set(x, "setLayout", js.undefined)
       
@@ -621,19 +621,19 @@ object axis {
       
       inline def setSetPositionUndefined: Self = StObject.set(x, "setPosition", js.undefined)
       
-      inline def setSetRenderer(value: /* renderer */ js.UndefOr[js.Any] => String): Self = StObject.set(x, "setRenderer", js.Any.fromFunction1(value))
+      inline def setSetRenderer(value: /* renderer */ js.UndefOr[Any] => String): Self = StObject.set(x, "setRenderer", js.Any.fromFunction1(value))
       
       inline def setSetRendererUndefined: Self = StObject.set(x, "setRenderer", js.undefined)
       
-      inline def setSetSegmenter(value: /* segmenter */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setSegmenter", js.Any.fromFunction1(value))
+      inline def setSetSegmenter(value: /* segmenter */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setSegmenter", js.Any.fromFunction1(value))
       
       inline def setSetSegmenterUndefined: Self = StObject.set(x, "setSegmenter", js.undefined)
       
-      inline def setSetStyle(value: /* style */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setStyle", js.Any.fromFunction1(value))
+      inline def setSetStyle(value: /* style */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setStyle", js.Any.fromFunction1(value))
       
       inline def setSetStyleUndefined: Self = StObject.set(x, "setStyle", js.undefined)
       
-      inline def setSetTitle(value: /* title */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
+      inline def setSetTitle(value: /* title */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
       
       inline def setSetTitleMargin(value: /* titleMargin */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setTitleMargin", js.Any.fromFunction1(value))
       
@@ -645,11 +645,11 @@ object axis {
       
       inline def setSetVisibleRangeUndefined: Self = StObject.set(x, "setVisibleRange", js.undefined)
       
-      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setTitle(value: js.Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
       inline def setTitleMargin(value: Double): Self = StObject.set(x, "titleMargin", value.asInstanceOf[js.Any])
       
@@ -799,10 +799,10 @@ object axis {
     var calculateByLabelSize: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String/Boolean) */
-    var dateFormat: js.UndefOr[js.Any] = js.undefined
+    var dateFormat: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Date) */
-    var fromDate: js.UndefOr[js.Any] = js.undefined
+    var fromDate: js.UndefOr[Any] = js.undefined
     
     /** [Method] Returns the value of calculateByLabelSize
       * @returns Boolean
@@ -814,17 +814,17 @@ object axis {
       * @returns Number
       */
     @JSName("getCoordFor")
-    var getCoordFor_ITime: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Double]] = js.undefined
+    var getCoordFor_ITime: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], Double]] = js.undefined
     
     /** [Method] Returns the value of dateFormat
       * @returns String/Boolean
       */
-    var getDateFormat: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getDateFormat: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of fromDate
       * @returns Date
       */
-    var getFromDate: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getFromDate: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of step
       * @returns Array
@@ -834,7 +834,7 @@ object axis {
     /** [Method] Returns the value of toDate
       * @returns Date
       */
-    var getToDate: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getToDate: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Sets the value of calculateByLabelSize
       * @param calculateByLabelSize Boolean The new value.
@@ -844,12 +844,12 @@ object axis {
     /** [Method] Sets the value of dateFormat
       * @param dateFormat String/Boolean The new value.
       */
-    var setDateFormat: js.UndefOr[js.Function1[/* dateFormat */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setDateFormat: js.UndefOr[js.Function1[/* dateFormat */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of fromDate
       * @param fromDate Date The new value.
       */
-    var setFromDate: js.UndefOr[js.Function1[/* fromDate */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setFromDate: js.UndefOr[js.Function1[/* fromDate */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of step
       * @param step Array The new value.
@@ -859,13 +859,13 @@ object axis {
     /** [Method] Sets the value of toDate
       * @param toDate Date The new value.
       */
-    var setToDate: js.UndefOr[js.Function1[/* toDate */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setToDate: js.UndefOr[js.Function1[/* toDate */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Config Option] (Array) */
     var step: js.UndefOr[Array] = js.undefined
     
     /** [Config Option] (Date) */
-    var toDate: js.UndefOr[js.Any] = js.undefined
+    var toDate: js.UndefOr[Any] = js.undefined
   }
   object ITime {
     
@@ -880,11 +880,11 @@ object axis {
       
       inline def setCalculateByLabelSizeUndefined: Self = StObject.set(x, "calculateByLabelSize", js.undefined)
       
-      inline def setDateFormat(value: js.Any): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
+      inline def setDateFormat(value: Any): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
       
       inline def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
       
-      inline def setFromDate(value: js.Any): Self = StObject.set(x, "fromDate", value.asInstanceOf[js.Any])
+      inline def setFromDate(value: Any): Self = StObject.set(x, "fromDate", value.asInstanceOf[js.Any])
       
       inline def setFromDateUndefined: Self = StObject.set(x, "fromDate", js.undefined)
       
@@ -892,15 +892,15 @@ object axis {
       
       inline def setGetCalculateByLabelSizeUndefined: Self = StObject.set(x, "getCalculateByLabelSize", js.undefined)
       
-      inline def setGetCoordFor(value: /* value */ js.UndefOr[js.Any] => Double): Self = StObject.set(x, "getCoordFor", js.Any.fromFunction1(value))
+      inline def setGetCoordFor(value: /* value */ js.UndefOr[Any] => Double): Self = StObject.set(x, "getCoordFor", js.Any.fromFunction1(value))
       
       inline def setGetCoordForUndefined: Self = StObject.set(x, "getCoordFor", js.undefined)
       
-      inline def setGetDateFormat(value: () => js.Any): Self = StObject.set(x, "getDateFormat", js.Any.fromFunction0(value))
+      inline def setGetDateFormat(value: () => Any): Self = StObject.set(x, "getDateFormat", js.Any.fromFunction0(value))
       
       inline def setGetDateFormatUndefined: Self = StObject.set(x, "getDateFormat", js.undefined)
       
-      inline def setGetFromDate(value: () => js.Any): Self = StObject.set(x, "getFromDate", js.Any.fromFunction0(value))
+      inline def setGetFromDate(value: () => Any): Self = StObject.set(x, "getFromDate", js.Any.fromFunction0(value))
       
       inline def setGetFromDateUndefined: Self = StObject.set(x, "getFromDate", js.undefined)
       
@@ -908,7 +908,7 @@ object axis {
       
       inline def setGetStepUndefined: Self = StObject.set(x, "getStep", js.undefined)
       
-      inline def setGetToDate(value: () => js.Any): Self = StObject.set(x, "getToDate", js.Any.fromFunction0(value))
+      inline def setGetToDate(value: () => Any): Self = StObject.set(x, "getToDate", js.Any.fromFunction0(value))
       
       inline def setGetToDateUndefined: Self = StObject.set(x, "getToDate", js.undefined)
       
@@ -916,11 +916,11 @@ object axis {
       
       inline def setSetCalculateByLabelSizeUndefined: Self = StObject.set(x, "setCalculateByLabelSize", js.undefined)
       
-      inline def setSetDateFormat(value: /* dateFormat */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDateFormat", js.Any.fromFunction1(value))
+      inline def setSetDateFormat(value: /* dateFormat */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setDateFormat", js.Any.fromFunction1(value))
       
       inline def setSetDateFormatUndefined: Self = StObject.set(x, "setDateFormat", js.undefined)
       
-      inline def setSetFromDate(value: /* fromDate */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setFromDate", js.Any.fromFunction1(value))
+      inline def setSetFromDate(value: /* fromDate */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setFromDate", js.Any.fromFunction1(value))
       
       inline def setSetFromDateUndefined: Self = StObject.set(x, "setFromDate", js.undefined)
       
@@ -928,7 +928,7 @@ object axis {
       
       inline def setSetStepUndefined: Self = StObject.set(x, "setStep", js.undefined)
       
-      inline def setSetToDate(value: /* toDate */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setToDate", js.Any.fromFunction1(value))
+      inline def setSetToDate(value: /* toDate */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setToDate", js.Any.fromFunction1(value))
       
       inline def setSetToDateUndefined: Self = StObject.set(x, "setToDate", js.undefined)
       
@@ -936,7 +936,7 @@ object axis {
       
       inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
       
-      inline def setToDate(value: js.Any): Self = StObject.set(x, "toDate", value.asInstanceOf[js.Any])
+      inline def setToDate(value: Any): Self = StObject.set(x, "toDate", value.asInstanceOf[js.Any])
       
       inline def setToDateUndefined: Self = StObject.set(x, "toDate", js.undefined)
     }
@@ -979,10 +979,10 @@ object axis {
       @JSName("snapEnds")
       var snapEnds_IContinuous: js.UndefOr[
             js.Function4[
-              /* context */ js.UndefOr[js.Any], 
-              /* min */ js.UndefOr[js.Any], 
-              /* max */ js.UndefOr[js.Any], 
-              /* estStepSize */ js.UndefOr[js.Any], 
+              /* context */ js.UndefOr[Any], 
+              /* min */ js.UndefOr[Any], 
+              /* max */ js.UndefOr[Any], 
+              /* estStepSize */ js.UndefOr[Any], 
               Unit
             ]
           ] = js.undefined
@@ -1013,7 +1013,7 @@ object axis {
         inline def setSetAdjustMinimumByMajorUnitUndefined: Self = StObject.set(x, "setAdjustMinimumByMajorUnit", js.undefined)
         
         inline def setSnapEnds(
-          value: (/* context */ js.UndefOr[js.Any], /* min */ js.UndefOr[js.Any], /* max */ js.UndefOr[js.Any], /* estStepSize */ js.UndefOr[js.Any]) => Unit
+          value: (/* context */ js.UndefOr[Any], /* min */ js.UndefOr[Any], /* max */ js.UndefOr[Any], /* estStepSize */ js.UndefOr[Any]) => Unit
         ): Self = StObject.set(x, "snapEnds", js.Any.fromFunction4(value))
         
         inline def setSnapEndsUndefined: Self = StObject.set(x, "snapEnds", js.undefined)
@@ -1037,10 +1037,10 @@ object axis {
       @JSName("snapEnds")
       var snapEnds_IDiscrete: js.UndefOr[
             js.Function4[
-              /* context */ js.UndefOr[js.Any], 
-              /* min */ js.UndefOr[js.Any], 
-              /* max */ js.UndefOr[js.Any], 
-              /* estStepSize */ js.UndefOr[js.Any], 
+              /* context */ js.UndefOr[Any], 
+              /* min */ js.UndefOr[Any], 
+              /* max */ js.UndefOr[Any], 
+              /* estStepSize */ js.UndefOr[Any], 
               Unit
             ]
           ] = js.undefined
@@ -1054,10 +1054,10 @@ object axis {
       @JSName("trimByRange")
       var trimByRange_IDiscrete: js.UndefOr[
             js.Function4[
-              /* context */ js.UndefOr[js.Any], 
-              /* out */ js.UndefOr[js.Any], 
-              /* trimMin */ js.UndefOr[js.Any], 
-              /* trimMax */ js.UndefOr[js.Any], 
+              /* context */ js.UndefOr[Any], 
+              /* out */ js.UndefOr[Any], 
+              /* trimMin */ js.UndefOr[Any], 
+              /* trimMax */ js.UndefOr[Any], 
               Unit
             ]
           ] = js.undefined
@@ -1076,13 +1076,13 @@ object axis {
         inline def setProcessDataUndefined: Self = StObject.set(x, "processData", js.undefined)
         
         inline def setSnapEnds(
-          value: (/* context */ js.UndefOr[js.Any], /* min */ js.UndefOr[js.Any], /* max */ js.UndefOr[js.Any], /* estStepSize */ js.UndefOr[js.Any]) => Unit
+          value: (/* context */ js.UndefOr[Any], /* min */ js.UndefOr[Any], /* max */ js.UndefOr[Any], /* estStepSize */ js.UndefOr[Any]) => Unit
         ): Self = StObject.set(x, "snapEnds", js.Any.fromFunction4(value))
         
         inline def setSnapEndsUndefined: Self = StObject.set(x, "snapEnds", js.undefined)
         
         inline def setTrimByRange(
-          value: (/* context */ js.UndefOr[js.Any], /* out */ js.UndefOr[js.Any], /* trimMin */ js.UndefOr[js.Any], /* trimMax */ js.UndefOr[js.Any]) => Unit
+          value: (/* context */ js.UndefOr[Any], /* out */ js.UndefOr[Any], /* trimMin */ js.UndefOr[Any], /* trimMax */ js.UndefOr[Any]) => Unit
         ): Self = StObject.set(x, "trimByRange", js.Any.fromFunction4(value))
         
         inline def setTrimByRangeUndefined: Self = StObject.set(x, "trimByRange", js.undefined)
@@ -1100,17 +1100,17 @@ object axis {
         * @param context Object
         * @returns *
         */
-      var calculateLayout: js.UndefOr[js.Function1[/* context */ js.UndefOr[js.Any], js.Any]] = js.undefined
+      var calculateLayout: js.UndefOr[js.Function1[/* context */ js.UndefOr[Any], Any]] = js.undefined
       
       /** [Method] Calculates the position of major ticks for the axis
         * @param context Object
         */
-      var calculateMajorTicks: js.UndefOr[js.Function1[/* context */ js.UndefOr[js.Any], Unit]] = js.undefined
+      var calculateMajorTicks: js.UndefOr[js.Function1[/* context */ js.UndefOr[Any], Unit]] = js.undefined
       
       /** [Method] Calculates the position of sub ticks for the axis
         * @param context Object
         */
-      var calculateMinorTicks: js.UndefOr[js.Function1[/* context */ js.UndefOr[js.Any], Unit]] = js.undefined
+      var calculateMinorTicks: js.UndefOr[js.Function1[/* context */ js.UndefOr[Any], Unit]] = js.undefined
       
       /** [Method] Returns the value of axis
         * @returns Ext.chart.axis.Axis
@@ -1135,7 +1135,7 @@ object axis {
         */
       var snapEnds: js.UndefOr[
             js.Function4[
-              /* context */ js.UndefOr[js.Any], 
+              /* context */ js.UndefOr[Any], 
               /* min */ js.UndefOr[Double], 
               /* max */ js.UndefOr[Double], 
               /* estStepSize */ js.UndefOr[Double], 
@@ -1151,8 +1151,8 @@ object axis {
         */
       var trimByRange: js.UndefOr[
             js.Function4[
-              /* context */ js.UndefOr[js.Any], 
-              /* out */ js.UndefOr[js.Any], 
+              /* context */ js.UndefOr[Any], 
+              /* out */ js.UndefOr[Any], 
               /* trimMin */ js.UndefOr[Double], 
               /* trimMax */ js.UndefOr[Double], 
               Unit
@@ -1172,15 +1172,15 @@ object axis {
         
         inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
         
-        inline def setCalculateLayout(value: /* context */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "calculateLayout", js.Any.fromFunction1(value))
+        inline def setCalculateLayout(value: /* context */ js.UndefOr[Any] => Any): Self = StObject.set(x, "calculateLayout", js.Any.fromFunction1(value))
         
         inline def setCalculateLayoutUndefined: Self = StObject.set(x, "calculateLayout", js.undefined)
         
-        inline def setCalculateMajorTicks(value: /* context */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "calculateMajorTicks", js.Any.fromFunction1(value))
+        inline def setCalculateMajorTicks(value: /* context */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "calculateMajorTicks", js.Any.fromFunction1(value))
         
         inline def setCalculateMajorTicksUndefined: Self = StObject.set(x, "calculateMajorTicks", js.undefined)
         
-        inline def setCalculateMinorTicks(value: /* context */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "calculateMinorTicks", js.Any.fromFunction1(value))
+        inline def setCalculateMinorTicks(value: /* context */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "calculateMinorTicks", js.Any.fromFunction1(value))
         
         inline def setCalculateMinorTicksUndefined: Self = StObject.set(x, "calculateMinorTicks", js.undefined)
         
@@ -1197,13 +1197,13 @@ object axis {
         inline def setSetAxisUndefined: Self = StObject.set(x, "setAxis", js.undefined)
         
         inline def setSnapEnds(
-          value: (/* context */ js.UndefOr[js.Any], /* min */ js.UndefOr[Double], /* max */ js.UndefOr[Double], /* estStepSize */ js.UndefOr[Double]) => Unit
+          value: (/* context */ js.UndefOr[Any], /* min */ js.UndefOr[Double], /* max */ js.UndefOr[Double], /* estStepSize */ js.UndefOr[Double]) => Unit
         ): Self = StObject.set(x, "snapEnds", js.Any.fromFunction4(value))
         
         inline def setSnapEndsUndefined: Self = StObject.set(x, "snapEnds", js.undefined)
         
         inline def setTrimByRange(
-          value: (/* context */ js.UndefOr[js.Any], /* out */ js.UndefOr[js.Any], /* trimMin */ js.UndefOr[Double], /* trimMax */ js.UndefOr[Double]) => Unit
+          value: (/* context */ js.UndefOr[Any], /* out */ js.UndefOr[Any], /* trimMin */ js.UndefOr[Double], /* trimMax */ js.UndefOr[Double]) => Unit
         ): Self = StObject.set(x, "trimByRange", js.Any.fromFunction4(value))
         
         inline def setTrimByRangeUndefined: Self = StObject.set(x, "trimByRange", js.undefined)
@@ -1225,9 +1225,9 @@ object axis {
       @JSName("add")
       var add_INames: js.UndefOr[
             js.Function3[
-              /* value */ js.UndefOr[js.Any], 
-              /* step */ js.UndefOr[js.Any], 
-              /* unit */ js.UndefOr[js.Any], 
+              /* value */ js.UndefOr[Any], 
+              /* step */ js.UndefOr[Any], 
+              /* unit */ js.UndefOr[Any], 
               Unit
             ]
           ] = js.undefined
@@ -1241,10 +1241,10 @@ object axis {
       @JSName("align")
       var align_INames: js.UndefOr[
             js.Function3[
-              /* value */ js.UndefOr[js.Any], 
-              /* step */ js.UndefOr[js.Any], 
-              /* unit */ js.UndefOr[js.Any], 
-              js.Any
+              /* value */ js.UndefOr[Any], 
+              /* step */ js.UndefOr[Any], 
+              /* unit */ js.UndefOr[Any], 
+              Any
             ]
           ] = js.undefined
       
@@ -1258,11 +1258,11 @@ object axis {
       @JSName("preferredStep")
       var preferredStep_INames: js.UndefOr[
             js.Function4[
-              /* min */ js.UndefOr[js.Any], 
-              /* estStepSize */ js.UndefOr[js.Any], 
-              /* minIdx */ js.UndefOr[js.Any], 
-              /* data */ js.UndefOr[js.Any], 
-              js.Any
+              /* min */ js.UndefOr[Any], 
+              /* estStepSize */ js.UndefOr[Any], 
+              /* minIdx */ js.UndefOr[Any], 
+              /* data */ js.UndefOr[Any], 
+              Any
             ]
           ] = js.undefined
     }
@@ -1276,19 +1276,19 @@ object axis {
       extension [Self <: INames](x: Self) {
         
         inline def setAdd(
-          value: (/* value */ js.UndefOr[js.Any], /* step */ js.UndefOr[js.Any], /* unit */ js.UndefOr[js.Any]) => Unit
+          value: (/* value */ js.UndefOr[Any], /* step */ js.UndefOr[Any], /* unit */ js.UndefOr[Any]) => Unit
         ): Self = StObject.set(x, "add", js.Any.fromFunction3(value))
         
         inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
         
         inline def setAlign(
-          value: (/* value */ js.UndefOr[js.Any], /* step */ js.UndefOr[js.Any], /* unit */ js.UndefOr[js.Any]) => js.Any
+          value: (/* value */ js.UndefOr[Any], /* step */ js.UndefOr[Any], /* unit */ js.UndefOr[Any]) => Any
         ): Self = StObject.set(x, "align", js.Any.fromFunction3(value))
         
         inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
         
         inline def setPreferredStep(
-          value: (/* min */ js.UndefOr[js.Any], /* estStepSize */ js.UndefOr[js.Any], /* minIdx */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any]) => js.Any
+          value: (/* min */ js.UndefOr[Any], /* estStepSize */ js.UndefOr[Any], /* minIdx */ js.UndefOr[Any], /* data */ js.UndefOr[Any]) => Any
         ): Self = StObject.set(x, "preferredStep", js.Any.fromFunction4(value))
         
         inline def setPreferredStepUndefined: Self = StObject.set(x, "preferredStep", js.undefined)
@@ -1307,9 +1307,9 @@ object axis {
       @JSName("add")
       var add_INumeric: js.UndefOr[
             js.Function3[
-              /* value */ js.UndefOr[js.Any], 
-              /* step */ js.UndefOr[js.Any], 
-              /* unit */ js.UndefOr[js.Any], 
+              /* value */ js.UndefOr[Any], 
+              /* step */ js.UndefOr[Any], 
+              /* unit */ js.UndefOr[Any], 
               Unit
             ]
           ] = js.undefined
@@ -1323,10 +1323,10 @@ object axis {
       @JSName("align")
       var align_INumeric: js.UndefOr[
             js.Function3[
-              /* value */ js.UndefOr[js.Any], 
-              /* step */ js.UndefOr[js.Any], 
-              /* unit */ js.UndefOr[js.Any], 
-              js.Any
+              /* value */ js.UndefOr[Any], 
+              /* step */ js.UndefOr[Any], 
+              /* unit */ js.UndefOr[Any], 
+              Any
             ]
           ] = js.undefined
       
@@ -1336,7 +1336,7 @@ object axis {
         * @returns Object Return the step size by an object of step x unit.
         */
       var exactStep: js.UndefOr[
-            js.Function2[/* start */ js.UndefOr[js.Any], /* estStepSize */ js.UndefOr[js.Any], js.Any]
+            js.Function2[/* start */ js.UndefOr[Any], /* estStepSize */ js.UndefOr[Any], Any]
           ] = js.undefined
     }
     object INumeric {
@@ -1349,18 +1349,18 @@ object axis {
       extension [Self <: typings.senchaTouch.Ext.chart.axis.segmenter.INumeric](x: Self) {
         
         inline def setAdd(
-          value: (/* value */ js.UndefOr[js.Any], /* step */ js.UndefOr[js.Any], /* unit */ js.UndefOr[js.Any]) => Unit
+          value: (/* value */ js.UndefOr[Any], /* step */ js.UndefOr[Any], /* unit */ js.UndefOr[Any]) => Unit
         ): Self = StObject.set(x, "add", js.Any.fromFunction3(value))
         
         inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
         
         inline def setAlign(
-          value: (/* value */ js.UndefOr[js.Any], /* step */ js.UndefOr[js.Any], /* unit */ js.UndefOr[js.Any]) => js.Any
+          value: (/* value */ js.UndefOr[Any], /* step */ js.UndefOr[Any], /* unit */ js.UndefOr[Any]) => Any
         ): Self = StObject.set(x, "align", js.Any.fromFunction3(value))
         
         inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
         
-        inline def setExactStep(value: (/* start */ js.UndefOr[js.Any], /* estStepSize */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "exactStep", js.Any.fromFunction2(value))
+        inline def setExactStep(value: (/* start */ js.UndefOr[Any], /* estStepSize */ js.UndefOr[Any]) => Any): Self = StObject.set(x, "exactStep", js.Any.fromFunction2(value))
         
         inline def setExactStepUndefined: Self = StObject.set(x, "exactStep", js.undefined)
       }
@@ -1377,9 +1377,9 @@ object axis {
         */
       var add: js.UndefOr[
             js.Function3[
-              /* value */ js.UndefOr[js.Any], 
+              /* value */ js.UndefOr[Any], 
               /* step */ js.UndefOr[Double], 
-              /* unit */ js.UndefOr[js.Any], 
+              /* unit */ js.UndefOr[Any], 
               Unit
             ]
           ] = js.undefined
@@ -1392,10 +1392,10 @@ object axis {
         */
       var align: js.UndefOr[
             js.Function3[
-              /* value */ js.UndefOr[js.Any], 
+              /* value */ js.UndefOr[Any], 
               /* step */ js.UndefOr[Double], 
-              /* unit */ js.UndefOr[js.Any], 
-              js.Any
+              /* unit */ js.UndefOr[Any], 
+              Any
             ]
           ] = js.undefined
       
@@ -1410,9 +1410,9 @@ object axis {
         */
       var diff: js.UndefOr[
             js.Function3[
-              /* min */ js.UndefOr[js.Any], 
-              /* max */ js.UndefOr[js.Any], 
-              /* unit */ js.UndefOr[js.Any], 
+              /* min */ js.UndefOr[Any], 
+              /* max */ js.UndefOr[Any], 
+              /* unit */ js.UndefOr[Any], 
               Double
             ]
           ] = js.undefined
@@ -1421,7 +1421,7 @@ object axis {
         * @param value * The value to convert from
         * @returns * The converted value.
         */
-      var from: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], js.Any]] = js.undefined
+      var from: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], Any]] = js.undefined
       
       /** [Method] Returns the value of axis
         * @returns Ext.chart.axis.Axis
@@ -1434,7 +1434,7 @@ object axis {
         * @returns Object Return the step size by an object of step x unit.
         */
       var preferredStep: js.UndefOr[
-            js.Function2[/* start */ js.UndefOr[js.Any], /* estStepSize */ js.UndefOr[js.Any], js.Any]
+            js.Function2[/* start */ js.UndefOr[Any], /* estStepSize */ js.UndefOr[Any], Any]
           ] = js.undefined
       
       /** [Method] This method formats the value
@@ -1442,9 +1442,7 @@ object axis {
         * @param context Object Axis layout context.
         * @returns String
         */
-      var renderer: js.UndefOr[
-            js.Function2[/* value */ js.UndefOr[js.Any], /* context */ js.UndefOr[js.Any], String]
-          ] = js.undefined
+      var renderer: js.UndefOr[js.Function2[/* value */ js.UndefOr[Any], /* context */ js.UndefOr[Any], String]] = js.undefined
       
       /** [Method] Sets the value of axis
         * @param axis Ext.chart.axis.Axis The new value.
@@ -1461,13 +1459,13 @@ object axis {
       extension [Self <: ISegmenter](x: Self) {
         
         inline def setAdd(
-          value: (/* value */ js.UndefOr[js.Any], /* step */ js.UndefOr[Double], /* unit */ js.UndefOr[js.Any]) => Unit
+          value: (/* value */ js.UndefOr[Any], /* step */ js.UndefOr[Double], /* unit */ js.UndefOr[Any]) => Unit
         ): Self = StObject.set(x, "add", js.Any.fromFunction3(value))
         
         inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
         
         inline def setAlign(
-          value: (/* value */ js.UndefOr[js.Any], /* step */ js.UndefOr[Double], /* unit */ js.UndefOr[js.Any]) => js.Any
+          value: (/* value */ js.UndefOr[Any], /* step */ js.UndefOr[Double], /* unit */ js.UndefOr[Any]) => Any
         ): Self = StObject.set(x, "align", js.Any.fromFunction3(value))
         
         inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
@@ -1477,12 +1475,12 @@ object axis {
         inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
         
         inline def setDiff(
-          value: (/* min */ js.UndefOr[js.Any], /* max */ js.UndefOr[js.Any], /* unit */ js.UndefOr[js.Any]) => Double
+          value: (/* min */ js.UndefOr[Any], /* max */ js.UndefOr[Any], /* unit */ js.UndefOr[Any]) => Double
         ): Self = StObject.set(x, "diff", js.Any.fromFunction3(value))
         
         inline def setDiffUndefined: Self = StObject.set(x, "diff", js.undefined)
         
-        inline def setFrom(value: /* value */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "from", js.Any.fromFunction1(value))
+        inline def setFrom(value: /* value */ js.UndefOr[Any] => Any): Self = StObject.set(x, "from", js.Any.fromFunction1(value))
         
         inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
         
@@ -1490,11 +1488,11 @@ object axis {
         
         inline def setGetAxisUndefined: Self = StObject.set(x, "getAxis", js.undefined)
         
-        inline def setPreferredStep(value: (/* start */ js.UndefOr[js.Any], /* estStepSize */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "preferredStep", js.Any.fromFunction2(value))
+        inline def setPreferredStep(value: (/* start */ js.UndefOr[Any], /* estStepSize */ js.UndefOr[Any]) => Any): Self = StObject.set(x, "preferredStep", js.Any.fromFunction2(value))
         
         inline def setPreferredStepUndefined: Self = StObject.set(x, "preferredStep", js.undefined)
         
-        inline def setRenderer(value: (/* value */ js.UndefOr[js.Any], /* context */ js.UndefOr[js.Any]) => String): Self = StObject.set(x, "renderer", js.Any.fromFunction2(value))
+        inline def setRenderer(value: (/* value */ js.UndefOr[Any], /* context */ js.UndefOr[Any]) => String): Self = StObject.set(x, "renderer", js.Any.fromFunction2(value))
         
         inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
         
@@ -1516,9 +1514,9 @@ object axis {
       @JSName("add")
       var add_ITime: js.UndefOr[
             js.Function3[
-              /* value */ js.UndefOr[js.Any], 
-              /* step */ js.UndefOr[js.Any], 
-              /* unit */ js.UndefOr[js.Any], 
+              /* value */ js.UndefOr[Any], 
+              /* step */ js.UndefOr[Any], 
+              /* unit */ js.UndefOr[Any], 
               Unit
             ]
           ] = js.undefined
@@ -1532,25 +1530,25 @@ object axis {
       @JSName("align")
       var align_ITime: js.UndefOr[
             js.Function3[
-              /* date */ js.UndefOr[js.Any], 
-              /* step */ js.UndefOr[js.Any], 
-              /* unit */ js.UndefOr[js.Any], 
-              js.Any
+              /* date */ js.UndefOr[Any], 
+              /* step */ js.UndefOr[Any], 
+              /* unit */ js.UndefOr[Any], 
+              Any
             ]
           ] = js.undefined
       
       /** [Method] Returns the value of step
         * @returns Object
         */
-      var getStep: js.UndefOr[js.Function0[js.Any]] = js.undefined
+      var getStep: js.UndefOr[js.Function0[Any]] = js.undefined
       
       /** [Method] Sets the value of step
         * @param step Object The new value.
         */
-      var setStep: js.UndefOr[js.Function1[/* step */ js.UndefOr[js.Any], Unit]] = js.undefined
+      var setStep: js.UndefOr[js.Function1[/* step */ js.UndefOr[Any], Unit]] = js.undefined
       
       /** [Config Option] (Object) */
-      var step: js.UndefOr[js.Any] = js.undefined
+      var step: js.UndefOr[Any] = js.undefined
     }
     object ITime {
       
@@ -1562,26 +1560,24 @@ object axis {
       extension [Self <: typings.senchaTouch.Ext.chart.axis.segmenter.ITime](x: Self) {
         
         inline def setAdd(
-          value: (/* value */ js.UndefOr[js.Any], /* step */ js.UndefOr[js.Any], /* unit */ js.UndefOr[js.Any]) => Unit
+          value: (/* value */ js.UndefOr[Any], /* step */ js.UndefOr[Any], /* unit */ js.UndefOr[Any]) => Unit
         ): Self = StObject.set(x, "add", js.Any.fromFunction3(value))
         
         inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
         
-        inline def setAlign(
-          value: (/* date */ js.UndefOr[js.Any], /* step */ js.UndefOr[js.Any], /* unit */ js.UndefOr[js.Any]) => js.Any
-        ): Self = StObject.set(x, "align", js.Any.fromFunction3(value))
+        inline def setAlign(value: (/* date */ js.UndefOr[Any], /* step */ js.UndefOr[Any], /* unit */ js.UndefOr[Any]) => Any): Self = StObject.set(x, "align", js.Any.fromFunction3(value))
         
         inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
         
-        inline def setGetStep(value: () => js.Any): Self = StObject.set(x, "getStep", js.Any.fromFunction0(value))
+        inline def setGetStep(value: () => Any): Self = StObject.set(x, "getStep", js.Any.fromFunction0(value))
         
         inline def setGetStepUndefined: Self = StObject.set(x, "getStep", js.undefined)
         
-        inline def setSetStep(value: /* step */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setStep", js.Any.fromFunction1(value))
+        inline def setSetStep(value: /* step */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setStep", js.Any.fromFunction1(value))
         
         inline def setSetStepUndefined: Self = StObject.set(x, "setStep", js.undefined)
         
-        inline def setStep(value: js.Any): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+        inline def setStep(value: Any): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
         
         inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
       }
@@ -1639,31 +1635,31 @@ object axis {
       /** [Method] Returns the value of label
         * @returns Object
         */
-      var getLabel: js.UndefOr[js.Function0[js.Any]] = js.undefined
+      var getLabel: js.UndefOr[js.Function0[Any]] = js.undefined
       
       /** [Method] Returns the value of layout
         * @returns Object|Ext.chart.axis.layout.Layout
         */
-      var getLayout: js.UndefOr[js.Function0[js.Any]] = js.undefined
+      var getLayout: js.UndefOr[js.Function0[Any]] = js.undefined
       
       /** [Method] Returns the value of renderer
         * @returns Function
         */
-      var getRenderer: js.UndefOr[js.Function0[js.Any]] = js.undefined
+      var getRenderer: js.UndefOr[js.Function0[Any]] = js.undefined
       
       /** [Method] Returns the value of segmenter
         * @returns Object|Ext.chart.axis.segmenter.Segmenter
         */
-      var getSegmenter: js.UndefOr[js.Function0[js.Any]] = js.undefined
+      var getSegmenter: js.UndefOr[js.Function0[Any]] = js.undefined
       
       /** [Config Option] (Boolean) */
       var grid: js.UndefOr[Boolean] = js.undefined
       
       /** [Config Option] (Object) */
-      var label: js.UndefOr[js.Any] = js.undefined
+      var label: js.UndefOr[Any] = js.undefined
       
       /** [Config Option] (Object|Ext.chart.axis.layout.Layout) */
-      var layout: js.UndefOr[js.Any] = js.undefined
+      var layout: js.UndefOr[Any] = js.undefined
       
       /** [Config Option] (Number) */
       var length: js.UndefOr[Double] = js.undefined
@@ -1701,18 +1697,18 @@ object axis {
       @JSName("render")
       var render_IAxis: js.UndefOr[
             js.Function3[
-              /* surface */ js.UndefOr[js.Any], 
-              /* ctx */ js.UndefOr[js.Any], 
-              /* clipRegion */ js.UndefOr[js.Any], 
-              js.Any
+              /* surface */ js.UndefOr[Any], 
+              /* ctx */ js.UndefOr[Any], 
+              /* clipRegion */ js.UndefOr[Any], 
+              Any
             ]
           ] = js.undefined
       
       /** [Config Option] (Function) */
-      var renderer: js.UndefOr[js.Any] = js.undefined
+      var renderer: js.UndefOr[Any] = js.undefined
       
       /** [Config Option] (Object|Ext.chart.axis.segmenter.Segmenter) */
-      var segmenter: js.UndefOr[js.Any] = js.undefined
+      var segmenter: js.UndefOr[Any] = js.undefined
       
       /** [Method] Sets the value of axis
         * @param axis Ext.chart.axis.Axis The new value.
@@ -1722,22 +1718,22 @@ object axis {
       /** [Method] Sets the value of label
         * @param label Object The new value.
         */
-      var setLabel: js.UndefOr[js.Function1[/* label */ js.UndefOr[js.Any], Unit]] = js.undefined
+      var setLabel: js.UndefOr[js.Function1[/* label */ js.UndefOr[Any], Unit]] = js.undefined
       
       /** [Method] Sets the value of layout
         * @param layout Object|Ext.chart.axis.layout.Layout The new value.
         */
-      var setLayout: js.UndefOr[js.Function1[/* layout */ js.UndefOr[js.Any], Unit]] = js.undefined
+      var setLayout: js.UndefOr[js.Function1[/* layout */ js.UndefOr[Any], Unit]] = js.undefined
       
       /** [Method] Sets the value of renderer
         * @param renderer Function The new value.
         */
-      var setRenderer: js.UndefOr[js.Function1[/* renderer */ js.UndefOr[js.Any], Unit]] = js.undefined
+      var setRenderer: js.UndefOr[js.Function1[/* renderer */ js.UndefOr[Any], Unit]] = js.undefined
       
       /** [Method] Sets the value of segmenter
         * @param segmenter Object|Ext.chart.axis.segmenter.Segmenter The new value.
         */
-      var setSegmenter: js.UndefOr[js.Function1[/* segmenter */ js.UndefOr[js.Any], Unit]] = js.undefined
+      var setSegmenter: js.UndefOr[js.Function1[/* segmenter */ js.UndefOr[Any], Unit]] = js.undefined
       
       /** [Config Option] (Number) */
       var textPadding: js.UndefOr[Double] = js.undefined
@@ -1797,19 +1793,19 @@ object axis {
         
         inline def setGetBBoxUndefined: Self = StObject.set(x, "getBBox", js.undefined)
         
-        inline def setGetLabel(value: () => js.Any): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
+        inline def setGetLabel(value: () => Any): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
         
         inline def setGetLabelUndefined: Self = StObject.set(x, "getLabel", js.undefined)
         
-        inline def setGetLayout(value: () => js.Any): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
+        inline def setGetLayout(value: () => Any): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
         
         inline def setGetLayoutUndefined: Self = StObject.set(x, "getLayout", js.undefined)
         
-        inline def setGetRenderer(value: () => js.Any): Self = StObject.set(x, "getRenderer", js.Any.fromFunction0(value))
+        inline def setGetRenderer(value: () => Any): Self = StObject.set(x, "getRenderer", js.Any.fromFunction0(value))
         
         inline def setGetRendererUndefined: Self = StObject.set(x, "getRenderer", js.undefined)
         
-        inline def setGetSegmenter(value: () => js.Any): Self = StObject.set(x, "getSegmenter", js.Any.fromFunction0(value))
+        inline def setGetSegmenter(value: () => Any): Self = StObject.set(x, "getSegmenter", js.Any.fromFunction0(value))
         
         inline def setGetSegmenterUndefined: Self = StObject.set(x, "getSegmenter", js.undefined)
         
@@ -1817,11 +1813,11 @@ object axis {
         
         inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
         
-        inline def setLabel(value: js.Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        inline def setLabel(value: Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
         inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
         
-        inline def setLayout(value: js.Any): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+        inline def setLayout(value: Any): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
         
         inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
         
@@ -1862,16 +1858,16 @@ object axis {
         inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
         
         inline def setRender(
-          value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], /* clipRegion */ js.UndefOr[js.Any]) => js.Any
+          value: (/* surface */ js.UndefOr[Any], /* ctx */ js.UndefOr[Any], /* clipRegion */ js.UndefOr[Any]) => Any
         ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
         
         inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
         
-        inline def setRenderer(value: js.Any): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+        inline def setRenderer(value: Any): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
         
         inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
         
-        inline def setSegmenter(value: js.Any): Self = StObject.set(x, "segmenter", value.asInstanceOf[js.Any])
+        inline def setSegmenter(value: Any): Self = StObject.set(x, "segmenter", value.asInstanceOf[js.Any])
         
         inline def setSegmenterUndefined: Self = StObject.set(x, "segmenter", js.undefined)
         
@@ -1879,19 +1875,19 @@ object axis {
         
         inline def setSetAxisUndefined: Self = StObject.set(x, "setAxis", js.undefined)
         
-        inline def setSetLabel(value: /* label */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setLabel", js.Any.fromFunction1(value))
+        inline def setSetLabel(value: /* label */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setLabel", js.Any.fromFunction1(value))
         
         inline def setSetLabelUndefined: Self = StObject.set(x, "setLabel", js.undefined)
         
-        inline def setSetLayout(value: /* layout */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setLayout", js.Any.fromFunction1(value))
+        inline def setSetLayout(value: /* layout */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setLayout", js.Any.fromFunction1(value))
         
         inline def setSetLayoutUndefined: Self = StObject.set(x, "setLayout", js.undefined)
         
-        inline def setSetRenderer(value: /* renderer */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setRenderer", js.Any.fromFunction1(value))
+        inline def setSetRenderer(value: /* renderer */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setRenderer", js.Any.fromFunction1(value))
         
         inline def setSetRendererUndefined: Self = StObject.set(x, "setRenderer", js.undefined)
         
-        inline def setSetSegmenter(value: /* segmenter */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setSegmenter", js.Any.fromFunction1(value))
+        inline def setSetSegmenter(value: /* segmenter */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setSegmenter", js.Any.fromFunction1(value))
         
         inline def setSetSegmenterUndefined: Self = StObject.set(x, "setSegmenter", js.undefined)
         

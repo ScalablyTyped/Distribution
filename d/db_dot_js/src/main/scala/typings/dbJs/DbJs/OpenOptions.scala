@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait OpenOptions extends StObject {
   
-  var schema: js.UndefOr[js.Any] = js.undefined
+  var schema: js.UndefOr[Any] = js.undefined
   
   var server: String
   
@@ -21,7 +21,7 @@ object OpenOptions {
   
   extension [Self <: OpenOptions](x: Self) {
     
-    inline def setSchema(value: js.Any): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: Any): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     

@@ -10,8 +10,15 @@ trait StoryApi[StoryFnReturnType]
   extends StObject
      with /* k */ StringDictionary[String | ClientApiReturnFn[StoryFnReturnType]] {
   
-  def add(storyName: StoryName, storyFn: StoryFn[StoryFnReturnType]): StoryApi[StoryFnReturnType] = js.native
-  def add(storyName: StoryName, storyFn: StoryFn[StoryFnReturnType], parameters: Parameters): StoryApi[StoryFnReturnType] = js.native
+  def add(
+    storyName: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryName */ Any,
+    storyFn: StoryFn[StoryFnReturnType]
+  ): StoryApi[StoryFnReturnType] = js.native
+  def add(
+    storyName: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryName */ Any,
+    storyFn: StoryFn[StoryFnReturnType],
+    parameters: Parameters
+  ): StoryApi[StoryFnReturnType] = js.native
   
   def addDecorator(decorator: DecoratorFunction[StoryFnReturnType]): StoryApi[StoryFnReturnType] = js.native
   
@@ -19,5 +26,5 @@ trait StoryApi[StoryFnReturnType]
   
   def addParameters(parameters: Parameters): StoryApi[StoryFnReturnType] = js.native
   
-  var kind: StoryKind = js.native
+  var kind: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryKind */ Any = js.native
 }

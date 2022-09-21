@@ -6,45 +6,56 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait Ico extends StObject {
+  trait IcoSizes extends StObject {
     
-    var ico: js.Array[Double]
+    /** Structure of an image sizes for ICO. */
+    var icoSizes: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var name: String
+    /** Prefix of an output PNG files. Start with the alphabet, can use `-` and `_`. This option is for PNG. The name of the ICO file is always `favicon.ico`. */
+    var name: js.UndefOr[String] = js.undefined
     
-    var sizes: js.Array[Double]
+    /** Size structure of PNG files to output. */
+    var pngSizes: js.UndefOr[js.Array[Double]] = js.undefined
   }
-  object Ico {
+  object IcoSizes {
     
-    inline def apply(ico: js.Array[Double], name: String, sizes: js.Array[Double]): Ico = {
-      val __obj = js.Dynamic.literal(ico = ico.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sizes = sizes.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Ico]
+    inline def apply(): IcoSizes = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[IcoSizes]
     }
     
-    extension [Self <: Ico](x: Self) {
+    extension [Self <: IcoSizes](x: Self) {
       
-      inline def setIco(value: js.Array[Double]): Self = StObject.set(x, "ico", value.asInstanceOf[js.Any])
+      inline def setIcoSizes(value: js.Array[Double]): Self = StObject.set(x, "icoSizes", value.asInstanceOf[js.Any])
       
-      inline def setIcoVarargs(value: Double*): Self = StObject.set(x, "ico", js.Array(value :_*))
+      inline def setIcoSizesUndefined: Self = StObject.set(x, "icoSizes", js.undefined)
+      
+      inline def setIcoSizesVarargs(value: Double*): Self = StObject.set(x, "icoSizes", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setSizes(value: js.Array[Double]): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setSizesVarargs(value: Double*): Self = StObject.set(x, "sizes", js.Array(value :_*))
+      inline def setPngSizes(value: js.Array[Double]): Self = StObject.set(x, "pngSizes", value.asInstanceOf[js.Any])
+      
+      inline def setPngSizesUndefined: Self = StObject.set(x, "pngSizes", js.undefined)
+      
+      inline def setPngSizesVarargs(value: Double*): Self = StObject.set(x, "pngSizes", js.Array(value*))
     }
   }
   
   trait Name extends StObject {
     
-    var name: String
+    /** Name of an output file. */
+    var name: js.UndefOr[String] = js.undefined
     
-    var sizes: js.Array[Double]
+    /** Structure of an image sizes. */
+    var sizes: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object Name {
     
-    inline def apply(name: String, sizes: js.Array[Double]): Name = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], sizes = sizes.asInstanceOf[js.Any])
+    inline def apply(): Name = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Name]
     }
     
@@ -52,9 +63,13 @@ object anon {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
       inline def setSizes(value: js.Array[Double]): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
       
-      inline def setSizesVarargs(value: Double*): Self = StObject.set(x, "sizes", js.Array(value :_*))
+      inline def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
+      
+      inline def setSizesVarargs(value: Double*): Self = StObject.set(x, "sizes", js.Array(value*))
     }
   }
 }

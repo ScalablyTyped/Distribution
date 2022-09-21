@@ -24,16 +24,17 @@ trait CreateLocalGatewayRouteRequest extends StObject {
   /**
     * The ID of the virtual interface group.
     */
-  var LocalGatewayVirtualInterfaceGroupId: typings.awsSdk.ec2Mod.LocalGatewayVirtualInterfaceGroupId
+  var LocalGatewayVirtualInterfaceGroupId: js.UndefOr[typings.awsSdk.ec2Mod.LocalGatewayVirtualInterfaceGroupId] = js.undefined
+  
+  /**
+    * The ID of the network interface.
+    */
+  var NetworkInterfaceId: js.UndefOr[typings.awsSdk.ec2Mod.NetworkInterfaceId] = js.undefined
 }
 object CreateLocalGatewayRouteRequest {
   
-  inline def apply(
-    DestinationCidrBlock: String,
-    LocalGatewayRouteTableId: LocalGatewayRoutetableId,
-    LocalGatewayVirtualInterfaceGroupId: LocalGatewayVirtualInterfaceGroupId
-  ): CreateLocalGatewayRouteRequest = {
-    val __obj = js.Dynamic.literal(DestinationCidrBlock = DestinationCidrBlock.asInstanceOf[js.Any], LocalGatewayRouteTableId = LocalGatewayRouteTableId.asInstanceOf[js.Any], LocalGatewayVirtualInterfaceGroupId = LocalGatewayVirtualInterfaceGroupId.asInstanceOf[js.Any])
+  inline def apply(DestinationCidrBlock: String, LocalGatewayRouteTableId: LocalGatewayRoutetableId): CreateLocalGatewayRouteRequest = {
+    val __obj = js.Dynamic.literal(DestinationCidrBlock = DestinationCidrBlock.asInstanceOf[js.Any], LocalGatewayRouteTableId = LocalGatewayRouteTableId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateLocalGatewayRouteRequest]
   }
   
@@ -48,5 +49,11 @@ object CreateLocalGatewayRouteRequest {
     inline def setLocalGatewayRouteTableId(value: LocalGatewayRoutetableId): Self = StObject.set(x, "LocalGatewayRouteTableId", value.asInstanceOf[js.Any])
     
     inline def setLocalGatewayVirtualInterfaceGroupId(value: LocalGatewayVirtualInterfaceGroupId): Self = StObject.set(x, "LocalGatewayVirtualInterfaceGroupId", value.asInstanceOf[js.Any])
+    
+    inline def setLocalGatewayVirtualInterfaceGroupIdUndefined: Self = StObject.set(x, "LocalGatewayVirtualInterfaceGroupId", js.undefined)
+    
+    inline def setNetworkInterfaceId(value: NetworkInterfaceId): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
+    
+    inline def setNetworkInterfaceIdUndefined: Self = StObject.set(x, "NetworkInterfaceId", js.undefined)
   }
 }

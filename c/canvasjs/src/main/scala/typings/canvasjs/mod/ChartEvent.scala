@@ -34,7 +34,7 @@ trait ChartEvent extends StObject {
   /**
     * The x value of the item
     */
-  var x: js.Any
+  var x: Any
   
   /**
     * The y value of the item
@@ -49,7 +49,7 @@ object ChartEvent {
     dataPointIndex: Double,
     dataSeries: ChartDataSeriesOptions,
     dataSeriesIndex: Double,
-    x: js.Any,
+    x: Any,
     y: Double
   ): ChartEvent = {
     val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any], dataPoint = dataPoint.asInstanceOf[js.Any], dataPointIndex = dataPointIndex.asInstanceOf[js.Any], dataSeries = dataSeries.asInstanceOf[js.Any], dataSeriesIndex = dataSeriesIndex.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
@@ -68,7 +68,7 @@ object ChartEvent {
     
     inline def setDataSeriesIndex(value: Double): Self = StObject.set(x, "dataSeriesIndex", value.asInstanceOf[js.Any])
     
-    inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }

@@ -46,7 +46,7 @@ object anon {
   
   trait Buttons extends StObject {
     
-    var buttons: js.Array[js.Any]
+    var buttons: js.Array[Any]
     
     var defaultCancel: String
     
@@ -54,16 +54,16 @@ object anon {
   }
   object Buttons {
     
-    inline def apply(buttons: js.Array[js.Any], defaultCancel: String, defaultOk: String): Buttons = {
+    inline def apply(buttons: js.Array[Any], defaultCancel: String, defaultOk: String): Buttons = {
       val __obj = js.Dynamic.literal(buttons = buttons.asInstanceOf[js.Any], defaultCancel = defaultCancel.asInstanceOf[js.Any], defaultOk = defaultOk.asInstanceOf[js.Any])
       __obj.asInstanceOf[Buttons]
     }
     
     extension [Self <: Buttons](x: Self) {
       
-      inline def setButtons(value: js.Array[js.Any]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+      inline def setButtons(value: js.Array[Any]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
-      inline def setButtonsVarargs(value: js.Any*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+      inline def setButtonsVarargs(value: Any*): Self = StObject.set(x, "buttons", js.Array(value*))
       
       inline def setDefaultCancel(value: String): Self = StObject.set(x, "defaultCancel", value.asInstanceOf[js.Any])
       
@@ -81,7 +81,7 @@ object anon {
     
     var expander: Boolean
     
-    var filterOperators: js.Array[js.Any]
+    var filterOperators: js.Array[Any]
     
     var filterable: Boolean
     
@@ -100,7 +100,7 @@ object anon {
       defaultFilterOperator: String,
       editable: Boolean,
       expander: Boolean,
-      filterOperators: js.Array[js.Any],
+      filterOperators: js.Array[Any],
       filterable: Boolean,
       frozen: Boolean,
       order: String,
@@ -121,9 +121,9 @@ object anon {
       
       inline def setExpander(value: Boolean): Self = StObject.set(x, "expander", value.asInstanceOf[js.Any])
       
-      inline def setFilterOperators(value: js.Array[js.Any]): Self = StObject.set(x, "filterOperators", value.asInstanceOf[js.Any])
+      inline def setFilterOperators(value: js.Array[Any]): Self = StObject.set(x, "filterOperators", value.asInstanceOf[js.Any])
       
-      inline def setFilterOperatorsVarargs(value: js.Any*): Self = StObject.set(x, "filterOperators", js.Array(value :_*))
+      inline def setFilterOperatorsVarargs(value: Any*): Self = StObject.set(x, "filterOperators", js.Array(value*))
       
       inline def setFilterable(value: Boolean): Self = StObject.set(x, "filterable", value.asInstanceOf[js.Any])
       
@@ -185,20 +185,20 @@ object anon {
   
   trait IsMatch extends StObject {
     
-    var isMatch: js.Any
+    var isMatch: Any
     
     var text: String
   }
   object IsMatch {
     
-    inline def apply(isMatch: js.Any, text: String): IsMatch = {
+    inline def apply(isMatch: Any, text: String): IsMatch = {
       val __obj = js.Dynamic.literal(isMatch = isMatch.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[IsMatch]
     }
     
     extension [Self <: IsMatch](x: Self) {
       
-      inline def setIsMatch(value: js.Any): Self = StObject.set(x, "isMatch", value.asInstanceOf[js.Any])
+      inline def setIsMatch(value: Any): Self = StObject.set(x, "isMatch", value.asInstanceOf[js.Any])
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }

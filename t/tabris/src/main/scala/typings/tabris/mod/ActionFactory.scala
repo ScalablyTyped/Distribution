@@ -10,5 +10,5 @@ trait ActionFactory
   extends Factory[
       ActionConstructor, 
       InstanceType[ActionConstructor], 
-      js.Function1[/* repeated */ js.Any, InstanceType[ActionConstructor]]
+      js.Function1[/* repeated */ Any, Widget[Any]]
     ]

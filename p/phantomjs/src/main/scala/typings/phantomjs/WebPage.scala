@@ -42,13 +42,13 @@ trait WebPage extends StObject {
   // DEPRECATED
   def deleteCookie(cookieName: String): Boolean = js.native
   
-  def evaluate(fn: js.Function, args: js.Any*): js.Any = js.native
+  def evaluate(fn: js.Function, args: Any*): Any = js.native
   
   def evaluateAsync(fn: js.Function): Unit = js.native
   
-  def evaluateJavaScript(str: String): js.Any = js.native
+  def evaluateJavaScript(str: String): Any = js.native
   
-  var event: js.Any = js.native
+  var event: Any = js.native
   
   // :TODO: elaborate this when documentation improves
   var focusedFrameName: String = js.native
@@ -65,7 +65,7 @@ trait WebPage extends StObject {
   
   var framesCount: Double = js.native
   
-  var framesName: js.Any = js.native
+  var framesName: Any = js.native
   
   // :TODO: elaborate this when documentation improves
   def getPage(windowName: String): WebPage = js.native
@@ -105,49 +105,49 @@ trait WebPage extends StObject {
   var offlineStorageQuota: Double = js.native
   
   // Callbacks
-  def onAlert(msg: String): js.Any = js.native
+  def onAlert(msg: String): Any = js.native
   
   var onCallback: js.Function = js.native
   
   // EXPERIMENTAL
-  def onClosing(closingPage: WebPage): js.Any = js.native
+  def onClosing(closingPage: WebPage): Any = js.native
   
   def onConfirm(msg: String): Boolean = js.native
   
-  def onConsoleMessage(msg: String): js.Any = js.native
-  def onConsoleMessage(msg: String, lineNum: Double): js.Any = js.native
-  def onConsoleMessage(msg: String, lineNum: Double, sourceId: String): js.Any = js.native
-  def onConsoleMessage(msg: String, lineNum: Unit, sourceId: String): js.Any = js.native
+  def onConsoleMessage(msg: String): Any = js.native
+  def onConsoleMessage(msg: String, lineNum: Double): Any = js.native
+  def onConsoleMessage(msg: String, lineNum: Double, sourceId: String): Any = js.native
+  def onConsoleMessage(msg: String, lineNum: Unit, sourceId: String): Any = js.native
   
-  def onError(msg: String, trace: js.Array[String]): js.Any = js.native
+  def onError(msg: String, trace: js.Array[String]): Any = js.native
   
   def onFilePicker(oldFile: String): String = js.native
   
-  def onInitialized(): js.Any = js.native
+  def onInitialized(): Any = js.native
   
-  def onLoadFinished(status: String): js.Any = js.native
+  def onLoadFinished(status: String): Any = js.native
   
-  def onLoadStarted(): js.Any = js.native
+  def onLoadStarted(): Any = js.native
   
-  def onNavigationRequested(url: String, `type`: String, willNavigate: Boolean, main: Boolean): js.Any = js.native
+  def onNavigationRequested(url: String, `type`: String, willNavigate: Boolean, main: Boolean): Any = js.native
   
-  def onPageCreated(newPage: WebPage): js.Any = js.native
+  def onPageCreated(newPage: WebPage): Any = js.native
   
   def onPrompt(msg: String, defaultVal: String): String = js.native
   
-  def onResourceError(resourceError: ResourceError): js.Any = js.native
+  def onResourceError(resourceError: ResourceError): Any = js.native
   
-  def onResourceReceived(response: ResourceResponse): js.Any = js.native
+  def onResourceReceived(response: ResourceResponse): Any = js.native
   
-  def onResourceRequested(requestData: ResourceRequest, networkRequest: NetworkRequest): js.Any = js.native
+  def onResourceRequested(requestData: ResourceRequest, networkRequest: NetworkRequest): Any = js.native
   
-  def onUrlChanged(targetUrl: String): js.Any = js.native
+  def onUrlChanged(targetUrl: String): Any = js.native
   
-  def open(url: String, callback: js.Function1[/* status */ String, js.Any]): Unit = js.native
-  def open(url: String, method: String, callback: js.Function1[/* status */ String, js.Any]): Unit = js.native
-  def open(url: String, method: String, data: js.Any, callback: js.Function1[/* status */ String, js.Any]): Unit = js.native
+  def open(url: String, callback: js.Function1[/* status */ String, Any]): Unit = js.native
+  def open(url: String, method: String, callback: js.Function1[/* status */ String, Any]): Unit = js.native
+  def open(url: String, method: String, data: Any, callback: js.Function1[/* status */ String, Any]): Unit = js.native
   
-  def openUrl(url: String, httpConf: js.Any, settings: js.Any): Unit = js.native
+  def openUrl(url: String, httpConf: Any, settings: Any): Unit = js.native
   
   var ownsPages: Boolean = js.native
   
@@ -177,14 +177,14 @@ trait WebPage extends StObject {
   
   var scrollPosition: TopLeft = js.native
   
-  def sendEvent(keyboardEventType: String, keyOrKeys: js.Any): Unit = js.native
-  def sendEvent(keyboardEventType: String, keyOrKeys: js.Any, aNull: js.Any): Unit = js.native
-  def sendEvent(keyboardEventType: String, keyOrKeys: js.Any, aNull: js.Any, bNull: js.Any): Unit = js.native
-  def sendEvent(keyboardEventType: String, keyOrKeys: js.Any, aNull: js.Any, bNull: js.Any, modifier: Double): Unit = js.native
-  def sendEvent(keyboardEventType: String, keyOrKeys: js.Any, aNull: js.Any, bNull: Unit, modifier: Double): Unit = js.native
-  def sendEvent(keyboardEventType: String, keyOrKeys: js.Any, aNull: Unit, bNull: js.Any): Unit = js.native
-  def sendEvent(keyboardEventType: String, keyOrKeys: js.Any, aNull: Unit, bNull: js.Any, modifier: Double): Unit = js.native
-  def sendEvent(keyboardEventType: String, keyOrKeys: js.Any, aNull: Unit, bNull: Unit, modifier: Double): Unit = js.native
+  def sendEvent(keyboardEventType: String, keyOrKeys: Any): Unit = js.native
+  def sendEvent(keyboardEventType: String, keyOrKeys: Any, aNull: Any): Unit = js.native
+  def sendEvent(keyboardEventType: String, keyOrKeys: Any, aNull: Any, bNull: Any): Unit = js.native
+  def sendEvent(keyboardEventType: String, keyOrKeys: Any, aNull: Any, bNull: Any, modifier: Double): Unit = js.native
+  def sendEvent(keyboardEventType: String, keyOrKeys: Any, aNull: Any, bNull: Unit, modifier: Double): Unit = js.native
+  def sendEvent(keyboardEventType: String, keyOrKeys: Any, aNull: Unit, bNull: Any): Unit = js.native
+  def sendEvent(keyboardEventType: String, keyOrKeys: Any, aNull: Unit, bNull: Any, modifier: Double): Unit = js.native
+  def sendEvent(keyboardEventType: String, keyOrKeys: Any, aNull: Unit, bNull: Unit, modifier: Double): Unit = js.native
   def sendEvent(mouseEventType: String): Unit = js.native
   def sendEvent(mouseEventType: String, mouseX: Double): Unit = js.native
   def sendEvent(mouseEventType: String, mouseX: Double, mouseY: Double): Unit = js.native

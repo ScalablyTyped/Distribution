@@ -70,7 +70,7 @@ object XDispatchRecorderSupplier {
     acquire: () => Unit,
     dispatchAndRecord: (URL, SeqEquiv[PropertyValue], XDispatch) => Unit,
     getDispatchRecorder: () => XDispatchRecorder,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setDispatchRecorder: XDispatchRecorder => Unit
   ): XDispatchRecorderSupplier = {

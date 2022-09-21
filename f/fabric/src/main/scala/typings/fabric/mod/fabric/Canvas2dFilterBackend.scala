@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("fabric", "fabric.Canvas2dFilterBackend")
 @js.native
-class Canvas2dFilterBackend ()
+open class Canvas2dFilterBackend ()
   extends typings.fabric.fabricImplMod.Canvas2dFilterBackend

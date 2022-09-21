@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IAggregate extends StObject {
   
-  var aggChildren: js.Array[js.Any]
+  var aggChildren: js.Array[Any]
   
   var aggIndex: Double
   
-  var aggLabelFilter: js.Any
+  var aggLabelFilter: Any
   
-  var children: js.Array[js.Any]
+  var children: js.Array[Any]
   
   var collapsed: Boolean
   
   var depth: Double
   
-  var entity: js.Any
+  var entity: Any
   
   var field: String
   
@@ -32,7 +32,7 @@ trait IAggregate extends StObject {
   
   var offsetTop: Double
   
-  var parent: js.Any
+  var parent: Any
   
   var rowFactory: IRowFactory
   
@@ -43,20 +43,20 @@ trait IAggregate extends StObject {
 object IAggregate {
   
   inline def apply(
-    aggChildren: js.Array[js.Any],
+    aggChildren: js.Array[Any],
     aggIndex: Double,
-    aggLabelFilter: js.Any,
-    children: js.Array[js.Any],
+    aggLabelFilter: Any,
+    children: js.Array[Any],
     collapsed: Boolean,
     depth: Double,
-    entity: js.Any,
+    entity: Any,
     field: String,
     groupInitState: Boolean,
     isAggRow: Boolean,
     label: String,
     offsetLeft: Double,
     offsetTop: Double,
-    parent: js.Any,
+    parent: Any,
     rowFactory: IRowFactory,
     rowHeight: Double,
     rowIndex: Double
@@ -67,23 +67,23 @@ object IAggregate {
   
   extension [Self <: IAggregate](x: Self) {
     
-    inline def setAggChildren(value: js.Array[js.Any]): Self = StObject.set(x, "aggChildren", value.asInstanceOf[js.Any])
+    inline def setAggChildren(value: js.Array[Any]): Self = StObject.set(x, "aggChildren", value.asInstanceOf[js.Any])
     
-    inline def setAggChildrenVarargs(value: js.Any*): Self = StObject.set(x, "aggChildren", js.Array(value :_*))
+    inline def setAggChildrenVarargs(value: Any*): Self = StObject.set(x, "aggChildren", js.Array(value*))
     
     inline def setAggIndex(value: Double): Self = StObject.set(x, "aggIndex", value.asInstanceOf[js.Any])
     
-    inline def setAggLabelFilter(value: js.Any): Self = StObject.set(x, "aggLabelFilter", value.asInstanceOf[js.Any])
+    inline def setAggLabelFilter(value: Any): Self = StObject.set(x, "aggLabelFilter", value.asInstanceOf[js.Any])
     
-    inline def setChildren(value: js.Array[js.Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setChildrenVarargs(value: js.Any*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: Any*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     
     inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
-    inline def setEntity(value: js.Any): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: Any): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
@@ -97,7 +97,7 @@ object IAggregate {
     
     inline def setOffsetTop(value: Double): Self = StObject.set(x, "offsetTop", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setRowFactory(value: IRowFactory): Self = StObject.set(x, "rowFactory", value.asInstanceOf[js.Any])
     

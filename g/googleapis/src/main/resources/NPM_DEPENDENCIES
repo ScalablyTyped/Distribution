@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "googleapis" : "39.2.0"
+      "googleapis" : "107.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "googleapis" : "39.2.0"
+      "googleapis" : "107.0.0"
     }
   ],
   "compile-devDependencies" : [

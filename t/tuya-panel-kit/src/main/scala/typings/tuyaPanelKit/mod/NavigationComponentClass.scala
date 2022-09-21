@@ -10,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NavigationComponentClass[P, S]
   extends StObject
      with Instantiable1[/* props */ P, NavigatorLayout[P, S]]
-     with Instantiable2[/* props */ P, /* context */ js.Any, NavigatorLayout[P, S]]
+     with Instantiable2[/* props */ P, /* context */ Any, NavigatorLayout[P, S]]

@@ -11,8 +11,6 @@ import typings.apolloProtobufjs.mod.OneOfSetter
 import typings.apolloProtobufjs.mod.PoolAllocator
 import typings.apolloProtobufjs.mod.PoolSlicer
 import typings.apolloProtobufjs.mod.asPromiseCallback
-import typings.std.Error
-import typings.std.RegExp
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -27,55 +25,42 @@ object util {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("@apollo/protobufjs/light", "util.Array")
   @js.native
-  class Array protected ()
+  open class Array protected ()
     extends StObject
        with Uint8Array {
-    def this(params: js.Any*) = this()
+    def this(params: Any*) = this()
   }
   /** Array implementation used in the browser. `Uint8Array` if supported, otherwise `Array`. */
   @JSImport("@apollo/protobufjs/light", "util.Array")
   @js.native
-  def Array: Constructor[Uint8Array] = js.native
-  inline def Array_=(x: Constructor[Uint8Array]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Array")(x.asInstanceOf[js.Any])
+  def Array: Constructor[js.typedarray.Uint8Array] = js.native
+  inline def Array_=(x: Constructor[js.typedarray.Uint8Array]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Array")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("@apollo/protobufjs/light", "util.Buffer")
   @js.native
-  class Buffer protected ()
+  open class Buffer protected ()
     extends StObject
        with Uint8Array {
-    def this(params: js.Any*) = this()
+    def this(params: Any*) = this()
   }
   /** Node's Buffer class if available. */
   @JSImport("@apollo/protobufjs/light", "util.Buffer")
   @js.native
-  def Buffer: Constructor[typings.apolloProtobufjs.mod.Buffer] = js.native
-  inline def Buffer_=(x: Constructor[typings.apolloProtobufjs.mod.Buffer]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Buffer")(x.asInstanceOf[js.Any])
+  def Buffer: Constructor[js.typedarray.Uint8Array] = js.native
+  inline def Buffer_=(x: Constructor[js.typedarray.Uint8Array]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Buffer")(x.asInstanceOf[js.Any])
   
   /** A minimal event emitter. */
   @JSImport("@apollo/protobufjs/light", "util.EventEmitter")
   @js.native
   /** Constructs a new event emitter instance. */
-  class EventEmitter ()
+  open class EventEmitter ()
     extends typings.apolloProtobufjs.mod.util.EventEmitter
-  
-  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-  @JSImport("@apollo/protobufjs/light", "util.Long")
-  @js.native
-  class Long protected ()
-    extends StObject
-       with typings.long.mod.Long {
-    def this(params: js.Any*) = this()
-  }
-  /** Long.js's Long class if available. */
-  @JSImport("@apollo/protobufjs/light", "util.Long")
-  @js.native
-  def Long: Constructor[typings.long.mod.Long] = js.native
   
   /** Helper class for working with the low and high bits of a 64 bit value. */
   @JSImport("@apollo/protobufjs/light", "util.LongBits")
   @js.native
-  class LongBits protected ()
+  open class LongBits protected ()
     extends typings.apolloProtobufjs.mod.util.LongBits {
     /**
       * Constructs new long bits.
@@ -91,14 +76,13 @@ object util {
     val ^ : js.Any = js.native
     
     inline def from(value: String): typings.apolloProtobufjs.mod.util.LongBits = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[typings.apolloProtobufjs.mod.util.LongBits]
-    inline def from(value: Double): typings.apolloProtobufjs.mod.util.LongBits = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[typings.apolloProtobufjs.mod.util.LongBits]
     /**
       * Constructs new long bits from a number, long or string.
       * @param value Value
       * @returns Instance
       */
     /* static member */
-    inline def from(value: typings.long.mod.Long): typings.apolloProtobufjs.mod.util.LongBits = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[typings.apolloProtobufjs.mod.util.LongBits]
+    inline def from(value: Double): typings.apolloProtobufjs.mod.util.LongBits = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[typings.apolloProtobufjs.mod.util.LongBits]
     
     /**
       * Constructs new long bits from the specified 8 characters long hash.
@@ -132,12 +116,10 @@ object util {
     inline def zero_=(x: typings.apolloProtobufjs.mod.util.LongBits): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zero")(x.asInstanceOf[js.Any])
   }
   
-  inline def Long_=(x: Constructor[typings.long.mod.Long]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Long")(x.asInstanceOf[js.Any])
-  
   /** Error subclass indicating a protocol specifc error. */
   @JSImport("@apollo/protobufjs/light", "util.ProtocolError")
   @js.native
-  class ProtocolError[T /* <: typings.apolloProtobufjs.mod.Message[T] */] protected ()
+  open class ProtocolError[T /* <: typings.apolloProtobufjs.mod.Message[T] */] protected ()
     extends typings.apolloProtobufjs.mod.util.ProtocolError[T] {
     /**
       * Constructs a new protocol error.
@@ -145,7 +127,7 @@ object util {
       * @param [properties] Additional properties
       */
     def this(message: String) = this()
-    def this(message: String, properties: StringDictionary[js.UndefOr[js.Any]]) = this()
+    def this(message: String, properties: StringDictionary[Any]) = this()
   }
   
   /**
@@ -155,7 +137,7 @@ object util {
     * @param params Function arguments
     * @returns Promisified function
     */
-  inline def asPromise(fn: asPromiseCallback, ctx: js.Any, params: js.Any*): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("asPromise")(fn.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def asPromise(fn: asPromiseCallback, ctx: Any, params: Any*): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("asPromise")((List(fn.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).`++`(params.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Promise[Any]]
   
   /** A minimal base64 implementation for number arrays. */
   object base64 {
@@ -172,7 +154,7 @@ object util {
       * @returns Number of bytes written
       * @throws {Error} If encoding is invalid
       */
-    inline def decode(string: String, buffer: Uint8Array, offset: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(string.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def decode(string: String, buffer: js.typedarray.Uint8Array, offset: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(string.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Encodes a buffer to a base64 encoded string.
@@ -181,7 +163,7 @@ object util {
       * @param end Source end
       * @returns Base64 encoded string
       */
-    inline def encode(buffer: Uint8Array, start: Double, end: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(buffer.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def encode(buffer: js.typedarray.Uint8Array, start: Double, end: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(buffer.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Calculates the byte length of a base64 encoded string.
@@ -267,7 +249,7 @@ object util {
   /** An immuable empty array. */
   @JSImport("@apollo/protobufjs/light", "util.emptyArray")
   @js.native
-  val emptyArray: js.Array[js.Any] = js.native
+  val emptyArray: js.Array[Any] = js.native
   
   /** An immutable empty object. */
   @JSImport("@apollo/protobufjs/light", "util.emptyObject")
@@ -287,14 +269,14 @@ object util {
     * @param [options] Fetch options
     * @returns Promise
     */
-  inline def fetch(path: String): js.Promise[String | Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String | Uint8Array]]
+  inline def fetch(path: String): js.Promise[String | js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String | js.typedarray.Uint8Array]]
   /**
     * Fetches the contents of a file.
     * @param path File path or url
     * @param callback Callback function
     */
   inline def fetch(path: String, callback: FetchCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def fetch(path: String, options: IFetchOptions): js.Promise[String | Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Uint8Array]]
+  inline def fetch(path: String, options: IFetchOptions): js.Promise[String | js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | js.typedarray.Uint8Array]]
   
   /** Reads / writes floats / doubles from / to buffers. */
   object float {
@@ -309,7 +291,7 @@ object util {
       * @param pos Source buffer offset
       * @returns Value read
       */
-    inline def readDoubleBE(buf: Uint8Array, pos: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readDoubleBE")(buf.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def readDoubleBE(buf: js.typedarray.Uint8Array, pos: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readDoubleBE")(buf.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Reads a 64 bit double from a buffer using little endian byte order.
@@ -317,7 +299,7 @@ object util {
       * @param pos Source buffer offset
       * @returns Value read
       */
-    inline def readDoubleLE(buf: Uint8Array, pos: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readDoubleLE")(buf.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def readDoubleLE(buf: js.typedarray.Uint8Array, pos: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readDoubleLE")(buf.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Reads a 32 bit float from a buffer using big endian byte order.
@@ -325,7 +307,7 @@ object util {
       * @param pos Source buffer offset
       * @returns Value read
       */
-    inline def readFloatBE(buf: Uint8Array, pos: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readFloatBE")(buf.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def readFloatBE(buf: js.typedarray.Uint8Array, pos: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readFloatBE")(buf.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Reads a 32 bit float from a buffer using little endian byte order.
@@ -333,7 +315,7 @@ object util {
       * @param pos Source buffer offset
       * @returns Value read
       */
-    inline def readFloatLE(buf: Uint8Array, pos: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readFloatLE")(buf.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def readFloatLE(buf: js.typedarray.Uint8Array, pos: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readFloatLE")(buf.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Writes a 64 bit double to a buffer using big endian byte order.
@@ -341,7 +323,7 @@ object util {
       * @param buf Target buffer
       * @param pos Target buffer offset
       */
-    inline def writeDoubleBE(`val`: Double, buf: Uint8Array, pos: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeDoubleBE")(`val`.asInstanceOf[js.Any], buf.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def writeDoubleBE(`val`: Double, buf: js.typedarray.Uint8Array, pos: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeDoubleBE")(`val`.asInstanceOf[js.Any], buf.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Writes a 64 bit double to a buffer using little endian byte order.
@@ -349,7 +331,7 @@ object util {
       * @param buf Target buffer
       * @param pos Target buffer offset
       */
-    inline def writeDoubleLE(`val`: Double, buf: Uint8Array, pos: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeDoubleLE")(`val`.asInstanceOf[js.Any], buf.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def writeDoubleLE(`val`: Double, buf: js.typedarray.Uint8Array, pos: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeDoubleLE")(`val`.asInstanceOf[js.Any], buf.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Writes a 32 bit float to a buffer using big endian byte order.
@@ -357,7 +339,7 @@ object util {
       * @param buf Target buffer
       * @param pos Target buffer offset
       */
-    inline def writeFloatBE(`val`: Double, buf: Uint8Array, pos: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFloatBE")(`val`.asInstanceOf[js.Any], buf.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def writeFloatBE(`val`: Double, buf: js.typedarray.Uint8Array, pos: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFloatBE")(`val`.asInstanceOf[js.Any], buf.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Writes a 32 bit float to a buffer using little endian byte order.
@@ -365,7 +347,7 @@ object util {
       * @param buf Target buffer
       * @param pos Target buffer offset
       */
-    inline def writeFloatLE(`val`: Double, buf: Uint8Array, pos: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFloatLE")(`val`.asInstanceOf[js.Any], buf.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def writeFloatLE(`val`: Double, buf: js.typedarray.Uint8Array, pos: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFloatLE")(`val`.asInstanceOf[js.Any], buf.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   /**
@@ -380,7 +362,7 @@ object util {
     * @param value Value to test
     * @returns `true` if the value is an integer
     */
-  inline def isInteger(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInteger")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isInteger(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInteger")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /** Whether running within node or not. */
   @JSImport("@apollo/protobufjs/light", "util.isNode")
@@ -392,7 +374,7 @@ object util {
     * @param value Value to test
     * @returns `true` if the value is a non-null object
     */
-  inline def isObject(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isObject(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Tests whether the specified name is a reserved word in JS.
@@ -414,7 +396,7 @@ object util {
     * @param value Value to test
     * @returns `true` if the value is a string
     */
-  inline def isString(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isString(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Checks if a property on a message is considered to be present.
@@ -428,17 +410,17 @@ object util {
   /** Regular expression used to verify 2 bit (`bool`) map keys. */
   @JSImport("@apollo/protobufjs/light", "util.key2Re")
   @js.native
-  val key2Re: RegExp = js.native
+  val key2Re: js.RegExp = js.native
   
   /** Regular expression used to verify 32 bit (`int32` etc.) map keys. */
   @JSImport("@apollo/protobufjs/light", "util.key32Re")
   @js.native
-  val key32Re: RegExp = js.native
+  val key32Re: js.RegExp = js.native
   
   /** Regular expression used to verify 64 bit (`int64` etc.) map keys. */
   @JSImport("@apollo/protobufjs/light", "util.key64Re")
   @js.native
-  val key64Re: RegExp = js.native
+  val key64Re: js.RegExp = js.native
   
   /**
     * Converts the first character of a string to lower case.
@@ -448,51 +430,30 @@ object util {
   inline def lcFirst(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("lcFirst")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
-    * Converts an 8 characters long hash string to a long or number.
-    * @param hash Hash
-    * @param [unsigned=false] Whether unsigned or not
-    * @returns Original value
-    */
-  inline def longFromHash(hash: String): typings.long.mod.Long | Double = ^.asInstanceOf[js.Dynamic].applyDynamic("longFromHash")(hash.asInstanceOf[js.Any]).asInstanceOf[typings.long.mod.Long | Double]
-  inline def longFromHash(hash: String, unsigned: Boolean): typings.long.mod.Long | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("longFromHash")(hash.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any])).asInstanceOf[typings.long.mod.Long | Double]
-  
-  inline def longToHash(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("longToHash")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  /**
-    * Converts a number or long to an 8 characters long hash string.
-    * @param value Value to convert
-    * @returns Hash
-    */
-  inline def longToHash(value: typings.long.mod.Long): String = ^.asInstanceOf[js.Dynamic].applyDynamic("longToHash")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  
-  /**
     * Merges the properties of the source object into the destination object.
     * @param dst Destination object
     * @param src Source object
     * @param [ifNotSet=false] Merges only if the key is not already set
     * @returns Destination object
     */
-  inline def merge(dst: StringDictionary[js.UndefOr[js.Any]], src: StringDictionary[js.UndefOr[js.Any]]): StringDictionary[js.UndefOr[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(dst.asInstanceOf[js.Any], src.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.UndefOr[js.Any]]]
-  inline def merge(
-    dst: StringDictionary[js.UndefOr[js.Any]],
-    src: StringDictionary[js.UndefOr[js.Any]],
-    ifNotSet: Boolean
-  ): StringDictionary[js.UndefOr[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(dst.asInstanceOf[js.Any], src.asInstanceOf[js.Any], ifNotSet.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.UndefOr[js.Any]]]
+  inline def merge(dst: StringDictionary[Any], src: StringDictionary[Any]): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(dst.asInstanceOf[js.Any], src.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+  inline def merge(dst: StringDictionary[Any], src: StringDictionary[Any], ifNotSet: Boolean): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(dst.asInstanceOf[js.Any], src.asInstanceOf[js.Any], ifNotSet.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Creates a new buffer of whatever type supported by the environment.
     * @param [sizeOrArray=0] Buffer size or number array
     * @returns Buffer
     */
-  inline def newBuffer(): Uint8Array | typings.apolloProtobufjs.mod.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("newBuffer")().asInstanceOf[Uint8Array | typings.apolloProtobufjs.mod.Buffer]
-  inline def newBuffer(sizeOrArray: js.Array[Double]): Uint8Array | typings.apolloProtobufjs.mod.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("newBuffer")(sizeOrArray.asInstanceOf[js.Any]).asInstanceOf[Uint8Array | typings.apolloProtobufjs.mod.Buffer]
-  inline def newBuffer(sizeOrArray: Double): Uint8Array | typings.apolloProtobufjs.mod.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("newBuffer")(sizeOrArray.asInstanceOf[js.Any]).asInstanceOf[Uint8Array | typings.apolloProtobufjs.mod.Buffer]
+  inline def newBuffer(): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("newBuffer")().asInstanceOf[js.typedarray.Uint8Array]
+  inline def newBuffer(sizeOrArray: js.Array[Double]): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("newBuffer")(sizeOrArray.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  inline def newBuffer(sizeOrArray: Double): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("newBuffer")(sizeOrArray.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   
   /**
     * Creates a custom error constructor.
     * @param name Error name
     * @returns Custom error constructor
     */
-  inline def newError(name: String): Constructor[Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("newError")(name.asInstanceOf[js.Any]).asInstanceOf[Constructor[Error]]
+  inline def newError(name: String): Constructor[js.Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("newError")(name.asInstanceOf[js.Any]).asInstanceOf[Constructor[js.Error]]
   
   /**
     * Builds a getter for a oneof's present field name.
@@ -562,7 +523,7 @@ object util {
     * @param object Object to convert
     * @returns Converted array
     */
-  inline def toArray(`object`: StringDictionary[js.UndefOr[js.Any]]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def toArray(`object`: StringDictionary[Any]): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
   
   /**
     * Default conversion options used for {@link Message#toJSON} implementations.
@@ -589,7 +550,7 @@ object util {
     * @param array Array to convert
     * @returns Converted object
     */
-  inline def toObject(array: js.Array[js.Any]): StringDictionary[js.UndefOr[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(array.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.UndefOr[js.Any]]]
+  inline def toObject(array: js.Array[Any]): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(array.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Converts the first character of a string to upper case.
@@ -619,7 +580,7 @@ object util {
       * @param end Source end
       * @returns String read
       */
-    inline def read(buffer: Uint8Array, start: Double, end: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(buffer.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def read(buffer: js.typedarray.Uint8Array, start: Double, end: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(buffer.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Writes a string as UTF8 bytes.
@@ -628,6 +589,6 @@ object util {
       * @param offset Destination offset
       * @returns Bytes written
       */
-    inline def write(string: String, buffer: Uint8Array, offset: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(string.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def write(string: String, buffer: js.typedarray.Uint8Array, offset: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(string.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
 }

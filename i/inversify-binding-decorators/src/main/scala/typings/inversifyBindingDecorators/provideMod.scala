@@ -11,6 +11,6 @@ object provideMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(serviceIdentifier: ServiceIdentifier[js.Any]): js.Function1[/* target */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(serviceIdentifier.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* target */ js.Any, js.Any]]
-  inline def default(serviceIdentifier: ServiceIdentifier[js.Any], force: Boolean): js.Function1[/* target */ js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(serviceIdentifier.asInstanceOf[js.Any], force.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* target */ js.Any, js.Any]]
+  inline def default(serviceIdentifier: ServiceIdentifier[Any]): js.Function1[/* target */ Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(serviceIdentifier.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* target */ Any, Any]]
+  inline def default(serviceIdentifier: ServiceIdentifier[Any], force: Boolean): js.Function1[/* target */ Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(serviceIdentifier.asInstanceOf[js.Any], force.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* target */ Any, Any]]
 }

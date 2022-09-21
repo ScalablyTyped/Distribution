@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("p2", "Narrowphase")
 @js.native
-class Narrowphase () extends StObject {
+open class Narrowphase () extends StObject {
   
   def bodiesOverlap(bodyA: Body, bodyB: Body): Boolean = js.native
   def bodiesOverlap(bodyA: Body, bodyB: Body, checkCollisionMasks: Boolean): Boolean = js.native

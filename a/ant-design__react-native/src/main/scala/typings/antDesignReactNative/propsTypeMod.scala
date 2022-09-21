@@ -13,7 +13,7 @@ object propsTypeMod {
   
   trait ButtonPropsType extends StObject {
     
-    var disabled: js.UndefOr[Boolean] = js.undefined
+    var disabled: js.UndefOr[Boolean | Null] = js.undefined
     
     var loading: js.UndefOr[Boolean] = js.undefined
     
@@ -31,6 +31,8 @@ object propsTypeMod {
     extension [Self <: ButtonPropsType](x: Self) {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      
+      inline def setDisabledNull: Self = StObject.set(x, "disabled", null)
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       

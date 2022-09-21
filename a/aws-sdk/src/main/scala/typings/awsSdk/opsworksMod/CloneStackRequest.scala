@@ -141,7 +141,7 @@ object CloneStackRequest {
     
     inline def setCloneAppIdsUndefined: Self = StObject.set(x, "CloneAppIds", js.undefined)
     
-    inline def setCloneAppIdsVarargs(value: String*): Self = StObject.set(x, "CloneAppIds", js.Array(value :_*))
+    inline def setCloneAppIdsVarargs(value: String*): Self = StObject.set(x, "CloneAppIds", js.Array(value*))
     
     inline def setClonePermissions(value: Boolean): Self = StObject.set(x, "ClonePermissions", value.asInstanceOf[js.Any])
     

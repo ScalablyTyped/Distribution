@@ -36,7 +36,7 @@ object RemoveTagsFromVaultInput {
     
     inline def setTagKeysUndefined: Self = StObject.set(x, "TagKeys", js.undefined)
     
-    inline def setTagKeysVarargs(value: String*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
+    inline def setTagKeysVarargs(value: String*): Self = StObject.set(x, "TagKeys", js.Array(value*))
     
     inline def setVaultName(value: String): Self = StObject.set(x, "vaultName", value.asInstanceOf[js.Any])
   }

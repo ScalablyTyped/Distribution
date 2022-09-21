@@ -8,14 +8,14 @@ object mod {
   
   @JSImport("react-native-event-source", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with RNEventSource {
     def this(url: String) = this()
     def this(url: String, options: js.Object) = this()
     
     /* CompleteClass */
-    override def addEventListener(`type`: String, listener: ListenerCallback): js.Any = js.native
+    override def addEventListener(`type`: String, listener: ListenerCallback): Any = js.native
     
     /* CompleteClass */
     override def close(): Unit = js.native
@@ -63,7 +63,7 @@ object mod {
   
   trait RNEventSource extends StObject {
     
-    def addEventListener(`type`: String, listener: ListenerCallback): js.Any
+    def addEventListener(`type`: String, listener: ListenerCallback): Any
     
     def close(): Unit
     
@@ -74,7 +74,7 @@ object mod {
   object RNEventSource {
     
     inline def apply(
-      addEventListener: (String, ListenerCallback) => js.Any,
+      addEventListener: (String, ListenerCallback) => Any,
       close: () => Unit,
       removeAllListeners: () => Unit,
       removeListener: (String, ListenerCallback) => Unit
@@ -85,7 +85,7 @@ object mod {
     
     extension [Self <: RNEventSource](x: Self) {
       
-      inline def setAddEventListener(value: (String, ListenerCallback) => js.Any): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
+      inline def setAddEventListener(value: (String, ListenerCallback) => Any): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       

@@ -17,14 +17,8 @@ trait Canvas extends StObject {
     * @param contextType 上下文类型
     * @param contextAttributes webgl 上下文属性，仅当 contextType 为 webgl 时有效
     */
-  @JSName("getContext")
-  def getContext_2d(contextType: `2d`): WxRenderingContext | WxWebGLRenderingContext = js.native
-  @JSName("getContext")
-  def getContext_2d(contextType: `2d`, contextAttributes: RenderingContextConfig): WxRenderingContext | WxWebGLRenderingContext = js.native
-  @JSName("getContext")
-  def getContext_webgl(contextType: webgl): WxRenderingContext | WxWebGLRenderingContext = js.native
-  @JSName("getContext")
-  def getContext_webgl(contextType: webgl, contextAttributes: RenderingContextConfig): WxRenderingContext | WxWebGLRenderingContext = js.native
+  def getContext(contextType: `2d` | webgl): WxRenderingContext | WxWebGLRenderingContext = js.native
+  def getContext(contextType: `2d` | webgl, contextAttributes: RenderingContextConfig): WxRenderingContext | WxWebGLRenderingContext = js.native
   
   /**
     * 画布的高度

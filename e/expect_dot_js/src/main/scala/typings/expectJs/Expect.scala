@@ -1,6 +1,5 @@
 package typings.expectJs
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,7 +66,7 @@ object Expect {
     /**
       * Assert that the array contains obj.
       */
-    def contain(obj: js.Any): Assertion = js.native
+    def contain(obj: Any): Assertion = js.native
     /**
       * Assert that string contains str.
       */
@@ -81,12 +80,12 @@ object Expect {
     /**
       * Checks if the obj sortof equals another.
       */
-    def eql(obj: js.Any): Assertion = js.native
+    def eql(obj: Any): Assertion = js.native
     
     /**
       * Checks if the obj exactly equals another.
       */
-    def equal(obj: js.Any): Assertion = js.native
+    def equal(obj: Any): Assertion = js.native
     
     /**
       * Assert a failure.
@@ -134,7 +133,7 @@ object Expect {
       *
       * @param regexp
       */
-    def `match`(regexp: RegExp): Assertion = js.native
+    def `match`(regexp: js.RegExp): Assertion = js.native
     
     /**
       * Check if the value is truthy
@@ -148,9 +147,9 @@ object Expect {
       * @param val
       */
     def property(name: String): Assertion = js.native
-    def property(name: String, `val`: js.Any): Assertion = js.native
+    def property(name: String, `val`: Any): Assertion = js.native
     
-    def string(obj: js.Any): Assertion = js.native
+    def string(obj: Any): Assertion = js.native
     def string(str: String): Assertion = js.native
     
     /**
@@ -159,13 +158,13 @@ object Expect {
       * @param fn callback to match error string against
       */
     def throwError(): Unit = js.native
-    def throwError(fn: js.Function1[/* exception */ js.Any, Unit]): Unit = js.native
+    def throwError(fn: js.Function1[/* exception */ Any, Unit]): Unit = js.native
     /**
       * Assert that the function throws.
       *
       * @param regexp regexp to match error string against
       */
-    def throwError(regexp: RegExp): Unit = js.native
+    def throwError(regexp: js.RegExp): Unit = js.native
     
     /**
       * Assert that the function throws.
@@ -173,18 +172,18 @@ object Expect {
       * @param fn callback to match error string against
       */
     def throwException(): Unit = js.native
-    def throwException(fn: js.Function1[/* exception */ js.Any, Unit]): Unit = js.native
+    def throwException(fn: js.Function1[/* exception */ Any, Unit]): Unit = js.native
     /**
       * Assert that the function throws.
       *
       * @param fn callback to match error string against
       */
-    def throwException(regexp: RegExp): Unit = js.native
+    def throwException(regexp: js.RegExp): Unit = js.native
     
     /**
       * Creates an anonymous function which calls fn with arguments.
       */
-    def withArgs(args: js.Any*): Root = js.native
+    def withArgs(args: Any*): Root = js.native
     
     /**
       * Assert within start to finish (inclusive).
@@ -203,7 +202,7 @@ object Expect {
     /**
       * Checks if the obj exactly equals another.
       */
-    def apply(obj: js.Any): Assertion = js.native
+    def apply(obj: Any): Assertion = js.native
   }
   
   @js.native
@@ -230,7 +229,7 @@ object Expect {
     /**
       * Checks if the obj exactly equals another.
       */
-    def be(obj: js.Any): Assertion = js.native
+    def be(obj: Any): Assertion = js.native
     @JSName("be")
     var be_Original: Be = js.native
     
@@ -257,7 +256,7 @@ object Expect {
     /**
       * Checks if the obj exactly equals another.
       */
-    def be(obj: js.Any): Assertion = js.native
+    def be(obj: Any): Assertion = js.native
     @JSName("be")
     var be_Original: Be = js.native
     
@@ -286,7 +285,7 @@ object Expect {
     /**
       * Checks if the obj exactly equals another.
       */
-    def be(obj: js.Any): Assertion = js.native
+    def be(obj: Any): Assertion = js.native
     @JSName("be")
     var be_Original: Be = js.native
     

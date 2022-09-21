@@ -1,21 +1,20 @@
 package typings.chessJs
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.chessJs.anon.BIGPAWN
 import typings.chessJs.anon.Color
 import typings.chessJs.anon.Error
+import typings.chessJs.anon.Legal
 import typings.chessJs.anon.Maxwidth
 import typings.chessJs.anon.Newlinechar
 import typings.chessJs.anon.Sloppy
-import typings.chessJs.anon.SquareVerbose
 import typings.chessJs.anon.Verbose
 import typings.chessJs.anon.`0`
 import typings.chessJs.anon.`1`
 import typings.chessJs.anon.`2`
 import typings.chessJs.chessJsStrings.b
-import typings.chessJs.chessJsStrings.dark
+import typings.chessJs.chessJsStrings.c
+import typings.chessJs.chessJsStrings.e
 import typings.chessJs.chessJsStrings.k
-import typings.chessJs.chessJsStrings.light
 import typings.chessJs.chessJsStrings.n
 import typings.chessJs.chessJsStrings.p
 import typings.chessJs.chessJsStrings.q
@@ -28,6 +27,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  @JSImport("chess.js", "BISHOP")
+  @js.native
+  val BISHOP: b = js.native
+  
+  @JSImport("chess.js", "BLACK")
+  @js.native
+  val BLACK: b = js.native
+  
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("chess.js", "Chess")
   @js.native
@@ -36,7 +43,7 @@ object mod {
     * the board configuration in Forsyth-Edwards Notation.
     * @param fen specifies the board configuration in Forsyth-Edwards Notation.
     */
-  class Chess ()
+  open class Chess ()
     extends StObject
        with ChessInstance {
     def this(fen: String) = this()
@@ -56,38 +63,89 @@ object mod {
     def apply(fen: String): ChessInstance = js.native
   }
   
+  @JSImport("chess.js", "EMPTY")
+  @js.native
+  val EMPTY: Double = js.native
+  
+  object FLAGS {
+    
+    @JSImport("chess.js", "FLAGS")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /** a pawn push of two squares */
+    @JSImport("chess.js", "FLAGS.BIG_PAWN")
+    @js.native
+    def BIG_PAWN: b = js.native
+    inline def BIG_PAWN_=(x: b): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BIG_PAWN")(x.asInstanceOf[js.Any])
+    
+    /** a standard capture */
+    @JSImport("chess.js", "FLAGS.CAPTURE")
+    @js.native
+    def CAPTURE: c = js.native
+    inline def CAPTURE_=(x: c): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CAPTURE")(x.asInstanceOf[js.Any])
+    
+    /** an en passant capture */
+    @JSImport("chess.js", "FLAGS.EP_CAPTURE")
+    @js.native
+    def EP_CAPTURE: e = js.native
+    inline def EP_CAPTURE_=(x: e): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EP_CAPTURE")(x.asInstanceOf[js.Any])
+    
+    /** kingside castling */
+    @JSImport("chess.js", "FLAGS.KSIDE_CASTLE")
+    @js.native
+    def KSIDE_CASTLE: k = js.native
+    inline def KSIDE_CASTLE_=(x: k): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KSIDE_CASTLE")(x.asInstanceOf[js.Any])
+    
+    /** a non-capture */
+    @JSImport("chess.js", "FLAGS.NORMAL")
+    @js.native
+    def NORMAL: n = js.native
+    inline def NORMAL_=(x: n): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NORMAL")(x.asInstanceOf[js.Any])
+    
+    /** a promotion */
+    @JSImport("chess.js", "FLAGS.PROMOTION")
+    @js.native
+    def PROMOTION: p = js.native
+    inline def PROMOTION_=(x: p): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROMOTION")(x.asInstanceOf[js.Any])
+    
+    /** queenside castling */
+    @JSImport("chess.js", "FLAGS.QSIDE_CASTLE")
+    @js.native
+    def QSIDE_CASTLE: q = js.native
+    inline def QSIDE_CASTLE_=(x: q): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QSIDE_CASTLE")(x.asInstanceOf[js.Any])
+  }
+  
+  @JSImport("chess.js", "KING")
+  @js.native
+  val KING: k = js.native
+  
+  @JSImport("chess.js", "KNIGHT")
+  @js.native
+  val KNIGHT: n = js.native
+  
+  @JSImport("chess.js", "PAWN")
+  @js.native
+  val PAWN: p = js.native
+  
+  @JSImport("chess.js", "QUEEN")
+  @js.native
+  val QUEEN: q = js.native
+  
+  @JSImport("chess.js", "ROOK")
+  @js.native
+  val ROOK: r = js.native
+  
+  @JSImport("chess.js", "SQUARES")
+  @js.native
+  val SQUARES: js.Array[Any] = js.native
+  
+  @JSImport("chess.js", "WHITE")
+  @js.native
+  val WHITE: w = js.native
+  
   @js.native
   trait ChessInstance extends StObject {
-    
-    /** The string that represents a Bishop */
-    val BISHOP: b = js.native
-    
-    /** The string that represents the Black color side */
-    val BLACK: b = js.native
-    
-    /** Flags used to build flag strings for moves */
-    val FLAGS: BIGPAWN = js.native
-    
-    /** The string that represents a King */
-    val KING: k = js.native
-    
-    /** The string that represents a Knight */
-    val KNIGHT: n = js.native
-    
-    /** The string that represents a Pawn */
-    val PAWN: p = js.native
-    
-    /** The string that represents a Queen */
-    val QUEEN: q = js.native
-    
-    /** The string that represents a Rook */
-    val ROOK: r = js.native
-    
-    /** A list of all the squares in the game, from "a1" to "h8" */
-    val SQUARES: js.Array[js.Any] = js.native
-    
-    /** The string that represents the White color side */
-    val WHITE: w = js.native
     
     /**
       * Returns a string containing an ASCII diagram of the current position.
@@ -101,6 +159,10 @@ object mod {
       * Clears the board of all pieces.
       */
     def clear(): Unit = js.native
+    
+    def delete_comment(): js.UndefOr[String] = js.native
+    
+    def delete_comments(): js.Array[Comment] = js.native
     
     /**
       * Returns the FEN string for the current position.
@@ -125,6 +187,10 @@ object mod {
       * square. Otherwise a piece object.
       */
     def get(square: Square): Piece | Null = js.native
+    
+    def get_comment(): js.UndefOr[String] = js.native
+    
+    def get_comments(): js.Array[Comment] = js.native
     
     /**
       * Allows header information to be added to PGN output.
@@ -258,9 +324,9 @@ object mod {
       * @returns The list of all valid moves, either in SAN format, or as
       * verbose objects.
       */
-    def moves(options: typings.chessJs.anon.Square): js.Array[Move] = js.native
-    def moves(options: SquareVerbose): js.Array[Move | String] = js.native
-    def moves(options: Verbose): js.Array[String] = js.native
+    def moves(options: Legal): js.Array[Move] = js.native
+    def moves(options: typings.chessJs.anon.Square): js.Array[String] = js.native
+    def moves(options: Verbose): js.Array[Move | String] = js.native
     
     /**
       * Returns the game in PGN format.
@@ -298,13 +364,15 @@ object mod {
       */
     def reset(): Unit = js.native
     
+    def set_comment(comment: String): Unit = js.native
+    
     /**
       * Returns the color of the square ('light' or 'dark').
       * @param square the square to check if it is light or dark.
       * @returns "light" if a light square, "dark" if a dark square, or null if
       * not a valid square.
       */
-    def square_color(square: String): light | dark | Null = js.native
+    def square_color(square: String): SquareColor | Null = js.native
     // This is a debugging utility, and is not documented in their readme.
     // So it is not included in these type definitions.
     // perft(depth: number): number,
@@ -314,13 +382,13 @@ object mod {
       * @returns "light" if a light square, "dark" if a dark square, or null if
       * not a valid square.
       */
-    def square_color(square: Square): light | dark = js.native
+    def square_color(square: Square): SquareColor = js.native
     
     /**
       * Returns the current side to move.
       * @returns "b" if Black is the side to move, otherwise "w" for White.
       */
-    def turn(): b | w = js.native
+    def turn(): PieceColor = js.native
     
     /**
       * Take back the last half-move, returning a move object if successful,
@@ -337,6 +405,27 @@ object mod {
     def validate_fen(fen: String): Error = js.native
   }
   
+  trait Comment extends StObject {
+    
+    var comment: String
+    
+    var fen: String
+  }
+  object Comment {
+    
+    inline def apply(comment: String, fen: String): Comment = {
+      val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], fen = fen.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Comment]
+    }
+    
+    extension [Self <: Comment](x: Self) {
+      
+      inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      
+      inline def setFen(value: String): Self = StObject.set(x, "fen", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait Move
     extends StObject
        with ShortMove {
@@ -351,7 +440,7 @@ object mod {
       * - "b" for Black
       * - "w" for White
       */
-    var color: b | w
+    var color: PieceColor
     
     /** Flags indicating what occurred, combined into one string */
     var flags: String
@@ -366,7 +455,7 @@ object mod {
   }
   object Move {
     
-    inline def apply(color: b | w, flags: String, from: Square, piece: PieceType, san: String, to: Square): Move = {
+    inline def apply(color: PieceColor, flags: String, from: Square, piece: PieceType, san: String, to: Square): Move = {
       val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], piece = piece.asInstanceOf[js.Any], san = san.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[Move]
     }
@@ -377,7 +466,7 @@ object mod {
       
       inline def setCapturedUndefined: Self = StObject.set(x, "captured", js.undefined)
       
-      inline def setColor(value: b | w): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: PieceColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
@@ -394,7 +483,7 @@ object mod {
       * - "b" for Black
       * - "w" for White
       */
-    var color: b | w
+    var color: PieceColor
     
     /**
       * The type of the piece to place
@@ -403,7 +492,7 @@ object mod {
   }
   object Piece {
     
-    inline def apply(color: b | w, `type`: PieceType): Piece = {
+    inline def apply(color: PieceColor, `type`: PieceType): Piece = {
       val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Piece]
@@ -411,10 +500,22 @@ object mod {
     
     extension [Self <: Piece](x: Self) {
       
-      inline def setColor(value: b | w): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: PieceColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setType(value: PieceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.chessJs.chessJsStrings.b
+    - typings.chessJs.chessJsStrings.w
+  */
+  trait PieceColor extends StObject
+  object PieceColor {
+    
+    inline def b: typings.chessJs.chessJsStrings.b = "b".asInstanceOf[typings.chessJs.chessJsStrings.b]
+    
+    inline def w: typings.chessJs.chessJsStrings.w = "w".asInstanceOf[typings.chessJs.chessJsStrings.w]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -452,7 +553,7 @@ object mod {
     /**
       * If this move results in a promotion, this will have the unit promotion.
       */
-    var promotion: js.UndefOr[Exclude[PieceType, p]] = js.undefined
+    var promotion: js.UndefOr[Exclude[PieceType, p | k]] = js.undefined
     
     /**
       * The location the piece is moving to.
@@ -471,7 +572,7 @@ object mod {
       
       inline def setFrom(value: Square): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      inline def setPromotion(value: Exclude[PieceType, p]): Self = StObject.set(x, "promotion", value.asInstanceOf[js.Any])
+      inline def setPromotion(value: Exclude[PieceType, p | k]): Self = StObject.set(x, "promotion", value.asInstanceOf[js.Any])
       
       inline def setPromotionUndefined: Self = StObject.set(x, "promotion", js.undefined)
       
@@ -675,5 +776,17 @@ object mod {
     inline def h7: typings.chessJs.chessJsStrings.h7 = "h7".asInstanceOf[typings.chessJs.chessJsStrings.h7]
     
     inline def h8: typings.chessJs.chessJsStrings.h8 = "h8".asInstanceOf[typings.chessJs.chessJsStrings.h8]
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.chessJs.chessJsStrings.light
+    - typings.chessJs.chessJsStrings.dark
+  */
+  trait SquareColor extends StObject
+  object SquareColor {
+    
+    inline def dark: typings.chessJs.chessJsStrings.dark = "dark".asInstanceOf[typings.chessJs.chessJsStrings.dark]
+    
+    inline def light: typings.chessJs.chessJsStrings.light = "light".asInstanceOf[typings.chessJs.chessJsStrings.light]
   }
 }

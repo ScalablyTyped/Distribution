@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("throttle", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Transform {
+  open class ^ protected () extends Transform {
     def this(options: Double) = this()
     def this(options: Options) = this()
   }

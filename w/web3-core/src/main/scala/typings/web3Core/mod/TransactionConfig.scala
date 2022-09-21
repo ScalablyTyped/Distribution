@@ -23,6 +23,10 @@ trait TransactionConfig extends StObject {
   
   var hardfork: js.UndefOr[String] = js.undefined
   
+  var maxFeePerGas: js.UndefOr[Double | String | ^] = js.undefined
+  
+  var maxPriorityFeePerGas: js.UndefOr[Double | String | ^] = js.undefined
+  
   var nonce: js.UndefOr[Double] = js.undefined
   
   var to: js.UndefOr[String] = js.undefined
@@ -69,6 +73,14 @@ object TransactionConfig {
     inline def setHardfork(value: String): Self = StObject.set(x, "hardfork", value.asInstanceOf[js.Any])
     
     inline def setHardforkUndefined: Self = StObject.set(x, "hardfork", js.undefined)
+    
+    inline def setMaxFeePerGas(value: Double | String | ^): Self = StObject.set(x, "maxFeePerGas", value.asInstanceOf[js.Any])
+    
+    inline def setMaxFeePerGasUndefined: Self = StObject.set(x, "maxFeePerGas", js.undefined)
+    
+    inline def setMaxPriorityFeePerGas(value: Double | String | ^): Self = StObject.set(x, "maxPriorityFeePerGas", value.asInstanceOf[js.Any])
+    
+    inline def setMaxPriorityFeePerGasUndefined: Self = StObject.set(x, "maxPriorityFeePerGas", js.undefined)
     
     inline def setNonce(value: Double): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     

@@ -11,7 +11,7 @@ trait Actions extends StObject {
   
   def get(name: String): js.Function0[Unit]
   
-  def invoke(name: String, args: js.Any): Unit
+  def invoke(name: String, args: Any): Unit
   
   def list(): js.Array[Id]
   
@@ -22,7 +22,7 @@ object Actions {
   inline def apply(
     add: (String, js.Function0[Unit]) => Unit,
     get: String => js.Function0[Unit],
-    invoke: (String, js.Any) => Unit,
+    invoke: (String, Any) => Unit,
     list: () => js.Array[Id],
     remove: String => Unit
   ): Actions = {
@@ -36,7 +36,7 @@ object Actions {
     
     inline def setGet(value: String => js.Function0[Unit]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    inline def setInvoke(value: (String, js.Any) => Unit): Self = StObject.set(x, "invoke", js.Any.fromFunction2(value))
+    inline def setInvoke(value: (String, Any) => Unit): Self = StObject.set(x, "invoke", js.Any.fromFunction2(value))
     
     inline def setList(value: () => js.Array[Id]): Self = StObject.set(x, "list", js.Any.fromFunction0(value))
     

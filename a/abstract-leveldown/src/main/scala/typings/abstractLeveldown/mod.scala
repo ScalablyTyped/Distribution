@@ -2,9 +2,13 @@ package typings.abstractLeveldown
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
+import typings.abstractLeveldown.abstractLeveldownStrings.`new`
+import typings.abstractLeveldown.abstractLeveldownStrings.closed
+import typings.abstractLeveldown.abstractLeveldownStrings.closing
 import typings.abstractLeveldown.abstractLeveldownStrings.del
+import typings.abstractLeveldown.abstractLeveldownStrings.open
+import typings.abstractLeveldown.abstractLeveldownStrings.opening
 import typings.abstractLeveldown.abstractLeveldownStrings.put
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,8 +26,8 @@ object mod {
     
     def put(key: K, value: V): this.type = js.native
     
-    def write(cb: ErrorCallback): js.Any = js.native
-    def write(options: js.Any, cb: ErrorCallback): js.Any = js.native
+    def write(cb: ErrorCallback): Any = js.native
+    def write(options: Any, cb: ErrorCallback): Any = js.native
   }
   @JSImport("abstract-leveldown", "AbstractChainedBatch")
   @js.native
@@ -32,11 +36,11 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("abstract-leveldown", "AbstractChainedBatch")
   @js.native
-  class AbstractChainedBatchCls[K, V] protected ()
+  open class AbstractChainedBatchCls[K, V] protected ()
     extends StObject
        with typings.abstractLeveldown.mod.AbstractChainedBatch[K, V] {
     // tslint:disable-next-line no-unnecessary-generics
-    def this(db: js.Any) = this()
+    def this(db: Any) = this()
   }
   
   trait AbstractIterator[K, V]
@@ -68,11 +72,11 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("abstract-leveldown", "AbstractIterator")
   @js.native
-  class AbstractIteratorCls[K, V] protected ()
+  open class AbstractIteratorCls[K, V] protected ()
     extends StObject
        with AbstractIterator[K, V] {
     // tslint:disable-next-line no-unnecessary-generics
-    def this(db: js.Any) = this()
+    def this(db: Any) = this()
     
     /* CompleteClass */
     var db: typings.abstractLeveldown.mod.AbstractLevelDOWN[K, V] = js.native
@@ -101,6 +105,11 @@ object mod {
     def get(key: K, cb: ErrorValueCallback[V]): Unit = js.native
     def get(key: K, options: AbstractGetOptions, cb: ErrorValueCallback[V]): Unit = js.native
     
+    def getMany(key: js.Array[K], cb: ErrorValueCallback[js.Array[V]]): Unit = js.native
+    def getMany(key: js.Array[K], options: AbstractGetOptions, cb: ErrorValueCallback[js.Array[V]]): Unit = js.native
+    
+    def isOperational(): Boolean = js.native
+    
     def iterator(): AbstractIterator[K, V] = js.native
     def iterator(options: AbstractIteratorOptions[K]): AbstractIterator[K, V] = js.native
     
@@ -109,6 +118,8 @@ object mod {
     
     def put(key: K, value: V, cb: ErrorCallback): Unit = js.native
     def put(key: K, value: V, options: AbstractOptions, cb: ErrorCallback): Unit = js.native
+    
+    val status: `new` | opening | open | closing | closed = js.native
   }
   @JSImport("abstract-leveldown", "AbstractLevelDOWN")
   @js.native
@@ -117,7 +128,7 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("abstract-leveldown", "AbstractLevelDOWN")
   @js.native
-  class AbstractLevelDOWNCls[K, V] protected ()
+  open class AbstractLevelDOWNCls[K, V] protected ()
     extends StObject
        with typings.abstractLeveldown.mod.AbstractLevelDOWN[K, V] {
     // tslint:disable-next-line no-unnecessary-generics
@@ -149,12 +160,12 @@ object mod {
     extends StObject
        with // tslint:disable-next-line no-unnecessary-generics
   Instantiable1[
-          /* db */ js.Any, 
+          /* db */ Any, 
           typings.abstractLeveldown.mod.AbstractChainedBatch[js.Object, js.Object]
         ] {
     
     // tslint:disable-next-line no-unnecessary-generics
-    def apply[K, V](db: js.Any): typings.abstractLeveldown.mod.AbstractChainedBatch[K, V] = js.native
+    def apply[K, V](db: Any): typings.abstractLeveldown.mod.AbstractChainedBatch[K, V] = js.native
   }
   
   trait AbstractGetOptions
@@ -182,10 +193,10 @@ object mod {
   trait AbstractIteratorConstructor
     extends StObject
        with // tslint:disable-next-line no-unnecessary-generics
-  Instantiable1[/* db */ js.Any, AbstractIterator[js.Object, js.Object]] {
+  Instantiable1[/* db */ Any, AbstractIterator[js.Object, js.Object]] {
     
     // tslint:disable-next-line no-unnecessary-generics
-    def apply[K, V](db: js.Any): AbstractIterator[K, V] = js.native
+    def apply[K, V](db: Any): AbstractIterator[K, V] = js.native
   }
   
   trait AbstractIteratorOptions[K]
@@ -303,7 +314,7 @@ object mod {
     }
   }
   
-  type AbstractOptions = StringDictionary[js.Any]
+  type AbstractOptions = StringDictionary[Any]
   
   trait DelBatch[K, V]
     extends StObject
@@ -329,11 +340,11 @@ object mod {
     }
   }
   
-  type ErrorCallback = js.Function1[/* err */ js.UndefOr[Error], Unit]
+  type ErrorCallback = js.Function1[/* err */ js.UndefOr[js.Error], Unit]
   
-  type ErrorKeyValueCallback[K, V] = js.Function3[/* err */ js.UndefOr[Error], /* key */ K, /* value */ V, Unit]
+  type ErrorKeyValueCallback[K, V] = js.Function3[/* err */ js.UndefOr[js.Error], /* key */ K, /* value */ V, Unit]
   
-  type ErrorValueCallback[V] = js.Function2[/* err */ js.UndefOr[Error], /* value */ V, Unit]
+  type ErrorValueCallback[V] = js.Function2[/* err */ js.UndefOr[js.Error], /* value */ V, Unit]
   
   trait PutBatch[K, V]
     extends StObject

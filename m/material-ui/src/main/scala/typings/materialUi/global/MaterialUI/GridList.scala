@@ -11,11 +11,11 @@ object GridList {
   
   @JSGlobal("__MaterialUI.GridList.GridList")
   @js.native
-  class GridList ()
-    extends Component[GridListProps, js.Object, js.Any]
+  open class GridList ()
+    extends Component[GridListProps, js.Object, Any]
   
   @JSGlobal("__MaterialUI.GridList.GridTile")
   @js.native
-  class GridTile ()
-    extends Component[GridTileProps, js.Object, js.Any]
+  open class GridTile ()
+    extends Component[GridTileProps, js.Object, Any]
 }

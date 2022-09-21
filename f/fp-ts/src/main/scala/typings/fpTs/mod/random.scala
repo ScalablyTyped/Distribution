@@ -1,6 +1,7 @@
 package typings.fpTs.mod
 
 import typings.fpTs.iOMod.IO_
+import typings.fpTs.readonlyNonEmptyArrayMod.ReadonlyNonEmptyArray_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,6 +18,8 @@ object random {
   @JSImport("fp-ts", "random.randomBool")
   @js.native
   val randomBool: IO_[Boolean] = js.native
+  
+  inline def randomElem[A](as: ReadonlyNonEmptyArray_[A]): IO_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomElem")(as.asInstanceOf[js.Any]).asInstanceOf[IO_[A]]
   
   inline def randomInt(low: Double, high: Double): IO_[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomInt")(low.asInstanceOf[js.Any], high.asInstanceOf[js.Any])).asInstanceOf[IO_[Double]]
   

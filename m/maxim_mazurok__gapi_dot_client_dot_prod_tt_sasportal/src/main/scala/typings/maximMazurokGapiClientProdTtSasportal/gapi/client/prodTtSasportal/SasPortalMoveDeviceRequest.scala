@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SasPortalMoveDeviceRequest extends StObject {
   
-  /** Required. The name of the new parent resource (Node or Customer) to reparent the device under. */
+  /** Required. The name of the new parent resource node or customer to reparent the device under. */
   var destination: js.UndefOr[String] = js.undefined
 }
 object SasPortalMoveDeviceRequest {

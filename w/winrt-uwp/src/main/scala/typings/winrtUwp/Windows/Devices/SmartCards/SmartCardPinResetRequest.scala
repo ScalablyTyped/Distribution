@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.SmartCards
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,7 +12,7 @@ trait SmartCardPinResetRequest extends StObject {
   var challenge: IBuffer
   
   /** Gets the length of time to wait before requesting the smart card personal identification number (PIN) reset. */
-  var deadline: Date
+  var deadline: js.Date
   
   /**
     * Gets an instance of a wait time for a requested smart card personal identification number (PIN) reset.
@@ -31,7 +30,7 @@ object SmartCardPinResetRequest {
   
   inline def apply(
     challenge: IBuffer,
-    deadline: Date,
+    deadline: js.Date,
     getDeferral: () => SmartCardPinResetDeferral,
     setResponse: IBuffer => Unit
   ): SmartCardPinResetRequest = {
@@ -43,7 +42,7 @@ object SmartCardPinResetRequest {
     
     inline def setChallenge(value: IBuffer): Self = StObject.set(x, "challenge", value.asInstanceOf[js.Any])
     
-    inline def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
+    inline def setDeadline(value: js.Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
     
     inline def setGetDeferral(value: () => SmartCardPinResetDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     

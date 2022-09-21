@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "GroupedListBase")
 @js.native
-class GroupedListBase protected ()
+open class GroupedListBase protected ()
   extends typings.officeUiFabricReact.mod.GroupedListBase {
   def this(props: IGroupedListProps) = this()
 }

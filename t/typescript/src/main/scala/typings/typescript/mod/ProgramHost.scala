@@ -1,5 +1,7 @@
 package typings.typescript.mod
 
+import typings.typescript.mod.ModuleKind.CommonJS
+import typings.typescript.mod.ModuleKind.ESNext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,6 +49,11 @@ trait ProgramHost[T /* <: BuilderProgram */] extends StObject {
   /** If provided is used to get the environment variable */
   var getEnvironmentVariable: js.UndefOr[js.Function1[/* name */ java.lang.String, js.UndefOr[java.lang.String]]] = js.native
   
+  /**
+    * Returns the module resolution cache used by a provided `resolveModuleNames` implementation so that any non-name module resolution operations (eg, package.json lookup) can reuse it
+    */
+  var getModuleResolutionCache: js.UndefOr[js.Function0[js.UndefOr[ModuleResolutionCache]]] = js.native
+  
   def getNewLine(): java.lang.String = js.native
   
   /** If provided, used to cache and handle directory structure modifications */
@@ -73,23 +80,25 @@ trait ProgramHost[T /* <: BuilderProgram */] extends StObject {
   
   /** If provided, used to resolve the module names, otherwise typescript's default module resolution */
   var resolveModuleNames: js.UndefOr[
-    js.Function5[
+    js.Function6[
       /* moduleNames */ js.Array[java.lang.String], 
       /* containingFile */ java.lang.String, 
       /* reusedNames */ js.UndefOr[js.Array[java.lang.String]], 
       /* redirectedReference */ js.UndefOr[ResolvedProjectReference], 
       /* options */ CompilerOptions, 
+      /* containingSourceFile */ js.UndefOr[SourceFile], 
       js.Array[js.UndefOr[ResolvedModule]]
     ]
   ] = js.native
   
   /** If provided, used to resolve type reference directives, otherwise typescript's default resolution */
   var resolveTypeReferenceDirectives: js.UndefOr[
-    js.Function4[
-      /* typeReferenceDirectiveNames */ js.Array[java.lang.String], 
+    js.Function5[
+      /* typeReferenceDirectiveNames */ js.Array[FileReference | java.lang.String], 
       /* containingFile */ java.lang.String, 
       /* redirectedReference */ js.UndefOr[ResolvedProjectReference], 
       /* options */ CompilerOptions, 
+      /* containingFileMode */ js.UndefOr[ESNext | CommonJS], 
       js.Array[js.UndefOr[ResolvedTypeReferenceDirective]]
     ]
   ] = js.native

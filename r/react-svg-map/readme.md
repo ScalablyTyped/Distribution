@@ -10,15 +10,12 @@ A set of React.js components to display an interactive SVG map
 | ------------------ | :-------------: |
 | Full name          | react-svg-map |
 | Keywords           | react, component, svg, interactive, map, checkbox, radiobutton |
-| # releases         | 12 |
-| # dependents       | 1 |
-| # downloads        | 22310 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 7330.666666666667 |
+| # stars            | 193.0 |
 
 ## Links
-- [Homepage](https://github.com/VictorCazanave/react-svg-map#readme)
-- [Bugs](https://github.com/VictorCazanave/react-svg-map/issues)
-- [Repository](https://github.com/VictorCazanave/react-svg-map)
 - [Npm](https://www.npmjs.com/package/react-svg-map)
     
 

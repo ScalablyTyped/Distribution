@@ -8,7 +8,7 @@ object diffLineMod {
   
   @JSImport("nodegit/diff-line", "DiffLine")
   @js.native
-  class DiffLine () extends StObject {
+  open class DiffLine () extends StObject {
     
     /**
       * The relevant line

@@ -2,12 +2,9 @@ package typings.coreJs
 
 import typings.coreJs.core.Locale
 import typings.std.ArrayLike
-import typings.std.Iterable
 import typings.std.IterableIterator
-import typings.std.Iterator
 import typings.std.MapConstructor
 import typings.std.PromiseConstructor
-import typings.std.PropertyDescriptor
 import typings.std.PropertyDescriptorMap
 import typings.std.PropertyKey
 import typings.std.SetConstructor
@@ -182,55 +179,55 @@ object anon {
   @js.native
   trait Assign extends StObject {
     
-    def assign(target: js.Any, sources: js.Any*): js.Any = js.native
+    def assign(target: Any, sources: Any*): Any = js.native
     
-    def classof(value: js.Any): java.lang.String = js.native
+    def classof(value: Any): java.lang.String = js.native
     
-    def create(o: js.Any): js.Any = js.native
-    def create(o: js.Any, properties: PropertyDescriptorMap): js.Any = js.native
+    def create(o: Any): Any = js.native
+    def create(o: Any, properties: PropertyDescriptorMap): Any = js.native
     
-    def define[T](target: T, mixin: js.Any): T = js.native
+    def define[T](target: T, mixin: Any): T = js.native
     
-    def defineProperties(o: js.Any, properties: PropertyDescriptorMap): js.Any = js.native
+    def defineProperties(o: Any, properties: PropertyDescriptorMap): Any = js.native
     
-    def defineProperty(o: js.Any, propertyKey: PropertyKey, attributes: PropertyDescriptor): js.Any = js.native
+    def defineProperty(o: Any, propertyKey: PropertyKey, attributes: js.PropertyDescriptor): Any = js.native
     
-    def entries(`object`: js.Any): Array[js.Any] = js.native
+    def entries(`object`: Any): Array[Any] = js.native
     
     def freeze[T](o: T): T = js.native
     
-    def getOwnPropertyDescriptor(o: js.Any, propertyKey: PropertyKey): PropertyDescriptor = js.native
+    def getOwnPropertyDescriptor(o: Any, propertyKey: PropertyKey): js.PropertyDescriptor = js.native
     
-    def getOwnPropertyDescriptors(`object`: js.Any): PropertyDescriptorMap = js.native
+    def getOwnPropertyDescriptors(`object`: Any): PropertyDescriptorMap = js.native
     
-    def getOwnPropertyNames(o: js.Any): Array[java.lang.String] = js.native
+    def getOwnPropertyNames(o: Any): Array[java.lang.String] = js.native
     
-    def getOwnPropertySymbols(o: js.Any): Array[js.Symbol] = js.native
+    def getOwnPropertySymbols(o: Any): Array[js.Symbol] = js.native
     
-    def getPrototypeOf(o: js.Any): js.Any = js.native
+    def getPrototypeOf(o: Any): Any = js.native
     
-    def is(value1: js.Any, value2: js.Any): Boolean = js.native
+    def is(value1: Any, value2: Any): Boolean = js.native
     
-    def isExtensible(o: js.Any): Boolean = js.native
+    def isExtensible(o: Any): Boolean = js.native
     
-    def isFrozen(o: js.Any): Boolean = js.native
+    def isFrozen(o: Any): Boolean = js.native
     
-    def isObject(value: js.Any): Boolean = js.native
+    def isObject(value: Any): Boolean = js.native
     
-    def isSealed(o: js.Any): Boolean = js.native
+    def isSealed(o: Any): Boolean = js.native
     
-    def keys(o: js.Any): Array[java.lang.String] = js.native
+    def keys(o: Any): Array[java.lang.String] = js.native
     
     def make[T](proto: T): T = js.native
-    def make[T](proto: T, mixin: js.Any): T = js.native
+    def make[T](proto: T, mixin: Any): T = js.native
     
     def preventExtensions[T](o: T): T = js.native
     
     def seal[T](o: T): T = js.native
     
-    def setPrototypeOf(o: js.Any, proto: js.Any): js.Any = js.native
+    def setPrototypeOf(o: Any, proto: Any): Any = js.native
     
-    def values(`object`: js.Any): Array[js.Any] = js.native
+    def values(`object`: Any): Array[Any] = js.native
   }
   
   @js.native
@@ -256,7 +253,7 @@ object anon {
     def padStart(text: java.lang.String, length: Double): java.lang.String = js.native
     def padStart(text: java.lang.String, length: Double, fillStr: java.lang.String): java.lang.String = js.native
     
-    def raw(template: TemplateStringsArray, substitutions: js.Any*): java.lang.String = js.native
+    def raw(template: TemplateStringsArray, substitutions: Any*): java.lang.String = js.native
     
     def repeat(text: java.lang.String, count: Double): java.lang.String = js.native
     
@@ -268,25 +265,22 @@ object anon {
   
   trait Bind extends StObject {
     
-    def bind(target: Function, thisArg: js.Any, argArray: js.Any*): js.Any
+    def bind(target: Function, thisArg: Any, argArray: Any*): Any
     
-    def part(target: Function, args: js.Any*): js.Any
+    def part(target: Function, args: Any*): Any
   }
   object Bind {
     
-    inline def apply(
-      bind: (Function, js.Any, /* repeated */ js.Any) => js.Any,
-      part: (Function, /* repeated */ js.Any) => js.Any
-    ): Bind = {
+    inline def apply(bind: (Function, Any, /* repeated */ Any) => Any, part: (Function, /* repeated */ Any) => Any): Bind = {
       val __obj = js.Dynamic.literal(bind = js.Any.fromFunction3(bind), part = js.Any.fromFunction2(part))
       __obj.asInstanceOf[Bind]
     }
     
     extension [Self <: Bind](x: Self) {
       
-      inline def setBind(value: (Function, js.Any, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "bind", js.Any.fromFunction3(value))
+      inline def setBind(value: (Function, Any, /* repeated */ Any) => Any): Self = StObject.set(x, "bind", js.Any.fromFunction3(value))
       
-      inline def setPart(value: (Function, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "part", js.Any.fromFunction2(value))
+      inline def setPart(value: (Function, /* repeated */ Any) => Any): Self = StObject.set(x, "part", js.Any.fromFunction2(value))
     }
   }
   
@@ -307,7 +301,7 @@ object anon {
     def every[T](
       array: ArrayLike[T],
       callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], Boolean],
-      thisArg: js.Any
+      thisArg: Any
     ): Boolean = js.native
     
     def fill[T](array: ArrayLike[T], value: T): Array[T] = js.native
@@ -322,7 +316,7 @@ object anon {
     def filter[T](
       array: ArrayLike[T],
       callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], Boolean],
-      thisArg: js.Any
+      thisArg: Any
     ): Array[T] = js.native
     
     def find[T](
@@ -332,11 +326,11 @@ object anon {
     def find[T](
       array: ArrayLike[T],
       predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ Array[T], Boolean],
-      thisArg: js.Any
+      thisArg: Any
     ): T = js.native
     
     def findIndex[T](array: ArrayLike[T], predicate: js.Function1[/* value */ T, Boolean]): Double = js.native
-    def findIndex[T](array: ArrayLike[T], predicate: js.Function1[/* value */ T, Boolean], thisArg: js.Any): Double = js.native
+    def findIndex[T](array: ArrayLike[T], predicate: js.Function1[/* value */ T, Boolean], thisArg: Any): Double = js.native
     
     def forEach[T](
       array: ArrayLike[T],
@@ -345,15 +339,15 @@ object anon {
     def forEach[T](
       array: ArrayLike[T],
       callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], Unit],
-      thisArg: js.Any
+      thisArg: Any
     ): Unit = js.native
     
+    def from[T](arrayLike: js.Iterable[T]): Array[T] = js.native
     def from[T](arrayLike: ArrayLike[T]): Array[T] = js.native
-    def from[T](arrayLike: Iterable[T]): Array[T] = js.native
+    def from[T, U](arrayLike: js.Iterable[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U]): Array[U] = js.native
+    def from[T, U](arrayLike: js.Iterable[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U], thisArg: Any): Array[U] = js.native
     def from[T, U](arrayLike: ArrayLike[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U]): Array[U] = js.native
-    def from[T, U](arrayLike: ArrayLike[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U], thisArg: js.Any): Array[U] = js.native
-    def from[T, U](arrayLike: Iterable[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U]): Array[U] = js.native
-    def from[T, U](arrayLike: Iterable[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U], thisArg: js.Any): Array[U] = js.native
+    def from[T, U](arrayLike: ArrayLike[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U], thisArg: Any): Array[U] = js.native
     
     def includes[T](array: ArrayLike[T], value: T): Boolean = js.native
     def includes[T](array: ArrayLike[T], value: T, fromIndex: Double): Boolean = js.native
@@ -361,7 +355,7 @@ object anon {
     def indexOf[T](array: ArrayLike[T], searchElement: T): Double = js.native
     def indexOf[T](array: ArrayLike[T], searchElement: T, fromIndex: Double): Double = js.native
     
-    def isArray(arg: js.Any): /* is core-js.Array<any> */ Boolean = js.native
+    def isArray(arg: Any): /* is core-js.Array<any> */ Boolean = js.native
     
     def join[T](array: ArrayLike[T]): java.lang.String = js.native
     def join[T](array: ArrayLike[T], separator: java.lang.String): java.lang.String = js.native
@@ -378,7 +372,7 @@ object anon {
     def map[T, U](
       array: ArrayLike[T],
       callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], U],
-      thisArg: js.Any
+      thisArg: Any
     ): Array[U] = js.native
     
     def of[T](items: T*): Array[T] = js.native
@@ -472,7 +466,7 @@ object anon {
     def some[T](
       array: ArrayLike[T],
       callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], Boolean],
-      thisArg: js.Any
+      thisArg: Any
     ): Boolean = js.native
     
     def sort[T](array: ArrayLike[T]): Array[T] = js.native
@@ -549,9 +543,9 @@ object anon {
   trait TypeofReflect extends StObject {
     
     @JSName("apply")
-    def apply(target: Function, thisArgument: js.Any, argumentsList: ArrayLike[js.Any]): js.Any = js.native
+    def apply(target: Function, thisArgument: Any, argumentsList: ArrayLike[Any]): Any = js.native
     
-    def construct(target: Function, argumentsList: ArrayLike[js.Any]): js.Any = js.native
+    def construct(target: Function, argumentsList: ArrayLike[Any]): Any = js.native
     
     /**
       * Define a unique metadata entry on the target.
@@ -575,11 +569,11 @@ object anon {
       *  }
       * ```
       */
-    def defineMetadata(metadataKey: js.Any, metadataValue: js.Any, target: Object): Unit = js.native
-    def defineMetadata(metadataKey: js.Any, metadataValue: js.Any, target: Object, targetKey: java.lang.String): Unit = js.native
-    def defineMetadata(metadataKey: js.Any, metadataValue: js.Any, target: Object, targetKey: js.Symbol): Unit = js.native
+    def defineMetadata(metadataKey: Any, metadataValue: Any, target: Object): Unit = js.native
+    def defineMetadata(metadataKey: Any, metadataValue: Any, target: Object, targetKey: java.lang.String): Unit = js.native
+    def defineMetadata(metadataKey: Any, metadataValue: Any, target: Object, targetKey: js.Symbol): Unit = js.native
     
-    def defineProperty(target: js.Any, propertyKey: PropertyKey, attributes: PropertyDescriptor): Boolean = js.native
+    def defineProperty(target: Any, propertyKey: PropertyKey, attributes: js.PropertyDescriptor): Boolean = js.native
     
     /**
       * Deletes the metadata entry from the target object with the provided key.
@@ -598,14 +592,14 @@ object anon {
       *  result = Reflect.deleteMetadata("custom:annotation", Example);
       * ```
       */
-    def deleteMetadata(metadataKey: js.Any, target: Object): Boolean = js.native
-    def deleteMetadata(metadataKey: js.Any, target: Object, targetKey: java.lang.String): Boolean = js.native
-    def deleteMetadata(metadataKey: js.Any, target: Object, targetKey: js.Symbol): Boolean = js.native
+    def deleteMetadata(metadataKey: Any, target: Object): Boolean = js.native
+    def deleteMetadata(metadataKey: Any, target: Object, targetKey: java.lang.String): Boolean = js.native
+    def deleteMetadata(metadataKey: Any, target: Object, targetKey: js.Symbol): Boolean = js.native
     
-    def deleteProperty(target: js.Any, propertyKey: PropertyKey): Boolean = js.native
+    def deleteProperty(target: Any, propertyKey: PropertyKey): Boolean = js.native
     
-    def get(target: js.Any, propertyKey: PropertyKey): js.Any = js.native
-    def get(target: js.Any, propertyKey: PropertyKey, receiver: js.Any): js.Any = js.native
+    def get(target: Any, propertyKey: PropertyKey): Any = js.native
+    def get(target: Any, propertyKey: PropertyKey, receiver: Any): Any = js.native
     
     /**
       * Gets the metadata value for the provided metadata key on the target object or its prototype chain.
@@ -624,9 +618,9 @@ object anon {
       *  result = Reflect.getMetadata("custom:annotation", Example);
       * ```
       */
-    def getMetadata(metadataKey: js.Any, target: Object): js.Any = js.native
-    def getMetadata(metadataKey: js.Any, target: Object, targetKey: java.lang.String): js.Any = js.native
-    def getMetadata(metadataKey: js.Any, target: Object, targetKey: js.Symbol): js.Any = js.native
+    def getMetadata(metadataKey: Any, target: Object): Any = js.native
+    def getMetadata(metadataKey: Any, target: Object, targetKey: java.lang.String): Any = js.native
+    def getMetadata(metadataKey: Any, target: Object, targetKey: js.Symbol): Any = js.native
     
     /**
       * Gets the metadata keys defined on the target object or its prototype chain.
@@ -644,9 +638,9 @@ object anon {
       *  result = Reflect.getMetadataKeys(Example);
       * ```
       */
-    def getMetadataKeys(target: Object): Array[js.Any] = js.native
-    def getMetadataKeys(target: Object, targetKey: java.lang.String): Array[js.Any] = js.native
-    def getMetadataKeys(target: Object, targetKey: js.Symbol): Array[js.Any] = js.native
+    def getMetadataKeys(target: Object): Array[Any] = js.native
+    def getMetadataKeys(target: Object, targetKey: java.lang.String): Array[Any] = js.native
+    def getMetadataKeys(target: Object, targetKey: js.Symbol): Array[Any] = js.native
     
     /**
       * Gets the metadata value for the provided metadata key on the target object.
@@ -665,9 +659,9 @@ object anon {
       *  result = Reflect.getOwnMetadata("custom:annotation", Example);
       * ```
       */
-    def getOwnMetadata(metadataKey: js.Any, target: Object): js.Any = js.native
-    def getOwnMetadata(metadataKey: js.Any, target: Object, targetKey: java.lang.String): js.Any = js.native
-    def getOwnMetadata(metadataKey: js.Any, target: Object, targetKey: js.Symbol): js.Any = js.native
+    def getOwnMetadata(metadataKey: Any, target: Object): Any = js.native
+    def getOwnMetadata(metadataKey: Any, target: Object, targetKey: java.lang.String): Any = js.native
+    def getOwnMetadata(metadataKey: Any, target: Object, targetKey: js.Symbol): Any = js.native
     
     /**
       * Gets the unique metadata keys defined on the target object.
@@ -685,16 +679,16 @@ object anon {
       *  result = Reflect.getOwnMetadataKeys(Example);
       * ```
       */
-    def getOwnMetadataKeys(target: Object): Array[js.Any] = js.native
-    def getOwnMetadataKeys(target: Object, targetKey: java.lang.String): Array[js.Any] = js.native
-    def getOwnMetadataKeys(target: Object, targetKey: js.Symbol): Array[js.Any] = js.native
+    def getOwnMetadataKeys(target: Object): Array[Any] = js.native
+    def getOwnMetadataKeys(target: Object, targetKey: java.lang.String): Array[Any] = js.native
+    def getOwnMetadataKeys(target: Object, targetKey: js.Symbol): Array[Any] = js.native
     
-    def getOwnPropertyDescriptor(target: js.Any, propertyKey: PropertyKey): PropertyDescriptor = js.native
+    def getOwnPropertyDescriptor(target: Any, propertyKey: PropertyKey): js.PropertyDescriptor = js.native
     
-    def getPrototypeOf(target: js.Any): js.Any = js.native
+    def getPrototypeOf(target: Any): Any = js.native
     
-    def has(target: js.Any, propertyKey: java.lang.String): Boolean = js.native
-    def has(target: js.Any, propertyKey: js.Symbol): Boolean = js.native
+    def has(target: Any, propertyKey: java.lang.String): Boolean = js.native
+    def has(target: Any, propertyKey: js.Symbol): Boolean = js.native
     
     /**
       * Gets a value indicating whether the target object or its prototype chain has the provided metadata key defined.
@@ -713,9 +707,9 @@ object anon {
       *  result = Reflect.hasMetadata("custom:annotation", Example);
       * ```
       */
-    def hasMetadata(metadataKey: js.Any, target: Object): Boolean = js.native
-    def hasMetadata(metadataKey: js.Any, target: Object, targetKey: java.lang.String): Boolean = js.native
-    def hasMetadata(metadataKey: js.Any, target: Object, targetKey: js.Symbol): Boolean = js.native
+    def hasMetadata(metadataKey: Any, target: Object): Boolean = js.native
+    def hasMetadata(metadataKey: Any, target: Object, targetKey: java.lang.String): Boolean = js.native
+    def hasMetadata(metadataKey: Any, target: Object, targetKey: js.Symbol): Boolean = js.native
     
     /**
       * Gets a value indicating whether the target object has the provided metadata key defined.
@@ -735,11 +729,11 @@ object anon {
       *  result = Reflect.hasOwnMetadata("custom:annotation", Example);
       * ```
       */
-    def hasOwnMetadata(metadataKey: js.Any, target: Object): Boolean = js.native
-    def hasOwnMetadata(metadataKey: js.Any, target: Object, targetKey: java.lang.String): Boolean = js.native
-    def hasOwnMetadata(metadataKey: js.Any, target: Object, targetKey: js.Symbol): Boolean = js.native
+    def hasOwnMetadata(metadataKey: Any, target: Object): Boolean = js.native
+    def hasOwnMetadata(metadataKey: Any, target: Object, targetKey: java.lang.String): Boolean = js.native
+    def hasOwnMetadata(metadataKey: Any, target: Object, targetKey: js.Symbol): Boolean = js.native
     
-    def isExtensible(target: js.Any): Boolean = js.native
+    def isExtensible(target: Any): Boolean = js.native
     
     /**
       * A default metadata decorator factory that can be used on a class, class member, or parameter.
@@ -784,30 +778,30 @@ object anon {
       *  }
       * ```
       */
-    def metadata(metadataKey: js.Any, metadataValue: js.Any): FnCall = js.native
+    def metadata(metadataKey: Any, metadataValue: Any): FnCall = js.native
     
-    def ownKeys(target: js.Any): Array[PropertyKey] = js.native
+    def ownKeys(target: Any): Array[PropertyKey] = js.native
     
-    def preventExtensions(target: js.Any): Boolean = js.native
+    def preventExtensions(target: Any): Boolean = js.native
     
-    def set(target: js.Any, propertyKey: PropertyKey, value: js.Any): Boolean = js.native
-    def set(target: js.Any, propertyKey: PropertyKey, value: js.Any, receiver: js.Any): Boolean = js.native
+    def set(target: Any, propertyKey: PropertyKey, value: Any): Boolean = js.native
+    def set(target: Any, propertyKey: PropertyKey, value: Any, receiver: Any): Boolean = js.native
     
-    def setPrototypeOf(target: js.Any, proto: js.Any): Boolean = js.native
+    def setPrototypeOf(target: Any, proto: Any): Boolean = js.native
   }
   
   @js.native
   trait Typeofcore extends StObject {
     
     @JSName("$for")
-    def $for[T](iterable: Iterable[T]): `for`[T] = js.native
+    def $for[T](iterable: js.Iterable[T]): `for`[T] = js.native
     
     val Array: Concat = js.native
     
     val Date: Format = js.native
     
-    def Dict(): typings.coreJs.Dict[js.Any] = js.native
-    def Dict(value: js.Any): typings.coreJs.Dict[js.Any] = js.native
+    def Dict(): typings.coreJs.Dict[Any] = js.native
+    def Dict(value: Any): typings.coreJs.Dict[Any] = js.native
     def Dict[T](value: typings.coreJs.Dict[T]): typings.coreJs.Dict[T] = js.native
     @JSName("Dict")
     val Dict_Original: DictConstructor = js.native
@@ -849,22 +843,22 @@ object anon {
     
     def delay(msec: Double): js.Promise[Unit] = js.native
     
-    def getIterator[T](iterable: Iterable[T]): Iterator[T, js.Any, Unit] = js.native
+    def getIterator[T](iterable: js.Iterable[T]): js.Iterator[T] = js.native
     
-    val global: js.Any = js.native
+    val global: Any = js.native
     
-    def isIterable(value: js.Any): Boolean = js.native
+    def isIterable(value: Any): Boolean = js.native
     
     def locale(): java.lang.String = js.native
     def locale(lang: java.lang.String): java.lang.String = js.native
     
-    def setImmediate(expression: js.Any, args: js.Any*): Double = js.native
+    def setImmediate(expression: Any, args: Any*): Double = js.native
     
-    def setInterval(handler: js.Any, timeout: js.Any, args: js.Any*): Double = js.native
-    def setInterval(handler: js.Any, timeout: Unit, args: js.Any*): Double = js.native
+    def setInterval(handler: Any, timeout: Any, args: Any*): Double = js.native
+    def setInterval(handler: Any, timeout: Unit, args: Any*): Double = js.native
     
-    def setTimeout(handler: js.Any, timeout: js.Any, args: js.Any*): Double = js.native
-    def setTimeout(handler: js.Any, timeout: Unit, args: js.Any*): Double = js.native
+    def setTimeout(handler: Any, timeout: Any, args: Any*): Double = js.native
+    def setTimeout(handler: Any, timeout: Unit, args: Any*): Double = js.native
     
     val version: java.lang.String = js.native
   }

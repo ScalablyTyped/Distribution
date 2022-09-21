@@ -24,10 +24,10 @@ object mod {
     
     var arrayMerge: js.UndefOr[
         js.Function3[
-          /* target */ js.Array[js.Any], 
-          /* source */ js.Array[js.Any], 
+          /* target */ js.Array[Any], 
+          /* source */ js.Array[Any], 
           /* options */ js.UndefOr[this.type], 
-          js.Array[js.Any]
+          js.Array[Any]
         ]
       ] = js.undefined
     
@@ -38,7 +38,7 @@ object mod {
         js.Function2[
           /* key */ String, 
           /* options */ js.UndefOr[this.type], 
-          js.UndefOr[js.Function2[/* x */ js.Any, /* y */ js.Any, js.Any]]
+          js.UndefOr[js.Function2[/* x */ Any, /* y */ Any, Any]]
         ]
       ] = js.undefined
     
@@ -54,7 +54,7 @@ object mod {
     extension [Self <: Options](x: Self) {
       
       inline def setArrayMerge(
-        value: (/* target */ js.Array[js.Any], /* source */ js.Array[js.Any], /* options */ js.UndefOr[Options]) => js.Array[js.Any]
+        value: (/* target */ js.Array[Any], /* source */ js.Array[Any], /* options */ js.UndefOr[Options]) => js.Array[Any]
       ): Self = StObject.set(x, "arrayMerge", js.Any.fromFunction3(value))
       
       inline def setArrayMergeUndefined: Self = StObject.set(x, "arrayMerge", js.undefined)
@@ -64,7 +64,7 @@ object mod {
       inline def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
       
       inline def setCustomMerge(
-        value: (/* key */ String, /* options */ js.UndefOr[Options]) => js.UndefOr[js.Function2[/* x */ js.Any, /* y */ js.Any, js.Any]]
+        value: (/* key */ String, /* options */ js.UndefOr[Options]) => js.UndefOr[js.Function2[/* x */ Any, /* y */ Any, Any]]
       ): Self = StObject.set(x, "customMerge", js.Any.fromFunction2(value))
       
       inline def setCustomMergeUndefined: Self = StObject.set(x, "customMerge", js.undefined)

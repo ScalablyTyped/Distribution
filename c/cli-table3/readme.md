@@ -1,7 +1,7 @@
 
 # Scala.js typings for cli-table3
 
-Typings are for version 0.6.0
+Typings are for version 0.6.3
 
 ## Library description:
 Pretty unicode tables for the command line. Based on the original cli-table.
@@ -10,10 +10,10 @@ Pretty unicode tables for the command line. Based on the original cli-table.
 | ------------------ | :-------------: |
 | Full name          | cli-table3 |
 | Keywords           | node, command, line, cli, table, tables, tabular, unicode, colors, grid |
-| # releases         | 2 |
-| # dependents       | 669 |
-| # downloads        | 192343737 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 4.2928083E7 |
+| # stars            | 402.0 |
 
 ## Links
 - [Homepage](https://github.com/cli-table/cli-table3)

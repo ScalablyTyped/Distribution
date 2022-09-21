@@ -8,10 +8,10 @@ object lazyMod {
   
   @JSImport("sodiumjs/dist/typings/sodium/Lazy", "Lazy")
   @js.native
-  class Lazy[A] protected () extends StObject {
+  open class Lazy[A] protected () extends StObject {
     def this(f: js.Function0[A]) = this()
     
-    /* private */ var f: js.Any = js.native
+    /* private */ var f: Any = js.native
     
     /**
       * Get the value if available, throwing an exception if not.

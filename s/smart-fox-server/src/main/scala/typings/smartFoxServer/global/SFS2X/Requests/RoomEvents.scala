@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Creates a new RoomEvents instance.
   */
-class RoomEvents ()
+open class RoomEvents ()
   extends StObject
      with typings.smartFoxServer.SFS2X.Requests.RoomEvents {
   

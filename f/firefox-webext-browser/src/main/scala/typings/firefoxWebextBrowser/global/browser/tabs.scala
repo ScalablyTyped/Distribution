@@ -112,13 +112,13 @@ object tabs {
     * Injects JavaScript code into a page. For details, see the programmatic injection section of the content scripts doc.
     * @param details Details of the script to run.
     */
-  inline def executeScript(details: InjectDetails): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("executeScript")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Any]]]
+  inline def executeScript(details: InjectDetails): js.Promise[js.Array[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("executeScript")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Any]]]
   /**
     * Injects JavaScript code into a page. For details, see the programmatic injection section of the content scripts doc.
     * @param tabId The ID of the tab in which to run the script; defaults to the active tab of the current window.
     * @param details Details of the script to run.
     */
-  inline def executeScript(tabId: Double, details: InjectDetails): js.Promise[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeScript")(tabId.asInstanceOf[js.Any], details.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[js.Any]]]
+  inline def executeScript(tabId: Double, details: InjectDetails): js.Promise[js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeScript")(tabId.asInstanceOf[js.Any], details.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Any]]]
   
   /* tabs functions */
   /** Retrieves details about the specified tab. */
@@ -207,10 +207,10 @@ object tabs {
     * @param tabIds An array of tab IDs to move in the line of succession. For each tab in the array, the tab's current predecessors will have their successor set to the tab's current successor, and each tab will then be set to be the successor of the previous tab in the array. Any tabs not in the same window as the tab indicated by the second argument (or the first tab in the array, if no second argument) will be skipped.
     * @param [tabId] The ID of a tab to set as the successor of the last tab in the array, or `tabs.TAB_ID_NONE` to leave the last tab without a successor. If options.append is true, then this tab is made the predecessor of the first tab in the array instead.
     */
-  inline def moveInSuccession(tabIds: js.Array[Double]): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("moveInSuccession")(tabIds.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
-  inline def moveInSuccession(tabIds: js.Array[Double], tabId: Double): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("moveInSuccession")(tabIds.asInstanceOf[js.Any], tabId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-  inline def moveInSuccession(tabIds: js.Array[Double], tabId: Double, options: MoveInSuccessionOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("moveInSuccession")(tabIds.asInstanceOf[js.Any], tabId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-  inline def moveInSuccession(tabIds: js.Array[Double], tabId: Unit, options: MoveInSuccessionOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("moveInSuccession")(tabIds.asInstanceOf[js.Any], tabId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def moveInSuccession(tabIds: js.Array[Double]): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("moveInSuccession")(tabIds.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+  inline def moveInSuccession(tabIds: js.Array[Double], tabId: Double): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("moveInSuccession")(tabIds.asInstanceOf[js.Any], tabId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  inline def moveInSuccession(tabIds: js.Array[Double], tabId: Double, options: MoveInSuccessionOptions): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("moveInSuccession")(tabIds.asInstanceOf[js.Any], tabId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  inline def moveInSuccession(tabIds: js.Array[Double], tabId: Unit, options: MoveInSuccessionOptions): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("moveInSuccession")(tabIds.asInstanceOf[js.Any], tabId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   
   /**
     * Fires when the active tab in a window changes. Note that the tab's URL may not be set at the time this event fired, but you can listen to onUpdated events to be notified when a URL is set.
@@ -358,15 +358,15 @@ object tabs {
   /**
     * Sends a single message to the content script(s) in the specified tab, with an optional callback to run when a response is sent back. The `runtime.onMessage` event is fired in each content script running in the specified tab for the current extension.
     */
-  inline def sendMessage(tabId: Double, message: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(tabId.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-  inline def sendMessage(tabId: Double, message: js.Any, options: SendMessageOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(tabId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def sendMessage(tabId: Double, message: Any): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(tabId.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  inline def sendMessage(tabId: Double, message: Any, options: SendMessageOptions): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(tabId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   
   /**
     * Sends a single request to the content script(s) in the specified tab, with an optional callback to run when a response is sent back. The `extension.onRequest` event is fired in each content script running in the specified tab for the current extension.
     * @deprecated Please use `runtime.sendMessage`.
     */
-  inline def sendRequest(tabId: Double, request: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(tabId.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def sendRequest(tabId: Double, request: js.Any, responseCallback: js.Function1[/* response */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(tabId.asInstanceOf[js.Any], request.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendRequest(tabId: Double, request: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(tabId.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendRequest(tabId: Double, request: Any, responseCallback: js.Function1[/* response */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(tabId.asInstanceOf[js.Any], request.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Zooms a specified tab.
@@ -420,5 +420,5 @@ object tabs {
     * Warm up a tab
     * @param tabId The ID of the tab to warm up.
     */
-  inline def warmup(tabId: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("warmup")(tabId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def warmup(tabId: Double): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("warmup")(tabId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
 }

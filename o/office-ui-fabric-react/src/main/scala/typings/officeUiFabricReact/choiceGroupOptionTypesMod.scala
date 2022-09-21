@@ -5,6 +5,7 @@ import typings.officeUiFabricReact.anon.Width
 import typings.officeUiFabricReact.choiceGroupTypesMod.IChoiceGroupOption
 import typings.react.mod.FocusEvent
 import typings.react.mod.FormEvent
+import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import typings.uifabricMergeStyles.istyleMod.IStyle
@@ -35,7 +36,11 @@ object choiceGroupOptionTypesMod {
       */
     @JSName("onBlur")
     var onBlur_IChoiceGroupOptionProps: js.UndefOr[
-        js.Function2[/* ev */ FocusEvent[HTMLElement], /* props */ js.UndefOr[IChoiceGroupOption], Unit]
+        js.Function2[
+          /* ev */ FocusEvent[HTMLElement, Element], 
+          /* props */ js.UndefOr[IChoiceGroupOption], 
+          Unit
+        ]
       ] = js.undefined
     
     /**
@@ -56,7 +61,7 @@ object choiceGroupOptionTypesMod {
     @JSName("onFocus")
     var onFocus_IChoiceGroupOptionProps: js.UndefOr[
         js.Function2[
-          /* ev */ js.UndefOr[FocusEvent[HTMLElement | HTMLInputElement]], 
+          /* ev */ js.UndefOr[FocusEvent[HTMLElement | HTMLInputElement, Element]], 
           /* props */ js.UndefOr[IChoiceGroupOption], 
           js.UndefOr[Unit]
         ]
@@ -86,7 +91,9 @@ object choiceGroupOptionTypesMod {
       
       inline def setFocusedUndefined: Self = StObject.set(x, "focused", js.undefined)
       
-      inline def setOnBlur(value: (/* ev */ FocusEvent[HTMLElement], /* props */ js.UndefOr[IChoiceGroupOption]) => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction2(value))
+      inline def setOnBlur(
+        value: (/* ev */ FocusEvent[HTMLElement, Element], /* props */ js.UndefOr[IChoiceGroupOption]) => Unit
+      ): Self = StObject.set(x, "onBlur", js.Any.fromFunction2(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -97,7 +104,7 @@ object choiceGroupOptionTypesMod {
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
       inline def setOnFocus(
-        value: (/* ev */ js.UndefOr[FocusEvent[HTMLElement | HTMLInputElement]], /* props */ js.UndefOr[IChoiceGroupOption]) => js.UndefOr[Unit]
+        value: (/* ev */ js.UndefOr[FocusEvent[HTMLElement | HTMLInputElement, Element]], /* props */ js.UndefOr[IChoiceGroupOption]) => js.UndefOr[Unit]
       ): Self = StObject.set(x, "onFocus", js.Any.fromFunction2(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
@@ -273,7 +280,7 @@ object choiceGroupOptionTypesMod {
   
   type OnFocusCallback = js.UndefOr[
     js.Function2[
-      /* ev */ js.UndefOr[FocusEvent[HTMLElement | HTMLInputElement]], 
+      /* ev */ js.UndefOr[FocusEvent[HTMLElement | HTMLInputElement, Element]], 
       /* props */ js.UndefOr[IChoiceGroupOption], 
       js.UndefOr[Unit]
     ]

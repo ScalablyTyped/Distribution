@@ -4,21 +4,20 @@ import typings.nodal.anon.TypeofModel
 import typings.nodal.nodalStrings.ASC
 import typings.nodal.nodalStrings.DESC
 import typings.nodal.nodalStrings.DSC
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("nodal", "Composer")
 @js.native
-class Composer[T /* <: Model */] protected () extends StObject {
+open class Composer[T /* <: Model */] protected () extends StObject {
   /**
     * Created by Model#query, used for composing SQL queries based on Models
     * @param {Nodal.Model} Model The model class the composer is querying from
     * @param {Nodal.Composer} [parent=null] The composer's parent (another composer instance)
     */
   def this(modelConstructor: TypeofModel) = this()
-  def this(modelConstructor: TypeofModel, parent: Composer[js.Any]) = this()
+  def this(modelConstructor: TypeofModel, parent: Composer[Any]) = this()
   
   var Model: T = js.native
   
@@ -30,16 +29,16 @@ class Composer[T /* <: Model */] protected () extends StObject {
     * @return {Object} Has "params" and "sql" properties.
     * @private
     */
-  /* private */ def __addJoinsToQuery__(query: js.Any, queryInfo: js.Any, includeColumns: js.Any): js.Any = js.native
+  /* private */ def __addJoinsToQuery__(query: Any, queryInfo: Any, includeColumns: Any): Any = js.native
   
   /**
     * Collapses linked list of queries into an array (for .reduce, .map etc)
     * @return {Array}
     * @private
     */
-  /* private */ def __collapse__(): js.Any = js.native
+  /* private */ def __collapse__(): Any = js.native
   
-  /* private */ def __filterHidden__(modelConstructor: js.Any, comparisonsArray: js.Any): js.Any = js.native
+  /* private */ def __filterHidden__(modelConstructor: Any, comparisonsArray: Any): Any = js.native
   
   /**
     * Generate a SQL count query
@@ -47,7 +46,7 @@ class Composer[T /* <: Model */] protected () extends StObject {
     * @return {Object} Has "params" and "sql" properties.
     * @private
     */
-  /* private */ def __generateCountQuery__(useLimit: js.Any): js.Any = js.native
+  /* private */ def __generateCountQuery__(useLimit: Any): Any = js.native
   
   /**
     * Generate a SQL query and its associated parameters from the current composer instance
@@ -56,7 +55,7 @@ class Composer[T /* <: Model */] protected () extends StObject {
     * @return {Object} Has "params" and "sql" properties.
     * @private
     */
-  /* private */ def __generateQuery__(includeColumns: js.Any, disableJoins: js.Any): js.Any = js.native
+  /* private */ def __generateQuery__(includeColumns: Any, disableJoins: Any): Any = js.native
   
   /**
     * Gets last limit command from a collapsed array of composer commands
@@ -64,21 +63,21 @@ class Composer[T /* <: Model */] protected () extends StObject {
     * @return {Array}
     * @private
     */
-  /* private */ def __getLastLimitCommand__(composerArray: js.Any): js.Any = js.native
+  /* private */ def __getLastLimitCommand__(composerArray: Any): Any = js.native
   
   /**
     * Determines whether this composer query represents a grouped query or not
     * @return {Boolean}
     * @private
     */
-  /* private */ def __isGrouped__(): js.Any = js.native
+  /* private */ def __isGrouped__(): Any = js.native
   
   /**
     * Retrieve all joined column data for a given join
     * @param {string} joinName The name of the join relationship
     * @private
     */
-  /* private */ def __joinedColumns__(joinName: js.Any): js.Any = js.native
+  /* private */ def __joinedColumns__(joinName: Any): Any = js.native
   
   /**
     * When using Composer#where, format all provided comparisons
@@ -87,7 +86,7 @@ class Composer[T /* <: Model */] protected () extends StObject {
     * @return {Array}
     * @private
     */
-  /* private */ def __parseComparisons__(comparisons: js.Any, model: js.Any): js.Any = js.native
+  /* private */ def __parseComparisons__(comparisons: Any, model: Any): Any = js.native
   
   /**
     * Given rows with repeated data (due to joining in multiple children),
@@ -97,7 +96,7 @@ class Composer[T /* <: Model */] protected () extends StObject {
     * @return {Nodal.ModelArray}
     * @private
     */
-  /* private */ def __parseModelsFromRows__(rows: js.Any, grouped: js.Any): js.Any = js.native
+  /* private */ def __parseModelsFromRows__(rows: Any, grouped: Any): Any = js.native
   
   /**
     * Reduces an array of commands from query informtion to a SQL query
@@ -106,7 +105,7 @@ class Composer[T /* <: Model */] protected () extends StObject {
     * @return {Object} Looks like {sql: [], params: []}
     * @private
     */
-  /* private */ def __reduceCommandsToQuery__(commandArray: js.Any, includeColumns: js.Any): js.Any = js.native
+  /* private */ def __reduceCommandsToQuery__(commandArray: Any, includeColumns: Any): Any = js.native
   
   /**
     * Reduces an array of composer queries to a single query information object
@@ -114,7 +113,7 @@ class Composer[T /* <: Model */] protected () extends StObject {
     * @return {Object} Looks like {commands: [], joins: []}
     * @private
     */
-  /* private */ def __reduceToQueryInformation__(composerArray: js.Any): js.Any = js.native
+  /* private */ def __reduceToQueryInformation__(composerArray: Any): Any = js.native
   
   /**
     * Removes last limit command from a collapsed array of composer commands
@@ -122,11 +121,11 @@ class Composer[T /* <: Model */] protected () extends StObject {
     * @return {Array}
     * @private
     */
-  /* private */ def __removeLastLimitCommand__(composerArray: js.Any): js.Any = js.native
+  /* private */ def __removeLastLimitCommand__(composerArray: Any): Any = js.native
   
-  /* private */ var _command: js.Any = js.native
+  /* private */ var _command: Any = js.native
   
-  /* private */ var _parent: js.Any = js.native
+  /* private */ var _parent: Any = js.native
   
   /**
     * Aggregates a field
@@ -140,7 +139,7 @@ class Composer[T /* <: Model */] protected () extends StObject {
     * Counts the results in the query
     * @param {function} callback Supplied with an error and the integer value of the count
     */
-  def count(callback: js.Function2[/* err */ Error, /* count */ Double, Unit]): Unit = js.native
+  def count(callback: js.Function2[/* err */ js.Error, /* count */ Double, Unit]): Unit = js.native
   
   var db: Database = js.native
   
@@ -148,13 +147,13 @@ class Composer[T /* <: Model */] protected () extends StObject {
     * Execute the query you've been composing.
     * @param {function({Error}, {Nodal.ModelArray})} callback The method to execute when the query is complete
     */
-  def end(callback: js.Function2[/* err */ Error, /* modelArray */ ModelArray[T], Unit]): Unit = js.native
+  def end(callback: js.Function2[/* err */ js.Error, /* modelArray */ ModelArray[T], Unit]): Unit = js.native
   
   /**
     * Shortcut for .limit(1).end(callback) that only returns a model object or error if not found
     * @param {Function} callback Callback to execute, provides an error and model parameter
     */
-  def first(callback: js.Function2[/* err */ Error, /* model */ Model, Unit]): Unit = js.native
+  def first(callback: js.Function2[/* err */ js.Error, /* model */ Model, Unit]): Unit = js.native
   
   /**
     * Groups by a specific field, or a transformation on a field
@@ -169,6 +168,22 @@ class Composer[T /* <: Model */] protected () extends StObject {
     */
   def join(joinName: String): this.type = js.native
   def join(joinName: String, comparisonsArray: js.Array[IComparison]): this.type = js.native
+  def join(joinName: String, comparisonsArray: js.Array[IComparison], orderBy: ASC | DESC): this.type = js.native
+  def join(joinName: String, comparisonsArray: js.Array[IComparison], orderBy: ASC | DESC, count: Double): this.type = js.native
+  def join(
+    joinName: String,
+    comparisonsArray: js.Array[IComparison],
+    orderBy: ASC | DESC,
+    count: Double,
+    offset: Double
+  ): this.type = js.native
+  def join(
+    joinName: String,
+    comparisonsArray: js.Array[IComparison],
+    orderBy: ASC | DESC,
+    count: Unit,
+    offset: Double
+  ): this.type = js.native
   def join(joinName: String, comparisonsArray: js.Array[IComparison], orderBy: Unit, count: Double): this.type = js.native
   def join(
     joinName: String,
@@ -184,85 +199,27 @@ class Composer[T /* <: Model */] protected () extends StObject {
     count: Unit,
     offset: Double
   ): this.type = js.native
+  def join(joinName: String, comparisonsArray: Unit, orderBy: ASC | DESC): this.type = js.native
+  def join(joinName: String, comparisonsArray: Unit, orderBy: ASC | DESC, count: Double): this.type = js.native
+  def join(joinName: String, comparisonsArray: Unit, orderBy: ASC | DESC, count: Double, offset: Double): this.type = js.native
+  def join(joinName: String, comparisonsArray: Unit, orderBy: ASC | DESC, count: Unit, offset: Double): this.type = js.native
   def join(joinName: String, comparisonsArray: Unit, orderBy: Unit, count: Double): this.type = js.native
   def join(joinName: String, comparisonsArray: Unit, orderBy: Unit, count: Double, offset: Double): this.type = js.native
   def join(joinName: String, comparisonsArray: Unit, orderBy: Unit, count: Unit, offset: Double): this.type = js.native
   def join(joinName: String, comparisonsArray: IComparison): this.type = js.native
+  def join(joinName: String, comparisonsArray: IComparison, orderBy: ASC | DESC): this.type = js.native
+  def join(joinName: String, comparisonsArray: IComparison, orderBy: ASC | DESC, count: Double): this.type = js.native
+  def join(
+    joinName: String,
+    comparisonsArray: IComparison,
+    orderBy: ASC | DESC,
+    count: Double,
+    offset: Double
+  ): this.type = js.native
+  def join(joinName: String, comparisonsArray: IComparison, orderBy: ASC | DESC, count: Unit, offset: Double): this.type = js.native
   def join(joinName: String, comparisonsArray: IComparison, orderBy: Unit, count: Double): this.type = js.native
   def join(joinName: String, comparisonsArray: IComparison, orderBy: Unit, count: Double, offset: Double): this.type = js.native
   def join(joinName: String, comparisonsArray: IComparison, orderBy: Unit, count: Unit, offset: Double): this.type = js.native
-  @JSName("join")
-  def join_ASC(joinName: String, comparisonsArray: js.Array[IComparison], orderBy: ASC): this.type = js.native
-  @JSName("join")
-  def join_ASC(joinName: String, comparisonsArray: js.Array[IComparison], orderBy: ASC, count: Double): this.type = js.native
-  @JSName("join")
-  def join_ASC(
-    joinName: String,
-    comparisonsArray: js.Array[IComparison],
-    orderBy: ASC,
-    count: Double,
-    offset: Double
-  ): this.type = js.native
-  @JSName("join")
-  def join_ASC(
-    joinName: String,
-    comparisonsArray: js.Array[IComparison],
-    orderBy: ASC,
-    count: Unit,
-    offset: Double
-  ): this.type = js.native
-  @JSName("join")
-  def join_ASC(joinName: String, comparisonsArray: Unit, orderBy: ASC): this.type = js.native
-  @JSName("join")
-  def join_ASC(joinName: String, comparisonsArray: Unit, orderBy: ASC, count: Double): this.type = js.native
-  @JSName("join")
-  def join_ASC(joinName: String, comparisonsArray: Unit, orderBy: ASC, count: Double, offset: Double): this.type = js.native
-  @JSName("join")
-  def join_ASC(joinName: String, comparisonsArray: Unit, orderBy: ASC, count: Unit, offset: Double): this.type = js.native
-  @JSName("join")
-  def join_ASC(joinName: String, comparisonsArray: IComparison, orderBy: ASC): this.type = js.native
-  @JSName("join")
-  def join_ASC(joinName: String, comparisonsArray: IComparison, orderBy: ASC, count: Double): this.type = js.native
-  @JSName("join")
-  def join_ASC(joinName: String, comparisonsArray: IComparison, orderBy: ASC, count: Double, offset: Double): this.type = js.native
-  @JSName("join")
-  def join_ASC(joinName: String, comparisonsArray: IComparison, orderBy: ASC, count: Unit, offset: Double): this.type = js.native
-  @JSName("join")
-  def join_DESC(joinName: String, comparisonsArray: js.Array[IComparison], orderBy: DESC): this.type = js.native
-  @JSName("join")
-  def join_DESC(joinName: String, comparisonsArray: js.Array[IComparison], orderBy: DESC, count: Double): this.type = js.native
-  @JSName("join")
-  def join_DESC(
-    joinName: String,
-    comparisonsArray: js.Array[IComparison],
-    orderBy: DESC,
-    count: Double,
-    offset: Double
-  ): this.type = js.native
-  @JSName("join")
-  def join_DESC(
-    joinName: String,
-    comparisonsArray: js.Array[IComparison],
-    orderBy: DESC,
-    count: Unit,
-    offset: Double
-  ): this.type = js.native
-  @JSName("join")
-  def join_DESC(joinName: String, comparisonsArray: Unit, orderBy: DESC): this.type = js.native
-  @JSName("join")
-  def join_DESC(joinName: String, comparisonsArray: Unit, orderBy: DESC, count: Double): this.type = js.native
-  @JSName("join")
-  def join_DESC(joinName: String, comparisonsArray: Unit, orderBy: DESC, count: Double, offset: Double): this.type = js.native
-  @JSName("join")
-  def join_DESC(joinName: String, comparisonsArray: Unit, orderBy: DESC, count: Unit, offset: Double): this.type = js.native
-  @JSName("join")
-  def join_DESC(joinName: String, comparisonsArray: IComparison, orderBy: DESC): this.type = js.native
-  @JSName("join")
-  def join_DESC(joinName: String, comparisonsArray: IComparison, orderBy: DESC, count: Double): this.type = js.native
-  @JSName("join")
-  def join_DESC(joinName: String, comparisonsArray: IComparison, orderBy: DESC, count: Double, offset: Double): this.type = js.native
-  @JSName("join")
-  def join_DESC(joinName: String, comparisonsArray: IComparison, orderBy: DESC, count: Unit, offset: Double): this.type = js.native
   
   def limit(offset: String): this.type = js.native
   def limit(offset: String, count: String): this.type = js.native
@@ -284,11 +241,8 @@ class Composer[T /* <: Model */] protected () extends StObject {
     * @return {Nodal.Composer} new Composer instance
     */
   def orderBy(field: String): this.type = js.native
-  def orderBy(field: String, direction: js.Any): this.type = js.native
-  @JSName("orderBy")
-  def orderBy_ASC(field: String, direction: ASC): this.type = js.native
-  @JSName("orderBy")
-  def orderBy_DSC(field: String, direction: DSC): this.type = js.native
+  def orderBy(field: String, direction: ASC | DSC): this.type = js.native
+  def orderBy(field: String, direction: Any): this.type = js.native
   
   /**
     * Join in a relationship. Filters out hidden fields from comparisons.
@@ -309,7 +263,10 @@ class Composer[T /* <: Model */] protected () extends StObject {
     * @param {Object} fields The object containing columns (keys) and associated values you'd like to update
     * @param {function({Error}, {Nodal.ModelArray})} callback The callback for the update query
     */
-  def update(fields: IAnyObject, callback: js.Function2[/* err */ Error, /* modelArray */ ModelArray[T], Unit]): Unit = js.native
+  def update(
+    fields: IAnyObject,
+    callback: js.Function2[/* err */ js.Error, /* modelArray */ ModelArray[T], Unit]
+  ): Unit = js.native
   
   /**
     * Add comparisons to SQL WHERE clause.

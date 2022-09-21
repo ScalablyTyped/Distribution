@@ -2,9 +2,6 @@ package typings.tensorflowTfjsCore
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Array
-import typings.std.Float32Array
-import typings.std.Int32Array
-import typings.std.Uint8Array
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTensorMod.Variable
 import typings.tensorflowTfjsCore.distTypesMod.Rank
@@ -49,11 +46,11 @@ object tensorTypesMod {
     - scala.Boolean
     - typings.tensorflowTfjsCore.tensorTypesMod.TensorContainerObject
     - typings.tensorflowTfjsCore.tensorTypesMod.TensorContainerArray
-    - typings.std.Float32Array
-    - typings.std.Int32Array
-    - typings.std.Uint8Array
+    - js.typedarray.Float32Array
+    - js.typedarray.Int32Array
+    - js.typedarray.Uint8Array
   */
-  type TensorContainer = _TensorContainer | Tensor[Rank] | Unit | String | Double | Boolean | Float32Array | Int32Array | Uint8Array
+  type TensorContainer = _TensorContainer | Tensor[Rank] | Unit | String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array
   
   @js.native
   trait TensorContainerArray

@@ -22,7 +22,7 @@ object TabOrderDialog {
     acquire: () => Unit,
     createWithModel: (XTabControllerModel, XControlContainer, XWindow) => Unit,
     execute: () => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setTitle: String => Unit
   ): TabOrderDialog = {

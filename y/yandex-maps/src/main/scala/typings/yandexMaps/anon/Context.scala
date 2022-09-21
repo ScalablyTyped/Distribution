@@ -31,7 +31,7 @@ object Context {
     
     inline def setControllersUndefined: Self = StObject.set(x, "controllers", js.undefined)
     
-    inline def setControllersVarargs(value: IEventWorkflowController*): Self = StObject.set(x, "controllers", js.Array(value :_*))
+    inline def setControllersVarargs(value: IEventWorkflowController*): Self = StObject.set(x, "controllers", js.Array(value*))
     
     inline def setParent(value: IEventManager[js.Object]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

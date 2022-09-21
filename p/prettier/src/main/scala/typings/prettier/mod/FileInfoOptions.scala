@@ -31,7 +31,7 @@ object FileInfoOptions {
     
     inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
-    inline def setPluginsVarargs(value: String*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+    inline def setPluginsVarargs(value: String*): Self = StObject.set(x, "plugins", js.Array(value*))
     
     inline def setResolveConfig(value: Boolean): Self = StObject.set(x, "resolveConfig", value.asInstanceOf[js.Any])
     

@@ -8,7 +8,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* tslint:enable:interface-name */
 trait VolumeInspectInfo extends StObject {
   
   var Driver: String

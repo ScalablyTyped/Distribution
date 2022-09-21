@@ -29,7 +29,7 @@ trait FlashPath extends StObject {
   def clear(): Unit = js.native
   
   /// Appends a point at the location of the first point of the path and extends the path to that point, which closes the path.
-  def close(): js.Any = js.native
+  def close(): Any = js.native
   
   /// Creates a shape on the Stage by using the current stroke and fill settings.
   def makeShape(): Unit = js.native
@@ -43,5 +43,5 @@ trait FlashPath extends StObject {
   /// Starts a new contour in the path.
   def newContour(): Unit = js.native
   
-  var void: js.Any = js.native
+  var void: Any = js.native
 }

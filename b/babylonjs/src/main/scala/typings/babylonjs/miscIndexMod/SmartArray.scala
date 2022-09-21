@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Misc/index", "SmartArray")
 @js.native
-class SmartArray[T] protected ()
+open class SmartArray[T] protected ()
   extends typings.babylonjs.smartArrayMod.SmartArray[T] {
   /**
     * Instantiates a Smart Array.
@@ -23,6 +23,6 @@ object SmartArray {
   
   @JSImport("babylonjs/Misc/index", "SmartArray._GlobalId")
   @js.native
-  def _GlobalId: js.Any = js.native
-  inline def _GlobalId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GlobalId")(x.asInstanceOf[js.Any])
+  def _GlobalId: Any = js.native
+  inline def _GlobalId_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GlobalId")(x.asInstanceOf[js.Any])
 }

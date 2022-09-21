@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A collection of object IDs.
-  */
 trait SchemaObjectReferences extends StObject {
   
   /**
     * The object IDs.
     */
-  var objectIds: js.UndefOr[js.Array[String]] = js.undefined
+  var objectIds: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaObjectReferences {
   
@@ -25,8 +22,10 @@ object SchemaObjectReferences {
     
     inline def setObjectIds(value: js.Array[String]): Self = StObject.set(x, "objectIds", value.asInstanceOf[js.Any])
     
+    inline def setObjectIdsNull: Self = StObject.set(x, "objectIds", null)
+    
     inline def setObjectIdsUndefined: Self = StObject.set(x, "objectIds", js.undefined)
     
-    inline def setObjectIdsVarargs(value: String*): Self = StObject.set(x, "objectIds", js.Array(value :_*))
+    inline def setObjectIdsVarargs(value: String*): Self = StObject.set(x, "objectIds", js.Array(value*))
   }
 }

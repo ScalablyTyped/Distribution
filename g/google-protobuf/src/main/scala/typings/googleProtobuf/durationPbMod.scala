@@ -6,7 +6,6 @@ import typings.googleProtobuf.mod.BinaryWriter
 import typings.googleProtobuf.mod.ExtensionFieldBinaryInfo
 import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ object durationPbMod {
   
   @JSImport("google-protobuf/google/protobuf/duration_pb", "Duration")
   @js.native
-  class Duration () extends Message {
+  open class Duration () extends Message {
     
     def getNanos(): Double = js.native
     
@@ -32,7 +31,7 @@ object durationPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def deserializeBinary(bytes: Uint8Array): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Duration]
+    inline def deserializeBinary(bytes: js.typedarray.Uint8Array): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Duration]
     
     inline def deserializeBinaryFromReader(message: Duration, reader: BinaryReader): Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Duration]
     

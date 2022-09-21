@@ -12,7 +12,8 @@ object mod {
   /* was `typeof Headers` */
   @JSImport("fetch-headers", JSImport.Namespace)
   @js.native
-  class ^ () extends Headers {
+  /* standard dom */
+  open class ^ () extends Headers {
     def this(init: HeadersInit) = this()
   }
   

@@ -8,21 +8,21 @@ object global {
   
   @JSGlobal("Base64Parser")
   @js.native
-  class Base64Parser protected ()
+  open class Base64Parser protected ()
     extends StObject
        with typings.cloudeventsSdk.Base64Parser {
-    def this(decorator: js.Any) = this()
+    def this(decorator: Any) = this()
     
     /* CompleteClass */
-    var decorator: js.Any = js.native
+    var decorator: Any = js.native
     
     /* CompleteClass */
-    override def parse(payload: js.Any): js.Any = js.native
+    override def parse(payload: Any): Any = js.native
   }
   
   @JSGlobal("JSONParser")
   @js.native
-  class JSONParser protected ()
+  open class JSONParser protected ()
     extends StObject
        with typings.cloudeventsSdk.JSONParser {
     def this(decorator: typings.cloudeventsSdk.Base64Parser) = this()
@@ -30,20 +30,20 @@ object global {
   
   @JSGlobal("ValidationError")
   @js.native
-  val ValidationError: js.Any = js.native
+  val ValidationError: Any = js.native
   
-  inline def asJSON(v: String): js.Any = js.Dynamic.global.applyDynamic("asJSON")(v.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def asJSON(v: js.Object): js.Any = js.Dynamic.global.applyDynamic("asJSON")(v.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def asJSON(v: String): Any = js.Dynamic.global.applyDynamic("asJSON")(v.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def asJSON(v: js.Object): Any = js.Dynamic.global.applyDynamic("asJSON")(v.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSGlobal("invalidPayloadTypeError")
   @js.native
-  val invalidPayloadTypeError: js.Any = js.native
+  val invalidPayloadTypeError: Any = js.native
   
   /* import warning: parser.TsParser#tsDeclVar Dropped IArray(isDefinedOrThrow, isStringOrObjectOrThrow) */ @JSGlobal("isString")
   @js.native
-  val isString: js.Any = js.native
+  val isString: Any = js.native
   
   @JSGlobal("nullOrUndefinedPayload")
   @js.native
-  val nullOrUndefinedPayload: js.Any = js.native
+  val nullOrUndefinedPayload: Any = js.native
 }

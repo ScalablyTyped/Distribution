@@ -22,6 +22,6 @@ object DeleteDashboardsInput {
     
     inline def setDashboardNames(value: DashboardNames): Self = StObject.set(x, "DashboardNames", value.asInstanceOf[js.Any])
     
-    inline def setDashboardNamesVarargs(value: DashboardName*): Self = StObject.set(x, "DashboardNames", js.Array(value :_*))
+    inline def setDashboardNamesVarargs(value: DashboardName*): Self = StObject.set(x, "DashboardNames", js.Array(value*))
   }
 }

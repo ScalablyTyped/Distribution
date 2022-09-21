@@ -8,5 +8,5 @@ object getEventSourceMappingInputMod {
   
   @JSImport("@aws-sdk/client-lambda-node/model/GetEventSourceMappingInput", "GetEventSourceMappingInput")
   @js.native
-  val GetEventSourceMappingInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetEventSourceMappingInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

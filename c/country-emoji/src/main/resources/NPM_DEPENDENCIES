@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "country-emoji" : "1.5.6"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "country-emoji" : "1.5.6"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

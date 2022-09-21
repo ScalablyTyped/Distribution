@@ -14,7 +14,7 @@ object PullInstantiationHelpers {
   
   @JSGlobal("TypeScript.PullInstantiationHelpers.MutableTypeArgumentMap")
   @js.native
-  class MutableTypeArgumentMap protected ()
+  open class MutableTypeArgumentMap protected ()
     extends StObject
        with typings.typescriptServices.TypeScript.PullInstantiationHelpers.MutableTypeArgumentMap {
     def this(typeParameterArgumentMap: TypeArgumentMap) = this()

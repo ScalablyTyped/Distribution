@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-queue
 
-Typings are for version 6.6.2
+Typings are for version 7.3.0
 
 ## Library description:
 Promise queue with concurrency control
@@ -10,10 +10,10 @@ Promise queue with concurrency control
 | ------------------ | :-------------: |
 | Full name          | p-queue |
 | Keywords           | promise, queue, enqueue, limit, limited, concurrency, throttle, throat, rate, batch, ratelimit, priority, priorityqueue, fifo, job, task, async, await, promises, bluebird |
-| # releases         | 17 |
-| # dependents       | 433 |
-| # downloads        | 67003424 |
-| # stars            | 3 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 1.6338933E7 |
+| # stars            | 2112.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/p-queue#readme)

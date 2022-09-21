@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.officeUiFabricReact.personaMod.PersonaCoinBase because Already inherited
 - typings.officeUiFabricReact.libPersonaCoinMod.PersonaCoinBase because Inheritance from two classes. Inlined  */ @JSImport("office-ui-fabric-react", "PersonaCoinBase")
 @js.native
-class PersonaCoinBase protected ()
+open class PersonaCoinBase protected ()
   extends typings.officeUiFabricReact.libPersonaMod.PersonaCoinBase {
   def this(props: IPersonaCoinProps) = this()
 }

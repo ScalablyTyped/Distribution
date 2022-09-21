@@ -19,7 +19,7 @@ trait Active extends StObject {
   
   var document: Requireable[js.Object]
   
-  var onClose: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]
+  var onClose: Requireable[js.Function1[/* repeated */ Any, Any]]
 }
 object Active {
   
@@ -30,7 +30,7 @@ object Active {
     closeOnEsc: Requireable[Boolean],
     containerClassName: Requireable[String],
     document: Requireable[js.Object],
-    onClose: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]
+    onClose: Requireable[js.Function1[/* repeated */ Any, Any]]
   ): Active = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], clipped = clipped.asInstanceOf[js.Any], closeOnBlur = closeOnBlur.asInstanceOf[js.Any], closeOnEsc = closeOnEsc.asInstanceOf[js.Any], containerClassName = containerClassName.asInstanceOf[js.Any], document = document.asInstanceOf[js.Any], onClose = onClose.asInstanceOf[js.Any])
     __obj.asInstanceOf[Active]
@@ -50,6 +50,6 @@ object Active {
     
     inline def setDocument(value: Requireable[js.Object]): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
-    inline def setOnClose(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "onClose", value.asInstanceOf[js.Any])
+    inline def setOnClose(value: Requireable[js.Function1[/* repeated */ Any, Any]]): Self = StObject.set(x, "onClose", value.asInstanceOf[js.Any])
   }
 }

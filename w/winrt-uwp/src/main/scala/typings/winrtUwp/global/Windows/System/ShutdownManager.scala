@@ -18,13 +18,13 @@ object ShutdownManager {
   /* static member */
   @JSGlobal("Windows.System.ShutdownManager.beginShutdown")
   @js.native
-  def beginShutdown: js.Any = js.native
-  inline def beginShutdown_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beginShutdown")(x.asInstanceOf[js.Any])
+  def beginShutdown: Any = js.native
+  inline def beginShutdown_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beginShutdown")(x.asInstanceOf[js.Any])
   
   /* unmapped type */
   /* static member */
   @JSGlobal("Windows.System.ShutdownManager.cancelShutdown")
   @js.native
-  def cancelShutdown: js.Any = js.native
-  inline def cancelShutdown_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cancelShutdown")(x.asInstanceOf[js.Any])
+  def cancelShutdown: Any = js.native
+  inline def cancelShutdown_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cancelShutdown")(x.asInstanceOf[js.Any])
 }

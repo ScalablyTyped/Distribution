@@ -22,25 +22,25 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/WorkInterfaces", "TypeInfo.BacklogConfiguration")
   @js.native
-  def BacklogConfiguration: js.Any = js.native
-  inline def BacklogConfiguration_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BacklogConfiguration")(x.asInstanceOf[js.Any])
+  def BacklogConfiguration: Any = js.native
+  inline def BacklogConfiguration_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BacklogConfiguration")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkInterfaces", "TypeInfo.Board")
   @js.native
-  def Board: js.Any = js.native
+  def Board: Any = js.native
   
   @JSImport("vso-node-api/interfaces/WorkInterfaces", "TypeInfo.BoardColumn")
   @js.native
-  def BoardColumn: js.Any = js.native
+  def BoardColumn: Any = js.native
   
   @JSImport("vso-node-api/interfaces/WorkInterfaces", "TypeInfo.BoardColumnType")
   @js.native
   def BoardColumnType: EnumValuesIncoming = js.native
   inline def BoardColumnType_=(x: EnumValuesIncoming): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BoardColumnType")(x.asInstanceOf[js.Any])
   
-  inline def BoardColumn_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BoardColumn")(x.asInstanceOf[js.Any])
+  inline def BoardColumn_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BoardColumn")(x.asInstanceOf[js.Any])
   
-  inline def Board_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Board")(x.asInstanceOf[js.Any])
+  inline def Board_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Board")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkInterfaces", "TypeInfo.BugsBehavior")
   @js.native
@@ -49,43 +49,43 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/WorkInterfaces", "TypeInfo.CapacityPatch")
   @js.native
-  def CapacityPatch: js.Any = js.native
-  inline def CapacityPatch_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CapacityPatch")(x.asInstanceOf[js.Any])
+  def CapacityPatch: Any = js.native
+  inline def CapacityPatch_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CapacityPatch")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkInterfaces", "TypeInfo.CardFieldSettings")
   @js.native
-  def CardFieldSettings: js.Any = js.native
-  inline def CardFieldSettings_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CardFieldSettings")(x.asInstanceOf[js.Any])
+  def CardFieldSettings: Any = js.native
+  inline def CardFieldSettings_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CardFieldSettings")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkInterfaces", "TypeInfo.CardSettings")
   @js.native
-  def CardSettings: js.Any = js.native
-  inline def CardSettings_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CardSettings")(x.asInstanceOf[js.Any])
+  def CardSettings: Any = js.native
+  inline def CardSettings_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CardSettings")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkInterfaces", "TypeInfo.CreatePlan")
   @js.native
-  def CreatePlan: js.Any = js.native
-  inline def CreatePlan_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreatePlan")(x.asInstanceOf[js.Any])
+  def CreatePlan: Any = js.native
+  inline def CreatePlan_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreatePlan")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkInterfaces", "TypeInfo.DateRange")
   @js.native
-  def DateRange: js.Any = js.native
-  inline def DateRange_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DateRange")(x.asInstanceOf[js.Any])
+  def DateRange: Any = js.native
+  inline def DateRange_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DateRange")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkInterfaces", "TypeInfo.DeliveryViewData")
   @js.native
-  def DeliveryViewData: js.Any = js.native
-  inline def DeliveryViewData_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeliveryViewData")(x.asInstanceOf[js.Any])
+  def DeliveryViewData: Any = js.native
+  inline def DeliveryViewData_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeliveryViewData")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkInterfaces", "TypeInfo.DeliveryViewPropertyCollection")
   @js.native
-  def DeliveryViewPropertyCollection: js.Any = js.native
-  inline def DeliveryViewPropertyCollection_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeliveryViewPropertyCollection")(x.asInstanceOf[js.Any])
+  def DeliveryViewPropertyCollection: Any = js.native
+  inline def DeliveryViewPropertyCollection_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeliveryViewPropertyCollection")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkInterfaces", "TypeInfo.FieldInfo")
   @js.native
-  def FieldInfo: js.Any = js.native
-  inline def FieldInfo_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FieldInfo")(x.asInstanceOf[js.Any])
+  def FieldInfo: Any = js.native
+  inline def FieldInfo_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FieldInfo")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkInterfaces", "TypeInfo.FieldType")
   @js.native
@@ -99,17 +99,17 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/WorkInterfaces", "TypeInfo.Marker")
   @js.native
-  def Marker: js.Any = js.native
-  inline def Marker_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Marker")(x.asInstanceOf[js.Any])
+  def Marker: Any = js.native
+  inline def Marker_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Marker")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkInterfaces", "TypeInfo.Plan")
   @js.native
-  def Plan: js.Any = js.native
+  def Plan: Any = js.native
   
   @JSImport("vso-node-api/interfaces/WorkInterfaces", "TypeInfo.PlanMetadata")
   @js.native
-  def PlanMetadata: js.Any = js.native
-  inline def PlanMetadata_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PlanMetadata")(x.asInstanceOf[js.Any])
+  def PlanMetadata: Any = js.native
+  inline def PlanMetadata_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PlanMetadata")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkInterfaces", "TypeInfo.PlanType")
   @js.native
@@ -121,43 +121,43 @@ object TypeInfo {
   def PlanUserPermissions: EnumValuesAllPermissions = js.native
   inline def PlanUserPermissions_=(x: EnumValuesAllPermissions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PlanUserPermissions")(x.asInstanceOf[js.Any])
   
-  inline def Plan_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Plan")(x.asInstanceOf[js.Any])
+  inline def Plan_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Plan")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkInterfaces", "TypeInfo.TeamIterationAttributes")
   @js.native
-  def TeamIterationAttributes: js.Any = js.native
-  inline def TeamIterationAttributes_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TeamIterationAttributes")(x.asInstanceOf[js.Any])
+  def TeamIterationAttributes: Any = js.native
+  inline def TeamIterationAttributes_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TeamIterationAttributes")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkInterfaces", "TypeInfo.TeamMemberCapacity")
   @js.native
-  def TeamMemberCapacity: js.Any = js.native
-  inline def TeamMemberCapacity_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TeamMemberCapacity")(x.asInstanceOf[js.Any])
+  def TeamMemberCapacity: Any = js.native
+  inline def TeamMemberCapacity_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TeamMemberCapacity")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkInterfaces", "TypeInfo.TeamSetting")
   @js.native
-  def TeamSetting: js.Any = js.native
-  inline def TeamSetting_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TeamSetting")(x.asInstanceOf[js.Any])
+  def TeamSetting: Any = js.native
+  inline def TeamSetting_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TeamSetting")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkInterfaces", "TypeInfo.TeamSettingsDaysOff")
   @js.native
-  def TeamSettingsDaysOff: js.Any = js.native
+  def TeamSettingsDaysOff: Any = js.native
   
   @JSImport("vso-node-api/interfaces/WorkInterfaces", "TypeInfo.TeamSettingsDaysOffPatch")
   @js.native
-  def TeamSettingsDaysOffPatch: js.Any = js.native
-  inline def TeamSettingsDaysOffPatch_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TeamSettingsDaysOffPatch")(x.asInstanceOf[js.Any])
+  def TeamSettingsDaysOffPatch: Any = js.native
+  inline def TeamSettingsDaysOffPatch_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TeamSettingsDaysOffPatch")(x.asInstanceOf[js.Any])
   
-  inline def TeamSettingsDaysOff_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TeamSettingsDaysOff")(x.asInstanceOf[js.Any])
+  inline def TeamSettingsDaysOff_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TeamSettingsDaysOff")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkInterfaces", "TypeInfo.TeamSettingsIteration")
   @js.native
-  def TeamSettingsIteration: js.Any = js.native
-  inline def TeamSettingsIteration_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TeamSettingsIteration")(x.asInstanceOf[js.Any])
+  def TeamSettingsIteration: Any = js.native
+  inline def TeamSettingsIteration_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TeamSettingsIteration")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkInterfaces", "TypeInfo.TeamSettingsPatch")
   @js.native
-  def TeamSettingsPatch: js.Any = js.native
-  inline def TeamSettingsPatch_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TeamSettingsPatch")(x.asInstanceOf[js.Any])
+  def TeamSettingsPatch: Any = js.native
+  inline def TeamSettingsPatch_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TeamSettingsPatch")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkInterfaces", "TypeInfo.TimeFrame")
   @js.native
@@ -166,49 +166,49 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/WorkInterfaces", "TypeInfo.TimelineCriteriaStatus")
   @js.native
-  def TimelineCriteriaStatus: js.Any = js.native
+  def TimelineCriteriaStatus: Any = js.native
   
   @JSImport("vso-node-api/interfaces/WorkInterfaces", "TypeInfo.TimelineCriteriaStatusCode")
   @js.native
   def TimelineCriteriaStatusCode: EnumValuesInvalidFilterClause = js.native
   inline def TimelineCriteriaStatusCode_=(x: EnumValuesInvalidFilterClause): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TimelineCriteriaStatusCode")(x.asInstanceOf[js.Any])
   
-  inline def TimelineCriteriaStatus_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TimelineCriteriaStatus")(x.asInstanceOf[js.Any])
+  inline def TimelineCriteriaStatus_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TimelineCriteriaStatus")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkInterfaces", "TypeInfo.TimelineIterationStatus")
   @js.native
-  def TimelineIterationStatus: js.Any = js.native
+  def TimelineIterationStatus: Any = js.native
   
   @JSImport("vso-node-api/interfaces/WorkInterfaces", "TypeInfo.TimelineIterationStatusCode")
   @js.native
   def TimelineIterationStatusCode: EnumValuesIsOverlapping = js.native
   inline def TimelineIterationStatusCode_=(x: EnumValuesIsOverlapping): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TimelineIterationStatusCode")(x.asInstanceOf[js.Any])
   
-  inline def TimelineIterationStatus_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TimelineIterationStatus")(x.asInstanceOf[js.Any])
+  inline def TimelineIterationStatus_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TimelineIterationStatus")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkInterfaces", "TypeInfo.TimelineTeamData")
   @js.native
-  def TimelineTeamData: js.Any = js.native
-  inline def TimelineTeamData_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TimelineTeamData")(x.asInstanceOf[js.Any])
+  def TimelineTeamData: Any = js.native
+  inline def TimelineTeamData_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TimelineTeamData")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkInterfaces", "TypeInfo.TimelineTeamIteration")
   @js.native
-  def TimelineTeamIteration: js.Any = js.native
-  inline def TimelineTeamIteration_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TimelineTeamIteration")(x.asInstanceOf[js.Any])
+  def TimelineTeamIteration: Any = js.native
+  inline def TimelineTeamIteration_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TimelineTeamIteration")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkInterfaces", "TypeInfo.TimelineTeamStatus")
   @js.native
-  def TimelineTeamStatus: js.Any = js.native
+  def TimelineTeamStatus: Any = js.native
   
   @JSImport("vso-node-api/interfaces/WorkInterfaces", "TypeInfo.TimelineTeamStatusCode")
   @js.native
   def TimelineTeamStatusCode: EnumValuesBacklogInError = js.native
   inline def TimelineTeamStatusCode_=(x: EnumValuesBacklogInError): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TimelineTeamStatusCode")(x.asInstanceOf[js.Any])
   
-  inline def TimelineTeamStatus_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TimelineTeamStatus")(x.asInstanceOf[js.Any])
+  inline def TimelineTeamStatus_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TimelineTeamStatus")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkInterfaces", "TypeInfo.UpdatePlan")
   @js.native
-  def UpdatePlan: js.Any = js.native
-  inline def UpdatePlan_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UpdatePlan")(x.asInstanceOf[js.Any])
+  def UpdatePlan: Any = js.native
+  inline def UpdatePlan_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UpdatePlan")(x.asInstanceOf[js.Any])
 }

@@ -8,6 +8,9 @@ trait GoogleServiceAccount extends StObject {
   
   /** Email address of the service account. */
   var accountEmail: js.UndefOr[String] = js.undefined
+  
+  /** Unique identifier for the service account. */
+  var subjectId: js.UndefOr[String] = js.undefined
 }
 object GoogleServiceAccount {
   
@@ -21,5 +24,9 @@ object GoogleServiceAccount {
     inline def setAccountEmail(value: String): Self = StObject.set(x, "accountEmail", value.asInstanceOf[js.Any])
     
     inline def setAccountEmailUndefined: Self = StObject.set(x, "accountEmail", js.undefined)
+    
+    inline def setSubjectId(value: String): Self = StObject.set(x, "subjectId", value.asInstanceOf[js.Any])
+    
+    inline def setSubjectIdUndefined: Self = StObject.set(x, "subjectId", js.undefined)
   }
 }

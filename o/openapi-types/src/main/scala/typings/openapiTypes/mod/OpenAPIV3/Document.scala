@@ -1,12 +1,13 @@
 package typings.openapiTypes.mod.OpenAPIV3
 
+import typings.openapiTypes.mod.OpenAPI._Document
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Document
+trait Document[T /* <: js.Object */]
   extends StObject
-     with typings.openapiTypes.mod.OpenAPI.Document {
+     with _Document[T] {
   
   var components: js.UndefOr[ComponentsObject] = js.undefined
   
@@ -16,7 +17,7 @@ trait Document
   
   var openapi: String
   
-  var paths: PathsObject
+  var paths: PathsObject[T, js.Object]
   
   var security: js.UndefOr[js.Array[SecurityRequirementObject]] = js.undefined
   
@@ -26,12 +27,7 @@ trait Document
   
   var `x-express-openapi-additional-middleware`: js.UndefOr[
     js.Array[
-      js.Function3[
-        /* request */ js.Any, 
-        /* response */ js.Any, 
-        /* next */ js.Any, 
-        js.Promise[Unit] | Unit
-      ]
+      js.Function3[/* request */ Any, /* response */ Any, /* next */ Any, js.Promise[Unit] | Unit]
     ]
   ] = js.undefined
   
@@ -39,12 +35,12 @@ trait Document
 }
 object Document {
   
-  inline def apply(info: InfoObject, openapi: String, paths: PathsObject): Document = {
+  inline def apply[T /* <: js.Object */](info: InfoObject, openapi: String, paths: PathsObject[T, js.Object]): Document[T] = {
     val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any], openapi = openapi.asInstanceOf[js.Any], paths = paths.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Document]
+    __obj.asInstanceOf[Document[T]]
   }
   
-  extension [Self <: Document](x: Self) {
+  extension [Self <: Document[?], T /* <: js.Object */](x: Self & Document[T]) {
     
     inline def setComponents(value: ComponentsObject): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
@@ -58,47 +54,37 @@ object Document {
     
     inline def setOpenapi(value: String): Self = StObject.set(x, "openapi", value.asInstanceOf[js.Any])
     
-    inline def setPaths(value: PathsObject): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+    inline def setPaths(value: PathsObject[T, js.Object]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
     inline def setSecurity(value: js.Array[SecurityRequirementObject]): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
     
     inline def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
     
-    inline def setSecurityVarargs(value: SecurityRequirementObject*): Self = StObject.set(x, "security", js.Array(value :_*))
+    inline def setSecurityVarargs(value: SecurityRequirementObject*): Self = StObject.set(x, "security", js.Array(value*))
     
     inline def setServers(value: js.Array[ServerObject]): Self = StObject.set(x, "servers", value.asInstanceOf[js.Any])
     
     inline def setServersUndefined: Self = StObject.set(x, "servers", js.undefined)
     
-    inline def setServersVarargs(value: ServerObject*): Self = StObject.set(x, "servers", js.Array(value :_*))
+    inline def setServersVarargs(value: ServerObject*): Self = StObject.set(x, "servers", js.Array(value*))
     
     inline def setTags(value: js.Array[TagObject]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: TagObject*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: TagObject*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def `setX-express-openapi-additional-middleware`(
       value: js.Array[
-          js.Function3[
-            /* request */ js.Any, 
-            /* response */ js.Any, 
-            /* next */ js.Any, 
-            js.Promise[Unit] | Unit
-          ]
+          js.Function3[/* request */ Any, /* response */ Any, /* next */ Any, js.Promise[Unit] | Unit]
         ]
     ): Self = StObject.set(x, "x-express-openapi-additional-middleware", value.asInstanceOf[js.Any])
     
     inline def `setX-express-openapi-additional-middlewareUndefined`: Self = StObject.set(x, "x-express-openapi-additional-middleware", js.undefined)
     
     inline def `setX-express-openapi-additional-middlewareVarargs`(
-      value: (js.Function3[
-          /* request */ js.Any, 
-          /* response */ js.Any, 
-          /* next */ js.Any, 
-          js.Promise[Unit] | Unit
-        ])*
-    ): Self = StObject.set(x, "x-express-openapi-additional-middleware", js.Array(value :_*))
+      value: (js.Function3[/* request */ Any, /* response */ Any, /* next */ Any, js.Promise[Unit] | Unit])*
+    ): Self = StObject.set(x, "x-express-openapi-additional-middleware", js.Array(value*))
     
     inline def `setX-express-openapi-validation-strict`(value: Boolean): Self = StObject.set(x, "x-express-openapi-validation-strict", value.asInstanceOf[js.Any])
     

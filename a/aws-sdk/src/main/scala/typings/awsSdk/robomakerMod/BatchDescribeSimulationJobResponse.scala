@@ -29,12 +29,12 @@ object BatchDescribeSimulationJobResponse {
     
     inline def setJobsUndefined: Self = StObject.set(x, "jobs", js.undefined)
     
-    inline def setJobsVarargs(value: SimulationJob*): Self = StObject.set(x, "jobs", js.Array(value :_*))
+    inline def setJobsVarargs(value: SimulationJob*): Self = StObject.set(x, "jobs", js.Array(value*))
     
     inline def setUnprocessedJobs(value: Arns): Self = StObject.set(x, "unprocessedJobs", value.asInstanceOf[js.Any])
     
     inline def setUnprocessedJobsUndefined: Self = StObject.set(x, "unprocessedJobs", js.undefined)
     
-    inline def setUnprocessedJobsVarargs(value: Arn*): Self = StObject.set(x, "unprocessedJobs", js.Array(value :_*))
+    inline def setUnprocessedJobsVarargs(value: Arn*): Self = StObject.set(x, "unprocessedJobs", js.Array(value*))
   }
 }

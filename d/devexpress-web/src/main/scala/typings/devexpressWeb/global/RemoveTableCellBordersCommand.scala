@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("RemoveTableCellBordersCommand")
 @js.native
-class RemoveTableCellBordersCommand ()
+open class RemoveTableCellBordersCommand ()
   extends StObject
      with typings.devexpressWeb.RemoveTableCellBordersCommand {
   

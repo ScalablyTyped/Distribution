@@ -1,7 +1,7 @@
 package typings.grpcGrpcJs
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.http2Mod.IncomingHttpHeaders
 import typings.node.httpMod.OutgoingHttpHeaders
 import typings.std.Map
@@ -13,10 +13,10 @@ object metadataMod {
   
   @JSImport("@grpc/grpc-js/build/src/metadata", "Metadata")
   @js.native
-  class Metadata () extends StObject {
+  open class Metadata () extends StObject {
     def this(options: MetadataOptions) = this()
     
-    /* private */ var _getCoreRepresentation: js.Any = js.native
+    /* private */ var _getCoreRepresentation: Any = js.native
     
     /**
       * Adds the given value for the given key by appending to a list of previous
@@ -54,7 +54,7 @@ object metadataMod {
       */
     def merge(other: Metadata): Unit = js.native
     
-    /* private */ var options: js.Any = js.native
+    /* private */ var options: Any = js.native
     
     /**
       * Removes the given key and any associated values. Normalizes the key.
@@ -77,6 +77,12 @@ object metadataMod {
       * Creates an OutgoingHttpHeaders object that can be used with the http2 API.
       */
     def toHttp2Headers(): OutgoingHttpHeaders = js.native
+    
+    /**
+      * This modifies the behavior of JSON.stringify to show an object
+      * representation of the metadata map.
+      */
+    def toJSON(): StringDictionary[js.Array[String | Buffer]] = js.native
   }
   /* static members */
   object Metadata {

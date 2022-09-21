@@ -10,15 +10,12 @@ Higher level promise-based template rendering for Co and others, built on co-ren
 | ------------------ | :-------------: |
 | Full name          | co-views |
 | Keywords           | template, render, consolidate, engine, koa |
-| # releases         | 0 |
-| # dependents       | 55 |
-| # downloads        | 49019 |
-| # stars            | 9 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3571.0 |
+| # stars            | 174.0 |
 
 ## Links
-- [Homepage](https://github.com/tj/co-views#readme)
-- [Bugs](https://github.com/tj/co-views/issues)
-- [Repository](https://github.com/tj/co-views)
 - [Npm](https://www.npmjs.com/package/co-views)
     
 

@@ -33,7 +33,7 @@ trait IAngularStatic extends StObject {
     */
   def UNSAFE_restoreLegacyJqLiteXHTMLReplacement(): Unit = js.native
   
-  def bind(context: js.Any, fn: Function, args: js.Any*): Function = js.native
+  def bind(context: Any, fn: Function, args: Any*): Function = js.native
   
   /**
     * Use this function to manually start up angular application.
@@ -46,34 +46,34 @@ trait IAngularStatic extends StObject {
     *     - `strictDi`: disable automatic function annotation for the application. This is meant to assist in finding bugs which break minified code.
     */
   def bootstrap(element: String): IInjectorService = js.native
-  def bootstrap(element: String, modules: js.Array[String | Function | js.Array[js.Any]]): IInjectorService = js.native
+  def bootstrap(element: String, modules: js.Array[String | Function | js.Array[Any]]): IInjectorService = js.native
   def bootstrap(
     element: String,
-    modules: js.Array[String | Function | js.Array[js.Any]],
+    modules: js.Array[String | Function | js.Array[Any]],
     config: IAngularBootstrapConfig
   ): IInjectorService = js.native
   def bootstrap(element: String, modules: Unit, config: IAngularBootstrapConfig): IInjectorService = js.native
   def bootstrap(element: JQuery): IInjectorService = js.native
-  def bootstrap(element: JQuery, modules: js.Array[String | Function | js.Array[js.Any]]): IInjectorService = js.native
+  def bootstrap(element: JQuery, modules: js.Array[String | Function | js.Array[Any]]): IInjectorService = js.native
   def bootstrap(
     element: JQuery,
-    modules: js.Array[String | Function | js.Array[js.Any]],
+    modules: js.Array[String | Function | js.Array[Any]],
     config: IAngularBootstrapConfig
   ): IInjectorService = js.native
   def bootstrap(element: JQuery, modules: Unit, config: IAngularBootstrapConfig): IInjectorService = js.native
   def bootstrap(element: Document): IInjectorService = js.native
-  def bootstrap(element: Document, modules: js.Array[String | Function | js.Array[js.Any]]): IInjectorService = js.native
+  def bootstrap(element: Document, modules: js.Array[String | Function | js.Array[Any]]): IInjectorService = js.native
   def bootstrap(
     element: Document,
-    modules: js.Array[String | Function | js.Array[js.Any]],
+    modules: js.Array[String | Function | js.Array[Any]],
     config: IAngularBootstrapConfig
   ): IInjectorService = js.native
   def bootstrap(element: Document, modules: Unit, config: IAngularBootstrapConfig): IInjectorService = js.native
   def bootstrap(element: Element): IInjectorService = js.native
-  def bootstrap(element: Element, modules: js.Array[String | Function | js.Array[js.Any]]): IInjectorService = js.native
+  def bootstrap(element: Element, modules: js.Array[String | Function | js.Array[Any]]): IInjectorService = js.native
   def bootstrap(
     element: Element,
-    modules: js.Array[String | Function | js.Array[js.Any]],
+    modules: js.Array[String | Function | js.Array[Any]],
     config: IAngularBootstrapConfig
   ): IInjectorService = js.native
   def bootstrap(element: Element, modules: Unit, config: IAngularBootstrapConfig): IInjectorService = js.native
@@ -112,7 +112,7 @@ trait IAngularStatic extends StObject {
   @JSName("element")
   var element_Original: JQueryStatic = js.native
   
-  def equals(value1: js.Any, value2: js.Any): Boolean = js.native
+  def equals(value1: Any, value2: Any): Boolean = js.native
   
   /**
     * Configure several aspects of error handling in AngularJS if used as a setter
@@ -121,7 +121,7 @@ trait IAngularStatic extends StObject {
   def errorHandlingConfig(): IErrorHandlingConfig = js.native
   def errorHandlingConfig(config: IErrorHandlingConfig): Unit = js.native
   
-  def extend(destination: js.Any, sources: js.Any*): js.Any = js.native
+  def extend(destination: Any, sources: Any*): Any = js.native
   
   /**
     * Invokes the iterator function once for each item in obj collection, which can be either an object or an array. The iterator function is invoked with iterator(value, key), where value is the value of an object property or an array element and key is the object property key or array element index. Specifying a context for the function is optional.
@@ -132,12 +132,12 @@ trait IAngularStatic extends StObject {
     * @param iterator Iterator function.
     * @param context Object to become context (this) for the iterator function.
     */
-  def forEach(obj: js.Any, iterator: js.Function3[/* value */ js.Any, /* key */ js.Any, /* obj */ js.Any, Unit]): js.Any = js.native
+  def forEach(obj: Any, iterator: js.Function3[/* value */ Any, /* key */ Any, /* obj */ Any, Unit]): Any = js.native
   def forEach(
-    obj: js.Any,
-    iterator: js.Function3[/* value */ js.Any, /* key */ js.Any, /* obj */ js.Any, Unit],
-    context: js.Any
-  ): js.Any = js.native
+    obj: Any,
+    iterator: js.Function3[/* value */ Any, /* key */ Any, /* obj */ Any, Unit],
+    context: Any
+  ): Any = js.native
   /**
     * Invokes the iterator function once for each item in obj collection, which can be either an object or an array. The iterator function is invoked with iterator(value, key), where value is the value of an object property or an array element and key is the object property key or array element index. Specifying a context for the function is optional.
     *
@@ -154,7 +154,7 @@ trait IAngularStatic extends StObject {
   def forEach[T](
     obj: StringDictionary[T],
     iterator: js.Function3[/* value */ T, /* key */ String, /* obj */ StringDictionary[T], Unit],
-    context: js.Any
+    context: Any
   ): StringDictionary[T] = js.native
   /**
     * Invokes the iterator function once for each item in obj collection, which can be either an object or an array. The iterator function is invoked with iterator(value, key), where value is the value of an object property or an array element and key is the object property key or array element index. Specifying a context for the function is optional.
@@ -165,7 +165,8 @@ trait IAngularStatic extends StObject {
     * @param iterator Iterator function.
     * @param context Object to become context (this) for the iterator function.
     */
-  def forEach[T, U /* <: ArrayLike[T] */](
+  @JSName("forEach")
+  def forEach_TU_ArrayLikeT_U[T, U /* <: ArrayLike[T] */](
     obj: U,
     iterator: js.Function3[
       /* import warning: importer.ImportType#apply Failed type conversion: U[number] */ /* value */ js.Any, 
@@ -174,7 +175,8 @@ trait IAngularStatic extends StObject {
       Unit
     ]
   ): U = js.native
-  def forEach[T, U /* <: ArrayLike[T] */](
+  @JSName("forEach")
+  def forEach_TU_ArrayLikeT_U[T, U /* <: ArrayLike[T] */](
     obj: U,
     iterator: js.Function3[
       /* import warning: importer.ImportType#apply Failed type conversion: U[number] */ /* value */ js.Any, 
@@ -182,38 +184,38 @@ trait IAngularStatic extends StObject {
       /* obj */ U, 
       Unit
     ],
-    context: js.Any
+    context: Any
   ): U = js.native
   
-  def fromJson(json: String): js.Any = js.native
+  def fromJson(json: String): Any = js.native
   
   def identity[T](): T = js.native
   def identity[T](arg: T): T = js.native
   
   def injector(): IInjectorService = js.native
-  def injector(modules: js.Array[js.Any]): IInjectorService = js.native
-  def injector(modules: js.Array[js.Any], strictDi: Boolean): IInjectorService = js.native
+  def injector(modules: js.Array[Any]): IInjectorService = js.native
+  def injector(modules: js.Array[Any], strictDi: Boolean): IInjectorService = js.native
   def injector(modules: Unit, strictDi: Boolean): IInjectorService = js.native
   
-  def isArray(value: js.Any): /* is std.Array<any> */ Boolean = js.native
+  def isArray(value: Any): /* is std.Array<any> */ Boolean = js.native
   
-  def isDate(value: js.Any): /* is std.Date */ Boolean = js.native
+  def isDate(value: Any): /* is std.Date */ Boolean = js.native
   
-  def isDefined(value: js.Any): Boolean = js.native
+  def isDefined(value: Any): Boolean = js.native
   
-  def isElement(value: js.Any): Boolean = js.native
+  def isElement(value: Any): Boolean = js.native
   
-  def isFunction(value: js.Any): /* is angular.angular.<global>.Function */ Boolean = js.native
+  def isFunction(value: Any): /* is angular.angular.<global>.Function */ Boolean = js.native
   
-  def isNumber(value: js.Any): /* is number */ Boolean = js.native
+  def isNumber(value: Any): /* is number */ Boolean = js.native
   
-  def isObject(value: js.Any): /* is std.Object */ Boolean = js.native
+  def isObject(value: Any): /* is std.Object */ Boolean = js.native
   @JSName("isObject")
-  def isObject_T[T](value: js.Any): /* is T */ Boolean = js.native
+  def isObject_T[T](value: Any): /* is T */ Boolean = js.native
   
-  def isString(value: js.Any): /* is string */ Boolean = js.native
+  def isString(value: Any): /* is string */ Boolean = js.native
   
-  def isUndefined(value: js.Any): Boolean = js.native
+  def isUndefined(value: Any): Boolean = js.native
   
   /**
     * Deeply extends the destination object dst by copying own enumerable properties from the src object(s) to dst. You can specify multiple src objects. If you want to preserve original objects, you can do so by passing an empty object as the target: var object = angular.merge({}, object1, object2).
@@ -223,7 +225,7 @@ trait IAngularStatic extends StObject {
     * @param dst Destination object.
     * @param src Source object(s).
     */
-  def merge(dst: js.Any, src: js.Any*): js.Any = js.native
+  def merge(dst: Any, src: Any*): Any = js.native
   
   /**
     * The angular.module is a global place for creating, registering and retrieving Angular modules. All modules (angular core or 3rd party) that should be available to an application must be registered using this mechanism.
@@ -239,7 +241,7 @@ trait IAngularStatic extends StObject {
   def module(name: String, requires: js.Array[String], configFn: Injectable[Function]): IModule = js.native
   def module(name: String, requires: Unit, configFn: Injectable[Function]): IModule = js.native
   
-  def noop(args: js.Any*): Unit = js.native
+  def noop(args: Any*): Unit = js.native
   
   def reloadWithDebugInfo(): Unit = js.native
   
@@ -249,9 +251,9 @@ trait IAngularStatic extends StObject {
     */
   var resumeBootstrap: js.UndefOr[js.Function1[/* extraModules */ js.UndefOr[js.Array[String]], IInjectorService]] = js.native
   
-  def toJson(obj: js.Any): String = js.native
-  def toJson(obj: js.Any, pretty: Boolean): String = js.native
-  def toJson(obj: js.Any, pretty: Double): String = js.native
+  def toJson(obj: Any): String = js.native
+  def toJson(obj: Any, pretty: Boolean): String = js.native
+  def toJson(obj: Any, pretty: Double): String = js.native
   
   var version: CodeName = js.native
 }

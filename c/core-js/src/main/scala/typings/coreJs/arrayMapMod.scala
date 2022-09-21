@@ -15,7 +15,7 @@ object arrayMapMod {
   inline def apply[T, U](
     array: ArrayLike[T],
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], U],
-    thisArg: js.Any
+    thisArg: Any
   ): Array[U] = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Array[U]]
   
   @JSImport("core-js/fn/array/map", JSImport.Namespace)

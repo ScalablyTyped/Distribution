@@ -29,6 +29,12 @@ object gapiPeopleStrings {
   inline def DEFAULT: DEFAULT = "DEFAULT".asInstanceOf[DEFAULT]
   
   @js.native
+  sealed trait DOMAIN_CONTACT
+    extends StObject
+       with SourceType
+  inline def DOMAIN_CONTACT: DOMAIN_CONTACT = "DOMAIN_CONTACT".asInstanceOf[DOMAIN_CONTACT]
+  
+  @js.native
   sealed trait DOMAIN_PROFILE
     extends StObject
        with SourceType
@@ -75,6 +81,12 @@ object gapiPeopleStrings {
     extends StObject
        with ObjectType
   inline def OBJECT_TYPE_UNSPECIFIED: OBJECT_TYPE_UNSPECIFIED = "OBJECT_TYPE_UNSPECIFIED".asInstanceOf[OBJECT_TYPE_UNSPECIFIED]
+  
+  @js.native
+  sealed trait OTHER_CONTACT
+    extends StObject
+       with SourceType
+  inline def OTHER_CONTACT: OTHER_CONTACT = "OTHER_CONTACT".asInstanceOf[OTHER_CONTACT]
   
   @js.native
   sealed trait OTHER_NAME

@@ -8,23 +8,74 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object fromEventMod {
   
-  @JSImport("rxjs/internal/observable/fromEvent", JSImport.Namespace)
+  @JSImport("rxjs/dist/types/internal/observable/fromEvent", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromEvent[T](target: FromEventTarget[T], eventName: String): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
-  inline def fromEvent[T](target: FromEventTarget[T], eventName: String, options: EventListenerOptions): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
-  inline def fromEvent[T](
-    target: FromEventTarget[T],
+  inline def fromEvent(target: NodeCompatibleEventEmitter, eventName: String): Observable[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Observable[Any]]
+  inline def fromEvent(target: NodeStyleEventEmitter, eventName: String): Observable[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Observable[Any]]
+  inline def fromEvent(target: ArrayLike[NodeCompatibleEventEmitter | NodeStyleEventEmitter], eventName: String): Observable[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Observable[Any]]
+  inline def fromEvent[T](target: HasEventTargetAddRemove[T], eventName: String): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+  inline def fromEvent[T](target: HasEventTargetAddRemove[T], eventName: String, options: EventListenerOptions): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+  inline def fromEvent[T](target: JQueryStyleEventEmitter[Any, T], eventName: String): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+  inline def fromEvent[R](
+    target: NodeCompatibleEventEmitter,
+    eventName: String,
+    resultSelector: js.Function1[/* repeated */ Any, R]
+  ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  inline def fromEvent[R](
+    target: NodeStyleEventEmitter,
+    eventName: String,
+    resultSelector: js.Function1[/* repeated */ Any, R]
+  ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  inline def fromEvent[T](target: ArrayLike[HasEventTargetAddRemove[T]], eventName: String, options: EventListenerOptions): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+  inline def fromEvent[R](
+    target: ArrayLike[NodeCompatibleEventEmitter | NodeStyleEventEmitter],
+    eventName: String,
+    resultSelector: js.Function1[/* repeated */ Any, R]
+  ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  inline def fromEvent[T, R](
+    target: HasEventTargetAddRemove[T],
     eventName: String,
     options: EventListenerOptions,
-    resultSelector: js.Function1[/* repeated */ js.Any, T]
-  ): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], options.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
-  inline def fromEvent[T](
-    target: FromEventTarget[T],
+    resultSelector: js.Function1[/* event */ T, R]
+  ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], options.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  inline def fromEvent[T, R](
+    target: HasEventTargetAddRemove[T],
     eventName: String,
-    resultSelector: js.Function1[/* repeated */ js.Any, T]
-  ): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+    resultSelector: js.Function1[/* event */ T, R]
+  ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  inline def fromEvent[T, R](
+    target: JQueryStyleEventEmitter[Any, T],
+    eventName: String,
+    resultSelector: js.Function2[/* value */ T, /* repeated */ Any, R]
+  ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  inline def fromEvent[T, R](
+    target: ArrayLike[HasEventTargetAddRemove[T]],
+    eventName: String,
+    options: EventListenerOptions,
+    resultSelector: js.Function1[/* event */ T, R]
+  ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], options.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  inline def fromEvent[T, R](
+    target: ArrayLike[JQueryStyleEventEmitter[Any, T]],
+    eventName: String,
+    resultSelector: js.Function2[/* value */ T, /* repeated */ Any, R]
+  ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  
+  inline def fromEvent_T[T](target: NodeCompatibleEventEmitter, eventName: String): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+  inline def fromEvent_T[T](target: NodeStyleEventEmitter, eventName: String): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+  inline def fromEvent_T[T](
+    target: ArrayLike[
+      HasEventTargetAddRemove[T] | (JQueryStyleEventEmitter[Any, T]) | NodeCompatibleEventEmitter | NodeStyleEventEmitter
+    ],
+    eventName: String
+  ): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+  
+  inline def fromEvent_TR[T, R](
+    target: ArrayLike[HasEventTargetAddRemove[T]],
+    eventName: String,
+    resultSelector: js.Function1[/* event */ T, R]
+  ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
   
   trait AddEventListenerOptions
     extends StObject
@@ -34,6 +85,23 @@ object fromEventMod {
     inline def apply(): AddEventListenerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AddEventListenerOptions]
+    }
+  }
+  
+  trait EventListenerObject[E] extends StObject {
+    
+    def handleEvent(evt: E): Unit
+  }
+  object EventListenerObject {
+    
+    inline def apply[E](handleEvent: E => Unit): EventListenerObject[E] = {
+      val __obj = js.Dynamic.literal(handleEvent = js.Any.fromFunction1(handleEvent))
+      __obj.asInstanceOf[EventListenerObject[E]]
+    }
+    
+    extension [Self <: EventListenerObject[?], E](x: Self & EventListenerObject[E]) {
+      
+      inline def setHandleEvent(value: E => Unit): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
     }
   }
   
@@ -68,20 +136,8 @@ object fromEventMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.rxjs.fromEventMod.HasEventTargetAddRemove[T]
-    - typings.rxjs.fromEventMod.NodeStyleEventEmitter
-    - typings.rxjs.fromEventMod.NodeCompatibleEventEmitter
-    - typings.rxjs.fromEventMod.JQueryStyleEventEmitter
-  */
-  trait EventTargetLike[T] extends StObject
-  
-  type FromEventTarget[T] = EventTargetLike[T] | ArrayLike[EventTargetLike[T]]
-  
   @js.native
-  trait HasEventTargetAddRemove[E]
-    extends StObject
-       with EventTargetLike[E] {
+  trait HasEventTargetAddRemove[E] extends StObject {
     
     def addEventListener(`type`: String): Unit = js.native
     def addEventListener(`type`: String, listener: js.Function1[/* evt */ E, Unit]): Unit = js.native
@@ -89,6 +145,9 @@ object fromEventMod {
     def addEventListener(`type`: String, listener: js.Function1[/* evt */ E, Unit], options: AddEventListenerOptions): Unit = js.native
     def addEventListener(`type`: String, listener: Null, options: Boolean): Unit = js.native
     def addEventListener(`type`: String, listener: Null, options: AddEventListenerOptions): Unit = js.native
+    def addEventListener(`type`: String, listener: EventListenerObject[E]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventListenerObject[E], options: Boolean): Unit = js.native
+    def addEventListener(`type`: String, listener: EventListenerObject[E], options: AddEventListenerOptions): Unit = js.native
     
     def removeEventListener(`type`: String): Unit = js.native
     def removeEventListener(`type`: String, listener: js.Function1[/* evt */ E, Unit]): Unit = js.native
@@ -96,36 +155,42 @@ object fromEventMod {
     def removeEventListener(`type`: String, listener: js.Function1[/* evt */ E, Unit], options: EventListenerOptions): Unit = js.native
     def removeEventListener(`type`: String, listener: Null, options: Boolean): Unit = js.native
     def removeEventListener(`type`: String, listener: Null, options: EventListenerOptions): Unit = js.native
-    def removeEventListener(`type`: String, listener: Unit, options: Boolean): Unit = js.native
-    def removeEventListener(`type`: String, listener: Unit, options: EventListenerOptions): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventListenerObject[E]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventListenerObject[E], options: Boolean): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventListenerObject[E], options: EventListenerOptions): Unit = js.native
   }
   
-  trait JQueryStyleEventEmitter
-    extends StObject
-       with EventTargetLike[js.Any] {
+  trait JQueryStyleEventEmitter[TContext, T] extends StObject {
     
-    def off(eventName: String, handler: js.Function): Unit
+    def off(
+      eventName: String,
+      handler: js.ThisFunction2[/* this */ TContext, /* t */ T, /* repeated */ Any, Any]
+    ): Unit
     
-    def on(eventName: String, handler: js.Function): Unit
+    def on(
+      eventName: String,
+      handler: js.ThisFunction2[/* this */ TContext, /* t */ T, /* repeated */ Any, Any]
+    ): Unit
   }
   object JQueryStyleEventEmitter {
     
-    inline def apply(off: (String, js.Function) => Unit, on: (String, js.Function) => Unit): JQueryStyleEventEmitter = {
+    inline def apply[TContext, T](
+      off: (String, js.ThisFunction2[/* this */ TContext, /* t */ T, /* repeated */ Any, Any]) => Unit,
+      on: (String, js.ThisFunction2[/* this */ TContext, /* t */ T, /* repeated */ Any, Any]) => Unit
+    ): JQueryStyleEventEmitter[TContext, T] = {
       val __obj = js.Dynamic.literal(off = js.Any.fromFunction2(off), on = js.Any.fromFunction2(on))
-      __obj.asInstanceOf[JQueryStyleEventEmitter]
+      __obj.asInstanceOf[JQueryStyleEventEmitter[TContext, T]]
     }
     
-    extension [Self <: JQueryStyleEventEmitter](x: Self) {
+    extension [Self <: JQueryStyleEventEmitter[?, ?], TContext, T](x: Self & (JQueryStyleEventEmitter[TContext, T])) {
       
-      inline def setOff(value: (String, js.Function) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
+      inline def setOff(value: (String, js.ThisFunction2[/* this */ TContext, /* t */ T, /* repeated */ Any, Any]) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
       
-      inline def setOn(value: (String, js.Function) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (String, js.ThisFunction2[/* this */ TContext, /* t */ T, /* repeated */ Any, Any]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     }
   }
   
-  trait NodeCompatibleEventEmitter
-    extends StObject
-       with EventTargetLike[js.Any] {
+  trait NodeCompatibleEventEmitter extends StObject {
     
     def addListener(eventName: String, handler: NodeEventHandler): Unit | js.Object
     
@@ -152,13 +217,11 @@ object fromEventMod {
   @js.native
   trait NodeEventHandler extends StObject {
     
-    def apply(args: js.Any*): Unit = js.native
+    def apply(args: Any*): Unit = js.native
   }
   
   @js.native
-  trait NodeStyleEventEmitter
-    extends StObject
-       with EventTargetLike[js.Any] {
+  trait NodeStyleEventEmitter extends StObject {
     
     def addListener(eventName: String, handler: NodeEventHandler): this.type = js.native
     def addListener(eventName: js.Symbol, handler: NodeEventHandler): this.type = js.native

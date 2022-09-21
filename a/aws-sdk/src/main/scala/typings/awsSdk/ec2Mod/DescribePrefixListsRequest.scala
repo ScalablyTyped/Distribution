@@ -48,7 +48,7 @@ object DescribePrefixListsRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setMaxResults(value: Integer): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
@@ -62,6 +62,6 @@ object DescribePrefixListsRequest {
     
     inline def setPrefixListIdsUndefined: Self = StObject.set(x, "PrefixListIds", js.undefined)
     
-    inline def setPrefixListIdsVarargs(value: PrefixListResourceId*): Self = StObject.set(x, "PrefixListIds", js.Array(value :_*))
+    inline def setPrefixListIdsVarargs(value: PrefixListResourceId*): Self = StObject.set(x, "PrefixListIds", js.Array(value*))
   }
 }

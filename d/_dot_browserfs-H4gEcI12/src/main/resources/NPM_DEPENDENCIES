@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      ".browserfs-H4gEcI12" : "1.4.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      ".browserfs-H4gEcI12" : "1.4.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

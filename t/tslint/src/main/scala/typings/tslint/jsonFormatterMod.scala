@@ -10,7 +10,7 @@ object jsonFormatterMod {
   
   @JSImport("tslint/lib/formatters/jsonFormatter", "Formatter")
   @js.native
-  class Formatter () extends AbstractFormatter
+  open class Formatter () extends AbstractFormatter
   /* static members */
   object Formatter {
     

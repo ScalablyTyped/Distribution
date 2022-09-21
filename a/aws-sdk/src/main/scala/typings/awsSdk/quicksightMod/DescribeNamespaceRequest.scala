@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeNamespaceRequest extends StObject {
   
   /**
-    * The ID for the AWS account that contains the QuickSight namespace that you want to describe.
+    * The ID for the Amazon Web Services account that contains the Amazon QuickSight namespace that you want to describe.
     */
   var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   

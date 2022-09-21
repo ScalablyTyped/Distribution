@@ -24,7 +24,7 @@ trait AttractModeControl
   
   var defaultAttractModeIcon: String
   
-  def get_imageElement(): js.Any
+  def get_imageElement(): Any
   
   def get_textElement(): HTMLElement
 }
@@ -45,15 +45,15 @@ object AttractModeControl {
     dispose: () => Unit,
     endUpdate: () => Unit,
     get_element: () => HTMLElement,
-    get_events: () => js.Any,
+    get_events: () => Any,
     get_id: () => String,
-    get_imageElement: () => js.Any,
+    get_imageElement: () => Any,
     get_isInitialized: () => Boolean,
     get_isUpdating: () => Boolean,
     get_textElement: () => HTMLElement,
     initialize: () => Unit,
-    onBubbleEvent: (js.Any, js.Any) => Boolean,
-    raiseBubbleEvent: (js.Any, js.Any) => Unit,
+    onBubbleEvent: (Any, Any) => Boolean,
+    raiseBubbleEvent: (Any, Any) => Unit,
     raisePropertyChanged: String => Unit,
     removeCssClass: String => Unit,
     remove_disposing: js.Function => Unit,
@@ -82,7 +82,7 @@ object AttractModeControl {
     
     inline def setDefaultAttractModeIcon(value: String): Self = StObject.set(x, "defaultAttractModeIcon", value.asInstanceOf[js.Any])
     
-    inline def setGet_imageElement(value: () => js.Any): Self = StObject.set(x, "get_imageElement", js.Any.fromFunction0(value))
+    inline def setGet_imageElement(value: () => Any): Self = StObject.set(x, "get_imageElement", js.Any.fromFunction0(value))
     
     inline def setGet_textElement(value: () => HTMLElement): Self = StObject.set(x, "get_textElement", js.Any.fromFunction0(value))
   }

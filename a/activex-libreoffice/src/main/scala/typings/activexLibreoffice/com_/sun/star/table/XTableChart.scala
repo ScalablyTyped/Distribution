@@ -53,7 +53,7 @@ object XTableChart {
     getHasColumnHeaders: () => Boolean,
     getHasRowHeaders: () => Boolean,
     getRanges: () => SafeArray[CellRangeAddress],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setHasColumnHeaders: Boolean => Unit,
     setHasRowHeaders: Boolean => Unit,

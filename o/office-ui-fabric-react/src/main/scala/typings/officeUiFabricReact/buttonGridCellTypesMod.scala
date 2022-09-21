@@ -147,13 +147,13 @@ object buttonGridCellTypesMod {
       
       inline def setCellDisabledStyleUndefined: Self = StObject.set(x, "cellDisabledStyle", js.undefined)
       
-      inline def setCellDisabledStyleVarargs(value: String*): Self = StObject.set(x, "cellDisabledStyle", js.Array(value :_*))
+      inline def setCellDisabledStyleVarargs(value: String*): Self = StObject.set(x, "cellDisabledStyle", js.Array(value*))
       
       inline def setCellIsSelectedStyle(value: js.Array[String]): Self = StObject.set(x, "cellIsSelectedStyle", value.asInstanceOf[js.Any])
       
       inline def setCellIsSelectedStyleUndefined: Self = StObject.set(x, "cellIsSelectedStyle", js.undefined)
       
-      inline def setCellIsSelectedStyleVarargs(value: String*): Self = StObject.set(x, "cellIsSelectedStyle", js.Array(value :_*))
+      inline def setCellIsSelectedStyleVarargs(value: String*): Self = StObject.set(x, "cellIsSelectedStyle", js.Array(value*))
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

@@ -10,15 +10,12 @@ A library for faking Ajax responses in your Jasmine suite
 | ------------------ | :-------------: |
 | Full name          | jasmine-ajax |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 19 |
-| # downloads        | 2434756 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 536780.6666666666 |
+| # stars            | 547.0 |
 
 ## Links
-- [Homepage](https://github.com/jasmine/jasmine-ajax#readme)
-- [Bugs](https://github.com/jasmine/jasmine-ajax/issues)
-- [Repository](https://github.com/jasmine/jasmine-ajax)
 - [Npm](https://www.npmjs.com/package/jasmine-ajax)
     
 

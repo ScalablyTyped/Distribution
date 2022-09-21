@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait OrderreportsListTransactionsResponse extends StObject {
   
-  /** Identifies what kind of resource this is. Value: the fixed string "content#orderreportsListTransactionsResponse". */
+  /** Identifies what kind of resource this is. Value: the fixed string "`content#orderreportsListTransactionsResponse`". */
   var kind: js.UndefOr[String] = js.undefined
   
   /** The token for the retrieval of the next page of transactions. */
@@ -36,6 +36,6 @@ object OrderreportsListTransactionsResponse {
     
     inline def setTransactionsUndefined: Self = StObject.set(x, "transactions", js.undefined)
     
-    inline def setTransactionsVarargs(value: OrderReportTransaction*): Self = StObject.set(x, "transactions", js.Array(value :_*))
+    inline def setTransactionsVarargs(value: OrderReportTransaction*): Self = StObject.set(x, "transactions", js.Array(value*))
   }
 }

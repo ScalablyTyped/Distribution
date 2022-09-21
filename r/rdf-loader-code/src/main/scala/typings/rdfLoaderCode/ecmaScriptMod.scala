@@ -2,6 +2,7 @@ package typings.rdfLoaderCode
 
 import org.scalablytyped.runtime.Shortcut
 import typings.rdfLoadersRegistry.mod.Loader
+import typings.rdfLoadersRegistry.mod.LoaderRegistry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,17 +14,16 @@ object ecmaScriptMod extends Shortcut {
   val ^ : EcmaScriptLoader = js.native
   
   @js.native
-  trait EcmaScriptLoader
-    extends Loader[js.Any, Options] {
+  trait EcmaScriptLoader extends Loader[Any, Options] {
     
-    def register(registry: typings.rdfLoadersRegistry.mod.^): Unit = js.native
+    def register(registry: LoaderRegistry): Unit = js.native
   }
   
   trait Options extends StObject {
     
     var basePath: js.UndefOr[String] = js.undefined
     
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
   }
   object Options {
     
@@ -38,7 +38,7 @@ object ecmaScriptMod extends Shortcut {
       
       inline def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     }

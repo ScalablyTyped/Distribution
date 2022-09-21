@@ -1,7 +1,7 @@
 
 # Scala.js typings for ffi-napi
 
-Typings are for version 2.4
+Typings are for version 4.0
 
 ## Library description:
 A foreign function interface (FFI) for Node.js, N-API style
@@ -10,10 +10,10 @@ A foreign function interface (FFI) for Node.js, N-API style
 | ------------------ | :-------------: |
 | Full name          | ffi-napi |
 | Keywords           | foreign, function, interface, ffi, libffi, binding, c, napi, stable |
-| # releases         | 9 |
-| # dependents       | 122 |
-| # downloads        | 614977 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 121069.66666666667 |
+| # stars            | 677.0 |
 
 ## Links
 - [Homepage](http://github.com/node-ffi-napi/node-ffi-napi)

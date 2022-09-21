@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait JQueryStatic extends StObject {
   
-  def notify(element: js.Any): JQueryStatic
-  def notify(element: js.Any, notificationdata: js.Any): JQueryStatic
-  def notify(element: js.Any, notificationdata: js.Any, options: NotificationOptions): JQueryStatic
-  def notify(element: js.Any, notificationdata: Unit, options: NotificationOptions): JQueryStatic
-  def notify(element: Unit, notificationdata: js.Any): JQueryStatic
-  def notify(element: Unit, notificationdata: js.Any, options: NotificationOptions): JQueryStatic
+  def notify(element: Any): JQueryStatic
+  def notify(element: Any, notificationdata: Any): JQueryStatic
+  def notify(element: Any, notificationdata: Any, options: NotificationOptions): JQueryStatic
+  def notify(element: Any, notificationdata: Unit, options: NotificationOptions): JQueryStatic
+  def notify(element: Unit, notificationdata: Any): JQueryStatic
+  def notify(element: Unit, notificationdata: Any, options: NotificationOptions): JQueryStatic
   def notify(element: Unit, notificationdata: Unit, options: NotificationOptions): JQueryStatic
   @JSName("notify")
   var notify_Original: JQueryStaticNotify

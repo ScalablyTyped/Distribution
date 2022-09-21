@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientToolTipRelativePosition")
 @js.native
-class ASPxClientToolTipRelativePosition ()
+open class ASPxClientToolTipRelativePosition ()
   extends StObject
      with typings.devexpressWeb.ASPxClientToolTipRelativePosition {
   

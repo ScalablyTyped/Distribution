@@ -2,7 +2,6 @@ package typings.awsSdkClientS3Browser
 
 import typings.awsSdkClientS3Browser.typesObjectIdentifierMod.ObjectIdentifier
 import typings.awsSdkClientS3Browser.typesObjectIdentifierMod.UnmarshalledObjectIdentifier
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ object typesDeleteMod {
     /**
       * _ObjectIdentifierList shape
       */
-    var Objects: js.Array[ObjectIdentifier] | Iterable[ObjectIdentifier]
+    var Objects: js.Array[ObjectIdentifier] | js.Iterable[ObjectIdentifier]
     
     /**
       * <p>Element to enable quiet mode for the request. When you add this element, you must set its value to true.</p>
@@ -23,16 +22,16 @@ object typesDeleteMod {
   }
   object Delete {
     
-    inline def apply(Objects: js.Array[ObjectIdentifier] | Iterable[ObjectIdentifier]): Delete = {
+    inline def apply(Objects: js.Array[ObjectIdentifier] | js.Iterable[ObjectIdentifier]): Delete = {
       val __obj = js.Dynamic.literal(Objects = Objects.asInstanceOf[js.Any])
       __obj.asInstanceOf[Delete]
     }
     
     extension [Self <: Delete](x: Self) {
       
-      inline def setObjects(value: js.Array[ObjectIdentifier] | Iterable[ObjectIdentifier]): Self = StObject.set(x, "Objects", value.asInstanceOf[js.Any])
+      inline def setObjects(value: js.Array[ObjectIdentifier] | js.Iterable[ObjectIdentifier]): Self = StObject.set(x, "Objects", value.asInstanceOf[js.Any])
       
-      inline def setObjectsVarargs(value: ObjectIdentifier*): Self = StObject.set(x, "Objects", js.Array(value :_*))
+      inline def setObjectsVarargs(value: ObjectIdentifier*): Self = StObject.set(x, "Objects", js.Array(value*))
       
       inline def setQuiet(value: Boolean): Self = StObject.set(x, "Quiet", value.asInstanceOf[js.Any])
       
@@ -61,7 +60,7 @@ object typesDeleteMod {
       
       inline def setObjects(value: js.Array[UnmarshalledObjectIdentifier]): Self = StObject.set(x, "Objects", value.asInstanceOf[js.Any])
       
-      inline def setObjectsVarargs(value: UnmarshalledObjectIdentifier*): Self = StObject.set(x, "Objects", js.Array(value :_*))
+      inline def setObjectsVarargs(value: UnmarshalledObjectIdentifier*): Self = StObject.set(x, "Objects", js.Array(value*))
     }
   }
 }

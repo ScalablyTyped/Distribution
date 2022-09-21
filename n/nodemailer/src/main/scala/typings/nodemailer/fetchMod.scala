@@ -1,7 +1,7 @@
 package typings.nodemailer
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.IncomingHttpHeaders
 import typings.node.streamMod.Writable
 import typings.node.tlsMod.TlsOptions

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("terminal-kit/Terminal", "AutocompletionArray")
 @js.native
-class AutocompletionArray[T] ()
+open class AutocompletionArray[T] ()
   extends StObject
      with Array[T] {
   

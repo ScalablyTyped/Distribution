@@ -10,10 +10,10 @@ Custom errors and exceptions in Node.js
 | ------------------ | :-------------: |
 | Full name          | custom-error-generator |
 | Keywords           | error, errors, error factory, custom error |
-| # releases         | 0 |
-| # dependents       | 28 |
-| # downloads        | 120271 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 15220.666666666666 |
+| # stars            | 14.0 |
 
 ## Links
 - [Homepage](https://github.com/jproulx/node-custom-error)

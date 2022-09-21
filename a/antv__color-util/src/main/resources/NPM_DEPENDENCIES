@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@antv/color-util" : "2.0.5"
+      "@antv/color-util" : "2.0.6"
     }
   ],
   "test-dependencies" : [
     {
-      "@antv/color-util" : "2.0.5"
+      "@antv/color-util" : "2.0.6"
     }
   ],
   "compile-devDependencies" : [

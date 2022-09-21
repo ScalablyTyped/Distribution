@@ -11,14 +11,14 @@ object mod {
   
   @JSImport("react-otp-input", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[OTPInputProps, js.Object, js.Any] {
+  open class default protected ()
+    extends Component[OTPInputProps, js.Object, Any] {
     def this(props: OTPInputProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: OTPInputProps, context: js.Any) = this()
+    def this(props: OTPInputProps, context: Any) = this()
   }
   
   trait OTPInputProps extends StObject {
@@ -41,7 +41,7 @@ object mod {
     
     var numInputs: Double
     
-    var onChange: js.Any
+    var onChange: Any
     
     var separator: js.UndefOr[Element] = js.undefined
     
@@ -51,7 +51,7 @@ object mod {
   }
   object OTPInputProps {
     
-    inline def apply(numInputs: Double, onChange: js.Any, value: Double | String): OTPInputProps = {
+    inline def apply(numInputs: Double, onChange: Any, value: Double | String): OTPInputProps = {
       val __obj = js.Dynamic.literal(numInputs = numInputs.asInstanceOf[js.Any], onChange = onChange.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[OTPInputProps]
     }
@@ -92,7 +92,7 @@ object mod {
       
       inline def setNumInputs(value: Double): Self = StObject.set(x, "numInputs", value.asInstanceOf[js.Any])
       
-      inline def setOnChange(value: js.Any): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
+      inline def setOnChange(value: Any): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
       
       inline def setSeparator(value: Element): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       

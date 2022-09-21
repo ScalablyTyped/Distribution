@@ -22,7 +22,7 @@ trait SubscribableFunctions[T]
   def getSubscriptionsCount(): Double = js.native
   def getSubscriptionsCount(event: String): Double = js.native
   
-  def init[S /* <: Subscribable_[js.Any] */](instance: S): Unit = js.native
+  def init[S /* <: Subscribable_[Any] */](instance: S): Unit = js.native
   
   def notifySubscribers(): Unit = js.native
   def notifySubscribers(valueToWrite: T): Unit = js.native
@@ -31,6 +31,11 @@ trait SubscribableFunctions[T]
   
   def subscribe[TTarget](callback: SubscriptionCallback[T, TTarget]): Subscription = js.native
   def subscribe[TTarget](callback: SubscriptionCallback[T, TTarget], callbackTarget: TTarget): Subscription = js.native
+  def subscribe[TTarget](
+    callback: SubscriptionCallback[T, TTarget],
+    callbackTarget: TTarget,
+    event: beforeChange | spectate | awake
+  ): Subscription = js.native
   def subscribe[X, TTarget](callback: SubscriptionCallback[X, TTarget], callbackTarget: TTarget, event: String): Subscription = js.native
   @JSName("subscribe")
   def subscribe_arrayChange[TTarget](
@@ -41,13 +46,7 @@ trait SubscribableFunctions[T]
   @JSName("subscribe")
   def subscribe_asleep[TTarget](callback: SubscriptionCallback[Unit, TTarget], callbackTarget: TTarget, event: asleep): Subscription = js.native
   @JSName("subscribe")
-  def subscribe_awake[TTarget](callback: SubscriptionCallback[T, TTarget], callbackTarget: TTarget, event: awake): Subscription = js.native
-  @JSName("subscribe")
-  def subscribe_beforeChange[TTarget](callback: SubscriptionCallback[T, TTarget], callbackTarget: TTarget, event: beforeChange): Subscription = js.native
-  @JSName("subscribe")
   def subscribe_change[TTarget](callback: SubscriptionCallback[T, TTarget], callbackTarget: TTarget, event: change): Subscription = js.native
   @JSName("subscribe")
   def subscribe_change[TTarget](callback: SubscriptionCallback[T, TTarget], callbackTarget: Unit, event: change): Subscription = js.native
-  @JSName("subscribe")
-  def subscribe_spectate[TTarget](callback: SubscriptionCallback[T, TTarget], callbackTarget: TTarget, event: spectate): Subscription = js.native
 }

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.includeCompanyLogo
   - typings.microsoftGraph.microsoftGraphStrings.includeCompanyName
   - typings.microsoftGraph.microsoftGraphStrings.includeContactInformation
+  - typings.microsoftGraph.microsoftGraphStrings.includeDeviceDetails
 */
 trait NotificationTemplateBrandingOptions extends StObject
 object NotificationTemplateBrandingOptions {
@@ -19,6 +20,8 @@ object NotificationTemplateBrandingOptions {
   inline def includeCompanyName: typings.microsoftGraph.microsoftGraphStrings.includeCompanyName = "includeCompanyName".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.includeCompanyName]
   
   inline def includeContactInformation: typings.microsoftGraph.microsoftGraphStrings.includeContactInformation = "includeContactInformation".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.includeContactInformation]
+  
+  inline def includeDeviceDetails: typings.microsoftGraph.microsoftGraphStrings.includeDeviceDetails = "includeDeviceDetails".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.includeDeviceDetails]
   
   inline def none: none_ = "none".asInstanceOf[none_]
 }

@@ -19,7 +19,7 @@ trait workersOpenOptions
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-workers.html#open)
     */
-  var client: js.UndefOr[js.Any] = js.undefined
+  var client: js.UndefOr[Any] = js.undefined
   
   /**
     * [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) allows for cancelable asynchronous job.
@@ -30,6 +30,8 @@ trait workersOpenOptions
   
   /**
     * Indicates how to load the module.
+    *
+    * @default distributed
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-workers.html#open)
     */
@@ -48,7 +50,7 @@ object workersOpenOptions {
   
   extension [Self <: workersOpenOptions](x: Self) {
     
-    inline def setClient(value: js.Any): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+    inline def setClient(value: Any): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
     inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
     

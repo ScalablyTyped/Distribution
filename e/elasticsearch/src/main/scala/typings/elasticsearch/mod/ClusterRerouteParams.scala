@@ -45,7 +45,7 @@ object ClusterRerouteParams {
     
     inline def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
     
-    inline def setMetricVarargs(value: String*): Self = StObject.set(x, "metric", js.Array(value :_*))
+    inline def setMetricVarargs(value: String*): Self = StObject.set(x, "metric", js.Array(value*))
     
     inline def setRetryFailed(value: Boolean): Self = StObject.set(x, "retryFailed", value.asInstanceOf[js.Any])
     

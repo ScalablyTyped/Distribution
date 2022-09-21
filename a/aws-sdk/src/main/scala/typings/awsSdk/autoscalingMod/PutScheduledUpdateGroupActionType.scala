@@ -9,17 +9,17 @@ trait PutScheduledUpdateGroupActionType extends StObject {
   /**
     * The name of the Auto Scaling group.
     */
-  var AutoScalingGroupName: ResourceName
+  var AutoScalingGroupName: XmlStringMaxLen255
   
   /**
-    * The desired capacity is the initial capacity of the Auto Scaling group after the scheduled action runs and the capacity it attempts to maintain. It can scale beyond this capacity if you add more scaling conditions. 
+    * The desired capacity is the initial capacity of the Auto Scaling group after the scheduled action runs and the capacity it attempts to maintain. It can scale beyond this capacity if you add more scaling conditions.   You must specify at least one of the following properties: MaxSize, MinSize, or DesiredCapacity.  
     */
   var DesiredCapacity: js.UndefOr[AutoScalingGroupDesiredCapacity] = js.undefined
   
   /**
-    * The date and time for the recurring schedule to end. Amazon EC2 Auto Scaling does not perform the action after this time.
+    * The date and time for the recurring schedule to end, in UTC. For example, "2021-06-01T00:00:00Z".
     */
-  var EndTime: js.UndefOr[TimestampType] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The maximum size of the Auto Scaling group.
@@ -32,7 +32,7 @@ trait PutScheduledUpdateGroupActionType extends StObject {
   var MinSize: js.UndefOr[AutoScalingGroupMinSize] = js.undefined
   
   /**
-    * The recurring schedule for this action, in Unix cron syntax format. This format consists of five fields separated by white spaces: [Minute] [Hour] [Day_of_Month] [Month_of_Year] [Day_of_Week]. The value must be in quotes (for example, "30 0 1 1,6,12 *"). For more information about this format, see Crontab. When StartTime and EndTime are specified with Recurrence, they form the boundaries of when the recurring action starts and stops.
+    * The recurring schedule for this action. This format consists of five fields separated by white spaces: [Minute] [Hour] [Day_of_Month] [Month_of_Year] [Day_of_Week]. The value must be in quotes (for example, "30 0 1 1,6,12 *"). For more information about this format, see Crontab. When StartTime and EndTime are specified with Recurrence, they form the boundaries of when the recurring action starts and stops. Cron expressions use Universal Coordinated Time (UTC) by default.
     */
   var Recurrence: js.UndefOr[XmlStringMaxLen255] = js.undefined
   
@@ -42,31 +42,36 @@ trait PutScheduledUpdateGroupActionType extends StObject {
   var ScheduledActionName: XmlStringMaxLen255
   
   /**
-    * The date and time for this action to start, in YYYY-MM-DDThh:mm:ssZ format in UTC/GMT only and in quotes (for example, "2019-06-01T00:00:00Z"). If you specify Recurrence and StartTime, Amazon EC2 Auto Scaling performs the action at this time, and then performs the action based on the specified recurrence. If you try to schedule your action in the past, Amazon EC2 Auto Scaling returns an error message.
+    * The date and time for this action to start, in YYYY-MM-DDThh:mm:ssZ format in UTC/GMT only and in quotes (for example, "2021-06-01T00:00:00Z"). If you specify Recurrence and StartTime, Amazon EC2 Auto Scaling performs the action at this time, and then performs the action based on the specified recurrence.
     */
-  var StartTime: js.UndefOr[TimestampType] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * This parameter is no longer used.
+    * This property is no longer used.
     */
-  var Time: js.UndefOr[TimestampType] = js.undefined
+  var Time: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * Specifies the time zone for a cron expression. If a time zone is not provided, UTC is used by default.  Valid values are the canonical names of the IANA time zones, derived from the IANA Time Zone Database (such as Etc/GMT+9 or Pacific/Tahiti). For more information, see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones.
+    */
+  var TimeZone: js.UndefOr[XmlStringMaxLen255] = js.undefined
 }
 object PutScheduledUpdateGroupActionType {
   
-  inline def apply(AutoScalingGroupName: ResourceName, ScheduledActionName: XmlStringMaxLen255): PutScheduledUpdateGroupActionType = {
+  inline def apply(AutoScalingGroupName: XmlStringMaxLen255, ScheduledActionName: XmlStringMaxLen255): PutScheduledUpdateGroupActionType = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName.asInstanceOf[js.Any], ScheduledActionName = ScheduledActionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutScheduledUpdateGroupActionType]
   }
   
   extension [Self <: PutScheduledUpdateGroupActionType](x: Self) {
     
-    inline def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
     inline def setDesiredCapacity(value: AutoScalingGroupDesiredCapacity): Self = StObject.set(x, "DesiredCapacity", value.asInstanceOf[js.Any])
     
     inline def setDesiredCapacityUndefined: Self = StObject.set(x, "DesiredCapacity", js.undefined)
     
-    inline def setEndTime(value: TimestampType): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -84,12 +89,16 @@ object PutScheduledUpdateGroupActionType {
     
     inline def setScheduledActionName(value: XmlStringMaxLen255): Self = StObject.set(x, "ScheduledActionName", value.asInstanceOf[js.Any])
     
-    inline def setStartTime(value: TimestampType): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
-    inline def setTime(value: TimestampType): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
+    inline def setTime(value: js.Date): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
     
     inline def setTimeUndefined: Self = StObject.set(x, "Time", js.undefined)
+    
+    inline def setTimeZone(value: XmlStringMaxLen255): Self = StObject.set(x, "TimeZone", value.asInstanceOf[js.Any])
+    
+    inline def setTimeZoneUndefined: Self = StObject.set(x, "TimeZone", js.undefined)
   }
 }

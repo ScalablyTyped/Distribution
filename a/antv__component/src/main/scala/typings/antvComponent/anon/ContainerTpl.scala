@@ -13,47 +13,69 @@ trait ContainerTpl extends StObject {
   
   var capture: Boolean
   
-  var container: js.Any
+  var container: Any
   
   var containerClassName: String
   
   var containerTpl: String
   
-  var crosshairTpl: String
+  var crosshairs: Any
   
-  var defaultCfg: `0`
+  var crosshairsRegion: Any
   
-  var defaultStyles: StringDictionary[BackgroundColor | BackgroundColorColor | ColorFontFamily]
+  var customContent: Any
   
-  var domStyles: js.Any
+  var defaultStyles: StringDictionary[
+    BorderRadius | BoxShadow | Float | ListStyleType | Margin | MarginBottom | MarginLeft | MarginRight
+  ]
   
-  var end: X
+  var domStyles: Any
   
-  var events: js.Any
+  var events: Any
   
   var id: String
+  
+  var itemTpl: String
+  
+  var items: js.Array[Any]
   
   var locationType: String
   
   var name: String
   
+  var offset: Double
+  
   var offsetX: Double
   
   var offsetY: Double
   
-  var parent: js.Any
+  var parent: Any
   
-  var start: X
+  var position: String
   
-  var text: js.Any
+  /**
+    * tooltip 限制的区域
+    * @type {Region}
+    */
+  var region: Any
   
-  var textTpl: String
+  var showTitle: Boolean
+  
+  var title: Any
   
   var `type`: String
   
   var updateAutoRender: Boolean
   
   var visible: Boolean
+  
+  var x: Double
+  
+  var xCrosshairTpl: String
+  
+  var y: Double
+  
+  var yCrosshairTpl: String
 }
 object ContainerTpl {
   
@@ -61,29 +83,39 @@ object ContainerTpl {
     animate: Boolean,
     animateOption: Appear,
     capture: Boolean,
-    container: js.Any,
+    container: Any,
     containerClassName: String,
     containerTpl: String,
-    crosshairTpl: String,
-    defaultCfg: `0`,
-    defaultStyles: StringDictionary[BackgroundColor | BackgroundColorColor | ColorFontFamily],
-    domStyles: js.Any,
-    end: X,
-    events: js.Any,
+    crosshairs: Any,
+    crosshairsRegion: Any,
+    customContent: Any,
+    defaultStyles: StringDictionary[
+      BorderRadius | BoxShadow | Float | ListStyleType | Margin | MarginBottom | MarginLeft | MarginRight
+    ],
+    domStyles: Any,
+    events: Any,
     id: String,
+    itemTpl: String,
+    items: js.Array[Any],
     locationType: String,
     name: String,
+    offset: Double,
     offsetX: Double,
     offsetY: Double,
-    parent: js.Any,
-    start: X,
-    text: js.Any,
-    textTpl: String,
+    parent: Any,
+    position: String,
+    region: Any,
+    showTitle: Boolean,
+    title: Any,
     `type`: String,
     updateAutoRender: Boolean,
-    visible: Boolean
+    visible: Boolean,
+    x: Double,
+    xCrosshairTpl: String,
+    y: Double,
+    yCrosshairTpl: String
   ): ContainerTpl = {
-    val __obj = js.Dynamic.literal(animate = animate.asInstanceOf[js.Any], animateOption = animateOption.asInstanceOf[js.Any], capture = capture.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], containerClassName = containerClassName.asInstanceOf[js.Any], containerTpl = containerTpl.asInstanceOf[js.Any], crosshairTpl = crosshairTpl.asInstanceOf[js.Any], defaultCfg = defaultCfg.asInstanceOf[js.Any], defaultStyles = defaultStyles.asInstanceOf[js.Any], domStyles = domStyles.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], locationType = locationType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textTpl = textTpl.asInstanceOf[js.Any], updateAutoRender = updateAutoRender.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(animate = animate.asInstanceOf[js.Any], animateOption = animateOption.asInstanceOf[js.Any], capture = capture.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], containerClassName = containerClassName.asInstanceOf[js.Any], containerTpl = containerTpl.asInstanceOf[js.Any], crosshairs = crosshairs.asInstanceOf[js.Any], crosshairsRegion = crosshairsRegion.asInstanceOf[js.Any], customContent = customContent.asInstanceOf[js.Any], defaultStyles = defaultStyles.asInstanceOf[js.Any], domStyles = domStyles.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], itemTpl = itemTpl.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], locationType = locationType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], showTitle = showTitle.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], updateAutoRender = updateAutoRender.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], xCrosshairTpl = xCrosshairTpl.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], yCrosshairTpl = yCrosshairTpl.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerTpl]
   }
@@ -96,46 +128,68 @@ object ContainerTpl {
     
     inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
-    inline def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setContainerClassName(value: String): Self = StObject.set(x, "containerClassName", value.asInstanceOf[js.Any])
     
     inline def setContainerTpl(value: String): Self = StObject.set(x, "containerTpl", value.asInstanceOf[js.Any])
     
-    inline def setCrosshairTpl(value: String): Self = StObject.set(x, "crosshairTpl", value.asInstanceOf[js.Any])
+    inline def setCrosshairs(value: Any): Self = StObject.set(x, "crosshairs", value.asInstanceOf[js.Any])
     
-    inline def setDefaultCfg(value: `0`): Self = StObject.set(x, "defaultCfg", value.asInstanceOf[js.Any])
+    inline def setCrosshairsRegion(value: Any): Self = StObject.set(x, "crosshairsRegion", value.asInstanceOf[js.Any])
     
-    inline def setDefaultStyles(value: StringDictionary[BackgroundColor | BackgroundColorColor | ColorFontFamily]): Self = StObject.set(x, "defaultStyles", value.asInstanceOf[js.Any])
+    inline def setCustomContent(value: Any): Self = StObject.set(x, "customContent", value.asInstanceOf[js.Any])
     
-    inline def setDomStyles(value: js.Any): Self = StObject.set(x, "domStyles", value.asInstanceOf[js.Any])
+    inline def setDefaultStyles(
+      value: StringDictionary[
+          BorderRadius | BoxShadow | Float | ListStyleType | Margin | MarginBottom | MarginLeft | MarginRight
+        ]
+    ): Self = StObject.set(x, "defaultStyles", value.asInstanceOf[js.Any])
     
-    inline def setEnd(value: X): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setDomStyles(value: Any): Self = StObject.set(x, "domStyles", value.asInstanceOf[js.Any])
     
-    inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setItemTpl(value: String): Self = StObject.set(x, "itemTpl", value.asInstanceOf[js.Any])
+    
+    inline def setItems(value: js.Array[Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setItemsVarargs(value: Any*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setLocationType(value: String): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
     inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
     inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    inline def setStart(value: X): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    inline def setText(value: js.Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setRegion(value: Any): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    inline def setTextTpl(value: String): Self = StObject.set(x, "textTpl", value.asInstanceOf[js.Any])
+    inline def setShowTitle(value: Boolean): Self = StObject.set(x, "showTitle", value.asInstanceOf[js.Any])
+    
+    inline def setTitle(value: Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setUpdateAutoRender(value: Boolean): Self = StObject.set(x, "updateAutoRender", value.asInstanceOf[js.Any])
     
     inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    
+    inline def setXCrosshairTpl(value: String): Self = StObject.set(x, "xCrosshairTpl", value.asInstanceOf[js.Any])
+    
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    
+    inline def setYCrosshairTpl(value: String): Self = StObject.set(x, "yCrosshairTpl", value.asInstanceOf[js.Any])
   }
 }

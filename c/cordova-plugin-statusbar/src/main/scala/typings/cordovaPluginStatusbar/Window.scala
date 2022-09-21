@@ -12,7 +12,7 @@ trait Window extends StObject {
   var StatusBar: typings.cordovaPluginStatusbar.StatusBar = js.native
   
   @JSName("addEventListener")
-  def addEventListener_statusTap(`type`: statusTap, listener: js.Function1[/* ev */ Event, js.Any]): Unit = js.native
+  def addEventListener_statusTap(`type`: statusTap, listener: js.Function1[/* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_statusTap(`type`: statusTap, listener: js.Function1[/* ev */ Event, js.Any], useCapture: Boolean): Unit = js.native
+  def addEventListener_statusTap(`type`: statusTap, listener: js.Function1[/* ev */ Event, Any], useCapture: Boolean): Unit = js.native
 }

@@ -1,6 +1,5 @@
 package typings.winrt.global.Windows
 
-import typings.std.Date
 import typings.winrt.Windows.Data.Xml.Dom.XmlDocument
 import typings.winrt.Windows.Foundation.Collections.IVector
 import typings.winrt.Windows.Foundation.Collections.IVectorView
@@ -31,7 +30,7 @@ object Web {
     
     @JSGlobal("Windows.Web.AtomPub.AtomPubClient")
     @js.native
-    class AtomPubClient ()
+    open class AtomPubClient ()
       extends StObject
          with typings.winrt.Windows.Web.AtomPub.AtomPubClient {
       def this(serverCredential: PasswordCredential) = this()
@@ -93,7 +92,7 @@ object Web {
     
     @JSGlobal("Windows.Web.AtomPub.ResourceCollection")
     @js.native
-    class ResourceCollection ()
+    open class ResourceCollection ()
       extends StObject
          with typings.winrt.Windows.Web.AtomPub.ResourceCollection {
       
@@ -136,7 +135,7 @@ object Web {
     
     @JSGlobal("Windows.Web.AtomPub.ServiceDocument")
     @js.native
-    class ServiceDocument ()
+    open class ServiceDocument ()
       extends StObject
          with typings.winrt.Windows.Web.AtomPub.ServiceDocument {
       
@@ -170,7 +169,7 @@ object Web {
     
     @JSGlobal("Windows.Web.AtomPub.Workspace")
     @js.native
-    class Workspace ()
+    open class Workspace ()
       extends StObject
          with typings.winrt.Windows.Web.AtomPub.Workspace {
       
@@ -210,7 +209,7 @@ object Web {
     
     @JSGlobal("Windows.Web.Syndication.SyndicationAttribute")
     @js.native
-    class SyndicationAttribute ()
+    open class SyndicationAttribute ()
       extends StObject
          with typings.winrt.Windows.Web.Syndication.SyndicationAttribute {
       def this(attributeName: String, attributeNamespace: String, attributeValue: String) = this()
@@ -227,7 +226,7 @@ object Web {
     
     @JSGlobal("Windows.Web.Syndication.SyndicationCategory")
     @js.native
-    class SyndicationCategory ()
+    open class SyndicationCategory ()
       extends StObject
          with typings.winrt.Windows.Web.Syndication.SyndicationCategory {
       def this(term: String) = this()
@@ -269,7 +268,7 @@ object Web {
     
     @JSGlobal("Windows.Web.Syndication.SyndicationClient")
     @js.native
-    class SyndicationClient ()
+    open class SyndicationClient ()
       extends StObject
          with typings.winrt.Windows.Web.Syndication.SyndicationClient {
       def this(serverCredential: PasswordCredential) = this()
@@ -298,7 +297,7 @@ object Web {
     
     @JSGlobal("Windows.Web.Syndication.SyndicationContent")
     @js.native
-    class SyndicationContent ()
+    open class SyndicationContent ()
       extends StObject
          with typings.winrt.Windows.Web.Syndication.SyndicationContent {
       def this(sourceUri: Uri) = this()
@@ -343,7 +342,7 @@ object Web {
     
     @JSGlobal("Windows.Web.Syndication.SyndicationError")
     @js.native
-    class SyndicationError ()
+    open class SyndicationError ()
       extends StObject
          with typings.winrt.Windows.Web.Syndication.SyndicationError
     /* static members */
@@ -378,7 +377,7 @@ object Web {
     
     @JSGlobal("Windows.Web.Syndication.SyndicationFeed")
     @js.native
-    class SyndicationFeed ()
+    open class SyndicationFeed ()
       extends StObject
          with typings.winrt.Windows.Web.Syndication.SyndicationFeed {
       def this(title: String, subtitle: String, uri: Uri) = this()
@@ -426,7 +425,7 @@ object Web {
       var language: String = js.native
       
       /* CompleteClass */
-      var lastUpdatedTime: Date = js.native
+      var lastUpdatedTime: js.Date = js.native
       
       /* CompleteClass */
       var lastUri: Uri = js.native
@@ -490,7 +489,7 @@ object Web {
     
     @JSGlobal("Windows.Web.Syndication.SyndicationGenerator")
     @js.native
-    class SyndicationGenerator ()
+    open class SyndicationGenerator ()
       extends StObject
          with typings.winrt.Windows.Web.Syndication.SyndicationGenerator {
       def this(text: String) = this()
@@ -531,7 +530,7 @@ object Web {
     
     @JSGlobal("Windows.Web.Syndication.SyndicationItem")
     @js.native
-    class SyndicationItem ()
+    open class SyndicationItem ()
       extends StObject
          with typings.winrt.Windows.Web.Syndication.SyndicationItem {
       def this(title: String, content: typings.winrt.Windows.Web.Syndication.SyndicationContent, uri: Uri) = this()
@@ -582,7 +581,7 @@ object Web {
       var language: String = js.native
       
       /* CompleteClass */
-      var lastUpdatedTime: Date = js.native
+      var lastUpdatedTime: js.Date = js.native
       
       /* CompleteClass */
       var links: IVector[typings.winrt.Windows.Web.Syndication.SyndicationLink] = js.native
@@ -603,7 +602,7 @@ object Web {
       var nodeValue: String = js.native
       
       /* CompleteClass */
-      var publishedDate: Date = js.native
+      var publishedDate: js.Date = js.native
       
       /* CompleteClass */
       var rights: ISyndicationText = js.native
@@ -620,7 +619,7 @@ object Web {
     
     @JSGlobal("Windows.Web.Syndication.SyndicationLink")
     @js.native
-    class SyndicationLink ()
+    open class SyndicationLink ()
       extends StObject
          with typings.winrt.Windows.Web.Syndication.SyndicationLink {
       def this(uri: Uri) = this()
@@ -671,7 +670,7 @@ object Web {
     
     @JSGlobal("Windows.Web.Syndication.SyndicationNode")
     @js.native
-    class SyndicationNode ()
+    open class SyndicationNode ()
       extends StObject
          with typings.winrt.Windows.Web.Syndication.SyndicationNode {
       def this(nodeName: String, nodeNamespace: String, nodeValue: String) = this()
@@ -703,7 +702,7 @@ object Web {
     
     @JSGlobal("Windows.Web.Syndication.SyndicationPerson")
     @js.native
-    class SyndicationPerson ()
+    open class SyndicationPerson ()
       extends StObject
          with typings.winrt.Windows.Web.Syndication.SyndicationPerson {
       def this(name: String) = this()
@@ -745,7 +744,7 @@ object Web {
     
     @JSGlobal("Windows.Web.Syndication.SyndicationText")
     @js.native
-    class SyndicationText ()
+    open class SyndicationText ()
       extends StObject
          with typings.winrt.Windows.Web.Syndication.SyndicationText {
       def this(text: String) = this()
@@ -802,7 +801,7 @@ object Web {
   
   @JSGlobal("Windows.Web.WebError")
   @js.native
-  class WebError ()
+  open class WebError ()
     extends StObject
        with typings.winrt.Windows.Web.WebError
   /* static members */

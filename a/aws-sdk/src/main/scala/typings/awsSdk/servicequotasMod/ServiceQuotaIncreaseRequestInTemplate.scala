@@ -7,42 +7,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ServiceQuotaIncreaseRequestInTemplate extends StObject {
   
   /**
-    * The AWS Region where the increase request occurs.
+    * The AWS Region.
     */
   var AwsRegion: js.UndefOr[typings.awsSdk.servicequotasMod.AwsRegion] = js.undefined
   
   /**
-    * Identifies the new, increased value of the service quota in the increase request. 
+    * The new, increased value of the quota.
     */
   var DesiredValue: js.UndefOr[QuotaValue] = js.undefined
   
   /**
-    * Specifies if the quota is a global quota.
+    * Indicates whether the quota is global.
     */
   var GlobalQuota: js.UndefOr[typings.awsSdk.servicequotasMod.GlobalQuota] = js.undefined
   
   /**
-    * The code identifier for the service quota specified in the increase request.
+    * The quota identifier.
     */
   var QuotaCode: js.UndefOr[typings.awsSdk.servicequotasMod.QuotaCode] = js.undefined
   
   /**
-    * The name of the service quota in the increase request.
+    * The quota name.
     */
   var QuotaName: js.UndefOr[typings.awsSdk.servicequotasMod.QuotaName] = js.undefined
   
   /**
-    * The code identifier for the AWS service specified in the increase request.
+    * The service identifier.
     */
   var ServiceCode: js.UndefOr[typings.awsSdk.servicequotasMod.ServiceCode] = js.undefined
   
   /**
-    * The name of the AWS service specified in the increase request. 
+    * The service name.
     */
   var ServiceName: js.UndefOr[typings.awsSdk.servicequotasMod.ServiceName] = js.undefined
   
   /**
-    * The unit of measure for the increase request.
+    * The unit of measurement.
     */
   var Unit: js.UndefOr[QuotaUnit] = js.undefined
 }

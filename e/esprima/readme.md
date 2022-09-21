@@ -11,9 +11,9 @@ ECMAScript parsing infrastructure for multipurpose analysis
 | Full name          | esprima |
 | Keywords           | ast, ecmascript, esprima, javascript, parser, syntax |
 | # releases         | 1 |
-| # dependents       | 1778 |
-| # downloads        | 1260949823 |
-| # stars            | 74 |
+| # dependents       | 0.0 |
+| # downloads        | 1.4441823566666666E8 |
+| # stars            | 6556.0 |
 
 ## Links
 - [Homepage](http://esprima.org)

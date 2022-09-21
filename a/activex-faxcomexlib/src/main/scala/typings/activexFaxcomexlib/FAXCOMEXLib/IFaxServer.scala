@@ -33,7 +33,7 @@ trait IFaxServer extends StObject {
   def GetDevices(): FaxDevices
   
   /** Return server level extention property */
-  def GetExtensionProperty(bstrGUID: String): js.Any
+  def GetExtensionProperty(bstrGUID: String): Any
   
   /** The inbound routing configuration object */
   val InboundRouting: FaxInboundRouting
@@ -72,7 +72,7 @@ trait IFaxServer extends StObject {
   ): Unit
   
   /** Register inbound routing extension */
-  def RegisterInboundRoutingExtension(bstrExtensionName: String, bstrFriendlyName: String, bstrImageName: String, vMethods: js.Any): Unit
+  def RegisterInboundRoutingExtension(bstrExtensionName: String, bstrFriendlyName: String, bstrImageName: String, vMethods: Any): Unit
   
   /** Events the fax Server is listening to */
   val RegisteredEvents: FAX_SERVER_EVENTS_TYPE_ENUM
@@ -84,7 +84,7 @@ trait IFaxServer extends StObject {
   val ServerName: String
   
   /** Set server level extention property */
-  def SetExtensionProperty(bstrGUID: String, vProperty: SafeArray[js.Any]): Unit
+  def SetExtensionProperty(bstrGUID: String, vProperty: SafeArray[Any]): Unit
   
   /** Unregister device provider */
   def UnregisterDeviceProvider(bstrUniqueName: String): Unit
@@ -103,7 +103,7 @@ object IFaxServer {
     Folders: FaxFolders,
     GetDeviceProviders: () => FaxDeviceProviders,
     GetDevices: () => FaxDevices,
-    GetExtensionProperty: String => js.Any,
+    GetExtensionProperty: String => Any,
     InboundRouting: FaxInboundRouting,
     ListenToServerEvents: FAX_SERVER_EVENTS_TYPE_ENUM => Unit,
     LoggingOptions: FaxLoggingOptions,
@@ -114,11 +114,11 @@ object IFaxServer {
     OutboundRouting: FaxOutboundRouting,
     ReceiptOptions: FaxReceiptOptions,
     RegisterDeviceProvider: (String, String, String, String, Double) => Unit,
-    RegisterInboundRoutingExtension: (String, String, String, js.Any) => Unit,
+    RegisterInboundRoutingExtension: (String, String, String, Any) => Unit,
     RegisteredEvents: FAX_SERVER_EVENTS_TYPE_ENUM,
     Security: FaxSecurity,
     ServerName: String,
-    SetExtensionProperty: (String, SafeArray[js.Any]) => Unit,
+    SetExtensionProperty: (String, SafeArray[Any]) => Unit,
     UnregisterDeviceProvider: String => Unit,
     UnregisterInboundRoutingExtension: String => Unit
   ): IFaxServer = {
@@ -144,7 +144,7 @@ object IFaxServer {
     
     inline def setGetDevices(value: () => FaxDevices): Self = StObject.set(x, "GetDevices", js.Any.fromFunction0(value))
     
-    inline def setGetExtensionProperty(value: String => js.Any): Self = StObject.set(x, "GetExtensionProperty", js.Any.fromFunction1(value))
+    inline def setGetExtensionProperty(value: String => Any): Self = StObject.set(x, "GetExtensionProperty", js.Any.fromFunction1(value))
     
     inline def setInboundRouting(value: FaxInboundRouting): Self = StObject.set(x, "InboundRouting", value.asInstanceOf[js.Any])
     
@@ -166,7 +166,7 @@ object IFaxServer {
     
     inline def setRegisterDeviceProvider(value: (String, String, String, String, Double) => Unit): Self = StObject.set(x, "RegisterDeviceProvider", js.Any.fromFunction5(value))
     
-    inline def setRegisterInboundRoutingExtension(value: (String, String, String, js.Any) => Unit): Self = StObject.set(x, "RegisterInboundRoutingExtension", js.Any.fromFunction4(value))
+    inline def setRegisterInboundRoutingExtension(value: (String, String, String, Any) => Unit): Self = StObject.set(x, "RegisterInboundRoutingExtension", js.Any.fromFunction4(value))
     
     inline def setRegisteredEvents(value: FAX_SERVER_EVENTS_TYPE_ENUM): Self = StObject.set(x, "RegisteredEvents", value.asInstanceOf[js.Any])
     
@@ -174,7 +174,7 @@ object IFaxServer {
     
     inline def setServerName(value: String): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
     
-    inline def setSetExtensionProperty(value: (String, SafeArray[js.Any]) => Unit): Self = StObject.set(x, "SetExtensionProperty", js.Any.fromFunction2(value))
+    inline def setSetExtensionProperty(value: (String, SafeArray[Any]) => Unit): Self = StObject.set(x, "SetExtensionProperty", js.Any.fromFunction2(value))
     
     inline def setUnregisterDeviceProvider(value: String => Unit): Self = StObject.set(x, "UnregisterDeviceProvider", js.Any.fromFunction1(value))
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for write-json-file
 
-Typings are for version 4.3.0
+Typings are for version 5.0.0
 
 ## Library description:
 Stringify and write JSON to a file atomically
@@ -10,15 +10,12 @@ Stringify and write JSON to a file atomically
 | ------------------ | :-------------: |
 | Full name          | write-json-file |
 | Keywords           | write, json, stringify, file, fs, graceful, stable, sort, newline, indent, atomic, atomically |
-| # releases         | 8 |
-| # dependents       | 239 |
-| # downloads        | 110703552 |
-| # stars            | 10 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.3931183333333334E7 |
+| # stars            | 190.0 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/write-json-file#readme)
-- [Bugs](https://github.com/sindresorhus/write-json-file/issues)
-- [Repository](https://github.com/sindresorhus/write-json-file)
 - [Npm](https://www.npmjs.com/package/write-json-file)
     
 

@@ -8,11 +8,11 @@ object instanceResolverMod {
   
   @JSImport("forge-di/dist/resolvers/InstanceResolver", JSImport.Default)
   @js.native
-  class default protected () extends InstanceResolver {
+  open class default protected () extends InstanceResolver {
     def this(
       forge: typings.forgeDi.forgeMod.default,
       binding: typings.forgeDi.bindingMod.default,
-      instance: js.Any
+      instance: Any
     ) = this()
   }
   
@@ -20,6 +20,6 @@ object instanceResolverMod {
   trait InstanceResolver
     extends typings.forgeDi.resolverMod.default {
     
-    var instance: js.Any = js.native
+    var instance: Any = js.native
   }
 }

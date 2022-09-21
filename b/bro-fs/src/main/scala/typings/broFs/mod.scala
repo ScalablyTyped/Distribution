@@ -8,11 +8,11 @@ import typings.broFs.anon.`1`
 import typings.broFs.anon.`2`
 import typings.filesystem.DirectoryEntry
 import typings.filesystem.FileEntry
-import typings.filesystem.FileSystem
-import typings.std.ArrayBuffer
 import typings.std.Blob
-import typings.std.Date
 import typings.std.File
+import typings.std.FileSystem
+import typings.std.ReadableStream
+import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,11 +24,11 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def appendFile(path: String, data: String): js.Promise[FileSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileSystem]]
-  inline def appendFile(path: String, data: ArrayBuffer): js.Promise[FileSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileSystem]]
+  inline def appendFile(path: String, data: js.typedarray.ArrayBuffer): js.Promise[FileSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileSystem]]
   inline def appendFile(path: String, data: Blob): js.Promise[FileSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileSystem]]
   inline def appendFile(path: String, data: File): js.Promise[FileSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileSystem]]
   inline def appendFile(path: FileEntry, data: String): js.Promise[FileSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileSystem]]
-  inline def appendFile(path: FileEntry, data: ArrayBuffer): js.Promise[FileSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileSystem]]
+  inline def appendFile(path: FileEntry, data: js.typedarray.ArrayBuffer): js.Promise[FileSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileSystem]]
   inline def appendFile(path: FileEntry, data: Blob): js.Promise[FileSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileSystem]]
   inline def appendFile(path: FileEntry, data: File): js.Promise[FileSystem] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileSystem]]
   
@@ -38,6 +38,10 @@ object mod {
   inline def copy(oldPath: String, newPath: String, options: Create): js.Promise[FileEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(oldPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileEntry]]
   inline def copy(oldPath: FileEntry, newPath: String): js.Promise[FileEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(oldPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileEntry]]
   inline def copy(oldPath: FileEntry, newPath: String, options: Create): js.Promise[FileEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(oldPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileEntry]]
+  
+  inline def createReadStream(): js.Promise[ReadableStream[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createReadStream")().asInstanceOf[js.Promise[ReadableStream[Any]]]
+  
+  inline def createWriteStream(): js.Promise[WritableStream[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createWriteStream")().asInstanceOf[js.Promise[WritableStream[Any]]]
   
   inline def exists(path: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("exists")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
@@ -56,12 +60,12 @@ object mod {
   inline def mkdir(path: String): js.Promise[DirectoryEntry] = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DirectoryEntry]]
   
   inline def readFile(path: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  inline def readFile(path: String, options: Type): js.Promise[ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ArrayBuffer]]
+  inline def readFile(path: String, options: Type): js.Promise[js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.typedarray.ArrayBuffer]]
   inline def readFile(path: String, options: `0`): js.Promise[Blob] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Blob]]
   inline def readFile(path: String, options: `1`): js.Promise[File] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[File]]
   inline def readFile(path: String, options: `2`): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   inline def readFile(path: FileEntry): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  inline def readFile(path: FileEntry, options: Type): js.Promise[ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ArrayBuffer]]
+  inline def readFile(path: FileEntry, options: Type): js.Promise[js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.typedarray.ArrayBuffer]]
   inline def readFile(path: FileEntry, options: `0`): js.Promise[Blob] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Blob]]
   inline def readFile(path: FileEntry, options: `1`): js.Promise[File] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[File]]
   inline def readFile(path: FileEntry, options: `2`): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
@@ -88,7 +92,7 @@ object mod {
   inline def usage(): js.Promise[UsageObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("usage")().asInstanceOf[js.Promise[UsageObject]]
   
   inline def writeFile(path: String, data: String): js.Promise[FileEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileEntry]]
-  inline def writeFile(path: String, data: ArrayBuffer): js.Promise[FileEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileEntry]]
+  inline def writeFile(path: String, data: js.typedarray.ArrayBuffer): js.Promise[FileEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileEntry]]
   inline def writeFile(path: String, data: Blob): js.Promise[FileEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileEntry]]
   inline def writeFile(path: String, data: File): js.Promise[FileEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileEntry]]
   
@@ -136,7 +140,7 @@ object mod {
     
     var isFile: Boolean
     
-    var modificationTime: Date
+    var modificationTime: js.Date
     
     var name: String
     
@@ -148,7 +152,7 @@ object mod {
       fullPath: String,
       isDirectory: Boolean,
       isFile: Boolean,
-      modificationTime: Date,
+      modificationTime: js.Date,
       name: String,
       size: Double
     ): StatObject = {
@@ -164,7 +168,7 @@ object mod {
       
       inline def setIsFile(value: Boolean): Self = StObject.set(x, "isFile", value.asInstanceOf[js.Any])
       
-      inline def setModificationTime(value: Date): Self = StObject.set(x, "modificationTime", value.asInstanceOf[js.Any])
+      inline def setModificationTime(value: js.Date): Self = StObject.set(x, "modificationTime", value.asInstanceOf[js.Any])
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

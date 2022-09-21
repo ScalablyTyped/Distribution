@@ -14,7 +14,7 @@ trait BackEase
 object BackEase {
   
   inline def apply(
-    _easingMode: js.Any,
+    _easingMode: Any,
     amplitude: Double,
     ease: Double => Double,
     easeInCore: Double => Double,

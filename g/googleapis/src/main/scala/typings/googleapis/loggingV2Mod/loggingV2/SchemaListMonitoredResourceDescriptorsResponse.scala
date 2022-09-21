@@ -4,17 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Result returned from ListMonitoredResourceDescriptors.
-  */
 trait SchemaListMonitoredResourceDescriptorsResponse extends StObject {
   
   /**
-    * If there might be more results than those appearing in this response,
-    * then nextPageToken is included. To get the next set of results, call this
-    * method again using the value of nextPageToken as pageToken.
+    * If there might be more results than those appearing in this response, then nextPageToken is included. To get the next set of results, call this method again using the value of nextPageToken as pageToken.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
   
   /**
     * A list of resource descriptors.
@@ -32,12 +27,14 @@ object SchemaListMonitoredResourceDescriptorsResponse {
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
+    
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     inline def setResourceDescriptors(value: js.Array[SchemaMonitoredResourceDescriptor]): Self = StObject.set(x, "resourceDescriptors", value.asInstanceOf[js.Any])
     
     inline def setResourceDescriptorsUndefined: Self = StObject.set(x, "resourceDescriptors", js.undefined)
     
-    inline def setResourceDescriptorsVarargs(value: SchemaMonitoredResourceDescriptor*): Self = StObject.set(x, "resourceDescriptors", js.Array(value :_*))
+    inline def setResourceDescriptorsVarargs(value: SchemaMonitoredResourceDescriptor*): Self = StObject.set(x, "resourceDescriptors", js.Array(value*))
   }
 }

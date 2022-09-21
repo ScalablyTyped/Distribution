@@ -11,13 +11,13 @@ object freeCameraVirtualJoystickInputMod {
   
   @JSImport("babylonjs/Cameras/Inputs/freeCameraVirtualJoystickInput", "FreeCameraVirtualJoystickInput")
   @js.native
-  class FreeCameraVirtualJoystickInput ()
+  open class FreeCameraVirtualJoystickInput ()
     extends StObject
        with ICameraInput[FreeCamera] {
     
-    /* private */ var _leftjoystick: js.Any = js.native
+    /* private */ var _leftjoystick: Any = js.native
     
-    /* private */ var _rightjoystick: js.Any = js.native
+    /* private */ var _rightjoystick: Any = js.native
     
     /**
       * Defines the camera the input is attached to.

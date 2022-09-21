@@ -1,6 +1,5 @@
 package typings.tensorflowTfjsConverter.compiledApiMod
 
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +27,7 @@ object CollectionDef {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: IAny*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: IAny*): Self = StObject.set(x, "value", js.Array(value*))
     }
   }
   
@@ -36,7 +35,7 @@ object CollectionDef {
   trait IBytesList extends StObject {
     
     /** BytesList value */
-    var value: js.UndefOr[js.Array[Uint8Array] | Null] = js.undefined
+    var value: js.UndefOr[js.Array[js.typedarray.Uint8Array] | Null] = js.undefined
   }
   object IBytesList {
     
@@ -47,13 +46,13 @@ object CollectionDef {
     
     extension [Self <: IBytesList](x: Self) {
       
-      inline def setValue(value: js.Array[Uint8Array]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Array[js.typedarray.Uint8Array]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueNull: Self = StObject.set(x, "value", null)
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: Uint8Array*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: js.typedarray.Uint8Array*): Self = StObject.set(x, "value", js.Array(value*))
     }
   }
   
@@ -78,7 +77,7 @@ object CollectionDef {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value*))
     }
   }
   
@@ -103,7 +102,7 @@ object CollectionDef {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: (Double | String)*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: (Double | String)*): Self = StObject.set(x, "value", js.Array(value*))
     }
   }
   
@@ -128,7 +127,7 @@ object CollectionDef {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
     }
   }
 }

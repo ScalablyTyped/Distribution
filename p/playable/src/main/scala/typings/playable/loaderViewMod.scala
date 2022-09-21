@@ -10,14 +10,14 @@ object loaderViewMod {
   
   @JSImport("playable/dist/src/modules/ui/loader/loader.view", JSImport.Default)
   @js.native
-  class default () extends LoaderView
+  open class default () extends LoaderView
   
   @js.native
   trait LoaderView
     extends typings.playable.viewMod.default[ILoaderViewStyles] {
     
     /* private */ @JSName("_$rootElement")
-    var _$rootElement: js.Any = js.native
+    var _$rootElement: Any = js.native
     
     def destroy(): Unit = js.native
     

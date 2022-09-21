@@ -50,7 +50,7 @@ object TodoTaskList {
     
     inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    inline def setExtensionsVarargs(value: Extension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: Extension*): Self = StObject.set(x, "extensions", js.Array(value*))
     
     inline def setIsOwner(value: Boolean): Self = StObject.set(x, "isOwner", value.asInstanceOf[js.Any])
     
@@ -66,7 +66,7 @@ object TodoTaskList {
     
     inline def setTasksUndefined: Self = StObject.set(x, "tasks", js.undefined)
     
-    inline def setTasksVarargs(value: TodoTask*): Self = StObject.set(x, "tasks", js.Array(value :_*))
+    inline def setTasksVarargs(value: TodoTask*): Self = StObject.set(x, "tasks", js.Array(value*))
     
     inline def setWellknownListName(value: WellknownListName): Self = StObject.set(x, "wellknownListName", value.asInstanceOf[js.Any])
     

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object tagsMod {
   
-  @JSImport("@storybook/addon-a11y/dist/components/Report/Tags", "Tags")
+  @JSImport("@storybook/addon-a11y/dist/ts3.9/components/Report/Tags", "Tags")
   @js.native
   val Tags: FunctionComponent[TagsProps] = js.native
   
@@ -27,7 +27,7 @@ object tagsMod {
       
       inline def setTags(value: js.Array[TagValue]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      inline def setTagsVarargs(value: TagValue*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: TagValue*): Self = StObject.set(x, "tags", js.Array(value*))
     }
   }
 }

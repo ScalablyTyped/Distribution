@@ -10,13 +10,13 @@ object textMod {
   
   @JSImport("@antv/component/lib/annotation/text", JSImport.Default)
   @js.native
-  class default () extends TextAnnotation
+  open class default () extends TextAnnotation
   
   @js.native
   trait TextAnnotation
     extends typings.antvComponent.groupComponentMod.default[TextAnnotationCfg] {
     
-    /* private */ var resetLocation: js.Any = js.native
+    /* private */ var resetLocation: Any = js.native
     
     def setLocation(location: PointLocationCfg): Unit = js.native
   }

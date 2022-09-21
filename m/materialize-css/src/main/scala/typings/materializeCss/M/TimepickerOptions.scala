@@ -41,7 +41,7 @@ trait TimepickerOptions extends StObject {
     * Internationalization options
     */
   var i18n: Partial[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ js.Any
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ Any
   ]
   
   /**
@@ -101,7 +101,7 @@ object TimepickerOptions {
     duration: Double,
     fromNow: Double,
     i18n: Partial[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ js.Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ Any
     ],
     onCloseEnd: Element => Unit,
     onCloseStart: Element => Unit,
@@ -130,7 +130,7 @@ object TimepickerOptions {
     
     inline def setI18n(
       value: Partial[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ Any
         ]
     ): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,7 @@ object Display {
   
   @JSGlobal("Windows.Graphics.Display.DisplayProperties")
   @js.native
-  class DisplayProperties ()
+  open class DisplayProperties ()
     extends StObject
        with typings.winrt.Windows.Graphics.Display.DisplayProperties
   /* static members */
@@ -64,28 +64,28 @@ object Display {
     
     @JSGlobal("Windows.Graphics.Display.DisplayProperties.oncolorprofilechanged")
     @js.native
-    def oncolorprofilechanged: js.Any = js.native
-    inline def oncolorprofilechanged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("oncolorprofilechanged")(x.asInstanceOf[js.Any])
+    def oncolorprofilechanged: Any = js.native
+    inline def oncolorprofilechanged_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("oncolorprofilechanged")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Graphics.Display.DisplayProperties.ondisplaycontentsinvalidated")
     @js.native
-    def ondisplaycontentsinvalidated: js.Any = js.native
-    inline def ondisplaycontentsinvalidated_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ondisplaycontentsinvalidated")(x.asInstanceOf[js.Any])
+    def ondisplaycontentsinvalidated: Any = js.native
+    inline def ondisplaycontentsinvalidated_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ondisplaycontentsinvalidated")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Graphics.Display.DisplayProperties.onlogicaldpichanged")
     @js.native
-    def onlogicaldpichanged: js.Any = js.native
-    inline def onlogicaldpichanged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onlogicaldpichanged")(x.asInstanceOf[js.Any])
+    def onlogicaldpichanged: Any = js.native
+    inline def onlogicaldpichanged_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onlogicaldpichanged")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Graphics.Display.DisplayProperties.onorientationchanged")
     @js.native
-    def onorientationchanged: js.Any = js.native
-    inline def onorientationchanged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onorientationchanged")(x.asInstanceOf[js.Any])
+    def onorientationchanged: Any = js.native
+    inline def onorientationchanged_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onorientationchanged")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Graphics.Display.DisplayProperties.onstereoenabledchanged")
     @js.native
-    def onstereoenabledchanged: js.Any = js.native
-    inline def onstereoenabledchanged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onstereoenabledchanged")(x.asInstanceOf[js.Any])
+    def onstereoenabledchanged: Any = js.native
+    inline def onstereoenabledchanged_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onstereoenabledchanged")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Graphics.Display.DisplayProperties.resolutionScale")
     @js.native

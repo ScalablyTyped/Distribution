@@ -1,7 +1,7 @@
 
 # Scala.js typings for imagemin-svgo
 
-Typings are for version 8.0
+Typings are for version 10.0
 
 ## Library description:
 SVGO imagemin plugin
@@ -10,10 +10,10 @@ SVGO imagemin plugin
 | ------------------ | :-------------: |
 | Full name          | imagemin-svgo |
 | Keywords           | compress, image, imageminplugin, minify, optimize, svg, svgo |
-| # releases         | 3 |
-| # dependents       | 254 |
-| # downloads        | 26709441 |
-| # stars            | 13 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 3157293.3333333335 |
+| # stars            | 116.0 |
 
 ## Links
 - [Homepage](https://github.com/imagemin/imagemin-svgo#readme)

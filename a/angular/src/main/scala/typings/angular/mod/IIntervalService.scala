@@ -12,10 +12,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IIntervalService extends StObject {
   
-  def apply(func: Function, delay: Double, count: Double, invokeApply: Boolean, args: js.Any*): IPromise[js.Any] = js.native
-  def apply(func: Function, delay: Double, count: Double, invokeApply: Unit, args: js.Any*): IPromise[js.Any] = js.native
-  def apply(func: Function, delay: Double, count: Unit, invokeApply: Boolean, args: js.Any*): IPromise[js.Any] = js.native
-  def apply(func: Function, delay: Double, count: Unit, invokeApply: Unit, args: js.Any*): IPromise[js.Any] = js.native
+  def apply(func: Function, delay: Double, count: Double, invokeApply: Boolean, args: Any*): IPromise[Any] = js.native
+  def apply(func: Function, delay: Double, count: Double, invokeApply: Unit, args: Any*): IPromise[Any] = js.native
+  def apply(func: Function, delay: Double, count: Unit, invokeApply: Boolean, args: Any*): IPromise[Any] = js.native
+  def apply(func: Function, delay: Double, count: Unit, invokeApply: Unit, args: Any*): IPromise[Any] = js.native
   
-  def cancel(promise: IPromise[js.Any]): Boolean = js.native
+  def cancel(promise: IPromise[Any]): Boolean = js.native
 }

@@ -34,7 +34,7 @@ object ListLogPatternSetsResponse {
     
     inline def setLogPatternSetsUndefined: Self = StObject.set(x, "LogPatternSets", js.undefined)
     
-    inline def setLogPatternSetsVarargs(value: LogPatternSetName*): Self = StObject.set(x, "LogPatternSets", js.Array(value :_*))
+    inline def setLogPatternSetsVarargs(value: LogPatternSetName*): Self = StObject.set(x, "LogPatternSets", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

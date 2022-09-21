@@ -1,7 +1,7 @@
 
 # Scala.js typings for jss-plugin-nested
 
-Typings are for version 10.5.0
+Typings are for version 10.9.2
 
 ## Library description:
 JSS plugin that enables support for nested selectors
@@ -10,10 +10,10 @@ JSS plugin that enables support for nested selectors
 | ------------------ | :-------------: |
 | Full name          | jss-plugin-nested |
 | Keywords           | cssinjs, css-in-js, css in js, jss, plugin, nested, nesting |
-| # releases         | 30 |
-| # dependents       | 18 |
-| # downloads        | 57002351 |
-| # stars            | 0 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 9991204.333333334 |
+| # stars            | 6773.0 |
 
 ## Links
 - [Homepage](https://github.com/cssinjs/jss#readme)

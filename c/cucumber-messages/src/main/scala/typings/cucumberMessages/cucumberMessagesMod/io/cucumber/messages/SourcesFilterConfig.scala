@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new SourcesFilterConfig.
   * @param [properties] Properties to set
   */
-class SourcesFilterConfig ()
+open class SourcesFilterConfig ()
   extends StObject
      with ISourcesFilterConfig {
   def this(properties: ISourcesFilterConfig) = this()
@@ -33,7 +32,7 @@ class SourcesFilterConfig ()
     * Converts this SourcesFilterConfig to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
   
   /** SourcesFilterConfig uriToLinesMapping. */
   @JSName("uriToLinesMapping")
@@ -54,6 +53,8 @@ object SourcesFilterConfig {
   inline def create(): SourcesFilterConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SourcesFilterConfig]
   inline def create(properties: ISourcesFilterConfig): SourcesFilterConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[SourcesFilterConfig]
   
+  inline def decode(reader: js.typedarray.Uint8Array): SourcesFilterConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SourcesFilterConfig]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): SourcesFilterConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SourcesFilterConfig]
   /**
     * Decodes a SourcesFilterConfig message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -65,9 +66,8 @@ object SourcesFilterConfig {
   /* static member */
   inline def decode(reader: Reader): SourcesFilterConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SourcesFilterConfig]
   inline def decode(reader: Reader, length: Double): SourcesFilterConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SourcesFilterConfig]
-  inline def decode(reader: Uint8Array): SourcesFilterConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SourcesFilterConfig]
-  inline def decode(reader: Uint8Array, length: Double): SourcesFilterConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SourcesFilterConfig]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): SourcesFilterConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SourcesFilterConfig]
   /**
     * Decodes a SourcesFilterConfig message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -77,7 +77,6 @@ object SourcesFilterConfig {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): SourcesFilterConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SourcesFilterConfig]
-  inline def decodeDelimited(reader: Uint8Array): SourcesFilterConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SourcesFilterConfig]
   
   /**
     * Encodes the specified SourcesFilterConfig message. Does not implicitly {@link io.cucumber.messages.SourcesFilterConfig.verify|verify} messages.
@@ -105,7 +104,7 @@ object SourcesFilterConfig {
     * @returns SourcesFilterConfig
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): SourcesFilterConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[SourcesFilterConfig]
+  inline def fromObject(`object`: StringDictionary[Any]): SourcesFilterConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[SourcesFilterConfig]
   
   /**
     * Creates a plain object from a SourcesFilterConfig message. Also converts values to other types if specified.
@@ -114,8 +113,8 @@ object SourcesFilterConfig {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: SourcesFilterConfig): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: SourcesFilterConfig, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: SourcesFilterConfig): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: SourcesFilterConfig, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a SourcesFilterConfig message.
@@ -123,5 +122,5 @@ object SourcesFilterConfig {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

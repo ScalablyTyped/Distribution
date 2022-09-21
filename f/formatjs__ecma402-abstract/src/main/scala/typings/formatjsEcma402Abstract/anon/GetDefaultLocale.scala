@@ -1,7 +1,7 @@
 package typings.formatjsEcma402Abstract.anon
 
-import typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatInternal
-import typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatLocaleInternalData
+import typings.formatjsEcma402Abstract.numberMod.NumberFormatInternal
+import typings.formatjsEcma402Abstract.numberMod.NumberFormatLocaleInternalData
 import typings.std.Intl.NumberFormat
 import typings.std.Record
 import typings.std.Set
@@ -51,6 +51,6 @@ object GetDefaultLocale {
     
     inline def setNumberingSystemNames(value: js.Array[String]): Self = StObject.set(x, "numberingSystemNames", value.asInstanceOf[js.Any])
     
-    inline def setNumberingSystemNamesVarargs(value: String*): Self = StObject.set(x, "numberingSystemNames", js.Array(value :_*))
+    inline def setNumberingSystemNamesVarargs(value: String*): Self = StObject.set(x, "numberingSystemNames", js.Array(value*))
   }
 }

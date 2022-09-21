@@ -44,6 +44,13 @@ trait IRenderContext extends StObject {
   def moveTo(x: Double, y: Double): IRenderContext = js.native
   
   def openGroup(): js.UndefOr[Node] = js.native
+  def openGroup(cls: String): js.UndefOr[Node] = js.native
+  def openGroup(cls: String, id: String): js.UndefOr[Node] = js.native
+  def openGroup(cls: String, id: String, attrs: GroupAttributes): js.UndefOr[Node] = js.native
+  def openGroup(cls: String, id: Unit, attrs: GroupAttributes): js.UndefOr[Node] = js.native
+  def openGroup(cls: Unit, id: String): js.UndefOr[Node] = js.native
+  def openGroup(cls: Unit, id: String, attrs: GroupAttributes): js.UndefOr[Node] = js.native
+  def openGroup(cls: Unit, id: Unit, attrs: GroupAttributes): js.UndefOr[Node] = js.native
   
   def quadraticCurveTo(x1: Double, y1: Double, x2: Double, y2: Double): IRenderContext = js.native
   

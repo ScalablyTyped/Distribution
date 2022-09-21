@@ -8,5 +8,5 @@ object dataRetrievalPolicyMod {
   
   @JSImport("@aws-sdk/client-glacier-node/model/_DataRetrievalPolicy", "_DataRetrievalPolicy")
   @js.native
-  val DataRetrievalPolicy: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DataRetrievalPolicy: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

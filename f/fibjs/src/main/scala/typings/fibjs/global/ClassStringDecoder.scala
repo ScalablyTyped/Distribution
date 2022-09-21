@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 
   */
-class ClassStringDecoder ()
+open class ClassStringDecoder ()
   extends StObject
      with typings.fibjs.ClassStringDecoder {
   def this(encoding: String) = this()

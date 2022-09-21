@@ -1,7 +1,7 @@
 
 # Scala.js typings for flatpickr
 
-Typings are for version 4.6.6
+Typings are for version 4.6.13
 
 ## Library description:
 A lightweight, powerful javascript datetime picker
@@ -10,10 +10,10 @@ A lightweight, powerful javascript datetime picker
 | ------------------ | :-------------: |
 | Full name          | flatpickr |
 | Keywords           | javascript, datetimepicker, calendar, date, time, picker, lightweight |
-| # releases         | 15 |
-| # dependents       | 330 |
-| # downloads        | 18736730 |
-| # stars            | 17 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 2753129.6666666665 |
+| # stars            | 15038.0 |
 
 ## Links
 - [Homepage](https://flatpickr.js.org)

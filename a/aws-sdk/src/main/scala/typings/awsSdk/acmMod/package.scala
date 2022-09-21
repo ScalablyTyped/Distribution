@@ -1,5 +1,7 @@
 package typings.awsSdk.acmMod
 
+import typings.awsSdk.awsSdkStrings.CNAME
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,11 +11,11 @@ type Arn = java.lang.String
 
 type CertificateBody = java.lang.String
 
-type CertificateBodyBlob = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.acmMod.Blob | java.lang.String
+type CertificateBodyBlob = Buffer | js.typedarray.Uint8Array | Blob | java.lang.String
 
 type CertificateChain = java.lang.String
 
-type CertificateChainBlob = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.acmMod.Blob | java.lang.String
+type CertificateChainBlob = Buffer | js.typedarray.Uint8Array | Blob | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING_VALIDATION
@@ -25,18 +27,18 @@ type CertificateChainBlob = typings.node.Buffer | typings.std.Uint8Array | typin
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type CertificateStatus = typings.awsSdk.acmMod._CertificateStatus | java.lang.String
+type CertificateStatus = _CertificateStatus | java.lang.String
 
-type CertificateStatuses = js.Array[typings.awsSdk.acmMod.CertificateStatus]
+type CertificateStatuses = js.Array[CertificateStatus]
 
-type CertificateSummaryList = js.Array[typings.awsSdk.acmMod.CertificateSummary]
+type CertificateSummaryList = js.Array[CertificateSummary]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLED
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type CertificateTransparencyLoggingPreference = typings.awsSdk.acmMod._CertificateTransparencyLoggingPreference | java.lang.String
+type CertificateTransparencyLoggingPreference = _CertificateTransparencyLoggingPreference | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IMPORTED
@@ -44,9 +46,9 @@ type CertificateTransparencyLoggingPreference = typings.awsSdk.acmMod._Certifica
   - typings.awsSdk.awsSdkStrings.PRIVATE
   - java.lang.String
 */
-type CertificateType = typings.awsSdk.acmMod._CertificateType | java.lang.String
+type CertificateType = _CertificateType | java.lang.String
 
-type DomainList = js.Array[typings.awsSdk.acmMod.DomainNameString]
+type DomainList = js.Array[DomainNameString]
 
 type DomainNameString = java.lang.String
 
@@ -56,15 +58,15 @@ type DomainNameString = java.lang.String
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type DomainStatus = typings.awsSdk.acmMod._DomainStatus | java.lang.String
+type DomainStatus = _DomainStatus | java.lang.String
 
-type DomainValidationList = js.Array[typings.awsSdk.acmMod.DomainValidation]
+type DomainValidationList = js.Array[DomainValidation]
 
-type DomainValidationOptionList = js.Array[typings.awsSdk.acmMod.DomainValidationOption]
+type DomainValidationOptionList = js.Array[DomainValidationOption]
 
-type ExtendedKeyUsageFilterList = js.Array[typings.awsSdk.acmMod.ExtendedKeyUsageName]
+type ExtendedKeyUsageFilterList = js.Array[ExtendedKeyUsageName]
 
-type ExtendedKeyUsageList = js.Array[typings.awsSdk.acmMod.ExtendedKeyUsage]
+type ExtendedKeyUsageList = js.Array[ExtendedKeyUsage]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.TLS_WEB_SERVER_AUTHENTICATION
@@ -81,7 +83,7 @@ type ExtendedKeyUsageList = js.Array[typings.awsSdk.acmMod.ExtendedKeyUsage]
   - typings.awsSdk.awsSdkStrings.CUSTOM
   - java.lang.String
 */
-type ExtendedKeyUsageName = typings.awsSdk.acmMod._ExtendedKeyUsageName | java.lang.String
+type ExtendedKeyUsageName = _ExtendedKeyUsageName | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NO_AVAILABLE_CONTACTS
@@ -103,28 +105,29 @@ type ExtendedKeyUsageName = typings.awsSdk.acmMod._ExtendedKeyUsageName | java.l
   - typings.awsSdk.awsSdkStrings.OTHER
   - java.lang.String
 */
-type FailureReason = typings.awsSdk.acmMod._FailureReason | java.lang.String
+type FailureReason = _FailureReason | java.lang.String
 
 type IdempotencyToken = java.lang.String
 
-type InUseList = js.Array[typings.awsSdk.acmMod.String]
+type InUseList = js.Array[String]
 
 /* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.RSA_2048
   - typings.awsSdk.awsSdkStrings.RSA_1024
+  - typings.awsSdk.awsSdkStrings.RSA_2048
+  - typings.awsSdk.awsSdkStrings.RSA_3072
   - typings.awsSdk.awsSdkStrings.RSA_4096
   - typings.awsSdk.awsSdkStrings.EC_prime256v1
   - typings.awsSdk.awsSdkStrings.EC_secp384r1
   - typings.awsSdk.awsSdkStrings.EC_secp521r1
   - java.lang.String
 */
-type KeyAlgorithm = typings.awsSdk.acmMod._KeyAlgorithm | java.lang.String
+type KeyAlgorithm = _KeyAlgorithm | java.lang.String
 
-type KeyAlgorithmList = js.Array[typings.awsSdk.acmMod.KeyAlgorithm]
+type KeyAlgorithmList = js.Array[KeyAlgorithm]
 
-type KeyUsageFilterList = js.Array[typings.awsSdk.acmMod.KeyUsageName]
+type KeyUsageFilterList = js.Array[KeyUsageName]
 
-type KeyUsageList = js.Array[typings.awsSdk.acmMod.KeyUsage]
+type KeyUsageList = js.Array[KeyUsage]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DIGITAL_SIGNATURE
@@ -140,26 +143,28 @@ type KeyUsageList = js.Array[typings.awsSdk.acmMod.KeyUsage]
   - typings.awsSdk.awsSdkStrings.CUSTOM
   - java.lang.String
 */
-type KeyUsageName = typings.awsSdk.acmMod._KeyUsageName | java.lang.String
+type KeyUsageName = _KeyUsageName | java.lang.String
 
-type MaxItems = scala.Double
+type MaxItems = Double
 
 type NextToken = java.lang.String
 
-type PassphraseBlob = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.acmMod.Blob | java.lang.String
+type PassphraseBlob = Buffer | js.typedarray.Uint8Array | Blob | java.lang.String
+
+type PositiveInteger = Double
 
 type PrivateKey = java.lang.String
 
-type PrivateKeyBlob = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.acmMod.Blob | java.lang.String
+type PrivateKeyBlob = Buffer | js.typedarray.Uint8Array | Blob | java.lang.String
 
-type RecordType = typings.awsSdk.awsSdkStrings.CNAME | java.lang.String
+type RecordType = CNAME | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ELIGIBLE
   - typings.awsSdk.awsSdkStrings.INELIGIBLE
   - java.lang.String
 */
-type RenewalEligibility = typings.awsSdk.acmMod._RenewalEligibility | java.lang.String
+type RenewalEligibility = _RenewalEligibility | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING_AUTO_RENEWAL
@@ -168,7 +173,7 @@ type RenewalEligibility = typings.awsSdk.acmMod._RenewalEligibility | java.lang.
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type RenewalStatus = typings.awsSdk.acmMod._RenewalStatus | java.lang.String
+type RenewalStatus = _RenewalStatus | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.UNSPECIFIED
@@ -183,30 +188,30 @@ type RenewalStatus = typings.awsSdk.acmMod._RenewalStatus | java.lang.String
   - typings.awsSdk.awsSdkStrings.A_A_COMPROMISE
   - java.lang.String
 */
-type RevocationReason = typings.awsSdk.acmMod._RevocationReason | java.lang.String
+type RevocationReason = _RevocationReason | java.lang.String
 
 type String = java.lang.String
 
-type TStamp = typings.std.Date
+type TStamp = js.Date
 
 type TagKey = java.lang.String
 
-type TagList = js.Array[typings.awsSdk.acmMod.Tag]
+type TagList = js.Array[Tag]
 
 type TagValue = java.lang.String
 
-type ValidationEmailList = js.Array[typings.awsSdk.acmMod.String]
+type ValidationEmailList = js.Array[String]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.EMAIL
   - typings.awsSdk.awsSdkStrings.DNS
   - java.lang.String
 */
-type ValidationMethod = typings.awsSdk.acmMod._ValidationMethod | java.lang.String
+type ValidationMethod = _ValidationMethod | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2015-12-08`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.acmMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | java.lang.String

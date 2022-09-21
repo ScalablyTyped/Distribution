@@ -15,7 +15,7 @@ trait INestedList
   var allowDeselect: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Object) */
-  var backButton: js.UndefOr[js.Any] = js.undefined
+  var backButton: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var backText: js.UndefOr[java.lang.String] = js.undefined
@@ -43,7 +43,7 @@ trait INestedList
   /** [Method] Returns the value of backButton
     * @returns Object
     */
-  var getBackButton: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getBackButton: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of backText
     * @returns String
@@ -89,7 +89,7 @@ trait INestedList
   /** [Method] Returns the value of listConfig
     * @returns Object
     */
-  var getListConfig: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getListConfig: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of loadingText
     * @returns String
@@ -99,12 +99,12 @@ trait INestedList
   /** [Method] Returns the value of onItemDisclosure
     * @returns Boolean/Function
     */
-  var getOnItemDisclosure: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getOnItemDisclosure: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of store
     * @returns Ext.data.TreeStore/String
     */
-  var getStore: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getStore: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the subList for a specified node  */
   var getSubList: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -123,7 +123,7 @@ trait INestedList
   /** [Method] Returns the value of toolbar
     * @returns Ext.Toolbar/Object/Boolean
     */
-  var getToolbar: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getToolbar: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of updateTitleText
     * @returns Boolean
@@ -164,7 +164,7 @@ trait INestedList
   var itemHeight: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Object) */
-  var listConfig: js.UndefOr[js.Any] = js.undefined
+  var listConfig: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var loadingText: js.UndefOr[java.lang.String] = js.undefined
@@ -173,7 +173,7 @@ trait INestedList
   var onBackTap: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Boolean/Function) */
-  var onItemDisclosure: js.UndefOr[js.Any] = js.undefined
+  var onItemDisclosure: js.UndefOr[Any] = js.undefined
   
   /** [Method] Called when an list item has been tapped
     * @param list Ext.List The subList the item is on.
@@ -201,7 +201,7 @@ trait INestedList
   /** [Method] Sets the value of backButton
     * @param backButton Object The new value.
     */
-  var setBackButton: js.UndefOr[js.Function1[/* backButton */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setBackButton: js.UndefOr[js.Function1[/* backButton */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of backText
     * @param backText String The new value.
@@ -241,7 +241,7 @@ trait INestedList
   /** [Method] Sets the value of listConfig
     * @param listConfig Object The new value.
     */
-  var setListConfig: js.UndefOr[js.Function1[/* listConfig */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setListConfig: js.UndefOr[js.Function1[/* listConfig */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of loadingText
     * @param loadingText String The new value.
@@ -251,12 +251,12 @@ trait INestedList
   /** [Method] Sets the value of onItemDisclosure
     * @param onItemDisclosure Boolean/Function The new value.
     */
-  var setOnItemDisclosure: js.UndefOr[js.Function1[/* onItemDisclosure */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setOnItemDisclosure: js.UndefOr[js.Function1[/* onItemDisclosure */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of store
     * @param store Ext.data.TreeStore/String The new value.
     */
-  var setStore: js.UndefOr[js.Function1[/* store */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setStore: js.UndefOr[js.Function1[/* store */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of title
     * @param title String The new value.
@@ -266,13 +266,13 @@ trait INestedList
   /** [Method] Sets the value of toolbar
     * @param toolbar Ext.Toolbar/Object/Boolean The new value.
     */
-  var setToolbar: js.UndefOr[js.Function1[/* toolbar */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setToolbar: js.UndefOr[js.Function1[/* toolbar */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of ui
     * @param ui Object The new value.
     */
   @JSName("setUi")
-  var setUi_INestedList: js.UndefOr[js.Function1[/* ui */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setUi_INestedList: js.UndefOr[js.Function1[/* ui */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of updateTitleText
     * @param updateTitleText Boolean The new value.
@@ -300,13 +300,13 @@ trait INestedList
   var setVariableHeights: js.UndefOr[js.Function1[/* variableHeights */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Config Option] (Ext.data.TreeStore/String) */
-  var store: js.UndefOr[js.Any] = js.undefined
+  var store: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var title: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (Ext.Toolbar/Object/Boolean) */
-  var toolbar: js.UndefOr[js.Any] = js.undefined
+  var toolbar: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean) */
   var updateTitleText: js.UndefOr[Boolean] = js.undefined
@@ -336,7 +336,7 @@ object INestedList {
     
     inline def setAllowDeselectUndefined: Self = StObject.set(x, "allowDeselect", js.undefined)
     
-    inline def setBackButton(value: js.Any): Self = StObject.set(x, "backButton", value.asInstanceOf[js.Any])
+    inline def setBackButton(value: Any): Self = StObject.set(x, "backButton", value.asInstanceOf[js.Any])
     
     inline def setBackButtonUndefined: Self = StObject.set(x, "backButton", js.undefined)
     
@@ -368,7 +368,7 @@ object INestedList {
     
     inline def setGetAllowDeselectUndefined: Self = StObject.set(x, "getAllowDeselect", js.undefined)
     
-    inline def setGetBackButton(value: () => js.Any): Self = StObject.set(x, "getBackButton", js.Any.fromFunction0(value))
+    inline def setGetBackButton(value: () => Any): Self = StObject.set(x, "getBackButton", js.Any.fromFunction0(value))
     
     inline def setGetBackButtonUndefined: Self = StObject.set(x, "getBackButton", js.undefined)
     
@@ -404,7 +404,7 @@ object INestedList {
     
     inline def setGetItemTextTplUndefined: Self = StObject.set(x, "getItemTextTpl", js.undefined)
     
-    inline def setGetListConfig(value: () => js.Any): Self = StObject.set(x, "getListConfig", js.Any.fromFunction0(value))
+    inline def setGetListConfig(value: () => Any): Self = StObject.set(x, "getListConfig", js.Any.fromFunction0(value))
     
     inline def setGetListConfigUndefined: Self = StObject.set(x, "getListConfig", js.undefined)
     
@@ -412,11 +412,11 @@ object INestedList {
     
     inline def setGetLoadingTextUndefined: Self = StObject.set(x, "getLoadingText", js.undefined)
     
-    inline def setGetOnItemDisclosure(value: () => js.Any): Self = StObject.set(x, "getOnItemDisclosure", js.Any.fromFunction0(value))
+    inline def setGetOnItemDisclosure(value: () => Any): Self = StObject.set(x, "getOnItemDisclosure", js.Any.fromFunction0(value))
     
     inline def setGetOnItemDisclosureUndefined: Self = StObject.set(x, "getOnItemDisclosure", js.undefined)
     
-    inline def setGetStore(value: () => js.Any): Self = StObject.set(x, "getStore", js.Any.fromFunction0(value))
+    inline def setGetStore(value: () => Any): Self = StObject.set(x, "getStore", js.Any.fromFunction0(value))
     
     inline def setGetStoreUndefined: Self = StObject.set(x, "getStore", js.undefined)
     
@@ -432,7 +432,7 @@ object INestedList {
     
     inline def setGetTitleUndefined: Self = StObject.set(x, "getTitle", js.undefined)
     
-    inline def setGetToolbar(value: () => js.Any): Self = StObject.set(x, "getToolbar", js.Any.fromFunction0(value))
+    inline def setGetToolbar(value: () => Any): Self = StObject.set(x, "getToolbar", js.Any.fromFunction0(value))
     
     inline def setGetToolbarUndefined: Self = StObject.set(x, "getToolbar", js.undefined)
     
@@ -468,7 +468,7 @@ object INestedList {
     
     inline def setItemHeightUndefined: Self = StObject.set(x, "itemHeight", js.undefined)
     
-    inline def setListConfig(value: js.Any): Self = StObject.set(x, "listConfig", value.asInstanceOf[js.Any])
+    inline def setListConfig(value: Any): Self = StObject.set(x, "listConfig", value.asInstanceOf[js.Any])
     
     inline def setListConfigUndefined: Self = StObject.set(x, "listConfig", js.undefined)
     
@@ -480,7 +480,7 @@ object INestedList {
     
     inline def setOnBackTapUndefined: Self = StObject.set(x, "onBackTap", js.undefined)
     
-    inline def setOnItemDisclosure(value: js.Any): Self = StObject.set(x, "onItemDisclosure", value.asInstanceOf[js.Any])
+    inline def setOnItemDisclosure(value: Any): Self = StObject.set(x, "onItemDisclosure", value.asInstanceOf[js.Any])
     
     inline def setOnItemDisclosureUndefined: Self = StObject.set(x, "onItemDisclosure", js.undefined)
     
@@ -494,7 +494,7 @@ object INestedList {
     
     inline def setSetAllowDeselectUndefined: Self = StObject.set(x, "setAllowDeselect", js.undefined)
     
-    inline def setSetBackButton(value: /* backButton */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setBackButton", js.Any.fromFunction1(value))
+    inline def setSetBackButton(value: /* backButton */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setBackButton", js.Any.fromFunction1(value))
     
     inline def setSetBackButtonUndefined: Self = StObject.set(x, "setBackButton", js.undefined)
     
@@ -526,7 +526,7 @@ object INestedList {
     
     inline def setSetItemHeightUndefined: Self = StObject.set(x, "setItemHeight", js.undefined)
     
-    inline def setSetListConfig(value: /* listConfig */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setListConfig", js.Any.fromFunction1(value))
+    inline def setSetListConfig(value: /* listConfig */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setListConfig", js.Any.fromFunction1(value))
     
     inline def setSetListConfigUndefined: Self = StObject.set(x, "setListConfig", js.undefined)
     
@@ -534,11 +534,11 @@ object INestedList {
     
     inline def setSetLoadingTextUndefined: Self = StObject.set(x, "setLoadingText", js.undefined)
     
-    inline def setSetOnItemDisclosure(value: /* onItemDisclosure */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setOnItemDisclosure", js.Any.fromFunction1(value))
+    inline def setSetOnItemDisclosure(value: /* onItemDisclosure */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setOnItemDisclosure", js.Any.fromFunction1(value))
     
     inline def setSetOnItemDisclosureUndefined: Self = StObject.set(x, "setOnItemDisclosure", js.undefined)
     
-    inline def setSetStore(value: /* store */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setStore", js.Any.fromFunction1(value))
+    inline def setSetStore(value: /* store */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setStore", js.Any.fromFunction1(value))
     
     inline def setSetStoreUndefined: Self = StObject.set(x, "setStore", js.undefined)
     
@@ -546,11 +546,11 @@ object INestedList {
     
     inline def setSetTitleUndefined: Self = StObject.set(x, "setTitle", js.undefined)
     
-    inline def setSetToolbar(value: /* toolbar */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setToolbar", js.Any.fromFunction1(value))
+    inline def setSetToolbar(value: /* toolbar */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setToolbar", js.Any.fromFunction1(value))
     
     inline def setSetToolbarUndefined: Self = StObject.set(x, "setToolbar", js.undefined)
     
-    inline def setSetUi(value: /* ui */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setUi", js.Any.fromFunction1(value))
+    inline def setSetUi(value: /* ui */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setUi", js.Any.fromFunction1(value))
     
     inline def setSetUiUndefined: Self = StObject.set(x, "setUi", js.undefined)
     
@@ -574,7 +574,7 @@ object INestedList {
     
     inline def setSetVariableHeightsUndefined: Self = StObject.set(x, "setVariableHeights", js.undefined)
     
-    inline def setStore(value: js.Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+    inline def setStore(value: Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     
     inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
     
@@ -582,7 +582,7 @@ object INestedList {
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    inline def setToolbar(value: js.Any): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
+    inline def setToolbar(value: Any): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
     
     inline def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
     

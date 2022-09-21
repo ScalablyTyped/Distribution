@@ -4,7 +4,8 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientCompute.anon.FieldsHealthCheckService
 import typings.maximMazurokGapiClientCompute.anon.Filter
 import typings.maximMazurokGapiClientCompute.anon.HealthCheckServiceKey
-import typings.maximMazurokGapiClientCompute.anon.PrettyPrintProjectQuotaUserRegionRequestId
+import typings.maximMazurokGapiClientCompute.anon.Oauthtoken
+import typings.maximMazurokGapiClientCompute.anon.OauthtokenPrettyPrintProjectQuotaUserRegion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,8 +22,8 @@ trait RegionHealthCheckServicesResource extends StObject {
   def get(request: FieldsHealthCheckService): Request[HealthCheckService] = js.native
   
   /** Creates a regional HealthCheckService resource in the specified project and region using the data included in the request. */
-  def insert(request: PrettyPrintProjectQuotaUserRegionRequestId): Request[Operation] = js.native
-  def insert(request: typings.maximMazurokGapiClientCompute.anon.Project, body: HealthCheckService): Request[Operation] = js.native
+  def insert(request: OauthtokenPrettyPrintProjectQuotaUserRegion): Request[Operation] = js.native
+  def insert(request: Oauthtoken, body: HealthCheckService): Request[Operation] = js.native
   
   /** Lists all the HealthCheckService resources that have been configured for the specified project in the given region. */
   def list(): Request[HealthCheckServicesList] = js.native

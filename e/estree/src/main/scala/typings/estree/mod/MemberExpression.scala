@@ -8,7 +8,6 @@ trait MemberExpression
   extends StObject
      with BaseNode
      with ChainElement
-     with Expression
      with Pattern {
   
   var computed: Boolean
@@ -17,14 +16,19 @@ trait MemberExpression
   
   var optional: Boolean
   
-  var property: Expression
+  var property: Expression | PrivateIdentifier
   
   @JSName("type")
   var type_MemberExpression: typings.estree.estreeStrings.MemberExpression
 }
 object MemberExpression {
   
-  inline def apply(computed: Boolean, `object`: Expression | Super, optional: Boolean, property: Expression): MemberExpression = {
+  inline def apply(
+    computed: Boolean,
+    `object`: Expression | Super,
+    optional: Boolean,
+    property: Expression | PrivateIdentifier
+  ): MemberExpression = {
     val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("MemberExpression")
@@ -39,7 +43,7 @@ object MemberExpression {
     
     inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
-    inline def setProperty(value: Expression): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: Expression | PrivateIdentifier): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
     inline def setType(value: typings.estree.estreeStrings.MemberExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

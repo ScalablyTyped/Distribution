@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Hooks extends StObject {
   
-  def Add(hook: js.Any, priority: Double): CallbackObject
+  def Add(hook: Any, priority: Double): CallbackObject
   
   def Execute(): CallbackObject
   
@@ -15,7 +15,7 @@ trait Hooks extends StObject {
 object Hooks {
   
   inline def apply(
-    Add: (js.Any, Double) => CallbackObject,
+    Add: (Any, Double) => CallbackObject,
     Execute: () => CallbackObject,
     Remove: CallbackObject => Unit
   ): Hooks = {
@@ -25,7 +25,7 @@ object Hooks {
   
   extension [Self <: Hooks](x: Self) {
     
-    inline def setAdd(value: (js.Any, Double) => CallbackObject): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (Any, Double) => CallbackObject): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     
     inline def setExecute(value: () => CallbackObject): Self = StObject.set(x, "Execute", js.Any.fromFunction0(value))
     

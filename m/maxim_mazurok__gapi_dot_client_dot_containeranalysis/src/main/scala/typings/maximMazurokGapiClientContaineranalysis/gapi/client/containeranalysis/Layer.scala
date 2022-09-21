@@ -9,7 +9,7 @@ trait Layer extends StObject {
   /** The recovered arguments to the Dockerfile directive. */
   var arguments: js.UndefOr[String] = js.undefined
   
-  /** Required. The recovered Dockerfile directive used to construct this layer. */
+  /** Required. The recovered Dockerfile directive used to construct this layer. See https://docs.docker.com/engine/reference/builder/ for more information. */
   var directive: js.UndefOr[String] = js.undefined
 }
 object Layer {

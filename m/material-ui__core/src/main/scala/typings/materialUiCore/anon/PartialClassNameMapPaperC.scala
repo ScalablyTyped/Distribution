@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/Paper/Paper.PaperClassKey>> */
+/* Inlined std.Partial<@material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/Paper/Paper.PaperClassKey>> */
 trait PartialClassNameMapPaperC extends StObject {
   
   var elevation0: js.UndefOr[String] = js.undefined
@@ -56,6 +56,8 @@ trait PartialClassNameMapPaperC extends StObject {
   var elevation8: js.UndefOr[String] = js.undefined
   
   var elevation9: js.UndefOr[String] = js.undefined
+  
+  var outlined: js.UndefOr[String] = js.undefined
   
   var root: js.UndefOr[String] = js.undefined
   
@@ -169,6 +171,10 @@ object PartialClassNameMapPaperC {
     inline def setElevation9(value: String): Self = StObject.set(x, "elevation9", value.asInstanceOf[js.Any])
     
     inline def setElevation9Undefined: Self = StObject.set(x, "elevation9", js.undefined)
+    
+    inline def setOutlined(value: String): Self = StObject.set(x, "outlined", value.asInstanceOf[js.Any])
+    
+    inline def setOutlinedUndefined: Self = StObject.set(x, "outlined", js.undefined)
     
     inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     

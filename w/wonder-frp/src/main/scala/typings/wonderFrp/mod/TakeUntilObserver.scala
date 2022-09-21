@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder-frp/dist/commonjs", "TakeUntilObserver")
 @js.native
-class TakeUntilObserver protected ()
+open class TakeUntilObserver protected ()
   extends typings.wonderFrp.takeUntilObserverMod.TakeUntilObserver {
   def this(prevObserver: IObserver) = this()
 }

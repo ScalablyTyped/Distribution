@@ -12,7 +12,7 @@ trait AdminManagedRestrictions extends StObject {
   
   var domainUsersOnly: js.UndefOr[Boolean] = js.undefined
   
-  var teamMembersOnly: js.UndefOr[Boolean] = js.undefined
+  var driveMembersOnly: js.UndefOr[Boolean] = js.undefined
 }
 object AdminManagedRestrictions {
   
@@ -35,8 +35,8 @@ object AdminManagedRestrictions {
     
     inline def setDomainUsersOnlyUndefined: Self = StObject.set(x, "domainUsersOnly", js.undefined)
     
-    inline def setTeamMembersOnly(value: Boolean): Self = StObject.set(x, "teamMembersOnly", value.asInstanceOf[js.Any])
+    inline def setDriveMembersOnly(value: Boolean): Self = StObject.set(x, "driveMembersOnly", value.asInstanceOf[js.Any])
     
-    inline def setTeamMembersOnlyUndefined: Self = StObject.set(x, "teamMembersOnly", js.undefined)
+    inline def setDriveMembersOnlyUndefined: Self = StObject.set(x, "driveMembersOnly", js.undefined)
   }
 }

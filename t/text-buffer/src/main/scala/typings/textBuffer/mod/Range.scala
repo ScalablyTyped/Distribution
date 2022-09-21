@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("text-buffer", "Range")
 @js.native
 /** Construct a Range object. */
-class Range ()
+open class Range ()
   extends StObject
      with typings.textBuffer.mod.global.TextBuffer.Range {
   def this(pointA: PointCompatible) = this()

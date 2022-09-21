@@ -10,7 +10,7 @@ object option {
   
   @JSGlobal("ymaps.option.Manager")
   @js.native
-  class Manager ()
+  open class Manager ()
     extends typings.yandexMaps.mod.option.Manager {
     def this(options: js.Object) = this()
     def this(options: js.Object, parent: IOptionManager) = this()

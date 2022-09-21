@@ -32,8 +32,8 @@ trait PageToken extends StObject {
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * Optional. A page token, received from a previous `ListConnections` call. Provide this to retrieve the subsequent page. When paginating, all other parameters provided to
-    * `ListConnections` must match the call that provided the page token.
+    * Optional. A page token, received from a previous response `next_page_token`. Provide this to retrieve the subsequent page. When paginating, all other parameters provided to
+    * `people.connections.list` must match the first call that provided the page token.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
@@ -55,8 +55,8 @@ trait PageToken extends StObject {
   var requestMaskDotincludeField: js.UndefOr[String] = js.undefined
   
   /**
-    * Optional. Whether the response should include `next_sync_token` on the last page, which can be used to get all changes since the last request. For subsequent sync requests use
-    * the `sync_token` param instead. Initial sync requests that specify `request_sync_token` have an additional rate limit.
+    * Optional. Whether the response should return `next_sync_token` on the last page of results. It can be used to get incremental changes since the last request by setting it on the
+    * request `sync_token`. More details about sync behavior at `people.connections.list`.
     */
   var requestSyncToken: js.UndefOr[Boolean] = js.undefined
   
@@ -70,8 +70,8 @@ trait PageToken extends StObject {
   var sources: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
-    * Optional. A sync token, received from a previous `ListConnections` call. Provide this to retrieve only the resources changed since the last request. Sync requests that specify
-    * `sync_token` have an additional rate limit. When syncing, all other parameters provided to `ListConnections` must match the call that provided the sync token.
+    * Optional. A sync token, received from a previous response `next_sync_token` Provide this to retrieve only the resources changed since the last request. When syncing, all other
+    * parameters provided to `people.connections.list` must match the first call that provided the sync token. More details about sync behavior at `people.connections.list`.
     */
   var syncToken: js.UndefOr[String] = js.undefined
   
@@ -156,7 +156,7 @@ object PageToken {
     
     inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
-    inline def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value*))
     
     inline def setSyncToken(value: String): Self = StObject.set(x, "syncToken", value.asInstanceOf[js.Any])
     

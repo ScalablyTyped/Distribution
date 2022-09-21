@@ -1,6 +1,7 @@
 package typings.devtoolsProtocol.protocolProxyApiMod.ProtocolProxyApi
 
 import typings.devtoolsProtocol.devtoolsProtocolStrings.issueAdded
+import typings.devtoolsProtocol.mod.Protocol.Audits.CheckContrastRequest
 import typings.devtoolsProtocol.mod.Protocol.Audits.GetEncodedResponseRequest
 import typings.devtoolsProtocol.mod.Protocol.Audits.GetEncodedResponseResponse
 import typings.devtoolsProtocol.mod.Protocol.Audits.IssueAddedEvent
@@ -9,6 +10,12 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait AuditsApi extends StObject {
+  
+  /**
+    * Runs the contrast check for the target page. Found issues are reported
+    * using Audits.issueAdded event.
+    */
+  def checkContrast(params: CheckContrastRequest): js.Promise[Unit]
   
   /**
     * Disables issues domain, prevents further issues from being reported to the client.
@@ -33,16 +40,19 @@ trait AuditsApi extends StObject {
 object AuditsApi {
   
   inline def apply(
+    checkContrast: CheckContrastRequest => js.Promise[Unit],
     disable: () => js.Promise[Unit],
     enable: () => js.Promise[Unit],
     getEncodedResponse: GetEncodedResponseRequest => js.Promise[GetEncodedResponseResponse],
     on: (issueAdded, js.Function1[/* params */ IssueAddedEvent, Unit]) => Unit
   ): AuditsApi = {
-    val __obj = js.Dynamic.literal(disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable), getEncodedResponse = js.Any.fromFunction1(getEncodedResponse), on = js.Any.fromFunction2(on))
+    val __obj = js.Dynamic.literal(checkContrast = js.Any.fromFunction1(checkContrast), disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable), getEncodedResponse = js.Any.fromFunction1(getEncodedResponse), on = js.Any.fromFunction2(on))
     __obj.asInstanceOf[AuditsApi]
   }
   
   extension [Self <: AuditsApi](x: Self) {
+    
+    inline def setCheckContrast(value: CheckContrastRequest => js.Promise[Unit]): Self = StObject.set(x, "checkContrast", js.Any.fromFunction1(value))
     
     inline def setDisable(value: () => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     

@@ -24,6 +24,6 @@ object CancelSpotInstanceRequestsResult {
     
     inline def setCancelledSpotInstanceRequestsUndefined: Self = StObject.set(x, "CancelledSpotInstanceRequests", js.undefined)
     
-    inline def setCancelledSpotInstanceRequestsVarargs(value: CancelledSpotInstanceRequest*): Self = StObject.set(x, "CancelledSpotInstanceRequests", js.Array(value :_*))
+    inline def setCancelledSpotInstanceRequestsVarargs(value: CancelledSpotInstanceRequest*): Self = StObject.set(x, "CancelledSpotInstanceRequests", js.Array(value*))
   }
 }

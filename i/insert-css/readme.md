@@ -11,9 +11,9 @@ insert a string of css into the <head>
 | Full name          | insert-css |
 | Keywords           | css, insert, dom, browser, browserify, inject, styles, stylesheet, style, html, head, link |
 | # releases         | 0 |
-| # dependents       | 277 |
-| # downloads        | 13383500 |
-| # stars            | 16 |
+| # dependents       | 0.0 |
+| # downloads        | 966482.3333333334 |
+| # stars            | 246.0 |
 
 ## Links
 - [Homepage](https://github.com/substack/insert-css)

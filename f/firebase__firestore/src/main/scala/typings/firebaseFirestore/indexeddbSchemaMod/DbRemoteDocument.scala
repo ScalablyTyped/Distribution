@@ -1,483 +1,89 @@
 package typings.firebaseFirestore.indexeddbSchemaMod
 
+import typings.firebaseFirestore.firestoreProtoApiMod.Document
+import typings.firebaseFirestore.indexeddbSentinelsMod.DbTimestampKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/firestore/dist/packages/firestore/src/local/indexeddb_schema", "DbRemoteDocument")
-@js.native
-class DbRemoteDocument () extends js.Object {
-  def this(/**
-    * Set to an instance of DbUnknownDocument if the data for a document is
-    * not known, but it is known that a document exists at the specified
-    * version (e.g. it had a successful update applied to it)
-    */
-  unknownDocument: js.UndefOr[DbUnknownDocument]) = this()
-  def this(
-    /**
-    * Set to an instance of DbUnknownDocument if the data for a document is
-    * not known, but it is known that a document exists at the specified
-    * version (e.g. it had a successful update applied to it)
-    */
-  unknownDocument: js.UndefOr[DbUnknownDocument | Null],
-    /**
-    * Set to an instance of a DbNoDocument if it is known that no document
-    * exists.
-    */
-  noDocument: DbNoDocument
-  ) = this()
-  def this(
-    /**
-    * Set to an instance of DbUnknownDocument if the data for a document is
-    * not known, but it is known that a document exists at the specified
-    * version (e.g. it had a successful update applied to it)
-    */
-  unknownDocument: js.UndefOr[DbUnknownDocument | Null],
-    /**
-    * Set to an instance of a DbNoDocument if it is known that no document
-    * exists.
-    */
-  noDocument: Null,
-    /**
-    * Set to an instance of a Document if there's a cached version of the
-    * document.
-    */
-  document: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.Document */ js.Any
-  ) = this()
-  def this(
-    /**
-    * Set to an instance of DbUnknownDocument if the data for a document is
-    * not known, but it is known that a document exists at the specified
-    * version (e.g. it had a successful update applied to it)
-    */
-  unknownDocument: js.UndefOr[DbUnknownDocument | Null],
-    /**
-    * Set to an instance of a DbNoDocument if it is known that no document
-    * exists.
-    */
-  noDocument: DbNoDocument,
-    /**
-    * Set to an instance of a Document if there's a cached version of the
-    * document.
-    */
-  document: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.Document */ js.Any
-  ) = this()
-  def this(
-    /**
-    * Set to an instance of DbUnknownDocument if the data for a document is
-    * not known, but it is known that a document exists at the specified
-    * version (e.g. it had a successful update applied to it)
-    */
-  unknownDocument: js.UndefOr[DbUnknownDocument | Null],
-    /**
-    * Set to an instance of a DbNoDocument if it is known that no document
-    * exists.
-    */
-  noDocument: Null,
-    /**
-    * Set to an instance of a Document if there's a cached version of the
-    * document.
-    */
-  document: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.Document */ js.Any,
-    /**
-    * Documents that were written to the remote document store based on
-    * a write acknowledgment are marked with `hasCommittedMutations`. These
-    * documents are potentially inconsistent with the backend's copy and use
-    * the write's commit version as their document version.
-    */
-  hasCommittedMutations: Boolean
-  ) = this()
-  def this(
-    /**
-    * Set to an instance of DbUnknownDocument if the data for a document is
-    * not known, but it is known that a document exists at the specified
-    * version (e.g. it had a successful update applied to it)
-    */
-  unknownDocument: js.UndefOr[DbUnknownDocument | Null],
-    /**
-    * Set to an instance of a DbNoDocument if it is known that no document
-    * exists.
-    */
-  noDocument: Null,
-    /**
-    * Set to an instance of a Document if there's a cached version of the
-    * document.
-    */
-  document: Null,
-    /**
-    * Documents that were written to the remote document store based on
-    * a write acknowledgment are marked with `hasCommittedMutations`. These
-    * documents are potentially inconsistent with the backend's copy and use
-    * the write's commit version as their document version.
-    */
-  hasCommittedMutations: Boolean
-  ) = this()
-  def this(
-    /**
-    * Set to an instance of DbUnknownDocument if the data for a document is
-    * not known, but it is known that a document exists at the specified
-    * version (e.g. it had a successful update applied to it)
-    */
-  unknownDocument: js.UndefOr[DbUnknownDocument | Null],
-    /**
-    * Set to an instance of a DbNoDocument if it is known that no document
-    * exists.
-    */
-  noDocument: DbNoDocument,
-    /**
-    * Set to an instance of a Document if there's a cached version of the
-    * document.
-    */
-  document: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.Document */ js.Any,
-    /**
-    * Documents that were written to the remote document store based on
-    * a write acknowledgment are marked with `hasCommittedMutations`. These
-    * documents are potentially inconsistent with the backend's copy and use
-    * the write's commit version as their document version.
-    */
-  hasCommittedMutations: Boolean
-  ) = this()
-  def this(
-    /**
-    * Set to an instance of DbUnknownDocument if the data for a document is
-    * not known, but it is known that a document exists at the specified
-    * version (e.g. it had a successful update applied to it)
-    */
-  unknownDocument: js.UndefOr[DbUnknownDocument | Null],
-    /**
-    * Set to an instance of a DbNoDocument if it is known that no document
-    * exists.
-    */
-  noDocument: DbNoDocument,
-    /**
-    * Set to an instance of a Document if there's a cached version of the
-    * document.
-    */
-  document: Null,
-    /**
-    * Documents that were written to the remote document store based on
-    * a write acknowledgment are marked with `hasCommittedMutations`. These
-    * documents are potentially inconsistent with the backend's copy and use
-    * the write's commit version as their document version.
-    */
-  hasCommittedMutations: Boolean
-  ) = this()
-  def this(
-    /**
-    * Set to an instance of DbUnknownDocument if the data for a document is
-    * not known, but it is known that a document exists at the specified
-    * version (e.g. it had a successful update applied to it)
-    */
-  unknownDocument: js.UndefOr[DbUnknownDocument | Null],
-    /**
-    * Set to an instance of a DbNoDocument if it is known that no document
-    * exists.
-    */
-  noDocument: Null,
-    /**
-    * Set to an instance of a Document if there's a cached version of the
-    * document.
-    */
-  document: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.Document */ js.Any,
-    /**
-    * Documents that were written to the remote document store based on
-    * a write acknowledgment are marked with `hasCommittedMutations`. These
-    * documents are potentially inconsistent with the backend's copy and use
-    * the write's commit version as their document version.
-    */
-  hasCommittedMutations: Boolean,
-    /**
-    * When the document was read from the backend. Undefined for data written
-    * prior to schema version 9.
-    */
-  readTime: DbTimestampKey
-  ) = this()
-  def this(
-    /**
-    * Set to an instance of DbUnknownDocument if the data for a document is
-    * not known, but it is known that a document exists at the specified
-    * version (e.g. it had a successful update applied to it)
-    */
-  unknownDocument: js.UndefOr[DbUnknownDocument | Null],
-    /**
-    * Set to an instance of a DbNoDocument if it is known that no document
-    * exists.
-    */
-  noDocument: Null,
-    /**
-    * Set to an instance of a Document if there's a cached version of the
-    * document.
-    */
-  document: Null,
-    /**
-    * Documents that were written to the remote document store based on
-    * a write acknowledgment are marked with `hasCommittedMutations`. These
-    * documents are potentially inconsistent with the backend's copy and use
-    * the write's commit version as their document version.
-    */
-  hasCommittedMutations: Boolean,
-    /**
-    * When the document was read from the backend. Undefined for data written
-    * prior to schema version 9.
-    */
-  readTime: DbTimestampKey
-  ) = this()
-  def this(
-    /**
-    * Set to an instance of DbUnknownDocument if the data for a document is
-    * not known, but it is known that a document exists at the specified
-    * version (e.g. it had a successful update applied to it)
-    */
-  unknownDocument: js.UndefOr[DbUnknownDocument | Null],
-    /**
-    * Set to an instance of a DbNoDocument if it is known that no document
-    * exists.
-    */
-  noDocument: DbNoDocument,
-    /**
-    * Set to an instance of a Document if there's a cached version of the
-    * document.
-    */
-  document: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.Document */ js.Any,
-    /**
-    * Documents that were written to the remote document store based on
-    * a write acknowledgment are marked with `hasCommittedMutations`. These
-    * documents are potentially inconsistent with the backend's copy and use
-    * the write's commit version as their document version.
-    */
-  hasCommittedMutations: Boolean,
-    /**
-    * When the document was read from the backend. Undefined for data written
-    * prior to schema version 9.
-    */
-  readTime: DbTimestampKey
-  ) = this()
-  def this(
-    /**
-    * Set to an instance of DbUnknownDocument if the data for a document is
-    * not known, but it is known that a document exists at the specified
-    * version (e.g. it had a successful update applied to it)
-    */
-  unknownDocument: js.UndefOr[DbUnknownDocument | Null],
-    /**
-    * Set to an instance of a DbNoDocument if it is known that no document
-    * exists.
-    */
-  noDocument: DbNoDocument,
-    /**
-    * Set to an instance of a Document if there's a cached version of the
-    * document.
-    */
-  document: Null,
-    /**
-    * Documents that were written to the remote document store based on
-    * a write acknowledgment are marked with `hasCommittedMutations`. These
-    * documents are potentially inconsistent with the backend's copy and use
-    * the write's commit version as their document version.
-    */
-  hasCommittedMutations: Boolean,
-    /**
-    * When the document was read from the backend. Undefined for data written
-    * prior to schema version 9.
-    */
-  readTime: DbTimestampKey
-  ) = this()
-  def this(
-    /**
-    * Set to an instance of DbUnknownDocument if the data for a document is
-    * not known, but it is known that a document exists at the specified
-    * version (e.g. it had a successful update applied to it)
-    */
-  unknownDocument: js.UndefOr[DbUnknownDocument | Null],
-    /**
-    * Set to an instance of a DbNoDocument if it is known that no document
-    * exists.
-    */
-  noDocument: Null,
-    /**
-    * Set to an instance of a Document if there's a cached version of the
-    * document.
-    */
-  document: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.Document */ js.Any,
-    /**
-    * Documents that were written to the remote document store based on
-    * a write acknowledgment are marked with `hasCommittedMutations`. These
-    * documents are potentially inconsistent with the backend's copy and use
-    * the write's commit version as their document version.
-    */
-  hasCommittedMutations: Boolean,
-    /**
-    * When the document was read from the backend. Undefined for data written
-    * prior to schema version 9.
-    */
-  readTime: DbTimestampKey,
-    /**
-    * The path of the collection this document is part of. Undefined for data
-    * written prior to schema version 9.
-    */
-  parentPath: js.Array[String]
-  ) = this()
-  def this(
-    /**
-    * Set to an instance of DbUnknownDocument if the data for a document is
-    * not known, but it is known that a document exists at the specified
-    * version (e.g. it had a successful update applied to it)
-    */
-  unknownDocument: js.UndefOr[DbUnknownDocument | Null],
-    /**
-    * Set to an instance of a DbNoDocument if it is known that no document
-    * exists.
-    */
-  noDocument: Null,
-    /**
-    * Set to an instance of a Document if there's a cached version of the
-    * document.
-    */
-  document: Null,
-    /**
-    * Documents that were written to the remote document store based on
-    * a write acknowledgment are marked with `hasCommittedMutations`. These
-    * documents are potentially inconsistent with the backend's copy and use
-    * the write's commit version as their document version.
-    */
-  hasCommittedMutations: Boolean,
-    /**
-    * When the document was read from the backend. Undefined for data written
-    * prior to schema version 9.
-    */
-  readTime: DbTimestampKey,
-    /**
-    * The path of the collection this document is part of. Undefined for data
-    * written prior to schema version 9.
-    */
-  parentPath: js.Array[String]
-  ) = this()
-  def this(
-    /**
-    * Set to an instance of DbUnknownDocument if the data for a document is
-    * not known, but it is known that a document exists at the specified
-    * version (e.g. it had a successful update applied to it)
-    */
-  unknownDocument: js.UndefOr[DbUnknownDocument | Null],
-    /**
-    * Set to an instance of a DbNoDocument if it is known that no document
-    * exists.
-    */
-  noDocument: DbNoDocument,
-    /**
-    * Set to an instance of a Document if there's a cached version of the
-    * document.
-    */
-  document: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.Document */ js.Any,
-    /**
-    * Documents that were written to the remote document store based on
-    * a write acknowledgment are marked with `hasCommittedMutations`. These
-    * documents are potentially inconsistent with the backend's copy and use
-    * the write's commit version as their document version.
-    */
-  hasCommittedMutations: Boolean,
-    /**
-    * When the document was read from the backend. Undefined for data written
-    * prior to schema version 9.
-    */
-  readTime: DbTimestampKey,
-    /**
-    * The path of the collection this document is part of. Undefined for data
-    * written prior to schema version 9.
-    */
-  parentPath: js.Array[String]
-  ) = this()
-  def this(
-    /**
-    * Set to an instance of DbUnknownDocument if the data for a document is
-    * not known, but it is known that a document exists at the specified
-    * version (e.g. it had a successful update applied to it)
-    */
-  unknownDocument: js.UndefOr[DbUnknownDocument | Null],
-    /**
-    * Set to an instance of a DbNoDocument if it is known that no document
-    * exists.
-    */
-  noDocument: DbNoDocument,
-    /**
-    * Set to an instance of a Document if there's a cached version of the
-    * document.
-    */
-  document: Null,
-    /**
-    * Documents that were written to the remote document store based on
-    * a write acknowledgment are marked with `hasCommittedMutations`. These
-    * documents are potentially inconsistent with the backend's copy and use
-    * the write's commit version as their document version.
-    */
-  hasCommittedMutations: Boolean,
-    /**
-    * When the document was read from the backend. Undefined for data written
-    * prior to schema version 9.
-    */
-  readTime: DbTimestampKey,
-    /**
-    * The path of the collection this document is part of. Undefined for data
-    * written prior to schema version 9.
-    */
-  parentPath: js.Array[String]
-  ) = this()
+trait DbRemoteDocument extends StObject {
+  
+  /** The collection ID the document is direclty nested under. */
+  var collectionGroup: String
+  
   /**
     * Set to an instance of a Document if there's a cached version of the
     * document.
     */
-  var document: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.Document */ js.Any) | Null = js.native
+  var document: js.UndefOr[Document] = js.undefined
+  
+  /** The document ID. */
+  var documentId: String
+  
   /**
     * Documents that were written to the remote document store based on
     * a write acknowledgment are marked with `hasCommittedMutations`. These
     * documents are potentially inconsistent with the backend's copy and use
     * the write's commit version as their document version.
     */
-  var hasCommittedMutations: js.UndefOr[Boolean] = js.native
+  var hasCommittedMutations: Boolean
+  
   /**
     * Set to an instance of a DbNoDocument if it is known that no document
     * exists.
     */
-  var noDocument: DbNoDocument | Null = js.native
-  /**
-    * The path of the collection this document is part of. Undefined for data
-    * written prior to schema version 9.
-    */
-  var parentPath: js.UndefOr[js.Array[String]] = js.native
-  /**
-    * When the document was read from the backend. Undefined for data written
-    * prior to schema version 9.
-    */
-  var readTime: js.UndefOr[DbTimestampKey] = js.native
+  var noDocument: js.UndefOr[DbNoDocument] = js.undefined
+  
+  /** The path to the document's collection (excluding). */
+  var prefixPath: js.Array[String]
+  
+  /** When the document was read from the backend. */
+  var readTime: DbTimestampKey
+  
   /**
     * Set to an instance of DbUnknownDocument if the data for a document is
     * not known, but it is known that a document exists at the specified
     * version (e.g. it had a successful update applied to it)
     */
-  var unknownDocument: js.UndefOr[DbUnknownDocument | Null] = js.native
+  var unknownDocument: js.UndefOr[DbUnknownDocument] = js.undefined
 }
-
-/* static members */
-@JSImport("@firebase/firestore/dist/packages/firestore/src/local/indexeddb_schema", "DbRemoteDocument")
-@js.native
-object DbRemoteDocument extends js.Object {
-  /**
-    * An index that provides access to documents in a collection sorted by read
-    * time.
-    *
-    * This index is used to allow the RemoteDocumentCache to fetch newly changed
-    * documents in a collection.
-    */
-  var collectionReadTimeIndex: String = js.native
-  var collectionReadTimeIndexPath: js.Array[String] = js.native
-  /**
-    * An index that provides access to all entries sorted by read time (which
-    * corresponds to the last modification time of each row).
-    *
-    * This index is used to provide a changelog for Multi-Tab.
-    */
-  var readTimeIndex: String = js.native
-  var readTimeIndexPath: String = js.native
-  var store: String = js.native
+object DbRemoteDocument {
+  
+  inline def apply(
+    collectionGroup: String,
+    documentId: String,
+    hasCommittedMutations: Boolean,
+    prefixPath: js.Array[String],
+    readTime: DbTimestampKey
+  ): DbRemoteDocument = {
+    val __obj = js.Dynamic.literal(collectionGroup = collectionGroup.asInstanceOf[js.Any], documentId = documentId.asInstanceOf[js.Any], hasCommittedMutations = hasCommittedMutations.asInstanceOf[js.Any], prefixPath = prefixPath.asInstanceOf[js.Any], readTime = readTime.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DbRemoteDocument]
+  }
+  
+  extension [Self <: DbRemoteDocument](x: Self) {
+    
+    inline def setCollectionGroup(value: String): Self = StObject.set(x, "collectionGroup", value.asInstanceOf[js.Any])
+    
+    inline def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    
+    inline def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
+    
+    inline def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
+    
+    inline def setHasCommittedMutations(value: Boolean): Self = StObject.set(x, "hasCommittedMutations", value.asInstanceOf[js.Any])
+    
+    inline def setNoDocument(value: DbNoDocument): Self = StObject.set(x, "noDocument", value.asInstanceOf[js.Any])
+    
+    inline def setNoDocumentUndefined: Self = StObject.set(x, "noDocument", js.undefined)
+    
+    inline def setPrefixPath(value: js.Array[String]): Self = StObject.set(x, "prefixPath", value.asInstanceOf[js.Any])
+    
+    inline def setPrefixPathVarargs(value: String*): Self = StObject.set(x, "prefixPath", js.Array(value*))
+    
+    inline def setReadTime(value: DbTimestampKey): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
+    
+    inline def setUnknownDocument(value: DbUnknownDocument): Self = StObject.set(x, "unknownDocument", value.asInstanceOf[js.Any])
+    
+    inline def setUnknownDocumentUndefined: Self = StObject.set(x, "unknownDocument", js.undefined)
+  }
 }
-

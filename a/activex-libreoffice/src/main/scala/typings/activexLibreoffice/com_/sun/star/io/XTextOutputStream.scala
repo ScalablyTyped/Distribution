@@ -39,7 +39,7 @@ object XTextOutputStream {
     acquire: () => Unit,
     closeOutput: () => Unit,
     flush: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setEncoding: String => Unit,
     writeBytes: SeqEquiv[Double] => Unit,

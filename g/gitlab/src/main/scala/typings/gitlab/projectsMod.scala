@@ -12,7 +12,6 @@ import typings.gitlab.requestHelperMod.GetResponse
 import typings.gitlab.requestHelperMod.PaginatedRequestOptions
 import typings.gitlab.requestHelperMod.Sudo
 import typings.gitlab.usersMod.UserSchema
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +20,7 @@ object projectsMod {
   
   @JSImport("gitlab/dist/types/core/services/Projects", "Projects")
   @js.native
-  class Projects () extends BaseService {
+  open class Projects () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def all(): js.Promise[js.Array[ProjectSchema]] = js.native
@@ -124,8 +123,8 @@ object projectsMod {
     def unstar(projectId: Double): js.Promise[js.Object] = js.native
     def unstar(projectId: Double, options: Sudo): js.Promise[js.Object] = js.native
     
-    def upload(projectId: js.Any, content: js.Any): js.Promise[js.Object] = js.native
-    def upload(projectId: js.Any, content: js.Any, hasMetadataSudo: metadataUploadMetadataund): js.Promise[js.Object] = js.native
+    def upload(projectId: Any, content: Any): js.Promise[js.Object] = js.native
+    def upload(projectId: Any, content: Any, hasMetadataSudo: metadataUploadMetadataund): js.Promise[js.Object] = js.native
   }
   
   trait NamespaceInfoSchema extends StObject {
@@ -207,7 +206,7 @@ object projectsMod {
     
     var container_registry_enabled: Boolean
     
-    var created_at: Date
+    var created_at: js.Date
     
     var creator_id: Double
     
@@ -231,7 +230,7 @@ object projectsMod {
     
     var jobs_enabled: Boolean
     
-    var last_activity_at: Date
+    var last_activity_at: js.Date
     
     var lfs_enabled: Boolean
     
@@ -306,7 +305,7 @@ object projectsMod {
       builds_access_level: String,
       ci_default_git_depth: Double,
       container_registry_enabled: Boolean,
-      created_at: Date,
+      created_at: js.Date,
       creator_id: Double,
       default_branch: String,
       description: String,
@@ -318,7 +317,7 @@ object projectsMod {
       issues_access_level: String,
       issues_enabled: Boolean,
       jobs_enabled: Boolean,
-      last_activity_at: Date,
+      last_activity_at: js.Date,
       lfs_enabled: Boolean,
       merge_method: String,
       merge_requests_access_level: String,
@@ -385,7 +384,7 @@ object projectsMod {
       
       inline def setContainer_registry_enabled(value: Boolean): Self = StObject.set(x, "container_registry_enabled", value.asInstanceOf[js.Any])
       
-      inline def setCreated_at(value: Date): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+      inline def setCreated_at(value: js.Date): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       
       inline def setCreator_id(value: Double): Self = StObject.set(x, "creator_id", value.asInstanceOf[js.Any])
       
@@ -409,7 +408,7 @@ object projectsMod {
       
       inline def setJobs_enabled(value: Boolean): Self = StObject.set(x, "jobs_enabled", value.asInstanceOf[js.Any])
       
-      inline def setLast_activity_at(value: Date): Self = StObject.set(x, "last_activity_at", value.asInstanceOf[js.Any])
+      inline def setLast_activity_at(value: js.Date): Self = StObject.set(x, "last_activity_at", value.asInstanceOf[js.Any])
       
       inline def setLfs_enabled(value: Boolean): Self = StObject.set(x, "lfs_enabled", value.asInstanceOf[js.Any])
       
@@ -455,7 +454,7 @@ object projectsMod {
       
       inline def setShared_with_groups(value: js.Array[GroupSchema]): Self = StObject.set(x, "shared_with_groups", value.asInstanceOf[js.Any])
       
-      inline def setShared_with_groupsVarargs(value: GroupSchema*): Self = StObject.set(x, "shared_with_groups", js.Array(value :_*))
+      inline def setShared_with_groupsVarargs(value: GroupSchema*): Self = StObject.set(x, "shared_with_groups", js.Array(value*))
       
       inline def setSnippets_access_level(value: String): Self = StObject.set(x, "snippets_access_level", value.asInstanceOf[js.Any])
       
@@ -467,7 +466,7 @@ object projectsMod {
       
       inline def setTag_list(value: js.Array[String]): Self = StObject.set(x, "tag_list", value.asInstanceOf[js.Any])
       
-      inline def setTag_listVarargs(value: String*): Self = StObject.set(x, "tag_list", js.Array(value :_*))
+      inline def setTag_listVarargs(value: String*): Self = StObject.set(x, "tag_list", js.Array(value*))
       
       inline def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
       

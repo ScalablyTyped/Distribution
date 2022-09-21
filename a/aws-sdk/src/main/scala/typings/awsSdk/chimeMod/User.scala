@@ -24,7 +24,7 @@ trait User extends StObject {
   /**
     * Date and time when the user is invited to the Amazon Chime account, in ISO 8601 format.
     */
-  var InvitedOn: js.UndefOr[Iso8601Timestamp] = js.undefined
+  var InvitedOn: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The license type for the user.
@@ -49,7 +49,7 @@ trait User extends StObject {
   /**
     * Date and time when the user is registered, in ISO 8601 format.
     */
-  var RegisteredOn: js.UndefOr[Iso8601Timestamp] = js.undefined
+  var RegisteredOn: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The user ID.
@@ -92,7 +92,7 @@ object User {
     
     inline def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
     
-    inline def setInvitedOn(value: Iso8601Timestamp): Self = StObject.set(x, "InvitedOn", value.asInstanceOf[js.Any])
+    inline def setInvitedOn(value: js.Date): Self = StObject.set(x, "InvitedOn", value.asInstanceOf[js.Any])
     
     inline def setInvitedOnUndefined: Self = StObject.set(x, "InvitedOn", js.undefined)
     
@@ -112,7 +112,7 @@ object User {
     
     inline def setPrimaryProvisionedNumberUndefined: Self = StObject.set(x, "PrimaryProvisionedNumber", js.undefined)
     
-    inline def setRegisteredOn(value: Iso8601Timestamp): Self = StObject.set(x, "RegisteredOn", value.asInstanceOf[js.Any])
+    inline def setRegisteredOn(value: js.Date): Self = StObject.set(x, "RegisteredOn", value.asInstanceOf[js.Any])
     
     inline def setRegisteredOnUndefined: Self = StObject.set(x, "RegisteredOn", js.undefined)
     

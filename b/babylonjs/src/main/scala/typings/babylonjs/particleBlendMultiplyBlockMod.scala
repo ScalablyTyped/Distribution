@@ -10,7 +10,7 @@ object particleBlendMultiplyBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/Particle/particleBlendMultiplyBlock", "ParticleBlendMultiplyBlock")
   @js.native
-  class ParticleBlendMultiplyBlock protected () extends NodeMaterialBlock {
+  open class ParticleBlendMultiplyBlock protected () extends NodeMaterialBlock {
     /**
       * Create a new ParticleBlendMultiplyBlock
       * @param name defines the block name

@@ -113,7 +113,7 @@ object LocationData {
     
     inline def setPoisUndefined: Self = StObject.set(x, "pois", js.undefined)
     
-    inline def setPoisVarargs(value: Address*): Self = StObject.set(x, "pois", js.Array(value :_*))
+    inline def setPoisVarargs(value: Address*): Self = StObject.set(x, "pois", js.Array(value*))
     
     inline def setProvince(value: String): Self = StObject.set(x, "province", value.asInstanceOf[js.Any])
     

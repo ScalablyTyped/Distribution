@@ -8,14 +8,19 @@ trait SpeechSynthesisEventInit
   extends StObject
      with EventInit {
   
+  /* standard dom */
   var charIndex: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var charLength: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var elapsedTime: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var name: js.UndefOr[java.lang.String] = js.undefined
   
+  /* standard dom */
   var utterance: SpeechSynthesisUtterance
 }
 object SpeechSynthesisEventInit {

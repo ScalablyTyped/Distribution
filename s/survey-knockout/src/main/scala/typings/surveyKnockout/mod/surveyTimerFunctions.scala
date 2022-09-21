@@ -12,5 +12,5 @@ object surveyTimerFunctions {
   
   inline def clearTimeout(timerId: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearTimeout")(timerId.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def setTimeout(func: js.Function0[js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")(func.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def setTimeout(func: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")(func.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

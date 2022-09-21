@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.MailMerge")
 @js.native
-/* private */ class MailMerge ()
+/* private */ open class MailMerge ()
   extends StObject
      with typings.activexWord.Word.MailMerge

@@ -10,10 +10,10 @@ Parse `.git/config` into a JavaScript object. sync or async.
 | ------------------ | :-------------: |
 | Full name          | parse-git-config |
 | Keywords           | config, git, parse |
-| # releases         | 2 |
-| # dependents       | 180 |
-| # downloads        | 16383791 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5225405.0 |
+| # stars            | 55.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/parse-git-config)

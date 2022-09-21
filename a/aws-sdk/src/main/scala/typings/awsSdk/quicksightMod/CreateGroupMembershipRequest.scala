@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateGroupMembershipRequest extends StObject {
   
   /**
-    * The ID for the AWS account that the group is in. Currently, you use the ID for the AWS account that contains your Amazon QuickSight account.
+    * The ID for the Amazon Web Services account that the group is in. Currently, you use the ID for the Amazon Web Services account that contains your Amazon QuickSight account.
     */
   var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
@@ -22,7 +22,7 @@ trait CreateGroupMembershipRequest extends StObject {
   var MemberName: GroupMemberName
   
   /**
-    * The namespace. Currently, you should set this to default.
+    * The namespace that you want the user to be a part of.
     */
   var Namespace: typings.awsSdk.quicksightMod.Namespace
 }

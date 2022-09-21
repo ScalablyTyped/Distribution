@@ -21,12 +21,12 @@ object CombinedCodeActions {
     
     inline def setChanges(value: js.Array[FileTextChanges]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
-    inline def setChangesVarargs(value: FileTextChanges*): Self = StObject.set(x, "changes", js.Array(value :_*))
+    inline def setChangesVarargs(value: FileTextChanges*): Self = StObject.set(x, "changes", js.Array(value*))
     
     inline def setCommands(value: js.Array[CodeActionCommand]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     
     inline def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
     
-    inline def setCommandsVarargs(value: CodeActionCommand*): Self = StObject.set(x, "commands", js.Array(value :_*))
+    inline def setCommandsVarargs(value: CodeActionCommand*): Self = StObject.set(x, "commands", js.Array(value*))
   }
 }

@@ -68,7 +68,7 @@ object AwsApiGatewayRestApiDetails {
     
     inline def setBinaryMediaTypesUndefined: Self = StObject.set(x, "BinaryMediaTypes", js.undefined)
     
-    inline def setBinaryMediaTypesVarargs(value: NonEmptyString*): Self = StObject.set(x, "BinaryMediaTypes", js.Array(value :_*))
+    inline def setBinaryMediaTypesVarargs(value: NonEmptyString*): Self = StObject.set(x, "BinaryMediaTypes", js.Array(value*))
     
     inline def setCreatedDate(value: NonEmptyString): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     

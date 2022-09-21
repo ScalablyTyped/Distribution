@@ -41,7 +41,7 @@ object mod {
     inline def request: typings.mitm.mitmStrings.request = "request".asInstanceOf[typings.mitm.mitmStrings.request]
   }
   
-  type HttpCallback = js.Function2[/* request */ IncomingMessage, /* response */ ServerResponse, Unit]
+  type HttpCallback = js.Function2[/* request */ IncomingMessage, /* response */ ServerResponse[IncomingMessage], Unit]
   
   @js.native
   trait Mitm extends StObject {

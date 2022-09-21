@@ -1,7 +1,7 @@
 
 # Scala.js typings for doubleclick-gpt
 
-Typings are for version 2019041801.0
+Typings are for version 2019111201.0
 
 
 

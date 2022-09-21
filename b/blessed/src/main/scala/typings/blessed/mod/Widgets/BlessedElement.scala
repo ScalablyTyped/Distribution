@@ -202,7 +202,7 @@ abstract class BlessedElement protected () extends NodeWithEvents {
     * Same asel.on('screen', ...) except this will automatically keep track of which listeners
     * are bound to the screen object. For use with removeScreenEvent(), free(), and destroy().
     */
-  def onScreenEvent(`type`: String, handler: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+  def onScreenEvent(`type`: String, handler: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
   
   /**
     * Original options object.
@@ -236,13 +236,13 @@ abstract class BlessedElement protected () extends NodeWithEvents {
   /**
     * Remove the label completely.
     */
-  def removeLabel(): js.Any = js.native
+  def removeLabel(): Any = js.native
   
   /**
     * Same asel.removeListener('screen', ...) except this will automatically keep track of which
     * listeners are bound to the screen object. For use with onScreenEvent(), free(), and destroy().
     */
-  def removeScreenEvent(`type`: String, handler: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+  def removeScreenEvent(`type`: String, handler: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
   
   /**
     * Write content and children to the screen buffer.
@@ -354,7 +354,7 @@ abstract class BlessedElement protected () extends NodeWithEvents {
     */
   def strWidth(text: String): String = js.native
   
-  var style: js.Any = js.native
+  var style: Any = js.native
   
   /**
     * Toggle hidden/shown.

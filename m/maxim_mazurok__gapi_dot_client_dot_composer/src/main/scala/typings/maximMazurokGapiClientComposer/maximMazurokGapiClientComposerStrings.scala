@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientComposerStrings {
   
   @js.native
+  sealed trait CheckUpgradeResponse extends StObject
+  inline def CheckUpgradeResponse: CheckUpgradeResponse = "CheckUpgradeResponse".asInstanceOf[CheckUpgradeResponse]
+  
+  @js.native
   sealed trait Environment extends StObject
   inline def Environment: Environment = "Environment".asInstanceOf[Environment]
   

@@ -17,7 +17,7 @@ trait IRadio
     * @returns Object A mapping of submit parameter names to values; each value should be a string, or an array of strings if that particular name has multiple values. It can also return null if there are no parameters to be submitted.
     */
   @JSName("getModelData")
-  var getModelData_IRadio: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getModelData_IRadio: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Property] (Boolean) */
   var isRadio: js.UndefOr[Boolean] = js.undefined
@@ -39,7 +39,7 @@ object IRadio {
     
     inline def setGetGroupValueUndefined: Self = StObject.set(x, "getGroupValue", js.undefined)
     
-    inline def setGetModelData(value: () => js.Any): Self = StObject.set(x, "getModelData", js.Any.fromFunction0(value))
+    inline def setGetModelData(value: () => Any): Self = StObject.set(x, "getModelData", js.Any.fromFunction0(value))
     
     inline def setGetModelDataUndefined: Self = StObject.set(x, "getModelData", js.undefined)
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-cognito-identity", "TagResourceCommand")
 @js.native
-class TagResourceCommand protected ()
-  extends typings.awsSdkClientCognitoIdentity.tagResourceCommandMod.TagResourceCommand {
+open class TagResourceCommand protected ()
+  extends typings.awsSdkClientCognitoIdentity.commandsMod.TagResourceCommand {
   def this(input: TagResourceCommandInput) = this()
 }

@@ -1,12 +1,12 @@
 package typings.officeUiFabricReact
 
 import typings.fluentuiTheme.ithemeMod.ITheme
+import typings.officeUiFabricReact.iconTypesMod.IIconProps
 import typings.officeUiFabricReact.personaTypesMod.IPersonaProps
 import typings.officeUiFabricReact.spinnerTypesMod.ISpinnerStyleProps
 import typings.officeUiFabricReact.suggestionsItemTypesMod.ISuggestionItemProps
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
-import typings.react.mod.Props
 import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import typings.uifabricMergeStyles.deepPartialMod.DeepPartial
@@ -138,10 +138,9 @@ object suggestionsTypesMod {
     }
   }
   
-  @js.native
-  trait ISuggestionsProps[T]
-    extends StObject
-       with Props[js.Any] {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.Props<any> * / any */ @js.native
+  trait ISuggestionsProps[T] extends StObject {
     
     /**
       * The CSS className of the suggestions root.
@@ -225,12 +224,12 @@ object suggestionsTypesMod {
       * What should occur when a suggestion is clicked
       */
     def onSuggestionClick(): Unit = js.native
-    def onSuggestionClick(ev: Unit, item: js.Any): Unit = js.native
-    def onSuggestionClick(ev: Unit, item: js.Any, index: Double): Unit = js.native
+    def onSuggestionClick(ev: Unit, item: Any): Unit = js.native
+    def onSuggestionClick(ev: Unit, item: Any, index: Double): Unit = js.native
     def onSuggestionClick(ev: Unit, item: Unit, index: Double): Unit = js.native
     def onSuggestionClick(ev: MouseEvent[HTMLElement, NativeMouseEvent]): Unit = js.native
-    def onSuggestionClick(ev: MouseEvent[HTMLElement, NativeMouseEvent], item: js.Any): Unit = js.native
-    def onSuggestionClick(ev: MouseEvent[HTMLElement, NativeMouseEvent], item: js.Any, index: Double): Unit = js.native
+    def onSuggestionClick(ev: MouseEvent[HTMLElement, NativeMouseEvent], item: Any): Unit = js.native
+    def onSuggestionClick(ev: MouseEvent[HTMLElement, NativeMouseEvent], item: Any, index: Double): Unit = js.native
     def onSuggestionClick(ev: MouseEvent[HTMLElement, NativeMouseEvent], item: Unit, index: Double): Unit = js.native
     
     /**
@@ -280,6 +279,11 @@ object suggestionsTypesMod {
     var searchErrorText: js.UndefOr[String] = js.native
     
     /**
+      * The icon that appears indicating to the user that they can search for more results.
+      */
+    var searchForMoreIcon: js.UndefOr[IIconProps] = js.native
+    
+    /**
       * The text that appears indicating to the user that they can search for more results.
       */
     var searchForMoreText: js.UndefOr[String] = js.native
@@ -300,7 +304,7 @@ object suggestionsTypesMod {
     var showRemoveButtons: js.UndefOr[Boolean] = js.native
     
     /** Call to provide customized styling that will layer on top of the variant rules. */
-    var styles: js.UndefOr[IStyleFunctionOrObject[js.Any, js.Any]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[Any, Any]] = js.native
     
     /**
       * The list of Suggestions that will be displayed
@@ -345,7 +349,7 @@ object suggestionsTypesMod {
   /* Inlined std.Required<std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/pickers/Suggestions/Suggestions.types.ISuggestionsProps<any>, 'theme'>> & std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/pickers/Suggestions/Suggestions.types.ISuggestionsProps<any>, 'className' | 'suggestionsClassName'> & {  forceResolveButtonSelected :boolean | undefined,   searchForMoreButtonSelected :boolean | undefined} */
   trait ISuggestionsStyleProps extends StObject {
     
-    var className: js.UndefOr[String] = js.undefined
+    var className: js.UndefOr[Any] = js.undefined
     
     /** Whether the forceResolve actionButton is selected. */
     var forceResolveButtonSelected: js.UndefOr[Boolean] = js.undefined
@@ -353,20 +357,20 @@ object suggestionsTypesMod {
     /** Whether the searchForMore actionButton is selected. */
     var searchForMoreButtonSelected: js.UndefOr[Boolean] = js.undefined
     
-    var suggestionsClassName: js.UndefOr[String] = js.undefined
+    var suggestionsClassName: js.UndefOr[Any] = js.undefined
     
-    var theme: ITheme
+    var theme: Any
   }
   object ISuggestionsStyleProps {
     
-    inline def apply(theme: ITheme): ISuggestionsStyleProps = {
+    inline def apply(theme: Any): ISuggestionsStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISuggestionsStyleProps]
     }
     
     extension [Self <: ISuggestionsStyleProps](x: Self) {
       
-      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: Any): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
@@ -378,11 +382,11 @@ object suggestionsTypesMod {
       
       inline def setSearchForMoreButtonSelectedUndefined: Self = StObject.set(x, "searchForMoreButtonSelected", js.undefined)
       
-      inline def setSuggestionsClassName(value: String): Self = StObject.set(x, "suggestionsClassName", value.asInstanceOf[js.Any])
+      inline def setSuggestionsClassName(value: Any): Self = StObject.set(x, "suggestionsClassName", value.asInstanceOf[js.Any])
       
       inline def setSuggestionsClassNameUndefined: Self = StObject.set(x, "suggestionsClassName", js.undefined)
       
-      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: Any): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -470,20 +474,20 @@ object suggestionsTypesMod {
   trait ISuggestionsSubComponentStyles extends StObject {
     
     /** Refers to the Spinner rendered within the Suggestions when searching or loading suggestions. */
-    var spinner: IStyleFunctionOrObject[ISpinnerStyleProps, js.Any]
+    var spinner: IStyleFunctionOrObject[ISpinnerStyleProps, Any]
   }
   object ISuggestionsSubComponentStyles {
     
-    inline def apply(spinner: IStyleFunctionOrObject[ISpinnerStyleProps, js.Any]): ISuggestionsSubComponentStyles = {
+    inline def apply(spinner: IStyleFunctionOrObject[ISpinnerStyleProps, Any]): ISuggestionsSubComponentStyles = {
       val __obj = js.Dynamic.literal(spinner = spinner.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISuggestionsSubComponentStyles]
     }
     
     extension [Self <: ISuggestionsSubComponentStyles](x: Self) {
       
-      inline def setSpinner(value: IStyleFunctionOrObject[ISpinnerStyleProps, js.Any]): Self = StObject.set(x, "spinner", value.asInstanceOf[js.Any])
+      inline def setSpinner(value: IStyleFunctionOrObject[ISpinnerStyleProps, Any]): Self = StObject.set(x, "spinner", value.asInstanceOf[js.Any])
       
-      inline def setSpinnerFunction1(value: ISpinnerStyleProps => DeepPartial[js.Any]): Self = StObject.set(x, "spinner", js.Any.fromFunction1(value))
+      inline def setSpinnerFunction1(value: ISpinnerStyleProps => DeepPartial[Any]): Self = StObject.set(x, "spinner", js.Any.fromFunction1(value))
     }
   }
 }

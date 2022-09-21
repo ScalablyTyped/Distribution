@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("stats.js", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Stats {
     
@@ -41,7 +41,7 @@ object mod {
   
   @JSImport("stats.js", "Panel")
   @js.native
-  class Panel protected ()
+  open class Panel protected ()
     extends StObject
        with typings.statsJs.Stats.Panel {
     def this(name: String, foregroundColor: String, backgroundColor: String) = this()

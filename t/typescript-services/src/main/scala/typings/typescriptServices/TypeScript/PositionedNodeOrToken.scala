@@ -13,9 +13,9 @@ trait PositionedNodeOrToken
 object PositionedNodeOrToken {
   
   inline def apply(
-    _element: js.Any,
-    _fullStart: js.Any,
-    _parent: js.Any,
+    _element: Any,
+    _fullStart: Any,
+    _parent: Any,
     childAt: Double => PositionedElement,
     childCount: () => Double,
     childEnd: ISyntaxElement => Double,

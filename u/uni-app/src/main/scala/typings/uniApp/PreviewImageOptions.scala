@@ -55,7 +55,7 @@ trait PreviewImageOptions extends StObject {
   /**
     * 需要预览的图片链接列表
     */
-  var urls: js.UndefOr[String | js.Array[js.Any]] = js.undefined
+  var urls: js.UndefOr[String | js.Array[Any]] = js.undefined
 }
 object PreviewImageOptions {
   
@@ -98,10 +98,10 @@ object PreviewImageOptions {
     
     inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
-    inline def setUrls(value: String | js.Array[js.Any]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
+    inline def setUrls(value: String | js.Array[Any]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     
     inline def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
     
-    inline def setUrlsVarargs(value: js.Any*): Self = StObject.set(x, "urls", js.Array(value :_*))
+    inline def setUrlsVarargs(value: Any*): Self = StObject.set(x, "urls", js.Array(value*))
   }
 }

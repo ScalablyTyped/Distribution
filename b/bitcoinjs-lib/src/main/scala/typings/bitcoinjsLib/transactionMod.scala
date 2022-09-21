@@ -1,17 +1,17 @@
 package typings.bitcoinjsLib
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transactionMod {
   
-  @JSImport("bitcoinjs-lib/types/transaction", "Transaction")
+  @JSImport("bitcoinjs-lib/src/transaction", "Transaction")
   @js.native
-  class Transaction () extends StObject {
+  open class Transaction () extends StObject {
     
-    /* private */ var __toBuffer: js.Any = js.native
+    /* private */ var __toBuffer: Any = js.native
     
     def addInput(hash: Buffer, index: Double): Double = js.native
     def addInput(hash: Buffer, index: Double, sequence: Double): Double = js.native
@@ -42,6 +42,31 @@ object transactionMod {
     
     def hashForWitnessV0(inIndex: Double, prevOutScript: Buffer, value: Double, hashType: Double): Buffer = js.native
     
+    def hashForWitnessV1(inIndex: Double, prevOutScripts: js.Array[Buffer], values: js.Array[Double], hashType: Double): Buffer = js.native
+    def hashForWitnessV1(
+      inIndex: Double,
+      prevOutScripts: js.Array[Buffer],
+      values: js.Array[Double],
+      hashType: Double,
+      leafHash: Unit,
+      annex: Buffer
+    ): Buffer = js.native
+    def hashForWitnessV1(
+      inIndex: Double,
+      prevOutScripts: js.Array[Buffer],
+      values: js.Array[Double],
+      hashType: Double,
+      leafHash: Buffer
+    ): Buffer = js.native
+    def hashForWitnessV1(
+      inIndex: Double,
+      prevOutScripts: js.Array[Buffer],
+      values: js.Array[Double],
+      hashType: Double,
+      leafHash: Buffer,
+      annex: Buffer
+    ): Buffer = js.native
+    
     var ins: js.Array[Input] = js.native
     
     def isCoinbase(): Boolean = js.native
@@ -70,35 +95,47 @@ object transactionMod {
   /* static members */
   object Transaction {
     
-    @JSImport("bitcoinjs-lib/types/transaction", "Transaction")
+    @JSImport("bitcoinjs-lib/src/transaction", "Transaction")
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("bitcoinjs-lib/types/transaction", "Transaction.ADVANCED_TRANSACTION_FLAG")
+    @JSImport("bitcoinjs-lib/src/transaction", "Transaction.ADVANCED_TRANSACTION_FLAG")
     @js.native
     val ADVANCED_TRANSACTION_FLAG: /* 1 */ Double = js.native
     
-    @JSImport("bitcoinjs-lib/types/transaction", "Transaction.ADVANCED_TRANSACTION_MARKER")
+    @JSImport("bitcoinjs-lib/src/transaction", "Transaction.ADVANCED_TRANSACTION_MARKER")
     @js.native
     val ADVANCED_TRANSACTION_MARKER: /* 0 */ Double = js.native
     
-    @JSImport("bitcoinjs-lib/types/transaction", "Transaction.DEFAULT_SEQUENCE")
+    @JSImport("bitcoinjs-lib/src/transaction", "Transaction.DEFAULT_SEQUENCE")
     @js.native
     val DEFAULT_SEQUENCE: /* 4294967295.0 */ Double = js.native
     
-    @JSImport("bitcoinjs-lib/types/transaction", "Transaction.SIGHASH_ALL")
+    @JSImport("bitcoinjs-lib/src/transaction", "Transaction.SIGHASH_ALL")
     @js.native
     val SIGHASH_ALL: /* 1 */ Double = js.native
     
-    @JSImport("bitcoinjs-lib/types/transaction", "Transaction.SIGHASH_ANYONECANPAY")
+    @JSImport("bitcoinjs-lib/src/transaction", "Transaction.SIGHASH_ANYONECANPAY")
     @js.native
     val SIGHASH_ANYONECANPAY: /* 128 */ Double = js.native
     
-    @JSImport("bitcoinjs-lib/types/transaction", "Transaction.SIGHASH_NONE")
+    @JSImport("bitcoinjs-lib/src/transaction", "Transaction.SIGHASH_DEFAULT")
+    @js.native
+    val SIGHASH_DEFAULT: /* 0 */ Double = js.native
+    
+    @JSImport("bitcoinjs-lib/src/transaction", "Transaction.SIGHASH_INPUT_MASK")
+    @js.native
+    val SIGHASH_INPUT_MASK: /* 128 */ Double = js.native
+    
+    @JSImport("bitcoinjs-lib/src/transaction", "Transaction.SIGHASH_NONE")
     @js.native
     val SIGHASH_NONE: /* 2 */ Double = js.native
     
-    @JSImport("bitcoinjs-lib/types/transaction", "Transaction.SIGHASH_SINGLE")
+    @JSImport("bitcoinjs-lib/src/transaction", "Transaction.SIGHASH_OUTPUT_MASK")
+    @js.native
+    val SIGHASH_OUTPUT_MASK: /* 3 */ Double = js.native
+    
+    @JSImport("bitcoinjs-lib/src/transaction", "Transaction.SIGHASH_SINGLE")
     @js.native
     val SIGHASH_SINGLE: /* 3 */ Double = js.native
     
@@ -141,7 +178,7 @@ object transactionMod {
       
       inline def setWitness(value: js.Array[Buffer]): Self = StObject.set(x, "witness", value.asInstanceOf[js.Any])
       
-      inline def setWitnessVarargs(value: Buffer*): Self = StObject.set(x, "witness", js.Array(value :_*))
+      inline def setWitnessVarargs(value: Buffer*): Self = StObject.set(x, "witness", js.Array(value*))
     }
   }
   

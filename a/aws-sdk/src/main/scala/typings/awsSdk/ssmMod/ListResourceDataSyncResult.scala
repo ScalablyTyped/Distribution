@@ -12,7 +12,7 @@ trait ListResourceDataSyncResult extends StObject {
   var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.undefined
   
   /**
-    * A list of your current Resource Data Sync configurations and their statuses.
+    * A list of your current resource data sync configurations and their statuses.
     */
   var ResourceDataSyncItems: js.UndefOr[ResourceDataSyncItemList] = js.undefined
 }
@@ -33,6 +33,6 @@ object ListResourceDataSyncResult {
     
     inline def setResourceDataSyncItemsUndefined: Self = StObject.set(x, "ResourceDataSyncItems", js.undefined)
     
-    inline def setResourceDataSyncItemsVarargs(value: ResourceDataSyncItem*): Self = StObject.set(x, "ResourceDataSyncItems", js.Array(value :_*))
+    inline def setResourceDataSyncItemsVarargs(value: ResourceDataSyncItem*): Self = StObject.set(x, "ResourceDataSyncItems", js.Array(value*))
   }
 }

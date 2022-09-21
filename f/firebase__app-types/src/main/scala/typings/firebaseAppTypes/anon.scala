@@ -8,9 +8,9 @@ import typings.firebaseAppTypes.mod.FirebaseApp
 import typings.firebaseAppTypes.mod.FirebaseNamespace
 import typings.firebaseAppTypes.privateMod.FirebaseService
 import typings.firebaseAppTypes.privateMod.FirebaseServiceNamespace
-import typings.firebaseUtil.errorsMod.ErrorMap
-import typings.firebaseUtil.subscribeMod.Observer
-import typings.firebaseUtil.subscribeMod.Subscribe
+import typings.firebaseUtil.mod.ErrorMap
+import typings.firebaseUtil.mod.Observer
+import typings.firebaseUtil.mod.Subscribe
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -49,12 +49,12 @@ object anon {
     var ErrorFactory: Instantiable3[
         /* service */ String, 
         /* serviceName */ String, 
-        /* errors */ ErrorMap[/* import warning: RewrittenClass.unapply cls was tparam ErrorCode */ js.Any], 
+        /* errors */ ErrorMap[/* import warning: RewrittenClass.unapply cls was tparam ErrorCode */ Any], 
         typings.firebaseUtil.mod.ErrorFactory[
           String, 
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {readonly [ K in / * import warning: RewrittenClass.unapply cls was tparam ErrorCode * / any ]:? @firebase/util.@firebase/util/dist/src/errors.ErrorData}
-      */ typings.firebaseAppTypes.firebaseAppTypesStrings.Components & TopLevel[js.Any]
+    {readonly [ K in / * import warning: RewrittenClass.unapply cls was tparam ErrorCode * / any ]:? @firebase/util.@firebase/util.ErrorData}
+      */ typings.firebaseAppTypes.firebaseAppTypesStrings.Components & TopLevel[Any]
         ]
       ] = js.native
     
@@ -63,7 +63,7 @@ object anon {
       */
     var components: Map[
         String, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component */ Any
       ] = js.native
     
     /**
@@ -84,14 +84,14 @@ object anon {
     /**
       * Utility exposed for internal testing.
       */
-    def deepExtend(target: js.Any, source: js.Any): js.Any = js.native
+    def deepExtend(target: Any, source: Any): Any = js.native
     
     /**
       * Internal API to install properties on the top-level firebase namespace.
       * @prop props The top level properties of this object are copied to the
       *   namespace.
       */
-    def extendNamespace(props: StringDictionary[js.Any]): Unit = js.native
+    def extendNamespace(props: StringDictionary[Any]): Unit = js.native
     
     /**
       * Internal API to register a Firebase Service into the firebase namespace.
@@ -107,8 +107,8 @@ object anon {
       * @param allowMultipleInstances Whether the registered service supports
       *   multiple instances per app. If not specified, the default is false.
       */
-    def registerComponent(
-      component: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component */ js.Any
+    def registerComponent[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Name */ Any */](
+      component: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<T> */ Any
     ): FirebaseServiceNamespace[FirebaseService] | Null = js.native
     
     /**
@@ -142,7 +142,7 @@ object anon {
   @js.native
   trait LogEvent extends StObject {
     
-    def logEvent(eventName: String, eventParams: StringDictionary[js.Any]): Unit = js.native
-    def logEvent(eventName: String, eventParams: StringDictionary[js.Any], options: Global): Unit = js.native
+    def logEvent(eventName: String, eventParams: StringDictionary[Any]): Unit = js.native
+    def logEvent(eventName: String, eventParams: StringDictionary[Any], options: Global): Unit = js.native
   }
 }

@@ -10,10 +10,10 @@ object personaPresenceBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Persona/PersonaPresence/PersonaPresence.base", "PersonaPresenceBase")
   @js.native
-  class PersonaPresenceBase protected ()
-    extends Component[IPersonaPresenceProps, js.Object, js.Any] {
+  open class PersonaPresenceBase protected ()
+    extends Component[IPersonaPresenceProps, js.Object, Any] {
     def this(props: IPersonaPresenceProps) = this()
     
-    /* private */ var _onRenderIcon: js.Any = js.native
+    /* private */ var _onRenderIcon: Any = js.native
   }
 }

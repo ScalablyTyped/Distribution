@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodal", "Router")
 @js.native
-class Router ()
+open class Router ()
   extends typings.fxn.mod.Router

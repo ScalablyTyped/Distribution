@@ -191,7 +191,7 @@ object java_ {
     inline def apply(
       acquire: () => Unit,
       isThreadAttached: () => Boolean,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       registerThread: () => Unit,
       release: () => Unit,
       revokeThread: () => Unit
@@ -245,7 +245,7 @@ object java_ {
       * @param processID The process ID of the caller's process, possibly extended by a 17th byte of value `0` or  `1` .
       * @returns On success, the `any` contains a pointer represented as `long` or `hyper` , otherwise the `any` is `VOID` .
       */
-    def getJavaVM(processID: SeqEquiv[Double]): js.Any
+    def getJavaVM(processID: SeqEquiv[Double]): Any
     
     /**
       * Returns `TRUE` if the VM is enabled.
@@ -261,10 +261,10 @@ object java_ {
     
     inline def apply(
       acquire: () => Unit,
-      getJavaVM: SeqEquiv[Double] => js.Any,
+      getJavaVM: SeqEquiv[Double] => Any,
       isVMEnabled: () => Boolean,
       isVMStarted: () => Boolean,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XJavaVM = {
       val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getJavaVM = js.Any.fromFunction1(getJavaVM), isVMEnabled = js.Any.fromFunction0(isVMEnabled), isVMStarted = js.Any.fromFunction0(isVMStarted), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -273,7 +273,7 @@ object java_ {
     
     extension [Self <: XJavaVM](x: Self) {
       
-      inline def setGetJavaVM(value: SeqEquiv[Double] => js.Any): Self = StObject.set(x, "getJavaVM", js.Any.fromFunction1(value))
+      inline def setGetJavaVM(value: SeqEquiv[Double] => Any): Self = StObject.set(x, "getJavaVM", js.Any.fromFunction1(value))
       
       inline def setIsVMEnabled(value: () => Boolean): Self = StObject.set(x, "isVMEnabled", js.Any.fromFunction0(value))
       

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CommentReaction extends StObject {
   
   /**
-    * Whether the [author](CommentAuthorInformation) of the comment has reacted to this reaction
+    * Whether the {@link CommentAuthorInformation author} of the comment has reacted to this reaction
     */
   val authorHasReacted: Boolean
   

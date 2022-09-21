@@ -13,16 +13,16 @@ trait ClifractalFractal extends StObject {
   
   def command(
     commandString: String,
-    callback: js.ThisFunction2[/* this */ this.type & Fractal, /* args */ js.Any, /* done */ js.Function0[Unit], Unit]
+    callback: js.ThisFunction2[/* this */ this.type & Fractal, /* args */ Any, /* done */ js.Function0[Unit], Unit]
   ): Unit = js.native
   def command(
     commandString: String,
-    callback: js.ThisFunction2[/* this */ this.type & Fractal, /* args */ js.Any, /* done */ js.Function0[Unit], Unit],
+    callback: js.ThisFunction2[/* this */ this.type & Fractal, /* args */ Any, /* done */ js.Function0[Unit], Unit],
     opts: String
   ): Unit = js.native
   def command(
     commandString: String,
-    callback: js.ThisFunction2[/* this */ this.type & Fractal, /* args */ js.Any, /* done */ js.Function0[Unit], Unit],
+    callback: js.ThisFunction2[/* this */ this.type & Fractal, /* args */ Any, /* done */ js.Function0[Unit], Unit],
     opts: Description
   ): Unit = js.native
   
@@ -34,7 +34,7 @@ trait ClifractalFractal extends StObject {
   
   var fractal: Fractal_ = js.native
   
-  def get(command: String): js.Any = js.native
+  def get(command: String): Any = js.native
   
   def has(command: String): Boolean = js.native
   

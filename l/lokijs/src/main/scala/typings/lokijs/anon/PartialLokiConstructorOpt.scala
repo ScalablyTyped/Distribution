@@ -23,11 +23,11 @@ trait PartialLokiConstructorOpt extends StObject {
   
   var autoload: js.UndefOr[Boolean] = js.undefined
   
-  var autoloadCallback: js.UndefOr[js.Function1[/* err */ js.Any, Unit]] = js.undefined
+  var autoloadCallback: js.UndefOr[js.Function1[/* err */ Any, Unit]] = js.undefined
   
   var autosave: js.UndefOr[Boolean] = js.undefined
   
-  var autosaveCallback: js.UndefOr[js.Function1[/* err */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var autosaveCallback: js.UndefOr[js.Function1[/* err */ js.UndefOr[Any], Unit]] = js.undefined
   
   var autosaveInterval: js.UndefOr[String | Double] = js.undefined
   
@@ -68,7 +68,7 @@ object PartialLokiConstructorOpt {
     
     inline def setAutoload(value: Boolean): Self = StObject.set(x, "autoload", value.asInstanceOf[js.Any])
     
-    inline def setAutoloadCallback(value: /* err */ js.Any => Unit): Self = StObject.set(x, "autoloadCallback", js.Any.fromFunction1(value))
+    inline def setAutoloadCallback(value: /* err */ Any => Unit): Self = StObject.set(x, "autoloadCallback", js.Any.fromFunction1(value))
     
     inline def setAutoloadCallbackUndefined: Self = StObject.set(x, "autoloadCallback", js.undefined)
     
@@ -76,7 +76,7 @@ object PartialLokiConstructorOpt {
     
     inline def setAutosave(value: Boolean): Self = StObject.set(x, "autosave", value.asInstanceOf[js.Any])
     
-    inline def setAutosaveCallback(value: /* err */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "autosaveCallback", js.Any.fromFunction1(value))
+    inline def setAutosaveCallback(value: /* err */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "autosaveCallback", js.Any.fromFunction1(value))
     
     inline def setAutosaveCallbackUndefined: Self = StObject.set(x, "autosaveCallback", js.undefined)
     

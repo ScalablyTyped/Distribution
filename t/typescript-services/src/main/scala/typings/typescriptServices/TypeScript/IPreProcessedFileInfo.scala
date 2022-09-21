@@ -30,16 +30,16 @@ object IPreProcessedFileInfo {
     
     inline def setDiagnostics(value: js.Array[Diagnostic]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     
-    inline def setDiagnosticsVarargs(value: Diagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value :_*))
+    inline def setDiagnosticsVarargs(value: Diagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value*))
     
     inline def setImportedFiles(value: js.Array[IFileReference]): Self = StObject.set(x, "importedFiles", value.asInstanceOf[js.Any])
     
-    inline def setImportedFilesVarargs(value: IFileReference*): Self = StObject.set(x, "importedFiles", js.Array(value :_*))
+    inline def setImportedFilesVarargs(value: IFileReference*): Self = StObject.set(x, "importedFiles", js.Array(value*))
     
     inline def setIsLibFile(value: Boolean): Self = StObject.set(x, "isLibFile", value.asInstanceOf[js.Any])
     
     inline def setReferencedFiles(value: js.Array[IFileReference]): Self = StObject.set(x, "referencedFiles", value.asInstanceOf[js.Any])
     
-    inline def setReferencedFilesVarargs(value: IFileReference*): Self = StObject.set(x, "referencedFiles", js.Array(value :_*))
+    inline def setReferencedFilesVarargs(value: IFileReference*): Self = StObject.set(x, "referencedFiles", js.Array(value*))
   }
 }

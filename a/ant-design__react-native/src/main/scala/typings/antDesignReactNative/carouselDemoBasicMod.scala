@@ -10,13 +10,12 @@ object carouselDemoBasicMod {
   
   @JSImport("@ant-design/react-native/lib/carousel/demo/basic", JSImport.Default)
   @js.native
-  class default protected () extends BasicCarouselExample {
-    def this(props: js.Any) = this()
+  open class default protected () extends BasicCarouselExample {
+    def this(props: Any) = this()
   }
   
   @js.native
-  trait BasicCarouselExample
-    extends Component[js.Any, js.Any, js.Any] {
+  trait BasicCarouselExample extends Component[Any, Any, Any] {
     
     var carousel: Null | Carousel = js.native
     

@@ -8,5 +8,5 @@ object putEncryptionConfigInputMod {
   
   @JSImport("@aws-sdk/client-xray-node/model/PutEncryptionConfigInput", "PutEncryptionConfigInput")
   @js.native
-  val PutEncryptionConfigInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val PutEncryptionConfigInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

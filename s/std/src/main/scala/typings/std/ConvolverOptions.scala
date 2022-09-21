@@ -8,8 +8,10 @@ trait ConvolverOptions
   extends StObject
      with AudioNodeOptions {
   
+  /* standard dom */
   var buffer: js.UndefOr[AudioBuffer | Null] = js.undefined
   
+  /* standard dom */
   var disableNormalization: js.UndefOr[scala.Boolean] = js.undefined
 }
 object ConvolverOptions {

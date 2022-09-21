@@ -46,7 +46,7 @@ object mod {
       
       inline def setTokenNull: Self = StObject.set(x, "token", null)
       
-      inline def setTokenVarargs(value: String*): Self = StObject.set(x, "token", js.Array(value :_*))
+      inline def setTokenVarargs(value: String*): Self = StObject.set(x, "token", js.Array(value*))
     }
   }
   
@@ -71,7 +71,7 @@ object mod {
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      inline def setParamsVarargs(value: (js.Tuple2[String, String | js.Array[String]])*): Self = StObject.set(x, "params", js.Array(value :_*))
+      inline def setParamsVarargs(value: (js.Tuple2[String, String | js.Array[String]])*): Self = StObject.set(x, "params", js.Array(value*))
       
       inline def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
       

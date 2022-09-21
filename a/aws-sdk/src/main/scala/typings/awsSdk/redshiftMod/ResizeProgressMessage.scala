@@ -115,19 +115,19 @@ object ResizeProgressMessage {
     
     inline def setImportTablesCompletedUndefined: Self = StObject.set(x, "ImportTablesCompleted", js.undefined)
     
-    inline def setImportTablesCompletedVarargs(value: String*): Self = StObject.set(x, "ImportTablesCompleted", js.Array(value :_*))
+    inline def setImportTablesCompletedVarargs(value: String*): Self = StObject.set(x, "ImportTablesCompleted", js.Array(value*))
     
     inline def setImportTablesInProgress(value: ImportTablesInProgress): Self = StObject.set(x, "ImportTablesInProgress", value.asInstanceOf[js.Any])
     
     inline def setImportTablesInProgressUndefined: Self = StObject.set(x, "ImportTablesInProgress", js.undefined)
     
-    inline def setImportTablesInProgressVarargs(value: String*): Self = StObject.set(x, "ImportTablesInProgress", js.Array(value :_*))
+    inline def setImportTablesInProgressVarargs(value: String*): Self = StObject.set(x, "ImportTablesInProgress", js.Array(value*))
     
     inline def setImportTablesNotStarted(value: ImportTablesNotStarted): Self = StObject.set(x, "ImportTablesNotStarted", value.asInstanceOf[js.Any])
     
     inline def setImportTablesNotStartedUndefined: Self = StObject.set(x, "ImportTablesNotStarted", js.undefined)
     
-    inline def setImportTablesNotStartedVarargs(value: String*): Self = StObject.set(x, "ImportTablesNotStarted", js.Array(value :_*))
+    inline def setImportTablesNotStartedVarargs(value: String*): Self = StObject.set(x, "ImportTablesNotStarted", js.Array(value*))
     
     inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     

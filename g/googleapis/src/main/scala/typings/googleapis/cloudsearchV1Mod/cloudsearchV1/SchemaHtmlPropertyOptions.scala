@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Options for html properties.
-  */
 trait SchemaHtmlPropertyOptions extends StObject {
   
   /**
@@ -15,8 +12,7 @@ trait SchemaHtmlPropertyOptions extends StObject {
   var operatorOptions: js.UndefOr[SchemaHtmlOperatorOptions] = js.undefined
   
   /**
-    * Indicates the search quality importance of the tokens within the field
-    * when used for retrieval. Can only be set to DEFAULT or NONE.
+    * Indicates the search quality importance of the tokens within the field when used for retrieval. Can only be set to DEFAULT or NONE.
     */
   var retrievalImportance: js.UndefOr[SchemaRetrievalImportance] = js.undefined
 }

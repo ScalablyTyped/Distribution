@@ -1,7 +1,7 @@
 
 # Scala.js typings for electron-notarize
 
-Typings are for version 1.0.0
+Typings are for version 1.2.1
 
 ## Library description:
 Notarize your Electron app
@@ -10,10 +10,10 @@ Notarize your Electron app
 | ------------------ | :-------------: |
 | Full name          | electron-notarize |
 | Keywords           | - |
-| # releases         | 14 |
-| # dependents       | 13 |
-| # downloads        | 4126937 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 1428663.6666666667 |
+| # stars            | 354.0 |
 
 ## Links
 - [Homepage](https://github.com/electron/electron-notarize#readme)

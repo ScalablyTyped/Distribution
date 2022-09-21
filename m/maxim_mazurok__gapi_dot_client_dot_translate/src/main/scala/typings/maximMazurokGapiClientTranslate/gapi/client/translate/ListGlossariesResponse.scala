@@ -28,7 +28,7 @@ object ListGlossariesResponse {
     
     inline def setGlossariesUndefined: Self = StObject.set(x, "glossaries", js.undefined)
     
-    inline def setGlossariesVarargs(value: Glossary*): Self = StObject.set(x, "glossaries", js.Array(value :_*))
+    inline def setGlossariesVarargs(value: Glossary*): Self = StObject.set(x, "glossaries", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ndn.WebSocketTransport")
 @js.native
-class WebSocketTransport ()
+open class WebSocketTransport ()
   extends typings.ndnJs.mod.WebSocketTransport
 object WebSocketTransport {
   
   @JSGlobal("ndn.WebSocketTransport.ConnectionInfo")
   @js.native
-  class ConnectionInfo protected ()
+  open class ConnectionInfo protected ()
     extends typings.ndnJs.mod.WebSocketTransport.ConnectionInfo {
     def this(hostOrUri: String) = this()
     def this(hostOrUri: String, port: Double) = this()

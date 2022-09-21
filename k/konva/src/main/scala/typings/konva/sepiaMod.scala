@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object sepiaMod {
   
-  @JSImport("konva/types/filters/Sepia", "Sepia")
+  @JSImport("konva/lib/filters/Sepia", "Sepia")
   @js.native
   val Sepia: Filter = js.native
 }

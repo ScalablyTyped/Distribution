@@ -43,7 +43,7 @@ object ListResolverQueryLogConfigAssociationsResponse {
     
     inline def setResolverQueryLogConfigAssociationsUndefined: Self = StObject.set(x, "ResolverQueryLogConfigAssociations", js.undefined)
     
-    inline def setResolverQueryLogConfigAssociationsVarargs(value: ResolverQueryLogConfigAssociation*): Self = StObject.set(x, "ResolverQueryLogConfigAssociations", js.Array(value :_*))
+    inline def setResolverQueryLogConfigAssociationsVarargs(value: ResolverQueryLogConfigAssociation*): Self = StObject.set(x, "ResolverQueryLogConfigAssociations", js.Array(value*))
     
     inline def setTotalCount(value: Count): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     

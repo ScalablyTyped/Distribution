@@ -4,16 +4,16 @@
 Typings are for version 2.1
 
 ## Library description:
-Simple validator for forms designed with material-ui v1/v3/v4 components.
+Simple validator for forms designed with material-ui v1/v3/v4/v5 components.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-material-ui-form-validator |
 | Keywords           | material-ui, form, validation |
-| # releases         | 10 |
-| # dependents       | 16 |
-| # downloads        | 831690 |
-| # stars            | 3 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 99967.66666666667 |
+| # stars            | 317.0 |
 
 ## Links
 - [Homepage](https://github.com/NewOldMax/react-material-ui-form-validator#readme)

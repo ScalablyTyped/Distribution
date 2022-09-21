@@ -1,28 +1,20 @@
 package typings.nanoid
 
-import org.scalablytyped.runtime.Shortcut
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object asyncMod extends Shortcut {
+object asyncMod {
   
   @JSImport("nanoid/async", JSImport.Namespace)
   @js.native
-  val ^ : NanoidAsync = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait NanoidAsync extends StObject {
-    
-    def apply(): js.Promise[String] = js.native
-    def apply(size: Double): js.Promise[String] = js.native
-    def apply(size: Double, callback: js.Function2[/* error */ Error | Null, /* id */ String, js.Any]): Unit = js.native
-    def apply(size: Null, callback: js.Function2[/* error */ Error | Null, /* id */ String, js.Any]): Unit = js.native
-  }
+  inline def customAlphabet(alphabet: String): js.Function1[/* size */ js.UndefOr[Double], js.Promise[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("customAlphabet")(alphabet.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* size */ js.UndefOr[Double], js.Promise[String]]]
+  inline def customAlphabet(alphabet: String, defaultSize: Double): js.Function1[/* size */ js.UndefOr[Double], js.Promise[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("customAlphabet")(alphabet.asInstanceOf[js.Any], defaultSize.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* size */ js.UndefOr[Double], js.Promise[String]]]
   
-  type _To = NanoidAsync
+  inline def nanoid(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("nanoid")().asInstanceOf[js.Promise[String]]
+  inline def nanoid(size: Double): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("nanoid")(size.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  /* This means you don't have to write `^`, but can instead just say `asyncMod.foo` */
-  override def _to: NanoidAsync = ^
+  inline def random(bytes: Double): js.Promise[js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(bytes.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.typedarray.Uint8Array]]
 }

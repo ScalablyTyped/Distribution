@@ -147,13 +147,13 @@ object anon {
       
       inline def setColAlignsUndefined: Self = StObject.set(x, "colAligns", js.undefined)
       
-      inline def setColAlignsVarargs(value: (left | middle | right)*): Self = StObject.set(x, "colAligns", js.Array(value :_*))
+      inline def setColAlignsVarargs(value: (left | middle | right)*): Self = StObject.set(x, "colAligns", js.Array(value*))
       
       inline def setColWidths(value: js.Array[Double]): Self = StObject.set(x, "colWidths", value.asInstanceOf[js.Any])
       
       inline def setColWidthsUndefined: Self = StObject.set(x, "colWidths", js.undefined)
       
-      inline def setColWidthsVarargs(value: Double*): Self = StObject.set(x, "colWidths", js.Array(value :_*))
+      inline def setColWidthsVarargs(value: Double*): Self = StObject.set(x, "colWidths", js.Array(value*))
       
       inline def setColors(value: Boolean): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
@@ -163,7 +163,7 @@ object anon {
       
       inline def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
       
-      inline def setHeadVarargs(value: String*): Self = StObject.set(x, "head", js.Array(value :_*))
+      inline def setHeadVarargs(value: String*): Self = StObject.set(x, "head", js.Array(value*))
       
       inline def setStyle(value: Partialpaddingleftnumberp): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
@@ -201,7 +201,7 @@ object anon {
       
       inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
       
-      inline def setBorderVarargs(value: String*): Self = StObject.set(x, "border", js.Array(value :_*))
+      inline def setBorderVarargs(value: String*): Self = StObject.set(x, "border", js.Array(value*))
       
       inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
@@ -211,7 +211,7 @@ object anon {
       
       inline def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
       
-      inline def setHeadVarargs(value: String*): Self = StObject.set(x, "head", js.Array(value :_*))
+      inline def setHeadVarargs(value: String*): Self = StObject.set(x, "head", js.Array(value*))
       
       inline def `setPadding-left`(value: Double): Self = StObject.set(x, "padding-left", value.asInstanceOf[js.Any])
       

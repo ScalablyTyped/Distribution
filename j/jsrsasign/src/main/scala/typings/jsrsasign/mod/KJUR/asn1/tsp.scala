@@ -8,6 +8,7 @@ import typings.jsrsasign.anon.Micros
 import typings.jsrsasign.anon.SigAlg
 import typings.jsrsasign.anon.SignerCert
 import typings.jsrsasign.anon.Status
+import typings.jsrsasign.anon.Tlv
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ArrayParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.IntegerParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.NameParam
@@ -41,7 +42,7 @@ object tsp {
     */
   @JSImport("jsrsasign", "KJUR.asn1.tsp.AbstractTSAAdapter")
   @js.native
-  class AbstractTSAAdapter ()
+  open class AbstractTSAAdapter ()
     extends StObject
        with typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.AbstractTSAAdapter {
     
@@ -66,7 +67,7 @@ object tsp {
     */
   @JSImport("jsrsasign", "KJUR.asn1.tsp.Accuracy")
   @js.native
-  class Accuracy ()
+  open class Accuracy ()
     extends StObject
        with typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.Accuracy {
     def this(params: Micros) = this()
@@ -114,6 +115,10 @@ object tsp {
     /** flag whether internal data was changed */
     /* CompleteClass */
     var isModified: String = js.native
+    
+    /** JSON object parameter for ASN.1 encode */
+    /* CompleteClass */
+    var params: Tlv | Null = js.native
   }
   
   /**
@@ -133,7 +138,7 @@ object tsp {
     */
   @JSImport("jsrsasign", "KJUR.asn1.tsp.FixedTSAAdapter")
   @js.native
-  class FixedTSAAdapter ()
+  open class FixedTSAAdapter ()
     extends StObject
        with typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.FixedTSAAdapter {
     def this(initParams: SigAlg) = this()
@@ -157,7 +162,7 @@ object tsp {
     */
   @JSImport("jsrsasign", "KJUR.asn1.tsp.MessageImprint")
   @js.native
-  class MessageImprint ()
+  open class MessageImprint ()
     extends StObject
        with typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.MessageImprint {
     def this(params: HashValue) = this()
@@ -205,6 +210,10 @@ object tsp {
     /** flag whether internal data was changed */
     /* CompleteClass */
     var isModified: String = js.native
+    
+    /** JSON object parameter for ASN.1 encode */
+    /* CompleteClass */
+    var params: Tlv | Null = js.native
   }
   
   /**
@@ -225,7 +234,7 @@ object tsp {
     */
   @JSImport("jsrsasign", "KJUR.asn1.tsp.PKIFailureInfo")
   @js.native
-  class PKIFailureInfo ()
+  open class PKIFailureInfo ()
     extends StObject
        with typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object {
     def this(params: IntegerParam) = this()
@@ -274,6 +283,10 @@ object tsp {
     /** flag whether internal data was changed */
     /* CompleteClass */
     var isModified: String = js.native
+    
+    /** JSON object parameter for ASN.1 encode */
+    /* CompleteClass */
+    var params: Tlv | Null = js.native
   }
   object PKIFailureInfo {
     
@@ -337,7 +350,7 @@ object tsp {
     */
   @JSImport("jsrsasign", "KJUR.asn1.tsp.PKIFreeText")
   @js.native
-  class PKIFreeText ()
+  open class PKIFreeText ()
     extends StObject
        with typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object {
     def this(params: ArrayParam[String]) = this()
@@ -385,6 +398,10 @@ object tsp {
     /** flag whether internal data was changed */
     /* CompleteClass */
     var isModified: String = js.native
+    
+    /** JSON object parameter for ASN.1 encode */
+    /* CompleteClass */
+    var params: Tlv | Null = js.native
   }
   
   /**
@@ -403,7 +420,7 @@ object tsp {
     */
   @JSImport("jsrsasign", "KJUR.asn1.tsp.PKIStatus")
   @js.native
-  class PKIStatus ()
+  open class PKIStatus ()
     extends StObject
        with typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object {
     def this(params: NameParam) = this()
@@ -451,6 +468,10 @@ object tsp {
     /** flag whether internal data was changed */
     /* CompleteClass */
     var isModified: String = js.native
+    
+    /** JSON object parameter for ASN.1 encode */
+    /* CompleteClass */
+    var params: Tlv | Null = js.native
   }
   object PKIStatus {
     
@@ -507,7 +528,7 @@ object tsp {
     */
   @JSImport("jsrsasign", "KJUR.asn1.tsp.PKIStatusInfo")
   @js.native
-  class PKIStatusInfo ()
+  open class PKIStatusInfo ()
     extends StObject
        with typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object {
     def this(params: Failinfo) = this()
@@ -555,6 +576,10 @@ object tsp {
     /** flag whether internal data was changed */
     /* CompleteClass */
     var isModified: String = js.native
+    
+    /** JSON object parameter for ASN.1 encode */
+    /* CompleteClass */
+    var params: Tlv | Null = js.native
   }
   
   /**
@@ -564,7 +589,7 @@ object tsp {
     */
   @JSImport("jsrsasign", "KJUR.asn1.tsp.SimpleTSAAdapter")
   @js.native
-  class SimpleTSAAdapter ()
+  open class SimpleTSAAdapter ()
     extends StObject
        with typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.SimpleTSAAdapter {
     def this(initParams: SigAlg) = this()
@@ -620,7 +645,7 @@ object tsp {
     */
   @JSImport("jsrsasign", "KJUR.asn1.tsp.TSTInfo")
   @js.native
-  class TSTInfo protected ()
+  open class TSTInfo protected ()
     extends StObject
        with typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.TSTInfo {
     def this(params: typings.jsrsasign.anon.Accuracy) = this()
@@ -668,6 +693,10 @@ object tsp {
     /** flag whether internal data was changed */
     /* CompleteClass */
     var isModified: String = js.native
+    
+    /** JSON object parameter for ASN.1 encode */
+    /* CompleteClass */
+    var params: Tlv | Null = js.native
   }
   
   /**
@@ -686,7 +715,7 @@ object tsp {
     */
   @JSImport("jsrsasign", "KJUR.asn1.tsp.TimeStampReq")
   @js.native
-  class TimeStampReq ()
+  open class TimeStampReq ()
     extends StObject
        with typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.TimeStampReq {
     def this(params: Mi) = this()
@@ -735,6 +764,10 @@ object tsp {
     /* CompleteClass */
     var isModified: String = js.native
     
+    /** JSON object parameter for ASN.1 encode */
+    /* CompleteClass */
+    var params: Tlv | Null = js.native
+    
     /* CompleteClass */
     override def setMessageImprint(params: typings.jsrsasign.jsrsasign.KJUR.asn1.tsp.MessageImprint): Unit = js.native
   }
@@ -751,7 +784,7 @@ object tsp {
     */
   @JSImport("jsrsasign", "KJUR.asn1.tsp.TimeStampResp")
   @js.native
-  class TimeStampResp ()
+  open class TimeStampResp ()
     extends StObject
        with typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object {
     def this(params: Status) = this()
@@ -799,6 +832,10 @@ object tsp {
     /** flag whether internal data was changed */
     /* CompleteClass */
     var isModified: String = js.native
+    
+    /** JSON object parameter for ASN.1 encode */
+    /* CompleteClass */
+    var params: Tlv | Null = js.native
   }
   
   /**

@@ -18,7 +18,11 @@ object notificationMod {
   @js.native
   val default: NotificationApi = js.native
   
-  inline def getInstance(cacheKey: String): js.Promise[typings.rcNotification.notificationMod.NotificationInstance | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(cacheKey.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.rcNotification.notificationMod.NotificationInstance | Null]]
+  inline def getInstance(cacheKey: String): js.Promise[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RCNotificationInstance */ Any) | Null
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(cacheKey.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RCNotificationInstance */ Any) | Null
+  ]]
   
   trait ArgsProps extends StObject {
     
@@ -39,6 +43,8 @@ object notificationMod {
     var icon: js.UndefOr[ReactNode] = js.undefined
     
     var key: js.UndefOr[String] = js.undefined
+    
+    var maxCount: js.UndefOr[Double] = js.undefined
     
     var message: ReactNode
     
@@ -103,6 +109,10 @@ object notificationMod {
       
       inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
+      inline def setMaxCount(value: Double): Self = StObject.set(x, "maxCount", value.asInstanceOf[js.Any])
+      
+      inline def setMaxCountUndefined: Self = StObject.set(x, "maxCount", js.undefined)
+      
       inline def setMessage(value: ReactNode): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
       inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
@@ -147,6 +157,8 @@ object notificationMod {
     
     var getContainer: js.UndefOr[js.Function0[HTMLElement]] = js.undefined
     
+    var maxCount: js.UndefOr[Double] = js.undefined
+    
     var placement: js.UndefOr[NotificationPlacement] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
@@ -179,6 +191,10 @@ object notificationMod {
       inline def setGetContainer(value: () => HTMLElement): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
       
       inline def setGetContainerUndefined: Self = StObject.set(x, "getContainer", js.undefined)
+      
+      inline def setMaxCount(value: Double): Self = StObject.set(x, "maxCount", value.asInstanceOf[js.Any])
+      
+      inline def setMaxCountUndefined: Self = StObject.set(x, "maxCount", js.undefined)
       
       inline def setPlacement(value: NotificationPlacement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
@@ -302,17 +318,23 @@ object notificationMod {
   }
   
   /* Rewritten from type alias, can be one of: 
+    - typings.antd.antdStrings.top
     - typings.antd.antdStrings.topLeft
     - typings.antd.antdStrings.topRight
+    - typings.antd.antdStrings.bottom
     - typings.antd.antdStrings.bottomLeft
     - typings.antd.antdStrings.bottomRight
   */
   trait NotificationPlacement extends StObject
   object NotificationPlacement {
     
+    inline def bottom: typings.antd.antdStrings.bottom = "bottom".asInstanceOf[typings.antd.antdStrings.bottom]
+    
     inline def bottomLeft: typings.antd.antdStrings.bottomLeft = "bottomLeft".asInstanceOf[typings.antd.antdStrings.bottomLeft]
     
     inline def bottomRight: typings.antd.antdStrings.bottomRight = "bottomRight".asInstanceOf[typings.antd.antdStrings.bottomRight]
+    
+    inline def top: typings.antd.antdStrings.top = "top".asInstanceOf[typings.antd.antdStrings.top]
     
     inline def topLeft: typings.antd.antdStrings.topLeft = "topLeft".asInstanceOf[typings.antd.antdStrings.topLeft]
     

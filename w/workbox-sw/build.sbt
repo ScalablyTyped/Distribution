@@ -1,22 +1,22 @@
 organization := "org.scalablytyped"
 name := "workbox-sw"
-version := "4.3-dt-20201002Z-0bc0c3"
-scalaVersion := "3.0.1"
+version := "4.3-dt-20220624Z-e68d1e"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab",
-  "org.scalablytyped" %%% "workbox-background-sync" % "4.3-dt-20201002Z-d19ec7",
-  "org.scalablytyped" %%% "workbox-broadcast-update" % "4.3-dt-20200515Z-263aa7",
-  "org.scalablytyped" %%% "workbox-cacheable-response" % "4.3-dt-20200515Z-e4af7e",
-  "org.scalablytyped" %%% "workbox-core" % "4.3-dt-20200515Z-980108",
-  "org.scalablytyped" %%% "workbox-expiration" % "4.3-dt-20200515Z-f19c8e",
-  "org.scalablytyped" %%% "workbox-google-analytics" % "4.3-dt-20200515Z-a0003f",
-  "org.scalablytyped" %%% "workbox-precaching" % "4.3-dt-20200515Z-c0c40f",
-  "org.scalablytyped" %%% "workbox-range-requests" % "4.3-dt-20200515Z-6c4a8e",
-  "org.scalablytyped" %%% "workbox-routing" % "4.3-dt-20201002Z-c79c78",
-  "org.scalablytyped" %%% "workbox-strategies" % "4.3-dt-20200515Z-2e9190",
-  "org.scalablytyped" %%% "workbox-streams" % "4.3-dt-20200515Z-3362ef")
+  "org.scalablytyped" %%% "std" % "4.8-958c79",
+  "org.scalablytyped" %%% "workbox-background-sync" % "4.3-dt-20211202Z-4a6d16",
+  "org.scalablytyped" %%% "workbox-broadcast-update" % "4.3-dt-20211202Z-5d055a",
+  "org.scalablytyped" %%% "workbox-cacheable-response" % "4.3-dt-20211202Z-df7823",
+  "org.scalablytyped" %%% "workbox-core" % "4.3-dt-20211202Z-a01ee2",
+  "org.scalablytyped" %%% "workbox-expiration" % "4.3-dt-20211202Z-052b90",
+  "org.scalablytyped" %%% "workbox-google-analytics" % "4.3-dt-20211202Z-1de09b",
+  "org.scalablytyped" %%% "workbox-precaching" % "4.3-dt-20211202Z-15756d",
+  "org.scalablytyped" %%% "workbox-range-requests" % "4.3-dt-20211202Z-b9c938",
+  "org.scalablytyped" %%% "workbox-routing" % "4.3-dt-20211202Z-e0b1f8",
+  "org.scalablytyped" %%% "workbox-strategies" % "4.3-dt-20211202Z-8d9d84",
+  "org.scalablytyped" %%% "workbox-streams" % "4.3-dt-20211202Z-c6af2b")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

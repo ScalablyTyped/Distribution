@@ -8,7 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSGlobal("__esri.LineOfSightTarget")
 @js.native
-class LineOfSightTargetCls ()
+/**
+  * This class represents a target point for a [LineOfSight](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LineOfSight.html) analysis.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LineOfSight-LineOfSightTarget.html)
+  */
+open class LineOfSightTargetCls ()
   extends StObject
      with typings.arcgisJsApi.esri.LineOfSightTarget {
   def this(properties: LineOfSightTargetProperties) = this()

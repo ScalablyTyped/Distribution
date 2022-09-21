@@ -14,9 +14,9 @@ object gunMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("gun/gun", JSImport.Namespace)
   @js.native
-  class ^[DataType] ()
+  open class ^[DataType] ()
     extends StObject
-       with ChainReference[DataType, js.Any, pre_root] {
+       with ChainReference[DataType, Any, pre_root] {
     def this(options: String) = this()
     def this(options: js.Array[String]) = this()
     def this(options: ConstructorOptions) = this()

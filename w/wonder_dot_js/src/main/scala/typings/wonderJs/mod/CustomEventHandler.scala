@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "CustomEventHandler")
 @js.native
-class CustomEventHandler ()
+open class CustomEventHandler ()
   extends typings.wonderJs.customEventHandlerMod.CustomEventHandler
 /* static members */
 object CustomEventHandler {
@@ -15,5 +15,5 @@ object CustomEventHandler {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getInstance(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[js.Any]
+  inline def getInstance(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[Any]
 }

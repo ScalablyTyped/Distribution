@@ -10,15 +10,15 @@ object Debug {
   @js.native
   trait AxesViewer extends StObject {
     
-    /* private */ var _instanced: js.Any = js.native
+    /* private */ var _instanced: Any = js.native
     
-    /* private */ var _scaleLinesFactor: js.Any = js.native
+    /* private */ var _scaleLinesFactor: Any = js.native
     
-    /* private */ var _xAxis: js.Any = js.native
+    /* private */ var _xAxis: Any = js.native
     
-    /* private */ var _yAxis: js.Any = js.native
+    /* private */ var _yAxis: Any = js.native
     
-    /* private */ var _zAxis: js.Any = js.native
+    /* private */ var _zAxis: Any = js.native
     
     /**
       * Creates an instance of this axes viewer.
@@ -94,27 +94,31 @@ object Debug {
   @js.native
   trait PhysicsViewer extends StObject {
     
-    /* private */ var _debugBoxMesh: js.Any = js.native
+    /* private */ var _debugBoxMesh: Any = js.native
     
-    /* private */ var _debugCylinderMesh: js.Any = js.native
+    /* private */ var _debugCapsuleMesh: Any = js.native
     
-    /* private */ var _debugMaterial: js.Any = js.native
+    /* private */ var _debugCylinderMesh: Any = js.native
     
-    /* private */ var _debugMeshMeshes: js.Any = js.native
+    /* private */ var _debugMaterial: Any = js.native
     
-    /* private */ var _debugSphereMesh: js.Any = js.native
+    /* private */ var _debugMeshMeshes: Any = js.native
     
-    /* private */ var _getDebugBoxMesh: js.Any = js.native
+    /* private */ var _debugSphereMesh: Any = js.native
     
-    /* private */ var _getDebugCylinderMesh: js.Any = js.native
+    /* private */ var _getDebugBoxMesh: Any = js.native
     
-    /* private */ var _getDebugMaterial: js.Any = js.native
+    /* private */ var _getDebugCapsuleMesh: Any = js.native
     
-    /* private */ var _getDebugMesh: js.Any = js.native
+    /* private */ var _getDebugCylinderMesh: Any = js.native
     
-    /* private */ var _getDebugMeshMesh: js.Any = js.native
+    /* private */ var _getDebugMaterial: Any = js.native
     
-    /* private */ var _getDebugSphereMesh: js.Any = js.native
+    /* private */ var _getDebugMesh: Any = js.native
+    
+    /* private */ var _getDebugMeshMesh: Any = js.native
+    
+    /* private */ var _getDebugSphereMesh: Any = js.native
     
     /** @hidden */
     /* protected */ var _impostors: js.Array[Nullable[PhysicsImpostor]] = js.native
@@ -128,7 +132,7 @@ object Debug {
     /** @hidden */
     /* protected */ var _physicsEnginePlugin: Nullable[IPhysicsEnginePlugin] = js.native
     
-    /* private */ var _renderFunction: js.Any = js.native
+    /* private */ var _renderFunction: Any = js.native
     
     /** @hidden */
     /* protected */ var _scene: Nullable[Scene] = js.native
@@ -136,7 +140,7 @@ object Debug {
     /** @hidden */
     /* protected */ def _updateDebugMeshes(): Unit = js.native
     
-    /* private */ var _utilityLayer: js.Any = js.native
+    /* private */ var _utilityLayer: Any = js.native
     
     /** Releases all resources */
     def dispose(): Unit = js.native
@@ -161,53 +165,63 @@ object Debug {
   trait SkeletonViewer extends StObject {
     
     /** The Dynamic bindings for the update functions */
-    /* private */ var _bindObs: js.Any = js.native
+    /* private */ var _bindObs: Any = js.native
     
-    /* private */ var _boneIndices: js.Any = js.native
+    /* private */ var _boneIndices: Any = js.native
     
-    /* private */ var _buildLocalAxes: js.Any = js.native
+    /* private */ var _buildLocalAxes: Any = js.native
     
-    /** function to build and bind sphere joint points and spur bone representations. */
-    /* private */ var _buildSpheresAndSpurs: js.Any = js.native
+    /**
+      * function to build and bind sphere joint points and spur bone representations.
+      * @param spheresOnly
+      */
+    /* private */ var _buildSpheresAndSpurs: Any = js.native
     
     /** Array of the points of the skeleton fo the line view. */
-    /* private */ var _debugLines: js.Any = js.native
+    /* private */ var _debugLines: Any = js.native
     
     /** The SkeletonViewers Mesh. */
-    /* private */ var _debugMesh: js.Any = js.native
+    /* private */ var _debugMesh: Any = js.native
     
     /** Update the viewer to sync with current skeleton state, only used for the line display. */
-    /* private */ var _displayLinesUpdate: js.Any = js.native
+    /* private */ var _displayLinesUpdate: Any = js.native
     
-    /** function to get the absolute bind pose of a bone by accumulating transformations up the bone hierarchy. */
-    /* private */ var _getAbsoluteBindPoseToRef: js.Any = js.native
+    /**
+      * function to get the absolute bind pose of a bone by accumulating transformations up the bone hierarchy.
+      * @param bone
+      * @param matrix
+      */
+    /* private */ var _getAbsoluteBindPoseToRef: Any = js.native
     
-    /* private */ var _getBonePosition: js.Any = js.native
+    /* private */ var _getBonePosition: Any = js.native
     
-    /* private */ var _getLinesForBonesNoLength: js.Any = js.native
+    /* private */ var _getLinesForBonesNoLength: Any = js.native
     
-    /* private */ var _getLinesForBonesWithLength: js.Any = js.native
+    /* private */ var _getLinesForBonesWithLength: Any = js.native
     
     /** If SkeletonViewer is enabled. */
-    /* private */ var _isEnabled: js.Any = js.native
+    /* private */ var _isEnabled: Any = js.native
     
     /** The local axes Meshes. */
-    /* private */ var _localAxes: js.Any = js.native
+    /* private */ var _localAxes: Any = js.native
     
     /** SkeletonViewer render observable. */
-    /* private */ var _obs: js.Any = js.native
+    /* private */ var _obs: Any = js.native
     
     /** If SkeletonViewer is ready. */
-    /* private */ var _ready: js.Any = js.native
+    /* private */ var _ready: Any = js.native
     
-    /** function to revert the mesh and scene back to the initial state. */
-    /* private */ var _revert: js.Any = js.native
+    /**
+      * function to revert the mesh and scene back to the initial state.
+      * @param animationState
+      */
+    /* private */ var _revert: Any = js.native
     
     /** If SkeletonViewer scene scope. */
-    /* private */ var _scene: js.Any = js.native
+    /* private */ var _scene: Any = js.native
     
     /** The Utility Layer to render the gizmos in. */
-    /* private */ var _utilityLayer: js.Any = js.native
+    /* private */ var _utilityLayer: Any = js.native
     
     /** defines a boolean indicating if bones matrices must be forced to update before rendering (true by default)  */
     var autoUpdateBonesMatrices: Boolean = js.native

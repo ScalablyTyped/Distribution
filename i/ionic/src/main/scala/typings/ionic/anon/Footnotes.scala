@@ -36,11 +36,11 @@ object Footnotes {
     
     inline def setFootnotes(value: js.Array[Id]): Self = StObject.set(x, "footnotes", value.asInstanceOf[js.Any])
     
-    inline def setFootnotesVarargs(value: Id*): Self = StObject.set(x, "footnotes", js.Array(value :_*))
+    inline def setFootnotesVarargs(value: Id*): Self = StObject.set(x, "footnotes", js.Array(value*))
     
     inline def setGroups(value: js.Array[MetadataGroup]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    inline def setGroupsVarargs(value: MetadataGroup*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: MetadataGroup*): Self = StObject.set(x, "groups", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

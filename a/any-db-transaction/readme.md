@@ -11,9 +11,9 @@ Transaction object for Any-DB adapters
 | Full name          | any-db-transaction |
 | Keywords           | any-db, transaction, sql |
 | # releases         | 2 |
-| # dependents       | 10 |
-| # downloads        | 72775 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3204.0 |
+| # stars            | 8.0 |
 
 ## Links
 - [Homepage](https://github.com/grncdr/node-any-db-transaction#readme)

@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TreeTablePaste extends StObject {
   
-  def insert(data: js.Array[js.Any]): Unit
+  def insert(data: js.Array[Any]): Unit
 }
 object TreeTablePaste {
   
-  inline def apply(insert: js.Array[js.Any] => Unit): TreeTablePaste = {
+  inline def apply(insert: js.Array[Any] => Unit): TreeTablePaste = {
     val __obj = js.Dynamic.literal(insert = js.Any.fromFunction1(insert))
     __obj.asInstanceOf[TreeTablePaste]
   }
   
   extension [Self <: TreeTablePaste](x: Self) {
     
-    inline def setInsert(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
+    inline def setInsert(value: js.Array[Any] => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
   }
 }

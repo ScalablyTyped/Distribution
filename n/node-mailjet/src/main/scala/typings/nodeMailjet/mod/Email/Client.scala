@@ -8,6 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Client extends StObject {
   
+  def delete(action: String): DeleteResource = js.native
+  def delete(action: String, option: ConfigOptions): DeleteResource = js.native
+  
   def get(action: String): GetResource = js.native
   def get(action: String, options: ConfigOptions): GetResource = js.native
   

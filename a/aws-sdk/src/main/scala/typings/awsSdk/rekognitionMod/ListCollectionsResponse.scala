@@ -34,13 +34,13 @@ object ListCollectionsResponse {
     
     inline def setCollectionIdsUndefined: Self = StObject.set(x, "CollectionIds", js.undefined)
     
-    inline def setCollectionIdsVarargs(value: CollectionId*): Self = StObject.set(x, "CollectionIds", js.Array(value :_*))
+    inline def setCollectionIdsVarargs(value: CollectionId*): Self = StObject.set(x, "CollectionIds", js.Array(value*))
     
     inline def setFaceModelVersions(value: FaceModelVersionList): Self = StObject.set(x, "FaceModelVersions", value.asInstanceOf[js.Any])
     
     inline def setFaceModelVersionsUndefined: Self = StObject.set(x, "FaceModelVersions", js.undefined)
     
-    inline def setFaceModelVersionsVarargs(value: String*): Self = StObject.set(x, "FaceModelVersions", js.Array(value :_*))
+    inline def setFaceModelVersionsVarargs(value: String*): Self = StObject.set(x, "FaceModelVersions", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

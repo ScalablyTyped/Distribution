@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateTrafficMirrorTargetRequest extends StObject {
   
   /**
-    * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see How to Ensure Idempotency.
+    * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see How to ensure idempotency.
     */
   var ClientToken: js.UndefOr[String] = js.undefined
   
@@ -20,6 +20,11 @@ trait CreateTrafficMirrorTargetRequest extends StObject {
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
   var DryRun: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * The ID of the Gateway Load Balancer endpoint.
+    */
+  var GatewayLoadBalancerEndpointId: js.UndefOr[VpcEndpointId] = js.undefined
   
   /**
     * The network interface ID that is associated with the target.
@@ -57,6 +62,10 @@ object CreateTrafficMirrorTargetRequest {
     
     inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
+    inline def setGatewayLoadBalancerEndpointId(value: VpcEndpointId): Self = StObject.set(x, "GatewayLoadBalancerEndpointId", value.asInstanceOf[js.Any])
+    
+    inline def setGatewayLoadBalancerEndpointIdUndefined: Self = StObject.set(x, "GatewayLoadBalancerEndpointId", js.undefined)
+    
     inline def setNetworkInterfaceId(value: NetworkInterfaceId): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
     
     inline def setNetworkInterfaceIdUndefined: Self = StObject.set(x, "NetworkInterfaceId", js.undefined)
@@ -69,6 +78,6 @@ object CreateTrafficMirrorTargetRequest {
     
     inline def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
     
-    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
+    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value*))
   }
 }

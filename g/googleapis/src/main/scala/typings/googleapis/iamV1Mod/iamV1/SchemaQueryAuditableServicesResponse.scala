@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A response containing a list of auditable services for a resource.
-  */
 trait SchemaQueryAuditableServicesResponse extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaQueryAuditableServicesResponse {
     
     inline def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
     
-    inline def setServicesVarargs(value: SchemaAuditableService*): Self = StObject.set(x, "services", js.Array(value :_*))
+    inline def setServicesVarargs(value: SchemaAuditableService*): Self = StObject.set(x, "services", js.Array(value*))
   }
 }

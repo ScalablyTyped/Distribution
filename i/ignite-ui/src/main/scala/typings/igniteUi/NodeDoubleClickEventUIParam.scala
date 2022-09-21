@@ -9,12 +9,12 @@ trait NodeDoubleClickEventUIParam extends StObject {
   /**
     * Gets a reference to the bindings object for the level at which the double clicked node is located.
     */
-  var binding: js.UndefOr[js.Any] = js.undefined
+  var binding: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets the node data.
     */
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets a reference to the jQuery element of the double clicked node.
@@ -35,11 +35,11 @@ object NodeDoubleClickEventUIParam {
   
   extension [Self <: NodeDoubleClickEventUIParam](x: Self) {
     
-    inline def setBinding(value: js.Any): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
+    inline def setBinding(value: Any): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
     
     inline def setBindingUndefined: Self = StObject.set(x, "binding", js.undefined)
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     

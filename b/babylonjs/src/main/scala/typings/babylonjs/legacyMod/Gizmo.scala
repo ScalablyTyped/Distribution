@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Creates a gizmo
   * @param gizmoLayer The utility layer the gizmo will be added to
   */
-class Gizmo ()
+open class Gizmo ()
   extends typings.babylonjs.indexMod.Gizmo {
   def this(/** The utility layer the gizmo will be added to */
   gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer) = this()
@@ -34,4 +34,13 @@ object Gizmo {
     gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer,
     gizmoAxisCache: Map[typings.babylonjs.meshMod.Mesh, GizmoAxisCache]
   ): typings.babylonjs.observableMod.Observer[typings.babylonjs.pointerEventsMod.PointerInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("GizmoAxisPointerObserver")(gizmoLayer.asInstanceOf[js.Any], gizmoAxisCache.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.observableMod.Observer[typings.babylonjs.pointerEventsMod.PointerInfo]]
+  
+  /**
+    * When enabled, any gizmo operation will perserve scaling sign. Default is off.
+    * Only valid for TransformNode derived classes (Mesh, AbstractMesh, ...)
+    */
+  @JSImport("babylonjs/Legacy/legacy", "Gizmo.PreserveScaling")
+  @js.native
+  def PreserveScaling: Boolean = js.native
+  inline def PreserveScaling_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PreserveScaling")(x.asInstanceOf[js.Any])
 }

@@ -9,15 +9,15 @@ object tracerMod {
   
   @JSImport("opentracing/lib/tracer", JSImport.Default)
   @js.native
-  class default () extends Tracer
+  open class default () extends Tracer
   
   @JSImport("opentracing/lib/tracer", "Tracer")
   @js.native
-  class Tracer () extends StObject {
+  open class Tracer () extends StObject {
     
-    /* protected */ def _extract(format: String, carrier: js.Any): typings.opentracing.spanContextMod.default | Null = js.native
+    /* protected */ def _extract(format: String, carrier: Any): typings.opentracing.spanContextMod.default | Null = js.native
     
-    /* protected */ def _inject(spanContext: typings.opentracing.spanContextMod.default, format: String, carrier: js.Any): Unit = js.native
+    /* protected */ def _inject(spanContext: typings.opentracing.spanContextMod.default, format: String, carrier: Any): Unit = js.native
     
     /* protected */ def _startSpan(name: String, fields: SpanOptions): typings.opentracing.spanMod.default = js.native
     
@@ -43,7 +43,7 @@ object tracerMod {
       *         The extracted SpanContext, or null if no such SpanContext could
       *         be found in `carrier`
       */
-    def extract(format: String, carrier: js.Any): typings.opentracing.spanContextMod.default | Null = js.native
+    def extract(format: String, carrier: Any): typings.opentracing.spanContextMod.default | Null = js.native
     
     /**
       * Injects the given SpanContext instance for cross-process propagation
@@ -74,8 +74,8 @@ object tracerMod {
       * @param  {any} carrier - see the documentation for the chosen `format`
       *         for a description of the carrier object.
       */
-    def inject(spanContext: typings.opentracing.spanContextMod.default, format: String, carrier: js.Any): Unit = js.native
-    def inject(spanContext: typings.opentracing.spanMod.default, format: String, carrier: js.Any): Unit = js.native
+    def inject(spanContext: typings.opentracing.spanContextMod.default, format: String, carrier: Any): Unit = js.native
+    def inject(spanContext: typings.opentracing.spanMod.default, format: String, carrier: Any): Unit = js.native
     
     /**
       * Starts and returns a new Span representing a logical unit of work.
@@ -133,7 +133,7 @@ object tracerMod {
       * efficiency reasons (the caller should not modify this object after
       * calling startSpan).
       */
-    var tags: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var tags: js.UndefOr[StringDictionary[Any]] = js.undefined
   }
   object SpanOptions {
     
@@ -152,13 +152,13 @@ object tracerMod {
       
       inline def setReferencesUndefined: Self = StObject.set(x, "references", js.undefined)
       
-      inline def setReferencesVarargs(value: typings.opentracing.referenceMod.default*): Self = StObject.set(x, "references", js.Array(value :_*))
+      inline def setReferencesVarargs(value: typings.opentracing.referenceMod.default*): Self = StObject.set(x, "references", js.Array(value*))
       
       inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
       inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
       
-      inline def setTags(value: StringDictionary[js.Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
       inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }

@@ -1,5 +1,6 @@
 package typings.gapiCalendar.anon
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.gapiCalendar.gapi.client.calendar.GadgetDisplayMode
 import typings.gapiCalendar.gapi.client.calendar.integer
 import org.scalablytyped.runtime.StObject
@@ -16,7 +17,7 @@ trait Display extends StObject {
   
   var link: String
   
-  def preferences(key: String): String
+  var preferences: StringDictionary[String]
   
   var title: String
   
@@ -30,12 +31,12 @@ object Display {
     height: integer,
     iconLink: String,
     link: String,
-    preferences: String => String,
+    preferences: StringDictionary[String],
     title: String,
     `type`: String,
     width: integer
   ): Display = {
-    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], iconLink = iconLink.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], preferences = js.Any.fromFunction1(preferences), title = title.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], iconLink = iconLink.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], preferences = preferences.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Display]
   }
@@ -52,7 +53,7 @@ object Display {
     
     inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    inline def setPreferences(value: String => String): Self = StObject.set(x, "preferences", js.Any.fromFunction1(value))
+    inline def setPreferences(value: StringDictionary[String]): Self = StObject.set(x, "preferences", value.asInstanceOf[js.Any])
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

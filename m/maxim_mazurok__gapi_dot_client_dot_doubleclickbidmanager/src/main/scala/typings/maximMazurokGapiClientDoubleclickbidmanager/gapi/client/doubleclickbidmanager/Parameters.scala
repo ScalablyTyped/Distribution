@@ -12,16 +12,13 @@ trait Parameters extends StObject {
   /** Data is grouped by the filters listed in this field. */
   var groupBys: js.UndefOr[js.Array[String]] = js.undefined
   
-  /** Deprecated. This field is no longer in use. */
-  var includeInviteData: js.UndefOr[Boolean] = js.undefined
-  
   /** Metrics to include as columns in your report. */
   var metrics: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Additional query options. */
   var options: js.UndefOr[Options] = js.undefined
   
-  /** Report type. */
+  /** The type of the report. The type of the report will dictate what dimesions, filters, and metrics can be used. */
   var `type`: js.UndefOr[String] = js.undefined
 }
 object Parameters {
@@ -37,23 +34,19 @@ object Parameters {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    inline def setFiltersVarargs(value: FilterPair*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: FilterPair*): Self = StObject.set(x, "filters", js.Array(value*))
     
     inline def setGroupBys(value: js.Array[String]): Self = StObject.set(x, "groupBys", value.asInstanceOf[js.Any])
     
     inline def setGroupBysUndefined: Self = StObject.set(x, "groupBys", js.undefined)
     
-    inline def setGroupBysVarargs(value: String*): Self = StObject.set(x, "groupBys", js.Array(value :_*))
-    
-    inline def setIncludeInviteData(value: Boolean): Self = StObject.set(x, "includeInviteData", value.asInstanceOf[js.Any])
-    
-    inline def setIncludeInviteDataUndefined: Self = StObject.set(x, "includeInviteData", js.undefined)
+    inline def setGroupBysVarargs(value: String*): Self = StObject.set(x, "groupBys", js.Array(value*))
     
     inline def setMetrics(value: js.Array[String]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
     inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    inline def setMetricsVarargs(value: String*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: String*): Self = StObject.set(x, "metrics", js.Array(value*))
     
     inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

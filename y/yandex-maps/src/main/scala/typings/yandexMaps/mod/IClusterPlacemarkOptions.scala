@@ -1,26 +1,21 @@
 package typings.yandexMaps.mod
 
 import typings.yandexMaps.anon.Href
-import typings.yandexMaps.yandexMapsStrings.clusterNumbersignballoonAccordion
-import typings.yandexMaps.yandexMapsStrings.clusterNumbersignballoonCarousel
-import typings.yandexMaps.yandexMapsStrings.clusterNumbersignballoonTwoColumns
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IClusterPlacemarkOptions extends StObject {
   
-  var balloonContentLayout: js.UndefOr[
-    clusterNumbersignballoonTwoColumns | clusterNumbersignballoonCarousel | clusterNumbersignballoonAccordion | String | IClassConstructor[ILayout]
-  ] = js.undefined
+  var balloonContentLayout: js.UndefOr[IClassConstructor[ILayout] | ClusterLayoutKey] = js.undefined
   
   var balloonContentLayoutHeight: js.UndefOr[Double] = js.undefined
   
   var balloonContentLayoutWidth: js.UndefOr[Double] = js.undefined
   
-  var balloonItemContentLayout: js.UndefOr[ILayout | String] = js.undefined
+  var balloonItemContentLayout: js.UndefOr[ILayout | ClusterContentLayoutKey] = js.undefined
   
-  var balloonPanelContentLayout: js.UndefOr[String | IClassConstructor[ILayout]] = js.undefined
+  var balloonPanelContentLayout: js.UndefOr[IClassConstructor[ILayout] | ClusterLayoutKey] = js.undefined
   
   var cursor: js.UndefOr[String] = js.undefined
   
@@ -59,9 +54,7 @@ object IClusterPlacemarkOptions {
   
   extension [Self <: IClusterPlacemarkOptions](x: Self) {
     
-    inline def setBalloonContentLayout(
-      value: clusterNumbersignballoonTwoColumns | clusterNumbersignballoonCarousel | clusterNumbersignballoonAccordion | String | IClassConstructor[ILayout]
-    ): Self = StObject.set(x, "balloonContentLayout", value.asInstanceOf[js.Any])
+    inline def setBalloonContentLayout(value: IClassConstructor[ILayout] | ClusterLayoutKey): Self = StObject.set(x, "balloonContentLayout", value.asInstanceOf[js.Any])
     
     inline def setBalloonContentLayoutHeight(value: Double): Self = StObject.set(x, "balloonContentLayoutHeight", value.asInstanceOf[js.Any])
     
@@ -73,11 +66,11 @@ object IClusterPlacemarkOptions {
     
     inline def setBalloonContentLayoutWidthUndefined: Self = StObject.set(x, "balloonContentLayoutWidth", js.undefined)
     
-    inline def setBalloonItemContentLayout(value: ILayout | String): Self = StObject.set(x, "balloonItemContentLayout", value.asInstanceOf[js.Any])
+    inline def setBalloonItemContentLayout(value: ILayout | ClusterContentLayoutKey): Self = StObject.set(x, "balloonItemContentLayout", value.asInstanceOf[js.Any])
     
     inline def setBalloonItemContentLayoutUndefined: Self = StObject.set(x, "balloonItemContentLayout", js.undefined)
     
-    inline def setBalloonPanelContentLayout(value: String | IClassConstructor[ILayout]): Self = StObject.set(x, "balloonPanelContentLayout", value.asInstanceOf[js.Any])
+    inline def setBalloonPanelContentLayout(value: IClassConstructor[ILayout] | ClusterLayoutKey): Self = StObject.set(x, "balloonPanelContentLayout", value.asInstanceOf[js.Any])
     
     inline def setBalloonPanelContentLayoutUndefined: Self = StObject.set(x, "balloonPanelContentLayout", js.undefined)
     
@@ -113,7 +106,7 @@ object IClusterPlacemarkOptions {
     
     inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
-    inline def setIconsVarargs(value: Href*): Self = StObject.set(x, "icons", js.Array(value :_*))
+    inline def setIconsVarargs(value: Href*): Self = StObject.set(x, "icons", js.Array(value*))
     
     inline def setInteractivityModel(value: InteractivityModelKey): Self = StObject.set(x, "interactivityModel", value.asInstanceOf[js.Any])
     
@@ -123,7 +116,7 @@ object IClusterPlacemarkOptions {
     
     inline def setNumbersUndefined: Self = StObject.set(x, "numbers", js.undefined)
     
-    inline def setNumbersVarargs(value: Double*): Self = StObject.set(x, "numbers", js.Array(value :_*))
+    inline def setNumbersVarargs(value: Double*): Self = StObject.set(x, "numbers", js.Array(value*))
     
     inline def setOpenBalloonOnClick(value: Boolean): Self = StObject.set(x, "openBalloonOnClick", value.asInstanceOf[js.Any])
     

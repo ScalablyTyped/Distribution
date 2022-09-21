@@ -33,6 +33,6 @@ object CloudWatchLogsConfiguration {
     
     inline def setLogStreamsUndefined: Self = StObject.set(x, "LogStreams", js.undefined)
     
-    inline def setLogStreamsVarargs(value: CloudWatchLogsLogStream*): Self = StObject.set(x, "LogStreams", js.Array(value :_*))
+    inline def setLogStreamsVarargs(value: CloudWatchLogsLogStream*): Self = StObject.set(x, "LogStreams", js.Array(value*))
   }
 }

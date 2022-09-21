@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BatchCreateNotesRequest extends StObject {
   
-  /** Required. The notes to create, the key is expected to be the note ID. Max allowed length is 1000. */
+  /** Required. The notes to create. Max allowed length is 1000. */
   var notes: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.containeranalysis.gapi.client.containeranalysis.Note}
-    */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.BatchCreateNotesRequest & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.BatchCreateNotesRequest & TopLevel[Any]
   ] = js.undefined
 }
 object BatchCreateNotesRequest {
@@ -26,7 +26,7 @@ object BatchCreateNotesRequest {
     inline def setNotes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.containeranalysis.gapi.client.containeranalysis.Note}
-      */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.BatchCreateNotesRequest & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.BatchCreateNotesRequest & TopLevel[Any]
     ): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
     inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)

@@ -21,7 +21,7 @@ trait References extends StObject {
   def Item(var_0: String): Reference = js.native
   def Item(var_0: Double): Reference = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def Remove(Reference: Reference): Unit = js.native
 }

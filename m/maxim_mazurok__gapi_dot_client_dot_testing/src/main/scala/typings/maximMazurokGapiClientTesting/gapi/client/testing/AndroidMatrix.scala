@@ -31,24 +31,24 @@ object AndroidMatrix {
     
     inline def setAndroidModelIdsUndefined: Self = StObject.set(x, "androidModelIds", js.undefined)
     
-    inline def setAndroidModelIdsVarargs(value: String*): Self = StObject.set(x, "androidModelIds", js.Array(value :_*))
+    inline def setAndroidModelIdsVarargs(value: String*): Self = StObject.set(x, "androidModelIds", js.Array(value*))
     
     inline def setAndroidVersionIds(value: js.Array[String]): Self = StObject.set(x, "androidVersionIds", value.asInstanceOf[js.Any])
     
     inline def setAndroidVersionIdsUndefined: Self = StObject.set(x, "androidVersionIds", js.undefined)
     
-    inline def setAndroidVersionIdsVarargs(value: String*): Self = StObject.set(x, "androidVersionIds", js.Array(value :_*))
+    inline def setAndroidVersionIdsVarargs(value: String*): Self = StObject.set(x, "androidVersionIds", js.Array(value*))
     
     inline def setLocales(value: js.Array[String]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
     
     inline def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
     
-    inline def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value :_*))
+    inline def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value*))
     
     inline def setOrientations(value: js.Array[String]): Self = StObject.set(x, "orientations", value.asInstanceOf[js.Any])
     
     inline def setOrientationsUndefined: Self = StObject.set(x, "orientations", js.undefined)
     
-    inline def setOrientationsVarargs(value: String*): Self = StObject.set(x, "orientations", js.Array(value :_*))
+    inline def setOrientationsVarargs(value: String*): Self = StObject.set(x, "orientations", js.Array(value*))
   }
 }

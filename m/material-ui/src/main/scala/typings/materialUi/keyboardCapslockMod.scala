@@ -10,10 +10,10 @@ object keyboardCapslockMod {
   
   @JSImport("material-ui/svg-icons/hardware/keyboard-capslock", JSImport.Default)
   @js.native
-  class default () extends HardwareKeyboardCapslock
+  open class default () extends HardwareKeyboardCapslock
   
   @JSImport("material-ui/svg-icons/hardware/keyboard-capslock", "HardwareKeyboardCapslock")
   @js.native
-  class HardwareKeyboardCapslock ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class HardwareKeyboardCapslock ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

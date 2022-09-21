@@ -1,7 +1,6 @@
 package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +25,7 @@ trait BuildDefinitionSourceProvider extends StObject {
   /**
     * The lst time this source provider was modified
     */
-  var lastModified: Date
+  var lastModified: js.Date
   
   /**
     * Name of the source provider
@@ -44,7 +43,7 @@ object BuildDefinitionSourceProvider {
     definitionUri: String,
     fields: StringDictionary[String],
     id: Double,
-    lastModified: Date,
+    lastModified: js.Date,
     name: String,
     supportedTriggerTypes: DefinitionTriggerType
   ): BuildDefinitionSourceProvider = {
@@ -60,7 +59,7 @@ object BuildDefinitionSourceProvider {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setLastModified(value: Date): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
+    inline def setLastModified(value: js.Date): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

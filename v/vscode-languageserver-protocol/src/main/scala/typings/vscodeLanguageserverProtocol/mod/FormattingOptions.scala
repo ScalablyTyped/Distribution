@@ -13,10 +13,10 @@ object FormattingOptions {
   /**
     * Creates a new FormattingOptions literal.
     */
-  inline def create(tabSize: Double, insertSpaces: Boolean): typings.vscodeLanguageserverTypes.mod.FormattingOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tabSize.asInstanceOf[js.Any], insertSpaces.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.FormattingOptions]
+  inline def create(tabSize: typings.vscodeLanguageserverTypes.mod.uinteger, insertSpaces: Boolean): typings.vscodeLanguageserverTypes.mod.FormattingOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tabSize.asInstanceOf[js.Any], insertSpaces.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.FormattingOptions]
   
   /**
     * Checks whether the given literal conforms to the [FormattingOptions](#FormattingOptions) interface.
     */
-  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.FormattingOptions */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.FormattingOptions */ Boolean]
+  inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.FormattingOptions */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.FormattingOptions */ Boolean]
 }

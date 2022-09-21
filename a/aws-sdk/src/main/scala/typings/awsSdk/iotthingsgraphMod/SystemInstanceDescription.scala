@@ -68,7 +68,7 @@ object SystemInstanceDescription {
     
     inline def setValidatedDependencyRevisionsUndefined: Self = StObject.set(x, "validatedDependencyRevisions", js.undefined)
     
-    inline def setValidatedDependencyRevisionsVarargs(value: DependencyRevision*): Self = StObject.set(x, "validatedDependencyRevisions", js.Array(value :_*))
+    inline def setValidatedDependencyRevisionsVarargs(value: DependencyRevision*): Self = StObject.set(x, "validatedDependencyRevisions", js.Array(value*))
     
     inline def setValidatedNamespaceVersion(value: Version): Self = StObject.set(x, "validatedNamespaceVersion", value.asInstanceOf[js.Any])
     

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactFieldFactory")
 @js.native
 /** Creates an instance of the ContactFieldFactory class. */
-class ContactFieldFactory ()
+open class ContactFieldFactory ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactFieldFactory

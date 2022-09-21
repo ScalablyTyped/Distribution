@@ -1,27 +1,31 @@
 package typings.materialUiLab
 
+import org.scalablytyped.runtime.Shortcut
+import typings.materialUiCore.overridableComponentMod.OverridableComponent
+import typings.materialUiCore.overridableComponentMod.OverrideProps
 import typings.materialUiLab.anon.Animation
 import typings.materialUiLab.materialUiLabStrings.div
+import typings.materialUiLab.materialUiLabStrings.span
 import typings.react.mod.ElementType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object skeletonSkeletonMod {
+object skeletonSkeletonMod extends Shortcut {
   
   /**
     *
     * Demos:
     *
-    * - [Skeleton](https://material-ui.com/components/skeleton/)
+    * - [Skeleton](https://mui.com/components/skeleton/)
     *
     * API:
     *
-    * - [Skeleton API](https://material-ui.com/api/skeleton/)
+    * - [Skeleton API](https://mui.com/api/skeleton/)
     */
   @JSImport("@material-ui/lab/Skeleton/Skeleton", JSImport.Default)
   @js.native
-  val default: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OverridableComponent<SkeletonTypeMap> */ js.Any = js.native
+  val default: OverridableComponent[SkeletonTypeMap[js.Object, span]] = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.materialUiLab.materialUiLabStrings.root
@@ -56,9 +60,9 @@ object skeletonSkeletonMod {
     inline def withChildren: typings.materialUiLab.materialUiLabStrings.withChildren = "withChildren".asInstanceOf[typings.materialUiLab.materialUiLabStrings.withChildren]
   }
   
-  type SkeletonProps[D /* <: ElementType[js.Any] */, P] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OverrideProps<SkeletonTypeMap<P, D>, D> */ js.Any
+  type SkeletonProps[D /* <: ElementType[Any] */, P] = OverrideProps[SkeletonTypeMap[P, D], D]
   
-  trait SkeletonTypeMap[P, D /* <: ElementType[js.Any] */] extends StObject {
+  trait SkeletonTypeMap[P, D /* <: ElementType[Any] */] extends StObject {
     
     var classKey: SkeletonClassKey
     
@@ -68,12 +72,12 @@ object skeletonSkeletonMod {
   }
   object SkeletonTypeMap {
     
-    inline def apply[P, D /* <: ElementType[js.Any] */](classKey: SkeletonClassKey, props: P & Animation): SkeletonTypeMap[P, D] = {
+    inline def apply[P, D /* <: ElementType[Any] */](classKey: SkeletonClassKey, props: P & Animation): SkeletonTypeMap[P, D] = {
       val __obj = js.Dynamic.literal(classKey = classKey.asInstanceOf[js.Any], defaultComponent = "div", props = props.asInstanceOf[js.Any])
       __obj.asInstanceOf[SkeletonTypeMap[P, D]]
     }
     
-    extension [Self <: SkeletonTypeMap[?, ?], P, D /* <: ElementType[js.Any] */](x: Self & (SkeletonTypeMap[P, D])) {
+    extension [Self <: SkeletonTypeMap[?, ?], P, D /* <: ElementType[Any] */](x: Self & (SkeletonTypeMap[P, D])) {
       
       inline def setClassKey(value: SkeletonClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       
@@ -82,4 +86,9 @@ object skeletonSkeletonMod {
       inline def setProps(value: P & Animation): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     }
   }
+  
+  type _To = OverridableComponent[SkeletonTypeMap[js.Object, span]]
+  
+  /* This means you don't have to write `default`, but can instead just say `skeletonSkeletonMod.foo` */
+  override def _to: OverridableComponent[SkeletonTypeMap[js.Object, span]] = default
 }

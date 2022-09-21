@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("jsrsasign.KJUR.asn1.DERTeletexString")
 @js.native
-class DERTeletexString protected ()
+open class DERTeletexString protected ()
   extends typings.jsrsasign.mod.KJUR.asn1.DERTeletexString {
   def this(params: StringParam) = this()
 }

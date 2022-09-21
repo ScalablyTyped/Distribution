@@ -19,6 +19,6 @@ object Notifications {
     
     inline def setNotifications(value: js.Array[MethodType]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
     
-    inline def setNotificationsVarargs(value: MethodType*): Self = StObject.set(x, "notifications", js.Array(value :_*))
+    inline def setNotificationsVarargs(value: MethodType*): Self = StObject.set(x, "notifications", js.Array(value*))
   }
 }

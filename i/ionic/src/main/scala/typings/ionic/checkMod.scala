@@ -11,7 +11,7 @@ object checkMod {
   
   @JSImport("ionic/commands/doctor/check", "DoctorCheckCommand")
   @js.native
-  class DoctorCheckCommand protected () extends DoctorCommand {
+  open class DoctorCheckCommand protected () extends DoctorCommand {
     def this(namespace: INamespace) = this()
     
     def checkAilment(ailment: IAilment): js.Promise[Unit] = js.native

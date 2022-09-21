@@ -8,5 +8,5 @@ object timeRangeMod {
   
   @JSImport("@nulogy/components/src/TimeRange", "TimeRange")
   @js.native
-  val TimeRange: js.Any = js.native
+  val TimeRange: Any = js.native
 }

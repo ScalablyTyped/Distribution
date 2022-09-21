@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "DefaultButton")
 @js.native
-class DefaultButton protected ()
+open class DefaultButton protected ()
   extends typings.officeUiFabricReact.mod.DefaultButton {
   def this(props: IButtonProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: IButtonProps, context: js.Any) = this()
+  def this(props: IButtonProps, context: Any) = this()
 }

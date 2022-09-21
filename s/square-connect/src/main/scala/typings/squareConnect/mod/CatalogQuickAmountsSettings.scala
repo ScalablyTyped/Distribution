@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CatalogQuickAmountsSettings")
 @js.native
-class CatalogQuickAmountsSettings () extends StObject {
+open class CatalogQuickAmountsSettings () extends StObject {
   
   /**
     * Represents a set of Quick Amounts at this location.

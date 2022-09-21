@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rc-switch" : "3.2.2"
+      "rc-switch" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "rc-switch" : "3.2.2"
+      "rc-switch" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

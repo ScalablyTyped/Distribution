@@ -1,6 +1,5 @@
 package typings.fastCsvFormat
 
-import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +15,7 @@ object typesMod {
   
   type AsyncRowTransform[I /* <: Row */, O /* <: Row */] = js.Function2[/* row */ I, /* cb */ RowTransformCallback[O], Unit]
   
-  type Row = RowArray | RowHashArray[js.Any] | RowMap[js.Any]
+  type Row = RowArray | RowHashArray[Any] | RowMap[Any]
   
   type RowArray = js.Array[String]
   
@@ -24,7 +23,7 @@ object typesMod {
   
   type RowMap[V] = Record[String, V]
   
-  type RowTransformCallback[R /* <: Row */] = js.Function2[/* error */ js.UndefOr[Error | Null], /* row */ js.UndefOr[R], Unit]
+  type RowTransformCallback[R /* <: Row */] = js.Function2[/* error */ js.UndefOr[js.Error | Null], /* row */ js.UndefOr[R], Unit]
   
   type RowTransformFunction[I /* <: Row */, O /* <: Row */] = (SyncRowTransform[I, O]) | (AsyncRowTransform[I, O])
   

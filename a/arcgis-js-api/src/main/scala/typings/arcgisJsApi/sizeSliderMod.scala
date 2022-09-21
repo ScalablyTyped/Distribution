@@ -22,7 +22,7 @@ object sizeSliderMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with SizeSlider {
     def this(properties: SizeSliderProperties) = this()

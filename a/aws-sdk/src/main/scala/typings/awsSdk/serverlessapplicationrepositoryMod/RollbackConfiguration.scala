@@ -35,6 +35,6 @@ object RollbackConfiguration {
     
     inline def setRollbackTriggersUndefined: Self = StObject.set(x, "RollbackTriggers", js.undefined)
     
-    inline def setRollbackTriggersVarargs(value: RollbackTrigger*): Self = StObject.set(x, "RollbackTriggers", js.Array(value :_*))
+    inline def setRollbackTriggersVarargs(value: RollbackTrigger*): Self = StObject.set(x, "RollbackTriggers", js.Array(value*))
   }
 }

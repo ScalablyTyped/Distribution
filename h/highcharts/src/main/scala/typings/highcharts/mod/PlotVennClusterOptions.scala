@@ -118,6 +118,6 @@ object PlotVennClusterOptions {
     
     inline def setZonesUndefined: Self = StObject.set(x, "zones", js.undefined)
     
-    inline def setZonesVarargs(value: PlotVennClusterZonesOptions*): Self = StObject.set(x, "zones", js.Array(value :_*))
+    inline def setZonesVarargs(value: PlotVennClusterZonesOptions*): Self = StObject.set(x, "zones", js.Array(value*))
   }
 }

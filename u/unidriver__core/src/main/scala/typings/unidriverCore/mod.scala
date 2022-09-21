@@ -37,14 +37,16 @@ object mod {
   
   @JSImport("@unidriver/core", "MultipleElementsWithLocatorError")
   @js.native
-  class MultipleElementsWithLocatorError protected ()
+  open class MultipleElementsWithLocatorError protected ()
     extends StObject
        with Error {
     def this(count: Double, locator: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     
@@ -53,42 +55,52 @@ object mod {
   
   @JSImport("@unidriver/core", "NoElementWithLocatorError")
   @js.native
-  class NoElementWithLocatorError protected ()
+  open class NoElementWithLocatorError protected ()
     extends StObject
        with Error {
     def this(locator: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     
     var `type`: ErrorTypes = js.native
   }
   
-  inline def delay(ms: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(ms.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def contextToSelectorString(context: DriverContext): String = ^.asInstanceOf[js.Dynamic].applyDynamic("contextToSelectorString")(context.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def contextToWaitError(context: DriverContext): String = ^.asInstanceOf[js.Dynamic].applyDynamic("contextToWaitError")(context.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def delay(ms: Double): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(ms.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
   
   inline def eventually(callback: js.Function0[Unit]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("eventually")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   inline def eventually(callback: js.Function0[Unit], timeout: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventually")(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def eventually(callback: js.Function0[Unit], timeout: Double, retryDelay: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventually")(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], retryDelay.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def eventually(callback: js.Function0[Unit], timeout: Double, retryDelay: Double, lastError: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventually")(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], retryDelay.asInstanceOf[js.Any], lastError.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def eventually(callback: js.Function0[Unit], timeout: Double, retryDelay: Unit, lastError: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventually")(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], retryDelay.asInstanceOf[js.Any], lastError.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def eventually(callback: js.Function0[Unit], timeout: Double, retryDelay: Double, lastError: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventually")(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], retryDelay.asInstanceOf[js.Any], lastError.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def eventually(callback: js.Function0[Unit], timeout: Double, retryDelay: Unit, lastError: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventually")(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], retryDelay.asInstanceOf[js.Any], lastError.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def eventually(callback: js.Function0[Unit], timeout: Unit, retryDelay: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventually")(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], retryDelay.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def eventually(callback: js.Function0[Unit], timeout: Unit, retryDelay: Double, lastError: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventually")(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], retryDelay.asInstanceOf[js.Any], lastError.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def eventually(callback: js.Function0[Unit], timeout: Unit, retryDelay: Unit, lastError: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventually")(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], retryDelay.asInstanceOf[js.Any], lastError.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def eventually(callback: js.Function0[Unit], timeout: Unit, retryDelay: Double, lastError: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventually")(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], retryDelay.asInstanceOf[js.Any], lastError.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def eventually(callback: js.Function0[Unit], timeout: Unit, retryDelay: Unit, lastError: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventually")(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], retryDelay.asInstanceOf[js.Any], lastError.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   inline def getAllNonTextKeyTypes(): js.Array[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 248 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 248 */ Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllNonTextKeyTypes")().asInstanceOf[js.Array[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 248 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 248 */ Any
   ]]
   
   inline def getDefinitionForKeyType(keyType: KeyDefinitionType): Key = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefinitionForKeyType")(keyType.asInstanceOf[js.Any]).asInstanceOf[Key]
   
-  inline def isMultipleElementsWithLocatorError(e: Error): /* is @unidriver/core.@unidriver/core.MultipleElementsWithLocatorError */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMultipleElementsWithLocatorError")(e.asInstanceOf[js.Any]).asInstanceOf[/* is @unidriver/core.@unidriver/core.MultipleElementsWithLocatorError */ Boolean]
+  inline def isMultipleElementsWithLocatorError(e: js.Error): /* is @unidriver/core.@unidriver/core.MultipleElementsWithLocatorError */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMultipleElementsWithLocatorError")(e.asInstanceOf[js.Any]).asInstanceOf[/* is @unidriver/core.@unidriver/core.MultipleElementsWithLocatorError */ Boolean]
   
-  inline def isNoElementWithLocatorError(e: Error): /* is @unidriver/core.@unidriver/core.NoElementWithLocatorError */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNoElementWithLocatorError")(e.asInstanceOf[js.Any]).asInstanceOf[/* is @unidriver/core.@unidriver/core.NoElementWithLocatorError */ Boolean]
+  inline def isNoElementWithLocatorError(e: js.Error): /* is @unidriver/core.@unidriver/core.NoElementWithLocatorError */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNoElementWithLocatorError")(e.asInstanceOf[js.Any]).asInstanceOf[/* is @unidriver/core.@unidriver/core.NoElementWithLocatorError */ Boolean]
+  
+  @JSImport("@unidriver/core", "rootDriver")
+  @js.native
+  val rootDriver: DriverContext = js.native
   
   inline def waitFor(fn: js.Function0[js.Promise[Boolean]]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   inline def waitFor(fn: js.Function0[js.Promise[Boolean]], timeout: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(fn.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
@@ -98,6 +110,37 @@ object mod {
   inline def waitFor(fn: js.Function0[js.Promise[Boolean]], timeout: Unit, retryDelay: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(fn.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], retryDelay.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def waitFor(fn: js.Function0[js.Promise[Boolean]], timeout: Unit, retryDelay: Double, customError: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(fn.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], retryDelay.asInstanceOf[js.Any], customError.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def waitFor(fn: js.Function0[js.Promise[Boolean]], timeout: Unit, retryDelay: Unit, customError: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(fn.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], retryDelay.asInstanceOf[js.Any], customError.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
+  trait DriverContext extends StObject {
+    
+    var idx: js.UndefOr[Double] = js.undefined
+    
+    var parent: js.UndefOr[DriverContext] = js.undefined
+    
+    var selector: js.UndefOr[String] = js.undefined
+  }
+  object DriverContext {
+    
+    inline def apply(): DriverContext = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DriverContext]
+    }
+    
+    extension [Self <: DriverContext](x: Self) {
+      
+      inline def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
+      
+      inline def setIdxUndefined: Self = StObject.set(x, "idx", js.undefined)
+      
+      inline def setParent(value: DriverContext): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      
+      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+      
+      inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+      
+      inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+    }
+  }
   
   trait EnterValueOptions extends StObject {
     
@@ -127,13 +170,15 @@ object mod {
   type Locator = String
   
   type MapFn[T] = js.Function3[
-    /* e */ UniDriver[js.Any], 
+    /* e */ UniDriver[Any], 
     /* idx */ js.UndefOr[Double], 
-    /* array */ js.UndefOr[js.Array[UniDriver[js.Any]]], 
+    /* array */ js.UndefOr[js.Array[UniDriver[Any]]], 
     js.Promise[T]
   ]
   
   trait MouseUniDriver[T] extends StObject {
+    
+    def leave(): js.Promise[Unit]
     
     def moveTo(to: UniDriver[T]): js.Promise[Unit]
     
@@ -144,15 +189,18 @@ object mod {
   object MouseUniDriver {
     
     inline def apply[T](
+      leave: () => js.Promise[Unit],
       moveTo: UniDriver[T] => js.Promise[Unit],
       press: () => js.Promise[Unit],
       release: () => js.Promise[Unit]
     ): MouseUniDriver[T] = {
-      val __obj = js.Dynamic.literal(moveTo = js.Any.fromFunction1(moveTo), press = js.Any.fromFunction0(press), release = js.Any.fromFunction0(release))
+      val __obj = js.Dynamic.literal(leave = js.Any.fromFunction0(leave), moveTo = js.Any.fromFunction1(moveTo), press = js.Any.fromFunction0(press), release = js.Any.fromFunction0(release))
       __obj.asInstanceOf[MouseUniDriver[T]]
     }
     
     extension [Self <: MouseUniDriver[?], T](x: Self & MouseUniDriver[T]) {
+      
+      inline def setLeave(value: () => js.Promise[Unit]): Self = StObject.set(x, "leave", js.Any.fromFunction0(value))
       
       inline def setMoveTo(value: UniDriver[T] => js.Promise[Unit]): Self = StObject.set(x, "moveTo", js.Any.fromFunction1(value))
       
@@ -163,17 +211,17 @@ object mod {
   }
   
   type PredicateFn = js.Function3[
-    /* e */ UniDriver[js.Any], 
+    /* e */ UniDriver[Any], 
     /* idx */ js.UndefOr[Double], 
-    /* array */ js.UndefOr[js.Array[UniDriver[js.Any]]], 
+    /* array */ js.UndefOr[js.Array[UniDriver[Any]]], 
     js.Promise[Boolean]
   ]
   
   type ReducerFn[T] = js.Function4[
     /* acc */ T, 
-    /* curr */ UniDriver[js.Any], 
+    /* curr */ UniDriver[Any], 
     /* idx */ js.UndefOr[Double], 
-    /* array */ js.UndefOr[js.Array[UniDriver[js.Any]]], 
+    /* array */ js.UndefOr[js.Array[UniDriver[Any]]], 
     T
   ]
   
@@ -187,7 +235,7 @@ object mod {
     def DollarDollar(selector: Locator): UniDriverList[T] = js.native
     
     /** Gets a html element's property value by property name. @returns null if property is not defined */
-    def _prop(name: String): js.Promise[js.Any] = js.native
+    def _prop(name: String): js.Promise[Any] = js.native
     
     def attr(name: String): js.Promise[String | Null] = js.native
     
@@ -225,7 +273,7 @@ object mod {
     
     def count(): js.Promise[Double]
     
-    def filter(predicate: PredicateFn): UniDriverList[js.Any]
+    def filter(predicate: PredicateFn): UniDriverList[Any]
     
     def get(idx: Double): UniDriver[T]
     
@@ -237,9 +285,9 @@ object mod {
     
     inline def apply[T](
       count: () => js.Promise[Double],
-      filter: PredicateFn => UniDriverList[js.Any],
+      filter: PredicateFn => UniDriverList[Any],
       get: Double => UniDriver[T],
-      map: MapFn[js.Any] => js.Promise[js.Array[js.Any]],
+      map: MapFn[Any] => js.Promise[js.Array[Any]],
       text: () => js.Promise[js.Array[String]]
     ): UniDriverList[T] = {
       val __obj = js.Dynamic.literal(count = js.Any.fromFunction0(count), filter = js.Any.fromFunction1(filter), get = js.Any.fromFunction1(get), map = js.Any.fromFunction1(map), text = js.Any.fromFunction0(text))
@@ -250,11 +298,11 @@ object mod {
       
       inline def setCount(value: () => js.Promise[Double]): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
       
-      inline def setFilter(value: PredicateFn => UniDriverList[js.Any]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: PredicateFn => UniDriverList[Any]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
       inline def setGet(value: Double => UniDriver[T]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      inline def setMap(value: MapFn[js.Any] => js.Promise[js.Array[js.Any]]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+      inline def setMap(value: MapFn[Any] => js.Promise[js.Array[Any]]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
       
       inline def setText(value: () => js.Promise[js.Array[String]]): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
     }

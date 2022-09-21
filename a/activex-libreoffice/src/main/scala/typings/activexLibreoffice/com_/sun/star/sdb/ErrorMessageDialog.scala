@@ -34,15 +34,15 @@ trait ErrorMessageDialog
     * com.sun.star.awt.XWindow} describing the parent window to use for the dialog.**sqlException**; {@link com.sun.star.sdbc.SQLException} describing the
     * error which is being displayed. ;  When initializing this value, you may use any derivative of {@link com.sun.star.sdbc.SQLException} .
     */
-  def create(initialTitle: String, parentWindow: XWindow, sqlException: js.Any): Unit
+  def create(initialTitle: String, parentWindow: XWindow, sqlException: Any): Unit
 }
 object ErrorMessageDialog {
   
   inline def apply(
     acquire: () => Unit,
-    create: (String, XWindow, js.Any) => Unit,
+    create: (String, XWindow, Any) => Unit,
     execute: () => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setTitle: String => Unit
   ): ErrorMessageDialog = {
@@ -52,6 +52,6 @@ object ErrorMessageDialog {
   
   extension [Self <: ErrorMessageDialog](x: Self) {
     
-    inline def setCreate(value: (String, XWindow, js.Any) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction3(value))
+    inline def setCreate(value: (String, XWindow, Any) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction3(value))
   }
 }

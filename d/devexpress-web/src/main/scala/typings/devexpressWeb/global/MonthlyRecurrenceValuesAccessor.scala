@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("MonthlyRecurrenceValuesAccessor")
 @js.native
-class MonthlyRecurrenceValuesAccessor protected ()
+open class MonthlyRecurrenceValuesAccessor protected ()
   extends StObject
      with typings.devexpressWeb.MonthlyRecurrenceValuesAccessor {
   /**

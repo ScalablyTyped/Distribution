@@ -8,6 +8,6 @@ object mod {
   
   @JSImport("typescript-event-handler", "EventHandler")
   @js.native
-  class EventHandler[TInput] ()
+  open class EventHandler[TInput] ()
     extends typings.typescriptEventHandler.eventHandlerMod.EventHandler[TInput]
 }

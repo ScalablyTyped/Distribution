@@ -7,9 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `16` extends StObject {
   
   /**
-    * @see https://echarts.apache.org/en/option.html#series-parallel.data.emphasis.lineStyle
+    * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis.itemStyle
     */
-  var lineStyle: js.UndefOr[ShadowBlur] = js.undefined
+  var itemStyle: js.UndefOr[AreaColor] = js.undefined
+  
+  /**
+    * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis.label
+    */
+  var label: js.UndefOr[Rotate] = js.undefined
 }
 object `16` {
   
@@ -20,8 +25,12 @@ object `16` {
   
   extension [Self <: `16`](x: Self) {
     
-    inline def setLineStyle(value: ShadowBlur): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
+    inline def setItemStyle(value: AreaColor): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
     
-    inline def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
+    inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
+    
+    inline def setLabel(value: Rotate): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }
 }

@@ -1,25 +1,26 @@
 package typings.ziggyJs
 
+import typings.ziggyJs.mod.QueryParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait Id extends StObject {
+  trait Query extends StObject {
     
-    var id: Double
+    var _query: QueryParams
   }
-  object Id {
+  object Query {
     
-    inline def apply(id: Double): Id = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Id]
+    inline def apply(_query: QueryParams): Query = {
+      val __obj = js.Dynamic.literal(_query = _query.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Query]
     }
     
-    extension [Self <: Id](x: Self) {
+    extension [Self <: Query](x: Self) {
       
-      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def set_query(value: QueryParams): Self = StObject.set(x, "_query", value.asInstanceOf[js.Any])
     }
   }
 }

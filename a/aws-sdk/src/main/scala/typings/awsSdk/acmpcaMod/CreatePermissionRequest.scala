@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreatePermissionRequest extends StObject {
   
   /**
-    * The actions that the specified AWS service principal can use. These include IssueCertificate, GetCertificate, and ListPermissions.
+    * The actions that the specified Amazon Web Services service principal can use. These include IssueCertificate, GetCertificate, and ListPermissions.
     */
   var Actions: ActionList
   
@@ -17,7 +17,7 @@ trait CreatePermissionRequest extends StObject {
   var CertificateAuthorityArn: Arn
   
   /**
-    * The AWS service or identity that receives the permission. At this time, the only valid principal is acm.amazonaws.com.
+    * The Amazon Web Services service or identity that receives the permission. At this time, the only valid principal is acm.amazonaws.com.
     */
   var Principal: typings.awsSdk.acmpcaMod.Principal
   
@@ -37,7 +37,7 @@ object CreatePermissionRequest {
     
     inline def setActions(value: ActionList): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     
-    inline def setActionsVarargs(value: ActionType*): Self = StObject.set(x, "Actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: ActionType*): Self = StObject.set(x, "Actions", js.Array(value*))
     
     inline def setCertificateAuthorityArn(value: Arn): Self = StObject.set(x, "CertificateAuthorityArn", value.asInstanceOf[js.Any])
     

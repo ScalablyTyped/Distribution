@@ -44,7 +44,7 @@ trait Activity extends StObject {
   /**
     * The timestamp when the action was performed.
     */
-  var TimeStamp: js.UndefOr[TimestampType] = js.undefined
+  var TimeStamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The activity type.
@@ -88,7 +88,7 @@ object Activity {
     
     inline def setResourceMetadataUndefined: Self = StObject.set(x, "ResourceMetadata", js.undefined)
     
-    inline def setTimeStamp(value: TimestampType): Self = StObject.set(x, "TimeStamp", value.asInstanceOf[js.Any])
+    inline def setTimeStamp(value: js.Date): Self = StObject.set(x, "TimeStamp", value.asInstanceOf[js.Any])
     
     inline def setTimeStampUndefined: Self = StObject.set(x, "TimeStamp", js.undefined)
     

@@ -7,14 +7,13 @@ import typings.googleProtobuf.mod.ExtensionFieldBinaryInfo
 import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
 import typings.libraCore.vmErrorsPbMod.ArithmeticError.ArithmeticErrorType
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/vm_errors_pb", "ArithmeticError")
 @js.native
-class ArithmeticError () extends Message {
+open class ArithmeticError () extends Message {
   
   def getErrorCode(): ArithmeticErrorType = js.native
   
@@ -61,7 +60,7 @@ object ArithmeticError {
     /* 0 */ val UNKNOWNARITHMETICERROR: typings.libraCore.vmErrorsPbMod.ArithmeticError.ArithmeticErrorType.UNKNOWNARITHMETICERROR & Double = js.native
   }
   
-  inline def deserializeBinary(bytes: Uint8Array): ArithmeticError = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[ArithmeticError]
+  inline def deserializeBinary(bytes: js.typedarray.Uint8Array): ArithmeticError = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[ArithmeticError]
   
   inline def deserializeBinaryFromReader(message: ArithmeticError, reader: BinaryReader): ArithmeticError = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[ArithmeticError]
   

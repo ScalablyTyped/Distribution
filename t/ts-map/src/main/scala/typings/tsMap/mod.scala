@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("ts-map", JSImport.Default)
   @js.native
-  class default[K, V] ()
+  open class default[K, V] ()
     extends StObject
        with TsMap[K, V] {
     def this(intrator: js.Array[js.Tuple2[K, V]]) = this()
@@ -38,14 +38,14 @@ object mod {
           /* map */ js.UndefOr[TsMapInter[K, V]], 
           Unit
         ],
-      context: js.Any
+      context: Any
     ): Unit = js.native
     
     def get(k: K): js.UndefOr[V] = js.native
     
     def has(k: K): Boolean = js.native
     
-    /* private */ var keyStore: js.Any = js.native
+    /* private */ var keyStore: Any = js.native
     
     def keys(): js.Array[K] = js.native
     
@@ -53,7 +53,7 @@ object mod {
     
     var size: Double = js.native
     
-    /* private */ var valueStore: js.Any = js.native
+    /* private */ var valueStore: Any = js.native
     
     def values(): js.Array[V] = js.native
   }
@@ -68,11 +68,11 @@ object mod {
     def entries(): js.Array[js.Tuple2[K, V]] = js.native
     
     def forEach(
-      cb: js.Function3[/* value */ js.UndefOr[V], /* key */ js.UndefOr[K], /* map */ js.UndefOr[js.Any], Unit]
+      cb: js.Function3[/* value */ js.UndefOr[V], /* key */ js.UndefOr[K], /* map */ js.UndefOr[Any], Unit]
     ): Unit = js.native
     def forEach(
-      cb: js.Function3[/* value */ js.UndefOr[V], /* key */ js.UndefOr[K], /* map */ js.UndefOr[js.Any], Unit],
-      context: js.Any
+      cb: js.Function3[/* value */ js.UndefOr[V], /* key */ js.UndefOr[K], /* map */ js.UndefOr[Any], Unit],
+      context: Any
     ): Unit = js.native
     
     def get(k: K): V = js.native
@@ -81,7 +81,7 @@ object mod {
     
     def keys(): js.Array[K] = js.native
     
-    def set(k: K, v: V): js.Any = js.native
+    def set(k: K, v: V): Any = js.native
     
     var size: Double = js.native
     

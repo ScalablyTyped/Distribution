@@ -10,10 +10,10 @@ Handles josa selection for dynamically generated strings
 | ------------------ | :-------------: |
 | Full name          | josa |
 | Keywords           | 한글, 한국어, 문법, 조사, Korean, Hangul, Hangeul, syntax, grammar, josa |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 16342 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9084.333333333334 |
+| # stars            | 112.0 |
 
 ## Links
 - [Homepage](https://github.com/kimdhoe/josa#readme)

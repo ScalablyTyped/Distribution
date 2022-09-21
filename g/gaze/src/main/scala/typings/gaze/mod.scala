@@ -1,6 +1,5 @@
 package typings.gaze
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,35 +10,35 @@ object mod {
   inline def apply(
     patterns: String,
     options: Null,
-    callback: js.Function2[/* error */ Error | Null, /* watcher */ Gaze, Unit]
+    callback: js.Function2[/* error */ js.Error | Null, /* watcher */ Gaze, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(
     patterns: String,
     options: Unit,
-    callback: js.Function2[/* error */ Error | Null, /* watcher */ Gaze, Unit]
+    callback: js.Function2[/* error */ js.Error | Null, /* watcher */ Gaze, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(patterns: String, options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(
     patterns: String,
     options: Options,
-    callback: js.Function2[/* error */ Error | Null, /* watcher */ Gaze, Unit]
+    callback: js.Function2[/* error */ js.Error | Null, /* watcher */ Gaze, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(patterns: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def apply(
     patterns: js.Array[String],
     options: Null,
-    callback: js.Function2[/* error */ Error | Null, /* watcher */ Gaze, Unit]
+    callback: js.Function2[/* error */ js.Error | Null, /* watcher */ Gaze, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(
     patterns: js.Array[String],
     options: Unit,
-    callback: js.Function2[/* error */ Error | Null, /* watcher */ Gaze, Unit]
+    callback: js.Function2[/* error */ js.Error | Null, /* watcher */ Gaze, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(patterns: js.Array[String], options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(
     patterns: js.Array[String],
     options: Options,
-    callback: js.Function2[/* error */ Error | Null, /* watcher */ Gaze, Unit]
+    callback: js.Function2[/* error */ js.Error | Null, /* watcher */ Gaze, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("gaze", JSImport.Namespace)
@@ -48,7 +47,7 @@ object mod {
   
   @JSImport("gaze", "Gaze")
   @js.native
-  class Gaze protected () extends StObject {
+  open class Gaze protected () extends StObject {
     def this(patterns: String) = this()
     def this(patterns: js.Array[String]) = this()
     def this(patterns: String, options: Options) = this()
@@ -56,32 +55,32 @@ object mod {
     def this(
       patterns: String,
       options: Null,
-      callback: js.Function2[/* error */ Error | Null, /* watcher */ Gaze, Unit]
+      callback: js.Function2[/* error */ js.Error | Null, /* watcher */ Gaze, Unit]
     ) = this()
     def this(
       patterns: String,
       options: Unit,
-      callback: js.Function2[/* error */ Error | Null, /* watcher */ Gaze, Unit]
+      callback: js.Function2[/* error */ js.Error | Null, /* watcher */ Gaze, Unit]
     ) = this()
     def this(
       patterns: String,
       options: Options,
-      callback: js.Function2[/* error */ Error | Null, /* watcher */ Gaze, Unit]
+      callback: js.Function2[/* error */ js.Error | Null, /* watcher */ Gaze, Unit]
     ) = this()
     def this(
       patterns: js.Array[String],
       options: Null,
-      callback: js.Function2[/* error */ Error | Null, /* watcher */ Gaze, Unit]
+      callback: js.Function2[/* error */ js.Error | Null, /* watcher */ Gaze, Unit]
     ) = this()
     def this(
       patterns: js.Array[String],
       options: Unit,
-      callback: js.Function2[/* error */ Error | Null, /* watcher */ Gaze, Unit]
+      callback: js.Function2[/* error */ js.Error | Null, /* watcher */ Gaze, Unit]
     ) = this()
     def this(
       patterns: js.Array[String],
       options: Options,
-      callback: js.Function2[/* error */ Error | Null, /* watcher */ Gaze, Unit]
+      callback: js.Function2[/* error */ js.Error | Null, /* watcher */ Gaze, Unit]
     ) = this()
     
     /**
@@ -100,7 +99,7 @@ object mod {
       */
     def emit(
       event: String,
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: Any
     ): Boolean = js.native
     
     /**

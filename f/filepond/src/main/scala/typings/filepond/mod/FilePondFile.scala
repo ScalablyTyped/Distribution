@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("filepond", "FilePondFile")
 @js.native
-class FilePondFile () extends StObject {
+open class FilePondFile () extends StObject {
   
   /** Aborts loading of this file */
   def abortLoad(): Unit = js.native
@@ -37,8 +37,8 @@ class FilePondFile () extends StObject {
     * a specific part of the metadata (e.g. 'crop' or 'resize').
     * If no key is passed, the entire metadata object is returned.
     */
-  def getMetadata(): js.Any = js.native
-  def getMetadata(key: String): js.Any = js.native
+  def getMetadata(): Any = js.native
+  def getMetadata(key: String): Any = js.native
   
   /** Returns the ID of the file. */
   var id: String = js.native
@@ -50,7 +50,8 @@ class FilePondFile () extends StObject {
   var serverId: String = js.native
   
   /** Add additional metadata to the file */
-  def setMetadata(key: String, value: js.Any): Unit = js.native
+  def setMetadata(key: String, value: Any): Unit = js.native
+  def setMetadata(key: String, value: Any, silent: Boolean): Unit = js.native
   
   /** Returns the source of the file. */
   var source: ActualFileObject | String = js.native

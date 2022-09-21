@@ -27,7 +27,7 @@ object mod {
     url: String,
     callback: js.ThisFunction2[
       /* this */ DsvRequest, 
-      /* error */ js.Any, 
+      /* error */ Any, 
       /* d */ DSVParsedArray[DSVRowString[String]], 
       Unit
     ]
@@ -40,31 +40,31 @@ object mod {
       /* columns */ js.Array[String], 
       ParsedRow
     ],
-    callback: js.ThisFunction2[/* this */ DsvRequest, /* error */ js.Any, /* d */ DSVParsedArray[ParsedRow], Unit]
+    callback: js.ThisFunction2[/* this */ DsvRequest, /* error */ Any, /* d */ DSVParsedArray[ParsedRow], Unit]
   ): DsvRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("csv")(url.asInstanceOf[js.Any], row.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[DsvRequest]
   
   inline def html(url: String): Request_ = ^.asInstanceOf[js.Dynamic].applyDynamic("html")(url.asInstanceOf[js.Any]).asInstanceOf[Request_]
   inline def html(
     url: String,
-    callback: js.ThisFunction2[/* this */ Request_, /* error */ js.Any, /* d */ DocumentFragment, Unit]
+    callback: js.ThisFunction2[/* this */ Request_, /* error */ Any, /* d */ DocumentFragment, Unit]
   ): Request_ = (^.asInstanceOf[js.Dynamic].applyDynamic("html")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Request_]
   
   inline def json(url: String): Request_ = ^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any]).asInstanceOf[Request_]
-  inline def json[ParsedObject /* <: StringDictionary[js.Any] */](
+  inline def json[ParsedObject /* <: StringDictionary[Any] */](
     url: String,
-    callback: js.ThisFunction2[/* this */ Request_, /* error */ js.Any, /* d */ ParsedObject, Unit]
+    callback: js.ThisFunction2[/* this */ Request_, /* error */ Any, /* d */ ParsedObject, Unit]
   ): Request_ = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Request_]
   
   inline def request(url: String): Request_ = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any]).asInstanceOf[Request_]
   inline def request(
     url: String,
-    callback: js.ThisFunction2[/* this */ Request_, /* error */ js.Any, /* d */ XMLHttpRequest, Unit]
+    callback: js.ThisFunction2[/* this */ Request_, /* error */ Any, /* d */ XMLHttpRequest, Unit]
   ): Request_ = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Request_]
   
   inline def text(url: String): Request_ = ^.asInstanceOf[js.Dynamic].applyDynamic("text")(url.asInstanceOf[js.Any]).asInstanceOf[Request_]
   inline def text(
     url: String,
-    callback: js.ThisFunction2[/* this */ Request_, /* error */ js.Any, /* d */ String, Unit]
+    callback: js.ThisFunction2[/* this */ Request_, /* error */ Any, /* d */ String, Unit]
   ): Request_ = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Request_]
   
   inline def tsv(url: String): DsvRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("tsv")(url.asInstanceOf[js.Any]).asInstanceOf[DsvRequest]
@@ -72,7 +72,7 @@ object mod {
     url: String,
     callback: js.ThisFunction2[
       /* this */ DsvRequest, 
-      /* error */ js.Any, 
+      /* error */ Any, 
       /* d */ DSVParsedArray[DSVRowString[String]], 
       Unit
     ]
@@ -85,14 +85,11 @@ object mod {
       /* columns */ js.Array[String], 
       ParsedRow
     ],
-    callback: js.ThisFunction2[/* this */ DsvRequest, /* error */ js.Any, /* d */ DSVParsedArray[ParsedRow], Unit]
+    callback: js.ThisFunction2[/* this */ DsvRequest, /* error */ Any, /* d */ DSVParsedArray[ParsedRow], Unit]
   ): DsvRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("tsv")(url.asInstanceOf[js.Any], row.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[DsvRequest]
   
   inline def xml(url: String): Request_ = ^.asInstanceOf[js.Dynamic].applyDynamic("xml")(url.asInstanceOf[js.Any]).asInstanceOf[Request_]
-  inline def xml(
-    url: String,
-    callback: js.ThisFunction2[/* this */ Request_, /* error */ js.Any, /* d */ js.Any, Unit]
-  ): Request_ = (^.asInstanceOf[js.Dynamic].applyDynamic("xml")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Request_]
+  inline def xml(url: String, callback: js.ThisFunction2[/* this */ Request_, /* error */ Any, /* d */ Any, Unit]): Request_ = (^.asInstanceOf[js.Dynamic].applyDynamic("xml")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Request_]
   
   @js.native
   trait DsvRequest
@@ -125,7 +122,7 @@ object mod {
     /**
       * Equivalent to `request.send` with the GET method: `request.send("GET", callback)`.
       */
-    def get[ResponseData](callback: js.Function2[/* error */ js.Any, /* d */ ResponseData, Unit]): this.type = js.native
+    def get[ResponseData](callback: js.Function2[/* error */ Any, /* d */ ResponseData, Unit]): this.type = js.native
     /**
       * Equivalent to `request.send` with the GET method: `request.send("GET", data)`.
       */
@@ -133,7 +130,7 @@ object mod {
     /**
       * Equivalent to `request.send` with the GET method: `request.send("GET", data, callback)`.
       */
-    def get[RequestData, ResponseData](data: RequestData, callback: js.Function2[/* error */ js.Any, /* d */ ResponseData, Unit]): this.type = js.native
+    def get[RequestData, ResponseData](data: RequestData, callback: js.Function2[/* error */ Any, /* d */ ResponseData, Unit]): this.type = js.native
     
     /**
       * Sets the request header with the specified name to the specified value and returns this request instance.
@@ -174,7 +171,7 @@ object mod {
     /**
       * Returns the currently-assigned listener for the specified type, if any.
       */
-    def on(`type`: String): js.UndefOr[js.ThisFunction1[/* this */ this.type, /* data */ js.Any, Unit]] = js.native
+    def on(`type`: String): js.UndefOr[js.ThisFunction1[/* this */ this.type, /* data */ Any, Unit]] = js.native
     /**
       * Sets the event listener for the specified type,
       * and returns this request instance.
@@ -184,7 +181,7 @@ object mod {
       * If an event listener was already registered for the same type, the existing listener is removed before the new listener is added.
       * To register multiple listeners for the same type, the type may be followed by an optional name, such as `load.foo`. See d3-dispatch for details.
       */
-    def on(`type`: String, listener: js.ThisFunction1[/* this */ this.type, /* data */ js.Any, Unit]): this.type = js.native
+    def on(`type`: String, listener: js.ThisFunction1[/* this */ this.type, /* data */ Any, Unit]): this.type = js.native
     /**
       * Removes the current event listener for the specified type, if any.
       */
@@ -211,7 +208,7 @@ object mod {
       * Returns the currently-assigned listener for the "error" type, if any.
       */
     @JSName("on")
-    def on_error(`type`: error): js.UndefOr[js.ThisFunction1[/* this */ this.type, /* error */ js.Any, Unit]] = js.native
+    def on_error(`type`: error): js.UndefOr[js.ThisFunction1[/* this */ this.type, /* error */ Any, Unit]] = js.native
     /**
       * Sets the event listener for the "error" type,
       * when the request completes unsuccessfully; this includes 4xx and 5xx response codes,
@@ -221,7 +218,7 @@ object mod {
       * To register multiple listeners for the same type, the type may be followed by an optional name, such as `error.foo`. See d3-dispatch for details.
       */
     @JSName("on")
-    def on_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* error */ js.Any, Unit]): this.type = js.native
+    def on_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* error */ Any, Unit]): this.type = js.native
     /**
       * Returns the currently-assigned listener for the "load" type, if any.
       */
@@ -276,7 +273,7 @@ object mod {
     /**
       * Equivalent to `request.send` with the POST method: `request.send("POST", callback)`.
       */
-    def post[ResponseData](callback: js.ThisFunction2[/* this */ this.type, /* error */ js.Any, /* d */ ResponseData, Unit]): this.type = js.native
+    def post[ResponseData](callback: js.ThisFunction2[/* this */ this.type, /* error */ Any, /* d */ ResponseData, Unit]): this.type = js.native
     /**
       * Equivalent to `request.send` with the POST method: `request.send("POST", data)`.
       */
@@ -286,7 +283,7 @@ object mod {
       */
     def post[RequestData, ResponseData](
       data: RequestData,
-      callback: js.ThisFunction2[/* this */ this.type, /* error */ js.Any, /* d */ ResponseData, Unit]
+      callback: js.ThisFunction2[/* this */ this.type, /* error */ Any, /* d */ ResponseData, Unit]
     ): this.type = js.native
     
     /**
@@ -319,7 +316,7 @@ object mod {
       */
     def send[ResponseData](
       method: String,
-      callback: js.ThisFunction2[/* this */ this.type, /* error */ js.Any | Null, /* d */ ResponseData | Null, Unit]
+      callback: js.ThisFunction2[/* this */ this.type, /* error */ Any | Null, /* d */ ResponseData | Null, Unit]
     ): this.type = js.native
     /**
       * Issues this request using the specified method (such as GET or POST), posting the specified data in the request body, and returns this request instance.
@@ -336,7 +333,7 @@ object mod {
     def send[RequestData, ResponseData](
       method: String,
       data: RequestData,
-      callback: js.ThisFunction2[/* this */ this.type, /* error */ js.Any | Null, /* d */ ResponseData | Null, Unit]
+      callback: js.ThisFunction2[/* this */ this.type, /* error */ Any | Null, /* d */ ResponseData | Null, Unit]
     ): this.type = js.native
     
     /**

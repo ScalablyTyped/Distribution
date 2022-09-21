@@ -19,6 +19,6 @@ object SmartHomeV1ExecuteRequestPayload {
     
     inline def setCommands(value: js.Array[SmartHomeV1ExecuteRequestCommands]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     
-    inline def setCommandsVarargs(value: SmartHomeV1ExecuteRequestCommands*): Self = StObject.set(x, "commands", js.Array(value :_*))
+    inline def setCommandsVarargs(value: SmartHomeV1ExecuteRequestCommands*): Self = StObject.set(x, "commands", js.Array(value*))
   }
 }

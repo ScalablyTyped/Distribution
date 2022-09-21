@@ -11,7 +11,7 @@ object sphericalPolynomialMod {
   
   @JSImport("babylonjs/Maths/sphericalPolynomial", "SphericalHarmonics")
   @js.native
-  class SphericalHarmonics () extends StObject {
+  open class SphericalHarmonics () extends StObject {
     
     /**
       * Adds a light to the spherical harmonics
@@ -109,6 +109,20 @@ object sphericalPolynomialMod {
       * @param scale the amount to scale
       */
     def scaleInPlace(scale: Double): Unit = js.native
+    
+    /**
+      * update the spherical harmonics coefficients from the given array
+      * @param data defines the 9x3 coefficients (l00, l1-1, l10, l11, l2-2, l2-1, l20, l21, l22)
+      * @returns the spherical harmonics (this)
+      */
+    def updateFromArray(data: ArrayLike[ArrayLike[Double]]): SphericalHarmonics = js.native
+    
+    /**
+      * update the spherical harmonics coefficients from the given floats array
+      * @param data defines the 9x3 coefficients (l00, l1-1, l10, l11, l2-2, l2-1, l20, l21, l22)
+      * @returns the spherical harmonics (this)
+      */
+    def updateFromFloatsArray(data: ArrayLike[Double]): SphericalHarmonics = js.native
   }
   /* static members */
   object SphericalHarmonics {
@@ -134,9 +148,9 @@ object sphericalPolynomialMod {
   
   @JSImport("babylonjs/Maths/sphericalPolynomial", "SphericalPolynomial")
   @js.native
-  class SphericalPolynomial () extends StObject {
+  open class SphericalPolynomial () extends StObject {
     
-    /* private */ var _harmonics: js.Any = js.native
+    /* private */ var _harmonics: Any = js.native
     
     /**
       * Adds an ambient color to the spherical polynomial
@@ -154,6 +168,13 @@ object sphericalPolynomialMod {
       * @param scale the amount to scale
       */
     def scaleInPlace(scale: Double): Unit = js.native
+    
+    /**
+      * Updates the spherical polynomial from harmonics
+      * @param harmonics the spherical harmonics
+      * @returns the spherical polynomial
+      */
+    def updateFromHarmonics(harmonics: SphericalHarmonics): SphericalPolynomial = js.native
     
     /**
       * The x coefficients of the spherical polynomial

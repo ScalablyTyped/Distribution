@@ -19,7 +19,7 @@ trait NavigationGroup extends StObject {
   /* private */ @JSName("Outlook.NavigationGroup_typekey")
   var OutlookDotNavigationGroup_typekey: NavigationGroup
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Position: Double
   
@@ -34,7 +34,7 @@ object NavigationGroup {
     Name: String,
     NavigationFolders: NavigationFolders,
     OutlookDotNavigationGroup_typekey: NavigationGroup,
-    Parent: js.Any,
+    Parent: Any,
     Position: Double,
     Session: NameSpace
   ): NavigationGroup = {
@@ -57,7 +57,7 @@ object NavigationGroup {
     
     inline def setOutlookDotNavigationGroup_typekey(value: NavigationGroup): Self = StObject.set(x, "Outlook.NavigationGroup_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     

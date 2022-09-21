@@ -10,10 +10,10 @@ JavaScript library for formatting input text content when you are typing
 | ------------------ | :-------------: |
 | Full name          | cleave.js |
 | Keywords           | cleave, javascript, html, format, form, input, input-mask, mask, formatter, filter, vanilla, react |
-| # releases         | 17 |
-| # dependents       | 101 |
-| # downloads        | 5100985 |
-| # stars            | 12 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 912525.0 |
+| # stars            | 17358.0 |
 
 ## Links
 - [Homepage](https://github.com/nosir/cleave.js)

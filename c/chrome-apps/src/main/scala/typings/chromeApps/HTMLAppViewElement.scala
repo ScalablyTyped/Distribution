@@ -29,7 +29,7 @@ trait HTMLAppViewElement
     * @param [callback] Optional callback when the embedding request is completed. Will provide the result.
     */
   def connect(app: String): Unit = js.native
-  def connect(app: String, data: js.Any): Unit = js.native
-  def connect(app: String, data: js.Any, callback: js.Function1[/* success */ Boolean, Unit]): Unit = js.native
+  def connect(app: String, data: Any): Unit = js.native
+  def connect(app: String, data: Any, callback: js.Function1[/* success */ Boolean, Unit]): Unit = js.native
   def connect(app: String, data: Unit, callback: js.Function1[/* success */ Boolean, Unit]): Unit = js.native
 }

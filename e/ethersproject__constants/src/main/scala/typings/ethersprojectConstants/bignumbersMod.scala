@@ -7,9 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object bignumbersMod {
   
+  @JSImport("@ethersproject/constants/lib/bignumbers", "MaxInt256")
+  @js.native
+  val MaxInt256: BigNumber = js.native
+  
   @JSImport("@ethersproject/constants/lib/bignumbers", "MaxUint256")
   @js.native
   val MaxUint256: BigNumber = js.native
+  
+  @JSImport("@ethersproject/constants/lib/bignumbers", "MinInt256")
+  @js.native
+  val MinInt256: BigNumber = js.native
   
   @JSImport("@ethersproject/constants/lib/bignumbers", "NegativeOne")
   @js.native

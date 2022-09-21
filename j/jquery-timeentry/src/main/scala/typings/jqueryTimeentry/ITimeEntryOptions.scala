@@ -1,6 +1,5 @@
 package typings.jqueryTimeentry
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,7 +44,7 @@ trait ITimeEntryOptions
     *
     * default: null
     */
-  var defaultTime: js.UndefOr[Date | Double | String] = js.undefined
+  var defaultTime: js.UndefOr[js.Date | Double | String] = js.undefined
   
   /**
     * The number of the portion of the time field to highlight initially.
@@ -64,7 +63,7 @@ trait ITimeEntryOptions
     *
     * default: null
     */
-  var maxTime: js.UndefOr[Date | Double | js.Array[Double] | String] = js.undefined
+  var maxTime: js.UndefOr[js.Date | Double | js.Array[Double] | String] = js.undefined
   
   /**
     * The minimum time that may be selected, or null for no limit. See defaultTime for a description
@@ -72,7 +71,7 @@ trait ITimeEntryOptions
     *
     * default: null
     */
-  var minTime: js.UndefOr[Date | Double | js.Array[Double] | String] = js.undefined
+  var minTime: js.UndefOr[js.Date | Double | js.Array[Double] | String] = js.undefined
   
   /**
     * Set to true to allow direct entry of a time from the keyboard without needing to type separators,
@@ -192,7 +191,7 @@ object ITimeEntryOptions {
     
     inline def setBeforeShowUndefined: Self = StObject.set(x, "beforeShow", js.undefined)
     
-    inline def setDefaultTime(value: Date | Double | String): Self = StObject.set(x, "defaultTime", value.asInstanceOf[js.Any])
+    inline def setDefaultTime(value: js.Date | Double | String): Self = StObject.set(x, "defaultTime", value.asInstanceOf[js.Any])
     
     inline def setDefaultTimeUndefined: Self = StObject.set(x, "defaultTime", js.undefined)
     
@@ -200,17 +199,17 @@ object ITimeEntryOptions {
     
     inline def setInitialFieldUndefined: Self = StObject.set(x, "initialField", js.undefined)
     
-    inline def setMaxTime(value: Date | Double | js.Array[Double] | String): Self = StObject.set(x, "maxTime", value.asInstanceOf[js.Any])
+    inline def setMaxTime(value: js.Date | Double | js.Array[Double] | String): Self = StObject.set(x, "maxTime", value.asInstanceOf[js.Any])
     
     inline def setMaxTimeUndefined: Self = StObject.set(x, "maxTime", js.undefined)
     
-    inline def setMaxTimeVarargs(value: Double*): Self = StObject.set(x, "maxTime", js.Array(value :_*))
+    inline def setMaxTimeVarargs(value: Double*): Self = StObject.set(x, "maxTime", js.Array(value*))
     
-    inline def setMinTime(value: Date | Double | js.Array[Double] | String): Self = StObject.set(x, "minTime", value.asInstanceOf[js.Any])
+    inline def setMinTime(value: js.Date | Double | js.Array[Double] | String): Self = StObject.set(x, "minTime", value.asInstanceOf[js.Any])
     
     inline def setMinTimeUndefined: Self = StObject.set(x, "minTime", js.undefined)
     
-    inline def setMinTimeVarargs(value: Double*): Self = StObject.set(x, "minTime", js.Array(value :_*))
+    inline def setMinTimeVarargs(value: Double*): Self = StObject.set(x, "minTime", js.Array(value*))
     
     inline def setNoSeparatorEntry(value: Boolean): Self = StObject.set(x, "noSeparatorEntry", value.asInstanceOf[js.Any])
     
@@ -228,7 +227,7 @@ object ITimeEntryOptions {
     
     inline def setSpinnerBigSizeUndefined: Self = StObject.set(x, "spinnerBigSize", js.undefined)
     
-    inline def setSpinnerBigSizeVarargs(value: Double*): Self = StObject.set(x, "spinnerBigSize", js.Array(value :_*))
+    inline def setSpinnerBigSizeVarargs(value: Double*): Self = StObject.set(x, "spinnerBigSize", js.Array(value*))
     
     inline def setSpinnerImage(value: String): Self = StObject.set(x, "spinnerImage", value.asInstanceOf[js.Any])
     
@@ -242,13 +241,13 @@ object ITimeEntryOptions {
     
     inline def setSpinnerRepeatUndefined: Self = StObject.set(x, "spinnerRepeat", js.undefined)
     
-    inline def setSpinnerRepeatVarargs(value: Double*): Self = StObject.set(x, "spinnerRepeat", js.Array(value :_*))
+    inline def setSpinnerRepeatVarargs(value: Double*): Self = StObject.set(x, "spinnerRepeat", js.Array(value*))
     
     inline def setSpinnerSize(value: js.Array[Double]): Self = StObject.set(x, "spinnerSize", value.asInstanceOf[js.Any])
     
     inline def setSpinnerSizeUndefined: Self = StObject.set(x, "spinnerSize", js.undefined)
     
-    inline def setSpinnerSizeVarargs(value: Double*): Self = StObject.set(x, "spinnerSize", js.Array(value :_*))
+    inline def setSpinnerSizeVarargs(value: Double*): Self = StObject.set(x, "spinnerSize", js.Array(value*))
     
     inline def setTabToExit(value: Boolean): Self = StObject.set(x, "tabToExit", value.asInstanceOf[js.Any])
     
@@ -258,7 +257,7 @@ object ITimeEntryOptions {
     
     inline def setTimeStepsUndefined: Self = StObject.set(x, "timeSteps", js.undefined)
     
-    inline def setTimeStepsVarargs(value: Double*): Self = StObject.set(x, "timeSteps", js.Array(value :_*))
+    inline def setTimeStepsVarargs(value: Double*): Self = StObject.set(x, "timeSteps", js.Array(value*))
     
     inline def setUnlimitedHours(value: Boolean): Self = StObject.set(x, "unlimitedHours", value.asInstanceOf[js.Any])
     

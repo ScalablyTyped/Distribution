@@ -8,41 +8,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaChannelSection extends StObject {
   
   /**
-    * The contentDetails object contains details about the channel section
-    * content, such as a list of playlists or channels featured in the section.
+    * The contentDetails object contains details about the channel section content, such as a list of playlists or channels featured in the section.
     */
   var contentDetails: js.UndefOr[SchemaChannelSectionContentDetails] = js.undefined
   
   /**
     * Etag of this resource.
     */
-  var etag: js.UndefOr[String] = js.undefined
+  var etag: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The ID that YouTube uses to uniquely identify the channel section.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;youtube#channelSection&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "youtube#channelSection".
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Localizations for different languages
     */
-  var localizations: js.UndefOr[StringDictionary[SchemaChannelSectionLocalization]] = js.undefined
+  var localizations: js.UndefOr[StringDictionary[SchemaChannelSectionLocalization] | Null] = js.undefined
   
   /**
-    * The snippet object contains basic details about the channel section, such
-    * as its type, style and title.
+    * The snippet object contains basic details about the channel section, such as its type, style and title.
     */
   var snippet: js.UndefOr[SchemaChannelSectionSnippet] = js.undefined
   
   /**
-    * The targeting object contains basic targeting settings about the channel
-    * section.
+    * The targeting object contains basic targeting settings about the channel section.
     */
   var targeting: js.UndefOr[SchemaChannelSectionTargeting] = js.undefined
 }
@@ -61,17 +57,25 @@ object SchemaChannelSection {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
+    inline def setEtagNull: Self = StObject.set(x, "etag", null)
+    
     inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdNull: Self = StObject.set(x, "id", null)
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
+    
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setLocalizations(value: StringDictionary[SchemaChannelSectionLocalization]): Self = StObject.set(x, "localizations", value.asInstanceOf[js.Any])
+    
+    inline def setLocalizationsNull: Self = StObject.set(x, "localizations", null)
     
     inline def setLocalizationsUndefined: Self = StObject.set(x, "localizations", js.undefined)
     

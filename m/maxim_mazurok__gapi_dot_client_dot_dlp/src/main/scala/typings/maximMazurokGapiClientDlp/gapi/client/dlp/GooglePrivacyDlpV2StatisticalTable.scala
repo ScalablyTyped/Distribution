@@ -28,7 +28,7 @@ object GooglePrivacyDlpV2StatisticalTable {
     
     inline def setQuasiIdsUndefined: Self = StObject.set(x, "quasiIds", js.undefined)
     
-    inline def setQuasiIdsVarargs(value: GooglePrivacyDlpV2QuasiIdentifierField*): Self = StObject.set(x, "quasiIds", js.Array(value :_*))
+    inline def setQuasiIdsVarargs(value: GooglePrivacyDlpV2QuasiIdentifierField*): Self = StObject.set(x, "quasiIds", js.Array(value*))
     
     inline def setRelativeFrequency(value: GooglePrivacyDlpV2FieldId): Self = StObject.set(x, "relativeFrequency", value.asInstanceOf[js.Any])
     

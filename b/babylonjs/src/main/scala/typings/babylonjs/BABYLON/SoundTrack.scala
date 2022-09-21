@@ -6,28 +6,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SoundTrack extends StObject {
   
-  /* private */ var _connectedAnalyser: js.Any
+  /* private */ var _connectedAnalyser: Any
   
-  /* private */ var _initializeSoundTrackAudioGraph: js.Any
+  /* private */ var _initializeSoundTrackAudioGraph: Any
   
-  /* private */ var _isInitialized: js.Any
+  /* private */ var _isInitialized: Any
   
-  /* private */ var _options: js.Any
+  /* private */ var _options: Any
   
-  /* private */ var _outputAudioNode: js.Any
+  /* private */ var _outputAudioNode: Any
   
-  /* private */ var _scene: js.Any
+  /* private */ var _scene: Any
   
   /**
     * Adds a sound to this sound track
-    * @param sound define the cound to add
+    * @param sound define the sound to add
     * @ignoreNaming
     */
   def addSound(sound: Sound): Unit
   
   /**
     * Connect the sound track to an audio analyser allowing some amazing
-    * synchornization between the sounds/music and your visualization (VuMeter for instance).
+    * synchronization between the sounds/music and your visualization (VuMeter for instance).
     * @see https://doc.babylonjs.com/how_to/playing_sounds_and_music#using-the-analyser
     * @param analyser The analyser to connect to the engine
     */
@@ -45,7 +45,7 @@ trait SoundTrack extends StObject {
   
   /**
     * Removes a sound to this sound track
-    * @param sound define the cound to remove
+    * @param sound define the sound to remove
     * @ignoreNaming
     */
   def removeSound(sound: Sound): Unit
@@ -78,12 +78,12 @@ trait SoundTrack extends StObject {
 object SoundTrack {
   
   inline def apply(
-    _connectedAnalyser: js.Any,
-    _initializeSoundTrackAudioGraph: js.Any,
-    _isInitialized: js.Any,
-    _options: js.Any,
-    _outputAudioNode: js.Any,
-    _scene: js.Any,
+    _connectedAnalyser: Any,
+    _initializeSoundTrackAudioGraph: Any,
+    _isInitialized: Any,
+    _options: Any,
+    _outputAudioNode: Any,
+    _scene: Any,
     addSound: Sound => Unit,
     connectToAnalyser: Analyser => Unit,
     dispose: () => Unit,
@@ -114,22 +114,22 @@ object SoundTrack {
     
     inline def setSoundCollection(value: js.Array[Sound]): Self = StObject.set(x, "soundCollection", value.asInstanceOf[js.Any])
     
-    inline def setSoundCollectionVarargs(value: Sound*): Self = StObject.set(x, "soundCollection", js.Array(value :_*))
+    inline def setSoundCollectionVarargs(value: Sound*): Self = StObject.set(x, "soundCollection", js.Array(value*))
     
     inline def setSwitchPanningModelToEqualPower(value: () => Unit): Self = StObject.set(x, "switchPanningModelToEqualPower", js.Any.fromFunction0(value))
     
     inline def setSwitchPanningModelToHRTF(value: () => Unit): Self = StObject.set(x, "switchPanningModelToHRTF", js.Any.fromFunction0(value))
     
-    inline def set_connectedAnalyser(value: js.Any): Self = StObject.set(x, "_connectedAnalyser", value.asInstanceOf[js.Any])
+    inline def set_connectedAnalyser(value: Any): Self = StObject.set(x, "_connectedAnalyser", value.asInstanceOf[js.Any])
     
-    inline def set_initializeSoundTrackAudioGraph(value: js.Any): Self = StObject.set(x, "_initializeSoundTrackAudioGraph", value.asInstanceOf[js.Any])
+    inline def set_initializeSoundTrackAudioGraph(value: Any): Self = StObject.set(x, "_initializeSoundTrackAudioGraph", value.asInstanceOf[js.Any])
     
-    inline def set_isInitialized(value: js.Any): Self = StObject.set(x, "_isInitialized", value.asInstanceOf[js.Any])
+    inline def set_isInitialized(value: Any): Self = StObject.set(x, "_isInitialized", value.asInstanceOf[js.Any])
     
-    inline def set_options(value: js.Any): Self = StObject.set(x, "_options", value.asInstanceOf[js.Any])
+    inline def set_options(value: Any): Self = StObject.set(x, "_options", value.asInstanceOf[js.Any])
     
-    inline def set_outputAudioNode(value: js.Any): Self = StObject.set(x, "_outputAudioNode", value.asInstanceOf[js.Any])
+    inline def set_outputAudioNode(value: Any): Self = StObject.set(x, "_outputAudioNode", value.asInstanceOf[js.Any])
     
-    inline def set_scene(value: js.Any): Self = StObject.set(x, "_scene", value.asInstanceOf[js.Any])
+    inline def set_scene(value: Any): Self = StObject.set(x, "_scene", value.asInstanceOf[js.Any])
   }
 }

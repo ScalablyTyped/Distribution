@@ -7,13 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "AxisScaleGizmo")
 @js.native
-class AxisScaleGizmo protected ()
+open class AxisScaleGizmo protected ()
   extends typings.babylonjs.indexMod.AxisScaleGizmo {
   /**
     * Creates an AxisScaleGizmo
-    * @param gizmoLayer The utility layer the gizmo will be added to
     * @param dragAxis The axis which the gizmo will be able to scale on
     * @param color The color of the gizmo
+    * @param gizmoLayer The utility layer the gizmo will be added to
+    * @param parent
     * @param thickness display gizmo axis thickness
     */
   def this(dragAxis: typings.babylonjs.mathVectorMod.Vector3) = this()

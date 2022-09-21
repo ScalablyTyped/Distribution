@@ -10,10 +10,10 @@ Fast and powerful array sorting. Sort an array of objects by one or more propert
 | ------------------ | :-------------: |
 | Full name          | array-sort |
 | Keywords           | arr, array, asc, ascend, ascending, desc, descend, descending, dot, element, elements, get, multiple, nested, obj, object, order, ordered, path, prop, properties, property, sort, sorted, sorting |
-| # releases         | 0 |
-| # dependents       | 53 |
-| # downloads        | 56112580 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5880473.0 |
+| # stars            | 63.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/array-sort)

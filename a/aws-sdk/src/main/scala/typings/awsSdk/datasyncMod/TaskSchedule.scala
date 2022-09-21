@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TaskSchedule extends StObject {
   
   /**
-    * A cron expression that specifies when AWS DataSync initiates a scheduled transfer from a source to a destination location. 
+    * A cron expression that specifies when DataSync initiates a scheduled transfer from a source to a destination location. 
     */
   var ScheduleExpression: ScheduleExpressionCron
 }

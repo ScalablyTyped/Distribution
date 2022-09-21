@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.Columns")
 @js.native
-/* private */ class Columns ()
+/* private */ open class Columns ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.Columns

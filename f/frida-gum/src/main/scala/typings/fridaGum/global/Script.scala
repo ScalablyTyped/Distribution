@@ -3,6 +3,8 @@ package typings.fridaGum.global
 import typings.fridaGum.GlobalAccessHandler
 import typings.fridaGum.ScheduledCallback
 import typings.fridaGum.ScriptRuntime
+import typings.fridaGum.WeakRefCallback
+import typings.fridaGum.WeakRefId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,24 +16,33 @@ object Script {
   val ^ : js.Any = js.native
   
   /**
-    * File name of the current script.
+    * Starts monitoring the lifetime of `target`. Calls `callback` as soon as
+    * value has been garbage-collected, or the script is about to get
+    * unloaded.
+    *
+    * Useful when you're building a language-binding where you need to free
+    * native resources when a JS value is no longer needed.
+    *
+    * Be careful so `callback` is not a closure that accidentally captures
+    * `target` and keeps it alive beyond its intended lifetime.
+    *
+    * @param target Heap-allocated JavaScript value to monitor lifetime of.
+    * @param callback Function to call when `target` gets GCed.
     */
-  @JSGlobal("Script.fileName")
-  @js.native
-  val fileName: String = js.native
+  inline def bindWeak(target: Any, callback: WeakRefCallback): WeakRefId = (^.asInstanceOf[js.Dynamic].applyDynamic("bindWeak")(target.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[WeakRefId]
   
   /**
     * Runs `func` on the next tick, i.e. when the current native thread exits
     * the JavaScript runtime. Any additional `params` are passed to it.
     */
-  inline def nextTick(func: ScheduledCallback, params: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("nextTick")(func.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nextTick(func: ScheduledCallback, params: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("nextTick")(List(func.asInstanceOf[js.Any]).`++`(params.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   /**
     * Temporarily prevents the current script from being unloaded.
     * This is reference-counted, so there must be one matching `unpin()`
     * happening at a later point.
     *
-    * Typically used in the callback of `WeakRef.bind()` when you need to
+    * Typically used in the callback of `Script.bindWeak()` when you need to
     * schedule cleanup on another thread.
     */
   inline def pin(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("pin")().asInstanceOf[Unit]
@@ -57,11 +68,12 @@ object Script {
   inline def setGlobalAccessHandler(handler: GlobalAccessHandler): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setGlobalAccessHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
-    * Source map of the current script.
+    * Stops monitoring the value passed to `Script.bindWeak()` and calls the
+    * callback immediately.
+    *
+    * @param id ID returned by a previous call to `Script.bindWeak()`.
     */
-  @JSGlobal("Script.sourceMap")
-  @js.native
-  val sourceMap: typings.fridaGum.SourceMap = js.native
+  inline def unbindWeak(id: WeakRefId): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unbindWeak")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Reverses a previous `pin()` so the current script may be unloaded.

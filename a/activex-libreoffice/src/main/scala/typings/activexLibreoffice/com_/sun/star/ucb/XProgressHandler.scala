@@ -19,23 +19,23 @@ trait XProgressHandler
     * these notifications behave in a stack-like manner).
     * @param Status An object representing the new activity. There has to be an agreement between caller and callee of methods {@link XProgressHandler.push()}
     */
-  def push(Status: js.Any): Unit
+  def push(Status: Any): Unit
   
   /**
     * The task notifies the handler that its current activity is making progress.
     * @param Status An object representing the progress made. See the documentation of {@link XProgressHandler.push()} for more information.
     */
-  def update(Status: js.Any): Unit
+  def update(Status: Any): Unit
 }
 object XProgressHandler {
   
   inline def apply(
     acquire: () => Unit,
     pop: () => Unit,
-    push: js.Any => Unit,
-    queryInterface: `type` => js.Any,
+    push: Any => Unit,
+    queryInterface: `type` => Any,
     release: () => Unit,
-    update: js.Any => Unit
+    update: Any => Unit
   ): XProgressHandler = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), pop = js.Any.fromFunction0(pop), push = js.Any.fromFunction1(push), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), update = js.Any.fromFunction1(update))
     __obj.asInstanceOf[XProgressHandler]
@@ -45,8 +45,8 @@ object XProgressHandler {
     
     inline def setPop(value: () => Unit): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
     
-    inline def setPush(value: js.Any => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+    inline def setPush(value: Any => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
     
-    inline def setUpdate(value: js.Any => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+    inline def setUpdate(value: Any => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
   }
 }

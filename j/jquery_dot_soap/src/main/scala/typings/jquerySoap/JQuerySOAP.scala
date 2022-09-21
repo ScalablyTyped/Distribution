@@ -22,7 +22,7 @@ object JQuerySOAP {
     
     var beforeSend: js.UndefOr[js.Function1[/* SOAPEnvelope */ SOAPEnvelope, Unit]] = js.undefined
     
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
     var data: js.UndefOr[js.Object] = js.undefined
     
@@ -30,7 +30,7 @@ object JQuerySOAP {
     
     var enableLogging: js.UndefOr[Boolean] = js.undefined
     
-    var envAttributes: js.UndefOr[js.Any] = js.undefined
+    var envAttributes: js.UndefOr[Any] = js.undefined
     
     var error: js.UndefOr[js.Function1[/* SOAPResponse */ SOAPResponse, Unit]] = js.undefined
     
@@ -77,7 +77,7 @@ object JQuerySOAP {
       
       inline def setBeforeSendUndefined: Self = StObject.set(x, "beforeSend", js.undefined)
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
@@ -93,7 +93,7 @@ object JQuerySOAP {
       
       inline def setEnableLoggingUndefined: Self = StObject.set(x, "enableLogging", js.undefined)
       
-      inline def setEnvAttributes(value: js.Any): Self = StObject.set(x, "envAttributes", value.asInstanceOf[js.Any])
+      inline def setEnvAttributes(value: Any): Self = StObject.set(x, "envAttributes", value.asInstanceOf[js.Any])
       
       inline def setEnvAttributesUndefined: Self = StObject.set(x, "envAttributes", js.undefined)
       
@@ -183,7 +183,7 @@ object JQuerySOAP {
     
     def send(options: Options): Unit = js.native
     
-    var soapConfig: js.Any = js.native
+    var soapConfig: Any = js.native
     
     var typeOf: String = js.native
   }
@@ -226,25 +226,25 @@ object JQuerySOAP {
     def `val`(value: String): SOAPObject = js.native
     def `val`(value: Double): SOAPObject = js.native
     
-    var value: js.Any = js.native
+    var value: Any = js.native
   }
   
   trait SOAPResponse extends StObject {
     
-    def toJSON(): js.Any
+    def toJSON(): Any
     
     def toXML(): XMLDocument
   }
   object SOAPResponse {
     
-    inline def apply(toJSON: () => js.Any, toXML: () => XMLDocument): SOAPResponse = {
+    inline def apply(toJSON: () => Any, toXML: () => XMLDocument): SOAPResponse = {
       val __obj = js.Dynamic.literal(toJSON = js.Any.fromFunction0(toJSON), toXML = js.Any.fromFunction0(toXML))
       __obj.asInstanceOf[SOAPResponse]
     }
     
     extension [Self <: SOAPResponse](x: Self) {
       
-      inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
       inline def setToXML(value: () => XMLDocument): Self = StObject.set(x, "toXML", js.Any.fromFunction0(value))
     }

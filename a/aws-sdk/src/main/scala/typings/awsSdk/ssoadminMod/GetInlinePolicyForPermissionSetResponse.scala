@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetInlinePolicyForPermissionSetResponse extends StObject {
   
   /**
-    * The IAM inline policy that is attached to the permission set.
+    * The inline policy that is attached to the permission set.
     */
   var InlinePolicy: js.UndefOr[PermissionSetPolicyDocument] = js.undefined
 }

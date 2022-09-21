@@ -8,6 +8,9 @@ import typings.luaparse.luaparseStrings.LuaJIT
 import typings.luaparse.luaparseStrings.`5Dot1`
 import typings.luaparse.luaparseStrings.`5Dot2`
 import typings.luaparse.luaparseStrings.`5Dot3`
+import typings.luaparse.luaparseStrings.`pseudo-latin1`
+import typings.luaparse.luaparseStrings.`x-user-defined`
+import typings.luaparse.luaparseStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,6 +64,8 @@ object anon {
     
     var comments: js.UndefOr[Boolean] = js.undefined
     
+    var encodingMode: js.UndefOr[`pseudo-latin1` | `x-user-defined` | none] = js.undefined
+    
     var extendedIdentifiers: js.UndefOr[`false`] = js.undefined
     
     var locations: js.UndefOr[Boolean] = js.undefined
@@ -94,6 +99,10 @@ object anon {
       inline def setComments(value: Boolean): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
       inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+      
+      inline def setEncodingMode(value: `pseudo-latin1` | `x-user-defined` | none): Self = StObject.set(x, "encodingMode", value.asInstanceOf[js.Any])
+      
+      inline def setEncodingModeUndefined: Self = StObject.set(x, "encodingMode", js.undefined)
       
       inline def setExtendedIdentifiers(value: `false`): Self = StObject.set(x, "extendedIdentifiers", value.asInstanceOf[js.Any])
       
@@ -142,6 +151,8 @@ object anon {
     
     var comments: js.UndefOr[Boolean] = js.undefined
     
+    var encodingMode: js.UndefOr[`pseudo-latin1` | `x-user-defined` | none] = js.undefined
+    
     var extendedIdentifiers: js.UndefOr[`false`] = js.undefined
     
     var locations: js.UndefOr[Boolean] = js.undefined
@@ -176,6 +187,10 @@ object anon {
       inline def setComments(value: Boolean): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
       inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+      
+      inline def setEncodingMode(value: `pseudo-latin1` | `x-user-defined` | none): Self = StObject.set(x, "encodingMode", value.asInstanceOf[js.Any])
+      
+      inline def setEncodingModeUndefined: Self = StObject.set(x, "encodingMode", js.undefined)
       
       inline def setExtendedIdentifiers(value: `false`): Self = StObject.set(x, "extendedIdentifiers", value.asInstanceOf[js.Any])
       

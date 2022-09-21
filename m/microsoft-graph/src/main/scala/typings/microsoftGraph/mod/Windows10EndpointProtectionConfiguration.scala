@@ -73,7 +73,7 @@ trait Windows10EndpointProtectionConfiguration
   var defenderAttackSurfaceReductionExcludedPaths: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   // Xml content containing information regarding exploit protection details.
-  var defenderExploitProtectionXml: js.UndefOr[NullableOption[Double]] = js.undefined
+  var defenderExploitProtectionXml: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Name of the file from which DefenderExploitProtectionXml was obtained.
   var defenderExploitProtectionXmlFileName: js.UndefOr[NullableOption[String]] = js.undefined
@@ -135,7 +135,7 @@ trait Windows10EndpointProtectionConfiguration
   // Configures the firewall profile settings for public networks
   var firewallProfilePublic: js.UndefOr[NullableOption[WindowsFirewallNetworkProfile]] = js.undefined
   
-  // Allows IT Admins to control whether users can ignore SmartScreen warnings and run malicious files.
+  // Allows IT Admins to control whether users can can ignore SmartScreen warnings and run malicious files.
   var smartScreenBlockOverrideForFiles: js.UndefOr[Boolean] = js.undefined
   
   // Allows IT Admins to configure SmartScreen for Windows.
@@ -218,7 +218,7 @@ object Windows10EndpointProtectionConfiguration {
     
     inline def setDefenderAdditionalGuardedFoldersUndefined: Self = StObject.set(x, "defenderAdditionalGuardedFolders", js.undefined)
     
-    inline def setDefenderAdditionalGuardedFoldersVarargs(value: String*): Self = StObject.set(x, "defenderAdditionalGuardedFolders", js.Array(value :_*))
+    inline def setDefenderAdditionalGuardedFoldersVarargs(value: String*): Self = StObject.set(x, "defenderAdditionalGuardedFolders", js.Array(value*))
     
     inline def setDefenderAttackSurfaceReductionExcludedPaths(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "defenderAttackSurfaceReductionExcludedPaths", value.asInstanceOf[js.Any])
     
@@ -226,9 +226,9 @@ object Windows10EndpointProtectionConfiguration {
     
     inline def setDefenderAttackSurfaceReductionExcludedPathsUndefined: Self = StObject.set(x, "defenderAttackSurfaceReductionExcludedPaths", js.undefined)
     
-    inline def setDefenderAttackSurfaceReductionExcludedPathsVarargs(value: String*): Self = StObject.set(x, "defenderAttackSurfaceReductionExcludedPaths", js.Array(value :_*))
+    inline def setDefenderAttackSurfaceReductionExcludedPathsVarargs(value: String*): Self = StObject.set(x, "defenderAttackSurfaceReductionExcludedPaths", js.Array(value*))
     
-    inline def setDefenderExploitProtectionXml(value: NullableOption[Double]): Self = StObject.set(x, "defenderExploitProtectionXml", value.asInstanceOf[js.Any])
+    inline def setDefenderExploitProtectionXml(value: NullableOption[String]): Self = StObject.set(x, "defenderExploitProtectionXml", value.asInstanceOf[js.Any])
     
     inline def setDefenderExploitProtectionXmlFileName(value: NullableOption[String]): Self = StObject.set(x, "defenderExploitProtectionXmlFileName", value.asInstanceOf[js.Any])
     
@@ -246,7 +246,7 @@ object Windows10EndpointProtectionConfiguration {
     
     inline def setDefenderGuardedFoldersAllowedAppPathsUndefined: Self = StObject.set(x, "defenderGuardedFoldersAllowedAppPaths", js.undefined)
     
-    inline def setDefenderGuardedFoldersAllowedAppPathsVarargs(value: String*): Self = StObject.set(x, "defenderGuardedFoldersAllowedAppPaths", js.Array(value :_*))
+    inline def setDefenderGuardedFoldersAllowedAppPathsVarargs(value: String*): Self = StObject.set(x, "defenderGuardedFoldersAllowedAppPaths", js.Array(value*))
     
     inline def setDefenderSecurityCenterBlockExploitProtectionOverride(value: Boolean): Self = StObject.set(x, "defenderSecurityCenterBlockExploitProtectionOverride", value.asInstanceOf[js.Any])
     

@@ -11,7 +11,7 @@ object rendererMod {
   
   @JSImport("diva.js/renderer", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Renderer {
     def this(options: RendererConfig, hooks: js.Object) = this()
@@ -23,7 +23,7 @@ object rendererMod {
     override def destroy(): Unit = js.native
     
     /* CompleteClass */
-    override def getRenderedPages(): js.Any = js.native
+    override def getRenderedPages(): Any = js.native
     
     /* CompleteClass */
     override def goto(pageIndex: Double, verticalOffset: Double, horizontalOffset: Double): Unit = js.native
@@ -56,7 +56,7 @@ object rendererMod {
     
     def destroy(): Unit
     
-    def getRenderedPages(): js.Any
+    def getRenderedPages(): Any
     
     def goto(pageIndex: Double, verticalOffset: Double, horizontalOffset: Double): Unit
     
@@ -73,7 +73,7 @@ object rendererMod {
     inline def apply(
       adjust: () => Unit,
       destroy: () => Unit,
-      getRenderedPages: () => js.Any,
+      getRenderedPages: () => Any,
       goto: (Double, Double, Double) => Unit,
       isPageVisible: Double => Boolean,
       load: (js.Object, ViewportPosition, SourceProvider) => Unit,
@@ -89,7 +89,7 @@ object rendererMod {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      inline def setGetRenderedPages(value: () => js.Any): Self = StObject.set(x, "getRenderedPages", js.Any.fromFunction0(value))
+      inline def setGetRenderedPages(value: () => Any): Self = StObject.set(x, "getRenderedPages", js.Any.fromFunction0(value))
       
       inline def setGoto(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "goto", js.Any.fromFunction3(value))
       

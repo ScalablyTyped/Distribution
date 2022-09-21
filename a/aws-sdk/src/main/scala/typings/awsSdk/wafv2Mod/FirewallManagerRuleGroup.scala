@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FirewallManagerRuleGroup extends StObject {
   
   /**
-    * The processing guidance for an AWS Firewall Manager rule. This is like a regular rule Statement, but it can only contain a rule group reference.
+    * The processing guidance for an Firewall Manager rule. This is like a regular rule Statement, but it can only contain a rule group reference.
     */
   var FirewallManagerStatement: typings.awsSdk.wafv2Mod.FirewallManagerStatement
   
@@ -16,13 +16,19 @@ trait FirewallManagerRuleGroup extends StObject {
     */
   var Name: EntityName
   
+  /**
+    * The action to use in the place of the action that results from the rule group evaluation. Set the override action to none to leave the result of the rule group alone. Set it to count to override the result to count only.  You can only use this for rule statements that reference a rule group, like RuleGroupReferenceStatement and ManagedRuleGroupStatement.   This option is usually set to none. It does not affect how the rules in the rule group are evaluated. If you want the rules in the rule group to only count matches, do not use this and instead exclude those rules in your rule group reference statement settings.  
+    */
   var OverrideAction: typings.awsSdk.wafv2Mod.OverrideAction
   
   /**
-    * If you define more than one rule group in the first or last Firewall Manager rule groups, AWS WAF evaluates each request against the rule groups in order, starting from the lowest priority setting. The priorities don't need to be consecutive, but they must all be different.
+    * If you define more than one rule group in the first or last Firewall Manager rule groups, WAF evaluates each request against the rule groups in order, starting from the lowest priority setting. The priorities don't need to be consecutive, but they must all be different.
     */
   var Priority: RulePriority
   
+  /**
+    * Defines and enables Amazon CloudWatch metrics and web request sample collection. 
+    */
   var VisibilityConfig: typings.awsSdk.wafv2Mod.VisibilityConfig
 }
 object FirewallManagerRuleGroup {

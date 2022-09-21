@@ -5,7 +5,6 @@ import typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.AN
 import typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.NONE
 import typings.awsSdkClientPinpointBrowser.typesSegmentGroupMod.SegmentGroup
 import typings.awsSdkClientPinpointBrowser.typesSegmentGroupMod.UnmarshalledSegmentGroup
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ object typesSegmentGroupListMod {
     /**
       * A set of segment criteria to evaluate.
       */
-    var Groups: js.UndefOr[js.Array[SegmentGroup] | Iterable[SegmentGroup]] = js.undefined
+    var Groups: js.UndefOr[js.Array[SegmentGroup] | js.Iterable[SegmentGroup]] = js.undefined
     
     /**
       * Specify how to handle multiple segment groups. For example, if the segment includes three segment groups, should the resulting segment include endpoints that are matched by all, any, or none of the segment groups you created. Acceptable values: ALL, ANY, or NONE.
@@ -33,11 +32,11 @@ object typesSegmentGroupListMod {
     
     extension [Self <: SegmentGroupList](x: Self) {
       
-      inline def setGroups(value: js.Array[SegmentGroup] | Iterable[SegmentGroup]): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
+      inline def setGroups(value: js.Array[SegmentGroup] | js.Iterable[SegmentGroup]): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
       
       inline def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
       
-      inline def setGroupsVarargs(value: SegmentGroup*): Self = StObject.set(x, "Groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: SegmentGroup*): Self = StObject.set(x, "Groups", js.Array(value*))
       
       inline def setInclude(value: ALL | ANY | NONE | String): Self = StObject.set(x, "Include", value.asInstanceOf[js.Any])
       
@@ -68,7 +67,7 @@ object typesSegmentGroupListMod {
       
       inline def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
       
-      inline def setGroupsVarargs(value: UnmarshalledSegmentGroup*): Self = StObject.set(x, "Groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: UnmarshalledSegmentGroup*): Self = StObject.set(x, "Groups", js.Array(value*))
     }
   }
 }

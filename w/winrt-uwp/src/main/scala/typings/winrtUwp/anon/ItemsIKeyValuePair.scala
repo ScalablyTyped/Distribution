@@ -7,20 +7,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ItemsIKeyValuePair extends StObject {
   
-  /** The items in the map view. */ var items: IKeyValuePair[js.Any, js.Any]
+  /** The items in the map view. */ var items: IKeyValuePair[Any, Any]
   
   /** The number of items in the map view. */ var returnValue: Double
 }
 object ItemsIKeyValuePair {
   
-  inline def apply(items: IKeyValuePair[js.Any, js.Any], returnValue: Double): ItemsIKeyValuePair = {
+  inline def apply(items: IKeyValuePair[Any, Any], returnValue: Double): ItemsIKeyValuePair = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemsIKeyValuePair]
   }
   
   extension [Self <: ItemsIKeyValuePair](x: Self) {
     
-    inline def setItems(value: IKeyValuePair[js.Any, js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: IKeyValuePair[Any, Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     inline def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }

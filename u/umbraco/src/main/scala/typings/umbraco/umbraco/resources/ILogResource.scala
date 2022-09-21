@@ -1,7 +1,6 @@
 package typings.umbraco.umbraco.resources
 
 import typings.angular.mod.IPromise
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,7 +57,7 @@ trait ILogResource extends StObject {
     * @returns {Promise} resourcePromise object containing the log.
     *
     */
-  def getLog(`type`: LogType, since: Date): IPromise[IResourcePromise]
+  def getLog(`type`: LogType, since: js.Date): IPromise[IResourcePromise]
   
   /**
     * @ngdoc method
@@ -81,14 +80,14 @@ trait ILogResource extends StObject {
     * @returns {Promise} resourcePromise object containing the log.
     *
     */
-  def getUserLog(`type`: LogType, since: Date): IPromise[IResourcePromise]
+  def getUserLog(`type`: LogType, since: js.Date): IPromise[IResourcePromise]
 }
 object ILogResource {
   
   inline def apply(
     getEntityLog: Double => IPromise[IResourcePromise],
-    getLog: (LogType, Date) => IPromise[IResourcePromise],
-    getUserLog: (LogType, Date) => IPromise[IResourcePromise]
+    getLog: (LogType, js.Date) => IPromise[IResourcePromise],
+    getUserLog: (LogType, js.Date) => IPromise[IResourcePromise]
   ): ILogResource = {
     val __obj = js.Dynamic.literal(getEntityLog = js.Any.fromFunction1(getEntityLog), getLog = js.Any.fromFunction2(getLog), getUserLog = js.Any.fromFunction2(getUserLog))
     __obj.asInstanceOf[ILogResource]
@@ -98,8 +97,8 @@ object ILogResource {
     
     inline def setGetEntityLog(value: Double => IPromise[IResourcePromise]): Self = StObject.set(x, "getEntityLog", js.Any.fromFunction1(value))
     
-    inline def setGetLog(value: (LogType, Date) => IPromise[IResourcePromise]): Self = StObject.set(x, "getLog", js.Any.fromFunction2(value))
+    inline def setGetLog(value: (LogType, js.Date) => IPromise[IResourcePromise]): Self = StObject.set(x, "getLog", js.Any.fromFunction2(value))
     
-    inline def setGetUserLog(value: (LogType, Date) => IPromise[IResourcePromise]): Self = StObject.set(x, "getUserLog", js.Any.fromFunction2(value))
+    inline def setGetUserLog(value: (LogType, js.Date) => IPromise[IResourcePromise]): Self = StObject.set(x, "getUserLog", js.Any.fromFunction2(value))
   }
 }

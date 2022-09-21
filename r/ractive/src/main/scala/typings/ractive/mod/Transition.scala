@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Transition extends StObject {
   
-  def apply(helper: TransitionHelper, args: js.Any*): Unit | js.Promise[Unit] = js.native
+  def apply(helper: TransitionHelper, args: Any*): Unit | js.Promise[Unit] = js.native
 }

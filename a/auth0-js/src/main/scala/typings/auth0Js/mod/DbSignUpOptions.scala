@@ -18,7 +18,7 @@ trait DbSignUpOptions extends StObject {
   var scope: js.UndefOr[String] = js.undefined
   
   /** additional signup attributes used for creating the user. Will be stored in `user_metadata` */
-  var userMetadata: js.UndefOr[js.Any] = js.undefined
+  var userMetadata: js.UndefOr[Any] = js.undefined
   
   /** User desired username. Required if you use a database connection and you have enabled `Requires Username` */
   var username: js.UndefOr[String] = js.undefined
@@ -42,7 +42,7 @@ object DbSignUpOptions {
     
     inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    inline def setUserMetadata(value: js.Any): Self = StObject.set(x, "userMetadata", value.asInstanceOf[js.Any])
+    inline def setUserMetadata(value: Any): Self = StObject.set(x, "userMetadata", value.asInstanceOf[js.Any])
     
     inline def setUserMetadataUndefined: Self = StObject.set(x, "userMetadata", js.undefined)
     

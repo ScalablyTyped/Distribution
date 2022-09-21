@@ -16,7 +16,7 @@ object cpuProfilerModelMod {
   
   @JSImport("hermes-profile-transformer/dist/profiler/cpuProfilerModel", "CpuProfilerModel")
   @js.native
-  class CpuProfilerModel protected () extends StObject {
+  open class CpuProfilerModel protected () extends StObject {
     def this(profile: CPUProfileChunk) = this()
     
     var _activeNodeArraysById: Map[Double, js.Array[Double]] = js.native
@@ -98,7 +98,7 @@ object cpuProfilerModelMod {
       samples: js.Array[HermesSample],
       stackFrames: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in string ]: hermes-profile-transformer.hermes-profile-transformer/dist/types/HermesProfile.HermesStackFrame}
-      */ typings.hermesProfileTransformer.hermesProfileTransformerStrings.constructNodes & TopLevel[js.Any]
+      */ typings.hermesProfileTransformer.hermesProfileTransformerStrings.constructNodes & TopLevel[Any]
     ): CPUProfileChunker = (^.asInstanceOf[js.Dynamic].applyDynamic("constructNodes")(samples.asInstanceOf[js.Any], stackFrames.asInstanceOf[js.Any])).asInstanceOf[CPUProfileChunker]
     
     /**

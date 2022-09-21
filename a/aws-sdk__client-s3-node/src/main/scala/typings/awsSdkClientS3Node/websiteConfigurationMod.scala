@@ -8,5 +8,5 @@ object websiteConfigurationMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/_WebsiteConfiguration", "_WebsiteConfiguration")
   @js.native
-  val WebsiteConfiguration: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val WebsiteConfiguration: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

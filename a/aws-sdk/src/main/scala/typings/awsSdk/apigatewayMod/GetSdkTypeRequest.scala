@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetSdkTypeRequest extends StObject {
   
   /**
-    * [Required] The identifier of the queried SdkType instance.
+    * The identifier of the queried SdkType instance.
     */
   var id: String
 }

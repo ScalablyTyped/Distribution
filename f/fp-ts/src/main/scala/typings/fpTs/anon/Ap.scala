@@ -21,10 +21,10 @@ object Ap {
   
   inline def apply[E, M](
     _E: E,
-    ap: (TheseT[M, E, js.Function1[js.Any, js.Any]], TheseT[M, E, js.Any]) => TheseT[M, E, js.Any],
-    chain: (TheseT[M, E, js.Any], js.Function1[js.Any, TheseT[M, E, js.Any]]) => TheseT[M, E, js.Any],
-    map: (TheseT[M, E, js.Any], js.Function1[js.Any, js.Any]) => TheseT[M, E, js.Any],
-    of: js.Any => TheseT[M, E, js.Any]
+    ap: (TheseT[M, E, js.Function1[Any, Any]], TheseT[M, E, Any]) => TheseT[M, E, Any],
+    chain: (TheseT[M, E, Any], js.Function1[Any, TheseT[M, E, Any]]) => TheseT[M, E, Any],
+    map: (TheseT[M, E, Any], js.Function1[Any, Any]) => TheseT[M, E, Any],
+    of: Any => TheseT[M, E, Any]
   ): Ap[E, M] = {
     val __obj = js.Dynamic.literal(_E = _E.asInstanceOf[js.Any], ap = js.Any.fromFunction2(ap), chain = js.Any.fromFunction2(chain), map = js.Any.fromFunction2(map), of = js.Any.fromFunction1(of))
     __obj.asInstanceOf[Ap[E, M]]
@@ -32,13 +32,13 @@ object Ap {
   
   extension [Self <: Ap[?, ?], E, M](x: Self & (Ap[E, M])) {
     
-    inline def setAp(value: (TheseT[M, E, js.Function1[js.Any, js.Any]], TheseT[M, E, js.Any]) => TheseT[M, E, js.Any]): Self = StObject.set(x, "ap", js.Any.fromFunction2(value))
+    inline def setAp(value: (TheseT[M, E, js.Function1[Any, Any]], TheseT[M, E, Any]) => TheseT[M, E, Any]): Self = StObject.set(x, "ap", js.Any.fromFunction2(value))
     
-    inline def setChain(value: (TheseT[M, E, js.Any], js.Function1[js.Any, TheseT[M, E, js.Any]]) => TheseT[M, E, js.Any]): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
+    inline def setChain(value: (TheseT[M, E, Any], js.Function1[Any, TheseT[M, E, Any]]) => TheseT[M, E, Any]): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
     
-    inline def setMap(value: (TheseT[M, E, js.Any], js.Function1[js.Any, js.Any]) => TheseT[M, E, js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
+    inline def setMap(value: (TheseT[M, E, Any], js.Function1[Any, Any]) => TheseT[M, E, Any]): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
     
-    inline def setOf(value: js.Any => TheseT[M, E, js.Any]): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
+    inline def setOf(value: Any => TheseT[M, E, Any]): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
     
     inline def set_E(value: E): Self = StObject.set(x, "_E", value.asInstanceOf[js.Any])
   }

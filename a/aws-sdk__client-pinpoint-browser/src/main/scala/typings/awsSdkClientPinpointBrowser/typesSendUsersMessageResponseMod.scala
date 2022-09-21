@@ -3,7 +3,6 @@ package typings.awsSdkClientPinpointBrowser
 import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdkClientPinpointBrowser.typesEndpointMessageResultMod.EndpointMessageResult
 import typings.awsSdkClientPinpointBrowser.typesEndpointMessageResultMod.UnmarshalledEndpointMessageResult
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,11 +26,11 @@ object typesSendUsersMessageResponseMod {
       */
     var Result: js.UndefOr[
         (StringDictionary[
-          StringDictionary[EndpointMessageResult] | (Iterable[js.Tuple2[String, EndpointMessageResult]])
-        ]) | (Iterable[
+          StringDictionary[EndpointMessageResult] | (js.Iterable[js.Tuple2[String, EndpointMessageResult]])
+        ]) | (js.Iterable[
           js.Tuple2[
             String, 
-            StringDictionary[EndpointMessageResult] | (Iterable[js.Tuple2[String, EndpointMessageResult]])
+            StringDictionary[EndpointMessageResult] | (js.Iterable[js.Tuple2[String, EndpointMessageResult]])
           ]
         ])
       ] = js.undefined
@@ -55,11 +54,11 @@ object typesSendUsersMessageResponseMod {
       
       inline def setResult(
         value: (StringDictionary[
-              StringDictionary[EndpointMessageResult] | (Iterable[js.Tuple2[String, EndpointMessageResult]])
-            ]) | (Iterable[
+              StringDictionary[EndpointMessageResult] | (js.Iterable[js.Tuple2[String, EndpointMessageResult]])
+            ]) | (js.Iterable[
               js.Tuple2[
                 String, 
-                StringDictionary[EndpointMessageResult] | (Iterable[js.Tuple2[String, EndpointMessageResult]])
+                StringDictionary[EndpointMessageResult] | (js.Iterable[js.Tuple2[String, EndpointMessageResult]])
               ]
             ])
       ): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])

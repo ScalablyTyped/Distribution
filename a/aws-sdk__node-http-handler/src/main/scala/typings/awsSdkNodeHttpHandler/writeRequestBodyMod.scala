@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object writeRequestBodyMod {
   
-  @JSImport("@aws-sdk/node-http-handler/dist/cjs/write-request-body", JSImport.Namespace)
+  @JSImport("@aws-sdk/node-http-handler/dist-types/write-request-body", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

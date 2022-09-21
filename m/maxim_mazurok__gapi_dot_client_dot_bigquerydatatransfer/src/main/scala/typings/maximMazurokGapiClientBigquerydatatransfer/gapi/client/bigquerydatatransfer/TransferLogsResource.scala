@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TransferLogsResource extends StObject {
   
-  /** Returns user facing log messages for the data transfer run. */
+  /** Returns log messages for the transfer run. */
   def list(): Request[ListTransferLogsResponse] = js.native
   def list(request: Fields): Request[ListTransferLogsResponse] = js.native
 }

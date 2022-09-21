@@ -6,18 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.NodeMaterialOptimizer")
 @js.native
-class NodeMaterialOptimizer ()
+open class NodeMaterialOptimizer ()
   extends StObject
      with typings.babylonjs.BABYLON.NodeMaterialOptimizer {
   
   /**
     * Function used to optimize a NodeMaterial graph
-    * @param vertexOutputNodes defines the list of output nodes for the vertex shader
-    * @param fragmentOutputNodes defines the list of output nodes for the fragment shader
+    * @param _vertexOutputNodes defines the list of output nodes for the vertex shader
+    * @param _fragmentOutputNodes defines the list of output nodes for the fragment shader
     */
   /* CompleteClass */
   override def optimize(
-    vertexOutputNodes: js.Array[typings.babylonjs.BABYLON.NodeMaterialBlock],
-    fragmentOutputNodes: js.Array[typings.babylonjs.BABYLON.NodeMaterialBlock]
+    _vertexOutputNodes: js.Array[typings.babylonjs.BABYLON.NodeMaterialBlock],
+    _fragmentOutputNodes: js.Array[typings.babylonjs.BABYLON.NodeMaterialBlock]
   ): Unit = js.native
 }

@@ -44,7 +44,7 @@ object InputDeviceNetworkSettings {
     
     inline def setDnsAddressesUndefined: Self = StObject.set(x, "DnsAddresses", js.undefined)
     
-    inline def setDnsAddressesVarargs(value: string*): Self = StObject.set(x, "DnsAddresses", js.Array(value :_*))
+    inline def setDnsAddressesVarargs(value: string*): Self = StObject.set(x, "DnsAddresses", js.Array(value*))
     
     inline def setGateway(value: string): Self = StObject.set(x, "Gateway", value.asInstanceOf[js.Any])
     

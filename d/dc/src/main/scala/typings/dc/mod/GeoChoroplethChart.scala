@@ -12,17 +12,17 @@ trait GeoChoroplethChart
   
   def geoJsons(): js.Array[GeoChoroplethLayer] = js.native
   
-  def geoPath(): js.Any = js.native
+  def geoPath(): Any = js.native
   
-  def overlayGeoJson(json: js.Any, name: String, keyAccessor: Accessor[js.Any, js.Any]): GeoChoroplethChart = js.native
+  def overlayGeoJson(json: Any, name: String, keyAccessor: Accessor[Any, Any]): GeoChoroplethChart = js.native
   
-  def projection(): js.Any = js.native
+  def projection(): Any = js.native
   def projection(
-    t: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.geo.Projection */ js.Any
+    t: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.geo.Projection */ Any
   ): GeoChoroplethChart = js.native
   @JSName("projection")
   var projection_Original: IGetSet[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.geo.Projection */ js.Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.geo.Projection */ Any, 
     GeoChoroplethChart
   ] = js.native
   

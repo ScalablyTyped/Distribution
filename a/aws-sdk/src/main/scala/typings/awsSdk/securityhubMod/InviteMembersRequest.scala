@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InviteMembersRequest extends StObject {
   
   /**
-    * The list of account IDs of the AWS accounts to invite to Security Hub as members. 
+    * The list of account IDs of the Amazon Web Services accounts to invite to Security Hub as members. 
     */
-  var AccountIds: js.UndefOr[AccountIdList] = js.undefined
+  var AccountIds: AccountIdList
 }
 object InviteMembersRequest {
   
-  inline def apply(): InviteMembersRequest = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(AccountIds: AccountIdList): InviteMembersRequest = {
+    val __obj = js.Dynamic.literal(AccountIds = AccountIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[InviteMembersRequest]
   }
   
@@ -22,8 +22,6 @@ object InviteMembersRequest {
     
     inline def setAccountIds(value: AccountIdList): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
     
-    inline def setAccountIdsUndefined: Self = StObject.set(x, "AccountIds", js.undefined)
-    
-    inline def setAccountIdsVarargs(value: NonEmptyString*): Self = StObject.set(x, "AccountIds", js.Array(value :_*))
+    inline def setAccountIdsVarargs(value: NonEmptyString*): Self = StObject.set(x, "AccountIds", js.Array(value*))
   }
 }

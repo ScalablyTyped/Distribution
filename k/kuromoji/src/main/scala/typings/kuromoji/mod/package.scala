@@ -1,14 +1,15 @@
 package typings.kuromoji.mod
 
+import typings.kuromoji.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def builder(option: typings.kuromoji.mod.TokenizerBuilderOption): typings.kuromoji.mod.TokenizerBuilder[typings.kuromoji.mod.IpadicFeatures] = typings.kuromoji.mod.^.asInstanceOf[js.Dynamic].applyDynamic("builder")(option.asInstanceOf[js.Any]).asInstanceOf[typings.kuromoji.mod.TokenizerBuilder[typings.kuromoji.mod.IpadicFeatures]]
+inline def builder(option: TokenizerBuilderOption): TokenizerBuilder[IpadicFeatures] = ^.asInstanceOf[js.Dynamic].applyDynamic("builder")(option.asInstanceOf[js.Any]).asInstanceOf[TokenizerBuilder[IpadicFeatures]]
 
-inline def dictionaryBuilder(): typings.kuromoji.mod.DictionaryBuilder_ = typings.kuromoji.mod.^.asInstanceOf[js.Dynamic].applyDynamic("dictionaryBuilder")().asInstanceOf[typings.kuromoji.mod.DictionaryBuilder_]
+inline def dictionaryBuilder(): DictionaryBuilder_ = ^.asInstanceOf[js.Dynamic].applyDynamic("dictionaryBuilder")().asInstanceOf[DictionaryBuilder_]
 
-type IpadicFormatter = typings.kuromoji.mod.Formatter[typings.kuromoji.mod.IpadicFeatures]
+type IpadicFormatter = Formatter[IpadicFeatures]
 
-type UnknownDictionary = typings.kuromoji.mod.TokenInfoDictionary
+type UnknownDictionary = TokenInfoDictionary

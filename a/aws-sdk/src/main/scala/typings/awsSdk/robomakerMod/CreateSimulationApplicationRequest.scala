@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateSimulationApplicationRequest extends StObject {
   
   /**
+    * The object that contains the Docker image URI used to create your simulation application.
+    */
+  var environment: js.UndefOr[Environment] = js.undefined
+  
+  /**
     * The name of the simulation application.
     */
   var name: Name
@@ -29,7 +34,7 @@ trait CreateSimulationApplicationRequest extends StObject {
   /**
     * The sources of the simulation application.
     */
-  var sources: SourceConfigs
+  var sources: js.UndefOr[SourceConfigs] = js.undefined
   
   /**
     * A map that contains tag keys and tag values that are attached to the simulation application.
@@ -41,14 +46,17 @@ object CreateSimulationApplicationRequest {
   inline def apply(
     name: Name,
     robotSoftwareSuite: RobotSoftwareSuite,
-    simulationSoftwareSuite: SimulationSoftwareSuite,
-    sources: SourceConfigs
+    simulationSoftwareSuite: SimulationSoftwareSuite
   ): CreateSimulationApplicationRequest = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], robotSoftwareSuite = robotSoftwareSuite.asInstanceOf[js.Any], simulationSoftwareSuite = simulationSoftwareSuite.asInstanceOf[js.Any], sources = sources.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], robotSoftwareSuite = robotSoftwareSuite.asInstanceOf[js.Any], simulationSoftwareSuite = simulationSoftwareSuite.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSimulationApplicationRequest]
   }
   
   extension [Self <: CreateSimulationApplicationRequest](x: Self) {
+    
+    inline def setEnvironment(value: Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    
+    inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
     inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -62,7 +70,9 @@ object CreateSimulationApplicationRequest {
     
     inline def setSources(value: SourceConfigs): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
-    inline def setSourcesVarargs(value: SourceConfig*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
+    
+    inline def setSourcesVarargs(value: SourceConfig*): Self = StObject.set(x, "sources", js.Array(value*))
     
     inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     

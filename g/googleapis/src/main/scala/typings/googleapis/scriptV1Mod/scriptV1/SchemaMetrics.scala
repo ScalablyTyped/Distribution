@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Resource containing usage stats for a given script, based on the supplied
-  * filter and mask present in the request.
-  */
 trait SchemaMetrics extends StObject {
   
   /**
@@ -38,18 +34,18 @@ object SchemaMetrics {
     
     inline def setActiveUsersUndefined: Self = StObject.set(x, "activeUsers", js.undefined)
     
-    inline def setActiveUsersVarargs(value: SchemaMetricsValue*): Self = StObject.set(x, "activeUsers", js.Array(value :_*))
+    inline def setActiveUsersVarargs(value: SchemaMetricsValue*): Self = StObject.set(x, "activeUsers", js.Array(value*))
     
     inline def setFailedExecutions(value: js.Array[SchemaMetricsValue]): Self = StObject.set(x, "failedExecutions", value.asInstanceOf[js.Any])
     
     inline def setFailedExecutionsUndefined: Self = StObject.set(x, "failedExecutions", js.undefined)
     
-    inline def setFailedExecutionsVarargs(value: SchemaMetricsValue*): Self = StObject.set(x, "failedExecutions", js.Array(value :_*))
+    inline def setFailedExecutionsVarargs(value: SchemaMetricsValue*): Self = StObject.set(x, "failedExecutions", js.Array(value*))
     
     inline def setTotalExecutions(value: js.Array[SchemaMetricsValue]): Self = StObject.set(x, "totalExecutions", value.asInstanceOf[js.Any])
     
     inline def setTotalExecutionsUndefined: Self = StObject.set(x, "totalExecutions", js.undefined)
     
-    inline def setTotalExecutionsVarargs(value: SchemaMetricsValue*): Self = StObject.set(x, "totalExecutions", js.Array(value :_*))
+    inline def setTotalExecutionsVarargs(value: SchemaMetricsValue*): Self = StObject.set(x, "totalExecutions", js.Array(value*))
   }
 }

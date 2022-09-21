@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientBigqueryreservation.anon
 
+import typings.maximMazurokGapiClientBigqueryreservation.gapi.client.bigqueryreservation.CapacityCommitment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,23 +20,35 @@ trait Accesstoken extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
+  /**
+    * The optional capacity commitment ID. Capacity commitment name will be generated automatically if this field is empty. This field must only contain lower case alphanumeric
+    * characters or dashes. The first and last character cannot be a dash. Max length is 64 characters. NOTE: this ID won't be kept if the capacity commitment is split or merged.
+    */
+  var capacityCommitmentId: js.UndefOr[String] = js.undefined
+  
+  /** If true, fail the request if another project in the organization has a capacity commitment. */
+  var enforceSingleAdminProjectPerOrg: js.UndefOr[Boolean] = js.undefined
+  
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Required. Name of the requested reservation, for example: `projects/{project_id}/locations/{location_id}/bireservation` */
-  var name: String
-  
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
+  
+  /** Required. Resource name of the parent reservation. E.g., `projects/myproject/locations/US` */
+  var parent: String
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
+  
+  /** Request body */
+  var resource: CapacityCommitment
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -45,8 +58,8 @@ trait Accesstoken extends StObject {
 }
 object Accesstoken {
   
-  inline def apply(name: String): Accesstoken = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  inline def apply(parent: String, resource: CapacityCommitment): Accesstoken = {
+    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Accesstoken]
   }
   
@@ -68,6 +81,14 @@ object Accesstoken {
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
+    inline def setCapacityCommitmentId(value: String): Self = StObject.set(x, "capacityCommitmentId", value.asInstanceOf[js.Any])
+    
+    inline def setCapacityCommitmentIdUndefined: Self = StObject.set(x, "capacityCommitmentId", js.undefined)
+    
+    inline def setEnforceSingleAdminProjectPerOrg(value: Boolean): Self = StObject.set(x, "enforceSingleAdminProjectPerOrg", value.asInstanceOf[js.Any])
+    
+    inline def setEnforceSingleAdminProjectPerOrgUndefined: Self = StObject.set(x, "enforceSingleAdminProjectPerOrg", js.undefined)
+    
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
@@ -76,11 +97,11 @@ object Accesstoken {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
+    
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
@@ -89,6 +110,8 @@ object Accesstoken {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+    
+    inline def setResource(value: CapacityCommitment): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

@@ -200,7 +200,7 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends StObjec
   // https://github.com/microsoft/TypeScript/issues/22679
   K /* <: ArraykeyofRaphaelReadAttr */](attributeNames: K): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof K ]: K[P] extends 'transform'? raphael.raphael.RaphaelReadAttributes[K[P]] | undefined : never}
-    */ typings.raphael.raphaelStrings.RaphaelBaseElement & TopLevel[js.Any] = js.native
+    */ typings.raphael.raphaelStrings.RaphaelBaseElement & TopLevel[Any] = js.native
   /**
     * Set the given attribute of this element to the given value.
     * @typeparam K Type of the attribute name to set.
@@ -434,13 +434,13 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends StObjec
     * @param key Key of the datum to retrieve.
     * @return The data associated with the given key.
     */
-  def data(key: String): js.Any = js.native
+  def data(key: String): Any = js.native
   /**
     * Adds the given value associated with the given key. See also {@link removeData}.
     * @param key Key of the datum to store.
     * @param value Datum to store.
     */
-  def data(key: String, value: js.Any): this.type = js.native
+  def data(key: String, value: Any): this.type = js.native
   
   /**
     * Adds an event handler for the double click event to this element.
@@ -600,6 +600,14 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends StObjec
       /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
     ]
   ): this.type = js.native
+  
+  /**
+    * Determine if given point is inside this element’s shape
+    * @param x x coordinate of the point
+    * @param y y coordinate of the point
+    * @return `true` if point inside the shape
+    */
+  def isPointInside(x: Double, y: Double): Boolean = js.native
   
   /**
     * The current transform matrix representing the total transform of this element.
@@ -917,8 +925,8 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends StObjec
     * @return this element for chaining.
     */
   def unhover(
-    onHoverInHandler: RaphaelBasicEventHandler[js.Any, MouseEvent],
-    onHoverOutHandler: RaphaelBasicEventHandler[js.Any, MouseEvent]
+    onHoverInHandler: RaphaelBasicEventHandler[Any, MouseEvent],
+    onHoverOutHandler: RaphaelBasicEventHandler[Any, MouseEvent]
   ): this.type = js.native
   
   /**

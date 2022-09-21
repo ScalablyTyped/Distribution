@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Sdk.Query.EntityReferences")
 @js.native
-class EntityReferences protected () extends ValueBase {
+open class EntityReferences protected () extends ValueBase {
   def this(args: js.Array[EntityReference]) = this()
   
   /**

@@ -10,10 +10,10 @@ An extension to moment.js that formats dates in a short format like it's used on
 | ------------------ | :-------------: |
 | Full name          | moment-shortformat |
 | Keywords           | momentjs, moment, date, short, researchgate |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 57800 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3857.3333333333335 |
+| # stars            | 17.0 |
 
 ## Links
 - [Homepage](https://github.com/researchgate/moment-shortformat#readme)

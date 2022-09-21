@@ -6,9 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IDropdownOptions extends StObject {
   
+  var alignment: js.UndefOr[String] = js.undefined
+  
+  var allowBottomOverlap: js.UndefOr[Boolean] = js.undefined
+  
+  var allowOverlap: js.UndefOr[Boolean] = js.undefined
+  
   var autoFocus: js.UndefOr[Boolean] = js.undefined
   
   var closeOnClick: js.UndefOr[Boolean] = js.undefined
+  
+  var forceFollow: js.UndefOr[Boolean] = js.undefined
   
   var hOffset: js.UndefOr[Double] = js.undefined
   
@@ -18,7 +26,9 @@ trait IDropdownOptions extends StObject {
   
   var hoverPane: js.UndefOr[Boolean] = js.undefined
   
-  var positionClass: js.UndefOr[String] = js.undefined
+  var parentClass: js.UndefOr[String | Null] = js.undefined
+  
+  var position: js.UndefOr[String] = js.undefined
   
   var trapFocus: js.UndefOr[Boolean] = js.undefined
   
@@ -33,6 +43,18 @@ object IDropdownOptions {
   
   extension [Self <: IDropdownOptions](x: Self) {
     
+    inline def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+    
+    inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
+    
+    inline def setAllowBottomOverlap(value: Boolean): Self = StObject.set(x, "allowBottomOverlap", value.asInstanceOf[js.Any])
+    
+    inline def setAllowBottomOverlapUndefined: Self = StObject.set(x, "allowBottomOverlap", js.undefined)
+    
+    inline def setAllowOverlap(value: Boolean): Self = StObject.set(x, "allowOverlap", value.asInstanceOf[js.Any])
+    
+    inline def setAllowOverlapUndefined: Self = StObject.set(x, "allowOverlap", js.undefined)
+    
     inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
     
     inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
@@ -40,6 +62,10 @@ object IDropdownOptions {
     inline def setCloseOnClick(value: Boolean): Self = StObject.set(x, "closeOnClick", value.asInstanceOf[js.Any])
     
     inline def setCloseOnClickUndefined: Self = StObject.set(x, "closeOnClick", js.undefined)
+    
+    inline def setForceFollow(value: Boolean): Self = StObject.set(x, "forceFollow", value.asInstanceOf[js.Any])
+    
+    inline def setForceFollowUndefined: Self = StObject.set(x, "forceFollow", js.undefined)
     
     inline def setHOffset(value: Double): Self = StObject.set(x, "hOffset", value.asInstanceOf[js.Any])
     
@@ -57,9 +83,15 @@ object IDropdownOptions {
     
     inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     
-    inline def setPositionClass(value: String): Self = StObject.set(x, "positionClass", value.asInstanceOf[js.Any])
+    inline def setParentClass(value: String): Self = StObject.set(x, "parentClass", value.asInstanceOf[js.Any])
     
-    inline def setPositionClassUndefined: Self = StObject.set(x, "positionClass", js.undefined)
+    inline def setParentClassNull: Self = StObject.set(x, "parentClass", null)
+    
+    inline def setParentClassUndefined: Self = StObject.set(x, "parentClass", js.undefined)
+    
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     inline def setTrapFocus(value: Boolean): Self = StObject.set(x, "trapFocus", value.asInstanceOf[js.Any])
     

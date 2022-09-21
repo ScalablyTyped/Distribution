@@ -8,17 +8,27 @@ trait KeyboardEventInit
   extends StObject
      with EventModifierInit {
   
+  /** @deprecated */
+  /* standard dom */
+  var charCode: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var code: js.UndefOr[java.lang.String] = js.undefined
   
+  /* standard dom */
   var isComposing: js.UndefOr[scala.Boolean] = js.undefined
   
+  /* standard dom */
   var key: js.UndefOr[java.lang.String] = js.undefined
   
   /** @deprecated */
+  /* standard dom */
   var keyCode: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var location: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var repeat: js.UndefOr[scala.Boolean] = js.undefined
 }
 object KeyboardEventInit {
@@ -29,6 +39,10 @@ object KeyboardEventInit {
   }
   
   extension [Self <: KeyboardEventInit](x: Self) {
+    
+    inline def setCharCode(value: Double): Self = StObject.set(x, "charCode", value.asInstanceOf[js.Any])
+    
+    inline def setCharCodeUndefined: Self = StObject.set(x, "charCode", js.undefined)
     
     inline def setCode(value: java.lang.String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

@@ -11,9 +11,9 @@ SpatiaLite for node
 | Full name          | spatialite |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 1950 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 345.3333333333333 |
+| # stars            | 63.0 |
 
 ## Links
 - [Homepage](http://github.com/zhm/node-spatialite)

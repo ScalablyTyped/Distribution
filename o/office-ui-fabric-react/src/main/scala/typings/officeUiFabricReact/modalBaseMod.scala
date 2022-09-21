@@ -11,70 +11,72 @@ object modalBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Modal/Modal.base", "ModalBase")
   @js.native
-  class ModalBase protected ()
-    extends Component[IModalProps, IDialogState, js.Any]
+  open class ModalBase protected ()
+    extends Component[IModalProps, IDialogState, Any]
        with IModal {
     def this(props: IModalProps) = this()
     
     @JSName("UNSAFE_componentWillReceiveProps")
     def UNSAFE_componentWillReceiveProps_MModalBase(newProps: IModalProps): Unit = js.native
     
-    /* private */ var _allowScrollOnModal: js.Any = js.native
+    /* private */ var _allowScrollOnModal: Any = js.native
     
-    /* private */ var _allowTouchBodyScroll: js.Any = js.native
+    /* private */ var _allowTouchBodyScroll: Any = js.native
     
-    /* private */ var _async: js.Any = js.native
+    /* private */ var _async: Any = js.native
     
-    /* private */ var _events: js.Any = js.native
+    /* private */ var _events: Any = js.native
     
-    /* private */ var _focusTrapZone: js.Any = js.native
+    /* private */ var _focusTrapZone: Any = js.native
+    
+    /* private */ var _focusTrapZoneMergedRef: Any = js.native
     
     /**
       * Clamps the position coordinates to the maximum/minimum value specified in props
       */
-    /* private */ var _getClampedPosition: js.Any = js.native
+    /* private */ var _getClampedPosition: Any = js.native
     
-    /* private */ var _getClampedPositionX: js.Any = js.native
+    /* private */ var _getClampedPositionX: Any = js.native
     
-    /* private */ var _getClampedPositionY: js.Any = js.native
+    /* private */ var _getClampedPositionY: Any = js.native
     
-    /* private */ var _getMoveDelta: js.Any = js.native
+    /* private */ var _getMoveDelta: Any = js.native
     
-    /* private */ var _hasRegisteredKeyUp: js.Any = js.native
+    /* private */ var _hasRegisteredKeyUp: Any = js.native
     
-    /* private */ var _lastSetX: js.Any = js.native
+    /* private */ var _lastSetX: Any = js.native
     
-    /* private */ var _lastSetY: js.Any = js.native
+    /* private */ var _lastSetY: Any = js.native
     
-    /* private */ var _maxClampedPosition: js.Any = js.native
+    /* private */ var _maxClampedPosition: Any = js.native
     
-    /* private */ var _minClampedPosition: js.Any = js.native
+    /* private */ var _minClampedPosition: Any = js.native
     
-    /* private */ var _onDrag: js.Any = js.native
+    /* private */ var _onDrag: Any = js.native
     
-    /* private */ var _onDragStart: js.Any = js.native
+    /* private */ var _onDragStart: Any = js.native
     
-    /* private */ var _onDragStop: js.Any = js.native
+    /* private */ var _onDragStop: Any = js.native
     
-    /* private */ var _onEnterKeyboardMoveMode: js.Any = js.native
+    /* private */ var _onEnterKeyboardMoveMode: Any = js.native
     
-    /* private */ var _onExitKeyboardMoveMode: js.Any = js.native
+    /* private */ var _onExitKeyboardMoveMode: Any = js.native
     
-    /* private */ var _onKeyDown: js.Any = js.native
+    /* private */ var _onKeyDown: Any = js.native
     
-    /* private */ var _onKeyUp: js.Any = js.native
+    /* private */ var _onKeyUp: Any = js.native
     
-    /* private */ var _onModalClose: js.Any = js.native
+    /* private */ var _onModalClose: Any = js.native
     
-    /* private */ var _onModalCloseTimer: js.Any = js.native
+    /* private */ var _onModalCloseTimer: Any = js.native
     
-    /* private */ var _onModalContextMenuClose: js.Any = js.native
+    /* private */ var _onModalContextMenuClose: Any = js.native
     
-    /* private */ var _registerForKeyUp: js.Any = js.native
+    /* private */ var _registerForKeyUp: Any = js.native
     
-    /* private */ var _registerInitialModalPosition: js.Any = js.native
+    /* private */ var _registerInitialModalPosition: Any = js.native
     
-    /* private */ var _scrollableContent: js.Any = js.native
+    /* private */ var _scrollableContent: Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MModalBase(): Unit = js.native

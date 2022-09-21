@@ -11,7 +11,7 @@ trait IgTileManager
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Gets/Sets the duration of the animations in the tile manager.
@@ -39,7 +39,7 @@ trait IgTileManager
     * "array" The column height can be set as an array, specifying height for each column. If more than one column has an asterisk value, the remaining height will be equally distributed between these columns.
     * "null" The column height will be calculated based on the container height and the other options.
     */
-  var columnHeight: js.UndefOr[String | Double | js.Array[js.Any]] = js.undefined
+  var columnHeight: js.UndefOr[String | Double | js.Array[Any]] = js.undefined
   
   /**
     * Gets/Sets the width of each column in the container.
@@ -51,7 +51,7 @@ trait IgTileManager
     * "array" The column width can be set as an array, specifying width for each column. If more than one column has an asterisk value, the remaining width will be equally distributed between these columns.
     * "null" The column width will be calculated based on the container width and the other options.
     */
-  var columnWidth: js.UndefOr[String | Double | js.Array[js.Any]] = js.undefined
+  var columnWidth: js.UndefOr[String | Double | js.Array[Any]] = js.undefined
   
   /**
     * Fired before databinding is performed
@@ -77,7 +77,7 @@ trait IgTileManager
     * Specifies any valid data source accepted by [$.ig.DataSource](ig.datasource), or an instance of an [$.ig.DataSource](ig.datasource) itself.
     *
     */
-  var dataSource: js.UndefOr[js.Any] = js.undefined
+  var dataSource: js.UndefOr[Any] = js.undefined
   
   /**
     * Explicitly set data source type (such as "json"). Please refer to the documentation of [$.ig.DataSource type](ig.datasource#options:settings.type) and its type property.
@@ -122,7 +122,7 @@ trait IgTileManager
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.undefined
+  var locale: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets/Sets the horizontal spacing between tiles.
@@ -370,17 +370,17 @@ object IgTileManager {
     
     inline def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
     
-    inline def setColumnHeight(value: String | Double | js.Array[js.Any]): Self = StObject.set(x, "columnHeight", value.asInstanceOf[js.Any])
+    inline def setColumnHeight(value: String | Double | js.Array[Any]): Self = StObject.set(x, "columnHeight", value.asInstanceOf[js.Any])
     
     inline def setColumnHeightUndefined: Self = StObject.set(x, "columnHeight", js.undefined)
     
-    inline def setColumnHeightVarargs(value: js.Any*): Self = StObject.set(x, "columnHeight", js.Array(value :_*))
+    inline def setColumnHeightVarargs(value: Any*): Self = StObject.set(x, "columnHeight", js.Array(value*))
     
-    inline def setColumnWidth(value: String | Double | js.Array[js.Any]): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
+    inline def setColumnWidth(value: String | Double | js.Array[Any]): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
     
     inline def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
     
-    inline def setColumnWidthVarargs(value: js.Any*): Self = StObject.set(x, "columnWidth", js.Array(value :_*))
+    inline def setColumnWidthVarargs(value: Any*): Self = StObject.set(x, "columnWidth", js.Array(value*))
     
     inline def setDataBinding(value: (/* event */ Event, /* ui */ DataBindingEventUIParam) => Unit): Self = StObject.set(x, "dataBinding", js.Any.fromFunction2(value))
     
@@ -390,7 +390,7 @@ object IgTileManager {
     
     inline def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
-    inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceType(value: String): Self = StObject.set(x, "dataSourceType", value.asInstanceOf[js.Any])
     
@@ -414,7 +414,7 @@ object IgTileManager {
     
     inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    inline def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     

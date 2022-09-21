@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.SVGException")
 @js.native
-/* private */ class SVGException ()
+/* private */ open class SVGException ()
   extends StObject
      with typings.activexMshtml.MSHTML.SVGException {
   

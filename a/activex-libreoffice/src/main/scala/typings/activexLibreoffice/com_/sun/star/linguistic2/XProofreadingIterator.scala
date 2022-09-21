@@ -62,7 +62,7 @@ object XProofreadingIterator {
     acquire: () => Unit,
     checkSentenceAtPosition: (XInterface, XFlatParagraph, String, Locale, Double, Double, Double) => ProofreadingResult,
     isProofreading: XInterface => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     resetIgnoreRules: () => Unit,
     startProofreading: (XInterface, XFlatParagraphIteratorProvider) => Unit

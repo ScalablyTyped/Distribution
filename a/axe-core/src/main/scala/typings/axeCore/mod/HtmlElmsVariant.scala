@@ -30,13 +30,13 @@ object HtmlElmsVariant {
     
     inline def setAllowedRoles(value: Boolean | js.Array[String]): Self = StObject.set(x, "allowedRoles", value.asInstanceOf[js.Any])
     
-    inline def setAllowedRolesVarargs(value: String*): Self = StObject.set(x, "allowedRoles", js.Array(value :_*))
+    inline def setAllowedRolesVarargs(value: String*): Self = StObject.set(x, "allowedRoles", js.Array(value*))
     
     inline def setContentTypes(value: js.Array[HtmlContentTypes]): Self = StObject.set(x, "contentTypes", value.asInstanceOf[js.Any])
     
     inline def setContentTypesUndefined: Self = StObject.set(x, "contentTypes", js.undefined)
     
-    inline def setContentTypesVarargs(value: HtmlContentTypes*): Self = StObject.set(x, "contentTypes", js.Array(value :_*))
+    inline def setContentTypesVarargs(value: HtmlContentTypes*): Self = StObject.set(x, "contentTypes", js.Array(value*))
     
     inline def setImplicitAttrs(value: StringDictionary[String]): Self = StObject.set(x, "implicitAttrs", value.asInstanceOf[js.Any])
     
@@ -46,7 +46,7 @@ object HtmlElmsVariant {
     
     inline def setNamingMethodsUndefined: Self = StObject.set(x, "namingMethods", js.undefined)
     
-    inline def setNamingMethodsVarargs(value: String*): Self = StObject.set(x, "namingMethods", js.Array(value :_*))
+    inline def setNamingMethodsVarargs(value: String*): Self = StObject.set(x, "namingMethods", js.Array(value*))
     
     inline def setNoAriaAttrs(value: Boolean): Self = StObject.set(x, "noAriaAttrs", value.asInstanceOf[js.Any])
     

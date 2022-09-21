@@ -5,7 +5,6 @@ import typings.googleCloudDatastore.queryMod.Query
 import typings.googleCloudDatastore.requestMod.CommitCallback
 import typings.googleCloudDatastore.requestMod.CommitResult
 import typings.googleCloudDatastore.requestMod.DatastoreRequest
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ object transactionMod {
   
   @JSImport("@google-cloud/datastore/transaction", "DatastoreTransaction")
   @js.native
-  class DatastoreTransaction protected () extends DatastoreRequest {
+  open class DatastoreTransaction protected () extends DatastoreRequest {
     def this(datastore: ^) = this()
     
     def commit(): js.Promise[CommitResult] = js.native
@@ -48,12 +47,12 @@ object transactionMod {
     }
   }
   
-  type RollbackCallback = js.Function2[/* err */ Error, /* rollbackResponse */ js.Object, Unit]
+  type RollbackCallback = js.Function2[/* err */ js.Error, /* rollbackResponse */ js.Object, Unit]
   
   type RollbackResult = js.Array[js.Object]
   
   type TransactionCallback = js.Function3[
-    /* err */ Error, 
+    /* err */ js.Error, 
     /* tx */ DatastoreTransaction, 
     /* beginTxResponse */ BeginTransactionResponse, 
     Unit

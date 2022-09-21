@@ -1,13 +1,15 @@
 package typings.webgme.Gme
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.webgme.Core.GUID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type Connection = js.Any
+type Connection = Any
 
-type ProjectResult = js.Array[typings.webgme.Gme.Project] | org.scalablytyped.runtime.StringDictionary[typings.webgme.Gme.Project]
+type ProjectResult = js.Array[Project] | StringDictionary[Project]
 
 /**
   * The eventHandler is invoked whenever there are 
@@ -29,6 +31,6 @@ type ProjectResult = js.Array[typings.webgme.Gme.Project] | org.scalablytyped.ru
   *  * (else)
   * "Technical events" not used.
   */
-type TerritoryEventHandler = js.Function1[/* event */ js.Array[typings.webgme.Gme.Event], scala.Unit]
+type TerritoryEventHandler = js.Function1[/* event */ js.Array[Event], Unit]
 
-type TerritoryId = typings.webgme.Core.GUID
+type TerritoryId = GUID

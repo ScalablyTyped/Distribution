@@ -1,6 +1,7 @@
 package typings.loadableWebpackPlugin
 
 import typings.loadableWebpackPlugin.anon.Filename
+import typings.webpack.mod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,13 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin * / any */ @JSImport("@loadable/webpack-plugin", JSImport.Default)
+  - Dropped webpack.anon.Apply | (this : webpack.webpack.Resolver, arg1 : webpack.webpack.Resolver): void */ @JSImport("@loadable/webpack-plugin", JSImport.Default)
   @js.native
-  class default () extends StObject {
+  open class default () extends StObject {
     def this(options: PluginOptions) = this()
   }
   
-  type LoadablePlugin = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin */ js.Any
+  type LoadablePlugin = Plugin
   
   trait PluginOptions extends StObject {
     

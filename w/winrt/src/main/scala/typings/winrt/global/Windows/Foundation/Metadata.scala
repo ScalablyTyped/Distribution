@@ -12,7 +12,7 @@ object Metadata {
   
   @JSGlobal("Windows.Foundation.Metadata.ActivatableAttribute")
   @js.native
-  class ActivatableAttribute protected ()
+  open class ActivatableAttribute protected ()
     extends StObject
        with typings.winrt.Windows.Foundation.Metadata.ActivatableAttribute {
     def this(version: Double) = this()
@@ -21,7 +21,7 @@ object Metadata {
   
   @JSGlobal("Windows.Foundation.Metadata.AllowMultipleAttribute")
   @js.native
-  class AllowMultipleAttribute ()
+  open class AllowMultipleAttribute ()
     extends StObject
        with typings.winrt.Windows.Foundation.Metadata.AllowMultipleAttribute
   
@@ -59,7 +59,7 @@ object Metadata {
   
   @JSGlobal("Windows.Foundation.Metadata.AttributeUsageAttribute")
   @js.native
-  class AttributeUsageAttribute protected ()
+  open class AttributeUsageAttribute protected ()
     extends StObject
        with typings.winrt.Windows.Foundation.Metadata.AttributeUsageAttribute {
     def this(targets: AttributeTargets) = this()
@@ -67,7 +67,7 @@ object Metadata {
   
   @JSGlobal("Windows.Foundation.Metadata.ComposableAttribute")
   @js.native
-  class ComposableAttribute protected ()
+  open class ComposableAttribute protected ()
     extends StObject
        with typings.winrt.Windows.Foundation.Metadata.ComposableAttribute {
     def this(`type`: String, compositionType: CompositionType, version: Double) = this()
@@ -87,25 +87,25 @@ object Metadata {
   
   @JSGlobal("Windows.Foundation.Metadata.DefaultAttribute")
   @js.native
-  class DefaultAttribute ()
+  open class DefaultAttribute ()
     extends StObject
        with typings.winrt.Windows.Foundation.Metadata.DefaultAttribute
   
   @JSGlobal("Windows.Foundation.Metadata.DefaultOverloadAttribute")
   @js.native
-  class DefaultOverloadAttribute ()
+  open class DefaultOverloadAttribute ()
     extends StObject
        with typings.winrt.Windows.Foundation.Metadata.DefaultOverloadAttribute
   
   @JSGlobal("Windows.Foundation.Metadata.DualApiPartitionAttribute")
   @js.native
-  class DualApiPartitionAttribute ()
+  open class DualApiPartitionAttribute ()
     extends StObject
        with typings.winrt.Windows.Foundation.Metadata.DualApiPartitionAttribute
   
   @JSGlobal("Windows.Foundation.Metadata.ExclusiveToAttribute")
   @js.native
-  class ExclusiveToAttribute protected ()
+  open class ExclusiveToAttribute protected ()
     extends StObject
        with typings.winrt.Windows.Foundation.Metadata.ExclusiveToAttribute {
     def this(typeName: String) = this()
@@ -127,13 +127,13 @@ object Metadata {
   
   @JSGlobal("Windows.Foundation.Metadata.GCPressureAttribute")
   @js.native
-  class GCPressureAttribute ()
+  open class GCPressureAttribute ()
     extends StObject
        with typings.winrt.Windows.Foundation.Metadata.GCPressureAttribute
   
   @JSGlobal("Windows.Foundation.Metadata.GuidAttribute")
   @js.native
-  class GuidAttribute protected ()
+  open class GuidAttribute protected ()
     extends StObject
        with typings.winrt.Windows.Foundation.Metadata.GuidAttribute {
     def this(
@@ -153,13 +153,13 @@ object Metadata {
   
   @JSGlobal("Windows.Foundation.Metadata.HasVariantAttribute")
   @js.native
-  class HasVariantAttribute ()
+  open class HasVariantAttribute ()
     extends StObject
        with typings.winrt.Windows.Foundation.Metadata.HasVariantAttribute
   
   @JSGlobal("Windows.Foundation.Metadata.LengthIsAttribute")
   @js.native
-  class LengthIsAttribute protected ()
+  open class LengthIsAttribute protected ()
     extends StObject
        with typings.winrt.Windows.Foundation.Metadata.LengthIsAttribute {
     def this(indexLengthParameter: Double) = this()
@@ -167,7 +167,7 @@ object Metadata {
   
   @JSGlobal("Windows.Foundation.Metadata.MarshalingBehaviorAttribute")
   @js.native
-  class MarshalingBehaviorAttribute protected ()
+  open class MarshalingBehaviorAttribute protected ()
     extends StObject
        with typings.winrt.Windows.Foundation.Metadata.MarshalingBehaviorAttribute {
     def this(behavior: MarshalingType) = this()
@@ -191,13 +191,13 @@ object Metadata {
   
   @JSGlobal("Windows.Foundation.Metadata.MuseAttribute")
   @js.native
-  class MuseAttribute ()
+  open class MuseAttribute ()
     extends StObject
        with typings.winrt.Windows.Foundation.Metadata.MuseAttribute
   
   @JSGlobal("Windows.Foundation.Metadata.OverloadAttribute")
   @js.native
-  class OverloadAttribute protected ()
+  open class OverloadAttribute protected ()
     extends StObject
        with typings.winrt.Windows.Foundation.Metadata.OverloadAttribute {
     def this(method: String) = this()
@@ -205,19 +205,19 @@ object Metadata {
   
   @JSGlobal("Windows.Foundation.Metadata.OverridableAttribute")
   @js.native
-  class OverridableAttribute ()
+  open class OverridableAttribute ()
     extends StObject
        with typings.winrt.Windows.Foundation.Metadata.OverridableAttribute
   
   @JSGlobal("Windows.Foundation.Metadata.ProtectedAttribute")
   @js.native
-  class ProtectedAttribute ()
+  open class ProtectedAttribute ()
     extends StObject
        with typings.winrt.Windows.Foundation.Metadata.ProtectedAttribute
   
   @JSGlobal("Windows.Foundation.Metadata.RangeAttribute")
   @js.native
-  class RangeAttribute protected ()
+  open class RangeAttribute protected ()
     extends StObject
        with typings.winrt.Windows.Foundation.Metadata.RangeAttribute {
     def this(minValue: Double, maxValue: Double) = this()
@@ -225,7 +225,7 @@ object Metadata {
   
   @JSGlobal("Windows.Foundation.Metadata.StaticAttribute")
   @js.native
-  class StaticAttribute protected ()
+  open class StaticAttribute protected ()
     extends StObject
        with typings.winrt.Windows.Foundation.Metadata.StaticAttribute {
     def this(`type`: String, version: Double) = this()
@@ -233,7 +233,7 @@ object Metadata {
   
   @JSGlobal("Windows.Foundation.Metadata.ThreadingAttribute")
   @js.native
-  class ThreadingAttribute protected ()
+  open class ThreadingAttribute protected ()
     extends StObject
        with typings.winrt.Windows.Foundation.Metadata.ThreadingAttribute {
     def this(model: ThreadingModel) = this()
@@ -257,13 +257,13 @@ object Metadata {
   
   @JSGlobal("Windows.Foundation.Metadata.VariantAttribute")
   @js.native
-  class VariantAttribute ()
+  open class VariantAttribute ()
     extends StObject
        with typings.winrt.Windows.Foundation.Metadata.VariantAttribute
   
   @JSGlobal("Windows.Foundation.Metadata.VersionAttribute")
   @js.native
-  class VersionAttribute protected ()
+  open class VersionAttribute protected ()
     extends StObject
        with typings.winrt.Windows.Foundation.Metadata.VersionAttribute {
     def this(version: Double) = this()
@@ -271,7 +271,7 @@ object Metadata {
   
   @JSGlobal("Windows.Foundation.Metadata.WebHostHiddenAttribute")
   @js.native
-  class WebHostHiddenAttribute ()
+  open class WebHostHiddenAttribute ()
     extends StObject
        with typings.winrt.Windows.Foundation.Metadata.WebHostHiddenAttribute
 }

@@ -5,20 +5,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A sink that records can be encoded and written to.
-  */
 trait SchemaSink extends StObject {
   
   /**
     * The codec to use to encode data written to the sink.
     */
-  var codec: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var codec: js.UndefOr[StringDictionary[Any] | Null] = js.undefined
   
   /**
     * The sink to write to, plus its parameters.
     */
-  var spec: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var spec: js.UndefOr[StringDictionary[Any] | Null] = js.undefined
 }
 object SchemaSink {
   
@@ -29,11 +26,15 @@ object SchemaSink {
   
   extension [Self <: SchemaSink](x: Self) {
     
-    inline def setCodec(value: StringDictionary[js.Any]): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
+    inline def setCodec(value: StringDictionary[Any]): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
+    
+    inline def setCodecNull: Self = StObject.set(x, "codec", null)
     
     inline def setCodecUndefined: Self = StObject.set(x, "codec", js.undefined)
     
-    inline def setSpec(value: StringDictionary[js.Any]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+    inline def setSpec(value: StringDictionary[Any]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+    
+    inline def setSpecNull: Self = StObject.set(x, "spec", null)
     
     inline def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
   }

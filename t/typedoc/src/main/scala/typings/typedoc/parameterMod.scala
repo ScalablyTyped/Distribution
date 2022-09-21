@@ -1,17 +1,26 @@
 package typings.typedoc
 
-import typings.typedoc.contextMod.Context
-import typings.typedoc.reflectionsMod.ParameterReflection
-import typings.typescript.mod.ParameterDeclaration
+import typings.typedoc.abstractMod.Reflection
+import typings.typedoc.kindMod.ReflectionKind
+import typings.typedoc.modelsTypesMod.SomeType
+import typings.typedoc.reflectionsSignatureMod.SignatureReflection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parameterMod {
   
-  @JSImport("typedoc/dist/lib/converter/factories/parameter", JSImport.Namespace)
+  @JSImport("typedoc/dist/lib/models/reflections/parameter", "ParameterReflection")
   @js.native
-  val ^ : js.Any = js.native
-  
-  inline def createParameter(context: Context, node: ParameterDeclaration): js.UndefOr[ParameterReflection] = (^.asInstanceOf[js.Dynamic].applyDynamic("createParameter")(context.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ParameterReflection]]
+  open class ParameterReflection protected () extends Reflection {
+    def this(name: String, kind: ReflectionKind) = this()
+    def this(name: String, kind: ReflectionKind, parent: Reflection) = this()
+    
+    var defaultValue: js.UndefOr[String] = js.native
+    
+    @JSName("parent")
+    var parent_ParameterReflection: js.UndefOr[SignatureReflection] = js.native
+    
+    var `type`: js.UndefOr[SomeType] = js.native
+  }
 }

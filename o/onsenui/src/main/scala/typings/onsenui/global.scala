@@ -18,17 +18,17 @@ object global {
     
     @JSGlobal("ons.GestureDetector")
     @js.native
-    def GestureDetector: js.Any = js.native
-    inline def GestureDetector_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GestureDetector")(x.asInstanceOf[js.Any])
+    def GestureDetector: Any = js.native
+    inline def GestureDetector_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GestureDetector")(x.asInstanceOf[js.Any])
     
     /**
       * @description PageLoader class constructor
       */
     @JSGlobal("ons.PageLoader")
     @js.native
-    class PageLoader protected ()
+    open class PageLoader protected ()
       extends typings.onsenui.mod.PageLoader {
-      def this(args: js.Any*) = this()
+      def this(args: Any*) = this()
     }
     
     /**
@@ -49,7 +49,7 @@ object global {
       * @description Create a new element from a template. Both inline HTML and external files are supported although the return value differs.
       * @return If the provided template was an inline HTML string, it returns the new element. Otherwise, it returns a promise that resolves to the new element.
       */
-    inline def createElement(args: js.Any*): HTMLElement | js.Promise[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(args.asInstanceOf[js.Any]).asInstanceOf[HTMLElement | js.Promise[HTMLElement]]
+    inline def createElement(args: Any*): HTMLElement | js.Promise[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[HTMLElement | js.Promise[HTMLElement]]
     
     /**
       * @description Create a popover instance from a template.
@@ -153,7 +153,7 @@ object global {
         * @param {HTMLElemenet} element Target element.
         * @param {String} modifier Name of the modifier.
         */
-      inline def add(element: HTMLElement, modifier: String*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(element.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def add(element: HTMLElement, modifier: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(List(element.asInstanceOf[js.Any]).`++`(modifier.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
       
       /**
         * @description Check whether the specified modifier is included in the element.
@@ -168,7 +168,7 @@ object global {
         * @param {HTMLElemenet} element Target element.
         * @param {String} modifier Name of the modifier.
         */
-      inline def remove(element: HTMLElement, modifier: String*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(element.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def remove(element: HTMLElement, modifier: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(List(element.asInstanceOf[js.Any]).`++`(modifier.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
       
       /**
         * @description Toggle the specified modifier.
@@ -256,14 +256,14 @@ object global {
       inline def prompt(message: AlertOptions): js.Promise[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(message.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLElement]]
       inline def prompt(message: AlertOptions, options: AlertOptions): js.Promise[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HTMLElement]]
       
-      inline def toast(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toast")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def toast(args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toast")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Any]
     }
     
     /**
       * @description Shows an instant Action Sheet and lets the user choose an action.
       * @return Will resolve when the action sheet is closed. The resolve value is either the index of the tapped button or -1 when canceled.
       */
-    inline def openActionSheet(args: js.Any*): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("openActionSheet")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
+    inline def openActionSheet(args: Any*): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("openActionSheet")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Promise[Double]]
     
     /**
       * @description Utility methods for orientation detection
@@ -434,7 +434,7 @@ object global {
       * @description Separated files need to be requested on demand and this can slightly delay pushing new pages. This method requests and caches templates for later use.
       * @return Promise that resolves when all the templates are cached.
       */
-    inline def preload(args: js.Any*): js.Promise[js.Array[DocumentFragment]] = ^.asInstanceOf[js.Dynamic].applyDynamic("preload")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[DocumentFragment]]]
+    inline def preload(args: Any*): js.Promise[js.Array[DocumentFragment]] = ^.asInstanceOf[js.Dynamic].applyDynamic("preload")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Promise[js.Array[DocumentFragment]]]
     
     /**
       * @description Method used to wait for app initialization. The callback will not be executed until Onsen UI has been completely initialized
@@ -451,6 +451,6 @@ object global {
       * @param {Function} listener Function that executes when device back button is pressed
       * @description Set default handler for device back button
       */
-    inline def setDefaultDeviceBackButtonListener(listener: js.Function1[/* eventObject */ js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultDeviceBackButtonListener")(listener.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setDefaultDeviceBackButtonListener(listener: js.Function1[/* eventObject */ Any, Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultDeviceBackButtonListener")(listener.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

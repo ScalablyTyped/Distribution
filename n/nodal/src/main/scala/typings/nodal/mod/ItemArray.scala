@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodal", "ItemArray")
 @js.native
-class ItemArray[T] ()
+open class ItemArray[T] ()
   extends StObject
      with Array[T] {
   
-  /* private */ var _meta: js.Any = js.native
+  /* private */ var _meta: Any = js.native
   
   def setMeta(data: IArrayMetadata): IArrayMetadata = js.native
   

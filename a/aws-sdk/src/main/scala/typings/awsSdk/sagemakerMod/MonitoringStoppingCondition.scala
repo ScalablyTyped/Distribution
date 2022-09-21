@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MonitoringStoppingCondition extends StObject {
   
   /**
-    * The maximum runtime allowed in seconds.
+    * The maximum runtime allowed in seconds.  The MaxRuntimeInSeconds cannot exceed the frequency of the job. For data quality and model explainability, this can be up to 3600 seconds for an hourly schedule. For model bias and model quality hourly schedules, this can be up to 1800 seconds. 
     */
   var MaxRuntimeInSeconds: MonitoringMaxRuntimeInSeconds
 }

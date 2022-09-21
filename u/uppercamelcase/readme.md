@@ -11,9 +11,9 @@ Convert a dash/dot/underscore/space separated string to UpperCamelCase
 | Full name          | uppercamelcase |
 | Keywords           | camelcase, uppercamelcase, upper, camel, case |
 | # releases         | 0 |
-| # dependents       | 313 |
-| # downloads        | 2922502 |
-| # stars            | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 246168.66666666666 |
+| # stars            | 78.0 |
 
 ## Links
 - [Homepage](https://github.com/samverschueren/uppercamelcase#readme)

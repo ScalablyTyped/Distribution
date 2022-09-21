@@ -8,7 +8,7 @@ trait AutoRotate extends StObject {
   
   var autoRotate: Boolean
   
-  var content: js.Any
+  var content: Any
   
   var offsetX: Double
   
@@ -22,7 +22,7 @@ object AutoRotate {
   
   inline def apply(
     autoRotate: Boolean,
-    content: js.Any,
+    content: Any,
     offsetX: Double,
     offsetY: Double,
     position: String,
@@ -36,7 +36,7 @@ object AutoRotate {
     
     inline def setAutoRotate(value: Boolean): Self = StObject.set(x, "autoRotate", value.asInstanceOf[js.Any])
     
-    inline def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     

@@ -3,7 +3,7 @@ package typings.imageThumbnail
 import typings.imageThumbnail.anon.Uri
 import typings.imageThumbnail.anon.responseTypebase64Options
 import typings.imageThumbnail.anon.responseTypebufferOptions
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.fsMod.ReadStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -11,9 +11,9 @@ Simple replacement for setTimeout, setInterval, and polling loops
 | Full name          | timeout |
 | Keywords           | ender, timeout, polling, setTimeout, setInterval |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 20830 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1611.0 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/amccollum/timeout#readme)

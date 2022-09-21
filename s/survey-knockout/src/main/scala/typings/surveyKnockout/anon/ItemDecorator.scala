@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ItemDecorator extends StObject {
   
+  var clearButton: String
+  
   var column: String
   
   var controlLabel: String
@@ -20,10 +22,6 @@ trait ItemDecorator extends StObject {
   
   var itemInline: String
   
-  var itemNone: String
-  
-  var itemSelectAll: String
-  
   var label: String
   
   var labelChecked: String
@@ -37,6 +35,7 @@ trait ItemDecorator extends StObject {
 object ItemDecorator {
   
   inline def apply(
+    clearButton: String,
     column: String,
     controlLabel: String,
     item: String,
@@ -44,19 +43,19 @@ object ItemDecorator {
     itemControl: String,
     itemDecorator: String,
     itemInline: String,
-    itemNone: String,
-    itemSelectAll: String,
     label: String,
     labelChecked: String,
     materialDecorator: String,
     other: String,
     root: String
   ): ItemDecorator = {
-    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], controlLabel = controlLabel.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], itemChecked = itemChecked.asInstanceOf[js.Any], itemControl = itemControl.asInstanceOf[js.Any], itemDecorator = itemDecorator.asInstanceOf[js.Any], itemInline = itemInline.asInstanceOf[js.Any], itemNone = itemNone.asInstanceOf[js.Any], itemSelectAll = itemSelectAll.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], labelChecked = labelChecked.asInstanceOf[js.Any], materialDecorator = materialDecorator.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(clearButton = clearButton.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], controlLabel = controlLabel.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], itemChecked = itemChecked.asInstanceOf[js.Any], itemControl = itemControl.asInstanceOf[js.Any], itemDecorator = itemDecorator.asInstanceOf[js.Any], itemInline = itemInline.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], labelChecked = labelChecked.asInstanceOf[js.Any], materialDecorator = materialDecorator.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemDecorator]
   }
   
   extension [Self <: ItemDecorator](x: Self) {
+    
+    inline def setClearButton(value: String): Self = StObject.set(x, "clearButton", value.asInstanceOf[js.Any])
     
     inline def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
@@ -71,10 +70,6 @@ object ItemDecorator {
     inline def setItemDecorator(value: String): Self = StObject.set(x, "itemDecorator", value.asInstanceOf[js.Any])
     
     inline def setItemInline(value: String): Self = StObject.set(x, "itemInline", value.asInstanceOf[js.Any])
-    
-    inline def setItemNone(value: String): Self = StObject.set(x, "itemNone", value.asInstanceOf[js.Any])
-    
-    inline def setItemSelectAll(value: String): Self = StObject.set(x, "itemSelectAll", value.asInstanceOf[js.Any])
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

@@ -14,7 +14,7 @@ trait S3SignedObject extends StObject {
   /**
     * Key name that uniquely identifies a signed code image in your bucket.
     */
-  var key: js.UndefOr[typings.awsSdk.signerMod.key] = js.undefined
+  var key: js.UndefOr[Key] = js.undefined
 }
 object S3SignedObject {
   
@@ -29,7 +29,7 @@ object S3SignedObject {
     
     inline def setBucketNameUndefined: Self = StObject.set(x, "bucketName", js.undefined)
     
-    inline def setKey(value: key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
   }

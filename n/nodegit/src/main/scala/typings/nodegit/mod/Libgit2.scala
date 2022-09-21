@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "Libgit2")
 @js.native
-class Libgit2 ()
+open class Libgit2 ()
   extends typings.nodegit.libGit2Mod.Libgit2
 /* static members */
 object Libgit2 {

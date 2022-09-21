@@ -1,7 +1,7 @@
 
 # Scala.js typings for just-snake-case
 
-Typings are for version 1.1
+Typings are for version 3.1.1
 
 ## Library description:
 convert a string to snake case
@@ -10,10 +10,10 @@ convert a string to snake case
 | ------------------ | :-------------: |
 | Full name          | just-snake-case |
 | Keywords           | snake, snake_case, string, no-dependencies, just |
-| # releases         | 0 |
-| # dependents       | 20 |
-| # downloads        | 255366 |
-| # stars            | 1 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 20219.333333333332 |
+| # stars            | 4414.0 |
 
 ## Links
 - [Homepage](https://github.com/angus-c/just#readme)
@@ -24,7 +24,7 @@ convert a string to snake case
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

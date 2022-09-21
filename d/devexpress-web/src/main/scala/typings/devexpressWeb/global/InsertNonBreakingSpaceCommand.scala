@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("InsertNonBreakingSpaceCommand")
 @js.native
-class InsertNonBreakingSpaceCommand ()
+open class InsertNonBreakingSpaceCommand ()
   extends StObject
      with typings.devexpressWeb.InsertNonBreakingSpaceCommand {
   

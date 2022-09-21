@@ -1,7 +1,7 @@
 
 # Scala.js typings for sindresorhus__transliterate
 
-Typings are for version 0.1.1
+Typings are for version 1.5.0
 
 ## Library description:
 Convert Unicode characters to Latin characters using transliteration
@@ -10,12 +10,15 @@ Convert Unicode characters to Latin characters using transliteration
 | ------------------ | :-------------: |
 | Full name          | @sindresorhus/transliterate |
 | Keywords           | transliterate, transliteration, string, deburr, unicode, ascii, text, latin, latinize, convert, replace |
-| # releases         | 4 |
-| # dependents       | 2 |
-| # downloads        | 1647747 |
-| # stars            | 0 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 3342524.6666666665 |
+| # stars            | 229.0 |
 
 ## Links
+- [Homepage](https://github.com/sindresorhus/transliterate#readme)
+- [Bugs](https://github.com/sindresorhus/transliterate/issues)
+- [Repository](https://github.com/sindresorhus/transliterate)
 - [Npm](https://www.npmjs.com/package/%40sindresorhus%2Ftransliterate)
     
 

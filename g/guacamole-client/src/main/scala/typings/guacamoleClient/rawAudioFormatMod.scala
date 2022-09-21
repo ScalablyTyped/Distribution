@@ -9,7 +9,7 @@ object rawAudioFormatMod {
   
   @JSImport("guacamole-client/lib/RawAudioFormat", "RawAudioFormat")
   @js.native
-  class RawAudioFormat protected () extends StObject {
+  open class RawAudioFormat protected () extends StObject {
     /**
       * @param template The object whose properties should be copied into the corresponding
       * properties of the new Guacamole.RawAudioFormat.

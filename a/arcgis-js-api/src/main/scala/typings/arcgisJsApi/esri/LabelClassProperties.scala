@@ -1,5 +1,7 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.anon.LabelSymbol3DPropertiesty
+import typings.arcgisJsApi.anon.TextSymbolPropertiestypet
 import typings.arcgisJsApi.arcgisJsApiStrings.`above-after`
 import typings.arcgisJsApi.arcgisJsApiStrings.`above-along`
 import typings.arcgisJsApi.arcgisJsApiStrings.`above-before`
@@ -25,7 +27,9 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`center-end`
 import typings.arcgisJsApi.arcgisJsApiStrings.`center-left`
 import typings.arcgisJsApi.arcgisJsApiStrings.`center-right`
 import typings.arcgisJsApi.arcgisJsApiStrings.`center-start`
-import typings.arcgisJsApi.arcgisJsApiStrings.none
+import typings.arcgisJsApi.arcgisJsApiStrings.curved
+import typings.arcgisJsApi.arcgisJsApiStrings.none_
+import typings.arcgisJsApi.arcgisJsApiStrings.parallel
 import typings.arcgisJsApi.arcgisJsApiStrings.static
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -34,21 +38,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LabelClassProperties extends StObject {
   
   /**
+    * Specifies whether or not a polyline label can overrun the feature being labeled.
+    *
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#allowOverrun)
+    */
+  var allowOverrun: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Defines how labels should be placed relative to one another.
+    *
+    * @default static
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#deconflictionStrategy)
     */
-  var deconflictionStrategy: js.UndefOr[none | static] = js.undefined
+  var deconflictionStrategy: js.UndefOr[none_ | static] = js.undefined
   
   /**
-    * Defines the content of label text for [MapImageLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html).
+    * Defines the labels for a [MapImageLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html).
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#labelExpression)
     */
   var labelExpression: js.UndefOr[String] = js.undefined
   
   /**
-    * Defines the content of label text for [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html).
+    * Defines the labels for a [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html).
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#labelExpressionInfo)
     */
@@ -57,6 +76,8 @@ trait LabelClassProperties extends StObject {
   /**
     * The position of the label.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#labelPlacement)
     */
   var labelPlacement: js.UndefOr[
@@ -64,7 +85,18 @@ trait LabelClassProperties extends StObject {
   ] = js.undefined
   
   /**
+    * Specifies the orientation of the label position of a polyline label.
+    *
+    * @default "curved"
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#labelPosition)
+    */
+  var labelPosition: js.UndefOr[curved | parallel] = js.undefined
+  
+  /**
     * The maximum scale (most zoomed in) at which labels are visible in the view.
+    *
+    * @default 0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#maxScale)
     */
@@ -73,16 +105,36 @@ trait LabelClassProperties extends StObject {
   /**
     * The minimum scale (most zoomed out) at which labels are visible in the view.
     *
+    * @default 0
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#minScale)
     */
   var minScale: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Indicates whether or not to repeat the label along the polyline feature.
+    *
+    * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#repeatLabel)
+    */
+  var repeatLabel: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * The size in points of the distance between labels on a polyline.
+    *
+    * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#repeatLabelDistance)
+    */
+  var repeatLabelDistance: js.UndefOr[Double | String] = js.undefined
   
   /**
     * Defines the symbol used for rendering the label.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#symbol)
     */
-  var symbol: js.UndefOr[TextSymbolProperties | LabelSymbol3DProperties] = js.undefined
+  var symbol: js.UndefOr[TextSymbolPropertiestypet | LabelSymbol3DPropertiesty] = js.undefined
   
   /**
     * Indicates whether to use domain names if the fields in the [labelExpression](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#labelExpression) or [labelExpressionInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#labelExpressionInfo) have domains.
@@ -93,6 +145,8 @@ trait LabelClassProperties extends StObject {
   
   /**
     * A SQL where clause used to determine the features to which the label class should be applied.
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#where)
     */
@@ -107,7 +161,11 @@ object LabelClassProperties {
   
   extension [Self <: LabelClassProperties](x: Self) {
     
-    inline def setDeconflictionStrategy(value: none | static): Self = StObject.set(x, "deconflictionStrategy", value.asInstanceOf[js.Any])
+    inline def setAllowOverrun(value: Boolean): Self = StObject.set(x, "allowOverrun", value.asInstanceOf[js.Any])
+    
+    inline def setAllowOverrunUndefined: Self = StObject.set(x, "allowOverrun", js.undefined)
+    
+    inline def setDeconflictionStrategy(value: none_ | static): Self = StObject.set(x, "deconflictionStrategy", value.asInstanceOf[js.Any])
     
     inline def setDeconflictionStrategyUndefined: Self = StObject.set(x, "deconflictionStrategy", js.undefined)
     
@@ -125,6 +183,10 @@ object LabelClassProperties {
     
     inline def setLabelPlacementUndefined: Self = StObject.set(x, "labelPlacement", js.undefined)
     
+    inline def setLabelPosition(value: curved | parallel): Self = StObject.set(x, "labelPosition", value.asInstanceOf[js.Any])
+    
+    inline def setLabelPositionUndefined: Self = StObject.set(x, "labelPosition", js.undefined)
+    
     inline def setMaxScale(value: Double): Self = StObject.set(x, "maxScale", value.asInstanceOf[js.Any])
     
     inline def setMaxScaleUndefined: Self = StObject.set(x, "maxScale", js.undefined)
@@ -133,7 +195,15 @@ object LabelClassProperties {
     
     inline def setMinScaleUndefined: Self = StObject.set(x, "minScale", js.undefined)
     
-    inline def setSymbol(value: TextSymbolProperties | LabelSymbol3DProperties): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setRepeatLabel(value: Boolean): Self = StObject.set(x, "repeatLabel", value.asInstanceOf[js.Any])
+    
+    inline def setRepeatLabelDistance(value: Double | String): Self = StObject.set(x, "repeatLabelDistance", value.asInstanceOf[js.Any])
+    
+    inline def setRepeatLabelDistanceUndefined: Self = StObject.set(x, "repeatLabelDistance", js.undefined)
+    
+    inline def setRepeatLabelUndefined: Self = StObject.set(x, "repeatLabel", js.undefined)
+    
+    inline def setSymbol(value: TextSymbolPropertiestypet | LabelSymbol3DPropertiesty): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
     inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
     

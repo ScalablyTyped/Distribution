@@ -19,7 +19,6 @@ import typings.reactInfiniteCalendar.reactInfiniteCalendarStrings.`100Percentsig
 import typings.reactInfiniteCalendar.reactInfiniteCalendarStrings.auto
 import typings.reactInfiniteCalendar.reactInfiniteCalendarStrings.days
 import typings.reactInfiniteCalendar.reactInfiniteCalendarStrings.years
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,19 +31,19 @@ object mod {
   
   @JSImport("react-infinite-calendar", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ReactInfiniteCalendarProps, js.Object, js.Any]
+  open class default ()
+    extends Component[ReactInfiniteCalendarProps, js.Object, Any]
   
   @JSImport("react-infinite-calendar", "Calendar")
   @js.native
-  class Calendar protected ()
-    extends Component[ReactInfiniteCalendarProps, js.Object, js.Any] {
+  open class Calendar protected ()
+    extends Component[ReactInfiniteCalendarProps, js.Object, Any] {
     def this(props: ReactInfiniteCalendarProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ReactInfiniteCalendarProps, context: js.Any) = this()
+    def this(props: ReactInfiniteCalendarProps, context: Any) = this()
   }
   
   @js.native
@@ -87,38 +86,38 @@ object mod {
   
   type CalendarClass = ComponentClass[ReactInfiniteCalendarProps, ComponentState]
   
-  type DateSelectFunction = js.Function1[/* date */ Date, Unit]
+  type DateSelectFunction = js.Function1[/* date */ js.Date, Unit]
   
-  type DateType = Date | String | Double
+  type DateType = js.Date | String | Double
   
   type RangedSelectFunction = js.Function1[/* rangedDate */ RangedSelection, Unit]
   
   trait RangedSelection extends StObject {
     
-    var end: Date
+    var end: js.Date
     
     var eventType: EVENT_TYPE
     
-    var start: Date
+    var start: js.Date
   }
   object RangedSelection {
     
-    inline def apply(end: Date, eventType: EVENT_TYPE, start: Date): RangedSelection = {
+    inline def apply(end: js.Date, eventType: EVENT_TYPE, start: js.Date): RangedSelection = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], eventType = eventType.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[RangedSelection]
     }
     
     extension [Self <: RangedSelection](x: Self) {
       
-      inline def setEnd(value: Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: js.Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
       inline def setEventType(value: EVENT_TYPE): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
       
-      inline def setStart(value: Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: js.Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
   
-  type ReactInfiniteCalendar = Component[ReactInfiniteCalendarProps, js.Object, js.Any]
+  type ReactInfiniteCalendar = Component[ReactInfiniteCalendarProps, js.Object, Any]
   
   trait ReactInfiniteCalendarProps extends StObject {
     
@@ -138,7 +137,9 @@ object mod {
     
     var height: js.UndefOr[Double | auto] = js.undefined
     
-    var interpolateSelection: js.UndefOr[js.Function2[/* date */ Date, /* selected */ js.Array[Date], js.Array[Date]]] = js.undefined
+    var interpolateSelection: js.UndefOr[
+        js.Function2[/* date */ js.Date, /* selected */ js.Array[js.Date], js.Array[js.Date]]
+      ] = js.undefined
     
     var locale: js.UndefOr[Blank] = js.undefined
     
@@ -191,13 +192,13 @@ object mod {
       
       inline def setDisabledDatesUndefined: Self = StObject.set(x, "disabledDates", js.undefined)
       
-      inline def setDisabledDatesVarargs(value: DateType*): Self = StObject.set(x, "disabledDates", js.Array(value :_*))
+      inline def setDisabledDatesVarargs(value: DateType*): Self = StObject.set(x, "disabledDates", js.Array(value*))
       
       inline def setDisabledDays(value: js.Array[`0` | `1` | `2` | `3` | `4` | `5` | `6`]): Self = StObject.set(x, "disabledDays", value.asInstanceOf[js.Any])
       
       inline def setDisabledDaysUndefined: Self = StObject.set(x, "disabledDays", js.undefined)
       
-      inline def setDisabledDaysVarargs(value: (`0` | `1` | `2` | `3` | `4` | `5` | `6`)*): Self = StObject.set(x, "disabledDays", js.Array(value :_*))
+      inline def setDisabledDaysVarargs(value: (`0` | `1` | `2` | `3` | `4` | `5` | `6`)*): Self = StObject.set(x, "disabledDays", js.Array(value*))
       
       inline def setDisplay(value: days | years): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
@@ -211,7 +212,7 @@ object mod {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setInterpolateSelection(value: (/* date */ Date, /* selected */ js.Array[Date]) => js.Array[Date]): Self = StObject.set(x, "interpolateSelection", js.Any.fromFunction2(value))
+      inline def setInterpolateSelection(value: (/* date */ js.Date, /* selected */ js.Array[js.Date]) => js.Array[js.Date]): Self = StObject.set(x, "interpolateSelection", js.Any.fromFunction2(value))
       
       inline def setInterpolateSelectionUndefined: Self = StObject.set(x, "interpolateSelection", js.undefined)
       
@@ -243,7 +244,7 @@ object mod {
       
       inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
       
-      inline def setOnSelect(value: (/* date */ Date) | (/* rangedDate */ RangedSelection) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+      inline def setOnSelect(value: (/* date */ js.Date) | (/* rangedDate */ RangedSelection) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
       
       inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
@@ -255,7 +256,7 @@ object mod {
       
       inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
       
-      inline def setSelectedVarargs(value: DateType*): Self = StObject.set(x, "selected", js.Array(value :_*))
+      inline def setSelectedVarargs(value: DateType*): Self = StObject.set(x, "selected", js.Array(value*))
       
       inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
       

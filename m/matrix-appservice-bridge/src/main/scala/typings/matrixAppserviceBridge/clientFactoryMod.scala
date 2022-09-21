@@ -9,16 +9,16 @@ object clientFactoryMod {
   
   @JSImport("matrix-appservice-bridge/lib/components/client-factory", "ClientFactory")
   @js.native
-  class ClientFactory () extends StObject {
+  open class ClientFactory () extends StObject {
     def this(opts: ClientFactoryOpts) = this()
     
-    /* private */ var _getClient: js.Any = js.native
+    /* private */ var _getClient: Any = js.native
     
-    /* private */ var botUserId: js.Any = js.native
+    /* private */ var botUserId: Any = js.native
     
-    /* private */ var clientSchedulerBuilder: js.Any = js.native
+    /* private */ var clientSchedulerBuilder: Any = js.native
     
-    /* private */ var clients: js.Any = js.native
+    /* private */ var clients: Any = js.native
     
     /**
       * Configure the factory for generating clients.
@@ -39,24 +39,24 @@ object clientFactoryMod {
       * This factory will dispose the created client instance when the request is
       * resolved.
       */
-    def getClientAs(): js.Any = js.native
-    def getClientAs(userId: String): js.Any = js.native
-    def getClientAs(userId: String, request: Unit, urlOverride: String): js.Any = js.native
-    def getClientAs(userId: String, request: Unit, urlOverride: String, usingE2E: Boolean): js.Any = js.native
-    def getClientAs(userId: String, request: Unit, urlOverride: Unit, usingE2E: Boolean): js.Any = js.native
-    def getClientAs(userId: String, request: Request[js.Any]): js.Any = js.native
-    def getClientAs(userId: String, request: Request[js.Any], urlOverride: String): js.Any = js.native
-    def getClientAs(userId: String, request: Request[js.Any], urlOverride: String, usingE2E: Boolean): js.Any = js.native
-    def getClientAs(userId: String, request: Request[js.Any], urlOverride: Unit, usingE2E: Boolean): js.Any = js.native
-    def getClientAs(userId: Unit, request: Unit, urlOverride: String): js.Any = js.native
-    def getClientAs(userId: Unit, request: Unit, urlOverride: String, usingE2E: Boolean): js.Any = js.native
-    def getClientAs(userId: Unit, request: Unit, urlOverride: Unit, usingE2E: Boolean): js.Any = js.native
-    def getClientAs(userId: Unit, request: Request[js.Any]): js.Any = js.native
-    def getClientAs(userId: Unit, request: Request[js.Any], urlOverride: String): js.Any = js.native
-    def getClientAs(userId: Unit, request: Request[js.Any], urlOverride: String, usingE2E: Boolean): js.Any = js.native
-    def getClientAs(userId: Unit, request: Request[js.Any], urlOverride: Unit, usingE2E: Boolean): js.Any = js.native
+    def getClientAs(): Any = js.native
+    def getClientAs(userId: String): Any = js.native
+    def getClientAs(userId: String, request: Unit, urlOverride: String): Any = js.native
+    def getClientAs(userId: String, request: Unit, urlOverride: String, usingE2E: Boolean): Any = js.native
+    def getClientAs(userId: String, request: Unit, urlOverride: Unit, usingE2E: Boolean): Any = js.native
+    def getClientAs(userId: String, request: Request[Any]): Any = js.native
+    def getClientAs(userId: String, request: Request[Any], urlOverride: String): Any = js.native
+    def getClientAs(userId: String, request: Request[Any], urlOverride: String, usingE2E: Boolean): Any = js.native
+    def getClientAs(userId: String, request: Request[Any], urlOverride: Unit, usingE2E: Boolean): Any = js.native
+    def getClientAs(userId: Unit, request: Unit, urlOverride: String): Any = js.native
+    def getClientAs(userId: Unit, request: Unit, urlOverride: String, usingE2E: Boolean): Any = js.native
+    def getClientAs(userId: Unit, request: Unit, urlOverride: Unit, usingE2E: Boolean): Any = js.native
+    def getClientAs(userId: Unit, request: Request[Any]): Any = js.native
+    def getClientAs(userId: Unit, request: Request[Any], urlOverride: String): Any = js.native
+    def getClientAs(userId: Unit, request: Request[Any], urlOverride: String, usingE2E: Boolean): Any = js.native
+    def getClientAs(userId: Unit, request: Request[Any], urlOverride: Unit, usingE2E: Boolean): Any = js.native
     
-    /* private */ var sdk: js.Any = js.native
+    /* private */ var sdk: Any = js.native
     
     /**
       * Set a function to be called when logging requests and responses.
@@ -65,9 +65,9 @@ object clientFactoryMod {
       */
     def setLogFunction(func: js.Function2[/* msg */ String, /* error */ js.UndefOr[Boolean], Unit]): Unit = js.native
     
-    /* private */ var token: js.Any = js.native
+    /* private */ var token: Any = js.native
     
-    /* private */ var url: js.Any = js.native
+    /* private */ var url: Any = js.native
   }
   
   /**
@@ -90,9 +90,9 @@ object clientFactoryMod {
     
     var appServiceUserId: js.UndefOr[String] = js.undefined
     
-    var clientSchedulerBuilder: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var clientSchedulerBuilder: js.UndefOr[js.Function0[Any]] = js.undefined
     
-    var sdk: js.UndefOr[js.Any] = js.undefined
+    var sdk: js.UndefOr[Any] = js.undefined
     
     var token: js.UndefOr[String] = js.undefined
     
@@ -111,11 +111,11 @@ object clientFactoryMod {
       
       inline def setAppServiceUserIdUndefined: Self = StObject.set(x, "appServiceUserId", js.undefined)
       
-      inline def setClientSchedulerBuilder(value: () => js.Any): Self = StObject.set(x, "clientSchedulerBuilder", js.Any.fromFunction0(value))
+      inline def setClientSchedulerBuilder(value: () => Any): Self = StObject.set(x, "clientSchedulerBuilder", js.Any.fromFunction0(value))
       
       inline def setClientSchedulerBuilderUndefined: Self = StObject.set(x, "clientSchedulerBuilder", js.undefined)
       
-      inline def setSdk(value: js.Any): Self = StObject.set(x, "sdk", value.asInstanceOf[js.Any])
+      inline def setSdk(value: Any): Self = StObject.set(x, "sdk", value.asInstanceOf[js.Any])
       
       inline def setSdkUndefined: Self = StObject.set(x, "sdk", js.undefined)
       

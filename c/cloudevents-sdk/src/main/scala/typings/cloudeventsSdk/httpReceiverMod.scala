@@ -13,7 +13,7 @@ object httpReceiverMod {
   /**
     * Create an instance of an HTTPReceiver to accept incoming CloudEvents.
     */
-  class HTTPReceiver () extends StObject {
+  open class HTTPReceiver () extends StObject {
     
     /**
       * Acceptor for an incoming HTTP CloudEvent POST. Can process

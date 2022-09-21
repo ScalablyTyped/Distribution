@@ -10,14 +10,22 @@ object circleMod {
   
   @JSImport("@antv/component/lib/axis/circle", JSImport.Default)
   @js.native
-  class default () extends Circle
+  open class default () extends Circle
   
   @js.native
   trait Circle
     extends typings.antvComponent.baseMod.default[CircleAxisCfg] {
     
-    /* private */ var getCirclePoint: js.Any = js.native
+    /* private */ var autoProcessOverlap: Any = js.native
     
-    /* protected */ def getTickPoint(tickValue: js.Any): Point = js.native
+    /**
+      * 是否可以执行某一 overlap
+      * @param name
+      */
+    /* private */ var canProcessOverlap: Any = js.native
+    
+    /* private */ var getCirclePoint: Any = js.native
+    
+    /* protected */ def getTickPoint(tickValue: Any): Point = js.native
   }
 }

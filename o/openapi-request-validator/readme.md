@@ -1,7 +1,7 @@
 
 # Scala.js typings for openapi-request-validator
 
-Typings are for version 7.2.0
+Typings are for version 12.0.2
 
 ## Library description:
 Validate request properties against an OpenAPI spec.
@@ -10,10 +10,10 @@ Validate request properties against an OpenAPI spec.
 | ------------------ | :-------------: |
 | Full name          | openapi-request-validator |
 | Keywords           | openapi, validator, jsonschema |
-| # releases         | 15 |
-| # dependents       | 9 |
-| # downloads        | 1014208 |
-| # stars            | 0 |
+| # releases         | 19 |
+| # dependents       | 0.0 |
+| # downloads        | 147292.66666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/kogosoftwarellc/open-api/tree/master/packages/openapi-request-validator#readme)

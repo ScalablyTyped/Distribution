@@ -35,7 +35,7 @@ trait GooglePrivacyDlpV2CustomInfoType extends StObject {
   var storedType: js.UndefOr[GooglePrivacyDlpV2StoredType] = js.undefined
   
   /** Message for detecting output from deidentification transformations that support reversing. */
-  var surrogateType: js.UndefOr[js.Any] = js.undefined
+  var surrogateType: js.UndefOr[Any] = js.undefined
 }
 object GooglePrivacyDlpV2CustomInfoType {
   
@@ -50,7 +50,7 @@ object GooglePrivacyDlpV2CustomInfoType {
     
     inline def setDetectionRulesUndefined: Self = StObject.set(x, "detectionRules", js.undefined)
     
-    inline def setDetectionRulesVarargs(value: GooglePrivacyDlpV2DetectionRule*): Self = StObject.set(x, "detectionRules", js.Array(value :_*))
+    inline def setDetectionRulesVarargs(value: GooglePrivacyDlpV2DetectionRule*): Self = StObject.set(x, "detectionRules", js.Array(value*))
     
     inline def setDictionary(value: GooglePrivacyDlpV2Dictionary): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
     
@@ -76,7 +76,7 @@ object GooglePrivacyDlpV2CustomInfoType {
     
     inline def setStoredTypeUndefined: Self = StObject.set(x, "storedType", js.undefined)
     
-    inline def setSurrogateType(value: js.Any): Self = StObject.set(x, "surrogateType", value.asInstanceOf[js.Any])
+    inline def setSurrogateType(value: Any): Self = StObject.set(x, "surrogateType", value.asInstanceOf[js.Any])
     
     inline def setSurrogateTypeUndefined: Self = StObject.set(x, "surrogateType", js.undefined)
   }

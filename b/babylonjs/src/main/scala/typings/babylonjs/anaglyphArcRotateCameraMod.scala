@@ -11,7 +11,7 @@ object anaglyphArcRotateCameraMod {
   
   @JSImport("babylonjs/Cameras/Stereoscopic/anaglyphArcRotateCamera", "AnaglyphArcRotateCamera")
   @js.native
-  class AnaglyphArcRotateCamera protected () extends ArcRotateCamera {
+  open class AnaglyphArcRotateCamera protected () extends ArcRotateCamera {
     /**
       * Creates a new AnaglyphArcRotateCamera
       * @param name defines camera name
@@ -28,8 +28,18 @@ object anaglyphArcRotateCameraMod {
       beta: Double,
       radius: Double,
       target: Vector3,
+      interaxialDistance: Double
+    ) = this()
+    def this(
+      name: String,
+      alpha: Double,
+      beta: Double,
+      radius: Double,
+      target: Vector3,
       interaxialDistance: Double,
       scene: Scene
     ) = this()
+    
+    /* protected */ var _setRigMode: Any = js.native
   }
 }

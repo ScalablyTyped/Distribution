@@ -25,6 +25,6 @@ object IValidationResult {
     
     inline def setValidationErrorsUndefined: Self = StObject.set(x, "validationErrors", js.undefined)
     
-    inline def setValidationErrorsVarargs(value: IValidationError*): Self = StObject.set(x, "validationErrors", js.Array(value :_*))
+    inline def setValidationErrorsVarargs(value: IValidationError*): Self = StObject.set(x, "validationErrors", js.Array(value*))
   }
 }

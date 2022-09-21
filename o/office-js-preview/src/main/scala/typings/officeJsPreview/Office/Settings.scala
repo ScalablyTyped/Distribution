@@ -33,7 +33,7 @@ trait Settings extends StObject {
     *
     * @remarks
     *
-    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
+    * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
     *
     * You can add multiple event handlers for the specified eventType as long as the name of each event handler function is unique.
     *
@@ -65,22 +65,18 @@ trait Settings extends StObject {
     *   </tr>
     * </table>
     */
-  def addHandlerAsync(eventType: EventType, handler: js.Any): Unit = js.native
+  def addHandlerAsync(eventType: EventType, handler: Any): Unit = js.native
+  def addHandlerAsync(eventType: EventType, handler: Any, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
   def addHandlerAsync(
     eventType: EventType,
-    handler: js.Any,
-    callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
-  def addHandlerAsync(
-    eventType: EventType,
-    handler: js.Any,
+    handler: Any,
     options: Unit,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
-  def addHandlerAsync(eventType: EventType, handler: js.Any, options: AsyncContextOptions): Unit = js.native
+  def addHandlerAsync(eventType: EventType, handler: Any, options: AsyncContextOptions): Unit = js.native
   def addHandlerAsync(
     eventType: EventType,
-    handler: js.Any,
+    handler: Any,
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
@@ -90,19 +86,19 @@ trait Settings extends StObject {
     *
     * @remarks
     *
-    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#settings | Settings}
+    * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#settings | Settings}
     *
     * @param settingName The case-sensitive name of the setting to retrieve.
     * @returns An object that has property names mapped to JSON serialized values.
     */
-  def get(name: String): js.Any = js.native
+  def get(name: String): Any = js.native
   
   /**
     * Reads all settings persisted in the document and refreshes the content or task pane add-in's copy of those settings held in memory.
     *
     * @remarks
     *
-    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
+    * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
     *
     * This method is useful in Excel, Word, and PowerPoint coauthoring scenarios when multiple instances of the same add-in are working against
     * the same document. Because each add-in is working against an in-memory copy of the settings loaded from the document at the time the user
@@ -151,7 +147,7 @@ trait Settings extends StObject {
     *
     * @remarks
     *
-    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#settings | Settings}
+    * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#settings | Settings}
     *
     * null is a valid value for a setting. Therefore, assigning null to the setting will not remove it from the settings property bag.
     *
@@ -164,7 +160,7 @@ trait Settings extends StObject {
     *
     * @remarks
     *
-    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
+    * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
     *
     * If the optional handler parameter is omitted when calling the removeHandlerAsync method, all event handlers for the specified eventType
     * will be removed.
@@ -194,7 +190,7 @@ trait Settings extends StObject {
     *
     * @remarks
     *
-    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#settings | Settings}
+    * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#settings | Settings}
     *
     * Any settings previously saved by an add-in are loaded when it is initialized, so during the lifetime of the session you can just use the
     * set and get methods to work with the in-memory copy of the settings property bag. When you want to persist the settings so that they are
@@ -247,7 +243,7 @@ trait Settings extends StObject {
     *
     * @remarks
     *
-    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#settings | Settings}
+    * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#settings | Settings}
     *
     * The set method creates a new setting of the specified name if it does not already exist, or sets an existing setting of the specified name
     * in the in-memory copy of the settings property bag. After you call the Settings.saveAsync method, the value is stored in the document as
@@ -256,5 +252,5 @@ trait Settings extends StObject {
     * @param settingName The case-sensitive name of the setting to set or create.
     * @param value Specifies the value to be stored.
     */
-  def set(name: String, value: js.Any): Unit = js.native
+  def set(name: String, value: Any): Unit = js.native
 }

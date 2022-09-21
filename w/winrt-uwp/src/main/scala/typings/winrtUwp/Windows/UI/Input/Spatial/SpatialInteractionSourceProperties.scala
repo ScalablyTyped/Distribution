@@ -6,27 +6,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SpatialInteractionSourceProperties extends StObject {
   
-  var sourceLossRisk: js.Any
+  var sourceLossRisk: Any
   
   /* unmapped type */
-  var tryGetLocation: js.Any
+  var tryGetLocation: Any
   
   /* unmapped type */
-  var tryGetSourceLossMitigationDirection: js.Any
+  var tryGetSourceLossMitigationDirection: Any
 }
 object SpatialInteractionSourceProperties {
   
-  inline def apply(sourceLossRisk: js.Any, tryGetLocation: js.Any, tryGetSourceLossMitigationDirection: js.Any): SpatialInteractionSourceProperties = {
+  inline def apply(sourceLossRisk: Any, tryGetLocation: Any, tryGetSourceLossMitigationDirection: Any): SpatialInteractionSourceProperties = {
     val __obj = js.Dynamic.literal(sourceLossRisk = sourceLossRisk.asInstanceOf[js.Any], tryGetLocation = tryGetLocation.asInstanceOf[js.Any], tryGetSourceLossMitigationDirection = tryGetSourceLossMitigationDirection.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpatialInteractionSourceProperties]
   }
   
   extension [Self <: SpatialInteractionSourceProperties](x: Self) {
     
-    inline def setSourceLossRisk(value: js.Any): Self = StObject.set(x, "sourceLossRisk", value.asInstanceOf[js.Any])
+    inline def setSourceLossRisk(value: Any): Self = StObject.set(x, "sourceLossRisk", value.asInstanceOf[js.Any])
     
-    inline def setTryGetLocation(value: js.Any): Self = StObject.set(x, "tryGetLocation", value.asInstanceOf[js.Any])
+    inline def setTryGetLocation(value: Any): Self = StObject.set(x, "tryGetLocation", value.asInstanceOf[js.Any])
     
-    inline def setTryGetSourceLossMitigationDirection(value: js.Any): Self = StObject.set(x, "tryGetSourceLossMitigationDirection", value.asInstanceOf[js.Any])
+    inline def setTryGetSourceLossMitigationDirection(value: Any): Self = StObject.set(x, "tryGetSourceLossMitigationDirection", value.asInstanceOf[js.Any])
   }
 }

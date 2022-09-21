@@ -3,6 +3,7 @@ package typings.ol
 import typings.ol.conditionMod.Condition
 import typings.ol.coordinateMod.Coordinate
 import typings.ol.eventsMod.EventsKey
+import typings.ol.olStrings.boxcancel
 import typings.ol.olStrings.boxdrag
 import typings.ol.olStrings.boxend
 import typings.ol.olStrings.boxstart
@@ -16,8 +17,26 @@ object dragBoxMod {
   
   @JSImport("ol/interaction/DragBox", JSImport.Default)
   @js.native
-  class default () extends DragBox {
+  open class default () extends DragBox {
     def this(opt_options: Options) = this()
+  }
+  
+  @JSImport("ol/interaction/DragBox", "DragBoxEvent")
+  @js.native
+  open class DragBoxEvent protected ()
+    extends typings.ol.eventMod.default {
+    def this(
+      `type`: String,
+      coordinate: Coordinate,
+      mapBrowserEvent: typings.ol.mapBrowserEventMod.default[UIEvent]
+    ) = this()
+    
+    /**
+      * The coordinate of the drag event.
+      */
+    var coordinate: Coordinate = js.native
+    
+    var mapBrowserEvent: typings.ol.mapBrowserEventMod.default[UIEvent] = js.native
   }
   
   @js.native
@@ -45,12 +64,16 @@ object dragBoxMod {
     def onBoxEnd(event: typings.ol.mapBrowserEventMod.default[UIEvent]): Unit = js.native
     
     @JSName("on")
+    def on_boxcancel(`type`: boxcancel, listener: js.Function1[/* evt */ DragBoxEvent, Unit]): EventsKey = js.native
+    @JSName("on")
     def on_boxdrag(`type`: boxdrag, listener: js.Function1[/* evt */ DragBoxEvent, Unit]): EventsKey = js.native
     @JSName("on")
     def on_boxend(`type`: boxend, listener: js.Function1[/* evt */ DragBoxEvent, Unit]): EventsKey = js.native
     @JSName("on")
     def on_boxstart(`type`: boxstart, listener: js.Function1[/* evt */ DragBoxEvent, Unit]): EventsKey = js.native
     
+    @JSName("once")
+    def once_boxcancel(`type`: boxcancel, listener: js.Function1[/* evt */ DragBoxEvent, Unit]): EventsKey = js.native
     @JSName("once")
     def once_boxdrag(`type`: boxdrag, listener: js.Function1[/* evt */ DragBoxEvent, Unit]): EventsKey = js.native
     @JSName("once")
@@ -59,6 +82,8 @@ object dragBoxMod {
     def once_boxstart(`type`: boxstart, listener: js.Function1[/* evt */ DragBoxEvent, Unit]): EventsKey = js.native
     
     @JSName("un")
+    def un_boxcancel(`type`: boxcancel, listener: js.Function1[/* evt */ DragBoxEvent, Unit]): Unit = js.native
+    @JSName("un")
     def un_boxdrag(`type`: boxdrag, listener: js.Function1[/* evt */ DragBoxEvent, Unit]): Unit = js.native
     @JSName("un")
     def un_boxend(`type`: boxend, listener: js.Function1[/* evt */ DragBoxEvent, Unit]): Unit = js.native
@@ -66,20 +91,8 @@ object dragBoxMod {
     def un_boxstart(`type`: boxstart, listener: js.Function1[/* evt */ DragBoxEvent, Unit]): Unit = js.native
   }
   
-  @js.native
-  trait DragBoxEvent
-    extends typings.ol.eventMod.default {
-    
-    /**
-      * The coordinate of the drag event.
-      */
-    var coordinate: Coordinate = js.native
-    
-    var mapBrowserEvent: typings.ol.mapBrowserEventMod.default[UIEvent] = js.native
-  }
-  
   type EndCondition = js.ThisFunction3[
-    /* this */ js.Any, 
+    /* this */ Any, 
     /* p0 */ typings.ol.mapBrowserEventMod.default[UIEvent], 
     /* p1 */ Pixel, 
     /* p2 */ Pixel, 

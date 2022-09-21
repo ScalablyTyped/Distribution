@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.RuntimeAnimation")
 @js.native
-class RuntimeAnimation protected ()
+open class RuntimeAnimation protected ()
   extends StObject
      with typings.babylonjs.BABYLON.RuntimeAnimation {
   /**
@@ -17,7 +17,7 @@ class RuntimeAnimation protected ()
     * @param host defines the initiating Animatable
     */
   def this(
-    target: js.Any,
+    target: Any,
     animation: typings.babylonjs.BABYLON.Animation,
     scene: typings.babylonjs.BABYLON.Scene,
     host: typings.babylonjs.BABYLON.Animatable

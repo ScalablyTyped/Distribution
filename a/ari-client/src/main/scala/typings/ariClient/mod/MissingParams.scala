@@ -25,6 +25,6 @@ object MissingParams {
     
     inline def setParams(value: String | js.Array[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    inline def setParamsVarargs(value: String*): Self = StObject.set(x, "params", js.Array(value :_*))
+    inline def setParamsVarargs(value: String*): Self = StObject.set(x, "params", js.Array(value*))
   }
 }

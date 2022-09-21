@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ValidationError extends StObject {
   
-  var context: js.Any
+  var context: Any
   
   var errorMessage: String
   
@@ -23,7 +23,7 @@ trait ValidationError extends StObject {
 object ValidationError {
   
   inline def apply(
-    context: js.Any,
+    context: Any,
     errorMessage: String,
     getKey: (Validator, String) => String,
     key: String,
@@ -37,7 +37,7 @@ object ValidationError {
   
   extension [Self <: ValidationError](x: Self) {
     
-    inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     

@@ -6,19 +6,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typedoc", "Renderer")
 @js.native
-class Renderer protected ()
-  extends typings.typedoc.rendererMod.Renderer {
-  def this(owner: js.Symbol) = this()
+open class Renderer protected ()
+  extends typings.typedoc.outputMod.Renderer {
+  /**
+    * Create new Component instance.
+    */
   def this(owner: typings.typedoc.applicationMod.Application) = this()
 }
 /* static members */
 object Renderer {
   
-  @JSImport("typedoc", "Renderer")
+  /** @event */
+  @JSImport("typedoc", "Renderer.EVENT_BEGIN")
   @js.native
-  val ^ : js.Any = js.native
+  val EVENT_BEGIN: /* "beginRender" */ String = js.native
   
-  inline def getDefaultTheme(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultTheme")().asInstanceOf[String]
+  /** @event */
+  @JSImport("typedoc", "Renderer.EVENT_BEGIN_PAGE")
+  @js.native
+  val EVENT_BEGIN_PAGE: /* "beginPage" */ String = js.native
   
-  inline def getThemeDirectory(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemeDirectory")().asInstanceOf[String]
+  /** @event */
+  @JSImport("typedoc", "Renderer.EVENT_END")
+  @js.native
+  val EVENT_END: /* "endRender" */ String = js.native
+  
+  /** @event */
+  @JSImport("typedoc", "Renderer.EVENT_END_PAGE")
+  @js.native
+  val EVENT_END_PAGE: /* "endPage" */ String = js.native
+  
+  /** @event */
+  @JSImport("typedoc", "Renderer.EVENT_PREPARE_INDEX")
+  @js.native
+  val EVENT_PREPARE_INDEX: /* "prepareIndex" */ String = js.native
 }

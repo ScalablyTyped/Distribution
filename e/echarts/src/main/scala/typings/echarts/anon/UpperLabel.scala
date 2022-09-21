@@ -9,7 +9,7 @@ trait UpperLabel extends StObject {
   /**
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.emphasis.itemStyle
     */
-  var itemStyle: js.UndefOr[`25`] = js.undefined
+  var itemStyle: js.UndefOr[`26`] = js.undefined
   
   /**
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.emphasis.label
@@ -30,7 +30,7 @@ object UpperLabel {
   
   extension [Self <: UpperLabel](x: Self) {
     
-    inline def setItemStyle(value: `25`): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
+    inline def setItemStyle(value: `26`): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
     
     inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
     

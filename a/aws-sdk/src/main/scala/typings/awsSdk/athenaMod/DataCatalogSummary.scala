@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DataCatalogSummary extends StObject {
   
   /**
-    * The name of the data catalog.
+    * The name of the data catalog. The catalog name is unique for the Amazon Web Services account and can use a maximum of 127 alphanumeric, underscore, at sign, or hyphen characters. The remainder of the length constraint of 256 is reserved for use by Athena.
     */
   var CatalogName: js.UndefOr[CatalogNameString] = js.undefined
   

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientNavBarGroup")
 @js.native
-class ASPxClientNavBarGroup ()
+open class ASPxClientNavBarGroup ()
   extends StObject
      with typings.devexpressWeb.ASPxClientNavBarGroup {
   

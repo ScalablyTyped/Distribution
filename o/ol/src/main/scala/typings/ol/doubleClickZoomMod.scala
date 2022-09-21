@@ -8,7 +8,7 @@ object doubleClickZoomMod {
   
   @JSImport("ol/interaction/DoubleClickZoom", JSImport.Default)
   @js.native
-  class default () extends DoubleClickZoom {
+  open class default () extends DoubleClickZoom {
     def this(opt_options: Options) = this()
   }
   

@@ -1,6 +1,6 @@
 package typings.nodeSass.mod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.nodeSass.anon.Duration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

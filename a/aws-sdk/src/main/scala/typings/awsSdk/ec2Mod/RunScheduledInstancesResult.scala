@@ -24,6 +24,6 @@ object RunScheduledInstancesResult {
     
     inline def setInstanceIdSetUndefined: Self = StObject.set(x, "InstanceIdSet", js.undefined)
     
-    inline def setInstanceIdSetVarargs(value: InstanceId*): Self = StObject.set(x, "InstanceIdSet", js.Array(value :_*))
+    inline def setInstanceIdSetVarargs(value: InstanceId*): Self = StObject.set(x, "InstanceIdSet", js.Array(value*))
   }
 }

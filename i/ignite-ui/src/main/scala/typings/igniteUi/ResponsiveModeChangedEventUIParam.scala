@@ -14,7 +14,7 @@ trait ResponsiveModeChangedEventUIParam extends StObject {
   /**
     * Gets the reference to the igGridResponsive widget.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets the previously assumed mode.
@@ -34,7 +34,7 @@ object ResponsiveModeChangedEventUIParam {
     
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     

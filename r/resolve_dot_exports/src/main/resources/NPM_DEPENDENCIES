@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "resolve.exports" : "1.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "resolve.exports" : "1.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

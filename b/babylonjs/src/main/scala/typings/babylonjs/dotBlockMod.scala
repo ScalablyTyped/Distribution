@@ -10,7 +10,7 @@ object dotBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/dotBlock", "DotBlock")
   @js.native
-  class DotBlock protected () extends NodeMaterialBlock {
+  open class DotBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new DotBlock
       * @param name defines the block name

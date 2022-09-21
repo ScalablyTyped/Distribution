@@ -12,7 +12,7 @@ object tilegridTileGridMod {
   
   @JSImport("ol/tilegrid/TileGrid", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with TileGrid {
     def this(options: Options) = this()
@@ -57,23 +57,23 @@ object tilegridTileGridMod {
       
       inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
       
-      inline def setOriginVarargs(value: Double*): Self = StObject.set(x, "origin", js.Array(value :_*))
+      inline def setOriginVarargs(value: Double*): Self = StObject.set(x, "origin", js.Array(value*))
       
       inline def setOrigins(value: js.Array[Coordinate]): Self = StObject.set(x, "origins", value.asInstanceOf[js.Any])
       
       inline def setOriginsUndefined: Self = StObject.set(x, "origins", js.undefined)
       
-      inline def setOriginsVarargs(value: Coordinate*): Self = StObject.set(x, "origins", js.Array(value :_*))
+      inline def setOriginsVarargs(value: Coordinate*): Self = StObject.set(x, "origins", js.Array(value*))
       
       inline def setResolutions(value: js.Array[Double]): Self = StObject.set(x, "resolutions", value.asInstanceOf[js.Any])
       
-      inline def setResolutionsVarargs(value: Double*): Self = StObject.set(x, "resolutions", js.Array(value :_*))
+      inline def setResolutionsVarargs(value: Double*): Self = StObject.set(x, "resolutions", js.Array(value*))
       
       inline def setSizes(value: js.Array[Size]): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
       
       inline def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
       
-      inline def setSizesVarargs(value: Size*): Self = StObject.set(x, "sizes", js.Array(value :_*))
+      inline def setSizesVarargs(value: Size*): Self = StObject.set(x, "sizes", js.Array(value*))
       
       inline def setTileSize(value: Double | Size): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
       
@@ -83,7 +83,7 @@ object tilegridTileGridMod {
       
       inline def setTileSizesUndefined: Self = StObject.set(x, "tileSizes", js.undefined)
       
-      inline def setTileSizesVarargs(value: Size*): Self = StObject.set(x, "tileSizes", js.Array(value :_*))
+      inline def setTileSizesVarargs(value: Size*): Self = StObject.set(x, "tileSizes", js.Array(value*))
     }
   }
   

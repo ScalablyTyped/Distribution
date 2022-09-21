@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BundlesListResponse extends StObject {
   
-  /** All bundles. */
+  /** All app bundles. */
   var bundles: js.UndefOr[js.Array[Bundle]] = js.undefined
   
   /** The kind of this response ("androidpublisher#bundlesListResponse"). */
@@ -25,7 +25,7 @@ object BundlesListResponse {
     
     inline def setBundlesUndefined: Self = StObject.set(x, "bundles", js.undefined)
     
-    inline def setBundlesVarargs(value: Bundle*): Self = StObject.set(x, "bundles", js.Array(value :_*))
+    inline def setBundlesVarargs(value: Bundle*): Self = StObject.set(x, "bundles", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

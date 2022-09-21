@@ -22,7 +22,7 @@ trait IMetadataCardValue extends StObject {
   
   val Name: String
   
-  val State: js.Any
+  val State: Any
   
   val Version: Double
 }
@@ -37,7 +37,7 @@ object IMetadataCardValue {
     IsMultiValue: Boolean,
     Item: Double,
     Name: String,
-    State: js.Any,
+    State: Any,
     Version: Double
   ): IMetadataCardValue = {
     val __obj = js.Dynamic.literal(HasIcon = HasIcon.asInstanceOf[js.Any], ID = ID.asInstanceOf[js.Any], IconURL = IconURL.asInstanceOf[js.Any], IsDeleted = js.Any.fromFunction0(IsDeleted), IsHidden = js.Any.fromFunction0(IsHidden), IsMultiValue = IsMultiValue.asInstanceOf[js.Any], Item = Item.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
@@ -62,7 +62,7 @@ object IMetadataCardValue {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setState(value: js.Any): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: Any): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     inline def setVersion(value: Double): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
   }

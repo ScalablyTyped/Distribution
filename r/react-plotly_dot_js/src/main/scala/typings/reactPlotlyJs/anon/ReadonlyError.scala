@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Readonly<std.Error> */
 trait ReadonlyError extends StObject {
   
+  val cause: js.UndefOr[Any] = js.undefined
+  
   val message: String
   
   val name: String
@@ -21,6 +23,10 @@ object ReadonlyError {
   }
   
   extension [Self <: ReadonlyError](x: Self) {
+    
+    inline def setCause(value: Any): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+    
+    inline def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

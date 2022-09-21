@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLPerformance")
 @js.native
-/* private */ class HTMLPerformance ()
+/* private */ open class HTMLPerformance ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLPerformance {
   
@@ -21,5 +21,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val timing: typings.activexMshtml.MSHTML.IHTMLPerformanceTiming = js.native
   
   /* CompleteClass */
-  override def toJSON(): js.Any = js.native
+  override def toJSON(): Any = js.native
 }

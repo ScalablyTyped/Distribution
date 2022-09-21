@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("johnny-five", "Motor")
 @js.native
-class Motor protected () extends StObject {
+open class Motor protected () extends StObject {
   def this(option: js.Array[Double]) = this()
   def this(option: MotorOption) = this()
   

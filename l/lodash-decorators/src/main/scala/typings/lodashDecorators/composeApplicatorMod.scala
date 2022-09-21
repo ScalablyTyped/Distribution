@@ -10,10 +10,10 @@ object composeApplicatorMod {
   
   @JSImport("lodash-decorators/applicators/ComposeApplicator", "ComposeApplicator")
   @js.native
-  class ComposeApplicator () extends Applicator {
+  open class ComposeApplicator () extends Applicator {
     def this(_config: Post) = this()
     
-    /* private */ var _config: js.Any = js.native
+    /* private */ var _config: Any = js.native
     
     val post: Boolean = js.native
   }

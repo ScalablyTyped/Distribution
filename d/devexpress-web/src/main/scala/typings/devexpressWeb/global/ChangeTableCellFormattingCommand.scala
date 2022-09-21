@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ChangeTableCellFormattingCommand")
 @js.native
-class ChangeTableCellFormattingCommand ()
+open class ChangeTableCellFormattingCommand ()
   extends StObject
      with typings.devexpressWeb.ChangeTableCellFormattingCommand {
   

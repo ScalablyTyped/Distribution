@@ -10,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AqlError
   extends StObject
      with Error
-     with Instantiable1[/* message */ String, Error]
+     with Instantiable1[/* message */ String, js.Error]

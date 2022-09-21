@@ -10,10 +10,10 @@ File edition helpers working on top of mem-fs
 | ------------------ | :-------------: |
 | Full name          | mem-fs-editor |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 287 |
-| # downloads        | 24368797 |
-| # stars            | 5 |
+| # releases         | 13 |
+| # dependents       | 0.0 |
+| # downloads        | 3679152.6666666665 |
+| # stars            | 387.0 |
 
 ## Links
 - [Homepage](https://github.com/SBoudrias/mem-fs-editor#readme)

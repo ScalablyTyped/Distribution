@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AssumedRole extends StObject {
   
   /**
-    * The AWS access key ID that identifies the credentials.
+    * The Amazon Web Services access key ID that identifies the credentials.
     */
   var accessKeyId: js.UndefOr[string] = js.undefined
   
   /**
-    * The unique identifier for the AWS account that owns the entity that was used to get the credentials.
+    * The unique identifier for the Amazon Web Services account that owns the entity that was used to get the credentials.
     */
   var accountId: js.UndefOr[string] = js.undefined
   

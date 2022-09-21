@@ -25,12 +25,12 @@ object TimeSeriesDescriptor {
     
     inline def setLabelDescriptorsUndefined: Self = StObject.set(x, "labelDescriptors", js.undefined)
     
-    inline def setLabelDescriptorsVarargs(value: LabelDescriptor*): Self = StObject.set(x, "labelDescriptors", js.Array(value :_*))
+    inline def setLabelDescriptorsVarargs(value: LabelDescriptor*): Self = StObject.set(x, "labelDescriptors", js.Array(value*))
     
     inline def setPointDescriptors(value: js.Array[ValueDescriptor]): Self = StObject.set(x, "pointDescriptors", value.asInstanceOf[js.Any])
     
     inline def setPointDescriptorsUndefined: Self = StObject.set(x, "pointDescriptors", js.undefined)
     
-    inline def setPointDescriptorsVarargs(value: ValueDescriptor*): Self = StObject.set(x, "pointDescriptors", js.Array(value :_*))
+    inline def setPointDescriptorsVarargs(value: ValueDescriptor*): Self = StObject.set(x, "pointDescriptors", js.Array(value*))
   }
 }

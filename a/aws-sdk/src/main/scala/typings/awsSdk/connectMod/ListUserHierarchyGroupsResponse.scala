@@ -33,6 +33,6 @@ object ListUserHierarchyGroupsResponse {
     
     inline def setUserHierarchyGroupSummaryListUndefined: Self = StObject.set(x, "UserHierarchyGroupSummaryList", js.undefined)
     
-    inline def setUserHierarchyGroupSummaryListVarargs(value: HierarchyGroupSummary*): Self = StObject.set(x, "UserHierarchyGroupSummaryList", js.Array(value :_*))
+    inline def setUserHierarchyGroupSummaryListVarargs(value: HierarchyGroupSummary*): Self = StObject.set(x, "UserHierarchyGroupSummaryList", js.Array(value*))
   }
 }

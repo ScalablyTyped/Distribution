@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("MenuItemClickedEventArgs")
 @js.native
-class MenuItemClickedEventArgs protected ()
+open class MenuItemClickedEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.MenuItemClickedEventArgs {
   /**

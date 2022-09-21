@@ -15,6 +15,10 @@ object maximMazurokGapiClientIamStrings {
   inline def Status: Status = "Status".asInstanceOf[Status]
   
   @js.native
+  sealed trait WorkloadIdentityPoolProvider extends StObject
+  inline def WorkloadIdentityPoolProvider: WorkloadIdentityPoolProvider = "WorkloadIdentityPoolProvider".asInstanceOf[WorkloadIdentityPoolProvider]
+  
+  @js.native
   sealed trait iam extends StObject
   inline def iam: iam = "iam".asInstanceOf[iam]
   

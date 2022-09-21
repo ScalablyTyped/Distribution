@@ -321,7 +321,7 @@ trait FullPageJsOptions extends StObject {
   /**
     * when using scrollOverflow:true fullpage.js will make use of a forked and modified version of iScroll.js libary. You can customize the scrolling behaviour by providing fullpage.js with the iScroll.js options you want to use. Check its documentation for more info.
     */
-  var scrollOverflowOptions: js.UndefOr[js.Any] = js.undefined
+  var scrollOverflowOptions: js.UndefOr[Any] = js.undefined
   
   /**
     * When set to true it scrolls up the content of the section/slide with scroll bar when leaving to another vertical section. This way the section/slide will always show the start of its content even when scrolling from a section under it
@@ -409,7 +409,7 @@ object FullPageJsOptions {
     
     inline def setAnchorsUndefined: Self = StObject.set(x, "anchors", js.undefined)
     
-    inline def setAnchorsVarargs(value: String*): Self = StObject.set(x, "anchors", js.Array(value :_*))
+    inline def setAnchorsVarargs(value: String*): Self = StObject.set(x, "anchors", js.Array(value*))
     
     inline def setAnimateAnchor(value: Boolean): Self = StObject.set(x, "animateAnchor", value.asInstanceOf[js.Any])
     
@@ -481,7 +481,7 @@ object FullPageJsOptions {
     
     inline def setInterlockedSlidesUndefined: Self = StObject.set(x, "interlockedSlides", js.undefined)
     
-    inline def setInterlockedSlidesVarargs(value: Double*): Self = StObject.set(x, "interlockedSlides", js.Array(value :_*))
+    inline def setInterlockedSlidesVarargs(value: Double*): Self = StObject.set(x, "interlockedSlides", js.Array(value*))
     
     inline def setKeyboardScrolling(value: Boolean): Self = StObject.set(x, "keyboardScrolling", value.asInstanceOf[js.Any])
     
@@ -521,7 +521,7 @@ object FullPageJsOptions {
     
     inline def setNavigationTooltipsUndefined: Self = StObject.set(x, "navigationTooltips", js.undefined)
     
-    inline def setNavigationTooltipsVarargs(value: String*): Self = StObject.set(x, "navigationTooltips", js.Array(value :_*))
+    inline def setNavigationTooltipsVarargs(value: String*): Self = StObject.set(x, "navigationTooltips", js.Array(value*))
     
     inline def setNavigationUndefined: Self = StObject.set(x, "navigation", js.undefined)
     
@@ -597,7 +597,7 @@ object FullPageJsOptions {
     
     inline def setScrollOverflow(value: Boolean): Self = StObject.set(x, "scrollOverflow", value.asInstanceOf[js.Any])
     
-    inline def setScrollOverflowOptions(value: js.Any): Self = StObject.set(x, "scrollOverflowOptions", value.asInstanceOf[js.Any])
+    inline def setScrollOverflowOptions(value: Any): Self = StObject.set(x, "scrollOverflowOptions", value.asInstanceOf[js.Any])
     
     inline def setScrollOverflowOptionsUndefined: Self = StObject.set(x, "scrollOverflowOptions", js.undefined)
     
@@ -619,7 +619,7 @@ object FullPageJsOptions {
     
     inline def setSectionsColorUndefined: Self = StObject.set(x, "sectionsColor", js.undefined)
     
-    inline def setSectionsColorVarargs(value: String*): Self = StObject.set(x, "sectionsColor", js.Array(value :_*))
+    inline def setSectionsColorVarargs(value: String*): Self = StObject.set(x, "sectionsColor", js.Array(value*))
     
     inline def setShowActiveTooltip(value: Boolean): Self = StObject.set(x, "showActiveTooltip", value.asInstanceOf[js.Any])
     

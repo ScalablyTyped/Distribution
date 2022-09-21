@@ -10,10 +10,10 @@ USB HID device access library
 | ------------------ | :-------------: |
 | Full name          | node-hid |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 208 |
-| # downloads        | 862732 |
-| # stars            | 18 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 252121.66666666666 |
+| # stars            | 1232.0 |
 
 ## Links
 - [Homepage](https://github.com/node-hid/node-hid#readme)

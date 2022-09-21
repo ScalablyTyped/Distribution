@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientVerticalGridRowCancelEventArgs")
 @js.native
-class ASPxClientVerticalGridRowCancelEventArgs protected ()
+open class ASPxClientVerticalGridRowCancelEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientVerticalGridRowCancelEventArgs {
   /**
@@ -19,7 +19,7 @@ class ASPxClientVerticalGridRowCancelEventArgs protected ()
   def this(row: typings.devexpressWeb.ASPxClientVerticalGridRow) = this()
   
   /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
+    * Specifies whether to cancel the related action (for example, row edit, export).
     */
   /* CompleteClass */
   var cancel: Boolean = js.native

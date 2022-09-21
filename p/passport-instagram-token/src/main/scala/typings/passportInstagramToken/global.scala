@@ -1,11 +1,10 @@
 package typings.passportInstagramToken
 
 import typings.express.mod.Request_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.passportInstagramToken.mod.Profile
 import typings.passportInstagramToken.mod.StrategyOption
 import typings.passportInstagramToken.mod.StrategyOptionWithRequest
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,16 +15,22 @@ object global {
     
     @JSGlobal("Strategy.Strategy")
     @js.native
-    class Strategy protected ()
+    open class Strategy protected ()
       extends typings.passportInstagramToken.mod.Strategy {
       def this(
         options: StrategyOptionWithRequest,
         verify: js.Function5[
-                /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+                /* req */ Request_[
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+                  Any, 
+                  Any, 
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+                  Record[String, Any]
+                ], 
                 /* accessToken */ String, 
                 /* refreshToken */ String, 
                 /* profile */ Profile, 
-                /* done */ js.Function2[/* error */ js.Any, /* user */ js.UndefOr[js.Any], Unit], 
+                /* done */ js.Function2[/* error */ Any, /* user */ js.UndefOr[Any], Unit], 
                 Unit
               ]
       ) = this()
@@ -35,7 +40,7 @@ object global {
                 /* accessToken */ String, 
                 /* refreshToken */ String, 
                 /* profile */ Profile, 
-                /* done */ js.Function2[/* error */ js.Any, /* user */ js.UndefOr[js.Any], Unit], 
+                /* done */ js.Function2[/* error */ Any, /* user */ js.UndefOr[Any], Unit], 
                 Unit
               ]
       ) = this()

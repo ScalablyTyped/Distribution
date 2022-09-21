@@ -23,7 +23,7 @@ object visitorMod {
   
   @JSImport("regexpp/visitor", "RegExpVisitor")
   @js.native
-  class RegExpVisitor protected () extends StObject {
+  open class RegExpVisitor protected () extends StObject {
     def this(handlers: Handlers) = this()
     
     def visit(node: Node): Unit = js.native

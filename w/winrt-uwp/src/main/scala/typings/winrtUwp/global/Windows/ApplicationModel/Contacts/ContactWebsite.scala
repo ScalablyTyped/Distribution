@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactWebsite")
 @js.native
 /** Initializes a new instance of a ContactWebsite class. */
-class ContactWebsite ()
+open class ContactWebsite ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactWebsite {
   
@@ -18,7 +18,7 @@ class ContactWebsite ()
   var description: String = js.native
   
   /* CompleteClass */
-  var rawValue: js.Any = js.native
+  var rawValue: Any = js.native
   
   /* unmapped type */
   /** Gets and sets the Uniform Resource Identifier (URI) of a Web site for a contact. */

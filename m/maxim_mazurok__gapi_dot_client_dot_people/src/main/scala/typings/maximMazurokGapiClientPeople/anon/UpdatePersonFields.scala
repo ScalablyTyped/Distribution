@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientPeople.anon
 
+import typings.maximMazurokGapiClientPeople.gapi.client.people.Person
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,6 +43,9 @@ trait UpdatePersonFields extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
+  /** Request body */
+  var resource: Person
+  
   /** The resource name for the person, assigned by the server. An ASCII string with a max length of 27 characters, in the form of `people/{person_id}`. */
   var resourceName: String
   
@@ -63,8 +67,8 @@ trait UpdatePersonFields extends StObject {
 }
 object UpdatePersonFields {
   
-  inline def apply(resourceName: String): UpdatePersonFields = {
-    val __obj = js.Dynamic.literal(resourceName = resourceName.asInstanceOf[js.Any])
+  inline def apply(resource: Person, resourceName: String): UpdatePersonFields = {
+    val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any], resourceName = resourceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdatePersonFields]
   }
   
@@ -110,13 +114,15 @@ object UpdatePersonFields {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
+    inline def setResource(value: Person): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    
     inline def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
     inline def setSources(value: String | js.Array[String]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
     inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
-    inline def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value*))
     
     inline def setUpdatePersonFields(value: String): Self = StObject.set(x, "updatePersonFields", value.asInstanceOf[js.Any])
     

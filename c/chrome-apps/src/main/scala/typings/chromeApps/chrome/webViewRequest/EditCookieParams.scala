@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * @private
-  * @template T First parameter type
-  * @template K Second parameter type
-  */
 trait EditCookieParams[T, K] extends StObject {
   
   /**

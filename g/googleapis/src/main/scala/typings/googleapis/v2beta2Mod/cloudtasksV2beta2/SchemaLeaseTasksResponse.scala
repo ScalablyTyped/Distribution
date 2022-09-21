@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response message for leasing tasks using LeaseTasks.
-  */
 trait SchemaLeaseTasksResponse extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaLeaseTasksResponse {
     
     inline def setTasksUndefined: Self = StObject.set(x, "tasks", js.undefined)
     
-    inline def setTasksVarargs(value: SchemaTask*): Self = StObject.set(x, "tasks", js.Array(value :_*))
+    inline def setTasksVarargs(value: SchemaTask*): Self = StObject.set(x, "tasks", js.Array(value*))
   }
 }

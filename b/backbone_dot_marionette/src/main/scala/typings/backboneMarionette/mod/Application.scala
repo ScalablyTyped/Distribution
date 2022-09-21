@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("backbone.marionette", "Application")
 @js.native
-class Application () extends Object {
+open class Application () extends Object {
   def this(options: ApplicationOptions) = this()
   
   /**
@@ -19,7 +19,7 @@ class Application () extends Object {
     * attached region. If the Application is not currently displaying a
     * view, this method returns undefined.
     */
-  def getView(): View[js.Any] = js.native
+  def getView(): View[Any] = js.native
   
   /**
     * Called immediately after the Application has been instantiated, and
@@ -46,12 +46,12 @@ class Application () extends Object {
     * Display View in the region attached to the Application. This runs the
     * View lifecycle.
     */
-  def showView(view: View[js.Any]): Unit = js.native
+  def showView(view: View[Any]): Unit = js.native
   
   /**
     * Once you have your application configured, you can kick everything
     * off by calling this method.
     */
   def start(): Unit = js.native
-  def start(options: js.Any): Unit = js.native
+  def start(options: Any): Unit = js.native
 }

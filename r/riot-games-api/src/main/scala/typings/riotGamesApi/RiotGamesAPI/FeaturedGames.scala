@@ -81,7 +81,7 @@ object FeaturedGames {
       
       inline def setBannedChampions(value: js.Array[BannedChampion]): Self = StObject.set(x, "bannedChampions", value.asInstanceOf[js.Any])
       
-      inline def setBannedChampionsVarargs(value: BannedChampion*): Self = StObject.set(x, "bannedChampions", js.Array(value :_*))
+      inline def setBannedChampionsVarargs(value: BannedChampion*): Self = StObject.set(x, "bannedChampions", js.Array(value*))
       
       inline def setGameId(value: Double): Self = StObject.set(x, "gameId", value.asInstanceOf[js.Any])
       
@@ -101,7 +101,7 @@ object FeaturedGames {
       
       inline def setParticipants(value: js.Array[Participant]): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
       
-      inline def setParticipantsVarargs(value: Participant*): Self = StObject.set(x, "participants", js.Array(value :_*))
+      inline def setParticipantsVarargs(value: Participant*): Self = StObject.set(x, "participants", js.Array(value*))
       
       inline def setPlateformId(value: String): Self = StObject.set(x, "plateformId", value.asInstanceOf[js.Any])
     }
@@ -126,7 +126,7 @@ object FeaturedGames {
       
       inline def setGameList(value: js.Array[FeaturedGameInfo]): Self = StObject.set(x, "gameList", value.asInstanceOf[js.Any])
       
-      inline def setGameListVarargs(value: FeaturedGameInfo*): Self = StObject.set(x, "gameList", js.Array(value :_*))
+      inline def setGameListVarargs(value: FeaturedGameInfo*): Self = StObject.set(x, "gameList", js.Array(value*))
     }
   }
   

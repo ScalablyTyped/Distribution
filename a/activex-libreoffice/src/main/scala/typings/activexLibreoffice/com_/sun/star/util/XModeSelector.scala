@@ -38,7 +38,7 @@ object XModeSelector {
     acquire: () => Unit,
     getMode: () => String,
     getSupportedModes: () => SafeArray[String],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setMode: String => Unit,
     supportsMode: String => Boolean

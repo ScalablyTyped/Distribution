@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("postmark", "Models.OutboundMessageClicksFilteringParameters")
 @js.native
-class OutboundMessageClicksFilteringParameters protected ()
+open class OutboundMessageClicksFilteringParameters protected ()
   extends typings.postmark.modelsMod.OutboundMessageClicksFilteringParameters {
   def this(
     count: js.UndefOr[Double],

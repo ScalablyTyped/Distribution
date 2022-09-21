@@ -4,10 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/CircularProgress/CircularProgress.CircularProgressClassKey>> */
+/* Inlined std.Partial<@material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/CircularProgress/CircularProgress.CircularProgressClassKey>> */
 trait PartialClassNameMapCircul extends StObject {
   
   var circle: js.UndefOr[String] = js.undefined
+  
+  var circleDeterminate: js.UndefOr[String] = js.undefined
   
   var circleDisableShrink: js.UndefOr[String] = js.undefined
   
@@ -18,6 +20,8 @@ trait PartialClassNameMapCircul extends StObject {
   var colorPrimary: js.UndefOr[String] = js.undefined
   
   var colorSecondary: js.UndefOr[String] = js.undefined
+  
+  var determinate: js.UndefOr[String] = js.undefined
   
   var indeterminate: js.UndefOr[String] = js.undefined
   
@@ -37,6 +41,10 @@ object PartialClassNameMapCircul {
   extension [Self <: PartialClassNameMapCircul](x: Self) {
     
     inline def setCircle(value: String): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
+    
+    inline def setCircleDeterminate(value: String): Self = StObject.set(x, "circleDeterminate", value.asInstanceOf[js.Any])
+    
+    inline def setCircleDeterminateUndefined: Self = StObject.set(x, "circleDeterminate", js.undefined)
     
     inline def setCircleDisableShrink(value: String): Self = StObject.set(x, "circleDisableShrink", value.asInstanceOf[js.Any])
     
@@ -59,6 +67,10 @@ object PartialClassNameMapCircul {
     inline def setColorSecondary(value: String): Self = StObject.set(x, "colorSecondary", value.asInstanceOf[js.Any])
     
     inline def setColorSecondaryUndefined: Self = StObject.set(x, "colorSecondary", js.undefined)
+    
+    inline def setDeterminate(value: String): Self = StObject.set(x, "determinate", value.asInstanceOf[js.Any])
+    
+    inline def setDeterminateUndefined: Self = StObject.set(x, "determinate", js.undefined)
     
     inline def setIndeterminate(value: String): Self = StObject.set(x, "indeterminate", value.asInstanceOf[js.Any])
     

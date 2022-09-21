@@ -10,19 +10,19 @@ object dialogBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Dialog/Dialog.base", "DialogBase")
   @js.native
-  class DialogBase protected ()
-    extends Component[IDialogProps, js.Object, js.Any] {
+  open class DialogBase protected ()
+    extends Component[IDialogProps, js.Object, Any] {
     def this(props: IDialogProps) = this()
     
-    /* private */ var _defaultSubTextId: js.Any = js.native
+    /* private */ var _defaultSubTextId: Any = js.native
     
-    /* private */ var _defaultTitleTextId: js.Any = js.native
+    /* private */ var _defaultTitleTextId: Any = js.native
     
-    /* private */ var _getSubTextId: js.Any = js.native
+    /* private */ var _getSubTextId: Any = js.native
     
-    /* private */ var _getTitleTextId: js.Any = js.native
+    /* private */ var _getTitleTextId: Any = js.native
     
-    /* private */ var _id: js.Any = js.native
+    /* private */ var _id: Any = js.native
   }
   /* static members */
   object DialogBase {

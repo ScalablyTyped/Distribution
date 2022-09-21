@@ -67,6 +67,8 @@ trait ViewProperties
   /**
     * Use the padding property to make the [center](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#center), and [extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#extent), etc.
     *
+    * @default {left: 0, top: 0, right: 0, bottom: 0}
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#padding)
     */
   var padding: js.UndefOr[ViewPadding] = js.undefined
@@ -74,12 +76,16 @@ trait ViewProperties
   /**
     * The spatial reference of the view.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#spatialReference)
     */
   var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   
   /**
     * The view's time extent.
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#timeExtent)
     */
@@ -98,7 +104,7 @@ object ViewProperties {
     
     inline def setAllLayerViewsUndefined: Self = StObject.set(x, "allLayerViews", js.undefined)
     
-    inline def setAllLayerViewsVarargs(value: LayerViewProperties*): Self = StObject.set(x, "allLayerViews", js.Array(value :_*))
+    inline def setAllLayerViewsVarargs(value: LayerViewProperties*): Self = StObject.set(x, "allLayerViews", js.Array(value*))
     
     inline def setAnimation(value: ViewAnimationProperties): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
@@ -116,13 +122,13 @@ object ViewProperties {
     
     inline def setGraphicsUndefined: Self = StObject.set(x, "graphics", js.undefined)
     
-    inline def setGraphicsVarargs(value: GraphicProperties*): Self = StObject.set(x, "graphics", js.Array(value :_*))
+    inline def setGraphicsVarargs(value: GraphicProperties*): Self = StObject.set(x, "graphics", js.Array(value*))
     
     inline def setLayerViews(value: CollectionProperties[LayerViewProperties]): Self = StObject.set(x, "layerViews", value.asInstanceOf[js.Any])
     
     inline def setLayerViewsUndefined: Self = StObject.set(x, "layerViews", js.undefined)
     
-    inline def setLayerViewsVarargs(value: LayerViewProperties*): Self = StObject.set(x, "layerViews", js.Array(value :_*))
+    inline def setLayerViewsVarargs(value: LayerViewProperties*): Self = StObject.set(x, "layerViews", js.Array(value*))
     
     inline def setMap(value: MapProperties): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     

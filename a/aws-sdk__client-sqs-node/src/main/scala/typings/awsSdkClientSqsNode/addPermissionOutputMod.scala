@@ -8,5 +8,5 @@ object addPermissionOutputMod {
   
   @JSImport("@aws-sdk/client-sqs-node/model/AddPermissionOutput", "AddPermissionOutput")
   @js.native
-  val AddPermissionOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val AddPermissionOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

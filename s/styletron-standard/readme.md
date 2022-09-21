@@ -1,7 +1,7 @@
 
 # Scala.js typings for styletron-standard
 
-Typings are for version 2.0
+Typings are for version 3.1.0
 
 ## Library description:
 Standard interfaces for Styletron
@@ -10,10 +10,10 @@ Standard interfaces for Styletron
 | ------------------ | :-------------: |
 | Full name          | styletron-standard |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 14 |
-| # downloads        | 960144 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 128602.0 |
+| # stars            | 3268.0 |
 
 ## Links
 - [Homepage](https://github.com/styletron/styletron#readme)
@@ -24,7 +24,7 @@ Standard interfaces for Styletron
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -13,7 +13,7 @@ trait KeysBoundTo extends StObject {
   
   val CommandParameter: String = js.native
   
-  val Context: js.Any = js.native
+  val Context: Any = js.native
   
   val Count: Double = js.native
   
@@ -22,11 +22,11 @@ trait KeysBoundTo extends StObject {
   def Item(Index: Double): KeyBinding = js.native
   
   def Key(KeyCode: Double): KeyBinding = js.native
-  def Key(KeyCode: Double, KeyCode2: js.Any): KeyBinding = js.native
+  def Key(KeyCode: Double, KeyCode2: Any): KeyBinding = js.native
   
   val KeyCategory: WdKeyCategory = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /* private */ @JSName("Word.KeysBoundTo_typekey")
   var WordDotKeysBoundTo_typekey: KeysBoundTo = js.native

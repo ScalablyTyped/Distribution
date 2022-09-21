@@ -11,6 +11,8 @@ trait InstanceSpecification extends StObject {
     */
   var ExcludeBootVolume: js.UndefOr[Boolean] = js.undefined
   
+  var ExcludeDataVolumeIds: js.UndefOr[VolumeIdStringList] = js.undefined
+  
   /**
     * The instance to specify which volumes should be snapshotted.
     */
@@ -28,6 +30,12 @@ object InstanceSpecification {
     inline def setExcludeBootVolume(value: Boolean): Self = StObject.set(x, "ExcludeBootVolume", value.asInstanceOf[js.Any])
     
     inline def setExcludeBootVolumeUndefined: Self = StObject.set(x, "ExcludeBootVolume", js.undefined)
+    
+    inline def setExcludeDataVolumeIds(value: VolumeIdStringList): Self = StObject.set(x, "ExcludeDataVolumeIds", value.asInstanceOf[js.Any])
+    
+    inline def setExcludeDataVolumeIdsUndefined: Self = StObject.set(x, "ExcludeDataVolumeIds", js.undefined)
+    
+    inline def setExcludeDataVolumeIdsVarargs(value: VolumeId*): Self = StObject.set(x, "ExcludeDataVolumeIds", js.Array(value*))
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

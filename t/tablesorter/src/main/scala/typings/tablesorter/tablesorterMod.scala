@@ -73,7 +73,7 @@ object tablesorterMod {
       * @param methods
       * The methods to add.
       */
-    def addInstanceMethods(methods: StringDictionary[js.Function0[js.Any]]): Unit = js.native
+    def addInstanceMethods(methods: StringDictionary[js.Function0[Any]]): Unit = js.native
     
     /**
       * Adds a parser to the tablesorter.
@@ -577,7 +577,7 @@ object tablesorterMod {
     /**
       * The custom instance-methods added to the tablesorter.
       */
-    var instanceMethods: StringDictionary[js.Function0[js.Any]] = js.native
+    var instanceMethods: StringDictionary[js.Function0[Any]] = js.native
     
     /**
       * Verifies whether the specified `text` is a digit.
@@ -619,7 +619,7 @@ object tablesorterMod {
       * @return
       * A value indicating whether a `SortDefinition` for the specified `column` exists.
       */
-    def isValueInArray(value: Double, array: js.Array[js.Tuple2[Double, js.Any]]): Boolean = js.native
+    def isValueInArray(value: Double, array: js.Array[js.Tuple2[Double, Any]]): Boolean = js.native
     
     /**
       * The localized text for the tablesorter.
@@ -752,7 +752,7 @@ object tablesorterMod {
     def setFilters(table: JQuery[TElement], filter: js.Array[String], apply: Boolean): Unit = js.native
     
     def showError(table: TElement, request: String, settings: JQueryAjaxSettings, message: String): Unit = js.native
-    def showError(table: TElement, request: jqXHR[js.Any], settings: JQueryAjaxSettings, message: String): Unit = js.native
+    def showError(table: TElement, request: jqXHR[Any], settings: JQueryAjaxSettings, message: String): Unit = js.native
     /**
       * Pins an error-message to the table.
       *
@@ -769,7 +769,7 @@ object tablesorterMod {
       * A message which describes the error.
       */
     def showError(table: JQuery[TElement], request: String, settings: JQueryAjaxSettings, message: String): Unit = js.native
-    def showError(table: JQuery[TElement], request: jqXHR[js.Any], settings: JQueryAjaxSettings, message: String): Unit = js.native
+    def showError(table: JQuery[TElement], request: jqXHR[Any], settings: JQueryAjaxSettings, message: String): Unit = js.native
     
     /**
       * Compares two strings and returns a value indicating whether one is less than, equal to or greater than the other.
@@ -857,11 +857,11 @@ object tablesorterMod {
       */
     def sortText(x: String, y: String): Double = js.native
     
-    def storage(table: TElement, key: String): js.Any = js.native
-    def storage(table: TElement, key: String, value: js.Any): Unit = js.native
-    def storage(table: TElement, key: String, value: js.Any, options: StorageConfiguration): Unit = js.native
-    def storage(table: TElement, key: String, value: Null, options: StorageConfiguration): js.Any = js.native
-    def storage(table: TElement, key: String, value: Unit, options: StorageConfiguration): js.Any = js.native
+    def storage(table: TElement, key: String): Any = js.native
+    def storage(table: TElement, key: String, value: Any): Unit = js.native
+    def storage(table: TElement, key: String, value: Any, options: StorageConfiguration): Unit = js.native
+    def storage(table: TElement, key: String, value: Null, options: StorageConfiguration): Any = js.native
+    def storage(table: TElement, key: String, value: Unit, options: StorageConfiguration): Any = js.native
     /**
       * Saves data to the storage.
       *
@@ -877,7 +877,7 @@ object tablesorterMod {
       * @param options
       * The options for customizing the way to save the data to the storage.
       */
-    def storage(table: JQuery[TElement], key: String): js.Any = js.native
+    def storage(table: JQuery[TElement], key: String): Any = js.native
     /**
       * Saves data to the storage.
       *
@@ -893,10 +893,10 @@ object tablesorterMod {
       * @param options
       * The options for customizing the way to save the data to the storage.
       */
-    def storage(table: JQuery[TElement], key: String, value: js.Any): Unit = js.native
-    def storage(table: JQuery[TElement], key: String, value: js.Any, options: StorageConfiguration): Unit = js.native
-    def storage(table: JQuery[TElement], key: String, value: Null, options: StorageConfiguration): js.Any = js.native
-    def storage(table: JQuery[TElement], key: String, value: Unit, options: StorageConfiguration): js.Any = js.native
+    def storage(table: JQuery[TElement], key: String, value: Any): Unit = js.native
+    def storage(table: JQuery[TElement], key: String, value: Any, options: StorageConfiguration): Unit = js.native
+    def storage(table: JQuery[TElement], key: String, value: Null, options: StorageConfiguration): Any = js.native
+    def storage(table: JQuery[TElement], key: String, value: Unit, options: StorageConfiguration): Any = js.native
     
     /**
       * The settings of the themes.

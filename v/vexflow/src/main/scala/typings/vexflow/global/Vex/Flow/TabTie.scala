@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Vex.Flow.TabTie")
 @js.native
-class TabTie protected ()
+open class TabTie protected ()
   extends StObject
      with typings.vexflow.Vex.Flow.TabTie {
   def this(notes: Firstindices) = this()

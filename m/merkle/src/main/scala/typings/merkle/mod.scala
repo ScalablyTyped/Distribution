@@ -14,20 +14,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(hashname: md5): MerkleStream = ^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any]).asInstanceOf[MerkleStream]
-  inline def apply(hashname: md5, useUpperCaseForHash: Boolean): MerkleStream = (^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any], useUpperCaseForHash.asInstanceOf[js.Any])).asInstanceOf[MerkleStream]
-  inline def apply(hashname: none): MerkleStream = ^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any]).asInstanceOf[MerkleStream]
-  inline def apply(hashname: none, useUpperCaseForHash: Boolean): MerkleStream = (^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any], useUpperCaseForHash.asInstanceOf[js.Any])).asInstanceOf[MerkleStream]
-  inline def apply(hashname: ripemd160): MerkleStream = ^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any]).asInstanceOf[MerkleStream]
-  inline def apply(hashname: ripemd160, useUpperCaseForHash: Boolean): MerkleStream = (^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any], useUpperCaseForHash.asInstanceOf[js.Any])).asInstanceOf[MerkleStream]
-  inline def apply(hashname: sha1): MerkleStream = ^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any]).asInstanceOf[MerkleStream]
-  inline def apply(hashname: sha1, useUpperCaseForHash: Boolean): MerkleStream = (^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any], useUpperCaseForHash.asInstanceOf[js.Any])).asInstanceOf[MerkleStream]
-  inline def apply(hashname: sha256): MerkleStream = ^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any]).asInstanceOf[MerkleStream]
-  inline def apply(hashname: sha256, useUpperCaseForHash: Boolean): MerkleStream = (^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any], useUpperCaseForHash.asInstanceOf[js.Any])).asInstanceOf[MerkleStream]
-  inline def apply(hashname: sha512): MerkleStream = ^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any]).asInstanceOf[MerkleStream]
-  inline def apply(hashname: sha512, useUpperCaseForHash: Boolean): MerkleStream = (^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any], useUpperCaseForHash.asInstanceOf[js.Any])).asInstanceOf[MerkleStream]
-  inline def apply(hashname: whirlpool): MerkleStream = ^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any]).asInstanceOf[MerkleStream]
-  inline def apply(hashname: whirlpool, useUpperCaseForHash: Boolean): MerkleStream = (^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any], useUpperCaseForHash.asInstanceOf[js.Any])).asInstanceOf[MerkleStream]
+  inline def apply(hashname: sha512 | sha256 | sha1 | md5 | ripemd160 | whirlpool | none): MerkleStream = ^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any]).asInstanceOf[MerkleStream]
+  inline def apply(
+    hashname: sha512 | sha256 | sha1 | md5 | ripemd160 | whirlpool | none,
+    useUpperCaseForHash: Boolean
+  ): MerkleStream = (^.asInstanceOf[js.Dynamic].apply(hashname.asInstanceOf[js.Any], useUpperCaseForHash.asInstanceOf[js.Any])).asInstanceOf[MerkleStream]
   
   @JSImport("merkle", JSImport.Namespace)
   @js.native
@@ -36,11 +27,11 @@ object mod {
   @js.native
   trait MerkleStream extends Transform {
     
-    def async(leaves: js.Array[js.Any], callback: js.Function2[/* err */ String, /* tree */ MerkleTree, Unit]): Unit = js.native
+    def async(leaves: js.Array[Any], callback: js.Function2[/* err */ String, /* tree */ MerkleTree, Unit]): Unit = js.native
     
     def json(): MerkleStream = js.native
     
-    def sync(leaves: js.Array[js.Any]): MerkleTree = js.native
+    def sync(leaves: js.Array[Any]): MerkleTree = js.native
   }
   
   trait MerkleTree extends StObject {

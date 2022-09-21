@@ -8,18 +8,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("aurelia-dependency-injection", "Container")
 @js.native
-class Container () extends StObject {
+open class Container () extends StObject {
   def this(configuration: ContainerConfiguration) = this()
   
   def _createInvocationHandler[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](fn: (DependencyCtorOrFunctor[TBase, TImpl, TArgs]) & `1`): InvocationHandler[TBase, TImpl, TArgs] = js.native
   
-  def _get(key: js.Any): js.Any = js.native
+  def _get(key: Any): Any = js.native
   
   def autoRegister[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](key: DependencyCtor[TBase, TImpl, TArgs]): Resolver_ = js.native
   def autoRegister[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](key: DependencyCtor[TBase, TImpl, TArgs], fn: DependencyCtorOrFunctor[TBase, TImpl, TArgs]): Resolver_ = js.native
   def autoRegister[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](key: Primitive, fn: DependencyCtorOrFunctor[TBase, TImpl, TArgs]): Resolver_ = js.native
   
-  def autoRegisterAll(fns: js.Array[DependencyCtor[js.Any, js.Any, js.Any]]): Unit = js.native
+  def autoRegisterAll(fns: js.Array[DependencyCtor[Any, Any, Any]]): Unit = js.native
   
   def createChild(): Container = js.native
   
@@ -56,7 +56,7 @@ class Container () extends StObject {
       /* container */ js.UndefOr[this.type], 
       /* key */ js.UndefOr[PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]], 
       /* resolver */ js.UndefOr[Resolver_], 
-      js.Any
+      Any
     ]
   ): Resolver_ = js.native
   
@@ -82,7 +82,7 @@ class Container () extends StObject {
     ]
   ): Unit = js.native
   
-  def unregister(key: js.Any): Unit = js.native
+  def unregister(key: Any): Unit = js.native
 }
 /* static members */
 object Container {

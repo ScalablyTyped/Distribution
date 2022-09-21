@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap-table", "ExportCSVButton")
 @js.native
-class ExportCSVButton protected ()
-  extends Component[ButtonProps, js.Object, js.Any] {
+open class ExportCSVButton protected ()
+  extends Component[ButtonProps, js.Object, Any] {
   def this(props: ButtonProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: ButtonProps, context: js.Any) = this()
+  def this(props: ButtonProps, context: Any) = this()
 }

@@ -22,7 +22,7 @@ trait UpdateAttributeGroupRequest extends StObject {
   var description: js.UndefOr[Description] = js.undefined
   
   /**
-    * The new name of the attribute group. The name must be unique in the region in which you are updating the attribute group.
+    * Deprecated: The new name of the attribute group. The name must be unique in the region in which you are updating the attribute group. Please do not use this field as we have stopped supporting name updates.
     */
   var name: js.UndefOr[Name] = js.undefined
 }

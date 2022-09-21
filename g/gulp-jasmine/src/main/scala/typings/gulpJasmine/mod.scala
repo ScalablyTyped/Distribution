@@ -1,7 +1,6 @@
 package typings.gulpJasmine
 
 import typings.jasmine.jasmine.CustomReporter
-import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,8 +11,8 @@ object mod {
     * Executes Jasmine tests. Emits a 'jasmineDone' event on success.
     * @param options Optional options for the execution of the Jasmine test
     */
-  inline def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
-  inline def apply(options: JasmineOptions): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(options: JasmineOptions): Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("gulp-jasmine", JSImport.Namespace)
   @js.native
@@ -79,7 +78,7 @@ object mod {
       
       inline def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
       
-      inline def setReporterVarargs(value: CustomReporter*): Self = StObject.set(x, "reporter", js.Array(value :_*))
+      inline def setReporterVarargs(value: CustomReporter*): Self = StObject.set(x, "reporter", js.Array(value*))
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       

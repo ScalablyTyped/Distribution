@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The segment definition, if the report needs to be segmented. A Segment is a
-  * subset of the Analytics data. For example, of the entire set of users, one
-  * Segment might be users from a particular country or city.
-  */
 trait SchemaSegment extends StObject {
   
   /**
@@ -19,7 +14,7 @@ trait SchemaSegment extends StObject {
   /**
     * The segment ID of a built-in or custom segment, for example `gaid::-3`.
     */
-  var segmentId: js.UndefOr[String] = js.undefined
+  var segmentId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaSegment {
   
@@ -35,6 +30,8 @@ object SchemaSegment {
     inline def setDynamicSegmentUndefined: Self = StObject.set(x, "dynamicSegment", js.undefined)
     
     inline def setSegmentId(value: String): Self = StObject.set(x, "segmentId", value.asInstanceOf[js.Any])
+    
+    inline def setSegmentIdNull: Self = StObject.set(x, "segmentId", null)
     
     inline def setSegmentIdUndefined: Self = StObject.set(x, "segmentId", js.undefined)
   }

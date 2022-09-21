@@ -5,9 +5,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LogLevelFilterAppender
-  extends StObject
-     with Appender {
+trait LogLevelFilterAppender extends StObject {
   
   // the name of an appender, defined in the same configuration, that you want to filter
   var appender: String
@@ -15,7 +13,7 @@ trait LogLevelFilterAppender
   // the minimum level of event to allow through the filter
   var level: String
   
-  // (defaults to FATAL) - the maximum level of event to allow through the filter
+  // (defaults to FATAL) the maximum level of event to allow through the filter
   var maxLevel: js.UndefOr[String] = js.undefined
   
   var `type`: logLevelFilter

@@ -1,11 +1,14 @@
 package typings.materialUi.MaterialUI
 
 import typings.react.mod.CSSProperties
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait SubheaderProps extends StObject {
+  
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   var inset: js.UndefOr[Boolean] = js.undefined
   
@@ -19,6 +22,10 @@ object SubheaderProps {
   }
   
   extension [Self <: SubheaderProps](x: Self) {
+    
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setInset(value: Boolean): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
     

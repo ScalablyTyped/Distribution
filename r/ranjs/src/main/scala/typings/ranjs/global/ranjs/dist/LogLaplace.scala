@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.LogLaplace")
 @js.native
-class LogLaplace ()
+open class LogLaplace ()
   extends typings.ranjs.mod.dist.LogLaplace {
   def this(mu: Double) = this()
   def this(mu: Double, b: Double) = this()

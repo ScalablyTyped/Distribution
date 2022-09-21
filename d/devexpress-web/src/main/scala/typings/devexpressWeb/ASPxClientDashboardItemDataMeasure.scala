@@ -18,7 +18,7 @@ trait ASPxClientDashboardItemDataMeasure extends StObject {
     * Formats the specified value using format settings of the current measure. A String that represents the formatted value.
     * @param value A value to be formatted.
     */
-  def Format(value: js.Any): String
+  def Format(value: Any): String
   
   /**
     * Gets the measure identifier.
@@ -37,7 +37,7 @@ trait ASPxClientDashboardItemDataMeasure extends StObject {
 }
 object ASPxClientDashboardItemDataMeasure {
   
-  inline def apply(DataMember: String, Format: js.Any => String, Id: String, Name: String, SummaryType: String): ASPxClientDashboardItemDataMeasure = {
+  inline def apply(DataMember: String, Format: Any => String, Id: String, Name: String, SummaryType: String): ASPxClientDashboardItemDataMeasure = {
     val __obj = js.Dynamic.literal(DataMember = DataMember.asInstanceOf[js.Any], Format = js.Any.fromFunction1(Format), Id = Id.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], SummaryType = SummaryType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientDashboardItemDataMeasure]
   }
@@ -46,7 +46,7 @@ object ASPxClientDashboardItemDataMeasure {
     
     inline def setDataMember(value: String): Self = StObject.set(x, "DataMember", value.asInstanceOf[js.Any])
     
-    inline def setFormat(value: js.Any => String): Self = StObject.set(x, "Format", js.Any.fromFunction1(value))
+    inline def setFormat(value: Any => String): Self = StObject.set(x, "Format", js.Any.fromFunction1(value))
     
     inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

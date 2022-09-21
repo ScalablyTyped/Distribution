@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Chat
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChatRecipientDeliveryInfo extends StObject {
   
   /** Gets or sets the time the message was sent to the recipient. */
-  var deliveryTime: Date
+  var deliveryTime: js.Date
   
   /** Gets a Boolean value indicating whether the error for the message that was sent to the recipient is permanent. */
   var isErrorPermanent: Boolean
   
   /** Gets or sets the time the recipient read the message. */
-  var readTime: Date
+  var readTime: js.Date
   
   /** Gets the status of the message. */
   var status: ChatMessageStatus
@@ -35,9 +34,9 @@ trait ChatRecipientDeliveryInfo extends StObject {
 object ChatRecipientDeliveryInfo {
   
   inline def apply(
-    deliveryTime: Date,
+    deliveryTime: js.Date,
     isErrorPermanent: Boolean,
-    readTime: Date,
+    readTime: js.Date,
     status: ChatMessageStatus,
     transportAddress: String,
     transportErrorCode: Double,
@@ -50,11 +49,11 @@ object ChatRecipientDeliveryInfo {
   
   extension [Self <: ChatRecipientDeliveryInfo](x: Self) {
     
-    inline def setDeliveryTime(value: Date): Self = StObject.set(x, "deliveryTime", value.asInstanceOf[js.Any])
+    inline def setDeliveryTime(value: js.Date): Self = StObject.set(x, "deliveryTime", value.asInstanceOf[js.Any])
     
     inline def setIsErrorPermanent(value: Boolean): Self = StObject.set(x, "isErrorPermanent", value.asInstanceOf[js.Any])
     
-    inline def setReadTime(value: Date): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
+    inline def setReadTime(value: js.Date): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
     
     inline def setStatus(value: ChatMessageStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 
 type AngularFireAuthService = js.Function1[
-/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ /* firebase */ js.Any, 
-typings.angularfire.AngularFireAuth]
+/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ /* firebase */ Any, 
+AngularFireAuth]
 
 type AngularFireService = js.Function2[
-/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ /* firebase */ js.Any, 
-/* config */ js.UndefOr[js.Any], 
-typings.angularfire.AngularFire]
+/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ /* firebase */ Any, 
+/* config */ js.UndefOr[Any], 
+AngularFire]

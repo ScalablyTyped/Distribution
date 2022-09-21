@@ -9,6 +9,8 @@ trait SymbolProperties extends StObject {
   /**
     * The color of the symbol.
     *
+    * @default black
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol.html#color)
     */
   var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
@@ -26,6 +28,6 @@ object SymbolProperties {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value*))
   }
 }

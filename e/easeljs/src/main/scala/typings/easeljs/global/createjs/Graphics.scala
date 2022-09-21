@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.Graphics")
 @js.native
-class Graphics ()
+open class Graphics ()
   extends StObject
      with typings.easeljs.createjs.Graphics
 /* static members */
@@ -18,7 +18,7 @@ object Graphics {
   
   @JSGlobal("createjs.Graphics.Arc")
   @js.native
-  class Arc protected ()
+  open class Arc protected ()
     extends StObject
        with typings.easeljs.createjs.Graphics.Arc {
     def this(x: Double, y: Double, radius: Double, startAngle: Double, endAngle: Double, anticlockwise: Double) = this()
@@ -45,7 +45,7 @@ object Graphics {
   
   @JSGlobal("createjs.Graphics.ArcTo")
   @js.native
-  class ArcTo protected ()
+  open class ArcTo protected ()
     extends StObject
        with typings.easeljs.createjs.Graphics.ArcTo {
     def this(x1: Double, y1: Double, x2: Double, y2: Double, radius: Double) = this()
@@ -75,13 +75,13 @@ object Graphics {
   
   @JSGlobal("createjs.Graphics.BeginPath")
   @js.native
-  class BeginPath ()
+  open class BeginPath ()
     extends StObject
        with typings.easeljs.createjs.Graphics.BeginPath
   
   @JSGlobal("createjs.Graphics.BezierCurveTo")
   @js.native
-  class BezierCurveTo protected ()
+  open class BezierCurveTo protected ()
     extends StObject
        with typings.easeljs.createjs.Graphics.BezierCurveTo {
     def this(cp1x: Double, cp1y: Double, cp2x: Double, cp2y: Double, x: Double, y: Double) = this()
@@ -108,7 +108,7 @@ object Graphics {
   
   @JSGlobal("createjs.Graphics.Circle")
   @js.native
-  class Circle protected ()
+  open class Circle protected ()
     extends StObject
        with typings.easeljs.createjs.Graphics.Circle {
     def this(x: Double, y: Double, radius: Double) = this()
@@ -126,13 +126,13 @@ object Graphics {
   
   @JSGlobal("createjs.Graphics.ClosePath")
   @js.native
-  class ClosePath ()
+  open class ClosePath ()
     extends StObject
        with typings.easeljs.createjs.Graphics.ClosePath
   
   @JSGlobal("createjs.Graphics.Fill")
   @js.native
-  class Fill protected ()
+  open class Fill protected ()
     extends StObject
        with typings.easeljs.createjs.Graphics.Fill {
     def this(style: js.Object) = this()
@@ -141,7 +141,7 @@ object Graphics {
   
   @JSGlobal("createjs.Graphics.LineTo")
   @js.native
-  class LineTo protected ()
+  open class LineTo protected ()
     extends StObject
        with typings.easeljs.createjs.Graphics.LineTo {
     def this(x: Double, y: Double) = this()
@@ -156,7 +156,7 @@ object Graphics {
   
   @JSGlobal("createjs.Graphics.MoveTo")
   @js.native
-  class MoveTo protected ()
+  open class MoveTo protected ()
     extends StObject
        with typings.easeljs.createjs.Graphics.MoveTo {
     def this(x: Double, y: Double) = this()
@@ -170,7 +170,7 @@ object Graphics {
   
   @JSGlobal("createjs.Graphics.PolyStar")
   @js.native
-  class PolyStar protected ()
+  open class PolyStar protected ()
     extends StObject
        with typings.easeljs.createjs.Graphics.PolyStar {
     def this(x: Double, y: Double, radius: Double, sides: Double, pointSize: Double, angle: Double) = this()
@@ -197,7 +197,7 @@ object Graphics {
   
   @JSGlobal("createjs.Graphics.QuadraticCurveTo")
   @js.native
-  class QuadraticCurveTo protected ()
+  open class QuadraticCurveTo protected ()
     extends StObject
        with typings.easeljs.createjs.Graphics.QuadraticCurveTo {
     def this(cpx: Double, cpy: Double, x: Double, y: Double) = this()
@@ -218,7 +218,7 @@ object Graphics {
   
   @JSGlobal("createjs.Graphics.Rect")
   @js.native
-  class Rect protected ()
+  open class Rect protected ()
     extends StObject
        with typings.easeljs.createjs.Graphics.Rect {
     def this(x: Double, y: Double, w: Double, h: Double) = this()
@@ -239,7 +239,7 @@ object Graphics {
   
   @JSGlobal("createjs.Graphics.RoundRect")
   @js.native
-  class RoundRect protected ()
+  open class RoundRect protected ()
     extends StObject
        with typings.easeljs.createjs.Graphics.RoundRect {
     def this(
@@ -292,7 +292,7 @@ object Graphics {
   
   @JSGlobal("createjs.Graphics.Stroke")
   @js.native
-  class Stroke protected ()
+  open class Stroke protected ()
     extends StObject
        with typings.easeljs.createjs.Graphics.Stroke {
     def this(style: js.Object, ignoreScale: Boolean) = this()
@@ -300,7 +300,7 @@ object Graphics {
   
   @JSGlobal("createjs.Graphics.StrokeStyle")
   @js.native
-  class StrokeStyle protected ()
+  open class StrokeStyle protected ()
     extends StObject
        with typings.easeljs.createjs.Graphics.StrokeStyle {
     def this(width: Double, caps: String, joints: Double, miterLimit: Double) = this()

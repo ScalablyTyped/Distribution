@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CallOptions
   extends StObject
-     with /* field */ StringDictionary[js.Any] {
+     with /* field */ StringDictionary[Any] {
   
   /**
     * The credentials that should be used to make this particular call.

@@ -50,7 +50,7 @@ object style {
     * @api
     * @param opt_options Options.
     */
-  class AtlasManager ()
+  open class AtlasManager ()
     extends typings.openlayers.mod.style.AtlasManager {
     def this(opt_options: AtlasManagerOptions) = this()
   }
@@ -71,7 +71,7 @@ object style {
     * @param opt_options Options.
     * @api
     */
-  class Circle ()
+  open class Circle ()
     extends typings.openlayers.mod.style.Circle {
     def this(opt_options: CircleOptions) = this()
   }
@@ -92,7 +92,7 @@ object style {
     * @param opt_options Options.
     * @api
     */
-  class Fill ()
+  open class Fill ()
     extends typings.openlayers.mod.style.Fill {
     def this(opt_options: FillOptions) = this()
   }
@@ -113,7 +113,7 @@ object style {
     * @param opt_options Options.
     * @api
     */
-  class Icon ()
+  open class Icon ()
     extends typings.openlayers.mod.style.Icon {
     def this(opt_options: IconOptions) = this()
   }
@@ -129,7 +129,7 @@ object style {
     */
   @JSGlobal("ol.style.Image")
   @js.native
-  class Image protected ()
+  open class Image protected ()
     extends typings.openlayers.mod.style.Image {
     /**
       * @classdesc
@@ -154,7 +154,7 @@ object style {
     */
   @JSGlobal("ol.style.RegularShape")
   @js.native
-  class RegularShape protected ()
+  open class RegularShape protected ()
     extends typings.openlayers.mod.style.RegularShape {
     /**
       * @classdesc
@@ -190,7 +190,7 @@ object style {
     * @param opt_options Options.
     * @api
     */
-  class Stroke ()
+  open class Stroke ()
     extends typings.openlayers.mod.style.Stroke {
     def this(opt_options: StrokeOptions) = this()
   }
@@ -217,7 +217,7 @@ object style {
     * @param opt_options Style options.
     * @api
     */
-  class Style ()
+  open class Style ()
     extends typings.openlayers.mod.style.Style {
     def this(opt_options: StyleOptions) = this()
   }
@@ -238,7 +238,7 @@ object style {
     * @param opt_options Options.
     * @api
     */
-  class Text ()
+  open class Text ()
     extends typings.openlayers.mod.style.Text {
     def this(opt_options: TextOptions) = this()
   }

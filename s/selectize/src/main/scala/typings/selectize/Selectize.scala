@@ -3,7 +3,6 @@ package typings.selectize
 import org.scalablytyped.runtime.StringDictionary
 import typings.selectize.anon.Direction
 import typings.selectize.selectizeStrings.focus
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -71,8 +70,8 @@ object Selectize {
       */
     def createItem(value: T): Unit = js.native
     def createItem(value: T, triggerDropdown: Boolean): Unit = js.native
-    def createItem(value: T, triggerDropdown: Boolean, callback: js.Function1[/* data */ js.UndefOr[js.Any], Unit]): Unit = js.native
-    def createItem(value: T, triggerDropdown: Unit, callback: js.Function1[/* data */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    def createItem(value: T, triggerDropdown: Boolean, callback: js.Function1[/* data */ js.UndefOr[Any], Unit]): Unit = js.native
+    def createItem(value: T, triggerDropdown: Unit, callback: js.Function1[/* data */ js.UndefOr[Any], Unit]): Unit = js.native
     
     // Other
     // ------------------------------------------------------------------------------------------------------------
@@ -116,7 +115,7 @@ object Selectize {
       * Returns the value of the control. If multiple items can be selected (e.g. <select multiple>), this
       * returns an array. If only one item can be selected, this returns a string.
       */
-    def getValue(): js.Any = js.native
+    def getValue(): Any = js.native
     
     /**
       * Returns whether or not the user can select more items.
@@ -132,7 +131,7 @@ object Selectize {
       * Loads options by invoking the the provided function. The function should accept one argument (callback)
       * and invoke the callback with the results once they are available.
       */
-    def load(callback: js.Function1[/* results */ js.Any, js.Any]): Unit = js.native
+    def load(callback: js.Function1[/* results */ Any, Any]): Unit = js.native
     
     /**
       * Disables user input on the control (note: the control can still receive focus).
@@ -206,7 +205,7 @@ object Selectize {
     /**
       * Triggers event listeners.
       */
-    def trigger(eventName: String, args: js.Any*): Unit = js.native
+    def trigger(eventName: String, args: Any*): Unit = js.native
     
     /**
       * Re-enables user input on the control.
@@ -330,7 +329,7 @@ object Selectize {
       *
       * Default: false
       */
-    var create: js.UndefOr[js.Any] = js.undefined
+    var create: js.UndefOr[Any] = js.undefined
     
     /**
       * Specifies a RegExp or String containing a regular expression that the current search filter must match to
@@ -339,7 +338,7 @@ object Selectize {
       *
       * Default: null
       */
-    var createFilter: js.UndefOr[js.Any] = js.undefined
+    var createFilter: js.UndefOr[Any] = js.undefined
     
     /**
       * If true, when user exits the field (clicks outside of input or presses ESC) new option is created and
@@ -420,7 +419,7 @@ object Selectize {
     /**
       * Invoked when new options should be loaded from the server.
       */
-    var load: js.UndefOr[js.Function2[/* query */ String, /* callback */ js.Function, js.Any]] = js.undefined
+    var load: js.UndefOr[js.Function2[/* query */ String, /* callback */ js.Function, Any]] = js.undefined
     
     /**
       * The number of milliseconds to wait before requesting options from the server or null.
@@ -455,7 +454,7 @@ object Selectize {
     /**
       * Invoked when the control loses focus.
       */
-    var onBlur: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var onBlur: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /**
       * Invoked when the value of the control changes.
@@ -463,67 +462,67 @@ object Selectize {
       * If single select, value is of type T.
       * If multi select, value is of type T[].
       */
-    var onChange: js.UndefOr[js.Function1[/* value */ js.Any, js.Any]] = js.undefined
+    var onChange: js.UndefOr[js.Function1[/* value */ Any, Any]] = js.undefined
     
     /**
       * Invoked when the control is manually cleared via the clear() method.
       */
-    var onClear: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var onClear: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /**
       * Invoked when the user attempts to delete the current selection.
       */
-    var onDelete: js.UndefOr[js.Function1[/* values */ js.Array[T], js.Any]] = js.undefined
+    var onDelete: js.UndefOr[js.Function1[/* values */ js.Array[T], Any]] = js.undefined
     
     /**
       * Invoked when the dropdown closes.
       */
-    var onDropdownClose: js.UndefOr[js.Function1[/* dropdown */ JQuery, js.Any]] = js.undefined
+    var onDropdownClose: js.UndefOr[js.Function1[/* dropdown */ JQuery, Any]] = js.undefined
     
     /**
       * Invoked when the dropdown opens.
       */
-    var onDropdownOpen: js.UndefOr[js.Function1[/* dropdown */ JQuery, js.Any]] = js.undefined
+    var onDropdownOpen: js.UndefOr[js.Function1[/* dropdown */ JQuery, Any]] = js.undefined
     
     /**
       * Invoked when the control gains focus.
       */
-    var onFocus: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var onFocus: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /**
       * Invoked once the control is completely initialized.
       */
-    var onInitialize: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var onInitialize: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /**
       * Invoked when an item is selected.
       */
-    var onItemAdd: js.UndefOr[js.Function2[/* value */ T, /* item */ JQuery, js.Any]] = js.undefined
+    var onItemAdd: js.UndefOr[js.Function2[/* value */ T, /* item */ JQuery, Any]] = js.undefined
     
     /**
       * Invoked when an item is deselected.
       */
-    var onItemRemove: js.UndefOr[js.Function1[/* value */ T, js.Any]] = js.undefined
+    var onItemRemove: js.UndefOr[js.Function1[/* value */ T, Any]] = js.undefined
     
     /**
       * Invoked when new options have been loaded and added to the control (via the "load" option or "load" API method).
       */
-    var onLoad: js.UndefOr[js.Function1[/* data */ js.Array[U], js.Any]] = js.undefined
+    var onLoad: js.UndefOr[js.Function1[/* data */ js.Array[U], Any]] = js.undefined
     
     /**
       * Invoked when a new option is added to the available options list.
       */
-    var onOptionAdd: js.UndefOr[js.Function2[/* value */ T, /* data */ U, js.Any]] = js.undefined
+    var onOptionAdd: js.UndefOr[js.Function2[/* value */ T, /* data */ U, Any]] = js.undefined
     
     /**
       * Invoked when an option is removed from the available options.
       */
-    var onOptionRemove: js.UndefOr[js.Function1[/* value */ T, js.Any]] = js.undefined
+    var onOptionRemove: js.UndefOr[js.Function1[/* value */ T, Any]] = js.undefined
     
     /**
       * Invoked when the user types while filtering options.
       */
-    var onType: js.UndefOr[js.Function1[/* srt */ String, js.Any]] = js.undefined
+    var onType: js.UndefOr[js.Function1[/* srt */ String, Any]] = js.undefined
     
     /**
       * Show the dropdown immediately when the control receives focus.
@@ -598,7 +597,7 @@ object Selectize {
       *
       * Default: null
       */
-    var plugins: js.UndefOr[(js.Array[IPluginOption | String]) | StringDictionary[js.Any]] = js.undefined
+    var plugins: js.UndefOr[(js.Array[IPluginOption | String]) | StringDictionary[Any]] = js.undefined
     
     /**
       * If true, the "load" function will be called upon control initialization (with an empty search).
@@ -617,7 +616,7 @@ object Selectize {
       * function that returns a number greater than or equal to zero to represent the "score" of an item
       * (the function's first argument). If 0, the option is declared not a match.
       */
-    var score: js.UndefOr[js.Function1[/* search */ ISearch, js.Function1[/* item */ js.Any, Double]]] = js.undefined
+    var score: js.UndefOr[js.Function1[/* search */ ISearch, js.Function1[/* item */ Any, Double]]] = js.undefined
     
     /**
       * The animation duration (in milliseconds) of the scroll animation triggered when going [up] and [down] in
@@ -692,9 +691,9 @@ object Selectize {
       
       inline def setCopyClassesToDropdownUndefined: Self = StObject.set(x, "copyClassesToDropdown", js.undefined)
       
-      inline def setCreate(value: js.Any): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+      inline def setCreate(value: Any): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
       
-      inline def setCreateFilter(value: js.Any): Self = StObject.set(x, "createFilter", value.asInstanceOf[js.Any])
+      inline def setCreateFilter(value: Any): Self = StObject.set(x, "createFilter", value.asInstanceOf[js.Any])
       
       inline def setCreateFilterUndefined: Self = StObject.set(x, "createFilter", js.undefined)
       
@@ -736,13 +735,13 @@ object Selectize {
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setLabelField(value: String): Self = StObject.set(x, "labelField", value.asInstanceOf[js.Any])
       
       inline def setLabelFieldUndefined: Self = StObject.set(x, "labelField", js.undefined)
       
-      inline def setLoad(value: (/* query */ String, /* callback */ js.Function) => js.Any): Self = StObject.set(x, "load", js.Any.fromFunction2(value))
+      inline def setLoad(value: (/* query */ String, /* callback */ js.Function) => Any): Self = StObject.set(x, "load", js.Any.fromFunction2(value))
       
       inline def setLoadThrottle(value: Double): Self = StObject.set(x, "loadThrottle", value.asInstanceOf[js.Any])
       
@@ -762,59 +761,59 @@ object Selectize {
       
       inline def setMaxOptionsUndefined: Self = StObject.set(x, "maxOptions", js.undefined)
       
-      inline def setOnBlur(value: () => js.Any): Self = StObject.set(x, "onBlur", js.Any.fromFunction0(value))
+      inline def setOnBlur(value: () => Any): Self = StObject.set(x, "onBlur", js.Any.fromFunction0(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      inline def setOnChange(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* value */ Any => Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      inline def setOnClear(value: () => js.Any): Self = StObject.set(x, "onClear", js.Any.fromFunction0(value))
+      inline def setOnClear(value: () => Any): Self = StObject.set(x, "onClear", js.Any.fromFunction0(value))
       
       inline def setOnClearUndefined: Self = StObject.set(x, "onClear", js.undefined)
       
-      inline def setOnDelete(value: /* values */ js.Array[T] => js.Any): Self = StObject.set(x, "onDelete", js.Any.fromFunction1(value))
+      inline def setOnDelete(value: /* values */ js.Array[T] => Any): Self = StObject.set(x, "onDelete", js.Any.fromFunction1(value))
       
       inline def setOnDeleteUndefined: Self = StObject.set(x, "onDelete", js.undefined)
       
-      inline def setOnDropdownClose(value: /* dropdown */ JQuery => js.Any): Self = StObject.set(x, "onDropdownClose", js.Any.fromFunction1(value))
+      inline def setOnDropdownClose(value: /* dropdown */ JQuery => Any): Self = StObject.set(x, "onDropdownClose", js.Any.fromFunction1(value))
       
       inline def setOnDropdownCloseUndefined: Self = StObject.set(x, "onDropdownClose", js.undefined)
       
-      inline def setOnDropdownOpen(value: /* dropdown */ JQuery => js.Any): Self = StObject.set(x, "onDropdownOpen", js.Any.fromFunction1(value))
+      inline def setOnDropdownOpen(value: /* dropdown */ JQuery => Any): Self = StObject.set(x, "onDropdownOpen", js.Any.fromFunction1(value))
       
       inline def setOnDropdownOpenUndefined: Self = StObject.set(x, "onDropdownOpen", js.undefined)
       
-      inline def setOnFocus(value: () => js.Any): Self = StObject.set(x, "onFocus", js.Any.fromFunction0(value))
+      inline def setOnFocus(value: () => Any): Self = StObject.set(x, "onFocus", js.Any.fromFunction0(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      inline def setOnInitialize(value: () => js.Any): Self = StObject.set(x, "onInitialize", js.Any.fromFunction0(value))
+      inline def setOnInitialize(value: () => Any): Self = StObject.set(x, "onInitialize", js.Any.fromFunction0(value))
       
       inline def setOnInitializeUndefined: Self = StObject.set(x, "onInitialize", js.undefined)
       
-      inline def setOnItemAdd(value: (/* value */ T, /* item */ JQuery) => js.Any): Self = StObject.set(x, "onItemAdd", js.Any.fromFunction2(value))
+      inline def setOnItemAdd(value: (/* value */ T, /* item */ JQuery) => Any): Self = StObject.set(x, "onItemAdd", js.Any.fromFunction2(value))
       
       inline def setOnItemAddUndefined: Self = StObject.set(x, "onItemAdd", js.undefined)
       
-      inline def setOnItemRemove(value: /* value */ T => js.Any): Self = StObject.set(x, "onItemRemove", js.Any.fromFunction1(value))
+      inline def setOnItemRemove(value: /* value */ T => Any): Self = StObject.set(x, "onItemRemove", js.Any.fromFunction1(value))
       
       inline def setOnItemRemoveUndefined: Self = StObject.set(x, "onItemRemove", js.undefined)
       
-      inline def setOnLoad(value: /* data */ js.Array[U] => js.Any): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
+      inline def setOnLoad(value: /* data */ js.Array[U] => Any): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
       
       inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
       
-      inline def setOnOptionAdd(value: (/* value */ T, /* data */ U) => js.Any): Self = StObject.set(x, "onOptionAdd", js.Any.fromFunction2(value))
+      inline def setOnOptionAdd(value: (/* value */ T, /* data */ U) => Any): Self = StObject.set(x, "onOptionAdd", js.Any.fromFunction2(value))
       
       inline def setOnOptionAddUndefined: Self = StObject.set(x, "onOptionAdd", js.undefined)
       
-      inline def setOnOptionRemove(value: /* value */ T => js.Any): Self = StObject.set(x, "onOptionRemove", js.Any.fromFunction1(value))
+      inline def setOnOptionRemove(value: /* value */ T => Any): Self = StObject.set(x, "onOptionRemove", js.Any.fromFunction1(value))
       
       inline def setOnOptionRemoveUndefined: Self = StObject.set(x, "onOptionRemove", js.undefined)
       
-      inline def setOnType(value: /* srt */ String => js.Any): Self = StObject.set(x, "onType", js.Any.fromFunction1(value))
+      inline def setOnType(value: /* srt */ String => Any): Self = StObject.set(x, "onType", js.Any.fromFunction1(value))
       
       inline def setOnTypeUndefined: Self = StObject.set(x, "onType", js.undefined)
       
@@ -834,7 +833,7 @@ object Selectize {
       
       inline def setOptgroupOrderUndefined: Self = StObject.set(x, "optgroupOrder", js.undefined)
       
-      inline def setOptgroupOrderVarargs(value: String*): Self = StObject.set(x, "optgroupOrder", js.Array(value :_*))
+      inline def setOptgroupOrderVarargs(value: String*): Self = StObject.set(x, "optgroupOrder", js.Array(value*))
       
       inline def setOptgroupValueField(value: String): Self = StObject.set(x, "optgroupValueField", value.asInstanceOf[js.Any])
       
@@ -844,13 +843,13 @@ object Selectize {
       
       inline def setOptgroupsUndefined: Self = StObject.set(x, "optgroups", js.undefined)
       
-      inline def setOptgroupsVarargs(value: U*): Self = StObject.set(x, "optgroups", js.Array(value :_*))
+      inline def setOptgroupsVarargs(value: U*): Self = StObject.set(x, "optgroups", js.Array(value*))
       
       inline def setOptions(value: js.Array[U]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      inline def setOptionsVarargs(value: U*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: U*): Self = StObject.set(x, "options", js.Array(value*))
       
       inline def setPersist(value: Boolean): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
       
@@ -860,11 +859,11 @@ object Selectize {
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      inline def setPlugins(value: (js.Array[IPluginOption | String]) | StringDictionary[js.Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: (js.Array[IPluginOption | String]) | StringDictionary[Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      inline def setPluginsVarargs(value: (IPluginOption | String)*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: (IPluginOption | String)*): Self = StObject.set(x, "plugins", js.Array(value*))
       
       inline def setPreload(value: Boolean | focus): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
       
@@ -874,7 +873,7 @@ object Selectize {
       
       inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
-      inline def setScore(value: /* search */ ISearch => js.Function1[/* item */ js.Any, Double]): Self = StObject.set(x, "score", js.Any.fromFunction1(value))
+      inline def setScore(value: /* search */ ISearch => js.Function1[/* item */ Any, Double]): Self = StObject.set(x, "score", js.Any.fromFunction1(value))
       
       inline def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
       
@@ -890,7 +889,7 @@ object Selectize {
       
       inline def setSearchFieldUndefined: Self = StObject.set(x, "searchField", js.undefined)
       
-      inline def setSearchFieldVarargs(value: String*): Self = StObject.set(x, "searchField", js.Array(value :_*))
+      inline def setSearchFieldVarargs(value: String*): Self = StObject.set(x, "searchField", js.Array(value*))
       
       inline def setSelectOnTab(value: Boolean): Self = StObject.set(x, "selectOnTab", value.asInstanceOf[js.Any])
       
@@ -900,7 +899,7 @@ object Selectize {
       
       inline def setSortFieldUndefined: Self = StObject.set(x, "sortField", js.undefined)
       
-      inline def setSortFieldVarargs(value: Direction*): Self = StObject.set(x, "sortField", js.Array(value :_*))
+      inline def setSortFieldVarargs(value: Direction*): Self = StObject.set(x, "sortField", js.Array(value*))
       
       inline def setValueField(value: String): Self = StObject.set(x, "valueField", value.asInstanceOf[js.Any])
       
@@ -913,11 +912,11 @@ object Selectize {
     
     var name: String
     
-    var options: js.Any
+    var options: Any
   }
   object IPluginOption {
     
-    inline def apply(name: String, options: js.Any): IPluginOption = {
+    inline def apply(name: String, options: Any): IPluginOption = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPluginOption]
     }
@@ -926,7 +925,7 @@ object Selectize {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
   }
   
@@ -940,7 +939,7 @@ object Selectize {
     /**
       * Original search options.
       */
-    var options: js.Any
+    var options: Any
     
     /**
       * The raw user input
@@ -961,7 +960,7 @@ object Selectize {
     
     inline def apply(
       items: js.Array[ISearchResult],
-      options: js.Any,
+      options: Any,
       query: String,
       tokens: js.Array[ISearchToken],
       total: Double
@@ -974,15 +973,15 @@ object Selectize {
       
       inline def setItems(value: js.Array[ISearchResult]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: ISearchResult*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: ISearchResult*): Self = StObject.set(x, "items", js.Array(value*))
       
-      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setTokens(value: js.Array[ISearchToken]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
       
-      inline def setTokensVarargs(value: ISearchToken*): Self = StObject.set(x, "tokens", js.Array(value :_*))
+      inline def setTokensVarargs(value: ISearchToken*): Self = StObject.set(x, "tokens", js.Array(value*))
       
       inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }
@@ -1011,20 +1010,20 @@ object Selectize {
   
   trait ISearchToken extends StObject {
     
-    var regex: RegExp
+    var regex: js.RegExp
     
     var string: String
   }
   object ISearchToken {
     
-    inline def apply(regex: RegExp, string: String): ISearchToken = {
+    inline def apply(regex: js.RegExp, string: String): ISearchToken = {
       val __obj = js.Dynamic.literal(regex = regex.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISearchToken]
     }
     
     extension [Self <: ISearchToken](x: Self) {
       
-      inline def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+      inline def setRegex(value: js.RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
       
       inline def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     }

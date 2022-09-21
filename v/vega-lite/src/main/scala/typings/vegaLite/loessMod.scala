@@ -10,11 +10,11 @@ object loessMod {
   
   @JSImport("vega-lite/build/src/compile/data/loess", "LoessTransformNode")
   @js.native
-  class LoessTransformNode protected () extends DataFlowNode {
+  open class LoessTransformNode protected () extends DataFlowNode {
     def this(parent: DataFlowNode, transform: LoessTransform) = this()
     
     def assemble(): typings.vegaTypings.transformMod.LoessTransform = js.native
     
-    /* private */ var transform: js.Any = js.native
+    /* private */ var transform: Any = js.native
   }
 }

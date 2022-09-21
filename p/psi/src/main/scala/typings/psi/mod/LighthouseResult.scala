@@ -81,7 +81,7 @@ object LighthouseResult {
     
     inline def setRunWarnings(value: js.Array[String]): Self = StObject.set(x, "runWarnings", value.asInstanceOf[js.Any])
     
-    inline def setRunWarningsVarargs(value: String*): Self = StObject.set(x, "runWarnings", js.Array(value :_*))
+    inline def setRunWarningsVarargs(value: String*): Self = StObject.set(x, "runWarnings", js.Array(value*))
     
     inline def setRuntimeError(value: RuntimeError): Self = StObject.set(x, "runtimeError", value.asInstanceOf[js.Any])
     

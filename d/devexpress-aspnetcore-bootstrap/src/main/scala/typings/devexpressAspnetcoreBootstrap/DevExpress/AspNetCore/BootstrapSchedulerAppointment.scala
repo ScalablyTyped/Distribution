@@ -1,6 +1,5 @@
 package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,9 +20,9 @@ trait BootstrapSchedulerAppointment extends StObject {
   
   def getDuration(): Double
   
-  def getEnd(): Date
+  def getEnd(): js.Date
   
-  def getId(): js.Any
+  def getId(): Any
   
   def getLabelId(): Double
   
@@ -33,15 +32,15 @@ trait BootstrapSchedulerAppointment extends StObject {
   
   def getRecurrencePattern(): BootstrapSchedulerAppointment | Null
   
-  def getResource(index: Double): js.Any
+  def getResource(index: Double): Any
   
-  def getStart(): Date
+  def getStart(): js.Date
   
   def getStatusId(): Double
   
   def getSubject(): String
   
-  /* protected */ val instance: js.Any
+  /* protected */ val instance: Any
   
   val interval: BootstrapTimeInterval | Null
   
@@ -57,9 +56,9 @@ trait BootstrapSchedulerAppointment extends StObject {
   
   def setDuration(duration: Double): Unit
   
-  def setEnd(end: Date): Unit
+  def setEnd(end: js.Date): Unit
   
-  def setId(id: js.Any): Unit
+  def setId(id: Any): Unit
   
   def setLabelId(statusId: Double): Unit
   
@@ -67,7 +66,7 @@ trait BootstrapSchedulerAppointment extends StObject {
   
   def setRecurrenceInfo(recurrenceInfo: BootstrapSchedulerRecurrenceInfo): Unit
   
-  def setStart(start: Date): Unit
+  def setStart(start: js.Date): Unit
   
   def setStatusId(statusId: Double): Unit
   
@@ -85,29 +84,29 @@ object BootstrapSchedulerAppointment {
     getAppointmentType: () => BootstrapSchedulerAppointmentType,
     getDescription: () => String,
     getDuration: () => Double,
-    getEnd: () => Date,
-    getId: () => js.Any,
+    getEnd: () => js.Date,
+    getId: () => Any,
     getLabelId: () => Double,
     getLocation: () => String,
     getRecurrenceInfo: () => BootstrapSchedulerRecurrenceInfo | Null,
     getRecurrencePattern: () => BootstrapSchedulerAppointment | Null,
-    getResource: Double => js.Any,
-    getStart: () => Date,
+    getResource: Double => Any,
+    getStart: () => js.Date,
     getStatusId: () => Double,
     getSubject: () => String,
-    instance: js.Any,
+    instance: Any,
     labelIndex: Double,
     resources: js.Array[String],
     setAllDay: Boolean => Unit,
     setAppointmentType: BootstrapSchedulerAppointmentType => Unit,
     setDescription: String => Unit,
     setDuration: Double => Unit,
-    setEnd: Date => Unit,
-    setId: js.Any => Unit,
+    setEnd: js.Date => Unit,
+    setId: Any => Unit,
     setLabelId: Double => Unit,
     setLocation: String => Unit,
     setRecurrenceInfo: BootstrapSchedulerRecurrenceInfo => Unit,
-    setStart: Date => Unit,
+    setStart: js.Date => Unit,
     setStatusId: Double => Unit,
     setSubject: String => Unit,
     statusIndex: Double
@@ -132,9 +131,9 @@ object BootstrapSchedulerAppointment {
     
     inline def setGetDuration(value: () => Double): Self = StObject.set(x, "getDuration", js.Any.fromFunction0(value))
     
-    inline def setGetEnd(value: () => Date): Self = StObject.set(x, "getEnd", js.Any.fromFunction0(value))
+    inline def setGetEnd(value: () => js.Date): Self = StObject.set(x, "getEnd", js.Any.fromFunction0(value))
     
-    inline def setGetId(value: () => js.Any): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+    inline def setGetId(value: () => Any): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
     inline def setGetLabelId(value: () => Double): Self = StObject.set(x, "getLabelId", js.Any.fromFunction0(value))
     
@@ -144,15 +143,15 @@ object BootstrapSchedulerAppointment {
     
     inline def setGetRecurrencePattern(value: () => BootstrapSchedulerAppointment | Null): Self = StObject.set(x, "getRecurrencePattern", js.Any.fromFunction0(value))
     
-    inline def setGetResource(value: Double => js.Any): Self = StObject.set(x, "getResource", js.Any.fromFunction1(value))
+    inline def setGetResource(value: Double => Any): Self = StObject.set(x, "getResource", js.Any.fromFunction1(value))
     
-    inline def setGetStart(value: () => Date): Self = StObject.set(x, "getStart", js.Any.fromFunction0(value))
+    inline def setGetStart(value: () => js.Date): Self = StObject.set(x, "getStart", js.Any.fromFunction0(value))
     
     inline def setGetStatusId(value: () => Double): Self = StObject.set(x, "getStatusId", js.Any.fromFunction0(value))
     
     inline def setGetSubject(value: () => String): Self = StObject.set(x, "getSubject", js.Any.fromFunction0(value))
     
-    inline def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     inline def setInterval(value: BootstrapTimeInterval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
@@ -162,7 +161,7 @@ object BootstrapSchedulerAppointment {
     
     inline def setResources(value: js.Array[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value*))
     
     inline def setSetAllDay(value: Boolean => Unit): Self = StObject.set(x, "setAllDay", js.Any.fromFunction1(value))
     
@@ -172,9 +171,9 @@ object BootstrapSchedulerAppointment {
     
     inline def setSetDuration(value: Double => Unit): Self = StObject.set(x, "setDuration", js.Any.fromFunction1(value))
     
-    inline def setSetEnd(value: Date => Unit): Self = StObject.set(x, "setEnd", js.Any.fromFunction1(value))
+    inline def setSetEnd(value: js.Date => Unit): Self = StObject.set(x, "setEnd", js.Any.fromFunction1(value))
     
-    inline def setSetId(value: js.Any => Unit): Self = StObject.set(x, "setId", js.Any.fromFunction1(value))
+    inline def setSetId(value: Any => Unit): Self = StObject.set(x, "setId", js.Any.fromFunction1(value))
     
     inline def setSetLabelId(value: Double => Unit): Self = StObject.set(x, "setLabelId", js.Any.fromFunction1(value))
     
@@ -182,7 +181,7 @@ object BootstrapSchedulerAppointment {
     
     inline def setSetRecurrenceInfo(value: BootstrapSchedulerRecurrenceInfo => Unit): Self = StObject.set(x, "setRecurrenceInfo", js.Any.fromFunction1(value))
     
-    inline def setSetStart(value: Date => Unit): Self = StObject.set(x, "setStart", js.Any.fromFunction1(value))
+    inline def setSetStart(value: js.Date => Unit): Self = StObject.set(x, "setStart", js.Any.fromFunction1(value))
     
     inline def setSetStatusId(value: Double => Unit): Self = StObject.set(x, "setStatusId", js.Any.fromFunction1(value))
     

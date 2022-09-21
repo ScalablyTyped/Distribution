@@ -1,16 +1,19 @@
 package typings.std
 
+import typings.std.stdStrings.DOMContentLoaded
 import typings.std.stdStrings.Events
 import typings.std.stdStrings.MouseEvents
 import typings.std.stdStrings.MutationEvents
-import typings.std.stdStrings.SVGZoomEvents
 import typings.std.stdStrings.UIEvents
-import typings.std.stdStrings.`VRDisplayEvent `
 import typings.std.stdStrings.`object`
 import typings.std.stdStrings.`var`
 import typings.std.stdStrings.a
 import typings.std.stdStrings.abbr
+import typings.std.stdStrings.acronym
 import typings.std.stdStrings.address
+import typings.std.stdStrings.animate
+import typings.std.stdStrings.animateMotion
+import typings.std.stdStrings.animateTransform
 import typings.std.stdStrings.applet
 import typings.std.stdStrings.area
 import typings.std.stdStrings.article
@@ -21,12 +24,16 @@ import typings.std.stdStrings.base
 import typings.std.stdStrings.basefont
 import typings.std.stdStrings.bdi
 import typings.std.stdStrings.bdo
+import typings.std.stdStrings.bgsound
+import typings.std.stdStrings.big
+import typings.std.stdStrings.blink
 import typings.std.stdStrings.blockquote
 import typings.std.stdStrings.body
 import typings.std.stdStrings.br
 import typings.std.stdStrings.button
 import typings.std.stdStrings.canvas
 import typings.std.stdStrings.caption
+import typings.std.stdStrings.center
 import typings.std.stdStrings.circle
 import typings.std.stdStrings.cite
 import typings.std.stdStrings.clipPath
@@ -57,6 +64,7 @@ import typings.std.stdStrings.feConvolveMatrix
 import typings.std.stdStrings.feDiffuseLighting
 import typings.std.stdStrings.feDisplacementMap
 import typings.std.stdStrings.feDistantLight
+import typings.std.stdStrings.feDropShadow
 import typings.std.stdStrings.feFlood
 import typings.std.stdStrings.feFuncA
 import typings.std.stdStrings.feFuncB
@@ -104,7 +112,9 @@ import typings.std.stdStrings.image
 import typings.std.stdStrings.img
 import typings.std.stdStrings.input
 import typings.std.stdStrings.ins
+import typings.std.stdStrings.isindex
 import typings.std.stdStrings.kbd
+import typings.std.stdStrings.keygen
 import typings.std.stdStrings.label
 import typings.std.stdStrings.legend
 import typings.std.stdStrings.li
@@ -119,10 +129,17 @@ import typings.std.stdStrings.marker
 import typings.std.stdStrings.marquee
 import typings.std.stdStrings.mask
 import typings.std.stdStrings.menu
+import typings.std.stdStrings.menuitem
 import typings.std.stdStrings.meta
 import typings.std.stdStrings.metadata
 import typings.std.stdStrings.meter
+import typings.std.stdStrings.mpath
+import typings.std.stdStrings.multicol
 import typings.std.stdStrings.nav
+import typings.std.stdStrings.nextid
+import typings.std.stdStrings.nobr
+import typings.std.stdStrings.noembed
+import typings.std.stdStrings.noframes
 import typings.std.stdStrings.noscript
 import typings.std.stdStrings.ol
 import typings.std.stdStrings.optgroup
@@ -133,6 +150,7 @@ import typings.std.stdStrings.param
 import typings.std.stdStrings.path
 import typings.std.stdStrings.pattern
 import typings.std.stdStrings.picture
+import typings.std.stdStrings.plaintext
 import typings.std.stdStrings.pointerlockchange
 import typings.std.stdStrings.pointerlockerror
 import typings.std.stdStrings.polygon
@@ -141,21 +159,26 @@ import typings.std.stdStrings.pre
 import typings.std.stdStrings.progress
 import typings.std.stdStrings.q
 import typings.std.stdStrings.radialGradient
+import typings.std.stdStrings.rb
 import typings.std.stdStrings.readystatechange
 import typings.std.stdStrings.rect
 import typings.std.stdStrings.rp
 import typings.std.stdStrings.rt
+import typings.std.stdStrings.rtc
 import typings.std.stdStrings.ruby
 import typings.std.stdStrings.s
 import typings.std.stdStrings.samp
 import typings.std.stdStrings.script
 import typings.std.stdStrings.section
 import typings.std.stdStrings.select
+import typings.std.stdStrings.set
 import typings.std.stdStrings.slot
 import typings.std.stdStrings.small
 import typings.std.stdStrings.source
+import typings.std.stdStrings.spacer
 import typings.std.stdStrings.span
 import typings.std.stdStrings.stop
+import typings.std.stdStrings.strike
 import typings.std.stdStrings.strong
 import typings.std.stdStrings.style
 import typings.std.stdStrings.sub
@@ -179,6 +202,7 @@ import typings.std.stdStrings.title
 import typings.std.stdStrings.tr
 import typings.std.stdStrings.track
 import typings.std.stdStrings.tspan
+import typings.std.stdStrings.tt
 import typings.std.stdStrings.u
 import typings.std.stdStrings.ul
 import typings.std.stdStrings.use
@@ -195,232 +219,260 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Document
   extends StObject
-     with Node
      with DocumentAndElementEventHandlers
      with DocumentOrShadowRoot
+     with FontFaceSource
      with GlobalEventHandlers
      with NonElementParentNode
      with ParentNode
      with XPathEvaluatorBase {
   
-  /**
-    * Sets or gets the URL for the current document.
-    */
+  /** Sets or gets the URL for the current document. */
+  /* standard dom */
   val URL: java.lang.String = js.native
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
+    callback: EventListenerOrEventListenerObject,
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  /* standard dom */
+  @JSName("addEventListener")
+  def addEventListener_DOMContentLoaded(`type`: DOMContentLoaded, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_DOMContentLoaded(
+    `type`: DOMContentLoaded,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_DOMContentLoaded(
+    `type`: DOMContentLoaded,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_fullscreenchange(`type`: fullscreenchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
+  def addEventListener_fullscreenchange(`type`: fullscreenchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_fullscreenchange(
     `type`: fullscreenchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_fullscreenchange(
     `type`: fullscreenchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_fullscreenerror(`type`: fullscreenerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
+  def addEventListener_fullscreenerror(`type`: fullscreenerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_fullscreenerror(
     `type`: fullscreenerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_fullscreenerror(
     `type`: fullscreenerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_pointerlockchange(
-    `type`: pointerlockchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
-  ): Unit = js.native
+  def addEventListener_pointerlockchange(`type`: pointerlockchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_pointerlockchange(
     `type`: pointerlockchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_pointerlockchange(
     `type`: pointerlockchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_pointerlockerror(`type`: pointerlockerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
+  def addEventListener_pointerlockerror(`type`: pointerlockerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_pointerlockerror(
     `type`: pointerlockerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_pointerlockerror(
     `type`: pointerlockerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
+  def addEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_visibilitychange(`type`: visibilitychange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
+  def addEventListener_visibilitychange(`type`: visibilitychange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_visibilitychange(
     `type`: visibilitychange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_visibilitychange(
     `type`: visibilitychange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   
   /**
     * Moves node from another document and returns it.
-    * 
+    *
     * If node is a document, throws a "NotSupportedError" DOMException or, if node is a shadow root, throws a "HierarchyRequestError" DOMException.
     */
-  def adoptNode[T /* <: Node */](source: T): T = js.native
+  /* standard dom */
+  def adoptNode[T /* <: Node */](node: T): T = js.native
   
   /**
     * Sets or gets the color of all active links in the document.
+    * @deprecated
     */
-  /** @deprecated */
+  /* standard dom */
   var alinkColor: java.lang.String = js.native
   
   /**
     * Returns a reference to the collection of elements contained by the object.
+    * @deprecated
     */
-  /** @deprecated */
+  /* standard dom */
   val all: HTMLAllCollection = js.native
   
   /**
     * Retrieves a collection of all a objects that have a name and/or id property. Objects in this collection are in HTML source order.
+    * @deprecated
     */
-  /** @deprecated */
+  /* standard dom */
   val anchors: HTMLCollectionOf[HTMLAnchorElement] = js.native
   
   /**
     * Retrieves a collection of all applet objects in the document.
+    * @deprecated
     */
-  /** @deprecated */
-  val applets: HTMLCollectionOf[HTMLAppletElement] = js.native
+  /* standard dom */
+  val applets: HTMLCollection = js.native
   
   /**
     * Deprecated. Sets or retrieves a value that indicates the background color behind the object.
+    * @deprecated
     */
-  /** @deprecated */
+  /* standard dom */
   var bgColor: java.lang.String = js.native
   
-  /**
-    * Specifies the beginning and end of the document body.
-    */
+  /** Specifies the beginning and end of the document body. */
+  /* standard dom */
   var body: HTMLElement = js.native
   
   /** @deprecated */
+  /* standard dom */
   def captureEvents(): Unit = js.native
   
-  /**
-    * Returns document's encoding.
-    */
+  /** @deprecated */
+  /* standard dom */
+  def caretRangeFromPoint(x: Double, y: Double): Range | Null = js.native
+  
+  /** Returns document's encoding. */
+  /* standard dom */
   val characterSet: java.lang.String = js.native
   
   /**
     * Gets or sets the character set used to encode the object.
+    * @deprecated This is a legacy alias of `characterSet`.
     */
+  /* standard dom */
   val charset: java.lang.String = js.native
   
   /** @deprecated */
+  /* standard dom */
   def clear(): Unit = js.native
   
-  /**
-    * Closes an output stream and forces the sent data to display.
-    */
+  /** Closes an output stream and forces the sent data to display. */
+  /* standard dom */
   def close(): Unit = js.native
   
-  /**
-    * Gets a value that indicates whether standards-compliant mode is switched on for the object.
-    */
+  /** Gets a value that indicates whether standards-compliant mode is switched on for the object. */
+  /* standard dom */
   val compatMode: java.lang.String = js.native
   
-  /**
-    * Returns document's content type.
-    */
+  /** Returns document's content type. */
+  /* standard dom */
   val contentType: java.lang.String = js.native
   
   /**
     * Returns the HTTP cookies that apply to the Document. If there are no cookies or cookies can't be applied to this resource, the empty string will be returned.
-    * 
+    *
     * Can be set, to add a new cookie to the element's set of HTTP cookies.
-    * 
+    *
     * If the contents are sandboxed into a unique origin (e.g. in an iframe with the sandbox attribute), a "SecurityError" DOMException will be thrown on getting and setting.
     */
+  /* standard dom */
   var cookie: java.lang.String = js.native
   
   /**
     * Creates an attribute object with a specified name.
     * @param name String that sets the attribute object's name.
     */
+  /* standard dom */
   def createAttribute(localName: java.lang.String): Attr = js.native
   
+  /* standard dom */
   def createAttributeNS(namespace: java.lang.String, qualifiedName: java.lang.String): Attr = js.native
   def createAttributeNS(namespace: Null, qualifiedName: java.lang.String): Attr = js.native
   
-  /**
-    * Returns a CDATASection node whose data is data.
-    */
+  /** Returns a CDATASection node whose data is data. */
+  /* standard dom */
   def createCDATASection(data: java.lang.String): CDATASection = js.native
   
   /**
     * Creates a comment object with the specified data.
     * @param data Sets the comment object's data.
     */
+  /* standard dom */
   def createComment(data: java.lang.String): Comment = js.native
   
-  /**
-    * Creates a new document.
-    */
+  /** Creates a new document. */
+  /* standard dom */
   def createDocumentFragment(): DocumentFragment = js.native
   
+  /* standard dom */
   def createElement(tagName: java.lang.String): HTMLElement = js.native
   def createElement(tagName: java.lang.String, options: ElementCreationOptions): HTMLElement = js.native
   
+  /* standard dom */
   def createElementNS(namespaceURI: java.lang.String, qualifiedName: java.lang.String): Element = js.native
   def createElementNS(namespaceURI: java.lang.String, qualifiedName: java.lang.String, options: ElementCreationOptions): Element = js.native
   def createElementNS(namespaceURI: Null, qualifiedName: java.lang.String): Element = js.native
   def createElementNS(namespaceURI: Null, qualifiedName: java.lang.String, options: ElementCreationOptions): Element = js.native
+  /* standard dom */
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: a): SVGAElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: animate): SVGAnimateElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: animateMotion): SVGAnimateMotionElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: animateTransform): SVGAnimateTransformElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: circle): SVGCircleElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: clipPath): SVGClipPathElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: defs): SVGDefsElement = js.native
@@ -437,6 +489,7 @@ trait Document
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feDiffuseLighting): SVGFEDiffuseLightingElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feDisplacementMap): SVGFEDisplacementMapElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feDistantLight): SVGFEDistantLightElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feDropShadow): SVGFEDropShadowElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feFlood): SVGFEFloodElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feFuncA): SVGFEFuncAElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: feFuncB): SVGFEFuncBElement = js.native
@@ -465,6 +518,7 @@ trait Document
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: marker): SVGMarkerElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: mask): SVGMaskElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: metadata): SVGMetadataElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: mpath): SVGMPathElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: path): SVGPathElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: pattern): SVGPatternElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: polygon): SVGPolygonElement = js.native
@@ -472,6 +526,7 @@ trait Document
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: radialGradient): SVGRadialGradientElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: rect): SVGRectElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: script): SVGScriptElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: set): SVGSetElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: stop): SVGStopElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: style): SVGStyleElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: svg): SVGSVGElement = js.native
@@ -487,24 +542,26 @@ trait Document
   def createElementNS(namespace: Null, qualifiedName: java.lang.String, options: java.lang.String): Element = js.native
   /**
     * Returns an element with namespace namespace. Its namespace prefix will be everything before ":" (U+003E) in qualifiedName or null. Its local name will be everything after ":" (U+003E) in qualifiedName or qualifiedName.
-    * 
+    *
     * If localName does not match the Name production an "InvalidCharacterError" DOMException will be thrown.
-    * 
+    *
     * If one of the following conditions is true a "NamespaceError" DOMException will be thrown:
-    * 
+    *
     * localName does not match the QName production.
     * Namespace prefix is not null and namespace is the empty string.
     * Namespace prefix is "xml" and namespace is not the XML namespace.
     * qualifiedName or namespace prefix is "xmlns" and namespace is not the XMLNS namespace.
     * namespace is the XMLNS namespace and neither qualifiedName nor namespace prefix is "xmlns".
-    * 
+    *
     * When supplied, options's is can be used to create a customized built-in element.
     */
+  /* standard dom */
   @JSName("createElementNS")
   def createElementNS_httpwwww3org1999xhtml(
     namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml,
     qualifiedName: java.lang.String
   ): HTMLElement = js.native
+  /* standard dom */
   @JSName("createElementNS")
   def createElementNS_httpwwww3org2000svg(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: java.lang.String): SVGElement = js.native
   
@@ -512,6 +569,7 @@ trait Document
     * Creates an instance of the element for the specified tag.
     * @param tagName The name of an element.
     */
+  /* standard dom */
   @JSName("createElement")
   def createElement_a(tagName: a): HTMLAnchorElement = js.native
   @JSName("createElement")
@@ -520,14 +578,20 @@ trait Document
   def createElement_abbr(tagName: abbr): HTMLElement = js.native
   @JSName("createElement")
   def createElement_abbr(tagName: abbr, options: ElementCreationOptions): HTMLElement = js.native
+  /** @deprecated */
+  /* standard dom */
+  @JSName("createElement")
+  def createElement_acronym(tagName: acronym): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_acronym(tagName: acronym, options: ElementCreationOptions): HTMLElement = js.native
   @JSName("createElement")
   def createElement_address(tagName: address): HTMLElement = js.native
   @JSName("createElement")
   def createElement_address(tagName: address, options: ElementCreationOptions): HTMLElement = js.native
   @JSName("createElement")
-  def createElement_applet(tagName: applet): HTMLAppletElement = js.native
+  def createElement_applet(tagName: applet): HTMLUnknownElement = js.native
   @JSName("createElement")
-  def createElement_applet(tagName: applet, options: ElementCreationOptions): HTMLAppletElement = js.native
+  def createElement_applet(tagName: applet, options: ElementCreationOptions): HTMLUnknownElement = js.native
   @JSName("createElement")
   def createElement_area(tagName: area): HTMLAreaElement = js.native
   @JSName("createElement")
@@ -553,9 +617,9 @@ trait Document
   @JSName("createElement")
   def createElement_base(tagName: base, options: ElementCreationOptions): HTMLBaseElement = js.native
   @JSName("createElement")
-  def createElement_basefont(tagName: basefont): HTMLBaseFontElement = js.native
+  def createElement_basefont(tagName: basefont): HTMLElement = js.native
   @JSName("createElement")
-  def createElement_basefont(tagName: basefont, options: ElementCreationOptions): HTMLBaseFontElement = js.native
+  def createElement_basefont(tagName: basefont, options: ElementCreationOptions): HTMLElement = js.native
   @JSName("createElement")
   def createElement_bdi(tagName: bdi): HTMLElement = js.native
   @JSName("createElement")
@@ -564,6 +628,18 @@ trait Document
   def createElement_bdo(tagName: bdo): HTMLElement = js.native
   @JSName("createElement")
   def createElement_bdo(tagName: bdo, options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_bgsound(tagName: bgsound): HTMLUnknownElement = js.native
+  @JSName("createElement")
+  def createElement_bgsound(tagName: bgsound, options: ElementCreationOptions): HTMLUnknownElement = js.native
+  @JSName("createElement")
+  def createElement_big(tagName: big): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_big(tagName: big, options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_blink(tagName: blink): HTMLUnknownElement = js.native
+  @JSName("createElement")
+  def createElement_blink(tagName: blink, options: ElementCreationOptions): HTMLUnknownElement = js.native
   @JSName("createElement")
   def createElement_blockquote(tagName: blockquote): HTMLQuoteElement = js.native
   @JSName("createElement")
@@ -588,6 +664,10 @@ trait Document
   def createElement_caption(tagName: caption): HTMLTableCaptionElement = js.native
   @JSName("createElement")
   def createElement_caption(tagName: caption, options: ElementCreationOptions): HTMLTableCaptionElement = js.native
+  @JSName("createElement")
+  def createElement_center(tagName: center): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_center(tagName: center, options: ElementCreationOptions): HTMLElement = js.native
   @JSName("createElement")
   def createElement_cite(tagName: cite): HTMLElement = js.native
   @JSName("createElement")
@@ -753,9 +833,17 @@ trait Document
   @JSName("createElement")
   def createElement_ins(tagName: ins, options: ElementCreationOptions): HTMLModElement = js.native
   @JSName("createElement")
+  def createElement_isindex(tagName: isindex): HTMLUnknownElement = js.native
+  @JSName("createElement")
+  def createElement_isindex(tagName: isindex, options: ElementCreationOptions): HTMLUnknownElement = js.native
+  @JSName("createElement")
   def createElement_kbd(tagName: kbd): HTMLElement = js.native
   @JSName("createElement")
   def createElement_kbd(tagName: kbd, options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_keygen(tagName: keygen): HTMLUnknownElement = js.native
+  @JSName("createElement")
+  def createElement_keygen(tagName: keygen, options: ElementCreationOptions): HTMLUnknownElement = js.native
   @JSName("createElement")
   def createElement_label(tagName: label): HTMLLabelElement = js.native
   @JSName("createElement")
@@ -772,7 +860,6 @@ trait Document
   def createElement_link(tagName: link): HTMLLinkElement = js.native
   @JSName("createElement")
   def createElement_link(tagName: link, options: ElementCreationOptions): HTMLLinkElement = js.native
-  /** @deprecated */
   @JSName("createElement")
   def createElement_listing(tagName: listing): HTMLPreElement = js.native
   @JSName("createElement")
@@ -798,6 +885,10 @@ trait Document
   @JSName("createElement")
   def createElement_menu(tagName: menu, options: ElementCreationOptions): HTMLMenuElement = js.native
   @JSName("createElement")
+  def createElement_menuitem(tagName: menuitem): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_menuitem(tagName: menuitem, options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
   def createElement_meta(tagName: meta): HTMLMetaElement = js.native
   @JSName("createElement")
   def createElement_meta(tagName: meta, options: ElementCreationOptions): HTMLMetaElement = js.native
@@ -806,9 +897,29 @@ trait Document
   @JSName("createElement")
   def createElement_meter(tagName: meter, options: ElementCreationOptions): HTMLMeterElement = js.native
   @JSName("createElement")
+  def createElement_multicol(tagName: multicol): HTMLUnknownElement = js.native
+  @JSName("createElement")
+  def createElement_multicol(tagName: multicol, options: ElementCreationOptions): HTMLUnknownElement = js.native
+  @JSName("createElement")
   def createElement_nav(tagName: nav): HTMLElement = js.native
   @JSName("createElement")
   def createElement_nav(tagName: nav, options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_nextid(tagName: nextid): HTMLUnknownElement = js.native
+  @JSName("createElement")
+  def createElement_nextid(tagName: nextid, options: ElementCreationOptions): HTMLUnknownElement = js.native
+  @JSName("createElement")
+  def createElement_nobr(tagName: nobr): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_nobr(tagName: nobr, options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_noembed(tagName: noembed): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_noembed(tagName: noembed, options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_noframes(tagName: noframes): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_noframes(tagName: noframes, options: ElementCreationOptions): HTMLElement = js.native
   @JSName("createElement")
   def createElement_noscript(tagName: noscript): HTMLElement = js.native
   @JSName("createElement")
@@ -846,6 +957,10 @@ trait Document
   @JSName("createElement")
   def createElement_picture(tagName: picture, options: ElementCreationOptions): HTMLPictureElement = js.native
   @JSName("createElement")
+  def createElement_plaintext(tagName: plaintext): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_plaintext(tagName: plaintext, options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
   def createElement_pre(tagName: pre): HTMLPreElement = js.native
   @JSName("createElement")
   def createElement_pre(tagName: pre, options: ElementCreationOptions): HTMLPreElement = js.native
@@ -858,6 +973,10 @@ trait Document
   @JSName("createElement")
   def createElement_q(tagName: q, options: ElementCreationOptions): HTMLQuoteElement = js.native
   @JSName("createElement")
+  def createElement_rb(tagName: rb): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_rb(tagName: rb, options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
   def createElement_rp(tagName: rp): HTMLElement = js.native
   @JSName("createElement")
   def createElement_rp(tagName: rp, options: ElementCreationOptions): HTMLElement = js.native
@@ -865,6 +984,10 @@ trait Document
   def createElement_rt(tagName: rt): HTMLElement = js.native
   @JSName("createElement")
   def createElement_rt(tagName: rt, options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_rtc(tagName: rtc): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_rtc(tagName: rtc, options: ElementCreationOptions): HTMLElement = js.native
   @JSName("createElement")
   def createElement_ruby(tagName: ruby): HTMLElement = js.native
   @JSName("createElement")
@@ -902,9 +1025,17 @@ trait Document
   @JSName("createElement")
   def createElement_source(tagName: source, options: ElementCreationOptions): HTMLSourceElement = js.native
   @JSName("createElement")
+  def createElement_spacer(tagName: spacer): HTMLUnknownElement = js.native
+  @JSName("createElement")
+  def createElement_spacer(tagName: spacer, options: ElementCreationOptions): HTMLUnknownElement = js.native
+  @JSName("createElement")
   def createElement_span(tagName: span): HTMLSpanElement = js.native
   @JSName("createElement")
   def createElement_span(tagName: span, options: ElementCreationOptions): HTMLSpanElement = js.native
+  @JSName("createElement")
+  def createElement_strike(tagName: strike): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_strike(tagName: strike, options: ElementCreationOptions): HTMLElement = js.native
   @JSName("createElement")
   def createElement_strong(tagName: strong): HTMLElement = js.native
   @JSName("createElement")
@@ -934,9 +1065,9 @@ trait Document
   @JSName("createElement")
   def createElement_tbody(tagName: tbody, options: ElementCreationOptions): HTMLTableSectionElement = js.native
   @JSName("createElement")
-  def createElement_td(tagName: td): HTMLTableDataCellElement = js.native
+  def createElement_td(tagName: td): HTMLTableCellElement = js.native
   @JSName("createElement")
-  def createElement_td(tagName: td, options: ElementCreationOptions): HTMLTableDataCellElement = js.native
+  def createElement_td(tagName: td, options: ElementCreationOptions): HTMLTableCellElement = js.native
   @JSName("createElement")
   def createElement_template(tagName: template): HTMLTemplateElement = js.native
   @JSName("createElement")
@@ -950,9 +1081,9 @@ trait Document
   @JSName("createElement")
   def createElement_tfoot(tagName: tfoot, options: ElementCreationOptions): HTMLTableSectionElement = js.native
   @JSName("createElement")
-  def createElement_th(tagName: th): HTMLTableHeaderCellElement = js.native
+  def createElement_th(tagName: th): HTMLTableCellElement = js.native
   @JSName("createElement")
-  def createElement_th(tagName: th, options: ElementCreationOptions): HTMLTableHeaderCellElement = js.native
+  def createElement_th(tagName: th, options: ElementCreationOptions): HTMLTableCellElement = js.native
   @JSName("createElement")
   def createElement_thead(tagName: thead): HTMLTableSectionElement = js.native
   @JSName("createElement")
@@ -973,6 +1104,10 @@ trait Document
   def createElement_track(tagName: track): HTMLTrackElement = js.native
   @JSName("createElement")
   def createElement_track(tagName: track, options: ElementCreationOptions): HTMLTrackElement = js.native
+  @JSName("createElement")
+  def createElement_tt(tagName: tt): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_tt(tagName: tt, options: ElementCreationOptions): HTMLElement = js.native
   @JSName("createElement")
   def createElement_u(tagName: u): HTMLElement = js.native
   @JSName("createElement")
@@ -998,159 +1133,183 @@ trait Document
   @JSName("createElement")
   def createElement_xmp(tagName: xmp, options: ElementCreationOptions): HTMLPreElement = js.native
   
+  /* standard dom */
   def createEvent(eventInterface: java.lang.String): Event = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_AnimationEvent(eventInterface: typings.std.stdStrings.AnimationEvent): AnimationEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_AnimationPlaybackEvent(eventInterface: typings.std.stdStrings.AnimationPlaybackEvent): AnimationPlaybackEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_AudioProcessingEvent(eventInterface: typings.std.stdStrings.AudioProcessingEvent): AudioProcessingEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_BeforeUnloadEvent(eventInterface: typings.std.stdStrings.BeforeUnloadEvent): BeforeUnloadEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  def createEvent_BlobEvent(eventInterface: typings.std.stdStrings.BlobEvent): BlobEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_ClipboardEvent(eventInterface: typings.std.stdStrings.ClipboardEvent): ClipboardEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_CloseEvent(eventInterface: typings.std.stdStrings.CloseEvent): CloseEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_CompositionEvent(eventInterface: typings.std.stdStrings.CompositionEvent): CompositionEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
-  def createEvent_CustomEvent(eventInterface: typings.std.stdStrings.CustomEvent): CustomEvent[js.Any] = js.native
-  @JSName("createEvent")
-  def createEvent_DeviceLightEvent(eventInterface: typings.std.stdStrings.DeviceLightEvent): DeviceLightEvent = js.native
+  def createEvent_CustomEvent(eventInterface: typings.std.stdStrings.CustomEvent): CustomEvent[Any] = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_DeviceMotionEvent(eventInterface: typings.std.stdStrings.DeviceMotionEvent): DeviceMotionEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_DeviceOrientationEvent(eventInterface: typings.std.stdStrings.DeviceOrientationEvent): DeviceOrientationEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_DragEvent(eventInterface: typings.std.stdStrings.DragEvent): DragEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_ErrorEvent(eventInterface: typings.std.stdStrings.ErrorEvent): ErrorEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_Event(eventInterface: typings.std.stdStrings.Event): Event = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_Events(eventInterface: Events): Event = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_FocusEvent(eventInterface: typings.std.stdStrings.FocusEvent): FocusEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
-  def createEvent_FocusNavigationEvent(eventInterface: typings.std.stdStrings.FocusNavigationEvent): FocusNavigationEvent = js.native
+  def createEvent_FontFaceSetLoadEvent(eventInterface: typings.std.stdStrings.FontFaceSetLoadEvent): FontFaceSetLoadEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  def createEvent_FormDataEvent(eventInterface: typings.std.stdStrings.FormDataEvent): FormDataEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_GamepadEvent(eventInterface: typings.std.stdStrings.GamepadEvent): GamepadEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_HashChangeEvent(eventInterface: typings.std.stdStrings.HashChangeEvent): HashChangeEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_IDBVersionChangeEvent(eventInterface: typings.std.stdStrings.IDBVersionChangeEvent): IDBVersionChangeEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_InputEvent(eventInterface: typings.std.stdStrings.InputEvent): InputEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_KeyboardEvent(eventInterface: typings.std.stdStrings.KeyboardEvent): KeyboardEvent = js.native
-  @JSName("createEvent")
-  def createEvent_ListeningStateChangedEvent(eventInterface: typings.std.stdStrings.ListeningStateChangedEvent): ListeningStateChangedEvent = js.native
-  @JSName("createEvent")
-  def createEvent_MSGestureEvent(eventInterface: typings.std.stdStrings.MSGestureEvent): MSGestureEvent = js.native
-  @JSName("createEvent")
-  def createEvent_MSMediaKeyMessageEvent(eventInterface: typings.std.stdStrings.MSMediaKeyMessageEvent): MSMediaKeyMessageEvent = js.native
-  @JSName("createEvent")
-  def createEvent_MSMediaKeyNeededEvent(eventInterface: typings.std.stdStrings.MSMediaKeyNeededEvent): MSMediaKeyNeededEvent = js.native
-  @JSName("createEvent")
-  def createEvent_MSPointerEvent(eventInterface: typings.std.stdStrings.MSPointerEvent): MSPointerEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_MediaEncryptedEvent(eventInterface: typings.std.stdStrings.MediaEncryptedEvent): MediaEncryptedEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_MediaKeyMessageEvent(eventInterface: typings.std.stdStrings.MediaKeyMessageEvent): MediaKeyMessageEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_MediaQueryListEvent(eventInterface: typings.std.stdStrings.MediaQueryListEvent): MediaQueryListEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
-  def createEvent_MediaStreamErrorEvent(eventInterface: typings.std.stdStrings.MediaStreamErrorEvent): MediaStreamErrorEvent = js.native
-  @JSName("createEvent")
-  def createEvent_MediaStreamEvent(eventInterface: typings.std.stdStrings.MediaStreamEvent): MediaStreamEvent = js.native
+  def createEvent_MediaRecorderErrorEvent(eventInterface: typings.std.stdStrings.MediaRecorderErrorEvent): MediaRecorderErrorEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_MediaStreamTrackEvent(eventInterface: typings.std.stdStrings.MediaStreamTrackEvent): MediaStreamTrackEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
-  def createEvent_MessageEvent(eventInterface: typings.std.stdStrings.MessageEvent): MessageEvent[js.Any] = js.native
+  def createEvent_MessageEvent(eventInterface: typings.std.stdStrings.MessageEvent): MessageEvent[Any] = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_MouseEvent(eventInterface: typings.std.stdStrings.MouseEvent): MouseEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_MouseEvents(eventInterface: MouseEvents): MouseEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_MutationEvent(eventInterface: typings.std.stdStrings.MutationEvent): MutationEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_MutationEvents(eventInterface: MutationEvents): MutationEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_OfflineAudioCompletionEvent(eventInterface: typings.std.stdStrings.OfflineAudioCompletionEvent): OfflineAudioCompletionEvent = js.native
-  @JSName("createEvent")
-  def createEvent_OverflowEvent(eventInterface: typings.std.stdStrings.OverflowEvent): OverflowEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_PageTransitionEvent(eventInterface: typings.std.stdStrings.PageTransitionEvent): PageTransitionEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  def createEvent_PaymentMethodChangeEvent(eventInterface: typings.std.stdStrings.PaymentMethodChangeEvent): PaymentMethodChangeEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_PaymentRequestUpdateEvent(eventInterface: typings.std.stdStrings.PaymentRequestUpdateEvent): PaymentRequestUpdateEvent = js.native
-  @JSName("createEvent")
-  def createEvent_PermissionRequestedEvent(eventInterface: typings.std.stdStrings.PermissionRequestedEvent): PermissionRequestedEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_PointerEvent(eventInterface: typings.std.stdStrings.PointerEvent): PointerEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_PopStateEvent(eventInterface: typings.std.stdStrings.PopStateEvent): PopStateEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_ProgressEvent(eventInterface: typings.std.stdStrings.ProgressEvent): ProgressEvent[EventTarget] = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_PromiseRejectionEvent(eventInterface: typings.std.stdStrings.PromiseRejectionEvent): PromiseRejectionEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_RTCDTMFToneChangeEvent(eventInterface: typings.std.stdStrings.RTCDTMFToneChangeEvent): RTCDTMFToneChangeEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_RTCDataChannelEvent(eventInterface: typings.std.stdStrings.RTCDataChannelEvent): RTCDataChannelEvent = js.native
-  @JSName("createEvent")
-  def createEvent_RTCDtlsTransportStateChangedEvent(eventInterface: typings.std.stdStrings.RTCDtlsTransportStateChangedEvent): RTCDtlsTransportStateChangedEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_RTCErrorEvent(eventInterface: typings.std.stdStrings.RTCErrorEvent): RTCErrorEvent = js.native
-  @JSName("createEvent")
-  def createEvent_RTCIceCandidatePairChangedEvent(eventInterface: typings.std.stdStrings.RTCIceCandidatePairChangedEvent): RTCIceCandidatePairChangedEvent = js.native
-  @JSName("createEvent")
-  def createEvent_RTCIceGathererEvent(eventInterface: typings.std.stdStrings.RTCIceGathererEvent): RTCIceGathererEvent = js.native
-  @JSName("createEvent")
-  def createEvent_RTCIceTransportStateChangedEvent(eventInterface: typings.std.stdStrings.RTCIceTransportStateChangedEvent): RTCIceTransportStateChangedEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_RTCPeerConnectionIceErrorEvent(eventInterface: typings.std.stdStrings.RTCPeerConnectionIceErrorEvent): RTCPeerConnectionIceErrorEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_RTCPeerConnectionIceEvent(eventInterface: typings.std.stdStrings.RTCPeerConnectionIceEvent): RTCPeerConnectionIceEvent = js.native
-  @JSName("createEvent")
-  def createEvent_RTCSsrcConflictEvent(eventInterface: typings.std.stdStrings.RTCSsrcConflictEvent): RTCSsrcConflictEvent = js.native
-  @JSName("createEvent")
-  def createEvent_RTCStatsEvent(eventInterface: typings.std.stdStrings.RTCStatsEvent): RTCStatsEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_RTCTrackEvent(eventInterface: typings.std.stdStrings.RTCTrackEvent): RTCTrackEvent = js.native
-  @JSName("createEvent")
-  def createEvent_SVGZoomEvent(eventInterface: typings.std.stdStrings.SVGZoomEvent): SVGZoomEvent = js.native
-  @JSName("createEvent")
-  def createEvent_SVGZoomEvents(eventInterface: SVGZoomEvents): SVGZoomEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_SecurityPolicyViolationEvent(eventInterface: typings.std.stdStrings.SecurityPolicyViolationEvent): SecurityPolicyViolationEvent = js.native
-  @JSName("createEvent")
-  def createEvent_ServiceWorkerMessageEvent(eventInterface: typings.std.stdStrings.ServiceWorkerMessageEvent): ServiceWorkerMessageEvent = js.native
-  @JSName("createEvent")
-  def createEvent_SpeechRecognitionEvent(eventInterface: typings.std.stdStrings.SpeechRecognitionEvent): SpeechRecognitionEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_SpeechSynthesisErrorEvent(eventInterface: typings.std.stdStrings.SpeechSynthesisErrorEvent): SpeechSynthesisErrorEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_SpeechSynthesisEvent(eventInterface: typings.std.stdStrings.SpeechSynthesisEvent): SpeechSynthesisEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_StorageEvent(eventInterface: typings.std.stdStrings.StorageEvent): StorageEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
-  def createEvent_TextEvent(eventInterface: typings.std.stdStrings.TextEvent): TextEvent = js.native
+  def createEvent_SubmitEvent(eventInterface: typings.std.stdStrings.SubmitEvent): SubmitEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_TouchEvent(eventInterface: typings.std.stdStrings.TouchEvent): TouchEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_TrackEvent(eventInterface: typings.std.stdStrings.TrackEvent): TrackEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_TransitionEvent(eventInterface: typings.std.stdStrings.TransitionEvent): TransitionEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_UIEvent(eventInterface: typings.std.stdStrings.UIEvent): UIEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_UIEvents(eventInterface: UIEvents): UIEvent = js.native
-  @JSName("createEvent")
-  def createEvent_VRDisplayEvent(eventInterface: typings.std.stdStrings.VRDisplayEvent): VRDisplayEvent = js.native
-  @JSName("createEvent")
-  def createEvent_VRDisplayEvent(eventInterface: `VRDisplayEvent `): VRDisplayEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_WebGLContextEvent(eventInterface: typings.std.stdStrings.WebGLContextEvent): WebGLContextEvent = js.native
+  /* standard dom */
   @JSName("createEvent")
   def createEvent_WheelEvent(eventInterface: typings.std.stdStrings.WheelEvent): WheelEvent = js.native
   
@@ -1159,27 +1318,26 @@ trait Document
     * @param root The root element or node to start traversing on.
     * @param whatToShow The type of nodes or elements to appear in the node list
     * @param filter A custom NodeFilter function to use. For more information, see filter. Use null for no filter.
-    * @param entityReferenceExpansion A flag that specifies whether entity reference nodes are expanded.
     */
+  /* standard dom */
   def createNodeIterator(root: Node): NodeIterator = js.native
   def createNodeIterator(root: Node, whatToShow: Double): NodeIterator = js.native
   def createNodeIterator(root: Node, whatToShow: Double, filter: NodeFilter): NodeIterator = js.native
   def createNodeIterator(root: Node, whatToShow: Unit, filter: NodeFilter): NodeIterator = js.native
   
-  /**
-    * Returns a ProcessingInstruction node whose target is target and data is data. If target does not match the Name production an "InvalidCharacterError" DOMException will be thrown. If data contains "?>" an "InvalidCharacterError" DOMException will be thrown.
-    */
+  /** Returns a ProcessingInstruction node whose target is target and data is data. If target does not match the Name production an "InvalidCharacterError" DOMException will be thrown. If data contains "?>" an "InvalidCharacterError" DOMException will be thrown. */
+  /* standard dom */
   def createProcessingInstruction(target: java.lang.String, data: java.lang.String): ProcessingInstruction = js.native
   
-  /**
-    *  Returns an empty range object that has both of its boundary points positioned at the beginning of the document.
-    */
+  /**  Returns an empty range object that has both of its boundary points positioned at the beginning of the document. */
+  /* standard dom */
   def createRange(): Range = js.native
   
   /**
     * Creates a text string from the specified value.
     * @param data String that specifies the nodeValue property of the text node.
     */
+  /* standard dom */
   def createTextNode(data: java.lang.String): Text = js.native
   
   /**
@@ -1187,57 +1345,51 @@ trait Document
     * @param root The root element or node to start traversing on.
     * @param whatToShow The type of nodes or elements to appear in the node list. For more information, see whatToShow.
     * @param filter A custom NodeFilter function to use.
-    * @param entityReferenceExpansion A flag that specifies whether entity reference nodes are expanded.
     */
+  /* standard dom */
   def createTreeWalker(root: Node): TreeWalker = js.native
   def createTreeWalker(root: Node, whatToShow: Double): TreeWalker = js.native
-  def createTreeWalker(root: Node, whatToShow: Double, filter: Null, entityReferenceExpansion: scala.Boolean): TreeWalker = js.native
   def createTreeWalker(root: Node, whatToShow: Double, filter: NodeFilter): TreeWalker = js.native
-  def createTreeWalker(root: Node, whatToShow: Double, filter: NodeFilter, entityReferenceExpansion: scala.Boolean): TreeWalker = js.native
   def createTreeWalker(root: Node, whatToShow: Unit, filter: NodeFilter): TreeWalker = js.native
   
   /**
     * Returns the script element, or the SVG script element, that is currently executing, as long as the element represents a classic script. In the case of reentrant script execution, returns the one that most recently started executing amongst those that have not yet finished executing.
-    * 
+    *
     * Returns null if the Document is not currently executing a script or SVG script element (e.g., because the running script is an event handler, or a timeout), or if the currently executing script or SVG script element represents a module script.
     */
+  /* standard dom */
   val currentScript: HTMLOrSVGScriptElement | Null = js.native
   
-  val defaultView: (WindowProxy & (/* globalThis */ js.Any)) | Null = js.native
+  /** Returns the Window object of the active document. */
+  /* standard dom */
+  val defaultView: (WindowProxy & (/* globalThis */ Any)) | Null = js.native
   
-  /**
-    * Sets or gets a value that indicates whether the document can be edited.
-    */
+  /** Sets or gets a value that indicates whether the document can be edited. */
+  /* standard dom */
   var designMode: java.lang.String = js.native
   
-  /**
-    * Sets or retrieves a value that indicates the reading order of the object.
-    */
+  /** Sets or retrieves a value that indicates the reading order of the object. */
+  /* standard dom */
   var dir: java.lang.String = js.native
   
-  /**
-    * Gets an object representing the document type declaration associated with the current document.
-    */
+  /** Gets an object representing the document type declaration associated with the current document. */
+  /* standard dom */
   val doctype: DocumentType | Null = js.native
   
-  /**
-    * Gets a reference to the root node of the document.
-    */
+  /** Gets a reference to the root node of the document. */
+  /* standard dom */
   val documentElement: HTMLElement = js.native
   
-  /**
-    * Returns document's URL.
-    */
+  /** Returns document's URL. */
+  /* standard dom */
   val documentURI: java.lang.String = js.native
   
-  /**
-    * Sets or gets the security domain of the document.
-    */
+  /** Sets or gets the security domain of the document. */
+  /* standard dom */
   var domain: java.lang.String = js.native
   
-  /**
-    * Retrieves a collection of all embed objects in the document.
-    */
+  /** Retrieves a collection of all embed objects in the document. */
+  /* standard dom */
   val embeds: HTMLCollectionOf[HTMLEmbedElement] = js.native
   
   /**
@@ -1245,65 +1397,73 @@ trait Document
     * @param commandId String that specifies the command to execute. This command can be any of the command identifiers that can be executed in script.
     * @param showUI Display the user interface, defaults to false.
     * @param value Value to assign.
+    * @deprecated
     */
+  /* standard dom */
   def execCommand(commandId: java.lang.String): scala.Boolean = js.native
   def execCommand(commandId: java.lang.String, showUI: scala.Boolean): scala.Boolean = js.native
   def execCommand(commandId: java.lang.String, showUI: scala.Boolean, value: java.lang.String): scala.Boolean = js.native
   def execCommand(commandId: java.lang.String, showUI: Unit, value: java.lang.String): scala.Boolean = js.native
   
-  /**
-    * Stops document's fullscreen element from being displayed fullscreen and resolves promise when done.
-    */
+  /** Stops document's fullscreen element from being displayed fullscreen and resolves promise when done. */
+  /* standard dom */
   def exitFullscreen(): js.Promise[Unit] = js.native
   
+  /* standard dom */
+  def exitPictureInPicture(): js.Promise[Unit] = js.native
+  
+  /* standard dom */
   def exitPointerLock(): Unit = js.native
   
   /**
     * Sets or gets the foreground (text) color of the document.
+    * @deprecated
     */
-  /** @deprecated */
+  /* standard dom */
   var fgColor: java.lang.String = js.native
   
-  /**
-    * Retrieves a collection, in source order, of all form objects in the document.
-    */
+  /** Retrieves a collection, in source order, of all form objects in the document. */
+  /* standard dom */
   val forms: HTMLCollectionOf[HTMLFormElement] = js.native
   
   /** @deprecated */
+  /* standard dom */
   val fullscreen: scala.Boolean = js.native
   
-  /**
-    * Returns true if document has the ability to display elements fullscreen and fullscreen is supported, or false otherwise.
-    */
+  /** Returns true if document has the ability to display elements fullscreen and fullscreen is supported, or false otherwise. */
+  /* standard dom */
   val fullscreenEnabled: scala.Boolean = js.native
   
-  def getAnimations(): js.Array[Animation] = js.native
-  
-  /**
-    * Returns a HTMLCollection of the elements in the object on which the method was invoked (a document or an element) that have all the classes given by classNames. The classNames argument is interpreted as a space-separated list of classes.
-    */
+  /** Returns a HTMLCollection of the elements in the object on which the method was invoked (a document or an element) that have all the classes given by classNames. The classNames argument is interpreted as a space-separated list of classes. */
+  /* standard dom */
   def getElementsByClassName(classNames: java.lang.String): HTMLCollectionOf[Element] = js.native
   
   /**
     * Gets a collection of objects based on the value of the NAME or ID attribute.
     * @param elementName Gets a collection of objects based on the value of the NAME or ID attribute.
     */
+  /* standard dom */
   def getElementsByName(elementName: java.lang.String): NodeListOf[HTMLElement] = js.native
   
+  /* standard dom */
   def getElementsByTagName(qualifiedName: java.lang.String): HTMLCollectionOf[Element] = js.native
   
-  def getElementsByTagNameNS(namespaceURI: java.lang.String, localName: java.lang.String): HTMLCollectionOf[Element] = js.native
+  /* standard dom */
+  def getElementsByTagNameNS(namespace: java.lang.String, localName: java.lang.String): HTMLCollectionOf[Element] = js.native
+  def getElementsByTagNameNS(namespace: Null, localName: java.lang.String): HTMLCollectionOf[Element] = js.native
   /**
     * If namespace and localName are "*" returns a HTMLCollection of all descendant elements.
-    * 
+    *
     * If only namespace is "*" returns a HTMLCollection of all descendant elements whose local name is localName.
-    * 
+    *
     * If only localName is "*" returns a HTMLCollection of all descendant elements whose namespace is namespace.
-    * 
+    *
     * Otherwise, returns a HTMLCollection of all descendant elements whose namespace is namespace and local name is localName.
     */
+  /* standard dom */
   @JSName("getElementsByTagNameNS")
   def getElementsByTagNameNS_httpwwww3org1999xhtml(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml, localName: java.lang.String): HTMLCollectionOf[HTMLElement] = js.native
+  /* standard dom */
   @JSName("getElementsByTagNameNS")
   def getElementsByTagNameNS_httpwwww3org2000svg(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, localName: java.lang.String): HTMLCollectionOf[SVGElement] = js.native
   
@@ -1311,6 +1471,7 @@ trait Document
     * Retrieves a collection of objects based on the specified element name.
     * @param name Specifies the name of an element.
     */
+  /* standard dom */
   @JSName("getElementsByTagName")
   def getElementsByTagName_a(qualifiedName: a): HTMLCollectionOf[HTMLAnchorElement] = js.native
   @JSName("getElementsByTagName")
@@ -1318,7 +1479,11 @@ trait Document
   @JSName("getElementsByTagName")
   def getElementsByTagName_address(qualifiedName: address): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_applet(qualifiedName: applet): HTMLCollectionOf[HTMLAppletElement] = js.native
+  def getElementsByTagName_animate(qualifiedName: animate): HTMLCollectionOf[SVGAnimateElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_animateMotion(qualifiedName: animateMotion): HTMLCollectionOf[SVGAnimateMotionElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_animateTransform(qualifiedName: animateTransform): HTMLCollectionOf[SVGAnimateTransformElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_area(qualifiedName: area): HTMLCollectionOf[HTMLAreaElement] = js.native
   @JSName("getElementsByTagName")
@@ -1331,8 +1496,6 @@ trait Document
   def getElementsByTagName_b(qualifiedName: b): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_base(qualifiedName: base): HTMLCollectionOf[HTMLBaseElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_basefont(qualifiedName: basefont): HTMLCollectionOf[HTMLBaseFontElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_bdi(qualifiedName: bdi): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
@@ -1380,8 +1543,6 @@ trait Document
   @JSName("getElementsByTagName")
   def getElementsByTagName_dialog(qualifiedName: dialog): HTMLCollectionOf[HTMLDialogElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_dir(qualifiedName: dir): HTMLCollectionOf[HTMLDirectoryElement] = js.native
-  @JSName("getElementsByTagName")
   def getElementsByTagName_div(qualifiedName: div): HTMLCollectionOf[HTMLDivElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_dl(qualifiedName: dl): HTMLCollectionOf[HTMLDListElement] = js.native
@@ -1409,6 +1570,8 @@ trait Document
   def getElementsByTagName_feDisplacementMap(qualifiedName: feDisplacementMap): HTMLCollectionOf[SVGFEDisplacementMapElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_feDistantLight(qualifiedName: feDistantLight): HTMLCollectionOf[SVGFEDistantLightElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_feDropShadow(qualifiedName: feDropShadow): HTMLCollectionOf[SVGFEDropShadowElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_feFlood(qualifiedName: feFlood): HTMLCollectionOf[SVGFEFloodElement] = js.native
   @JSName("getElementsByTagName")
@@ -1450,17 +1613,11 @@ trait Document
   @JSName("getElementsByTagName")
   def getElementsByTagName_filter(qualifiedName: filter): HTMLCollectionOf[SVGFilterElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_font(qualifiedName: font): HTMLCollectionOf[HTMLFontElement] = js.native
-  @JSName("getElementsByTagName")
   def getElementsByTagName_footer(qualifiedName: footer): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_foreignObject(qualifiedName: foreignObject): HTMLCollectionOf[SVGForeignObjectElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_form(qualifiedName: form): HTMLCollectionOf[HTMLFormElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_frame(qualifiedName: frame): HTMLCollectionOf[HTMLFrameElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_frameset(qualifiedName: frameset): HTMLCollectionOf[HTMLFrameSetElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_g(qualifiedName: g): HTMLCollectionOf[SVGGElement] = js.native
   @JSName("getElementsByTagName")
@@ -1520,8 +1677,6 @@ trait Document
   @JSName("getElementsByTagName")
   def getElementsByTagName_marker(qualifiedName: marker): HTMLCollectionOf[SVGMarkerElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_marquee(qualifiedName: marquee): HTMLCollectionOf[HTMLMarqueeElement] = js.native
-  @JSName("getElementsByTagName")
   def getElementsByTagName_mask(qualifiedName: mask): HTMLCollectionOf[SVGMaskElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_menu(qualifiedName: menu): HTMLCollectionOf[HTMLMenuElement] = js.native
@@ -1531,6 +1686,8 @@ trait Document
   def getElementsByTagName_metadata(qualifiedName: metadata): HTMLCollectionOf[SVGMetadataElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_meter(qualifiedName: meter): HTMLCollectionOf[HTMLMeterElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_mpath(qualifiedName: mpath): HTMLCollectionOf[SVGMPathElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_nav(qualifiedName: nav): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
@@ -1547,8 +1704,6 @@ trait Document
   def getElementsByTagName_output(qualifiedName: output): HTMLCollectionOf[HTMLOutputElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_p(qualifiedName: p): HTMLCollectionOf[HTMLParagraphElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_param(qualifiedName: param): HTMLCollectionOf[HTMLParamElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_path(qualifiedName: path): HTMLCollectionOf[SVGPathElement] = js.native
   @JSName("getElementsByTagName")
@@ -1586,6 +1741,8 @@ trait Document
   @JSName("getElementsByTagName")
   def getElementsByTagName_select(qualifiedName: select): HTMLCollectionOf[HTMLSelectElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_set(qualifiedName: set): HTMLCollectionOf[SVGSetElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_slot(qualifiedName: slot): HTMLCollectionOf[HTMLSlotElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_small(qualifiedName: small): HTMLCollectionOf[HTMLElement] = js.native
@@ -1616,7 +1773,7 @@ trait Document
   @JSName("getElementsByTagName")
   def getElementsByTagName_tbody(qualifiedName: tbody): HTMLCollectionOf[HTMLTableSectionElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_td(qualifiedName: td): HTMLCollectionOf[HTMLTableDataCellElement] = js.native
+  def getElementsByTagName_td(qualifiedName: td): HTMLCollectionOf[HTMLTableCellElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_template(qualifiedName: template): HTMLCollectionOf[HTMLTemplateElement] = js.native
   @JSName("getElementsByTagName")
@@ -1628,7 +1785,7 @@ trait Document
   @JSName("getElementsByTagName")
   def getElementsByTagName_tfoot(qualifiedName: tfoot): HTMLCollectionOf[HTMLTableSectionElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_th(qualifiedName: th): HTMLCollectionOf[HTMLTableHeaderCellElement] = js.native
+  def getElementsByTagName_th(qualifiedName: th): HTMLCollectionOf[HTMLTableCellElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_thead(qualifiedName: thead): HTMLCollectionOf[HTMLTableSectionElement] = js.native
   @JSName("getElementsByTagName")
@@ -1656,76 +1813,90 @@ trait Document
   @JSName("getElementsByTagName")
   def getElementsByTagName_wbr(qualifiedName: wbr): HTMLCollectionOf[HTMLElement] = js.native
   
-  /**
-    * Gets a value indicating whether the object currently has focus.
-    */
+  /** Returns an object representing the current selection of the document that is loaded into the object displaying a webpage. */
+  /* standard dom */
+  def getSelection(): Selection | Null = js.native
+  
+  /** Gets a value indicating whether the object currently has focus. */
+  /* standard dom */
   def hasFocus(): scala.Boolean = js.native
   
-  /**
-    * Returns the head element.
-    */
+  /* standard dom */
+  def hasStorageAccess(): js.Promise[scala.Boolean] = js.native
+  
+  /** Returns the head element. */
+  /* standard dom */
   val head: HTMLHeadElement = js.native
   
+  /* standard dom */
   val hidden: scala.Boolean = js.native
   
-  /**
-    * Retrieves a collection, in source order, of img objects in the document.
-    */
+  /** Retrieves a collection, in source order, of img objects in the document. */
+  /* standard dom */
   val images: HTMLCollectionOf[HTMLImageElement] = js.native
   
-  /**
-    * Gets the implementation object of the current document.
-    */
+  /** Gets the implementation object of the current document. */
+  /* standard dom */
   val implementation: DOMImplementation = js.native
   
   /**
     * Returns a copy of node. If deep is true, the copy also includes the node's descendants.
-    * 
+    *
     * If node is a document or a shadow root, throws a "NotSupportedError" DOMException.
     */
-  def importNode[T /* <: Node */](importedNode: T, deep: scala.Boolean): T = js.native
+  /* standard dom */
+  def importNode[T /* <: Node */](node: T): T = js.native
+  def importNode[T /* <: Node */](node: T, deep: scala.Boolean): T = js.native
   
   /**
     * Returns the character encoding used to create the webpage that is loaded into the document object.
+    * @deprecated This is a legacy alias of `characterSet`.
     */
+  /* standard dom */
   val inputEncoding: java.lang.String = js.native
   
-  /**
-    * Gets the date that the page was last modified, if the page supplies one.
-    */
+  /** Gets the date that the page was last modified, if the page supplies one. */
+  /* standard dom */
   val lastModified: java.lang.String = js.native
   
   /**
     * Sets or gets the color of the document links.
+    * @deprecated
     */
-  /** @deprecated */
+  /* standard dom */
   var linkColor: java.lang.String = js.native
   
-  /**
-    * Retrieves a collection of all a objects that specify the href property and all area objects in the document.
-    */
+  /** Retrieves a collection of all a objects that specify the href property and all area objects in the document. */
+  /* standard dom */
   val links: HTMLCollectionOf[HTMLAnchorElement | HTMLAreaElement] = js.native
   
-  /**
-    * Contains information about the current URL.
-    */
-  var location: Location = js.native
+  /** Contains information about the current URL. */
+  /* standard dom */
+  def location: Location = js.native
+  /* standard dom */
+  def location_=(href: java.lang.String | Location): Unit = js.native
   
-  var onfullscreenchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
+  /* standard dom */
+  var onfullscreenchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
-  var onfullscreenerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
+  /* standard dom */
+  var onfullscreenerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
-  var onpointerlockchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
+  /* standard dom */
+  var onpointerlockchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
-  var onpointerlockerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
+  /* standard dom */
+  var onpointerlockerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
   /**
     * Fires when the state of the object has changed.
     * @param ev The event
     */
-  var onreadystatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
+  /* standard dom */
+  var onreadystatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
-  var onvisibilitychange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
+  /* standard dom */
+  var onvisibilitychange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
   /**
     * Opens a new window and loads a document specified by a given URL. Also, opens a new window that uses the url parameter and the name parameter to collect the output of the write method and the writeln method.
@@ -1734,72 +1905,74 @@ trait Document
     * @param features Contains a list of items separated by commas. Each item consists of an option and a value, separated by an equals sign (for example, "fullscreen=yes, toolbar=yes"). The following values are supported.
     * @param replace Specifies whether the existing entry for the document is replaced in the history list.
     */
+  /* standard dom */
   def open(): Document = js.native
-  def open(url: java.lang.String): Document = js.native
-  def open(url: java.lang.String, name: java.lang.String): Document = js.native
-  def open(url: java.lang.String, name: java.lang.String, features: java.lang.String): Document = js.native
-  def open(url: java.lang.String, name: java.lang.String, features: java.lang.String, replace: scala.Boolean): Document = js.native
-  def open(url: java.lang.String, name: java.lang.String, features: Unit, replace: scala.Boolean): Document = js.native
-  def open(url: java.lang.String, name: Unit, features: java.lang.String): Document = js.native
-  def open(url: java.lang.String, name: Unit, features: java.lang.String, replace: scala.Boolean): Document = js.native
-  def open(url: java.lang.String, name: Unit, features: Unit, replace: scala.Boolean): Document = js.native
-  def open(url: Unit, name: java.lang.String): Document = js.native
-  def open(url: Unit, name: java.lang.String, features: java.lang.String): Document = js.native
-  def open(url: Unit, name: java.lang.String, features: java.lang.String, replace: scala.Boolean): Document = js.native
-  def open(url: Unit, name: java.lang.String, features: Unit, replace: scala.Boolean): Document = js.native
-  def open(url: Unit, name: Unit, features: java.lang.String): Document = js.native
-  def open(url: Unit, name: Unit, features: java.lang.String, replace: scala.Boolean): Document = js.native
-  def open(url: Unit, name: Unit, features: Unit, replace: scala.Boolean): Document = js.native
+  def open(unused1: java.lang.String): Document = js.native
+  def open(unused1: java.lang.String, unused2: java.lang.String): Document = js.native
+  def open(unused1: Unit, unused2: java.lang.String): Document = js.native
+  /* standard dom */
+  def open(url: java.lang.String, name: java.lang.String, features: java.lang.String): WindowProxy | Null = js.native
+  def open(url: typings.std.URL, name: java.lang.String, features: java.lang.String): WindowProxy | Null = js.native
   
+  /* standard dom */
   @JSName("ownerDocument")
   val ownerDocument_Document: Null = js.native
   
-  /**
-    * Return an HTMLCollection of the embed elements in the Document.
-    */
+  /* standard dom */
+  val pictureInPictureEnabled: scala.Boolean = js.native
+  
+  /** Return an HTMLCollection of the embed elements in the Document. */
+  /* standard dom */
   val plugins: HTMLCollectionOf[HTMLEmbedElement] = js.native
   
   /**
     * Returns a Boolean value that indicates whether a specified command can be successfully executed using execCommand, given the current state of the document.
     * @param commandId Specifies a command identifier.
+    * @deprecated
     */
+  /* standard dom */
   def queryCommandEnabled(commandId: java.lang.String): scala.Boolean = js.native
   
   /**
     * Returns a Boolean value that indicates whether the specified command is in the indeterminate state.
     * @param commandId String that specifies a command identifier.
     */
+  /* standard dom */
   def queryCommandIndeterm(commandId: java.lang.String): scala.Boolean = js.native
   
   /**
     * Returns a Boolean value that indicates the current state of the command.
     * @param commandId String that specifies a command identifier.
+    * @deprecated
     */
+  /* standard dom */
   def queryCommandState(commandId: java.lang.String): scala.Boolean = js.native
   
   /**
     * Returns a Boolean value that indicates whether the current command is supported on the current range.
     * @param commandId Specifies a command identifier.
+    * @deprecated
     */
+  /* standard dom */
   def queryCommandSupported(commandId: java.lang.String): scala.Boolean = js.native
   
   /**
     * Returns the current value of the document, range, or current selection for the given command.
     * @param commandId String that specifies a command identifier.
     */
+  /* standard dom */
   def queryCommandValue(commandId: java.lang.String): java.lang.String = js.native
   
-  /**
-    * Retrieves a value that indicates the current state of the object.
-    */
+  /** Retrieves a value that indicates the current state of the object. */
+  /* standard dom */
   val readyState: DocumentReadyState = js.native
   
-  /**
-    * Gets the URL of the location that referred the user to the current page.
-    */
+  /** Gets the URL of the location that referred the user to the current page. */
+  /* standard dom */
   val referrer: java.lang.String = js.native
   
   /** @deprecated */
+  /* standard dom */
   def releaseEvents(): Unit = js.native
   
   /* InferMemberOverrides */
@@ -1812,125 +1985,148 @@ trait Document
     callback: EventListenerOrEventListenerObject,
     options: EventListenerOptions
   ): Unit = js.native
+  /* standard dom */
   @JSName("removeEventListener")
-  def removeEventListener_fullscreenchange(`type`: fullscreenchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
+  def removeEventListener_DOMContentLoaded(`type`: DOMContentLoaded, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_DOMContentLoaded(
+    `type`: DOMContentLoaded,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_DOMContentLoaded(
+    `type`: DOMContentLoaded,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_fullscreenchange(`type`: fullscreenchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_fullscreenchange(
     `type`: fullscreenchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_fullscreenchange(
     `type`: fullscreenchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_fullscreenerror(`type`: fullscreenerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
+  def removeEventListener_fullscreenerror(`type`: fullscreenerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_fullscreenerror(
     `type`: fullscreenerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_fullscreenerror(
     `type`: fullscreenerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_pointerlockchange(
-    `type`: pointerlockchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
-  ): Unit = js.native
+  def removeEventListener_pointerlockchange(`type`: pointerlockchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_pointerlockchange(
     `type`: pointerlockchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_pointerlockchange(
     `type`: pointerlockchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_pointerlockerror(`type`: pointerlockerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
+  def removeEventListener_pointerlockerror(`type`: pointerlockerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_pointerlockerror(
     `type`: pointerlockerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_pointerlockerror(
     `type`: pointerlockerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
+  def removeEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_visibilitychange(`type`: visibilitychange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
+  def removeEventListener_visibilitychange(`type`: visibilitychange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_visibilitychange(
     `type`: visibilitychange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_visibilitychange(
     `type`: visibilitychange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native
   
-  /**
-    * Retrieves a collection of all script objects in the document.
-    */
+  /* standard dom */
+  def requestStorageAccess(): js.Promise[Unit] = js.native
+  
+  /** @deprecated */
+  /* standard dom */
+  val rootElement: SVGSVGElement | Null = js.native
+  
+  /** Retrieves a collection of all script objects in the document. */
+  /* standard dom */
   val scripts: HTMLCollectionOf[HTMLScriptElement] = js.native
   
+  /* standard dom */
   val scrollingElement: Element | Null = js.native
   
+  /* standard dom */
   val timeline: DocumentTimeline = js.native
   
-  /**
-    * Contains the title of the document.
-    */
+  /** Contains the title of the document. */
+  /* standard dom */
   var title: java.lang.String = js.native
   
-  val visibilityState: VisibilityState = js.native
+  /* standard dom */
+  val visibilityState: DocumentVisibilityState = js.native
   
   /**
     * Sets or gets the color of the links that the user has visited.
+    * @deprecated
     */
-  /** @deprecated */
+  /* standard dom */
   var vlinkColor: java.lang.String = js.native
   
   /**
     * Writes one or more HTML expressions to a document in the specified window.
     * @param content Specifies the text and HTML tags to write.
     */
+  /* standard dom */
   def write(text: java.lang.String*): Unit = js.native
   
   /**
     * Writes one or more HTML expressions, followed by a carriage return, to a document in the specified window.
     * @param content The text and HTML tags to write.
     */
+  /* standard dom */
   def writeln(text: java.lang.String*): Unit = js.native
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(element: js.Any, num: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].apply(element.asInstanceOf[js.Any], num.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def apply(element: Any, num: Double): js.Array[Any] = (^.asInstanceOf[js.Dynamic].apply(element.asInstanceOf[js.Any], num.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
   
   @JSImport("repeat-element", JSImport.Namespace)
   @js.native

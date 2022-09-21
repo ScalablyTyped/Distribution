@@ -58,7 +58,7 @@ object anon {
       
       inline def setStripHOCs(value: js.Array[String]): Self = StObject.set(x, "stripHOCs", value.asInstanceOf[js.Any])
       
-      inline def setStripHOCsVarargs(value: String*): Self = StObject.set(x, "stripHOCs", js.Array(value :_*))
+      inline def setStripHOCsVarargs(value: String*): Self = StObject.set(x, "stripHOCs", js.Array(value*))
     }
   }
 }

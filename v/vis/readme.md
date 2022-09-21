@@ -10,10 +10,10 @@ A dynamic, browser-based visualization library.
 | ------------------ | :-------------: |
 | Full name          | vis |
 | Keywords           | vis, visualization, web based, browser based, javascript, chart, linechart, timeline, graph, network, browser |
-| # releases         | 5 |
-| # dependents       | 68 |
-| # downloads        | 2261244 |
-| # stars            | 7 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 152516.33333333334 |
+| # stars            | 7910.0 |
 
 ## Links
 - [Homepage](http://visjs.org/)

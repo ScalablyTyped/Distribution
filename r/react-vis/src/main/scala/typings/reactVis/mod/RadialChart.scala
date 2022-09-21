@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-vis", "RadialChart")
 @js.native
-class RadialChart[T] protected ()
-  extends Component[RadialChartProps & T, js.Object, js.Any] {
+open class RadialChart[T] protected ()
+  extends Component[RadialChartProps & T, js.Object, Any] {
   def this(props: RadialChartProps & T) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: RadialChartProps & T, context: js.Any) = this()
+  def this(props: RadialChartProps & T, context: Any) = this()
 }

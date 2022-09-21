@@ -1,6 +1,5 @@
 package typings.scriptableIos
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -68,7 +67,7 @@ trait WidgetDate extends StObject {
     * _Date to show in a widget._
     * @see https://docs.scriptable.app/widgetdate/#date
     */
-  var date: Date
+  var date: js.Date
   
   /**
     * _Font and text size of the text._
@@ -157,7 +156,7 @@ trait WidgetDate extends StObject {
     * _URL to open._
     *
     * The URL will be opened when the text is tapped. This is only supported in medium and large widgets. Small widgets can only have a single tap target, which is specified by the `url`
-    * property on the widget.
+    * property in the widget configurator.
     * @see https://docs.scriptable.app/widgetdate/#url
     */
   var url: String
@@ -171,7 +170,7 @@ object WidgetDate {
     applyTimeStyle: () => Unit,
     applyTimerStyle: () => Unit,
     centerAlignText: () => Unit,
-    date: Date,
+    date: js.Date,
     font: Font,
     leftAlignText: () => Unit,
     lineLimit: Double,
@@ -202,7 +201,7 @@ object WidgetDate {
     
     inline def setCenterAlignText(value: () => Unit): Self = StObject.set(x, "centerAlignText", js.Any.fromFunction0(value))
     
-    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     inline def setFont(value: Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LodashSetWith1x3[T] extends StObject {
   
-  def apply(value: js.Any): LodashSetWith1x7[T] = js.native
-  def apply(value: js.Any, `object`: T): T = js.native
+  def apply(value: Any): LodashSetWith1x7[T] = js.native
+  def apply(value: Any, `object`: T): T = js.native
   def apply(value: __, `object`: T): LodashSetWith1x11[T] = js.native
 }

@@ -45,7 +45,7 @@ object Exception {
     
     inline def setInnerExceptionsUndefined: Self = StObject.set(x, "innerExceptions", js.undefined)
     
-    inline def setInnerExceptionsVarargs(value: Exception*): Self = StObject.set(x, "innerExceptions", js.Array(value :_*))
+    inline def setInnerExceptionsVarargs(value: Exception*): Self = StObject.set(x, "innerExceptions", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

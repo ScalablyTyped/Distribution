@@ -33,6 +33,6 @@ object ListRestoreJobsOutput {
     
     inline def setRestoreJobsUndefined: Self = StObject.set(x, "RestoreJobs", js.undefined)
     
-    inline def setRestoreJobsVarargs(value: RestoreJobsListMember*): Self = StObject.set(x, "RestoreJobs", js.Array(value :_*))
+    inline def setRestoreJobsVarargs(value: RestoreJobsListMember*): Self = StObject.set(x, "RestoreJobs", js.Array(value*))
   }
 }

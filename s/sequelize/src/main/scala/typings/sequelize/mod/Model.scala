@@ -1,6 +1,6 @@
 package typings.sequelize.mod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.sequelize.anon.Count
 import typings.sequelize.anon.UpsertOptionsreturningfal
 import typings.sequelize.anon.UpsertOptionsreturningtru
@@ -53,7 +53,7 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
   def aggregate(field: String, aggregateFunction: String, options: AggregateOptions): typings.bluebird.mod.^[js.Object] = js.native
   
   def all[TCustomAttributes](): typings.bluebird.mod.^[js.Array[TInstance]] = js.native
-  def all[TCustomAttributes](optionz: FindOptions[TAttributes & TCustomAttributes]): typings.bluebird.mod.^[js.Array[TInstance]] = js.native
+  def all[TCustomAttributes](options: FindOptions[TAttributes & TCustomAttributes]): typings.bluebird.mod.^[js.Array[TInstance]] = js.native
   
   /**
     * Set associations with other models
@@ -415,14 +415,14 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
   /**
     * Find the maximum value of field
     */
-  def max(field: String): typings.bluebird.mod.^[js.Any] = js.native
-  def max(field: String, options: AggregateOptions): typings.bluebird.mod.^[js.Any] = js.native
+  def max(field: String): typings.bluebird.mod.^[Any] = js.native
+  def max(field: String, options: AggregateOptions): typings.bluebird.mod.^[Any] = js.native
   
   /**
     * Find the minimum value of field
     */
-  def min(field: String): typings.bluebird.mod.^[js.Any] = js.native
-  def min(field: String, options: AggregateOptions): typings.bluebird.mod.^[js.Any] = js.native
+  def min(field: String): typings.bluebird.mod.^[Any] = js.native
+  def min(field: String, options: AggregateOptions): typings.bluebird.mod.^[Any] = js.native
   
   /**
     * The singular name of the model

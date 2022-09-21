@@ -12,7 +12,7 @@ trait InternetExplorer extends StObject {
   var AddressBar: Boolean = js.native
   
   /** Returns the application automation object if accessible, this automation object otherwise.. */
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   /** Query to see if something is still in progress. */
   val Busy: Boolean = js.native
@@ -21,16 +21,16 @@ trait InternetExplorer extends StObject {
   def ClientToWindow(pcx: Double, pcy: Double): Unit = js.native
   
   /** Returns the container/parent automation object, if any. */
-  val Container: js.Any = js.native
+  val Container: Any = js.native
   
   /** Returns the active Document automation object, if any. */
-  val Document: js.Any = js.native
+  val Document: Any = js.native
   
   /** IOleCommandTarget::Exec */
   def ExecWB(cmdID: OLECMDID, cmdexecopt: OLECMDEXECOPT): Unit = js.native
-  def ExecWB(cmdID: OLECMDID, cmdexecopt: OLECMDEXECOPT, pvaIn: js.Any): Unit = js.native
-  def ExecWB(cmdID: OLECMDID, cmdexecopt: OLECMDEXECOPT, pvaIn: js.Any, pvaOut: js.Any): Unit = js.native
-  def ExecWB(cmdID: OLECMDID, cmdexecopt: OLECMDEXECOPT, pvaIn: Unit, pvaOut: js.Any): Unit = js.native
+  def ExecWB(cmdID: OLECMDID, cmdexecopt: OLECMDEXECOPT, pvaIn: Any): Unit = js.native
+  def ExecWB(cmdID: OLECMDID, cmdexecopt: OLECMDEXECOPT, pvaIn: Any, pvaOut: Any): Unit = js.native
+  def ExecWB(cmdID: OLECMDID, cmdexecopt: OLECMDEXECOPT, pvaIn: Unit, pvaOut: Any): Unit = js.native
   
   /** Returns file specification of the application, including path. */
   val FullName: String = js.native
@@ -39,7 +39,7 @@ trait InternetExplorer extends StObject {
   var FullScreen: Boolean = js.native
   
   /** Retrieve the Associated value for the property vtValue in the context of the object. */
-  def GetProperty(Property: String): js.Any = js.native
+  def GetProperty(Property: String): Any = js.native
   
   /** Navigates to the previous item in the history list. */
   def GoBack(): Unit = js.native
@@ -77,37 +77,31 @@ trait InternetExplorer extends StObject {
   /** Navigates to a URL or file. */
   def Navigate(URL: String): Unit = js.native
   def Navigate(URL: String, Flags: Unit, TargetFrameName: String): Unit = js.native
-  def Navigate(URL: String, Flags: Unit, TargetFrameName: String, PostData: js.Any): Unit = js.native
-  def Navigate(URL: String, Flags: Unit, TargetFrameName: String, PostData: js.Any, Headers: String): Unit = js.native
+  def Navigate(URL: String, Flags: Unit, TargetFrameName: String, PostData: Any): Unit = js.native
+  def Navigate(URL: String, Flags: Unit, TargetFrameName: String, PostData: Any, Headers: String): Unit = js.native
   def Navigate(URL: String, Flags: Unit, TargetFrameName: String, PostData: Unit, Headers: String): Unit = js.native
-  def Navigate(URL: String, Flags: Unit, TargetFrameName: Unit, PostData: js.Any): Unit = js.native
-  def Navigate(URL: String, Flags: Unit, TargetFrameName: Unit, PostData: js.Any, Headers: String): Unit = js.native
+  def Navigate(URL: String, Flags: Unit, TargetFrameName: Unit, PostData: Any): Unit = js.native
+  def Navigate(URL: String, Flags: Unit, TargetFrameName: Unit, PostData: Any, Headers: String): Unit = js.native
   def Navigate(URL: String, Flags: Unit, TargetFrameName: Unit, PostData: Unit, Headers: String): Unit = js.native
   def Navigate(URL: String, Flags: Unit, TargetFrameName: TargetFrameValues): Unit = js.native
-  def Navigate(URL: String, Flags: Unit, TargetFrameName: TargetFrameValues, PostData: js.Any): Unit = js.native
-  def Navigate(URL: String, Flags: Unit, TargetFrameName: TargetFrameValues, PostData: js.Any, Headers: String): Unit = js.native
+  def Navigate(URL: String, Flags: Unit, TargetFrameName: TargetFrameValues, PostData: Any): Unit = js.native
+  def Navigate(URL: String, Flags: Unit, TargetFrameName: TargetFrameValues, PostData: Any, Headers: String): Unit = js.native
   def Navigate(URL: String, Flags: Unit, TargetFrameName: TargetFrameValues, PostData: Unit, Headers: String): Unit = js.native
   def Navigate(URL: String, Flags: BrowserNavConstants): Unit = js.native
   def Navigate(URL: String, Flags: BrowserNavConstants, TargetFrameName: String): Unit = js.native
-  def Navigate(URL: String, Flags: BrowserNavConstants, TargetFrameName: String, PostData: js.Any): Unit = js.native
-  def Navigate(
-    URL: String,
-    Flags: BrowserNavConstants,
-    TargetFrameName: String,
-    PostData: js.Any,
-    Headers: String
-  ): Unit = js.native
+  def Navigate(URL: String, Flags: BrowserNavConstants, TargetFrameName: String, PostData: Any): Unit = js.native
+  def Navigate(URL: String, Flags: BrowserNavConstants, TargetFrameName: String, PostData: Any, Headers: String): Unit = js.native
   def Navigate(URL: String, Flags: BrowserNavConstants, TargetFrameName: String, PostData: Unit, Headers: String): Unit = js.native
-  def Navigate(URL: String, Flags: BrowserNavConstants, TargetFrameName: Unit, PostData: js.Any): Unit = js.native
-  def Navigate(URL: String, Flags: BrowserNavConstants, TargetFrameName: Unit, PostData: js.Any, Headers: String): Unit = js.native
+  def Navigate(URL: String, Flags: BrowserNavConstants, TargetFrameName: Unit, PostData: Any): Unit = js.native
+  def Navigate(URL: String, Flags: BrowserNavConstants, TargetFrameName: Unit, PostData: Any, Headers: String): Unit = js.native
   def Navigate(URL: String, Flags: BrowserNavConstants, TargetFrameName: Unit, PostData: Unit, Headers: String): Unit = js.native
   def Navigate(URL: String, Flags: BrowserNavConstants, TargetFrameName: TargetFrameValues): Unit = js.native
-  def Navigate(URL: String, Flags: BrowserNavConstants, TargetFrameName: TargetFrameValues, PostData: js.Any): Unit = js.native
+  def Navigate(URL: String, Flags: BrowserNavConstants, TargetFrameName: TargetFrameValues, PostData: Any): Unit = js.native
   def Navigate(
     URL: String,
     Flags: BrowserNavConstants,
     TargetFrameName: TargetFrameValues,
-    PostData: js.Any,
+    PostData: Any,
     Headers: String
   ): Unit = js.native
   def Navigate(
@@ -119,43 +113,37 @@ trait InternetExplorer extends StObject {
   ): Unit = js.native
   
   /** Navigates to a URL or file or pidl. */
-  def Navigate2(URL: js.Any): Unit = js.native
-  def Navigate2(URL: js.Any, Flags: Unit, TargetFrameName: String): Unit = js.native
-  def Navigate2(URL: js.Any, Flags: Unit, TargetFrameName: String, PostData: js.Any): Unit = js.native
-  def Navigate2(URL: js.Any, Flags: Unit, TargetFrameName: String, PostData: js.Any, Headers: String): Unit = js.native
-  def Navigate2(URL: js.Any, Flags: Unit, TargetFrameName: String, PostData: Unit, Headers: String): Unit = js.native
-  def Navigate2(URL: js.Any, Flags: Unit, TargetFrameName: Unit, PostData: js.Any): Unit = js.native
-  def Navigate2(URL: js.Any, Flags: Unit, TargetFrameName: Unit, PostData: js.Any, Headers: String): Unit = js.native
-  def Navigate2(URL: js.Any, Flags: Unit, TargetFrameName: Unit, PostData: Unit, Headers: String): Unit = js.native
-  def Navigate2(URL: js.Any, Flags: Unit, TargetFrameName: TargetFrameValues): Unit = js.native
-  def Navigate2(URL: js.Any, Flags: Unit, TargetFrameName: TargetFrameValues, PostData: js.Any): Unit = js.native
-  def Navigate2(URL: js.Any, Flags: Unit, TargetFrameName: TargetFrameValues, PostData: js.Any, Headers: String): Unit = js.native
-  def Navigate2(URL: js.Any, Flags: Unit, TargetFrameName: TargetFrameValues, PostData: Unit, Headers: String): Unit = js.native
-  def Navigate2(URL: js.Any, Flags: BrowserNavConstants): Unit = js.native
-  def Navigate2(URL: js.Any, Flags: BrowserNavConstants, TargetFrameName: String): Unit = js.native
-  def Navigate2(URL: js.Any, Flags: BrowserNavConstants, TargetFrameName: String, PostData: js.Any): Unit = js.native
+  def Navigate2(URL: Any): Unit = js.native
+  def Navigate2(URL: Any, Flags: Unit, TargetFrameName: String): Unit = js.native
+  def Navigate2(URL: Any, Flags: Unit, TargetFrameName: String, PostData: Any): Unit = js.native
+  def Navigate2(URL: Any, Flags: Unit, TargetFrameName: String, PostData: Any, Headers: String): Unit = js.native
+  def Navigate2(URL: Any, Flags: Unit, TargetFrameName: String, PostData: Unit, Headers: String): Unit = js.native
+  def Navigate2(URL: Any, Flags: Unit, TargetFrameName: Unit, PostData: Any): Unit = js.native
+  def Navigate2(URL: Any, Flags: Unit, TargetFrameName: Unit, PostData: Any, Headers: String): Unit = js.native
+  def Navigate2(URL: Any, Flags: Unit, TargetFrameName: Unit, PostData: Unit, Headers: String): Unit = js.native
+  def Navigate2(URL: Any, Flags: Unit, TargetFrameName: TargetFrameValues): Unit = js.native
+  def Navigate2(URL: Any, Flags: Unit, TargetFrameName: TargetFrameValues, PostData: Any): Unit = js.native
+  def Navigate2(URL: Any, Flags: Unit, TargetFrameName: TargetFrameValues, PostData: Any, Headers: String): Unit = js.native
+  def Navigate2(URL: Any, Flags: Unit, TargetFrameName: TargetFrameValues, PostData: Unit, Headers: String): Unit = js.native
+  def Navigate2(URL: Any, Flags: BrowserNavConstants): Unit = js.native
+  def Navigate2(URL: Any, Flags: BrowserNavConstants, TargetFrameName: String): Unit = js.native
+  def Navigate2(URL: Any, Flags: BrowserNavConstants, TargetFrameName: String, PostData: Any): Unit = js.native
+  def Navigate2(URL: Any, Flags: BrowserNavConstants, TargetFrameName: String, PostData: Any, Headers: String): Unit = js.native
+  def Navigate2(URL: Any, Flags: BrowserNavConstants, TargetFrameName: String, PostData: Unit, Headers: String): Unit = js.native
+  def Navigate2(URL: Any, Flags: BrowserNavConstants, TargetFrameName: Unit, PostData: Any): Unit = js.native
+  def Navigate2(URL: Any, Flags: BrowserNavConstants, TargetFrameName: Unit, PostData: Any, Headers: String): Unit = js.native
+  def Navigate2(URL: Any, Flags: BrowserNavConstants, TargetFrameName: Unit, PostData: Unit, Headers: String): Unit = js.native
+  def Navigate2(URL: Any, Flags: BrowserNavConstants, TargetFrameName: TargetFrameValues): Unit = js.native
+  def Navigate2(URL: Any, Flags: BrowserNavConstants, TargetFrameName: TargetFrameValues, PostData: Any): Unit = js.native
   def Navigate2(
-    URL: js.Any,
-    Flags: BrowserNavConstants,
-    TargetFrameName: String,
-    PostData: js.Any,
-    Headers: String
-  ): Unit = js.native
-  def Navigate2(URL: js.Any, Flags: BrowserNavConstants, TargetFrameName: String, PostData: Unit, Headers: String): Unit = js.native
-  def Navigate2(URL: js.Any, Flags: BrowserNavConstants, TargetFrameName: Unit, PostData: js.Any): Unit = js.native
-  def Navigate2(URL: js.Any, Flags: BrowserNavConstants, TargetFrameName: Unit, PostData: js.Any, Headers: String): Unit = js.native
-  def Navigate2(URL: js.Any, Flags: BrowserNavConstants, TargetFrameName: Unit, PostData: Unit, Headers: String): Unit = js.native
-  def Navigate2(URL: js.Any, Flags: BrowserNavConstants, TargetFrameName: TargetFrameValues): Unit = js.native
-  def Navigate2(URL: js.Any, Flags: BrowserNavConstants, TargetFrameName: TargetFrameValues, PostData: js.Any): Unit = js.native
-  def Navigate2(
-    URL: js.Any,
+    URL: Any,
     Flags: BrowserNavConstants,
     TargetFrameName: TargetFrameValues,
-    PostData: js.Any,
+    PostData: Any,
     Headers: String
   ): Unit = js.native
   def Navigate2(
-    URL: js.Any,
+    URL: Any,
     Flags: BrowserNavConstants,
     TargetFrameName: TargetFrameValues,
     PostData: Unit,
@@ -166,13 +154,13 @@ trait InternetExplorer extends StObject {
   var Offline: Boolean = js.native
   
   /** Returns the automation object of the container/parent if one exists or this automation object. */
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /** Returns the path to the application. */
   val Path: String = js.native
   
   /** Associates vtValue with the name szProperty in the context of the object. */
-  def PutProperty(Property: String, vtValue: js.Any): Unit = js.native
+  def PutProperty(Property: String, vtValue: Any): Unit = js.native
   
   /** IOleCommandTarget::QueryStatus */
   def QueryStatusWB(cmdID: OLECMDID): OLECMDF = js.native

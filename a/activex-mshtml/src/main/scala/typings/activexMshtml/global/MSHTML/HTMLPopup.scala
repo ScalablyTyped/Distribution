@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLPopup")
 @js.native
-/* private */ class HTMLPopup ()
+/* private */ open class HTMLPopup ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLPopup {
   
@@ -18,10 +18,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var MSHTMLDotHTMLPopup_typekey: typings.activexMshtml.MSHTML.HTMLPopup = js.native
   
   /* CompleteClass */
-  override def Show(x: Double, y: Double, w: Double, h: Double, pElement: js.Any): Unit = js.native
+  override def Show(x: Double, y: Double, w: Double, h: Double, pElement: Any): Unit = js.native
   
   /* CompleteClass */
-  override val constructor: js.Any = js.native
+  override val constructor: Any = js.native
   
   /* CompleteClass */
   override val document: typings.activexMshtml.MSHTML.IHTMLDocument = js.native

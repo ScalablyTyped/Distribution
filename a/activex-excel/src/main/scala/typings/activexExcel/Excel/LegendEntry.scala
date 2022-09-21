@@ -8,11 +8,11 @@ trait LegendEntry extends StObject {
   
   val Application: typings.activexExcel.Excel.Application
   
-  var AutoScaleFont: js.Any
+  var AutoScaleFont: Any
   
   val Creator: XlCreator
   
-  def Delete(): js.Any
+  def Delete(): Any
   
   /* private */ @JSName("Excel.LegendEntry_typekey")
   var ExcelDotLegendEntry_typekey: LegendEntry
@@ -29,9 +29,9 @@ trait LegendEntry extends StObject {
   
   val LegendKey: typings.activexExcel.Excel.LegendKey
   
-  val Parent: js.Any
+  val Parent: Any
   
-  def Select(): js.Any
+  def Select(): Any
   
   val Top: Double
   
@@ -41,9 +41,9 @@ object LegendEntry {
   
   inline def apply(
     Application: Application,
-    AutoScaleFont: js.Any,
+    AutoScaleFont: Any,
     Creator: XlCreator,
-    Delete: () => js.Any,
+    Delete: () => Any,
     ExcelDotLegendEntry_typekey: LegendEntry,
     Font: Font,
     Format: ChartFormat,
@@ -51,8 +51,8 @@ object LegendEntry {
     Index: Double,
     Left: Double,
     LegendKey: LegendKey,
-    Parent: js.Any,
-    Select: () => js.Any,
+    Parent: Any,
+    Select: () => Any,
     Top: Double,
     Width: Double
   ): LegendEntry = {
@@ -65,11 +65,11 @@ object LegendEntry {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    inline def setAutoScaleFont(value: js.Any): Self = StObject.set(x, "AutoScaleFont", value.asInstanceOf[js.Any])
+    inline def setAutoScaleFont(value: Any): Self = StObject.set(x, "AutoScaleFont", value.asInstanceOf[js.Any])
     
     inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setDelete(value: () => js.Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     inline def setExcelDotLegendEntry_typekey(value: LegendEntry): Self = StObject.set(x, "Excel.LegendEntry_typekey", value.asInstanceOf[js.Any])
     
@@ -85,9 +85,9 @@ object LegendEntry {
     
     inline def setLegendKey(value: LegendKey): Self = StObject.set(x, "LegendKey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    inline def setSelect(value: () => js.Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
+    inline def setSelect(value: () => Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
     
     inline def setTop(value: Double): Self = StObject.set(x, "Top", value.asInstanceOf[js.Any])
     

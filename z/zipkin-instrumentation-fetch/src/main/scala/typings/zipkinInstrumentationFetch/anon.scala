@@ -10,11 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object anon {
   
   @js.native
-  trait Typeoffetch extends StObject {
+  trait FnCall extends StObject {
     
     def apply(url: RequestInfo): js.Promise[Response] = js.native
     def apply(url: RequestInfo, init: RequestInit): js.Promise[Response] = js.native
-    
-    def isRedirect(code: Double): Boolean = js.native
   }
 }

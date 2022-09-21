@@ -17,7 +17,7 @@ trait BandwidthRateLimitInterval extends StObject {
   var AverageUploadRateLimitInBitsPerSec: js.UndefOr[BandwidthUploadRateLimit] = js.undefined
   
   /**
-    *  The days of the week component of the bandwidth rate limit interval, represented as ordinal numbers from 0 to 6, where 0 represents Sunday and 6 Saturday. 
+    *  The days of the week component of the bandwidth rate limit interval, represented as ordinal numbers from 0 to 6, where 0 represents Sunday and 6 represents Saturday. 
     */
   var DaysOfWeek: typings.awsSdk.storagegatewayMod.DaysOfWeek
   
@@ -66,7 +66,7 @@ object BandwidthRateLimitInterval {
     
     inline def setDaysOfWeek(value: DaysOfWeek): Self = StObject.set(x, "DaysOfWeek", value.asInstanceOf[js.Any])
     
-    inline def setDaysOfWeekVarargs(value: DayOfWeek*): Self = StObject.set(x, "DaysOfWeek", js.Array(value :_*))
+    inline def setDaysOfWeekVarargs(value: DayOfWeek*): Self = StObject.set(x, "DaysOfWeek", js.Array(value*))
     
     inline def setEndHourOfDay(value: HourOfDay): Self = StObject.set(x, "EndHourOfDay", value.asInstanceOf[js.Any])
     

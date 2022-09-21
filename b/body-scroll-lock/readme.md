@@ -1,7 +1,7 @@
 
 # Scala.js typings for body-scroll-lock
 
-Typings are for version 2.6
+Typings are for version 3.1
 
 ## Library description:
 Enables body scroll locking (for iOS Mobile and Tablet, Android, desktop Safari/Chrome/Firefox) without breaking scrolling of a target element (eg. modal/lightbox/flyouts/nav-menus)
@@ -10,10 +10,10 @@ Enables body scroll locking (for iOS Mobile and Tablet, Android, desktop Safari/
 | ------------------ | :-------------: |
 | Full name          | body-scroll-lock |
 | Keywords           | body scroll, body scroll lock, react scroll lock, react scroll, scroll, lock, freeze, toggle, disable, overflow, modal, lightbox, react, vanilla-js, angular, vue, ios, mobile, desktop, tablet, bsl |
-| # releases         | 13 |
-| # dependents       | 217 |
-| # downloads        | 15989057 |
-| # stars            | 1 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 2922194.0 |
+| # stars            | 3658.0 |
 
 ## Links
 - [Homepage](https://github.com/willmcpo/body-scroll-lock#readme)

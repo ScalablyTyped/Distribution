@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An Android mobile test specification.
-  */
 trait SchemaAndroidTest extends StObject {
   
   /**
@@ -23,6 +20,11 @@ trait SchemaAndroidTest extends StObject {
     * An Android robo test.
     */
   var androidRoboTest: js.UndefOr[SchemaAndroidRoboTest] = js.undefined
+  
+  /**
+    * An Android test loop.
+    */
+  var androidTestLoop: js.UndefOr[SchemaAndroidTestLoop] = js.undefined
   
   /**
     * Max time a test is allowed to run before it is automatically cancelled.
@@ -49,6 +51,10 @@ object SchemaAndroidTest {
     inline def setAndroidRoboTest(value: SchemaAndroidRoboTest): Self = StObject.set(x, "androidRoboTest", value.asInstanceOf[js.Any])
     
     inline def setAndroidRoboTestUndefined: Self = StObject.set(x, "androidRoboTest", js.undefined)
+    
+    inline def setAndroidTestLoop(value: SchemaAndroidTestLoop): Self = StObject.set(x, "androidTestLoop", value.asInstanceOf[js.Any])
+    
+    inline def setAndroidTestLoopUndefined: Self = StObject.set(x, "androidTestLoop", js.undefined)
     
     inline def setTestTimeout(value: SchemaDuration): Self = StObject.set(x, "testTimeout", value.asInstanceOf[js.Any])
     

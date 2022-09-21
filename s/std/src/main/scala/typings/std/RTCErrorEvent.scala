@@ -9,5 +9,6 @@ trait RTCErrorEvent
   extends StObject
      with Event {
   
+  /* standard dom */
   val error: RTCError = js.native
 }

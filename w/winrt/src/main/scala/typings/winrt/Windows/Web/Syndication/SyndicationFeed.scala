@@ -1,6 +1,5 @@
 package typings.winrt.Windows.Web.Syndication
 
-import typings.std.Date
 import typings.winrt.Windows.Data.Xml.Dom.XmlDocument
 import typings.winrt.Windows.Foundation.Collections.IVector
 import typings.winrt.Windows.Foundation.Uri
@@ -28,7 +27,7 @@ object SyndicationFeed {
     imageUri: Uri,
     items: IVector[SyndicationItem],
     language: String,
-    lastUpdatedTime: Date,
+    lastUpdatedTime: js.Date,
     lastUri: Uri,
     links: IVector[SyndicationLink],
     load: String => Unit,

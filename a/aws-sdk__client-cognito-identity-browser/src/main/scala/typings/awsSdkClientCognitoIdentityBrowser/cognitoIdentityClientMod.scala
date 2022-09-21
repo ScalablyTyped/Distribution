@@ -13,14 +13,14 @@ object cognitoIdentityClientMod {
   
   @JSImport("@aws-sdk/client-cognito-identity-browser/CognitoIdentityClient", "CognitoIdentityClient")
   @js.native
-  class CognitoIdentityClient protected () extends StObject {
+  open class CognitoIdentityClient protected () extends StObject {
     def this(configuration: CognitoIdentityConfiguration) = this()
     
     /* protected */ val config: CognitoIdentityResolvedConfiguration = js.native
     
     def destroy(): Unit = js.native
     
-    val middlewareStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any = js.native
+    val middlewareStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any = js.native
     
     /**
       * This will need to be revised when the command interface lands.
@@ -42,7 +42,7 @@ object cognitoIdentityClientMod {
           OutputType, 
           CognitoIdentityResolvedConfiguration
         ],
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[OutputType], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[OutputType], Unit]
     ): Unit = js.native
   }
 }

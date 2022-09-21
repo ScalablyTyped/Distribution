@@ -2,8 +2,9 @@ package typings.reactDatagrid
 
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
-import typings.react.mod.Props
+import typings.react.mod.LegacyRef
 import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.reactDatagrid.anon.DisabledStyle
 import typings.reactDatagrid.anon.PageSize
 import typings.reactDatagrid.mod.ReactDataGrid.DataGridProps
@@ -15,8 +16,8 @@ object mod {
   
   @JSImport("react-datagrid", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[DataGridProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[DataGridProps, js.Object, Any]
   
   object ReactDataGrid {
     
@@ -97,9 +98,7 @@ object mod {
         *   data - the corresponding data object for the current row
         cellProps - an object with props for the current cell
         */
-      var render: js.UndefOr[
-            js.Function3[/* value */ js.Any, /* data */ js.Any, /* cellProps */ CellProps, js.Any]
-          ] = js.undefined
+      var render: js.UndefOr[js.Function3[/* value */ Any, /* data */ Any, /* cellProps */ CellProps, Any]] = js.undefined
       
       /**
         * Object - if you want cells in this column to be have a custom
@@ -159,7 +158,7 @@ object mod {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        inline def setRender(value: (/* value */ js.Any, /* data */ js.Any, /* cellProps */ CellProps) => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
+        inline def setRender(value: (/* value */ Any, /* data */ Any, /* cellProps */ CellProps) => Any): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
         
         inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
         
@@ -185,13 +184,11 @@ object mod {
       }
     }
     
-    @js.native
-    trait DataGrid
-      extends Component[DataGridProps, js.Object, js.Any]
+    type DataGrid = Component[DataGridProps, js.Object, Any]
     
-    trait DataGridProps
-      extends StObject
-         with Props[DataGrid] {
+    trait DataGridProps extends StObject {
+      
+      var children: js.UndefOr[ReactNode] = js.undefined
       
       /**
         * Array - an array of columns that are going to be rendered in the
@@ -204,7 +201,7 @@ object mod {
         * to render in the grid. For remote data, a string url, or a function
         * that returns a promise.
         */
-      var dataSource: js.Array[js.Any] | String | (js.Function1[/* query */ PageSize, js.Promise[js.Array[js.Any]]])
+      var dataSource: js.Array[Any] | String | (js.Function1[/* query */ PageSize, js.Promise[js.Array[Any]]])
       
       var dataSourceCount: js.UndefOr[Double] = js.undefined
       
@@ -220,7 +217,7 @@ object mod {
       /**
         * Group rows by matching values.
         */
-      var groupBy: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var groupBy: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * String - the name of the property where the id is found for each
@@ -274,7 +271,7 @@ object mod {
         * onFilter prop on the grid:
         */
       var onFilter: js.UndefOr[
-            js.Function3[/* column */ Column, /* value */ js.Any, /* allFilterValues */ js.Array[js.Any], Unit]
+            js.Function3[/* column */ Column, /* value */ Any, /* allFilterValues */ js.Array[Any], Unit]
           ] = js.undefined
       
       /**
@@ -291,7 +288,7 @@ object mod {
         * If you want to enable selection, just specify the
         * onSelectionChange prop on the grid:
         */
-      var onSelectionChange: js.UndefOr[js.Function2[/* newSelected */ js.Object, /* data */ js.Any, Unit]] = js.undefined
+      var onSelectionChange: js.UndefOr[js.Function2[/* newSelected */ js.Object, /* data */ Any, Unit]] = js.undefined
       
       /**
         * Sorting the data array is not done by the grid. You can however
@@ -323,6 +320,8 @@ object mod {
         */
       var paginationToolbarProps: js.UndefOr[PaginationToolbarProps] = js.undefined
       
+      var ref: js.UndefOr[LegacyRef[DataGrid]] = js.undefined
+      
       /**
         * Custom row height.
         */
@@ -335,7 +334,7 @@ object mod {
         * is expected to return a style object.
         */
       var rowStyle: js.UndefOr[
-            CSSProperties | (js.Function2[/* data */ js.Any, /* props */ RowProps, CSSProperties])
+            CSSProperties | (js.Function2[/* data */ Any, /* props */ RowProps, CSSProperties])
           ] = js.undefined
       
       /**
@@ -364,7 +363,7 @@ object mod {
       
       inline def apply(
         columns: js.Array[Column],
-        dataSource: js.Array[js.Any] | String | (js.Function1[/* query */ PageSize, js.Promise[js.Array[js.Any]]]),
+        dataSource: js.Array[Any] | String | (js.Function1[/* query */ PageSize, js.Promise[js.Array[Any]]]),
         idProperty: String
       ): DataGridProps = {
         val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], dataSource = dataSource.asInstanceOf[js.Any], idProperty = idProperty.asInstanceOf[js.Any])
@@ -373,21 +372,23 @@ object mod {
       
       extension [Self <: DataGridProps](x: Self) {
         
+        inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+        
+        inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+        
         inline def setColumns(value: js.Array[Column]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
         
-        inline def setColumnsVarargs(value: Column*): Self = StObject.set(x, "columns", js.Array(value :_*))
+        inline def setColumnsVarargs(value: Column*): Self = StObject.set(x, "columns", js.Array(value*))
         
-        inline def setDataSource(
-          value: js.Array[js.Any] | String | (js.Function1[/* query */ PageSize, js.Promise[js.Array[js.Any]]])
-        ): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+        inline def setDataSource(value: js.Array[Any] | String | (js.Function1[/* query */ PageSize, js.Promise[js.Array[Any]]])): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
         
         inline def setDataSourceCount(value: Double): Self = StObject.set(x, "dataSourceCount", value.asInstanceOf[js.Any])
         
         inline def setDataSourceCountUndefined: Self = StObject.set(x, "dataSourceCount", js.undefined)
         
-        inline def setDataSourceFunction1(value: /* query */ PageSize => js.Promise[js.Array[js.Any]]): Self = StObject.set(x, "dataSource", js.Any.fromFunction1(value))
+        inline def setDataSourceFunction1(value: /* query */ PageSize => js.Promise[js.Array[Any]]): Self = StObject.set(x, "dataSource", js.Any.fromFunction1(value))
         
-        inline def setDataSourceVarargs(value: js.Any*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
+        inline def setDataSourceVarargs(value: Any*): Self = StObject.set(x, "dataSource", js.Array(value*))
         
         inline def setDefaultPage(value: Double): Self = StObject.set(x, "defaultPage", value.asInstanceOf[js.Any])
         
@@ -401,11 +402,11 @@ object mod {
         
         inline def setEmptyTextUndefined: Self = StObject.set(x, "emptyText", js.undefined)
         
-        inline def setGroupBy(value: js.Array[js.Any]): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
+        inline def setGroupBy(value: js.Array[Any]): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
         
         inline def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
         
-        inline def setGroupByVarargs(value: js.Any*): Self = StObject.set(x, "groupBy", js.Array(value :_*))
+        inline def setGroupByVarargs(value: Any*): Self = StObject.set(x, "groupBy", js.Array(value*))
         
         inline def setIdProperty(value: String): Self = StObject.set(x, "idProperty", value.asInstanceOf[js.Any])
         
@@ -435,7 +436,7 @@ object mod {
         
         inline def setOnColumnVisibilityChangeUndefined: Self = StObject.set(x, "onColumnVisibilityChange", js.undefined)
         
-        inline def setOnFilter(value: (/* column */ Column, /* value */ js.Any, /* allFilterValues */ js.Array[js.Any]) => Unit): Self = StObject.set(x, "onFilter", js.Any.fromFunction3(value))
+        inline def setOnFilter(value: (/* column */ Column, /* value */ Any, /* allFilterValues */ js.Array[Any]) => Unit): Self = StObject.set(x, "onFilter", js.Any.fromFunction3(value))
         
         inline def setOnFilterUndefined: Self = StObject.set(x, "onFilter", js.undefined)
         
@@ -447,7 +448,7 @@ object mod {
         
         inline def setOnPageSizeChangeUndefined: Self = StObject.set(x, "onPageSizeChange", js.undefined)
         
-        inline def setOnSelectionChange(value: (/* newSelected */ js.Object, /* data */ js.Any) => Unit): Self = StObject.set(x, "onSelectionChange", js.Any.fromFunction2(value))
+        inline def setOnSelectionChange(value: (/* newSelected */ js.Object, /* data */ Any) => Unit): Self = StObject.set(x, "onSelectionChange", js.Any.fromFunction2(value))
         
         inline def setOnSelectionChangeUndefined: Self = StObject.set(x, "onSelectionChange", js.undefined)
         
@@ -471,13 +472,21 @@ object mod {
         
         inline def setPaginationUndefined: Self = StObject.set(x, "pagination", js.undefined)
         
+        inline def setRef(value: LegacyRef[DataGrid]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+        
+        inline def setRefFunction1(value: /* instance */ DataGrid | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+        
+        inline def setRefNull: Self = StObject.set(x, "ref", null)
+        
+        inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+        
         inline def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
         
         inline def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
         
-        inline def setRowStyle(value: CSSProperties | (js.Function2[/* data */ js.Any, /* props */ RowProps, CSSProperties])): Self = StObject.set(x, "rowStyle", value.asInstanceOf[js.Any])
+        inline def setRowStyle(value: CSSProperties | (js.Function2[/* data */ Any, /* props */ RowProps, CSSProperties])): Self = StObject.set(x, "rowStyle", value.asInstanceOf[js.Any])
         
-        inline def setRowStyleFunction2(value: (/* data */ js.Any, /* props */ RowProps) => CSSProperties): Self = StObject.set(x, "rowStyle", js.Any.fromFunction2(value))
+        inline def setRowStyleFunction2(value: (/* data */ Any, /* props */ RowProps) => CSSProperties): Self = StObject.set(x, "rowStyle", js.Any.fromFunction2(value))
         
         inline def setRowStyleUndefined: Self = StObject.set(x, "rowStyle", js.undefined)
         
@@ -493,7 +502,7 @@ object mod {
         
         inline def setSortInfoUndefined: Self = StObject.set(x, "sortInfo", js.undefined)
         
-        inline def setSortInfoVarargs(value: SortInfo*): Self = StObject.set(x, "sortInfo", js.Array(value :_*))
+        inline def setSortInfoVarargs(value: SortInfo*): Self = StObject.set(x, "sortInfo", js.Array(value*))
         
         inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
         
@@ -547,7 +556,7 @@ object mod {
         
         inline def setPageSizes(value: js.Array[Double]): Self = StObject.set(x, "pageSizes", value.asInstanceOf[js.Any])
         
-        inline def setPageSizesVarargs(value: Double*): Self = StObject.set(x, "pageSizes", js.Array(value :_*))
+        inline def setPageSizesVarargs(value: Double*): Self = StObject.set(x, "pageSizes", js.Array(value*))
         
         inline def setShowPageSize(value: Boolean): Self = StObject.set(x, "showPageSize", value.asInstanceOf[js.Any])
         

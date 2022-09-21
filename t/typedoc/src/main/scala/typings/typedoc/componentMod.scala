@@ -3,7 +3,6 @@ package typings.typedoc
 import org.scalablytyped.runtime.Instantiable1
 import typings.std.ClassDecorator
 import typings.typedoc.applicationMod.Application
-import typings.typedoc.optionsDeclarationMod.DeclarationOption
 import typings.typedoc.utilsEventsMod.Event
 import typings.typedoc.utilsEventsMod.EventDispatcher
 import typings.typedoc.utilsEventsMod.EventMap
@@ -22,44 +21,67 @@ object componentMod {
   abstract class AbstractComponent[O /* <: ComponentHost */] protected ()
     extends EventDispatcher
        with ComponentHost {
+    /**
+      * Create new Component instance.
+      */
     def this(owner: O) = this()
-    def this(owner: js.Symbol) = this()
     
-    /* private */ var _componentOptions: js.Any = js.native
-    
-    /* private */ var _componentOwner: js.Any = js.native
+    /**
+      * The owner of this component instance.
+      */
+    /* private */ var _componentOwner: Any = js.native
     
     /* CompleteClass */
     override val application: Application = js.native
+    /**
+      * Return the application / root component instance.
+      */
     @JSName("application")
     def application_MAbstractComponent: Application = js.native
     
-    /* protected */ def bubble(name: String, args: js.Any*): this.type = js.native
-    /* protected */ def bubble(name: EventMap, args: js.Any*): this.type = js.native
-    /* protected */ def bubble(name: Event, args: js.Any*): this.type = js.native
+    /* protected */ def bubble(name: String, args: Any*): this.type = js.native
+    /* protected */ def bubble(name: EventMap, args: Any*): this.type = js.native
+    /* protected */ def bubble(name: Event, args: Any*): this.type = js.native
     
+    /**
+      * The name of this component as set by the @Component decorator.
+      */
     var componentName: String = js.native
     
-    def getOptionDeclarations(): js.Array[DeclarationOption] = js.native
-    
+    /**
+      * Initialize this component.
+      */
     /* protected */ def initialize(): Unit = js.native
     
+    /**
+      * Return the owner of this component.
+      */
     def owner: O = js.native
   }
   
   @JSImport("typedoc/dist/lib/utils/component", "ChildableComponent")
   @js.native
   abstract class ChildableComponent[O /* <: ComponentHost */, C /* <: Component */] protected () extends AbstractComponent[O] {
+    /**
+      * Create new Component instance.
+      */
     def this(owner: O) = this()
-    def this(owner: js.Symbol) = this()
     
-    /* private */ var _componentChildren: js.Any = js.native
+    /**
+      *
+      */
+    /* private */ var _componentChildren: Any = js.native
     
-    /* private */ var _defaultComponents: js.Any = js.native
+    /* private */ var _defaultComponents: Any = js.native
     
     def addComponent[T /* <: C */](name: String, componentClass: T): T = js.native
     def addComponent[T /* <: C */](name: String, componentClass: ComponentClass[T, O]): T = js.native
     
+    /**
+      * Retrieve a plugin instance.
+      *
+      * @returns  The instance of the plugin or undefined if no plugin with the given class is attached.
+      */
     def getComponent(name: String): js.UndefOr[C] = js.native
     
     def getComponents(): js.Array[C] = js.native
@@ -76,7 +98,7 @@ object componentMod {
   
   @JSImport("typedoc/dist/lib/utils/component", "ComponentEvent")
   @js.native
-  class ComponentEvent protected () extends Event {
+  open class ComponentEvent protected () extends Event {
     def this(name: String, owner: ComponentHost, component: AbstractComponent[ComponentHost]) = this()
     
     var component: AbstractComponent[ComponentHost] = js.native
@@ -100,10 +122,6 @@ object componentMod {
     def REMOVED: String = js.native
     inline def REMOVED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REMOVED")(x.asInstanceOf[js.Any])
   }
-  
-  @JSImport("typedoc/dist/lib/utils/component", "DUMMY_APPLICATION_OWNER")
-  @js.native
-  val DUMMY_APPLICATION_OWNER: js.Symbol = js.native
   
   @js.native
   trait ComponentClass[T /* <: Component */, O /* <: ComponentHost */]
@@ -129,6 +147,7 @@ object componentMod {
   
   trait ComponentOptions extends StObject {
     
+    /** Specify valid child component class.  Used to prove that children are valid via `instanceof` checks */
     var childClass: js.UndefOr[js.Function] = js.undefined
     
     var internal: js.UndefOr[Boolean] = js.undefined

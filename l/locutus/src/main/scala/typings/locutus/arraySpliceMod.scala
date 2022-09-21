@@ -6,22 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object arraySpliceMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(arr: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(arr.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(arr: js.Any, offst: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(arr.asInstanceOf[js.Any], offst.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(arr: js.Any, offst: js.Any, lgth: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(arr.asInstanceOf[js.Any], offst.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(arr: js.Any, offst: js.Any, lgth: js.Any, replacement: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(arr.asInstanceOf[js.Any], offst.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(arr: js.Any, offst: js.Any, lgth: Unit, replacement: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(arr.asInstanceOf[js.Any], offst.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(arr: js.Any, offst: Unit, lgth: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(arr.asInstanceOf[js.Any], offst.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(arr: js.Any, offst: Unit, lgth: js.Any, replacement: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(arr.asInstanceOf[js.Any], offst.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(arr: js.Any, offst: Unit, lgth: Unit, replacement: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(arr.asInstanceOf[js.Any], offst.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(arr: Unit, offst: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(arr.asInstanceOf[js.Any], offst.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(arr: Unit, offst: js.Any, lgth: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(arr.asInstanceOf[js.Any], offst.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(arr: Unit, offst: js.Any, lgth: js.Any, replacement: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(arr.asInstanceOf[js.Any], offst.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(arr: Unit, offst: js.Any, lgth: Unit, replacement: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(arr.asInstanceOf[js.Any], offst.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(arr: Unit, offst: Unit, lgth: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(arr.asInstanceOf[js.Any], offst.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(arr: Unit, offst: Unit, lgth: js.Any, replacement: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(arr.asInstanceOf[js.Any], offst.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(arr: Unit, offst: Unit, lgth: Unit, replacement: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(arr.asInstanceOf[js.Any], offst.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(arr: Any): Any = ^.asInstanceOf[js.Dynamic].apply(arr.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(arr: Any, offst: Any): Any = (^.asInstanceOf[js.Dynamic].apply(arr.asInstanceOf[js.Any], offst.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(arr: Any, offst: Any, lgth: Any): Any = (^.asInstanceOf[js.Dynamic].apply(arr.asInstanceOf[js.Any], offst.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(arr: Any, offst: Any, lgth: Any, replacement: Any): Any = (^.asInstanceOf[js.Dynamic].apply(arr.asInstanceOf[js.Any], offst.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(arr: Any, offst: Any, lgth: Unit, replacement: Any): Any = (^.asInstanceOf[js.Dynamic].apply(arr.asInstanceOf[js.Any], offst.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(arr: Any, offst: Unit, lgth: Any): Any = (^.asInstanceOf[js.Dynamic].apply(arr.asInstanceOf[js.Any], offst.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(arr: Any, offst: Unit, lgth: Any, replacement: Any): Any = (^.asInstanceOf[js.Dynamic].apply(arr.asInstanceOf[js.Any], offst.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(arr: Any, offst: Unit, lgth: Unit, replacement: Any): Any = (^.asInstanceOf[js.Dynamic].apply(arr.asInstanceOf[js.Any], offst.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(arr: Unit, offst: Any): Any = (^.asInstanceOf[js.Dynamic].apply(arr.asInstanceOf[js.Any], offst.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(arr: Unit, offst: Any, lgth: Any): Any = (^.asInstanceOf[js.Dynamic].apply(arr.asInstanceOf[js.Any], offst.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(arr: Unit, offst: Any, lgth: Any, replacement: Any): Any = (^.asInstanceOf[js.Dynamic].apply(arr.asInstanceOf[js.Any], offst.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(arr: Unit, offst: Any, lgth: Unit, replacement: Any): Any = (^.asInstanceOf[js.Dynamic].apply(arr.asInstanceOf[js.Any], offst.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(arr: Unit, offst: Unit, lgth: Any): Any = (^.asInstanceOf[js.Dynamic].apply(arr.asInstanceOf[js.Any], offst.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(arr: Unit, offst: Unit, lgth: Any, replacement: Any): Any = (^.asInstanceOf[js.Dynamic].apply(arr.asInstanceOf[js.Any], offst.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(arr: Unit, offst: Unit, lgth: Unit, replacement: Any): Any = (^.asInstanceOf[js.Dynamic].apply(arr.asInstanceOf[js.Any], offst.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("locutus/php/array/array_splice", JSImport.Namespace)
   @js.native

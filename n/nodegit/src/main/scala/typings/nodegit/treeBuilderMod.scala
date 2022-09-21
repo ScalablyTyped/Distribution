@@ -12,7 +12,7 @@ object treeBuilderMod {
   
   @JSImport("nodegit/tree-builder", "Treebuilder")
   @js.native
-  class Treebuilder () extends StObject {
+  open class Treebuilder () extends StObject {
     
     def clear(): Unit = js.native
     

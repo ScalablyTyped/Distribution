@@ -1,19 +1,23 @@
 package typings.firebaseFirestore.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GetAuthHeaderValueForFirstParty extends js.Object {
+trait GetAuthHeaderValueForFirstParty extends StObject {
+  
   def getAuthHeaderValueForFirstParty(userIdentifiers: js.Array[StringDictionary[String]]): String | Null
 }
-
 object GetAuthHeaderValueForFirstParty {
-  @scala.inline
-  def apply(getAuthHeaderValueForFirstParty: js.Array[StringDictionary[String]] => String | Null): GetAuthHeaderValueForFirstParty = {
+  
+  inline def apply(getAuthHeaderValueForFirstParty: js.Array[StringDictionary[String]] => String | Null): GetAuthHeaderValueForFirstParty = {
     val __obj = js.Dynamic.literal(getAuthHeaderValueForFirstParty = js.Any.fromFunction1(getAuthHeaderValueForFirstParty))
     __obj.asInstanceOf[GetAuthHeaderValueForFirstParty]
   }
+  
+  extension [Self <: GetAuthHeaderValueForFirstParty](x: Self) {
+    
+    inline def setGetAuthHeaderValueForFirstParty(value: js.Array[StringDictionary[String]] => String | Null): Self = StObject.set(x, "getAuthHeaderValueForFirstParty", js.Any.fromFunction1(value))
+  }
 }
-

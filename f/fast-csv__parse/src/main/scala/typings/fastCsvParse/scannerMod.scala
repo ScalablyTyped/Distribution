@@ -11,7 +11,7 @@ object scannerMod {
   
   @JSImport("@fast-csv/parse/build/src/parser/Scanner", "Scanner")
   @js.native
-  class Scanner protected () extends StObject {
+  open class Scanner protected () extends StObject {
     def this(args: ScannerArgs) = this()
     
     def advancePastLine(): Scanner | Null = js.native
@@ -38,7 +38,7 @@ object scannerMod {
     
     def nextNonSpaceToken: MaybeToken = js.native
     
-    /* private */ val parserOptions: js.Any = js.native
+    /* private */ val parserOptions: Any = js.native
     
     def truncateToCursor(): Scanner = js.native
   }

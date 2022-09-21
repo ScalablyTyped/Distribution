@@ -2,7 +2,6 @@ package typings.awsSdkClientS3Browser
 
 import typings.awsSdkClientS3Browser.typesFilterRuleMod.FilterRule
 import typings.awsSdkClientS3Browser.typesFilterRuleMod.UnmarshalledFilterRule
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ object typesS3KeyFilterMod {
     /**
       * <p>A list of containers for key value pair that defines the criteria for the filter rule.</p>
       */
-    var FilterRules: js.UndefOr[js.Array[FilterRule] | Iterable[FilterRule]] = js.undefined
+    var FilterRules: js.UndefOr[js.Array[FilterRule] | js.Iterable[FilterRule]] = js.undefined
   }
   object S3KeyFilter {
     
@@ -25,11 +24,11 @@ object typesS3KeyFilterMod {
     
     extension [Self <: S3KeyFilter](x: Self) {
       
-      inline def setFilterRules(value: js.Array[FilterRule] | Iterable[FilterRule]): Self = StObject.set(x, "FilterRules", value.asInstanceOf[js.Any])
+      inline def setFilterRules(value: js.Array[FilterRule] | js.Iterable[FilterRule]): Self = StObject.set(x, "FilterRules", value.asInstanceOf[js.Any])
       
       inline def setFilterRulesUndefined: Self = StObject.set(x, "FilterRules", js.undefined)
       
-      inline def setFilterRulesVarargs(value: FilterRule*): Self = StObject.set(x, "FilterRules", js.Array(value :_*))
+      inline def setFilterRulesVarargs(value: FilterRule*): Self = StObject.set(x, "FilterRules", js.Array(value*))
     }
   }
   
@@ -56,7 +55,7 @@ object typesS3KeyFilterMod {
       
       inline def setFilterRulesUndefined: Self = StObject.set(x, "FilterRules", js.undefined)
       
-      inline def setFilterRulesVarargs(value: UnmarshalledFilterRule*): Self = StObject.set(x, "FilterRules", js.Array(value :_*))
+      inline def setFilterRulesVarargs(value: UnmarshalledFilterRule*): Self = StObject.set(x, "FilterRules", js.Array(value*))
     }
   }
 }

@@ -10,10 +10,10 @@ object callSplitMod {
   
   @JSImport("material-ui/svg-icons/communication/call-split", JSImport.Default)
   @js.native
-  class default () extends CommunicationCallSplit
+  open class default () extends CommunicationCallSplit
   
   @JSImport("material-ui/svg-icons/communication/call-split", "CommunicationCallSplit")
   @js.native
-  class CommunicationCallSplit ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class CommunicationCallSplit ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

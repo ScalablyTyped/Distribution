@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ymaps.Popup")
 @js.native
-class Popup[T] protected ()
+open class Popup[T] protected ()
   extends typings.yandexMaps.mod.Popup[T] {
   def this(map: typings.yandexMaps.mod.Map_) = this()
   def this(map: typings.yandexMaps.mod.Map_, options: IPopupOptions) = this()

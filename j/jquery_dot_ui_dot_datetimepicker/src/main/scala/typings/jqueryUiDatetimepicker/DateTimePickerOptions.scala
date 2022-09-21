@@ -1,7 +1,6 @@
 package typings.jqueryUiDatetimepicker
 
 import typings.jqueryui.JQueryUI.DatepickerOptions
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,7 +54,7 @@ trait DateTimePickerOptions
   var hourText: js.UndefOr[String] = js.undefined
   
   //Default: null - Date object of the minimum datetime allowed.Also available as minDate.
-  var maxDateTime: js.UndefOr[Date] = js.undefined
+  var maxDateTime: js.UndefOr[js.Date] = js.undefined
   
   //Default: 0 - Initial millisecond set.
   var microsec: js.UndefOr[Double] = js.undefined
@@ -88,7 +87,7 @@ trait DateTimePickerOptions
   var millisecText: js.UndefOr[String] = js.undefined
   
   //Default: null - String of the default time value placed in the input on focus when the input is empty.
-  var minDateTime: js.UndefOr[Date] = js.undefined
+  var minDateTime: js.UndefOr[js.Date] = js.undefined
   
   //Default: 0 - Initial hour set.
   var minute: js.UndefOr[Double] = js.undefined
@@ -107,7 +106,7 @@ trait DateTimePickerOptions
   
   //Default: false - Hide the datepicker and only provide a time interface.
   @JSName("onSelect")
-  var onSelect_DateTimePickerOptions: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var onSelect_DateTimePickerOptions: js.UndefOr[js.Function0[Any]] = js.undefined
   
   //Default: null - Date object of the maximum datetime allowed.Also Available as maxDate.
   var parse: js.UndefOr[String] = js.undefined
@@ -164,7 +163,7 @@ trait DateTimePickerOptions
   var showTimezone: js.UndefOr[Boolean] = js.undefined
   
   //Default: false - Adds the sliderAccess plugin to sliders within timepicker
-  var sliderAccessArgs: js.UndefOr[js.Any] = js.undefined
+  var sliderAccessArgs: js.UndefOr[Any] = js.undefined
   
   //Default: true - Whether to show the time selected within the datetimepicker.
   var stepHour: js.UndefOr[Double] = js.undefined
@@ -271,7 +270,7 @@ object DateTimePickerOptions {
     
     inline def setHourUndefined: Self = StObject.set(x, "hour", js.undefined)
     
-    inline def setMaxDateTime(value: Date): Self = StObject.set(x, "maxDateTime", value.asInstanceOf[js.Any])
+    inline def setMaxDateTime(value: js.Date): Self = StObject.set(x, "maxDateTime", value.asInstanceOf[js.Any])
     
     inline def setMaxDateTimeUndefined: Self = StObject.set(x, "maxDateTime", js.undefined)
     
@@ -315,7 +314,7 @@ object DateTimePickerOptions {
     
     inline def setMillisecUndefined: Self = StObject.set(x, "millisec", js.undefined)
     
-    inline def setMinDateTime(value: Date): Self = StObject.set(x, "minDateTime", value.asInstanceOf[js.Any])
+    inline def setMinDateTime(value: js.Date): Self = StObject.set(x, "minDateTime", value.asInstanceOf[js.Any])
     
     inline def setMinDateTimeUndefined: Self = StObject.set(x, "minDateTime", js.undefined)
     
@@ -339,7 +338,7 @@ object DateTimePickerOptions {
     
     inline def setMinuteUndefined: Self = StObject.set(x, "minute", js.undefined)
     
-    inline def setOnSelect(value: () => js.Any): Self = StObject.set(x, "onSelect", js.Any.fromFunction0(value))
+    inline def setOnSelect(value: () => Any): Self = StObject.set(x, "onSelect", js.Any.fromFunction0(value))
     
     inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
     
@@ -415,7 +414,7 @@ object DateTimePickerOptions {
     
     inline def setShowTimezoneUndefined: Self = StObject.set(x, "showTimezone", js.undefined)
     
-    inline def setSliderAccessArgs(value: js.Any): Self = StObject.set(x, "sliderAccessArgs", value.asInstanceOf[js.Any])
+    inline def setSliderAccessArgs(value: Any): Self = StObject.set(x, "sliderAccessArgs", value.asInstanceOf[js.Any])
     
     inline def setSliderAccessArgsUndefined: Self = StObject.set(x, "sliderAccessArgs", js.undefined)
     
@@ -465,7 +464,7 @@ object DateTimePickerOptions {
     
     inline def setTimezoneListUndefined: Self = StObject.set(x, "timezoneList", js.undefined)
     
-    inline def setTimezoneListVarargs(value: TimezoneOptions*): Self = StObject.set(x, "timezoneList", js.Array(value :_*))
+    inline def setTimezoneListVarargs(value: TimezoneOptions*): Self = StObject.set(x, "timezoneList", js.Array(value*))
     
     inline def setTimezoneText(value: String): Self = StObject.set(x, "timezoneText", value.asInstanceOf[js.Any])
     

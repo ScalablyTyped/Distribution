@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.Location")
 @js.native
-class Location protected ()
+open class Location protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.Location {
   def this(
@@ -17,16 +17,16 @@ class Location protected ()
   ) = this()
   
   /* private */ /* CompleteClass */
-  var _fileName: js.Any = js.native
+  var _fileName: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _length: js.Any = js.native
+  var _length: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _lineMap: js.Any = js.native
+  var _lineMap: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _start: js.Any = js.native
+  var _start: Any = js.native
   
   /* CompleteClass */
   override def character(): Double = js.native

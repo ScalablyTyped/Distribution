@@ -1,12 +1,12 @@
 package typings.mangopay2NodejsSdk.anon
 
-import typings.mangopay2NodejsSdk.mod.bankingAlias.BankingAliasType
+import typings.mangopay2NodejsSdk.bankingAliasMod.bankingAlias.BankingAliasType
 import typings.mangopay2NodejsSdk.typesMod.CountryISO
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.bankingAlias.BankingAliasData> */
+/* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/typings/models/bankingAlias.bankingAlias.BankingAliasData> */
 trait PartialBankingAliasData extends StObject {
   
   var Active: js.UndefOr[Boolean] = js.undefined

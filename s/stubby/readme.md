@@ -10,10 +10,10 @@ a lightweight server for stubbing external systems and endpoints
 | ------------------ | :-------------: |
 | Full name          | stubby |
 | Keywords           | server, stub, mock, testing, service, endpoint, http, https, api, rest |
-| # releases         | 4 |
-| # dependents       | 5 |
-| # downloads        | 278537 |
-| # stars            | 6 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 23528.666666666668 |
+| # stars            | 254.0 |
 
 ## Links
 - [Homepage](https://github.com/mrak/stubby4node)

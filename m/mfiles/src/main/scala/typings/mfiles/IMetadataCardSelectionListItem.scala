@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IMetadataCardSelectionListItem extends StObject {
   
-  val ChildItems: js.Any
+  val ChildItems: Any
   
   val HasParent: Boolean
   
@@ -14,18 +14,18 @@ trait IMetadataCardSelectionListItem extends StObject {
   
   val Selectable: Boolean
   
-  val Value: js.Any
+  val Value: Any
 }
 object IMetadataCardSelectionListItem {
   
-  inline def apply(ChildItems: js.Any, HasParent: Boolean, ParentID: Double, Selectable: Boolean, Value: js.Any): IMetadataCardSelectionListItem = {
+  inline def apply(ChildItems: Any, HasParent: Boolean, ParentID: Double, Selectable: Boolean, Value: Any): IMetadataCardSelectionListItem = {
     val __obj = js.Dynamic.literal(ChildItems = ChildItems.asInstanceOf[js.Any], HasParent = HasParent.asInstanceOf[js.Any], ParentID = ParentID.asInstanceOf[js.Any], Selectable = Selectable.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMetadataCardSelectionListItem]
   }
   
   extension [Self <: IMetadataCardSelectionListItem](x: Self) {
     
-    inline def setChildItems(value: js.Any): Self = StObject.set(x, "ChildItems", value.asInstanceOf[js.Any])
+    inline def setChildItems(value: Any): Self = StObject.set(x, "ChildItems", value.asInstanceOf[js.Any])
     
     inline def setHasParent(value: Boolean): Self = StObject.set(x, "HasParent", value.asInstanceOf[js.Any])
     
@@ -33,6 +33,6 @@ object IMetadataCardSelectionListItem {
     
     inline def setSelectable(value: Boolean): Self = StObject.set(x, "Selectable", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

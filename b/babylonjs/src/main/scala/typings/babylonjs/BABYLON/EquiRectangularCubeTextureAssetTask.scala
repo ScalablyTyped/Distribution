@@ -26,8 +26,8 @@ trait EquiRectangularCubeTextureAssetTask
     */
   def onError(task: EquiRectangularCubeTextureAssetTask): Unit = js.native
   def onError(task: EquiRectangularCubeTextureAssetTask, message: String): Unit = js.native
-  def onError(task: EquiRectangularCubeTextureAssetTask, message: String, exception: js.Any): Unit = js.native
-  def onError(task: EquiRectangularCubeTextureAssetTask, message: Unit, exception: js.Any): Unit = js.native
+  def onError(task: EquiRectangularCubeTextureAssetTask, message: String, exception: Any): Unit = js.native
+  def onError(task: EquiRectangularCubeTextureAssetTask, message: Unit, exception: Any): Unit = js.native
   
   /**
     * Callback called when the task is successful

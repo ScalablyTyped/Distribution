@@ -10,10 +10,10 @@ npm version of layui-layer
 | ------------------ | :-------------: |
 | Full name          | layui-layer |
 | Keywords           | layer, layui, dialog, prompt |
-| # releases         | 0 |
-| # dependents       | 24 |
-| # downloads        | 6318 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 846.6666666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/sentsin/layui#readme)

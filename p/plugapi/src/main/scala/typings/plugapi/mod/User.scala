@@ -10,7 +10,7 @@ object User {
     extends StObject
        with DJ {
     
-    var ignores: js.Array[js.Any]
+    var ignores: js.Array[Any]
     
     var notifications: js.Array[Notification]
     
@@ -25,11 +25,11 @@ object User {
     inline def apply(
       avatarID: String,
       badge: String,
-      blurp: js.Any,
+      blurp: Any,
       gRole: Double,
       grab: Boolean,
       id: Double,
-      ignores: js.Array[js.Any],
+      ignores: js.Array[Any],
       joined: String,
       language: String,
       level: Double,
@@ -50,13 +50,13 @@ object User {
     
     extension [Self <: Audience](x: Self) {
       
-      inline def setIgnores(value: js.Array[js.Any]): Self = StObject.set(x, "ignores", value.asInstanceOf[js.Any])
+      inline def setIgnores(value: js.Array[Any]): Self = StObject.set(x, "ignores", value.asInstanceOf[js.Any])
       
-      inline def setIgnoresVarargs(value: js.Any*): Self = StObject.set(x, "ignores", js.Array(value :_*))
+      inline def setIgnoresVarargs(value: Any*): Self = StObject.set(x, "ignores", js.Array(value*))
       
       inline def setNotifications(value: js.Array[Notification]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
       
-      inline def setNotificationsVarargs(value: Notification*): Self = StObject.set(x, "notifications", js.Array(value :_*))
+      inline def setNotificationsVarargs(value: Notification*): Self = StObject.set(x, "notifications", js.Array(value*))
       
       inline def setPp(value: Double): Self = StObject.set(x, "pp", value.asInstanceOf[js.Any])
       
@@ -70,7 +70,7 @@ object User {
     extends StObject
        with Room {
     
-    var blurp: js.Any
+    var blurp: Any
     
     var grab: Boolean
     
@@ -83,7 +83,7 @@ object User {
     inline def apply(
       avatarID: String,
       badge: String,
-      blurp: js.Any,
+      blurp: Any,
       gRole: Double,
       grab: Boolean,
       id: Double,
@@ -103,7 +103,7 @@ object User {
     
     extension [Self <: DJ](x: Self) {
       
-      inline def setBlurp(value: js.Any): Self = StObject.set(x, "blurp", value.asInstanceOf[js.Any])
+      inline def setBlurp(value: Any): Self = StObject.set(x, "blurp", value.asInstanceOf[js.Any])
       
       inline def setGrab(value: Boolean): Self = StObject.set(x, "grab", value.asInstanceOf[js.Any])
       

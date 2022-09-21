@@ -1,5 +1,8 @@
 package typings.facebookJsSdk.facebook
 
+import typings.facebookJsSdk.anon.About
+import typings.facebookJsSdk.anon.Fields
+import typings.facebookJsSdk.facebookJsSdkStrings.Slashme
 import typings.facebookJsSdk.facebookJsSdkStrings.delete
 import typings.facebookJsSdk.facebookJsSdkStrings.get
 import typings.facebookJsSdk.facebookJsSdkStrings.post
@@ -10,32 +13,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FacebookStatic extends StObject {
   
-  var AppEvents: js.Any = js.native
+  var AppEvents: Any = js.native
   
-  var Canvas: js.Any = js.native
+  var Canvas: Any = js.native
   
   var Event: FacebookStaticEvent = js.native
   
-  var XFBML: js.Any = js.native
+  var XFBML: Any = js.native
   
   def api[TResponse](path: String, callback: js.Function1[/* response */ TResponse, Unit]): Unit = js.native
+  def api[TParams /* <: js.Object */, TResponse](
+    path: String,
+    method: get | post | delete,
+    params: TParams,
+    callback: js.Function1[/* response */ TResponse, Unit]
+  ): Unit = js.native
   def api[TParams /* <: js.Object */, TResponse](path: String, params: TParams, callback: js.Function1[/* response */ TResponse, Unit]): Unit = js.native
   @JSName("api")
-  def api_delete[TParams /* <: js.Object */, TResponse](
-    path: String,
-    method: delete,
-    params: TParams,
-    callback: js.Function1[/* response */ TResponse, Unit]
-  ): Unit = js.native
-  @JSName("api")
-  def api_get[TParams /* <: js.Object */, TResponse](path: String, method: get, params: TParams, callback: js.Function1[/* response */ TResponse, Unit]): Unit = js.native
-  @JSName("api")
-  def api_post[TParams /* <: js.Object */, TResponse](
-    path: String,
-    method: post,
-    params: TParams,
-    callback: js.Function1[/* response */ TResponse, Unit]
-  ): Unit = js.native
+  def api_me[TParam /* <: UserField */](path: Slashme, params: Fields[TParam], callback: js.Function1[/* response */ About[TParam], Unit]): Unit = js.native
   
   /**
     * The method FB.getAuthResponse() is a synchronous accessor for the current authResponse.

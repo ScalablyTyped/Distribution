@@ -36,7 +36,7 @@ object XUIElementFactory {
   inline def apply(
     acquire: () => Unit,
     createUIElement: (String, SeqEquiv[PropertyValue]) => XUIElement,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XUIElementFactory = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createUIElement = js.Any.fromFunction2(createUIElement), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

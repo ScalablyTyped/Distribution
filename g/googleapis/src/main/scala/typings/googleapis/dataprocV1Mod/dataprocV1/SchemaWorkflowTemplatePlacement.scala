@@ -4,20 +4,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Specifies workflow execution target.Either managed_cluster or
-  * cluster_selector is required.
-  */
 trait SchemaWorkflowTemplatePlacement extends StObject {
   
   /**
-    * Optional. A selector that chooses target cluster for jobs based on
-    * metadata.The selector is evaluated at the time each job is submitted.
+    * Optional. A selector that chooses target cluster for jobs based on metadata.The selector is evaluated at the time each job is submitted.
     */
   var clusterSelector: js.UndefOr[SchemaClusterSelector] = js.undefined
   
   /**
-    * Optional. A cluster that is managed by the workflow.
+    * A cluster that is managed by the workflow.
     */
   var managedCluster: js.UndefOr[SchemaManagedCluster] = js.undefined
 }

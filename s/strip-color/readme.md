@@ -11,9 +11,9 @@ Strip ANSI color codes from a string. No dependencies.
 | Full name          | strip-color |
 | Keywords           | ansi, chalk, cli, codes, color, colors, colour, colours, command, command-line, console, escape, format, formatting, log, logging, match, pattern, re, regex, regexp, regular-expression, remove, rgb, shell, string, strip, style, styles, styling, terminal, text, trim, tty, xterm |
 | # releases         | 0 |
-| # dependents       | 51 |
-| # downloads        | 17300969 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 808766.6666666666 |
+| # stars            | 7.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/strip-color)

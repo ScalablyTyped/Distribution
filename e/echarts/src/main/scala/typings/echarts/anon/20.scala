@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `20` extends StObject {
   
   /**
-    * @see https://echarts.apache.org/en/option.html#series-pie.data.emphasis.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-pie.emphasis.itemStyle
     */
   var itemStyle: js.UndefOr[BorderType] = js.undefined
   
   /**
-    * @see https://echarts.apache.org/en/option.html#series-pie.data.emphasis.label
+    * @see https://echarts.apache.org/en/option.html#series-pie.emphasis.label
     */
-  var label: js.UndefOr[LineHeight] = js.undefined
+  var label: js.UndefOr[FontStyle] = js.undefined
 }
 object `20` {
   
@@ -29,7 +29,7 @@ object `20` {
     
     inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
     
-    inline def setLabel(value: LineHeight): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: FontStyle): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }

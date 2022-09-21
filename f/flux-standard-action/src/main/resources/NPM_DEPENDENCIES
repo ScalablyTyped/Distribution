@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "flux-standard-action" : "2.1.1"
+      "flux-standard-action" : "2.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "flux-standard-action" : "2.1.1"
+      "flux-standard-action" : "2.1.2"
     }
   ],
   "compile-devDependencies" : [

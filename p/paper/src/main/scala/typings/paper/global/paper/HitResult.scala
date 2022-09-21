@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("paper.HitResult")
 @js.native
-class HitResult ()
+open class HitResult ()
   extends StObject
      with typings.paper.paper.HitResult {
   

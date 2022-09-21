@@ -1,7 +1,7 @@
 
 # Scala.js typings for esfx__collections-linkedlist
 
-Typings are for version 1.0.0-pre.13
+Typings are for version 1.0.0-pre.24
 
 ## Library description:
 LinkedList collection API.
@@ -10,15 +10,12 @@ LinkedList collection API.
 | ------------------ | :-------------: |
 | Full name          | @esfx/collections-linkedlist |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 4 |
-| # downloads        | 22574 |
-| # stars            | 0 |
+| # releases         | 18 |
+| # dependents       | 0.0 |
+| # downloads        | 8799.0 |
+| # stars            | 161.0 |
 
 ## Links
-- [Homepage](https://github.com/esfx/esfx#readme)
-- [Bugs](https://github.com/esfx/esfx/issues)
-- [Repository](https://github.com/esfx/esfx)
 - [Npm](https://www.npmjs.com/package/%40esfx%2Fcollections-linkedlist)
     
 

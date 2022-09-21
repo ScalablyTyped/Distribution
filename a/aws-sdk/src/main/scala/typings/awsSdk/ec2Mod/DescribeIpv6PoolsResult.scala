@@ -29,7 +29,7 @@ object DescribeIpv6PoolsResult {
     
     inline def setIpv6PoolsUndefined: Self = StObject.set(x, "Ipv6Pools", js.undefined)
     
-    inline def setIpv6PoolsVarargs(value: Ipv6Pool*): Self = StObject.set(x, "Ipv6Pools", js.Array(value :_*))
+    inline def setIpv6PoolsVarargs(value: Ipv6Pool*): Self = StObject.set(x, "Ipv6Pools", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

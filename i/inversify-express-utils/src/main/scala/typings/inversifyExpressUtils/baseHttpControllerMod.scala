@@ -1,7 +1,7 @@
 package typings.inversifyExpressUtils
 
 import typings.inversifyExpressUtils.httpResponseMessageMod.HttpResponseMessage
-import typings.inversifyExpressUtils.interfacesMod.interfaces.HttpContext
+import typings.inversifyExpressUtils.interfacesMod.HttpContext
 import typings.inversifyExpressUtils.resultsMod.BadRequestErrorMessageResult
 import typings.inversifyExpressUtils.resultsMod.BadRequestResult
 import typings.inversifyExpressUtils.resultsMod.ConflictResult
@@ -16,16 +16,15 @@ import typings.inversifyExpressUtils.resultsMod.RedirectResult
 import typings.inversifyExpressUtils.resultsMod.ResponseMessageResult
 import typings.inversifyExpressUtils.resultsMod.StatusCodeResult
 import typings.node.urlMod.URL_
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseHttpControllerMod {
   
-  @JSImport("inversify-express-utils/dts/base_http_controller", "BaseHttpController")
+  @JSImport("inversify-express-utils/lib/base_http_controller", "BaseHttpController")
   @js.native
-  class BaseHttpController () extends StObject {
+  open class BaseHttpController () extends StObject {
     
     /* protected */ def badRequest(): BadRequestResult = js.native
     /* protected */ def badRequest(message: String): BadRequestErrorMessageResult = js.native
@@ -38,10 +37,10 @@ object baseHttpControllerMod {
     /* protected */ val httpContext: HttpContext = js.native
     
     /* protected */ def internalServerError(): InternalServerErrorResult = js.native
-    /* protected */ def internalServerError(error: Error): ExceptionResult = js.native
+    /* protected */ def internalServerError(error: js.Error): ExceptionResult = js.native
     
-    /* protected */ def json(content: js.Any): JsonResult = js.native
-    /* protected */ def json(content: js.Any, statusCode: Double): JsonResult = js.native
+    /* protected */ def json(content: Any): JsonResult = js.native
+    /* protected */ def json(content: Any, statusCode: Double): JsonResult = js.native
     
     /* protected */ def notFound(): NotFoundResult = js.native
     

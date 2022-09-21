@@ -25,7 +25,7 @@ object GetAllZoomLevelsForPage {
     
     inline def setGetAllZoomLevelsForPage(value: Double | js.Array[SourceProvider]): Self = StObject.set(x, "getAllZoomLevelsForPage", value.asInstanceOf[js.Any])
     
-    inline def setGetAllZoomLevelsForPageVarargs(value: SourceProvider*): Self = StObject.set(x, "getAllZoomLevelsForPage", js.Array(value :_*))
+    inline def setGetAllZoomLevelsForPageVarargs(value: SourceProvider*): Self = StObject.set(x, "getAllZoomLevelsForPage", js.Array(value*))
     
     inline def setGetBestZoomLevelForPage(value: Double | SourceProvider): Self = StObject.set(x, "getBestZoomLevelForPage", value.asInstanceOf[js.Any])
   }

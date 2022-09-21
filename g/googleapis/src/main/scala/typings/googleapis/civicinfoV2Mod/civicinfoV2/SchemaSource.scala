@@ -4,20 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Contains information about the data source for the element containing it.
-  */
 trait SchemaSource extends StObject {
   
   /**
     * The name of the data source.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Whether this data comes from an official government source.
     */
-  var official: js.UndefOr[Boolean] = js.undefined
+  var official: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaSource {
   
@@ -30,9 +27,13 @@ object SchemaSource {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setOfficial(value: Boolean): Self = StObject.set(x, "official", value.asInstanceOf[js.Any])
+    
+    inline def setOfficialNull: Self = StObject.set(x, "official", null)
     
     inline def setOfficialUndefined: Self = StObject.set(x, "official", js.undefined)
   }

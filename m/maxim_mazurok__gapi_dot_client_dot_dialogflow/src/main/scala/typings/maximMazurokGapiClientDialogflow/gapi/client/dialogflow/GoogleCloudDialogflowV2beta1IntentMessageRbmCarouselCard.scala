@@ -25,7 +25,7 @@ object GoogleCloudDialogflowV2beta1IntentMessageRbmCarouselCard {
     
     inline def setCardContentsUndefined: Self = StObject.set(x, "cardContents", js.undefined)
     
-    inline def setCardContentsVarargs(value: GoogleCloudDialogflowV2beta1IntentMessageRbmCardContent*): Self = StObject.set(x, "cardContents", js.Array(value :_*))
+    inline def setCardContentsVarargs(value: GoogleCloudDialogflowV2beta1IntentMessageRbmCardContent*): Self = StObject.set(x, "cardContents", js.Array(value*))
     
     inline def setCardWidth(value: String): Self = StObject.set(x, "cardWidth", value.asInstanceOf[js.Any])
     

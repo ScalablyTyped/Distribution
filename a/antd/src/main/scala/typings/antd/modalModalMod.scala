@@ -1,18 +1,22 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antd.anon.OmitModalStaticFunctionsw
 import typings.antd.antdBooleans.`false`
 import typings.antd.antdStrings.cancel
+import typings.antd.antdStrings.confirm
+import typings.antd.antdStrings.error
+import typings.antd.antdStrings.info
 import typings.antd.antdStrings.ok
+import typings.antd.antdStrings.success
+import typings.antd.antdStrings.warn
+import typings.antd.antdStrings.warning
 import typings.antd.buttonButtonMod.ButtonProps
 import typings.antd.buttonButtonMod.LegacyButtonType
 import typings.antd.configProviderContextMod.DirectionType
 import typings.react.mod.CSSProperties
-import typings.react.mod.FunctionComponent
+import typings.react.mod.FC
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
-import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -23,13 +27,11 @@ object modalModalMod extends Shortcut {
   
   @JSImport("antd/lib/modal/Modal", JSImport.Default)
   @js.native
-  val default: ModalInterface = js.native
-  
-  @JSImport("antd/lib/modal/Modal", "destroyFns")
-  @js.native
-  val destroyFns: js.Array[js.Function0[Unit]] = js.native
+  val default: FC[ModalProps] = js.native
   
   trait ModalFuncProps extends StObject {
+    
+    var afterClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var autoFocusButton: js.UndefOr[Null | ok | cancel] = js.undefined
     
@@ -43,11 +45,17 @@ object modalModalMod extends Shortcut {
     
     var className: js.UndefOr[String] = js.undefined
     
+    var closable: js.UndefOr[Boolean] = js.undefined
+    
+    var closeIcon: js.UndefOr[ReactNode] = js.undefined
+    
     var content: js.UndefOr[ReactNode] = js.undefined
     
     var direction: js.UndefOr[DirectionType] = js.undefined
     
-    var getContainer: js.UndefOr[String | HTMLElement | getContainerFunc | `false` | Null] = js.undefined
+    var focusTriggerAfterClose: js.UndefOr[Boolean] = js.undefined
+    
+    var getContainer: js.UndefOr[String | HTMLElement | getContainerFunc | `false`] = js.undefined
     
     var icon: js.UndefOr[ReactNode] = js.undefined
     
@@ -71,9 +79,11 @@ object modalModalMod extends Shortcut {
     
     var okType: js.UndefOr[LegacyButtonType] = js.undefined
     
-    var onCancel: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var onCancel: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
     
-    var onOk: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var onOk: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
+    
+    var open: js.UndefOr[Boolean] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
@@ -83,11 +93,17 @@ object modalModalMod extends Shortcut {
     
     var transitionName: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.undefined
+    var `type`: js.UndefOr[info | success | error | warn | warning | confirm] = js.undefined
     
+    /**
+      * @deprecated `visible` is deprecated which will be removed in next major version. Please use
+      *   `open` instead.
+      */
     var visible: js.UndefOr[Boolean] = js.undefined
     
     var width: js.UndefOr[String | Double] = js.undefined
+    
+    var wrapClassName: js.UndefOr[String] = js.undefined
     
     var zIndex: js.UndefOr[Double] = js.undefined
   }
@@ -99,6 +115,10 @@ object modalModalMod extends Shortcut {
     }
     
     extension [Self <: ModalFuncProps](x: Self) {
+      
+      inline def setAfterClose(value: () => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
+      
+      inline def setAfterCloseUndefined: Self = StObject.set(x, "afterClose", js.undefined)
       
       inline def setAutoFocusButton(value: ok | cancel): Self = StObject.set(x, "autoFocusButton", value.asInstanceOf[js.Any])
       
@@ -126,6 +146,14 @@ object modalModalMod extends Shortcut {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
+      inline def setClosable(value: Boolean): Self = StObject.set(x, "closable", value.asInstanceOf[js.Any])
+      
+      inline def setClosableUndefined: Self = StObject.set(x, "closable", js.undefined)
+      
+      inline def setCloseIcon(value: ReactNode): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
+      
+      inline def setCloseIconUndefined: Self = StObject.set(x, "closeIcon", js.undefined)
+      
       inline def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
@@ -134,11 +162,13 @@ object modalModalMod extends Shortcut {
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
+      inline def setFocusTriggerAfterClose(value: Boolean): Self = StObject.set(x, "focusTriggerAfterClose", value.asInstanceOf[js.Any])
+      
+      inline def setFocusTriggerAfterCloseUndefined: Self = StObject.set(x, "focusTriggerAfterClose", js.undefined)
+      
       inline def setGetContainer(value: String | HTMLElement | getContainerFunc | `false`): Self = StObject.set(x, "getContainer", value.asInstanceOf[js.Any])
       
       inline def setGetContainerFunction0(value: () => HTMLElement): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
-      
-      inline def setGetContainerNull: Self = StObject.set(x, "getContainer", null)
       
       inline def setGetContainerUndefined: Self = StObject.set(x, "getContainer", js.undefined)
       
@@ -186,13 +216,17 @@ object modalModalMod extends Shortcut {
       
       inline def setOkTypeUndefined: Self = StObject.set(x, "okType", js.undefined)
       
-      inline def setOnCancel(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onCancel", js.Any.fromFunction1(value))
+      inline def setOnCancel(value: /* repeated */ Any => Any): Self = StObject.set(x, "onCancel", js.Any.fromFunction1(value))
       
       inline def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
       
-      inline def setOnOk(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onOk", js.Any.fromFunction1(value))
+      inline def setOnOk(value: /* repeated */ Any => Any): Self = StObject.set(x, "onOk", js.Any.fromFunction1(value))
       
       inline def setOnOkUndefined: Self = StObject.set(x, "onOk", js.undefined)
+      
+      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      
+      inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
       
       inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
@@ -210,7 +244,7 @@ object modalModalMod extends Shortcut {
       
       inline def setTransitionNameUndefined: Self = StObject.set(x, "transitionName", js.undefined)
       
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: info | success | error | warn | warning | confirm): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
@@ -222,18 +256,14 @@ object modalModalMod extends Shortcut {
       
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
+      inline def setWrapClassName(value: String): Self = StObject.set(x, "wrapClassName", value.asInstanceOf[js.Any])
+      
+      inline def setWrapClassNameUndefined: Self = StObject.set(x, "wrapClassName", js.undefined)
+      
       inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
       
       inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     }
-  }
-  
-  @js.native
-  trait ModalInterface
-    extends StObject
-       with FunctionComponent[ModalProps] {
-    
-    var useModal: js.Function0[js.Tuple2[OmitModalStaticFunctionsw, ReactElement]] = js.native
   }
   
   trait ModalLocale extends StObject {
@@ -275,6 +305,8 @@ object modalModalMod extends Shortcut {
     /** 垂直居中 */
     var centered: js.UndefOr[Boolean] = js.undefined
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
     /** 是否显示右上角的关闭按钮 */
@@ -287,13 +319,15 @@ object modalModalMod extends Shortcut {
     
     var destroyOnClose: js.UndefOr[Boolean] = js.undefined
     
+    var focusTriggerAfterClose: js.UndefOr[Boolean] = js.undefined
+    
     /** 底部内容 */
     var footer: js.UndefOr[ReactNode] = js.undefined
     
     /** 强制渲染 Modal */
     var forceRender: js.UndefOr[Boolean] = js.undefined
     
-    var getContainer: js.UndefOr[String | HTMLElement | getContainerFunc | `false` | Null] = js.undefined
+    var getContainer: js.UndefOr[String | HTMLElement | getContainerFunc | `false`] = js.undefined
     
     var keyboard: js.UndefOr[Boolean] = js.undefined
     
@@ -322,16 +356,22 @@ object modalModalMod extends Shortcut {
     /** 点击确定回调 */
     var onOk: js.UndefOr[js.Function1[/* e */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]] = js.undefined
     
+    var open: js.UndefOr[Boolean] = js.undefined
+    
     var prefixCls: js.UndefOr[String] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
     /** 标题 */
-    var title: js.UndefOr[ReactNode | String] = js.undefined
+    var title: js.UndefOr[ReactNode] = js.undefined
     
     var transitionName: js.UndefOr[String] = js.undefined
     
     /** 对话框是否可见 */
+    /**
+      * @deprecated `visible` is deprecated which will be removed in next major version. Please use
+      *   `open` instead.
+      */
     var visible: js.UndefOr[Boolean] = js.undefined
     
     /** 宽度 */
@@ -339,7 +379,7 @@ object modalModalMod extends Shortcut {
     
     var wrapClassName: js.UndefOr[String] = js.undefined
     
-    var wrapProps: js.UndefOr[js.Any] = js.undefined
+    var wrapProps: js.UndefOr[Any] = js.undefined
     
     var zIndex: js.UndefOr[Double] = js.undefined
   }
@@ -372,6 +412,10 @@ object modalModalMod extends Shortcut {
       
       inline def setCenteredUndefined: Self = StObject.set(x, "centered", js.undefined)
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
@@ -392,6 +436,10 @@ object modalModalMod extends Shortcut {
       
       inline def setDestroyOnCloseUndefined: Self = StObject.set(x, "destroyOnClose", js.undefined)
       
+      inline def setFocusTriggerAfterClose(value: Boolean): Self = StObject.set(x, "focusTriggerAfterClose", value.asInstanceOf[js.Any])
+      
+      inline def setFocusTriggerAfterCloseUndefined: Self = StObject.set(x, "focusTriggerAfterClose", js.undefined)
+      
       inline def setFooter(value: ReactNode): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
       
       inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
@@ -403,8 +451,6 @@ object modalModalMod extends Shortcut {
       inline def setGetContainer(value: String | HTMLElement | getContainerFunc | `false`): Self = StObject.set(x, "getContainer", value.asInstanceOf[js.Any])
       
       inline def setGetContainerFunction0(value: () => HTMLElement): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
-      
-      inline def setGetContainerNull: Self = StObject.set(x, "getContainer", null)
       
       inline def setGetContainerUndefined: Self = StObject.set(x, "getContainer", js.undefined)
       
@@ -452,6 +498,10 @@ object modalModalMod extends Shortcut {
       
       inline def setOnOkUndefined: Self = StObject.set(x, "onOk", js.undefined)
       
+      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      
+      inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+      
       inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
       inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
@@ -460,7 +510,7 @@ object modalModalMod extends Shortcut {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setTitle(value: ReactNode | String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
@@ -480,7 +530,7 @@ object modalModalMod extends Shortcut {
       
       inline def setWrapClassNameUndefined: Self = StObject.set(x, "wrapClassName", js.undefined)
       
-      inline def setWrapProps(value: js.Any): Self = StObject.set(x, "wrapProps", value.asInstanceOf[js.Any])
+      inline def setWrapProps(value: Any): Self = StObject.set(x, "wrapProps", value.asInstanceOf[js.Any])
       
       inline def setWrapPropsUndefined: Self = StObject.set(x, "wrapProps", js.undefined)
       
@@ -490,10 +540,10 @@ object modalModalMod extends Shortcut {
     }
   }
   
-  type _To = ModalInterface
+  type _To = FC[ModalProps]
   
   /* This means you don't have to write `default`, but can instead just say `modalModalMod.foo` */
-  override def _to: ModalInterface = default
+  override def _to: FC[ModalProps] = default
   
   type getContainerFunc = js.Function0[HTMLElement]
 }

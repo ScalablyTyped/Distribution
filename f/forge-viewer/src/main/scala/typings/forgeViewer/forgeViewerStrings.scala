@@ -27,6 +27,10 @@ object forgeViewerStrings {
   inline def ControlDotVisibilityChanged: ControlDotVisibilityChanged = "Control.VisibilityChanged".asInstanceOf[ControlDotVisibilityChanged]
   
   @js.native
+  sealed trait PlanarHeatmap extends StObject
+  inline def PlanarHeatmap: PlanarHeatmap = "PlanarHeatmap".asInstanceOf[PlanarHeatmap]
+  
+  @js.native
   sealed trait RadioButtonGroupDotActiveButtonChanged extends StObject
   inline def RadioButtonGroupDotActiveButtonChanged: RadioButtonGroupDotActiveButtonChanged = "RadioButtonGroup.ActiveButtonChanged".asInstanceOf[RadioButtonGroupDotActiveButtonChanged]
   
@@ -45,6 +49,26 @@ object forgeViewerStrings {
   @js.native
   sealed trait `light-theme` extends StObject
   inline def `light-theme`: `light-theme` = "light-theme".asInstanceOf[`light-theme`]
+  
+  @js.native
+  sealed trait max extends StObject
+  inline def max: max = "max".asInstanceOf[max]
+  
+  @js.native
+  sealed trait middle extends StObject
+  inline def middle: middle = "middle".asInstanceOf[middle]
+  
+  @js.native
+  sealed trait min extends StObject
+  inline def min: min = "min".asInstanceOf[min]
+  
+  @js.native
+  sealed trait orthographic extends StObject
+  inline def orthographic: orthographic = "orthographic".asInstanceOf[orthographic]
+  
+  @js.native
+  sealed trait perspective extends StObject
+  inline def perspective: perspective = "perspective".asInstanceOf[perspective]
   
   @js.native
   sealed trait view extends StObject

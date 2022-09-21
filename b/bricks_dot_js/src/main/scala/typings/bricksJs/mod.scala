@@ -19,32 +19,20 @@ object mod {
   @js.native
   trait Instance extends StObject {
     
-    @JSName("off")
-    def off_pack(event: pack): Instance = js.native
-    @JSName("off")
-    def off_pack(event: pack, listener: js.Function0[js.Any]): Instance = js.native
+    def off(event: pack | update): Instance = js.native
+    def off(event: pack | update, listener: js.Function0[Any]): Instance = js.native
     @JSName("off")
     def off_resize(event: resize): Instance = js.native
     @JSName("off")
-    def off_resize(event: resize, listener: js.Function1[/* sizeDetail */ SizeDetail, js.Any]): Instance = js.native
-    @JSName("off")
-    def off_update(event: update): Instance = js.native
-    @JSName("off")
-    def off_update(event: update, listener: js.Function0[js.Any]): Instance = js.native
+    def off_resize(event: resize, listener: js.Function1[/* sizeDetail */ SizeDetail, Any]): Instance = js.native
     
+    def on(event: pack | update, listener: js.Function0[Any]): Instance = js.native
     @JSName("on")
-    def on_pack(event: pack, listener: js.Function0[js.Any]): Instance = js.native
-    @JSName("on")
-    def on_resize(event: resize, listener: js.Function1[/* sizeDetail */ SizeDetail, js.Any]): Instance = js.native
-    @JSName("on")
-    def on_update(event: update, listener: js.Function0[js.Any]): Instance = js.native
+    def on_resize(event: resize, listener: js.Function1[/* sizeDetail */ SizeDetail, Any]): Instance = js.native
     
+    def once(event: pack | update, listener: js.Function0[Any]): Instance = js.native
     @JSName("once")
-    def once_pack(event: pack, listener: js.Function0[js.Any]): Instance = js.native
-    @JSName("once")
-    def once_resize(event: resize, listener: js.Function1[/* sizeDetail */ SizeDetail, js.Any]): Instance = js.native
-    @JSName("once")
-    def once_update(event: update, listener: js.Function0[js.Any]): Instance = js.native
+    def once_resize(event: resize, listener: js.Function1[/* sizeDetail */ SizeDetail, Any]): Instance = js.native
     
     def pack(): Instance = js.native
     
@@ -83,7 +71,7 @@ object mod {
       
       inline def setSizes(value: js.Array[SizeDetail]): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
       
-      inline def setSizesVarargs(value: SizeDetail*): Self = StObject.set(x, "sizes", js.Array(value :_*))
+      inline def setSizesVarargs(value: SizeDetail*): Self = StObject.set(x, "sizes", js.Array(value*))
     }
   }
   

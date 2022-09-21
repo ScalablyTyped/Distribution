@@ -16,23 +16,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait DocumentApp extends StObject {
   
-  var Attribute: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Attribute */ js.Any
+  var Attribute: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Attribute */ Any
   
-  var ElementType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ElementType */ js.Any
+  var ElementType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ElementType */ Any
   
-  /** @deprecated DO NOT USE */ var FontFamily: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FontFamily */ js.Any
+  /** @deprecated DO NOT USE */ var FontFamily: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FontFamily */ Any
   
-  var GlyphType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GlyphType */ js.Any
+  var GlyphType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GlyphType */ Any
   
-  var HorizontalAlignment: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof HorizontalAlignment */ js.Any
+  var HorizontalAlignment: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof HorizontalAlignment */ Any
   
-  var ParagraphHeading: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ParagraphHeading */ js.Any
+  var ParagraphHeading: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ParagraphHeading */ Any
   
-  var PositionedLayout: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PositionedLayout */ js.Any
+  var PositionedLayout: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PositionedLayout */ Any
   
-  var TextAlignment: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextAlignment */ js.Any
+  var TextAlignment: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextAlignment */ Any
   
-  var VerticalAlignment: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VerticalAlignment */ js.Any
+  var VerticalAlignment: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VerticalAlignment */ Any
   
   def create(name: String): typings.googleAppsScript.GoogleAppsScript.Document.Document
   
@@ -47,15 +47,15 @@ trait DocumentApp extends StObject {
 object DocumentApp {
   
   inline def apply(
-    Attribute: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Attribute */ js.Any,
-    ElementType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ElementType */ js.Any,
-    FontFamily: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FontFamily */ js.Any,
-    GlyphType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GlyphType */ js.Any,
-    HorizontalAlignment: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof HorizontalAlignment */ js.Any,
-    ParagraphHeading: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ParagraphHeading */ js.Any,
-    PositionedLayout: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PositionedLayout */ js.Any,
-    TextAlignment: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextAlignment */ js.Any,
-    VerticalAlignment: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VerticalAlignment */ js.Any,
+    Attribute: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Attribute */ Any,
+    ElementType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ElementType */ Any,
+    FontFamily: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FontFamily */ Any,
+    GlyphType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GlyphType */ Any,
+    HorizontalAlignment: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof HorizontalAlignment */ Any,
+    ParagraphHeading: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ParagraphHeading */ Any,
+    PositionedLayout: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PositionedLayout */ Any,
+    TextAlignment: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextAlignment */ Any,
+    VerticalAlignment: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VerticalAlignment */ Any,
     create: String => typings.googleAppsScript.GoogleAppsScript.Document.Document,
     getActiveDocument: () => typings.googleAppsScript.GoogleAppsScript.Document.Document,
     getUi: () => Ui,
@@ -68,22 +68,22 @@ object DocumentApp {
   
   extension [Self <: DocumentApp](x: Self) {
     
-    inline def setAttribute(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Attribute */ js.Any): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
+    inline def setAttribute(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Attribute */ Any): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
     
     inline def setCreate(value: String => typings.googleAppsScript.GoogleAppsScript.Document.Document): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     
-    inline def setElementType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ElementType */ js.Any): Self = StObject.set(x, "ElementType", value.asInstanceOf[js.Any])
+    inline def setElementType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ElementType */ Any): Self = StObject.set(x, "ElementType", value.asInstanceOf[js.Any])
     
-    inline def setFontFamily(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FontFamily */ js.Any): Self = StObject.set(x, "FontFamily", value.asInstanceOf[js.Any])
+    inline def setFontFamily(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FontFamily */ Any): Self = StObject.set(x, "FontFamily", value.asInstanceOf[js.Any])
     
     inline def setGetActiveDocument(value: () => typings.googleAppsScript.GoogleAppsScript.Document.Document): Self = StObject.set(x, "getActiveDocument", js.Any.fromFunction0(value))
     
     inline def setGetUi(value: () => Ui): Self = StObject.set(x, "getUi", js.Any.fromFunction0(value))
     
-    inline def setGlyphType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GlyphType */ js.Any): Self = StObject.set(x, "GlyphType", value.asInstanceOf[js.Any])
+    inline def setGlyphType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GlyphType */ Any): Self = StObject.set(x, "GlyphType", value.asInstanceOf[js.Any])
     
     inline def setHorizontalAlignment(
-      value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof HorizontalAlignment */ js.Any
+      value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof HorizontalAlignment */ Any
     ): Self = StObject.set(x, "HorizontalAlignment", value.asInstanceOf[js.Any])
     
     inline def setOpenById(value: String => typings.googleAppsScript.GoogleAppsScript.Document.Document): Self = StObject.set(x, "openById", js.Any.fromFunction1(value))
@@ -91,19 +91,17 @@ object DocumentApp {
     inline def setOpenByUrl(value: String => typings.googleAppsScript.GoogleAppsScript.Document.Document): Self = StObject.set(x, "openByUrl", js.Any.fromFunction1(value))
     
     inline def setParagraphHeading(
-      value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ParagraphHeading */ js.Any
+      value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ParagraphHeading */ Any
     ): Self = StObject.set(x, "ParagraphHeading", value.asInstanceOf[js.Any])
     
     inline def setPositionedLayout(
-      value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PositionedLayout */ js.Any
+      value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PositionedLayout */ Any
     ): Self = StObject.set(x, "PositionedLayout", value.asInstanceOf[js.Any])
     
-    inline def setTextAlignment(
-      value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextAlignment */ js.Any
-    ): Self = StObject.set(x, "TextAlignment", value.asInstanceOf[js.Any])
+    inline def setTextAlignment(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextAlignment */ Any): Self = StObject.set(x, "TextAlignment", value.asInstanceOf[js.Any])
     
     inline def setVerticalAlignment(
-      value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VerticalAlignment */ js.Any
+      value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VerticalAlignment */ Any
     ): Self = StObject.set(x, "VerticalAlignment", value.asInstanceOf[js.Any])
   }
 }

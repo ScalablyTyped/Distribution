@@ -1,7 +1,7 @@
 
 # Scala.js typings for perfect-scrollbar
 
-Typings are for version 1.5.0
+Typings are for version 1.5.5
 
 ## Library description:
 Minimalistic but perfect custom scrollbar plugin
@@ -10,13 +10,13 @@ Minimalistic but perfect custom scrollbar plugin
 | ------------------ | :-------------: |
 | Full name          | perfect-scrollbar |
 | Keywords           | frontend, scroll, scrollbar |
-| # releases         | 2 |
-| # dependents       | 290 |
-| # downloads        | 22112461 |
-| # stars            | 16 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 2976514.6666666665 |
+| # stars            | 103.0 |
 
 ## Links
-- [Homepage](https://github.com/mdbootstrap/perfect-scrollbar#readme)
+- [Homepage](https://perfectscrollbar.com/)
 - [Bugs](https://github.com/mdbootstrap/perfect-scrollbar/issues)
 - [Repository](https://github.com/mdbootstrap/perfect-scrollbar)
 - [Npm](https://www.npmjs.com/package/perfect-scrollbar)

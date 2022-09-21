@@ -24,6 +24,6 @@ object GetLifecyclePoliciesResponse {
     
     inline def setPoliciesUndefined: Self = StObject.set(x, "Policies", js.undefined)
     
-    inline def setPoliciesVarargs(value: LifecyclePolicySummary*): Self = StObject.set(x, "Policies", js.Array(value :_*))
+    inline def setPoliciesVarargs(value: LifecyclePolicySummary*): Self = StObject.set(x, "Policies", js.Array(value*))
   }
 }

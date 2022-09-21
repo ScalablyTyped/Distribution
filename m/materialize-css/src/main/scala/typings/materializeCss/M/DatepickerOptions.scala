@@ -1,6 +1,5 @@
 package typings.materializeCss.M
 
-import typings.std.Date
 import typings.std.Element
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
@@ -19,17 +18,19 @@ trait DatepickerOptions extends StObject {
     * Specify a DOM element to render the calendar in, by default it will be placed before the input
     * @default null
     */
-  var container: Element
+  var container: Element | Null
   
   /**
     * The initial date to view when first opened.
+    * @default null
     */
-  var defaultDate: Date
+  var defaultDate: js.Date | Null
   
   /**
     * Custom function to disable certain days.
+    * @default null
     */
-  def disableDayFn(day: Date): Boolean
+  var disableDayFn: (js.Function1[/* day */ js.Date, Boolean]) | Null
   
   /**
     * Prevent selection of any date on the weekend.
@@ -59,7 +60,7 @@ trait DatepickerOptions extends StObject {
     * Internationalization options
     */
   var i18n: Partial[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ js.Any
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ Any
   ]
   
   /**
@@ -70,38 +71,45 @@ trait DatepickerOptions extends StObject {
   
   /**
     * The latest date that can be selected.
+    * @default null
     */
-  var maxDate: Date
+  var maxDate: js.Date | Null
   
   /**
     * The earliest date that can be selected.
+    * @default null
     */
-  var minDate: Date
+  var minDate: js.Date | Null
   
   /**
     * Callback function when Datepicker is closed
+    * @default null
     */
-  def onClose(): Unit
+  var onClose: (js.ThisFunction0[/* this */ Datepicker, Unit]) | Null
   
   /**
     * Callback function when Datepicker HTML is refreshed
+    * @default null
     */
-  def onDraw(): Unit
+  var onDraw: (js.ThisFunction0[/* this */ Datepicker, Unit]) | Null
   
   /**
     * Callback function when Datepicker is opened
+    * @default null
     */
-  def onOpen(): Unit
+  var onOpen: (js.ThisFunction0[/* this */ Datepicker, Unit]) | Null
   
   /**
     * Callback function when date is selected, first parameter is the newly selected date.
+    * @default null
     */
-  def onSelect(selectedDate: Date): Unit
+  var onSelect: (js.ThisFunction1[/* this */ Datepicker, /* selectedDate */ js.Date, Unit]) | Null
   
   /**
     * Used to create date object from current input string.
+    * @default null
     */
-  def parse(value: String, format: String): Date
+  var parse: (js.Function2[/* value */ String, /* format */ String, js.Date]) | Null
   
   /**
     * Make the `defaultDate` the initial selected value
@@ -137,31 +145,21 @@ object DatepickerOptions {
   
   inline def apply(
     autoClose: Boolean,
-    container: Element,
-    defaultDate: Date,
-    disableDayFn: Date => Boolean,
     disableWeekends: Boolean,
     events: js.Array[String],
     firstDay: Double,
     format: String,
     i18n: Partial[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ js.Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ Any
     ],
     isRTL: Boolean,
-    maxDate: Date,
-    minDate: Date,
-    onClose: () => Unit,
-    onDraw: () => Unit,
-    onOpen: () => Unit,
-    onSelect: Date => Unit,
-    parse: (String, String) => Date,
     setDefaultDate: Boolean,
     showClearBtn: Boolean,
     showDaysInNextAndPreviousMonths: Boolean,
     showMonthAfterYear: Boolean,
     yearRange: Double | js.Array[Double]
   ): DatepickerOptions = {
-    val __obj = js.Dynamic.literal(autoClose = autoClose.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], defaultDate = defaultDate.asInstanceOf[js.Any], disableDayFn = js.Any.fromFunction1(disableDayFn), disableWeekends = disableWeekends.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], firstDay = firstDay.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], i18n = i18n.asInstanceOf[js.Any], isRTL = isRTL.asInstanceOf[js.Any], maxDate = maxDate.asInstanceOf[js.Any], minDate = minDate.asInstanceOf[js.Any], onClose = js.Any.fromFunction0(onClose), onDraw = js.Any.fromFunction0(onDraw), onOpen = js.Any.fromFunction0(onOpen), onSelect = js.Any.fromFunction1(onSelect), parse = js.Any.fromFunction2(parse), setDefaultDate = setDefaultDate.asInstanceOf[js.Any], showClearBtn = showClearBtn.asInstanceOf[js.Any], showDaysInNextAndPreviousMonths = showDaysInNextAndPreviousMonths.asInstanceOf[js.Any], showMonthAfterYear = showMonthAfterYear.asInstanceOf[js.Any], yearRange = yearRange.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(autoClose = autoClose.asInstanceOf[js.Any], disableWeekends = disableWeekends.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], firstDay = firstDay.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], i18n = i18n.asInstanceOf[js.Any], isRTL = isRTL.asInstanceOf[js.Any], setDefaultDate = setDefaultDate.asInstanceOf[js.Any], showClearBtn = showClearBtn.asInstanceOf[js.Any], showDaysInNextAndPreviousMonths = showDaysInNextAndPreviousMonths.asInstanceOf[js.Any], showMonthAfterYear = showMonthAfterYear.asInstanceOf[js.Any], yearRange = yearRange.asInstanceOf[js.Any], container = null, defaultDate = null, disableDayFn = null, maxDate = null, minDate = null, onClose = null, onDraw = null, onOpen = null, onSelect = null, parse = null)
     __obj.asInstanceOf[DatepickerOptions]
   }
   
@@ -171,15 +169,21 @@ object DatepickerOptions {
     
     inline def setContainer(value: Element): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    inline def setDefaultDate(value: Date): Self = StObject.set(x, "defaultDate", value.asInstanceOf[js.Any])
+    inline def setContainerNull: Self = StObject.set(x, "container", null)
     
-    inline def setDisableDayFn(value: Date => Boolean): Self = StObject.set(x, "disableDayFn", js.Any.fromFunction1(value))
+    inline def setDefaultDate(value: js.Date): Self = StObject.set(x, "defaultDate", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultDateNull: Self = StObject.set(x, "defaultDate", null)
+    
+    inline def setDisableDayFn(value: /* day */ js.Date => Boolean): Self = StObject.set(x, "disableDayFn", js.Any.fromFunction1(value))
+    
+    inline def setDisableDayFnNull: Self = StObject.set(x, "disableDayFn", null)
     
     inline def setDisableWeekends(value: Boolean): Self = StObject.set(x, "disableWeekends", value.asInstanceOf[js.Any])
     
     inline def setEvents(value: js.Array[String]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    inline def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value*))
     
     inline def setFirstDay(value: Double): Self = StObject.set(x, "firstDay", value.asInstanceOf[js.Any])
     
@@ -187,25 +191,39 @@ object DatepickerOptions {
     
     inline def setI18n(
       value: Partial[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ Any
         ]
     ): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
     
     inline def setIsRTL(value: Boolean): Self = StObject.set(x, "isRTL", value.asInstanceOf[js.Any])
     
-    inline def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+    inline def setMaxDate(value: js.Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
     
-    inline def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+    inline def setMaxDateNull: Self = StObject.set(x, "maxDate", null)
     
-    inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+    inline def setMinDate(value: js.Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
     
-    inline def setOnDraw(value: () => Unit): Self = StObject.set(x, "onDraw", js.Any.fromFunction0(value))
+    inline def setMinDateNull: Self = StObject.set(x, "minDate", null)
     
-    inline def setOnOpen(value: () => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction0(value))
+    inline def setOnClose(value: js.ThisFunction0[/* this */ Datepicker, Unit]): Self = StObject.set(x, "onClose", value.asInstanceOf[js.Any])
     
-    inline def setOnSelect(value: Date => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+    inline def setOnCloseNull: Self = StObject.set(x, "onClose", null)
     
-    inline def setParse(value: (String, String) => Date): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
+    inline def setOnDraw(value: js.ThisFunction0[/* this */ Datepicker, Unit]): Self = StObject.set(x, "onDraw", value.asInstanceOf[js.Any])
+    
+    inline def setOnDrawNull: Self = StObject.set(x, "onDraw", null)
+    
+    inline def setOnOpen(value: js.ThisFunction0[/* this */ Datepicker, Unit]): Self = StObject.set(x, "onOpen", value.asInstanceOf[js.Any])
+    
+    inline def setOnOpenNull: Self = StObject.set(x, "onOpen", null)
+    
+    inline def setOnSelect(value: js.ThisFunction1[/* this */ Datepicker, /* selectedDate */ js.Date, Unit]): Self = StObject.set(x, "onSelect", value.asInstanceOf[js.Any])
+    
+    inline def setOnSelectNull: Self = StObject.set(x, "onSelect", null)
+    
+    inline def setParse(value: (/* value */ String, /* format */ String) => js.Date): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
+    
+    inline def setParseNull: Self = StObject.set(x, "parse", null)
     
     inline def setSetDefaultDate(value: Boolean): Self = StObject.set(x, "setDefaultDate", value.asInstanceOf[js.Any])
     
@@ -217,6 +235,6 @@ object DatepickerOptions {
     
     inline def setYearRange(value: Double | js.Array[Double]): Self = StObject.set(x, "yearRange", value.asInstanceOf[js.Any])
     
-    inline def setYearRangeVarargs(value: Double*): Self = StObject.set(x, "yearRange", js.Array(value :_*))
+    inline def setYearRangeVarargs(value: Double*): Self = StObject.set(x, "yearRange", js.Array(value*))
   }
 }

@@ -12,17 +12,17 @@ trait IsRegister extends StObject {
   
   var capture: Boolean
   
-  var center: js.Any
+  var center: Any
   
-  var container: js.Any
+  var container: Any
   
   var defaultCfg: TextBackground
   
   var endAngle: Double
   
-  var events: js.Any
+  var events: Any
   
-  var group: js.Any
+  var group: Any
   
   var id: String
   
@@ -44,7 +44,7 @@ trait IsRegister extends StObject {
   
   var startAngle: Double
   
-  var text: js.Any
+  var text: Any
   
   var `type`: String
   
@@ -58,12 +58,12 @@ object IsRegister {
     animate: Boolean,
     animateOption: Appear,
     capture: Boolean,
-    center: js.Any,
-    container: js.Any,
+    center: Any,
+    container: Any,
     defaultCfg: TextBackground,
     endAngle: Double,
-    events: js.Any,
-    group: js.Any,
+    events: Any,
+    group: Any,
     id: String,
     isInit: Boolean,
     isRegister: Boolean,
@@ -74,7 +74,7 @@ object IsRegister {
     offsetY: Double,
     radius: Double,
     startAngle: Double,
-    text: js.Any,
+    text: Any,
     `type`: String,
     updateAutoRender: Boolean,
     visible: Boolean
@@ -92,17 +92,17 @@ object IsRegister {
     
     inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
-    inline def setCenter(value: js.Any): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: Any): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
-    inline def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setDefaultCfg(value: TextBackground): Self = StObject.set(x, "defaultCfg", value.asInstanceOf[js.Any])
     
     inline def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
     
-    inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    inline def setGroup(value: js.Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -124,7 +124,7 @@ object IsRegister {
     
     inline def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
     
-    inline def setText(value: js.Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

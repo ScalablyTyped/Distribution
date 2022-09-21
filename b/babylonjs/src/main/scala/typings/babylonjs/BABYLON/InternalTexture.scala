@@ -1,82 +1,43 @@
 package typings.babylonjs.BABYLON
 
-import typings.babylonjs.CanvasRenderingContext2D
-import typings.babylonjs.HTMLCanvasElement
-import typings.babylonjs.ImageBitmap
-import typings.std.ArrayBuffer
-import typings.std.ArrayBufferView
+import typings.babylonjs.anon.IsReady
+import typings.babylonjs.anon.Partialmessagestringexcep
 import typings.std.Blob
 import typings.std.HTMLImageElement
-import typings.std.OffscreenCanvas
-import typings.std.OffscreenCanvasRenderingContext2D
-import typings.std.WebGLFramebuffer
-import typings.std.WebGLRenderbuffer
-import typings.std.WebGLTexture
+import typings.std.ImageBitmap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InternalTexture extends StObject {
-  
-  /** @hidden */
-  var _MSAAFramebuffer: Nullable[WebGLFramebuffer] = js.native
-  
-  /** @hidden */
-  var _MSAARenderBuffer: Nullable[WebGLRenderbuffer] = js.native
+trait InternalTexture
+  extends StObject
+     with TextureSampler {
   
   /** @hidden */
   var _associatedChannel: Double = js.native
   
   /** @hidden */
-  var _attachments: Nullable[js.Array[Double]] = js.native
+  var _buffer: Nullable[
+    String | js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | HTMLImageElement | Blob | ImageBitmap
+  ] = js.native
   
   /** @hidden */
-  var _buffer: Nullable[String | ArrayBuffer | ArrayBufferView | HTMLImageElement | Blob | ImageBitmap] = js.native
+  var _bufferView: Nullable[js.typedarray.ArrayBufferView] = js.native
   
   /** @hidden */
-  var _bufferView: Nullable[ArrayBufferView] = js.native
+  var _bufferViewArray: Nullable[js.Array[js.typedarray.ArrayBufferView]] = js.native
   
   /** @hidden */
-  var _bufferViewArray: Nullable[js.Array[ArrayBufferView]] = js.native
-  
-  /** @hidden */
-  var _bufferViewArrayArray: Nullable[js.Array[js.Array[ArrayBufferView]]] = js.native
-  
-  /** @hidden */
-  var _cachedAnisotropicFilteringLevel: Nullable[Double] = js.native
+  var _bufferViewArrayArray: Nullable[js.Array[js.Array[js.typedarray.ArrayBufferView]]] = js.native
   
   /** @hidden */
   var _cachedCoordinatesMode: Nullable[Double] = js.native
   
   /** @hidden */
-  var _cachedWrapR: Nullable[Double] = js.native
-  
-  /** @hidden */
-  var _cachedWrapU: Nullable[Double] = js.native
-  
-  /** @hidden */
-  var _cachedWrapV: Nullable[Double] = js.native
-  
-  /** @hidden */
-  var _colorTextureArray: Nullable[WebGLTexture] = js.native
-  
-  /** @hidden */
-  var _comparisonFunction: Double = js.native
-  
-  /** @hidden */
   var _compression: Nullable[String] = js.native
   
-  /** @hidden */
-  var _depthStencilBuffer: Nullable[WebGLRenderbuffer] = js.native
-  
-  /** @hidden */
-  var _depthStencilTexture: Nullable[InternalTexture] = js.native
-  
-  /** @hidden */
-  var _depthStencilTextureArray: Nullable[WebGLTexture] = js.native
-  
-  /* private */ var _engine: js.Any = js.native
+  /* private */ var _engine: Any = js.native
   
   /** @hidden */
   var _extension: String = js.native
@@ -85,16 +46,10 @@ trait InternalTexture extends StObject {
   var _files: Nullable[js.Array[String]] = js.native
   
   /** @hidden */
-  var _framebuffer: Nullable[WebGLFramebuffer] = js.native
-  
-  /** @hidden */
   var _gammaSpace: Nullable[Boolean] = js.native
   
   /** @hidden */
-  var _generateDepthBuffer: Boolean = js.native
-  
-  /** @hidden */
-  var _generateStencilBuffer: Boolean = js.native
+  var _hardwareTexture: Nullable[HardwareTextureWrapper] = js.native
   
   /** @hidden */
   var _invertVScale: Boolean = js.native
@@ -127,6 +82,9 @@ trait InternalTexture extends StObject {
   var _lodTextureMid: Nullable[BaseTexture] = js.native
   
   /** @hidden */
+  var _maxLodLevel: Nullable[Double] = js.native
+  
+  /** @hidden */
   var _originalUrl: String = js.native
   
   /** @hidden */
@@ -145,19 +103,29 @@ trait InternalTexture extends StObject {
   var _sphericalPolynomial: Nullable[SphericalPolynomial] = js.native
   
   /** @hidden */
+  var _sphericalPolynomialComputed: Boolean = js.native
+  
+  /** @hidden */
+  var _sphericalPolynomialPromise: Nullable[js.Promise[SphericalPolynomial]] = js.native
+  
+  /**
+    * @param target
+    * @param swapAll
+    * @hidden
+    */
   def _swapAndDie(target: InternalTexture): Unit = js.native
+  def _swapAndDie(target: InternalTexture, swapAll: Boolean): Unit = js.native
+  
+  /* private */ var _uniqueId: Any = js.native
   
   /** @hidden */
-  var _textureArray: Nullable[js.Array[InternalTexture]] = js.native
+  var _useSRGBBuffer: Boolean = js.native
   
   /** @hidden */
-  var _webGLTexture: Nullable[WebGLTexture] = js.native
+  var _workingCanvas: Nullable[ICanvas] = js.native
   
   /** @hidden */
-  var _workingCanvas: Nullable[HTMLCanvasElement | OffscreenCanvas] = js.native
-  
-  /** @hidden */
-  var _workingContext: Nullable[CanvasRenderingContext2D | OffscreenCanvasRenderingContext2D] = js.native
+  var _workingContext: Nullable[ICanvasRenderingContext] = js.native
   
   /**
     * Gets the initial depth of the texture (It could be rescaled if the current system does not support non power of two textures)
@@ -241,19 +209,24 @@ trait InternalTexture extends StObject {
   var isReady: Boolean = js.native
   
   /**
+    * Observable called when the texture load is raising an error
+    */
+  var onErrorObservable: Observable[Partialmessagestringexcep] = js.native
+  
+  /**
     * Observable called when the texture is loaded
     */
   var onLoadedObservable: Observable[InternalTexture] = js.native
   
   /**
+    * If this callback is defined it will be called instead of the default _rebuild function
+    */
+  var onRebuildCallback: Nullable[js.Function1[/* internalTexture */ this.type, IsReady]] = js.native
+  
+  /**
     * Gets the number of samples used by the texture (WebGL2+ only)
     */
   var samples: Double = js.native
-  
-  /**
-    * Gets the sampling mode of the texture
-    */
-  var samplingMode: Double = js.native
   
   /**
     * Gets the data source type of the texture
@@ -264,6 +237,9 @@ trait InternalTexture extends StObject {
     * Gets the type of the texture (int, float...)
     */
   var `type`: Double = js.native
+  
+  /** Gets the unique id of the internal texture */
+  def uniqueId: Double = js.native
   
   /**
     * Change the size of the texture (not the size of the content)

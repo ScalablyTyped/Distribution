@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ trait AccountRecentMentionWorkItemModel extends StObject {
   /**
     * Lastest date that the user were mentioned
     */
-  var mentionedDateField: Date
+  var mentionedDateField: js.Date
   
   /**
     * State of the work item
@@ -47,7 +46,7 @@ object AccountRecentMentionWorkItemModel {
   inline def apply(
     assignedTo: String,
     id: Double,
-    mentionedDateField: Date,
+    mentionedDateField: js.Date,
     state: String,
     teamProject: String,
     title: String,
@@ -63,7 +62,7 @@ object AccountRecentMentionWorkItemModel {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setMentionedDateField(value: Date): Self = StObject.set(x, "mentionedDateField", value.asInstanceOf[js.Any])
+    inline def setMentionedDateField(value: js.Date): Self = StObject.set(x, "mentionedDateField", value.asInstanceOf[js.Any])
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,7 @@ object popupTypesMod {
     var onDismiss: js.UndefOr[
         js.Function1[
           /* ev */ js.UndefOr[(MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLElement]], 
-          js.Any
+          Any
         ]
       ] = js.undefined
     
@@ -51,6 +51,12 @@ object popupTypesMod {
       * you'll need to call originalElement.focus()
       */
     var onRestoreFocus: js.UndefOr[js.Function1[/* options */ ContainsFocus, Unit]] = js.undefined
+    
+    /**
+      * Aria role for popup
+      */
+    @JSName("role")
+    var role_IPopupProps: js.UndefOr[String] = js.undefined
     
     /**
       * If true, when this component is unmounted, focus will be restored to the element that had focus when the component
@@ -82,7 +88,7 @@ object popupTypesMod {
       inline def setAriaLabelledByUndefined: Self = StObject.set(x, "ariaLabelledBy", js.undefined)
       
       inline def setOnDismiss(
-        value: /* ev */ js.UndefOr[(MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLElement]] => js.Any
+        value: /* ev */ js.UndefOr[(MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLElement]] => Any
       ): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
       
       inline def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
@@ -90,6 +96,10 @@ object popupTypesMod {
       inline def setOnRestoreFocus(value: /* options */ ContainsFocus => Unit): Self = StObject.set(x, "onRestoreFocus", js.Any.fromFunction1(value))
       
       inline def setOnRestoreFocusUndefined: Self = StObject.set(x, "onRestoreFocus", js.undefined)
+      
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
       inline def setShouldRestoreFocus(value: Boolean): Self = StObject.set(x, "shouldRestoreFocus", value.asInstanceOf[js.Any])
       

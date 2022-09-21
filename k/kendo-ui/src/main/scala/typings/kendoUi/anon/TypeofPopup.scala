@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TypeofPopup extends StObject {
   
   /* static member */
-  var TabKeyTrap: js.Any
+  var TabKeyTrap: Any
   
   /* static member */
   def extend(proto: js.Object): Popup
@@ -18,7 +18,7 @@ trait TypeofPopup extends StObject {
 }
 object TypeofPopup {
   
-  inline def apply(TabKeyTrap: js.Any, extend: js.Object => Popup, fn: Popup): TypeofPopup = {
+  inline def apply(TabKeyTrap: Any, extend: js.Object => Popup, fn: Popup): TypeofPopup = {
     val __obj = js.Dynamic.literal(TabKeyTrap = TabKeyTrap.asInstanceOf[js.Any], extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofPopup]
   }
@@ -29,6 +29,6 @@ object TypeofPopup {
     
     inline def setFn(value: Popup): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    inline def setTabKeyTrap(value: js.Any): Self = StObject.set(x, "TabKeyTrap", value.asInstanceOf[js.Any])
+    inline def setTabKeyTrap(value: Any): Self = StObject.set(x, "TabKeyTrap", value.asInstanceOf[js.Any])
   }
 }

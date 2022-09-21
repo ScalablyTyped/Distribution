@@ -40,6 +40,6 @@ object IBaseCell {
     
     inline def setSource(value: MultilineString): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    inline def setSourceVarargs(value: String*): Self = StObject.set(x, "source", js.Array(value :_*))
+    inline def setSourceVarargs(value: String*): Self = StObject.set(x, "source", js.Array(value*))
   }
 }

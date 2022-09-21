@@ -11,11 +11,11 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Specifies the options to be included in a search operation.
   *
   * To learn more about how to use search options in the Word JavaScript APIs, read {@link https://docs.microsoft.com/office/dev/add-ins/word/search-option-guidance | Use search options to find text in your Word add-in}.
   *
+  * @remarks
   * [Api set: WordApi 1.1]
   */
 @js.native
@@ -28,17 +28,17 @@ trait SearchOptions
   var context_SearchOptions: RequestContext = js.native
   
   /**
-    *
     * Gets or sets a value that indicates whether to ignore all punctuation characters between words. Corresponds to the Ignore punctuation check box in the Find and Replace dialog box.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   var ignorePunct: Boolean = js.native
   
   /**
-    *
     * Gets or sets a value that indicates whether to ignore all whitespace between words. Corresponds to the Ignore whitespace characters check box in the Find and Replace dialog box.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   var ignoreSpace: Boolean = js.native
@@ -55,53 +55,47 @@ trait SearchOptions
   def load(propertyNames: js.Array[String]): SearchOptions = js.native
   
   /**
-    *
     * Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case check box in the Find and Replace dialog box.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   var matchCase: Boolean = js.native
   
   /**
-    *
     * Gets or sets a value that indicates whether to match words that begin with the search string. Corresponds to the Match prefix check box in the Find and Replace dialog box.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   var matchPrefix: Boolean = js.native
   
   /**
-    *
     * Gets or sets a value that indicates whether to match words that end with the search string. Corresponds to the Match suffix check box in the Find and Replace dialog box.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   var matchSuffix: Boolean = js.native
   
   /**
-    *
     * Gets or sets a value that indicates whether to find operation only entire words, not text that is part of a larger word. Corresponds to the Find whole words only check box in the Find and Replace dialog box.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   var matchWholeWord: Boolean = js.native
   
   /**
-    *
     * Gets or sets a value that indicates whether the search will be performed using special search operators. Corresponds to the Use wildcards check box in the Find and Replace dialog box.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   var matchWildcards: Boolean = js.native
   
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Word.SearchOptions): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */

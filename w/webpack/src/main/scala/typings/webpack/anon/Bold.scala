@@ -7,32 +7,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Bold extends StObject {
   
   /**
-  				 * Custom color for bold text
+  				 * Custom color for bold text.
   				 */
   var bold: js.UndefOr[String] = js.undefined
   
   /**
-  				 * Custom color for cyan text
+  				 * Custom color for cyan text.
   				 */
   var cyan: js.UndefOr[String] = js.undefined
   
   /**
-  				 * Custom color for green text
+  				 * Custom color for green text.
   				 */
   var green: js.UndefOr[String] = js.undefined
   
   /**
-  				 * Custom color for magenta text
+  				 * Custom color for magenta text.
   				 */
   var magenta: js.UndefOr[String] = js.undefined
   
   /**
-  				 * Custom color for red text
+  				 * Custom color for red text.
   				 */
   var red: js.UndefOr[String] = js.undefined
   
   /**
-  				 * Custom color for yellow text
+  				 * Custom color for yellow text.
   				 */
   var yellow: js.UndefOr[String] = js.undefined
 }

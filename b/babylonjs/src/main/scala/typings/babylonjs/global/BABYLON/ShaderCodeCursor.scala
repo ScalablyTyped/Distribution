@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.ShaderCodeCursor")
 @js.native
-class ShaderCodeCursor ()
+open class ShaderCodeCursor ()
   extends StObject
      with typings.babylonjs.BABYLON.ShaderCodeCursor

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.Tooltip")
 @js.native
-class Tooltip protected ()
+open class Tooltip protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.Tooltip {
   def this(element: Element) = this()

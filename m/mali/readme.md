@@ -1,7 +1,7 @@
 
 # Scala.js typings for mali
 
-Typings are for version 0.21.0
+Typings are for version 0.47.1
 
 ## Library description:
 Minimalistic gRPC microservice framework
@@ -10,10 +10,10 @@ Minimalistic gRPC microservice framework
 | ------------------ | :-------------: |
 | Full name          | mali |
 | Keywords           | mali, grpc, service, server, microservice |
-| # releases         | 14 |
-| # dependents       | 15 |
-| # downloads        | 551246 |
-| # stars            | 0 |
+| # releases         | 20 |
+| # dependents       | 0.0 |
+| # downloads        | 193096.33333333334 |
+| # stars            | 819.0 |
 
 ## Links
 - [Homepage](https://mali.js.org)

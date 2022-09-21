@@ -13,5 +13,5 @@ trait Confirm
   @JSName("options")
   var options_Confirm: ConfirmOptions = js.native
   
-  var result: JQueryPromise[js.Any] = js.native
+  var result: JQueryPromise[Any] = js.native
 }

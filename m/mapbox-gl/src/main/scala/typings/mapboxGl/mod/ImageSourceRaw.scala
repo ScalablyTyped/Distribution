@@ -9,7 +9,7 @@ trait ImageSourceRaw
   extends StObject
      with Source
      with ImageSourceOptions
-     with AnySourceData {
+     with _AnySourceData {
   
   @JSName("type")
   var type_ImageSourceRaw: image_

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "js-sdsl" : "4.1.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "js-sdsl" : "4.1.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

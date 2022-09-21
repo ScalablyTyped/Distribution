@@ -31,7 +31,7 @@ trait LabelIds extends StObject {
   /** Only return threads with labels that match all of the specified label IDs. */
   var labelIds: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  /** Maximum number of threads to return. */
+  /** Maximum number of threads to return. This field defaults to 100. The maximum allowed value for this field is 500. */
   var maxResults: js.UndefOr[Double] = js.undefined
   
   /** OAuth 2.0 token for the current user. */
@@ -102,7 +102,7 @@ object LabelIds {
     
     inline def setLabelIdsUndefined: Self = StObject.set(x, "labelIds", js.undefined)
     
-    inline def setLabelIdsVarargs(value: String*): Self = StObject.set(x, "labelIds", js.Array(value :_*))
+    inline def setLabelIdsVarargs(value: String*): Self = StObject.set(x, "labelIds", js.Array(value*))
     
     inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

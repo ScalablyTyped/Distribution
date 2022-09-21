@@ -27,6 +27,6 @@ object SystemParameters {
     
     inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    inline def setRulesVarargs(value: SystemParameterRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: SystemParameterRule*): Self = StObject.set(x, "rules", js.Array(value*))
   }
 }

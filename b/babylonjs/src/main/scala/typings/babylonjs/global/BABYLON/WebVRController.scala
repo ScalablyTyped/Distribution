@@ -15,7 +15,7 @@ abstract class WebVRController protected ()
     * Creates a new WebVRController from a gamepad
     * @param vrGamepad the gamepad that the WebVRController should be created from
     */
-  def this(vrGamepad: js.Any) = this()
+  def this(vrGamepad: Any) = this()
   
   /**
     * The rotation quaternion of the device in babylon space.

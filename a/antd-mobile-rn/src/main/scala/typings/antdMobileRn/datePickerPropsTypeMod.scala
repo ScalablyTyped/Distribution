@@ -7,7 +7,6 @@ import typings.antdMobileRn.antdMobileRnStrings.month
 import typings.antdMobileRn.antdMobileRnStrings.time
 import typings.antdMobileRn.antdMobileRnStrings.year
 import typings.react.mod.ReactNode
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,13 +23,13 @@ object datePickerPropsTypeMod {
     
     var extra: js.UndefOr[String] = js.undefined
     
-    var format: js.UndefOr[String | (js.Function1[/* value */ Date, String])] = js.undefined
+    var format: js.UndefOr[String | (js.Function1[/* value */ js.Date, String])] = js.undefined
     
     var locale: js.UndefOr[DatePickerLocale] = js.undefined
     
-    var maxDate: js.UndefOr[Date] = js.undefined
+    var maxDate: js.UndefOr[js.Date] = js.undefined
     
-    var minDate: js.UndefOr[Date] = js.undefined
+    var minDate: js.UndefOr[js.Date] = js.undefined
     
     var minuteStep: js.UndefOr[Double] = js.undefined
     
@@ -38,15 +37,15 @@ object datePickerPropsTypeMod {
     
     var okText: js.UndefOr[ReactNode] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* value */ Date, Unit]] = js.undefined
+    var onChange: js.UndefOr[js.Function1[/* value */ js.Date, Unit]] = js.undefined
     
     var onDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onValueChange: js.UndefOr[js.Function2[/* vals */ js.Any, /* index */ Double, Unit]] = js.undefined
+    var onValueChange: js.UndefOr[js.Function2[/* vals */ Any, /* index */ Double, Unit]] = js.undefined
     
     var title: js.UndefOr[ReactNode] = js.undefined
     
-    var value: js.UndefOr[Date] = js.undefined
+    var value: js.UndefOr[js.Date] = js.undefined
     
     var visible: js.UndefOr[Boolean] = js.undefined
   }
@@ -75,9 +74,9 @@ object datePickerPropsTypeMod {
       
       inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
       
-      inline def setFormat(value: String | (js.Function1[/* value */ Date, String])): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String | (js.Function1[/* value */ js.Date, String])): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      inline def setFormatFunction1(value: /* value */ Date => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
+      inline def setFormatFunction1(value: /* value */ js.Date => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
@@ -85,11 +84,11 @@ object datePickerPropsTypeMod {
       
       inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      inline def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+      inline def setMaxDate(value: js.Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
       
       inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
       
-      inline def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+      inline def setMinDate(value: js.Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
       
       inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
       
@@ -105,7 +104,7 @@ object datePickerPropsTypeMod {
       
       inline def setOkTextUndefined: Self = StObject.set(x, "okText", js.undefined)
       
-      inline def setOnChange(value: /* value */ Date => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* value */ js.Date => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -113,7 +112,7 @@ object datePickerPropsTypeMod {
       
       inline def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
       
-      inline def setOnValueChange(value: (/* vals */ js.Any, /* index */ Double) => Unit): Self = StObject.set(x, "onValueChange", js.Any.fromFunction2(value))
+      inline def setOnValueChange(value: (/* vals */ Any, /* index */ Double) => Unit): Self = StObject.set(x, "onValueChange", js.Any.fromFunction2(value))
       
       inline def setOnValueChangeUndefined: Self = StObject.set(x, "onValueChange", js.undefined)
       
@@ -121,7 +120,7 @@ object datePickerPropsTypeMod {
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      inline def setValue(value: Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       

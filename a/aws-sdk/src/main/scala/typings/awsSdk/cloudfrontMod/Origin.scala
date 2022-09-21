@@ -37,6 +37,11 @@ trait Origin extends StObject {
   var Id: String
   
   /**
+    * The unique identifier of an origin access control for this origin. For more information, see Restricting access to an Amazon S3 origin in the Amazon CloudFront Developer Guide.
+    */
+  var OriginAccessControlId: js.UndefOr[String] = js.undefined
+  
+  /**
     * An optional path that CloudFront appends to the origin domain name when CloudFront requests content from the origin. For more information, see Origin Path in the Amazon CloudFront Developer Guide.
     */
   var OriginPath: js.UndefOr[String] = js.undefined
@@ -79,6 +84,10 @@ object Origin {
     inline def setDomainName(value: String): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    
+    inline def setOriginAccessControlId(value: String): Self = StObject.set(x, "OriginAccessControlId", value.asInstanceOf[js.Any])
+    
+    inline def setOriginAccessControlIdUndefined: Self = StObject.set(x, "OriginAccessControlId", js.undefined)
     
     inline def setOriginPath(value: String): Self = StObject.set(x, "OriginPath", value.asInstanceOf[js.Any])
     

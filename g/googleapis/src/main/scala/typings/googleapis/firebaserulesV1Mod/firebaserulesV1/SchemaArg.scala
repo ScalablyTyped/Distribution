@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Arg matchers for the mock function.
-  */
 trait SchemaArg extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaArg extends StObject {
   /**
     * Argument exactly matches value provided.
     */
-  var exactValue: js.UndefOr[js.Any] = js.undefined
+  var exactValue: js.UndefOr[Any | Null] = js.undefined
 }
 object SchemaArg {
   
@@ -32,7 +29,9 @@ object SchemaArg {
     
     inline def setAnyValueUndefined: Self = StObject.set(x, "anyValue", js.undefined)
     
-    inline def setExactValue(value: js.Any): Self = StObject.set(x, "exactValue", value.asInstanceOf[js.Any])
+    inline def setExactValue(value: Any): Self = StObject.set(x, "exactValue", value.asInstanceOf[js.Any])
+    
+    inline def setExactValueNull: Self = StObject.set(x, "exactValue", null)
     
     inline def setExactValueUndefined: Self = StObject.set(x, "exactValue", js.undefined)
   }

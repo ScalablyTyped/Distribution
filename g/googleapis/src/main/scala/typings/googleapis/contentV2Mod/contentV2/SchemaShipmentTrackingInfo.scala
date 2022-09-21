@@ -6,9 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaShipmentTrackingInfo extends StObject {
   
-  var carrier: js.UndefOr[String] = js.undefined
+  /**
+    * The shipping carrier that handles the package. Acceptable values are: - "`boxtal`" - "`bpost`" - "`chronopost`" - "`colisPrive`" - "`colissimo`" - "`cxt`" - "`deliv`" - "`dhl`" - "`dpd`" - "`dynamex`" - "`eCourier`" - "`easypost`" - "`efw`" - "`fedex`" - "`fedexSmartpost`" - "`geodis`" - "`gls`" - "`googleCourier`" - "`gsx`" - "`jdLogistics`" - "`laPoste`" - "`lasership`" - "`manual`" - "`mpx`" - "`onTrac`" - "`other`" - "`tnt`" - "`uds`" - "`ups`" - "`usps`"
+    */
+  var carrier: js.UndefOr[String | Null] = js.undefined
   
-  var trackingNumber: js.UndefOr[String] = js.undefined
+  /**
+    * The tracking number for the package.
+    */
+  var trackingNumber: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaShipmentTrackingInfo {
   
@@ -21,9 +27,13 @@ object SchemaShipmentTrackingInfo {
     
     inline def setCarrier(value: String): Self = StObject.set(x, "carrier", value.asInstanceOf[js.Any])
     
+    inline def setCarrierNull: Self = StObject.set(x, "carrier", null)
+    
     inline def setCarrierUndefined: Self = StObject.set(x, "carrier", js.undefined)
     
     inline def setTrackingNumber(value: String): Self = StObject.set(x, "trackingNumber", value.asInstanceOf[js.Any])
+    
+    inline def setTrackingNumberNull: Self = StObject.set(x, "trackingNumber", null)
     
     inline def setTrackingNumberUndefined: Self = StObject.set(x, "trackingNumber", js.undefined)
   }

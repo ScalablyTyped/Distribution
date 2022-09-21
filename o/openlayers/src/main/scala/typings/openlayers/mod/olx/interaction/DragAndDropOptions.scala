@@ -32,7 +32,7 @@ object DragAndDropOptions {
     
     inline def setFormatConstructorsUndefined: Self = StObject.set(x, "formatConstructors", js.undefined)
     
-    inline def setFormatConstructorsVarargs(value: Instantiable0[Feature]*): Self = StObject.set(x, "formatConstructors", js.Array(value :_*))
+    inline def setFormatConstructorsVarargs(value: Instantiable0[Feature]*): Self = StObject.set(x, "formatConstructors", js.Array(value*))
     
     inline def setProjection(value: ProjectionLike): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     

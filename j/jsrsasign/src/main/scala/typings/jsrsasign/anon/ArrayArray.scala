@@ -22,6 +22,6 @@ object ArrayArray {
     
     inline def setArray(value: js.Array[ObjectIdentifierParam | HexParam | NameParam]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
-    inline def setArrayVarargs(value: (ObjectIdentifierParam | HexParam | NameParam)*): Self = StObject.set(x, "array", js.Array(value :_*))
+    inline def setArrayVarargs(value: (ObjectIdentifierParam | HexParam | NameParam)*): Self = StObject.set(x, "array", js.Array(value*))
   }
 }

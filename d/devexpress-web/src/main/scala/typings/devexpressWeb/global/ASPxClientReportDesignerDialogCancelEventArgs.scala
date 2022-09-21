@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientReportDesignerDialogCancelEventArgs")
 @js.native
-class ASPxClientReportDesignerDialogCancelEventArgs protected ()
+open class ASPxClientReportDesignerDialogCancelEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientReportDesignerDialogCancelEventArgs {
   /**
@@ -17,7 +17,7 @@ class ASPxClientReportDesignerDialogCancelEventArgs protected ()
     * @param url Specifies the URL of the report currently being processed. This value is assigned to the ASPxClientReportDesignerDialogEventArgs.Url property.
     * @param report Specifies the report currently being processed. This value is assigned to the ASPxClientReportDesignerDialogEventArgs.Report property.
     */
-  def this(url: String, report: js.Any) = this()
+  def this(url: String, report: Any) = this()
   
   /**
     * Specifies whether or not the operation performed with a report should be canceled.
@@ -29,7 +29,7 @@ class ASPxClientReportDesignerDialogCancelEventArgs protected ()
     * Specifies the report currently being processed.
     */
   /* CompleteClass */
-  var Report: js.Any = js.native
+  var Report: Any = js.native
   
   /**
     * Specifies the URL of the report currently being processed.

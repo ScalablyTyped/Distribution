@@ -15,7 +15,7 @@ trait FiltersResource extends StObject {
   def create(request: AccesstokenAlt): Request[Filter] = js.native
   def create(request: Alt, body: Filter): Request[Filter] = js.native
   
-  /** Deletes a filter. */
+  /** Immediately and permanently deletes the specified filter. */
   def delete(): Request[Unit] = js.native
   def delete(request: Callback): Request[Unit] = js.native
   

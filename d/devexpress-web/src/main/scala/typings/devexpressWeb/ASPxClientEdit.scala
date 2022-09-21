@@ -22,9 +22,9 @@ trait ASPxClientEdit
   def GetErrorText(): String
   
   /**
-    * Returns an HTML element that represents the control's input element.
+    * Returns an HTML element that is the control's input element.
     */
-  def GetInputElement(): js.Any
+  def GetInputElement(): Any
   
   /**
     * Gets a value that indicates whether the editor's value passes validation.
@@ -89,12 +89,12 @@ object ASPxClientEdit {
     GetEnabled: () => Boolean,
     GetErrorText: () => String,
     GetHeight: () => Double,
-    GetInputElement: () => js.Any,
+    GetInputElement: () => Any,
     GetIsValid: () => Boolean,
-    GetMainElement: () => js.Any,
-    GetParentControl: () => js.Any,
+    GetMainElement: () => Any,
+    GetParentControl: () => Any,
     GetReadOnly: () => Boolean,
-    GetValue: () => js.Any,
+    GetValue: () => Any,
     GetVisible: () => Boolean,
     GetWidth: () => Double,
     GotFocus: ASPxClientEvent[ASPxClientEventHandler[ASPxClientEdit]],
@@ -109,7 +109,7 @@ object ASPxClientEdit {
     SetHeight: Double => Unit,
     SetIsValid: Boolean => Unit,
     SetReadOnly: Boolean => Unit,
-    SetValue: js.Any => Unit,
+    SetValue: Any => Unit,
     SetVisible: Boolean => Unit,
     SetWidth: Double => Unit,
     Validate: () => Unit,
@@ -127,7 +127,7 @@ object ASPxClientEdit {
     
     inline def setGetErrorText(value: () => String): Self = StObject.set(x, "GetErrorText", js.Any.fromFunction0(value))
     
-    inline def setGetInputElement(value: () => js.Any): Self = StObject.set(x, "GetInputElement", js.Any.fromFunction0(value))
+    inline def setGetInputElement(value: () => Any): Self = StObject.set(x, "GetInputElement", js.Any.fromFunction0(value))
     
     inline def setGetIsValid(value: () => Boolean): Self = StObject.set(x, "GetIsValid", js.Any.fromFunction0(value))
     

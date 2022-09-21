@@ -9,14 +9,15 @@ object resizeBilinearGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/resize_bilinear_gpu", "ResizeBilinearProgram")
   @js.native
-  class ResizeBilinearProgram protected ()
+  open class ResizeBilinearProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(
       inputShape: js.Tuple4[Double, Double, Double, Double],
       newHeight: Double,
       newWidth: Double,
-      alignCorners: Boolean
+      alignCorners: Boolean,
+      halfPixelCenters: Boolean
     ) = this()
     
     /* CompleteClass */

@@ -16,7 +16,7 @@ trait Action extends StObject {
   
   var Enabled: Boolean
   
-  def Execute(): js.Any
+  def Execute(): Any
   
   var MessageClass: String
   
@@ -25,7 +25,7 @@ trait Action extends StObject {
   /* private */ @JSName("Outlook.Action_typekey")
   var OutlookDotAction_typekey: Action
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Prefix: String
   
@@ -45,11 +45,11 @@ object Action {
     CopyLike: OlActionCopyLike,
     Delete: () => Unit,
     Enabled: Boolean,
-    Execute: () => js.Any,
+    Execute: () => Any,
     MessageClass: String,
     Name: String,
     OutlookDotAction_typekey: Action,
-    Parent: js.Any,
+    Parent: Any,
     Prefix: String,
     ReplyStyle: OlActionReplyStyle,
     ResponseStyle: OlActionResponseStyle,
@@ -73,7 +73,7 @@ object Action {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    inline def setExecute(value: () => js.Any): Self = StObject.set(x, "Execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Any): Self = StObject.set(x, "Execute", js.Any.fromFunction0(value))
     
     inline def setMessageClass(value: String): Self = StObject.set(x, "MessageClass", value.asInstanceOf[js.Any])
     
@@ -81,7 +81,7 @@ object Action {
     
     inline def setOutlookDotAction_typekey(value: Action): Self = StObject.set(x, "Outlook.Action_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     

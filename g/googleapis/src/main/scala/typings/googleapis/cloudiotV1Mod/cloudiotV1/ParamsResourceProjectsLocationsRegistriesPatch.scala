@@ -1,9 +1,5 @@
 package typings.googleapis.cloudiotV1Mod.cloudiotV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,13 +9,7 @@ trait ParamsResourceProjectsLocationsRegistriesPatch
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * The resource path name. For example,
-    * `projects/example-project/locations/us-central1/registries/my-registry`.
+    * The resource path name. For example, `projects/example-project/locations/us-central1/registries/my-registry`.
     */
   var name: js.UndefOr[String] = js.undefined
   
@@ -29,11 +19,7 @@ trait ParamsResourceProjectsLocationsRegistriesPatch
   var requestBody: js.UndefOr[SchemaDeviceRegistry] = js.undefined
   
   /**
-    * Only updates the `device_registry` fields indicated by this mask. The
-    * field mask must not be empty, and it must not contain fields that are
-    * immutable or only set by the server. Mutable top-level fields:
-    * `event_notification_config`, `http_config`, `mqtt_config`, and
-    * `state_notification_config`.
+    * Required. Only updates the `device_registry` fields indicated by this mask. The field mask must not be empty, and it must not contain fields that are immutable or only set by the server. Mutable top-level fields: `event_notification_config`, `http_config`, `mqtt_config`, and `state_notification_config`.
     */
   var updateMask: js.UndefOr[String] = js.undefined
 }
@@ -45,10 +31,6 @@ object ParamsResourceProjectsLocationsRegistriesPatch {
   }
   
   extension [Self <: ParamsResourceProjectsLocationsRegistriesPatch](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

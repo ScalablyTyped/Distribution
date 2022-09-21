@@ -44,10 +44,10 @@ object datafilter {
     
     inline def apply(
       getInputNode: HTMLElement => HTMLElement,
-      getValue: HTMLElement => js.Any,
-      refresh: (baseview, HTMLElement, js.Any) => Unit,
-      render: (baseview, StringDictionary[js.Any]) => String,
-      setValue: (HTMLElement, js.Any) => js.Any
+      getValue: HTMLElement => Any,
+      refresh: (baseview, HTMLElement, Any) => Unit,
+      render: (baseview, StringDictionary[Any]) => String,
+      setValue: (HTMLElement, Any) => Any
     ): textFilter = {
       val __obj = js.Dynamic.literal(getInputNode = js.Any.fromFunction1(getInputNode), getValue = js.Any.fromFunction1(getValue), refresh = js.Any.fromFunction3(refresh), render = js.Any.fromFunction2(render), setValue = js.Any.fromFunction2(setValue))
       __obj.asInstanceOf[textFilter]

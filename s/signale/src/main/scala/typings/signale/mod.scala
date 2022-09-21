@@ -6,7 +6,6 @@ import typings.node.processMod.global.NodeJS.WriteStream
 import typings.signale.anon.Label
 import typings.signale.anon.RecordDefaultMethodsLogge
 import typings.signale.anon.SignaleDefaultMethods
-import typings.std.Date
 import typings.std.Map
 import typings.std.Partial
 import typings.std.Record
@@ -194,7 +193,7 @@ object mod {
       */
     var stream: js.UndefOr[WriteStream | js.Array[WriteStream]] = js.undefined
     
-    var timers: js.UndefOr[Map[String, Date]] = js.undefined
+    var timers: js.UndefOr[Map[String, js.Date]] = js.undefined
     
     /**
       * Holds the configuration of the custom and default loggers.
@@ -233,15 +232,15 @@ object mod {
       
       inline def setSecretsUndefined: Self = StObject.set(x, "secrets", js.undefined)
       
-      inline def setSecretsVarargs(value: (String | Double)*): Self = StObject.set(x, "secrets", js.Array(value :_*))
+      inline def setSecretsVarargs(value: (String | Double)*): Self = StObject.set(x, "secrets", js.Array(value*))
       
       inline def setStream(value: WriteStream | js.Array[WriteStream]): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
       inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
       
-      inline def setStreamVarargs(value: WriteStream*): Self = StObject.set(x, "stream", js.Array(value :_*))
+      inline def setStreamVarargs(value: WriteStream*): Self = StObject.set(x, "stream", js.Array(value*))
       
-      inline def setTimers(value: Map[String, Date]): Self = StObject.set(x, "timers", value.asInstanceOf[js.Any])
+      inline def setTimers(value: Map[String, js.Date]): Self = StObject.set(x, "timers", value.asInstanceOf[js.Any])
       
       inline def setTimersUndefined: Self = StObject.set(x, "timers", js.undefined)
       
@@ -263,8 +262,8 @@ object mod {
   @JSImport("signale", "await")
   @js.native
   def await: LoggerFunc = js.native
-  inline def await(message: js.Any, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("await")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def await(message: Unit, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("await")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def await(message: Any, optionalArgs: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("await")(List(message.asInstanceOf[js.Any]).`++`(optionalArgs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def await(message: Unit, optionalArgs: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("await")(List(message.asInstanceOf[js.Any]).`++`(optionalArgs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   inline def await_=(x: LoggerFunc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("await")(x.asInstanceOf[js.Any])
   
   /**
@@ -275,8 +274,8 @@ object mod {
   @JSImport("signale", "complete")
   @js.native
   def complete: LoggerFunc = js.native
-  inline def complete(message: js.Any, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("complete")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def complete(message: Unit, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("complete")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def complete(message: Any, optionalArgs: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("complete")(List(message.asInstanceOf[js.Any]).`++`(optionalArgs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def complete(message: Unit, optionalArgs: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("complete")(List(message.asInstanceOf[js.Any]).`++`(optionalArgs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   inline def complete_=(x: LoggerFunc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("complete")(x.asInstanceOf[js.Any])
   
   /**
@@ -289,8 +288,8 @@ object mod {
   @JSImport("signale", "debug")
   @js.native
   def debug: LoggerFunc = js.native
-  inline def debug(message: js.Any, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def debug(message: Unit, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def debug(message: Any, optionalArgs: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(List(message.asInstanceOf[js.Any]).`++`(optionalArgs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def debug(message: Unit, optionalArgs: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(List(message.asInstanceOf[js.Any]).`++`(optionalArgs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   inline def debug_=(x: LoggerFunc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("debug")(x.asInstanceOf[js.Any])
   
   /**
@@ -306,29 +305,29 @@ object mod {
   @JSImport("signale", "error")
   @js.native
   def error: LoggerFunc = js.native
-  inline def error(message: js.Any, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def error(message: Unit, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def error(message: Any, optionalArgs: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(List(message.asInstanceOf[js.Any]).`++`(optionalArgs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def error(message: Unit, optionalArgs: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(List(message.asInstanceOf[js.Any]).`++`(optionalArgs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   inline def error_=(x: LoggerFunc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("error")(x.asInstanceOf[js.Any])
   
   @JSImport("signale", "fatal")
   @js.native
   def fatal: LoggerFunc = js.native
-  inline def fatal(message: js.Any, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fatal")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def fatal(message: Unit, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fatal")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def fatal(message: Any, optionalArgs: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fatal")(List(message.asInstanceOf[js.Any]).`++`(optionalArgs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def fatal(message: Unit, optionalArgs: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fatal")(List(message.asInstanceOf[js.Any]).`++`(optionalArgs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   inline def fatal_=(x: LoggerFunc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fatal")(x.asInstanceOf[js.Any])
   
   @JSImport("signale", "fav")
   @js.native
   def fav: LoggerFunc = js.native
-  inline def fav(message: js.Any, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fav")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def fav(message: Unit, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fav")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def fav(message: Any, optionalArgs: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fav")(List(message.asInstanceOf[js.Any]).`++`(optionalArgs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def fav(message: Unit, optionalArgs: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fav")(List(message.asInstanceOf[js.Any]).`++`(optionalArgs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   inline def fav_=(x: LoggerFunc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fav")(x.asInstanceOf[js.Any])
   
   @JSImport("signale", "info")
   @js.native
   def info: LoggerFunc = js.native
-  inline def info(message: js.Any, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def info(message: Unit, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def info(message: Any, optionalArgs: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(List(message.asInstanceOf[js.Any]).`++`(optionalArgs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def info(message: Unit, optionalArgs: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(List(message.asInstanceOf[js.Any]).`++`(optionalArgs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   inline def info_=(x: LoggerFunc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("info")(x.asInstanceOf[js.Any])
   
   /**
@@ -341,29 +340,29 @@ object mod {
   @JSImport("signale", "log")
   @js.native
   def log: LoggerFunc = js.native
-  inline def log(message: js.Any, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def log(message: Unit, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def log(message: Any, optionalArgs: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(List(message.asInstanceOf[js.Any]).`++`(optionalArgs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def log(message: Unit, optionalArgs: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(List(message.asInstanceOf[js.Any]).`++`(optionalArgs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   inline def log_=(x: LoggerFunc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("log")(x.asInstanceOf[js.Any])
   
   @JSImport("signale", "note")
   @js.native
   def note: LoggerFunc = js.native
-  inline def note(message: js.Any, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("note")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def note(message: Unit, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("note")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def note(message: Any, optionalArgs: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("note")(List(message.asInstanceOf[js.Any]).`++`(optionalArgs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def note(message: Unit, optionalArgs: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("note")(List(message.asInstanceOf[js.Any]).`++`(optionalArgs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   inline def note_=(x: LoggerFunc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("note")(x.asInstanceOf[js.Any])
   
   @JSImport("signale", "pause")
   @js.native
   def pause: LoggerFunc = js.native
-  inline def pause(message: js.Any, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pause")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def pause(message: Unit, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pause")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def pause(message: Any, optionalArgs: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("pause")(List(message.asInstanceOf[js.Any]).`++`(optionalArgs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def pause(message: Unit, optionalArgs: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("pause")(List(message.asInstanceOf[js.Any]).`++`(optionalArgs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   inline def pause_=(x: LoggerFunc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pause")(x.asInstanceOf[js.Any])
   
   @JSImport("signale", "pending")
   @js.native
   def pending: LoggerFunc = js.native
-  inline def pending(message: js.Any, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pending")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def pending(message: Unit, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pending")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def pending(message: Any, optionalArgs: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("pending")(List(message.asInstanceOf[js.Any]).`++`(optionalArgs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def pending(message: Unit, optionalArgs: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("pending")(List(message.asInstanceOf[js.Any]).`++`(optionalArgs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   inline def pending_=(x: LoggerFunc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pending")(x.asInstanceOf[js.Any])
   
   /**
@@ -371,27 +370,27 @@ object mod {
     *
     * @param name Can be one or more comma delimited strings.
     */
-  inline def scope(name: String*): SignaleDefaultMethods = ^.asInstanceOf[js.Dynamic].applyDynamic("scope")(name.asInstanceOf[js.Any]).asInstanceOf[SignaleDefaultMethods]
+  inline def scope(name: String*): SignaleDefaultMethods = ^.asInstanceOf[js.Dynamic].applyDynamic("scope")(name.asInstanceOf[Seq[js.Any]]*).asInstanceOf[SignaleDefaultMethods]
   
   @JSImport("signale", "star")
   @js.native
   def star: LoggerFunc = js.native
-  inline def star(message: js.Any, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("star")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def star(message: Unit, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("star")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def star(message: Any, optionalArgs: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("star")(List(message.asInstanceOf[js.Any]).`++`(optionalArgs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def star(message: Unit, optionalArgs: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("star")(List(message.asInstanceOf[js.Any]).`++`(optionalArgs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   inline def star_=(x: LoggerFunc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("star")(x.asInstanceOf[js.Any])
   
   @JSImport("signale", "start")
   @js.native
   def start: LoggerFunc = js.native
-  inline def start(message: js.Any, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def start(message: Unit, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def start(message: Any, optionalArgs: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(List(message.asInstanceOf[js.Any]).`++`(optionalArgs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def start(message: Unit, optionalArgs: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(List(message.asInstanceOf[js.Any]).`++`(optionalArgs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   inline def start_=(x: LoggerFunc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("start")(x.asInstanceOf[js.Any])
   
   @JSImport("signale", "success")
   @js.native
   def success: LoggerFunc = js.native
-  inline def success(message: js.Any, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("success")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def success(message: Unit, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("success")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def success(message: Any, optionalArgs: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("success")(List(message.asInstanceOf[js.Any]).`++`(optionalArgs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def success(message: Unit, optionalArgs: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("success")(List(message.asInstanceOf[js.Any]).`++`(optionalArgs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   inline def success_=(x: LoggerFunc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("success")(x.asInstanceOf[js.Any])
   
   /**
@@ -422,15 +421,15 @@ object mod {
   @JSImport("signale", "warn")
   @js.native
   def warn: LoggerFunc = js.native
-  inline def warn(message: js.Any, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("warn")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def warn(message: Unit, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("warn")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def warn(message: Any, optionalArgs: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(List(message.asInstanceOf[js.Any]).`++`(optionalArgs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def warn(message: Unit, optionalArgs: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(List(message.asInstanceOf[js.Any]).`++`(optionalArgs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   inline def warn_=(x: LoggerFunc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warn")(x.asInstanceOf[js.Any])
   
   @JSImport("signale", "watch")
   @js.native
   def watch: LoggerFunc = js.native
-  inline def watch(message: js.Any, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def watch(message: Unit, optionalArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(message.asInstanceOf[js.Any], optionalArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def watch(message: Any, optionalArgs: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("watch")(List(message.asInstanceOf[js.Any]).`++`(optionalArgs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def watch(message: Unit, optionalArgs: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("watch")(List(message.asInstanceOf[js.Any]).`++`(optionalArgs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   inline def watch_=(x: LoggerFunc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("watch")(x.asInstanceOf[js.Any])
   
   trait CommandType extends StObject {
@@ -474,15 +473,15 @@ object mod {
       
       inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
       
-      inline def setStreamVarargs(value: WriteStream*): Self = StObject.set(x, "stream", js.Array(value :_*))
+      inline def setStreamVarargs(value: WriteStream*): Self = StObject.set(x, "stream", js.Array(value*))
     }
   }
   
   @js.native
   trait LoggerFunc extends StObject {
     
-    def apply(message: js.Any, optionalArgs: js.Any*): Unit = js.native
-    def apply(message: Unit, optionalArgs: js.Any*): Unit = js.native
+    def apply(message: Any, optionalArgs: Any*): Unit = js.native
+    def apply(message: Unit, optionalArgs: Any*): Unit = js.native
   }
   
   @js.native

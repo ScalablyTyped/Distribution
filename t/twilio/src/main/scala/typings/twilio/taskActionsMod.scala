@@ -1,0 +1,295 @@
+package typings.twilio
+
+import typings.twilio.interfacesMod.SerializableClass
+import typings.twilio.pageMod.TwilioResponsePayload
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object taskActionsMod {
+  
+  @JSImport("twilio/lib/rest/autopilot/v1/assistant/task/taskActions", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("twilio/lib/rest/autopilot/v1/assistant/task/taskActions", "TaskActionsContext")
+  @js.native
+  open class TaskActionsContext protected () extends StObject {
+    /**
+      * Initialize the TaskActionsContext
+      *
+      * PLEASE NOTE that this class contains preview products that are subject to
+      * change. Use them with caution. If you currently do not have developer preview
+      * access, please contact help@twilio.com.
+      *
+      * @param version - Version of the resource
+      * @param assistantSid - The SID of the Assistant that is the parent of the Task for which the task actions to fetch were defined
+      * @param taskSid - The SID of the Task for which the task actions to fetch were defined
+      */
+    def this(version: typings.twilio.autopilotV1Mod.^, assistantSid: String, taskSid: String) = this()
+    
+    /**
+      * fetch a TaskActionsInstance
+      *
+      * @param callback - Callback to handle processed record
+      */
+    def fetch(): js.Promise[TaskActionsInstance] = js.native
+    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* items */ TaskActionsInstance, Any]): js.Promise[TaskActionsInstance] = js.native
+    
+    /**
+      * Provide a user-friendly representation
+      */
+    def toJSON(): Any = js.native
+    
+    /**
+      * update a TaskActionsInstance
+      *
+      * @param callback - Callback to handle processed record
+      */
+    def update(): js.Promise[TaskActionsInstance] = js.native
+    def update(callback: js.Function2[/* error */ js.Error | Null, /* items */ TaskActionsInstance, Any]): js.Promise[TaskActionsInstance] = js.native
+    def update(
+      opts: Unit,
+      callback: js.Function2[/* error */ js.Error | Null, /* items */ TaskActionsInstance, Any]
+    ): js.Promise[TaskActionsInstance] = js.native
+    def update(opts: TaskActionsInstanceUpdateOptions): js.Promise[TaskActionsInstance] = js.native
+    def update(
+      opts: TaskActionsInstanceUpdateOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* items */ TaskActionsInstance, Any]
+    ): js.Promise[TaskActionsInstance] = js.native
+  }
+  
+  @JSImport("twilio/lib/rest/autopilot/v1/assistant/task/taskActions", "TaskActionsInstance")
+  @js.native
+  open class TaskActionsInstance protected () extends SerializableClass {
+    /**
+      * Initialize the TaskActionsContext
+      *
+      * PLEASE NOTE that this class contains preview products that are subject to
+      * change. Use them with caution. If you currently do not have developer preview
+      * access, please contact help@twilio.com.
+      *
+      * @param version - Version of the resource
+      * @param payload - The instance payload
+      * @param assistantSid - The SID of the Assistant that is the parent of the Task associated with the resource
+      * @param taskSid - The SID of the Task associated with the resource
+      */
+    def this(
+      version: typings.twilio.autopilotV1Mod.^,
+      payload: TaskActionsPayload,
+      assistantSid: String,
+      taskSid: String
+    ) = this()
+    
+    /* private */ var _proxy: TaskActionsContext = js.native
+    
+    var accountSid: String = js.native
+    
+    var assistantSid: String = js.native
+    
+    var data: Any = js.native
+    
+    /**
+      * fetch a TaskActionsInstance
+      *
+      * @param callback - Callback to handle processed record
+      */
+    def fetch(): js.Promise[TaskActionsInstance] = js.native
+    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[TaskActionsInstance] = js.native
+    
+    var taskSid: String = js.native
+    
+    /**
+      * update a TaskActionsInstance
+      *
+      * @param callback - Callback to handle processed record
+      */
+    def update(): js.Promise[TaskActionsInstance] = js.native
+    def update(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[TaskActionsInstance] = js.native
+    def update(opts: Unit, callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[TaskActionsInstance] = js.native
+    def update(opts: TaskActionsInstanceUpdateOptions): js.Promise[TaskActionsInstance] = js.native
+    def update(
+      opts: TaskActionsInstanceUpdateOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]
+    ): js.Promise[TaskActionsInstance] = js.native
+    
+    var url: String = js.native
+  }
+  
+  /**
+    * Initialize the TaskActionsList
+    *
+    * PLEASE NOTE that this class contains preview products that are subject to
+    * change. Use them with caution. If you currently do not have developer preview
+    * access, please contact help@twilio.com.
+    *
+    * @param version - Version of the resource
+    * @param assistantSid - The SID of the Assistant that is the parent of the Task associated with the resource
+    * @param taskSid - The SID of the Task associated with the resource
+    */
+  inline def TaskActionsList(version: typings.twilio.autopilotV1Mod.^, assistantSid: String, taskSid: String): TaskActionsListInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("TaskActionsList")(version.asInstanceOf[js.Any], assistantSid.asInstanceOf[js.Any], taskSid.asInstanceOf[js.Any])).asInstanceOf[TaskActionsListInstance]
+  
+  @JSImport("twilio/lib/rest/autopilot/v1/assistant/task/taskActions", "TaskActionsPage")
+  @js.native
+  open class TaskActionsPage protected ()
+    extends typings.twilio.pageMod.^[
+          typings.twilio.autopilotV1Mod.^, 
+          TaskActionsPayload, 
+          TaskActionsResource, 
+          TaskActionsInstance
+        ] {
+    /**
+      * Initialize the TaskActionsPage
+      *
+      * PLEASE NOTE that this class contains preview products that are subject to
+      * change. Use them with caution. If you currently do not have developer preview
+      * access, please contact help@twilio.com.
+      *
+      * @param version - Version of the resource
+      * @param response - Response from the API
+      * @param solution - Path solution
+      */
+    def this(
+      version: typings.twilio.autopilotV1Mod.^,
+      response: typings.twilio.responseMod.^[String],
+      solution: TaskActionsSolution
+    ) = this()
+    
+    /**
+      * Build an instance of TaskActionsInstance
+      *
+      * @param payload - Payload response from the API
+      */
+    def getInstance(payload: TaskActionsPayload): TaskActionsInstance = js.native
+    
+    /**
+      * Provide a user-friendly representation
+      */
+    def toJSON(): Any = js.native
+  }
+  
+  /**
+    * Options to pass to update
+    *
+    * @property actions - The JSON string that specifies the actions that instruct the Assistant on how to perform the task
+    */
+  trait TaskActionsInstanceUpdateOptions extends StObject {
+    
+    var actions: js.UndefOr[js.Object] = js.undefined
+  }
+  object TaskActionsInstanceUpdateOptions {
+    
+    inline def apply(): TaskActionsInstanceUpdateOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TaskActionsInstanceUpdateOptions]
+    }
+    
+    extension [Self <: TaskActionsInstanceUpdateOptions](x: Self) {
+      
+      inline def setActions(value: js.Object): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      
+      inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+    }
+  }
+  
+  @js.native
+  trait TaskActionsListInstance extends StObject {
+    
+    /**
+      * @param sid - sid of instance
+      */
+    def apply(sid: String): TaskActionsContext = js.native
+    
+    /**
+      * Constructs a task_actions
+      */
+    def get(): TaskActionsContext = js.native
+    
+    /**
+      * Provide a user-friendly representation
+      */
+    def toJSON(): Any = js.native
+  }
+  
+  trait TaskActionsPayload
+    extends StObject
+       with TaskActionsResource
+       with TwilioResponsePayload
+  object TaskActionsPayload {
+    
+    inline def apply(
+      account_sid: String,
+      assistant_sid: String,
+      data: js.Object,
+      first_page_uri: String,
+      next_page_uri: String,
+      page: Double,
+      page_size: Double,
+      previous_page_uri: String,
+      task_sid: String,
+      uri: String,
+      url: String
+    ): TaskActionsPayload = {
+      val __obj = js.Dynamic.literal(account_sid = account_sid.asInstanceOf[js.Any], assistant_sid = assistant_sid.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], first_page_uri = first_page_uri.asInstanceOf[js.Any], next_page_uri = next_page_uri.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], previous_page_uri = previous_page_uri.asInstanceOf[js.Any], task_sid = task_sid.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TaskActionsPayload]
+    }
+  }
+  
+  trait TaskActionsResource extends StObject {
+    
+    var account_sid: String
+    
+    var assistant_sid: String
+    
+    var data: js.Object
+    
+    var task_sid: String
+    
+    var url: String
+  }
+  object TaskActionsResource {
+    
+    inline def apply(account_sid: String, assistant_sid: String, data: js.Object, task_sid: String, url: String): TaskActionsResource = {
+      val __obj = js.Dynamic.literal(account_sid = account_sid.asInstanceOf[js.Any], assistant_sid = assistant_sid.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], task_sid = task_sid.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TaskActionsResource]
+    }
+    
+    extension [Self <: TaskActionsResource](x: Self) {
+      
+      inline def setAccount_sid(value: String): Self = StObject.set(x, "account_sid", value.asInstanceOf[js.Any])
+      
+      inline def setAssistant_sid(value: String): Self = StObject.set(x, "assistant_sid", value.asInstanceOf[js.Any])
+      
+      inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setTask_sid(value: String): Self = StObject.set(x, "task_sid", value.asInstanceOf[js.Any])
+      
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait TaskActionsSolution extends StObject {
+    
+    var assistantSid: js.UndefOr[String] = js.undefined
+    
+    var taskSid: js.UndefOr[String] = js.undefined
+  }
+  object TaskActionsSolution {
+    
+    inline def apply(): TaskActionsSolution = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TaskActionsSolution]
+    }
+    
+    extension [Self <: TaskActionsSolution](x: Self) {
+      
+      inline def setAssistantSid(value: String): Self = StObject.set(x, "assistantSid", value.asInstanceOf[js.Any])
+      
+      inline def setAssistantSidUndefined: Self = StObject.set(x, "assistantSid", js.undefined)
+      
+      inline def setTaskSid(value: String): Self = StObject.set(x, "taskSid", value.asInstanceOf[js.Any])
+      
+      inline def setTaskSidUndefined: Self = StObject.set(x, "taskSid", js.undefined)
+    }
+  }
+}

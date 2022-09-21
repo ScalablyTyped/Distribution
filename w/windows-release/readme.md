@@ -1,7 +1,7 @@
 
 # Scala.js typings for windows-release
 
-Typings are for version 3.3.3
+Typings are for version 5.0.1
 
 ## Library description:
 Get the name of a Windows version from the release number: `5.1.2600` → `XP`
@@ -10,10 +10,10 @@ Get the name of a Windows version from the release number: `5.1.2600` → `XP`
 | ------------------ | :-------------: |
 | Full name          | windows-release |
 | Keywords           | os, win, win32, windows, operating, system, platform, name, title, release, version |
-| # releases         | 7 |
-| # dependents       | 26 |
-| # downloads        | 142521290 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 1.2274184333333334E7 |
+| # stars            | 33.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/windows-release#readme)

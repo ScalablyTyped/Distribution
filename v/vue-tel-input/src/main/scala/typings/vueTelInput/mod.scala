@@ -2,10 +2,6 @@ package typings.vueTelInput
 
 import org.scalablytyped.runtime.Shortcut
 import typings.std.Event
-import typings.vue.optionsMod.DirectiveOptions
-import typings.vue.pluginMod.PluginFunction
-import typings.vue.vueMod.Vue
-import typings.vue.vueMod.VueConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,27 +60,56 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait VueTelInputConstructor
-    extends StObject
-       with VueConstructor[Vue] {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VueConstructor * / any */ trait VueTelInputConstructor extends StObject {
     
-    var computed: VueTelInputComputed = js.native
+    var computed: VueTelInputComputed
     
-    def data(): VueTelInputData = js.native
+    def data(): VueTelInputData
     
-    var directives: VueTelInputDirective = js.native
+    var directives: VueTelInputDirective
     
-    def install(Vue: VueConstructor[Vue]): Unit = js.native
-    def install(Vue: VueConstructor[Vue], options: scala.Nothing): Unit = js.native
-    @JSName("install")
-    var install_Original: PluginFunction[scala.Nothing] = js.native
+    var install: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PluginFunction<never> */ Any
     
-    var methods: VueTelInputMethods = js.native
+    var methods: VueTelInputMethods
     
-    var props: VueTelInputProps = js.native
+    var props: VueTelInputProps
     
-    var watch: VueTelInputWatch = js.native
+    var watch: VueTelInputWatch
+  }
+  object VueTelInputConstructor {
+    
+    inline def apply(
+      computed: VueTelInputComputed,
+      data: () => VueTelInputData,
+      directives: VueTelInputDirective,
+      install: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PluginFunction<never> */ Any,
+      methods: VueTelInputMethods,
+      props: VueTelInputProps,
+      watch: VueTelInputWatch
+    ): VueTelInputConstructor = {
+      val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], data = js.Any.fromFunction0(data), directives = directives.asInstanceOf[js.Any], install = install.asInstanceOf[js.Any], methods = methods.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], watch = watch.asInstanceOf[js.Any])
+      __obj.asInstanceOf[VueTelInputConstructor]
+    }
+    
+    extension [Self <: VueTelInputConstructor](x: Self) {
+      
+      inline def setComputed(value: VueTelInputComputed): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
+      
+      inline def setData(value: () => VueTelInputData): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
+      
+      inline def setDirectives(value: VueTelInputDirective): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
+      
+      inline def setInstall(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PluginFunction<never> */ Any
+      ): Self = StObject.set(x, "install", value.asInstanceOf[js.Any])
+      
+      inline def setMethods(value: VueTelInputMethods): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      
+      inline def setProps(value: VueTelInputProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      
+      inline def setWatch(value: VueTelInputWatch): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
+    }
   }
   
   trait VueTelInputCountryOption extends StObject {
@@ -112,11 +137,11 @@ object mod extends Shortcut {
     
     var phone: String
     
-    var selectedIndex: js.Any
+    var selectedIndex: Any
     
     var typeToFindInput: String
     
-    var typeToFindTimer: js.Any
+    var typeToFindTimer: Any
   }
   object VueTelInputData {
     
@@ -124,9 +149,9 @@ object mod extends Shortcut {
       activeCountry: VueTelInputCountryOption,
       open: Boolean,
       phone: String,
-      selectedIndex: js.Any,
+      selectedIndex: Any,
       typeToFindInput: String,
-      typeToFindTimer: js.Any
+      typeToFindTimer: Any
     ): VueTelInputData = {
       val __obj = js.Dynamic.literal(activeCountry = activeCountry.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], selectedIndex = selectedIndex.asInstanceOf[js.Any], typeToFindInput = typeToFindInput.asInstanceOf[js.Any], typeToFindTimer = typeToFindTimer.asInstanceOf[js.Any])
       __obj.asInstanceOf[VueTelInputData]
@@ -140,21 +165,23 @@ object mod extends Shortcut {
       
       inline def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
       
-      inline def setSelectedIndex(value: js.Any): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
+      inline def setSelectedIndex(value: Any): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
       
       inline def setTypeToFindInput(value: String): Self = StObject.set(x, "typeToFindInput", value.asInstanceOf[js.Any])
       
-      inline def setTypeToFindTimer(value: js.Any): Self = StObject.set(x, "typeToFindTimer", value.asInstanceOf[js.Any])
+      inline def setTypeToFindTimer(value: Any): Self = StObject.set(x, "typeToFindTimer", value.asInstanceOf[js.Any])
     }
   }
   
   trait VueTelInputDirective extends StObject {
     
-    var `click-outside`: DirectiveOptions
+    var `click-outside`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DirectiveOptions */ Any
   }
   object VueTelInputDirective {
     
-    inline def apply(`click-outside`: DirectiveOptions): VueTelInputDirective = {
+    inline def apply(
+      `click-outside`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DirectiveOptions */ Any
+    ): VueTelInputDirective = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("click-outside")(`click-outside`.asInstanceOf[js.Any])
       __obj.asInstanceOf[VueTelInputDirective]
@@ -162,7 +189,9 @@ object mod extends Shortcut {
     
     extension [Self <: VueTelInputDirective](x: Self) {
       
-      inline def `setClick-outside`(value: DirectiveOptions): Self = StObject.set(x, "click-outside", value.asInstanceOf[js.Any])
+      inline def `setClick-outside`(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DirectiveOptions */ Any
+      ): Self = StObject.set(x, "click-outside", value.asInstanceOf[js.Any])
     }
   }
   
@@ -202,15 +231,15 @@ object mod extends Shortcut {
   
   trait VueTelInputMethods extends StObject {
     
-    def choose(country: js.Any): Unit
+    def choose(country: Any): Unit
     
     def clickedOutside(): Unit
     
-    def findCountry(iso: String): js.Array[js.Any]
+    def findCountry(iso: String): js.Array[Any]
     
-    def getCountries(list: js.Array[js.Any]): js.Array[js.Any]
+    def getCountries(list: js.Array[Any]): js.Array[Any]
     
-    def getItemClass(index: Double, iso2: String): js.Any
+    def getItemClass(index: Double, iso2: String): Any
     
     def initializeCountry(): Unit
     
@@ -227,11 +256,11 @@ object mod extends Shortcut {
   object VueTelInputMethods {
     
     inline def apply(
-      choose: js.Any => Unit,
+      choose: Any => Unit,
       clickedOutside: () => Unit,
-      findCountry: String => js.Array[js.Any],
-      getCountries: js.Array[js.Any] => js.Array[js.Any],
-      getItemClass: (Double, String) => js.Any,
+      findCountry: String => js.Array[Any],
+      getCountries: js.Array[Any] => js.Array[Any],
+      getItemClass: (Double, String) => Any,
       initializeCountry: () => Unit,
       keyboardNav: Event => Unit,
       onBlur: () => Unit,
@@ -245,15 +274,15 @@ object mod extends Shortcut {
     
     extension [Self <: VueTelInputMethods](x: Self) {
       
-      inline def setChoose(value: js.Any => Unit): Self = StObject.set(x, "choose", js.Any.fromFunction1(value))
+      inline def setChoose(value: Any => Unit): Self = StObject.set(x, "choose", js.Any.fromFunction1(value))
       
       inline def setClickedOutside(value: () => Unit): Self = StObject.set(x, "clickedOutside", js.Any.fromFunction0(value))
       
-      inline def setFindCountry(value: String => js.Array[js.Any]): Self = StObject.set(x, "findCountry", js.Any.fromFunction1(value))
+      inline def setFindCountry(value: String => js.Array[Any]): Self = StObject.set(x, "findCountry", js.Any.fromFunction1(value))
       
-      inline def setGetCountries(value: js.Array[js.Any] => js.Array[js.Any]): Self = StObject.set(x, "getCountries", js.Any.fromFunction1(value))
+      inline def setGetCountries(value: js.Array[Any] => js.Array[Any]): Self = StObject.set(x, "getCountries", js.Any.fromFunction1(value))
       
-      inline def setGetItemClass(value: (Double, String) => js.Any): Self = StObject.set(x, "getItemClass", js.Any.fromFunction2(value))
+      inline def setGetItemClass(value: (Double, String) => Any): Self = StObject.set(x, "getItemClass", js.Any.fromFunction2(value))
       
       inline def setInitializeCountry(value: () => Unit): Self = StObject.set(x, "initializeCountry", js.Any.fromFunction0(value))
       
@@ -287,7 +316,7 @@ object mod extends Shortcut {
     
     var enabledFlags: Boolean
     
-    var ignoredCountries: js.Array[js.Any]
+    var ignoredCountries: js.Array[Any]
     
     var inputClasses: String
     
@@ -299,7 +328,7 @@ object mod extends Shortcut {
     
     var name: String
     
-    var onlyCountries: js.Array[js.Any]
+    var onlyCountries: js.Array[Any]
     
     var placeholder: String
     
@@ -322,13 +351,13 @@ object mod extends Shortcut {
       dropdownOptions: VueTelInputDowndownOption,
       enabledCountryCode: Boolean,
       enabledFlags: Boolean,
-      ignoredCountries: js.Array[js.Any],
+      ignoredCountries: js.Array[Any],
       inputClasses: String,
       inputOptions: VueTelInputInputOption,
       invalidMsg: String,
       maxLen: Double,
       name: String,
-      onlyCountries: js.Array[js.Any],
+      onlyCountries: js.Array[Any],
       placeholder: String,
       preferredCountries: Boolean,
       required: Boolean,
@@ -357,9 +386,9 @@ object mod extends Shortcut {
       
       inline def setEnabledFlags(value: Boolean): Self = StObject.set(x, "enabledFlags", value.asInstanceOf[js.Any])
       
-      inline def setIgnoredCountries(value: js.Array[js.Any]): Self = StObject.set(x, "ignoredCountries", value.asInstanceOf[js.Any])
+      inline def setIgnoredCountries(value: js.Array[Any]): Self = StObject.set(x, "ignoredCountries", value.asInstanceOf[js.Any])
       
-      inline def setIgnoredCountriesVarargs(value: js.Any*): Self = StObject.set(x, "ignoredCountries", js.Array(value :_*))
+      inline def setIgnoredCountriesVarargs(value: Any*): Self = StObject.set(x, "ignoredCountries", js.Array(value*))
       
       inline def setInputClasses(value: String): Self = StObject.set(x, "inputClasses", value.asInstanceOf[js.Any])
       
@@ -371,9 +400,9 @@ object mod extends Shortcut {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setOnlyCountries(value: js.Array[js.Any]): Self = StObject.set(x, "onlyCountries", value.asInstanceOf[js.Any])
+      inline def setOnlyCountries(value: js.Array[Any]): Self = StObject.set(x, "onlyCountries", value.asInstanceOf[js.Any])
       
-      inline def setOnlyCountriesVarargs(value: js.Any*): Self = StObject.set(x, "onlyCountries", js.Array(value :_*))
+      inline def setOnlyCountriesVarargs(value: Any*): Self = StObject.set(x, "onlyCountries", js.Array(value*))
       
       inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
@@ -414,20 +443,20 @@ object mod extends Shortcut {
   
   trait VueTelInputWatch extends StObject {
     
-    def state(value: js.Any): Unit
+    def state(value: Any): Unit
     
     def value(): Unit
   }
   object VueTelInputWatch {
     
-    inline def apply(state: js.Any => Unit, value: () => Unit): VueTelInputWatch = {
+    inline def apply(state: Any => Unit, value: () => Unit): VueTelInputWatch = {
       val __obj = js.Dynamic.literal(state = js.Any.fromFunction1(state), value = js.Any.fromFunction0(value))
       __obj.asInstanceOf[VueTelInputWatch]
     }
     
     extension [Self <: VueTelInputWatch](x: Self) {
       
-      inline def setState(value: js.Any => Unit): Self = StObject.set(x, "state", js.Any.fromFunction1(value))
+      inline def setState(value: Any => Unit): Self = StObject.set(x, "state", js.Any.fromFunction1(value))
       
       inline def setValue(value: () => Unit): Self = StObject.set(x, "value", js.Any.fromFunction0(value))
     }

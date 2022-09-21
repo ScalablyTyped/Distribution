@@ -19,12 +19,12 @@ trait DataFilteringEventUIParam extends StObject {
   /**
     * Gets the filtering expressions. Filtering expressions could be changed in this event handler and after that data binding is applied. In this way the user could control filtering more easily before applying data-binding.
     */
-  var newExpressions: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var newExpressions: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Gets reference to GridFiltering.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
 }
 object DataFilteringEventUIParam {
   
@@ -43,13 +43,13 @@ object DataFilteringEventUIParam {
     
     inline def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
     
-    inline def setNewExpressions(value: js.Array[js.Any]): Self = StObject.set(x, "newExpressions", value.asInstanceOf[js.Any])
+    inline def setNewExpressions(value: js.Array[Any]): Self = StObject.set(x, "newExpressions", value.asInstanceOf[js.Any])
     
     inline def setNewExpressionsUndefined: Self = StObject.set(x, "newExpressions", js.undefined)
     
-    inline def setNewExpressionsVarargs(value: js.Any*): Self = StObject.set(x, "newExpressions", js.Array(value :_*))
+    inline def setNewExpressionsVarargs(value: Any*): Self = StObject.set(x, "newExpressions", js.Array(value*))
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }

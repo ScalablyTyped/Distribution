@@ -1,11 +1,11 @@
 package typings.maximMazurokGapiClientLogging.gapi.client.logging
 
 import typings.gapiClient.gapi.client.Request
+import typings.maximMazurokGapiClientLogging.anon.Alt
 import typings.maximMazurokGapiClientLogging.anon.Fields
 import typings.maximMazurokGapiClientLogging.anon.KeyMetricName
-import typings.maximMazurokGapiClientLogging.anon.KeyOauthtoken
 import typings.maximMazurokGapiClientLogging.anon.MetricName
-import typings.maximMazurokGapiClientLogging.anon.UploadType
+import typings.maximMazurokGapiClientLogging.anon.OauthtokenParent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait MetricsResource extends StObject {
   
+  def create(request: Alt, body: LogMetric): Request[LogMetric] = js.native
   /** Creates a logs-based metric. */
-  def create(request: KeyOauthtoken): Request[LogMetric] = js.native
-  def create(request: UploadType, body: LogMetric): Request[LogMetric] = js.native
+  def create(request: OauthtokenParent): Request[LogMetric] = js.native
   
   /** Deletes a logs-based metric. */
   def delete(): Request[js.Object] = js.native

@@ -12,9 +12,14 @@ trait EmitterOpEaseConfig
      with _EmitterOpOnUpdateType {
   
   /**
-    * The name of the easing function.
+    * The ease to find. This can be either a string from the EaseMap, or a custom function.
     */
-  var ease: js.UndefOr[String] = js.undefined
+  var ease: js.UndefOr[String | js.Function] = js.undefined
+  
+  /**
+    * An optional array of ease parameters to go with the ease.
+    */
+  var easeParams: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * The ending value.
@@ -35,7 +40,13 @@ object EmitterOpEaseConfig {
   
   extension [Self <: EmitterOpEaseConfig](x: Self) {
     
-    inline def setEase(value: String): Self = StObject.set(x, "ease", value.asInstanceOf[js.Any])
+    inline def setEase(value: String | js.Function): Self = StObject.set(x, "ease", value.asInstanceOf[js.Any])
+    
+    inline def setEaseParams(value: js.Array[Double]): Self = StObject.set(x, "easeParams", value.asInstanceOf[js.Any])
+    
+    inline def setEaseParamsUndefined: Self = StObject.set(x, "easeParams", js.undefined)
+    
+    inline def setEaseParamsVarargs(value: Double*): Self = StObject.set(x, "easeParams", js.Array(value*))
     
     inline def setEaseUndefined: Self = StObject.set(x, "ease", js.undefined)
     

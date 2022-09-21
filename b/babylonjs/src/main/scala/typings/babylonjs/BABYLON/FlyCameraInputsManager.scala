@@ -17,9 +17,7 @@ trait FlyCameraInputsManager
   
   /**
     * Add mouse input support to the input manager.
-    * @param touchEnabled Enable touch screen support.
     * @returns the new FlyCameraMouseInput().
     */
   def addMouse(): FlyCameraInputsManager = js.native
-  def addMouse(touchEnabled: Boolean): FlyCameraInputsManager = js.native
 }

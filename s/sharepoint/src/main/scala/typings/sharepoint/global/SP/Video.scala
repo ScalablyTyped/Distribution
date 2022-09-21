@@ -8,12 +8,12 @@ object Video {
   
   @JSGlobal("SP.Video.EmbedCodeConfiguration")
   @js.native
-  class EmbedCodeConfiguration ()
+  open class EmbedCodeConfiguration ()
     extends StObject
        with typings.sharepoint.SP.Video.EmbedCodeConfiguration {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(
@@ -22,7 +22,7 @@ object Video {
     ): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /* CompleteClass */
     override def get_autoPlay(): Boolean = js.native
@@ -90,7 +90,7 @@ object Video {
   
   @JSGlobal("SP.Video.VideoSet")
   @js.native
-  class VideoSet ()
+  open class VideoSet ()
     extends StObject
        with typings.sharepoint.SP.ClientObject
   object VideoSet {
@@ -120,9 +120,9 @@ object Video {
     /* static member */
     inline def uploadVideo(
       context: typings.sharepoint.SP.ClientContext,
-      list: typings.sharepoint.SP.List[js.Any],
+      list: typings.sharepoint.SP.List[Any],
       fileName: String,
-      file: js.Array[js.Any],
+      file: js.Array[Any],
       overwriteIfExists: Boolean,
       parentFolderPath: String
     ): typings.sharepoint.SP.StringResult = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadVideo")(context.asInstanceOf[js.Any], list.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], file.asInstanceOf[js.Any], overwriteIfExists.asInstanceOf[js.Any], parentFolderPath.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.StringResult]

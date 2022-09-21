@@ -1,6 +1,6 @@
 package typings.vscode.mod
 
-import typings.vscode.anon.Dark
+import typings.vscode.anon.DarkLight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,25 +23,25 @@ trait WebviewPanel extends StObject {
     * Webview panels are also disposed when the user closes the webview panel. Both cases
     * fire the `onDispose` event.
     */
-  def dispose(): js.Any = js.native
+  def dispose(): Any = js.native
   
   /**
     * Icon for the panel shown in UI.
     */
-  var iconPath: js.UndefOr[Uri | Dark] = js.native
+  var iconPath: js.UndefOr[Uri | DarkLight] = js.native
   
   /**
     * Fired when the panel's view state changes.
     */
-  def onDidChangeViewState(listener: js.Function1[/* e */ WebviewPanelOnDidChangeViewStateEvent, js.Any]): Disposable = js.native
-  def onDidChangeViewState(listener: js.Function1[/* e */ WebviewPanelOnDidChangeViewStateEvent, js.Any], thisArgs: js.Any): Disposable = js.native
+  def onDidChangeViewState(listener: js.Function1[/* e */ WebviewPanelOnDidChangeViewStateEvent, Any]): Disposable = js.native
+  def onDidChangeViewState(listener: js.Function1[/* e */ WebviewPanelOnDidChangeViewStateEvent, Any], thisArgs: Any): Disposable = js.native
   def onDidChangeViewState(
-    listener: js.Function1[/* e */ WebviewPanelOnDidChangeViewStateEvent, js.Any],
-    thisArgs: js.Any,
+    listener: js.Function1[/* e */ WebviewPanelOnDidChangeViewStateEvent, Any],
+    thisArgs: Any,
     disposables: js.Array[Disposable]
   ): Disposable = js.native
   def onDidChangeViewState(
-    listener: js.Function1[/* e */ WebviewPanelOnDidChangeViewStateEvent, js.Any],
+    listener: js.Function1[/* e */ WebviewPanelOnDidChangeViewStateEvent, Any],
     thisArgs: Unit,
     disposables: js.Array[Disposable]
   ): Disposable = js.native
@@ -54,10 +54,10 @@ trait WebviewPanel extends StObject {
     *
     * Trying to use the panel after it has been disposed throws an exception.
     */
-  def onDidDispose(listener: js.Function1[/* e */ Unit, js.Any]): Disposable = js.native
-  def onDidDispose(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: js.Any): Disposable = js.native
-  def onDidDispose(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
-  def onDidDispose(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
+  def onDidDispose(listener: js.Function1[/* e */ Unit, Any]): Disposable = js.native
+  def onDidDispose(listener: js.Function1[/* e */ Unit, Any], thisArgs: Any): Disposable = js.native
+  def onDidDispose(listener: js.Function1[/* e */ Unit, Any], thisArgs: Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onDidDispose(listener: js.Function1[/* e */ Unit, Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   
   /**
     * Content settings for the webview panel.
@@ -100,7 +100,7 @@ trait WebviewPanel extends StObject {
   val visible: Boolean = js.native
   
   /**
-    * [`Webview`](#Webview) belonging to the panel.
+    * {@linkcode Webview} belonging to the panel.
     */
   val webview: Webview = js.native
 }

@@ -5,8 +5,6 @@ import typings.nblas.typesMod.MatrixLeftRight
 import typings.nblas.typesMod.MatrixTrans
 import typings.nblas.typesMod.MatrixUnit
 import typings.nblas.typesMod.MatrixUpperLower
-import typings.std.Float32Array
-import typings.std.Float64Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,10 +59,10 @@ object mod {
   @js.native
   val caxpy: js.Function6[
     /* n */ Double, 
-    /* alpha */ Float32Array, 
-    /* x */ Float32Array, 
+    /* alpha */ js.typedarray.Float32Array, 
+    /* x */ js.typedarray.Float32Array, 
     /* incx */ Double, 
-    /* y */ Float32Array, 
+    /* y */ js.typedarray.Float32Array, 
     /* incy */ Double, 
     scala.Unit
   ] = js.native
@@ -73,9 +71,9 @@ object mod {
   @js.native
   val ccopy: js.Function5[
     /* n */ Double, 
-    /* x */ Float32Array, 
+    /* x */ js.typedarray.Float32Array, 
     /* incx */ Double, 
-    /* y */ Float32Array, 
+    /* y */ js.typedarray.Float32Array, 
     /* incy */ Double, 
     scala.Unit
   ] = js.native
@@ -88,13 +86,13 @@ object mod {
     /* n */ Double, 
     /* kl */ Double, 
     /* ku */ Double, 
-    /* alpha */ Float32Array, 
-    /* a */ Float32Array, 
+    /* alpha */ js.typedarray.Float32Array, 
+    /* a */ js.typedarray.Float32Array, 
     /* lda */ Double, 
-    /* x */ Float32Array, 
+    /* x */ js.typedarray.Float32Array, 
     /* incx */ Double, 
-    /* beta */ Float32Array, 
-    /* y */ Float32Array, 
+    /* beta */ js.typedarray.Float32Array, 
+    /* y */ js.typedarray.Float32Array, 
     /* incy */ Double, 
     scala.Unit
   ] = js.native
@@ -107,13 +105,13 @@ object mod {
     /* m */ Double, 
     /* n */ Double, 
     /* k */ Double, 
-    /* alpha */ Float32Array, 
-    /* a */ Float32Array, 
+    /* alpha */ js.typedarray.Float32Array, 
+    /* a */ js.typedarray.Float32Array, 
     /* lda */ Double, 
-    /* b */ Float32Array, 
+    /* b */ js.typedarray.Float32Array, 
     /* ldb */ Double, 
-    /* beta */ Float32Array, 
-    /* c */ Float32Array, 
+    /* beta */ js.typedarray.Float32Array, 
+    /* c */ js.typedarray.Float32Array, 
     /* ldc */ Double, 
     scala.Unit
   ] = js.native
@@ -124,13 +122,13 @@ object mod {
     /* trans */ MatrixTrans, 
     /* m */ Double, 
     /* n */ Double, 
-    /* alpha */ Float32Array, 
-    /* a */ Float32Array, 
+    /* alpha */ js.typedarray.Float32Array, 
+    /* a */ js.typedarray.Float32Array, 
     /* lda */ Double, 
-    /* x */ Float32Array, 
+    /* x */ js.typedarray.Float32Array, 
     /* incx */ Double, 
-    /* beta */ Float32Array, 
-    /* y */ Float32Array, 
+    /* beta */ js.typedarray.Float32Array, 
+    /* y */ js.typedarray.Float32Array, 
     /* incy */ Double, 
     scala.Unit
   ] = js.native
@@ -143,8 +141,8 @@ object mod {
   @js.native
   val cscal: js.Function4[
     /* n */ Double, 
-    /* a */ Float32Array, 
-    /* x */ Float32Array, 
+    /* a */ js.typedarray.Float32Array, 
+    /* x */ js.typedarray.Float32Array, 
     /* incx */ Double, 
     scala.Unit
   ] = js.native
@@ -153,9 +151,9 @@ object mod {
   @js.native
   val cswap: js.Function5[
     /* n */ Double, 
-    /* x */ Float32Array, 
+    /* x */ js.typedarray.Float32Array, 
     /* incx */ Double, 
-    /* y */ Float32Array, 
+    /* y */ js.typedarray.Float32Array, 
     /* incy */ Double, 
     scala.Unit
   ] = js.native
@@ -167,13 +165,13 @@ object mod {
     /* uplo */ MatrixUpperLower, 
     /* m */ Double, 
     /* n */ Double, 
-    /* alpha */ Float32Array, 
-    /* a */ Float32Array, 
+    /* alpha */ js.typedarray.Float32Array, 
+    /* a */ js.typedarray.Float32Array, 
     /* lda */ Double, 
-    /* b */ Float32Array, 
+    /* b */ js.typedarray.Float32Array, 
     /* ldb */ Double, 
-    /* beta */ Float32Array, 
-    /* c */ Float32Array, 
+    /* beta */ js.typedarray.Float32Array, 
+    /* c */ js.typedarray.Float32Array, 
     /* ldc */ Double, 
     scala.Unit
   ] = js.native
@@ -185,13 +183,13 @@ object mod {
     /* trans */ MatrixTrans, 
     /* n */ Double, 
     /* k */ Double, 
-    /* alpha */ Float32Array, 
-    /* a */ Float32Array, 
+    /* alpha */ js.typedarray.Float32Array, 
+    /* a */ js.typedarray.Float32Array, 
     /* lda */ Double, 
-    /* b */ Float32Array, 
+    /* b */ js.typedarray.Float32Array, 
     /* ldb */ Double, 
-    /* beta */ Float32Array, 
-    /* c */ Float32Array, 
+    /* beta */ js.typedarray.Float32Array, 
+    /* c */ js.typedarray.Float32Array, 
     /* ldc */ Double, 
     scala.Unit
   ] = js.native
@@ -203,11 +201,11 @@ object mod {
     /* trans */ MatrixTrans, 
     /* n */ Double, 
     /* k */ Double, 
-    /* alpha */ Float32Array, 
-    /* a */ Float32Array, 
+    /* alpha */ js.typedarray.Float32Array, 
+    /* a */ js.typedarray.Float32Array, 
     /* lda */ Double, 
-    /* beta */ Float32Array, 
-    /* c */ Float32Array, 
+    /* beta */ js.typedarray.Float32Array, 
+    /* c */ js.typedarray.Float32Array, 
     /* ldc */ Double, 
     scala.Unit
   ] = js.native
@@ -220,9 +218,9 @@ object mod {
     /* diag */ MatrixUnit, 
     /* n */ Double, 
     /* k */ Double, 
-    /* a */ Float32Array, 
+    /* a */ js.typedarray.Float32Array, 
     /* lda */ Double, 
-    /* x */ Float32Array, 
+    /* x */ js.typedarray.Float32Array, 
     /* incx */ Double, 
     scala.Unit
   ] = js.native
@@ -235,9 +233,9 @@ object mod {
     /* diag */ MatrixUnit, 
     /* n */ Double, 
     /* k */ Double, 
-    /* a */ Float32Array, 
+    /* a */ js.typedarray.Float32Array, 
     /* lda */ Double, 
-    /* x */ Float32Array, 
+    /* x */ js.typedarray.Float32Array, 
     /* incx */ Double, 
     scala.Unit
   ] = js.native
@@ -249,8 +247,8 @@ object mod {
     /* trans */ MatrixTrans, 
     /* diag */ MatrixUnit, 
     /* n */ Double, 
-    /* ap */ Float32Array, 
-    /* x */ Float32Array, 
+    /* ap */ js.typedarray.Float32Array, 
+    /* x */ js.typedarray.Float32Array, 
     /* incx */ Double, 
     scala.Unit
   ] = js.native
@@ -262,8 +260,8 @@ object mod {
     /* trans */ MatrixTrans, 
     /* diag */ MatrixUnit, 
     /* n */ Double, 
-    /* ap */ Float32Array, 
-    /* x */ Float32Array, 
+    /* ap */ js.typedarray.Float32Array, 
+    /* x */ js.typedarray.Float32Array, 
     /* incx */ Double, 
     scala.Unit
   ] = js.native
@@ -277,10 +275,10 @@ object mod {
     /* diag */ MatrixUnit, 
     /* m */ Double, 
     /* n */ Double, 
-    /* alpha */ Float32Array, 
-    /* a */ Float32Array, 
+    /* alpha */ js.typedarray.Float32Array, 
+    /* a */ js.typedarray.Float32Array, 
     /* lda */ Double, 
-    /* b */ Float32Array, 
+    /* b */ js.typedarray.Float32Array, 
     /* ldb */ Double, 
     scala.Unit
   ] = js.native
@@ -292,9 +290,9 @@ object mod {
     /* trans */ MatrixTrans, 
     /* diag */ MatrixUnit, 
     /* n */ Double, 
-    /* a */ Float32Array, 
+    /* a */ js.typedarray.Float32Array, 
     /* lda */ Double, 
-    /* x */ Float32Array, 
+    /* x */ js.typedarray.Float32Array, 
     /* incx */ Double, 
     scala.Unit
   ] = js.native
@@ -308,10 +306,10 @@ object mod {
     /* diag */ MatrixUnit, 
     /* m */ Double, 
     /* n */ Double, 
-    /* alpha */ Float32Array, 
-    /* a */ Float32Array, 
+    /* alpha */ js.typedarray.Float32Array, 
+    /* a */ js.typedarray.Float32Array, 
     /* lda */ Double, 
-    /* b */ Float32Array, 
+    /* b */ js.typedarray.Float32Array, 
     /* ldb */ Double, 
     scala.Unit
   ] = js.native
@@ -323,25 +321,25 @@ object mod {
     /* trans */ MatrixTrans, 
     /* diag */ MatrixUnit, 
     /* n */ Double, 
-    /* a */ Float32Array, 
+    /* a */ js.typedarray.Float32Array, 
     /* lda */ Double, 
-    /* x */ Float32Array, 
+    /* x */ js.typedarray.Float32Array, 
     /* incx */ Double, 
     scala.Unit
   ] = js.native
   
   @JSImport("nblas", "dasum")
   @js.native
-  val dasum: js.Function3[/* n */ Double, /* x */ Float64Array, /* incx */ Double, Double] = js.native
+  val dasum: js.Function3[/* n */ Double, /* x */ js.typedarray.Float64Array, /* incx */ Double, Double] = js.native
   
   @JSImport("nblas", "daxpy")
   @js.native
   val daxpy: js.Function6[
     /* n */ Double, 
     /* alpha */ Double, 
-    /* x */ Float64Array, 
+    /* x */ js.typedarray.Float64Array, 
     /* incx */ Double, 
-    /* y */ Float64Array, 
+    /* y */ js.typedarray.Float64Array, 
     /* incy */ Double, 
     scala.Unit
   ] = js.native
@@ -350,9 +348,9 @@ object mod {
   @js.native
   val dcopy: js.Function5[
     /* n */ Double, 
-    /* x */ Float64Array, 
+    /* x */ js.typedarray.Float64Array, 
     /* incx */ Double, 
-    /* y */ Float64Array, 
+    /* y */ js.typedarray.Float64Array, 
     /* incy */ Double, 
     scala.Unit
   ] = js.native
@@ -361,9 +359,9 @@ object mod {
   @js.native
   val ddot: js.Function5[
     /* n */ Double, 
-    /* x */ Float64Array, 
+    /* x */ js.typedarray.Float64Array, 
     /* incx */ Double, 
-    /* y */ Float64Array, 
+    /* y */ js.typedarray.Float64Array, 
     /* incy */ Double, 
     Double
   ] = js.native
@@ -377,12 +375,12 @@ object mod {
     /* kl */ Double, 
     /* ku */ Double, 
     /* alpha */ Double, 
-    /* a */ Float64Array, 
+    /* a */ js.typedarray.Float64Array, 
     /* lda */ Double, 
-    /* x */ Float64Array, 
+    /* x */ js.typedarray.Float64Array, 
     /* incx */ Double, 
     /* beta */ Double, 
-    /* y */ Float64Array, 
+    /* y */ js.typedarray.Float64Array, 
     /* incy */ Double, 
     scala.Unit
   ] = js.native
@@ -396,12 +394,12 @@ object mod {
     /* n */ Double, 
     /* k */ Double, 
     /* alpha */ Double, 
-    /* a */ Float64Array, 
+    /* a */ js.typedarray.Float64Array, 
     /* lda */ Double, 
-    /* b */ Float64Array, 
+    /* b */ js.typedarray.Float64Array, 
     /* ldb */ Double, 
     /* beta */ Double, 
-    /* c */ Float64Array, 
+    /* c */ js.typedarray.Float64Array, 
     /* ldc */ Double, 
     scala.Unit
   ] = js.native
@@ -413,12 +411,12 @@ object mod {
     /* m */ Double, 
     /* n */ Double, 
     /* alpha */ Double, 
-    /* a */ Float64Array, 
+    /* a */ js.typedarray.Float64Array, 
     /* lda */ Double, 
-    /* x */ Float64Array, 
+    /* x */ js.typedarray.Float64Array, 
     /* incx */ Double, 
     /* beta */ Double, 
-    /* y */ Float64Array, 
+    /* y */ js.typedarray.Float64Array, 
     /* incy */ Double, 
     scala.Unit
   ] = js.native
@@ -429,18 +427,18 @@ object mod {
     /* m */ Double, 
     /* n */ Double, 
     /* alpha */ Double, 
-    /* x */ Float64Array, 
+    /* x */ js.typedarray.Float64Array, 
     /* incx */ Double, 
-    /* y */ Float64Array, 
+    /* y */ js.typedarray.Float64Array, 
     /* incy */ Double, 
-    /* a */ Float64Array, 
+    /* a */ js.typedarray.Float64Array, 
     /* lda */ Double, 
     scala.Unit
   ] = js.native
   
   @JSImport("nblas", "dnrm2")
   @js.native
-  val dnrm2: js.Function3[/* n */ Double, /* x */ Float64Array, /* incx */ Double, Double] = js.native
+  val dnrm2: js.Function3[/* n */ Double, /* x */ js.typedarray.Float64Array, /* incx */ Double, Double] = js.native
   
   @JSImport("nblas", "dot")
   @js.native
@@ -450,9 +448,9 @@ object mod {
   @js.native
   val drot: js.Function7[
     /* n */ Double, 
-    /* x */ Float64Array, 
+    /* x */ js.typedarray.Float64Array, 
     /* incx */ Double, 
-    /* y */ Float64Array, 
+    /* y */ js.typedarray.Float64Array, 
     /* incy */ Double, 
     /* c */ Double, 
     /* s */ Double, 
@@ -462,10 +460,10 @@ object mod {
   @JSImport("nblas", "drotg")
   @js.native
   val drotg: js.Function4[
-    /* a */ Float64Array, 
-    /* b */ Float64Array, 
-    /* c */ Float64Array, 
-    /* s */ Float64Array, 
+    /* a */ js.typedarray.Float64Array, 
+    /* b */ js.typedarray.Float64Array, 
+    /* c */ js.typedarray.Float64Array, 
+    /* s */ js.typedarray.Float64Array, 
     scala.Unit
   ] = js.native
   
@@ -473,9 +471,9 @@ object mod {
   @js.native
   val drotm: js.Function5[
     /* n */ Double, 
-    /* x */ Float64Array, 
+    /* x */ js.typedarray.Float64Array, 
     /* incx */ Double, 
-    /* y */ Float64Array, 
+    /* y */ js.typedarray.Float64Array, 
     /* incy */ Double, 
     scala.Unit
   ] = js.native
@@ -483,11 +481,11 @@ object mod {
   @JSImport("nblas", "drotmg")
   @js.native
   val drotmg: js.Function5[
-    /* d1 */ Float64Array, 
-    /* d2 */ Float64Array, 
-    /* x1 */ Float64Array, 
-    /* y1 */ Float64Array, 
-    /* param */ Float64Array, 
+    /* d1 */ js.typedarray.Float64Array, 
+    /* d2 */ js.typedarray.Float64Array, 
+    /* x1 */ js.typedarray.Float64Array, 
+    /* y1 */ js.typedarray.Float64Array, 
+    /* param */ js.typedarray.Float64Array, 
     scala.Unit
   ] = js.native
   
@@ -498,19 +496,25 @@ object mod {
     /* n */ Double, 
     /* k */ Double, 
     /* alpha */ Double, 
-    /* a */ Float64Array, 
+    /* a */ js.typedarray.Float64Array, 
     /* lda */ Double, 
-    /* x */ Float64Array, 
+    /* x */ js.typedarray.Float64Array, 
     /* incx */ Double, 
     /* beta */ Double, 
-    /* y */ Float64Array, 
+    /* y */ js.typedarray.Float64Array, 
     /* incy */ Double, 
     scala.Unit
   ] = js.native
   
   @JSImport("nblas", "dscal")
   @js.native
-  val dscal: js.Function4[/* n */ Double, /* a */ Double, /* x */ Float64Array, /* incx */ Double, scala.Unit] = js.native
+  val dscal: js.Function4[
+    /* n */ Double, 
+    /* a */ Double, 
+    /* x */ js.typedarray.Float64Array, 
+    /* incx */ Double, 
+    scala.Unit
+  ] = js.native
   
   @JSImport("nblas", "dspmv")
   @js.native
@@ -518,11 +522,11 @@ object mod {
     /* uplo */ MatrixUpperLower, 
     /* n */ Double, 
     /* alpha */ Double, 
-    /* ap */ Float64Array, 
-    /* x */ Float64Array, 
+    /* ap */ js.typedarray.Float64Array, 
+    /* x */ js.typedarray.Float64Array, 
     /* incx */ Double, 
     /* beta */ Double, 
-    /* y */ Float64Array, 
+    /* y */ js.typedarray.Float64Array, 
     /* incy */ Double, 
     scala.Unit
   ] = js.native
@@ -533,9 +537,9 @@ object mod {
     /* uplo */ MatrixUpperLower, 
     /* n */ Double, 
     /* alpha */ Double, 
-    /* x */ Float64Array, 
+    /* x */ js.typedarray.Float64Array, 
     /* incx */ Double, 
-    /* ap */ Float64Array, 
+    /* ap */ js.typedarray.Float64Array, 
     scala.Unit
   ] = js.native
   
@@ -545,11 +549,11 @@ object mod {
     /* uplo */ MatrixUpperLower, 
     /* n */ Double, 
     /* alpha */ Double, 
-    /* x */ Float64Array, 
+    /* x */ js.typedarray.Float64Array, 
     /* incx */ Double, 
-    /* y */ Float64Array, 
+    /* y */ js.typedarray.Float64Array, 
     /* incy */ Double, 
-    /* ap */ Float64Array, 
+    /* ap */ js.typedarray.Float64Array, 
     scala.Unit
   ] = js.native
   
@@ -557,9 +561,9 @@ object mod {
   @js.native
   val dswap: js.Function5[
     /* n */ Double, 
-    /* x */ Float64Array, 
+    /* x */ js.typedarray.Float64Array, 
     /* incx */ Double, 
-    /* y */ Float64Array, 
+    /* y */ js.typedarray.Float64Array, 
     /* incy */ Double, 
     scala.Unit
   ] = js.native
@@ -572,12 +576,12 @@ object mod {
     /* m */ Double, 
     /* n */ Double, 
     /* alpha */ Double, 
-    /* a */ Float64Array, 
+    /* a */ js.typedarray.Float64Array, 
     /* lda */ Double, 
-    /* b */ Float64Array, 
+    /* b */ js.typedarray.Float64Array, 
     /* ldb */ Double, 
     /* beta */ Double, 
-    /* c */ Float64Array, 
+    /* c */ js.typedarray.Float64Array, 
     /* ldc */ Double, 
     scala.Unit
   ] = js.native
@@ -588,12 +592,12 @@ object mod {
     /* uplo */ MatrixUpperLower, 
     /* n */ Double, 
     /* alpha */ Double, 
-    /* a */ Float64Array, 
+    /* a */ js.typedarray.Float64Array, 
     /* lda */ Double, 
-    /* x */ Float64Array, 
+    /* x */ js.typedarray.Float64Array, 
     /* incx */ Double, 
     /* beta */ Double, 
-    /* y */ Float64Array, 
+    /* y */ js.typedarray.Float64Array, 
     /* incy */ Double, 
     scala.Unit
   ] = js.native
@@ -604,9 +608,9 @@ object mod {
     /* uplo */ MatrixUpperLower, 
     /* n */ Double, 
     /* alpha */ Double, 
-    /* x */ Float64Array, 
+    /* x */ js.typedarray.Float64Array, 
     /* incx */ Double, 
-    /* a */ Float64Array, 
+    /* a */ js.typedarray.Float64Array, 
     /* lda */ Double, 
     scala.Unit
   ] = js.native
@@ -617,11 +621,11 @@ object mod {
     /* uplo */ MatrixUpperLower, 
     /* n */ Double, 
     /* alpha */ Double, 
-    /* x */ Float64Array, 
+    /* x */ js.typedarray.Float64Array, 
     /* incx */ Double, 
-    /* y */ Float64Array, 
+    /* y */ js.typedarray.Float64Array, 
     /* incy */ Double, 
-    /* a */ Float64Array, 
+    /* a */ js.typedarray.Float64Array, 
     /* lda */ Double, 
     scala.Unit
   ] = js.native
@@ -634,12 +638,12 @@ object mod {
     /* n */ Double, 
     /* k */ Double, 
     /* alpha */ Double, 
-    /* a */ Float64Array, 
+    /* a */ js.typedarray.Float64Array, 
     /* lda */ Double, 
-    /* b */ Float64Array, 
+    /* b */ js.typedarray.Float64Array, 
     /* ldb */ Double, 
     /* beta */ Double, 
-    /* c */ Float64Array, 
+    /* c */ js.typedarray.Float64Array, 
     /* ldc */ Double, 
     scala.Unit
   ] = js.native
@@ -652,10 +656,10 @@ object mod {
     /* n */ Double, 
     /* k */ Double, 
     /* alpha */ Double, 
-    /* a */ Float64Array, 
+    /* a */ js.typedarray.Float64Array, 
     /* lda */ Double, 
     /* beta */ Double, 
-    /* c */ Float64Array, 
+    /* c */ js.typedarray.Float64Array, 
     /* ldc */ Double, 
     scala.Unit
   ] = js.native
@@ -668,9 +672,9 @@ object mod {
     /* diag */ MatrixUnit, 
     /* n */ Double, 
     /* k */ Double, 
-    /* a */ Float64Array, 
+    /* a */ js.typedarray.Float64Array, 
     /* lda */ Double, 
-    /* x */ Float64Array, 
+    /* x */ js.typedarray.Float64Array, 
     /* incx */ Double, 
     scala.Unit
   ] = js.native
@@ -683,9 +687,9 @@ object mod {
     /* diag */ MatrixUnit, 
     /* n */ Double, 
     /* k */ Double, 
-    /* a */ Float64Array, 
+    /* a */ js.typedarray.Float64Array, 
     /* lda */ Double, 
-    /* x */ Float64Array, 
+    /* x */ js.typedarray.Float64Array, 
     /* incx */ Double, 
     scala.Unit
   ] = js.native
@@ -697,8 +701,8 @@ object mod {
     /* trans */ MatrixTrans, 
     /* diag */ MatrixUnit, 
     /* n */ Double, 
-    /* ap */ Float64Array, 
-    /* x */ Float64Array, 
+    /* ap */ js.typedarray.Float64Array, 
+    /* x */ js.typedarray.Float64Array, 
     /* incx */ Double, 
     scala.Unit
   ] = js.native
@@ -710,8 +714,8 @@ object mod {
     /* trans */ MatrixTrans, 
     /* diag */ MatrixUnit, 
     /* n */ Double, 
-    /* ap */ Float64Array, 
-    /* x */ Float64Array, 
+    /* ap */ js.typedarray.Float64Array, 
+    /* x */ js.typedarray.Float64Array, 
     /* incx */ Double, 
     scala.Unit
   ] = js.native
@@ -726,9 +730,9 @@ object mod {
     /* m */ Double, 
     /* n */ Double, 
     /* alpha */ Double, 
-    /* a */ Float64Array, 
+    /* a */ js.typedarray.Float64Array, 
     /* lda */ Double, 
-    /* b */ Float64Array, 
+    /* b */ js.typedarray.Float64Array, 
     /* ldb */ Double, 
     scala.Unit
   ] = js.native
@@ -740,9 +744,9 @@ object mod {
     /* trans */ MatrixTrans, 
     /* diag */ MatrixUnit, 
     /* n */ Double, 
-    /* a */ Float64Array, 
+    /* a */ js.typedarray.Float64Array, 
     /* lda */ Double, 
-    /* x */ Float64Array, 
+    /* x */ js.typedarray.Float64Array, 
     /* incx */ Double, 
     scala.Unit
   ] = js.native
@@ -757,9 +761,9 @@ object mod {
     /* m */ Double, 
     /* n */ Double, 
     /* alpha */ Double, 
-    /* a */ Float64Array, 
+    /* a */ js.typedarray.Float64Array, 
     /* lda */ Double, 
-    /* b */ Float64Array, 
+    /* b */ js.typedarray.Float64Array, 
     /* ldb */ Double, 
     scala.Unit
   ] = js.native
@@ -771,20 +775,20 @@ object mod {
     /* trans */ MatrixTrans, 
     /* diag */ MatrixUnit, 
     /* n */ Double, 
-    /* a */ Float64Array, 
+    /* a */ js.typedarray.Float64Array, 
     /* lda */ Double, 
-    /* x */ Float64Array, 
+    /* x */ js.typedarray.Float64Array, 
     /* incx */ Double, 
     scala.Unit
   ] = js.native
   
   @JSImport("nblas", "dzasum")
   @js.native
-  val dzasum: js.Function3[/* n */ Double, /* x */ Float64Array, /* incx */ Double, Double] = js.native
+  val dzasum: js.Function3[/* n */ Double, /* x */ js.typedarray.Float64Array, /* incx */ Double, Double] = js.native
   
   @JSImport("nblas", "dznrm2")
   @js.native
-  val dznrm2: js.Function3[/* n */ Double, /* x */ Float64Array, /* incx */ Double, Double] = js.native
+  val dznrm2: js.Function3[/* n */ Double, /* x */ js.typedarray.Float64Array, /* incx */ Double, Double] = js.native
   
   @JSImport("nblas", "gbmv")
   @js.native
@@ -844,19 +848,19 @@ object mod {
   
   @JSImport("nblas", "icamax")
   @js.native
-  val icamax: js.Function3[/* n */ Double, /* x */ Float32Array, /* incx */ Double, Double] = js.native
+  val icamax: js.Function3[/* n */ Double, /* x */ js.typedarray.Float32Array, /* incx */ Double, Double] = js.native
   
   @JSImport("nblas", "idamax")
   @js.native
-  val idamax: js.Function3[/* n */ Double, /* x */ Float64Array, /* incx */ Double, Double] = js.native
+  val idamax: js.Function3[/* n */ Double, /* x */ js.typedarray.Float64Array, /* incx */ Double, Double] = js.native
   
   @JSImport("nblas", "isamax")
   @js.native
-  val isamax: js.Function3[/* n */ Double, /* x */ Float32Array, /* incx */ Double, Double] = js.native
+  val isamax: js.Function3[/* n */ Double, /* x */ js.typedarray.Float32Array, /* incx */ Double, Double] = js.native
   
   @JSImport("nblas", "izamax")
   @js.native
-  val izamax: js.Function3[/* n */ Double, /* x */ Float64Array, /* incx */ Double, Double] = js.native
+  val izamax: js.Function3[/* n */ Double, /* x */ js.typedarray.Float64Array, /* incx */ Double, Double] = js.native
   
   @JSImport("nblas", "nrm2")
   @js.native
@@ -893,16 +897,16 @@ object mod {
   
   @JSImport("nblas", "sasum")
   @js.native
-  val sasum: js.Function3[/* n */ Double, /* x */ Float32Array, /* incx */ Double, Double] = js.native
+  val sasum: js.Function3[/* n */ Double, /* x */ js.typedarray.Float32Array, /* incx */ Double, Double] = js.native
   
   @JSImport("nblas", "saxpy")
   @js.native
   val saxpy: js.Function6[
     /* n */ Double, 
     /* alpha */ Double, 
-    /* x */ Float32Array, 
+    /* x */ js.typedarray.Float32Array, 
     /* incx */ Double, 
-    /* y */ Float32Array, 
+    /* y */ js.typedarray.Float32Array, 
     /* incy */ Double, 
     scala.Unit
   ] = js.native
@@ -926,19 +930,19 @@ object mod {
   
   @JSImport("nblas", "scasum")
   @js.native
-  val scasum: js.Function3[/* n */ Double, /* x */ Float32Array, /* incx */ Double, Double] = js.native
+  val scasum: js.Function3[/* n */ Double, /* x */ js.typedarray.Float32Array, /* incx */ Double, Double] = js.native
   
   @JSImport("nblas", "scnrm2")
   @js.native
-  val scnrm2: js.Function3[/* n */ Double, /* x */ Float32Array, /* incx */ Double, Double] = js.native
+  val scnrm2: js.Function3[/* n */ Double, /* x */ js.typedarray.Float32Array, /* incx */ Double, Double] = js.native
   
   @JSImport("nblas", "scopy")
   @js.native
   val scopy: js.Function5[
     /* n */ Double, 
-    /* x */ Float32Array, 
+    /* x */ js.typedarray.Float32Array, 
     /* incx */ Double, 
-    /* y */ Float32Array, 
+    /* y */ js.typedarray.Float32Array, 
     /* incy */ Double, 
     scala.Unit
   ] = js.native
@@ -947,9 +951,9 @@ object mod {
   @js.native
   val sdot: js.Function5[
     /* n */ Double, 
-    /* x */ Float32Array, 
+    /* x */ js.typedarray.Float32Array, 
     /* incx */ Double, 
-    /* y */ Float32Array, 
+    /* y */ js.typedarray.Float32Array, 
     /* incy */ Double, 
     Double
   ] = js.native
@@ -963,12 +967,12 @@ object mod {
     /* kl */ Double, 
     /* ku */ Double, 
     /* alpha */ Double, 
-    /* a */ Float32Array, 
+    /* a */ js.typedarray.Float32Array, 
     /* lda */ Double, 
-    /* x */ Float32Array, 
+    /* x */ js.typedarray.Float32Array, 
     /* incx */ Double, 
     /* beta */ Double, 
-    /* y */ Float32Array, 
+    /* y */ js.typedarray.Float32Array, 
     /* incy */ Double, 
     scala.Unit
   ] = js.native
@@ -982,12 +986,12 @@ object mod {
     /* n */ Double, 
     /* k */ Double, 
     /* alpha */ Double, 
-    /* a */ Float32Array, 
+    /* a */ js.typedarray.Float32Array, 
     /* lda */ Double, 
-    /* b */ Float32Array, 
+    /* b */ js.typedarray.Float32Array, 
     /* ldb */ Double, 
     /* beta */ Double, 
-    /* c */ Float32Array, 
+    /* c */ js.typedarray.Float32Array, 
     /* ldc */ Double, 
     scala.Unit
   ] = js.native
@@ -999,12 +1003,12 @@ object mod {
     /* m */ Double, 
     /* n */ Double, 
     /* alpha */ Double, 
-    /* a */ Float32Array, 
+    /* a */ js.typedarray.Float32Array, 
     /* lda */ Double, 
-    /* x */ Float32Array, 
+    /* x */ js.typedarray.Float32Array, 
     /* incx */ Double, 
     /* beta */ Double, 
-    /* y */ Float32Array, 
+    /* y */ js.typedarray.Float32Array, 
     /* incy */ Double, 
     scala.Unit
   ] = js.native
@@ -1015,18 +1019,18 @@ object mod {
     /* m */ Double, 
     /* n */ Double, 
     /* alpha */ Double, 
-    /* x */ Float32Array, 
+    /* x */ js.typedarray.Float32Array, 
     /* incx */ Double, 
-    /* y */ Float32Array, 
+    /* y */ js.typedarray.Float32Array, 
     /* incy */ Double, 
-    /* a */ Float32Array, 
+    /* a */ js.typedarray.Float32Array, 
     /* lda */ Double, 
     scala.Unit
   ] = js.native
   
   @JSImport("nblas", "snrm2")
   @js.native
-  val snrm2: js.Function3[/* n */ Double, /* x */ Float32Array, /* incx */ Double, Double] = js.native
+  val snrm2: js.Function3[/* n */ Double, /* x */ js.typedarray.Float32Array, /* incx */ Double, Double] = js.native
   
   @JSImport("nblas", "spmv")
   @js.native
@@ -1065,9 +1069,9 @@ object mod {
   @js.native
   val srot: js.Function7[
     /* n */ Double, 
-    /* x */ Float32Array, 
+    /* x */ js.typedarray.Float32Array, 
     /* incx */ Double, 
-    /* y */ Float32Array, 
+    /* y */ js.typedarray.Float32Array, 
     /* incy */ Double, 
     /* c */ Double, 
     /* s */ Double, 
@@ -1077,10 +1081,10 @@ object mod {
   @JSImport("nblas", "srotg")
   @js.native
   val srotg: js.Function4[
-    /* a */ Float32Array, 
-    /* b */ Float32Array, 
-    /* c */ Float32Array, 
-    /* s */ Float32Array, 
+    /* a */ js.typedarray.Float32Array, 
+    /* b */ js.typedarray.Float32Array, 
+    /* c */ js.typedarray.Float32Array, 
+    /* s */ js.typedarray.Float32Array, 
     scala.Unit
   ] = js.native
   
@@ -1088,9 +1092,9 @@ object mod {
   @js.native
   val srotm: js.Function5[
     /* n */ Double, 
-    /* x */ Float32Array, 
+    /* x */ js.typedarray.Float32Array, 
     /* incx */ Double, 
-    /* y */ Float32Array, 
+    /* y */ js.typedarray.Float32Array, 
     /* incy */ Double, 
     scala.Unit
   ] = js.native
@@ -1098,11 +1102,11 @@ object mod {
   @JSImport("nblas", "srotmg")
   @js.native
   val srotmg: js.Function5[
-    /* d1 */ Float32Array, 
-    /* d2 */ Float32Array, 
-    /* x1 */ Float32Array, 
-    /* y1 */ Float32Array, 
-    /* param */ Float32Array, 
+    /* d1 */ js.typedarray.Float32Array, 
+    /* d2 */ js.typedarray.Float32Array, 
+    /* x1 */ js.typedarray.Float32Array, 
+    /* y1 */ js.typedarray.Float32Array, 
+    /* param */ js.typedarray.Float32Array, 
     scala.Unit
   ] = js.native
   
@@ -1113,19 +1117,25 @@ object mod {
     /* n */ Double, 
     /* k */ Double, 
     /* alpha */ Double, 
-    /* a */ Float32Array, 
+    /* a */ js.typedarray.Float32Array, 
     /* lda */ Double, 
-    /* x */ Float32Array, 
+    /* x */ js.typedarray.Float32Array, 
     /* incx */ Double, 
     /* beta */ Double, 
-    /* y */ Float32Array, 
+    /* y */ js.typedarray.Float32Array, 
     /* incy */ Double, 
     scala.Unit
   ] = js.native
   
   @JSImport("nblas", "sscal")
   @js.native
-  val sscal: js.Function4[/* n */ Double, /* a */ Double, /* x */ Float32Array, /* incx */ Double, scala.Unit] = js.native
+  val sscal: js.Function4[
+    /* n */ Double, 
+    /* a */ Double, 
+    /* x */ js.typedarray.Float32Array, 
+    /* incx */ Double, 
+    scala.Unit
+  ] = js.native
   
   @JSImport("nblas", "sspmv")
   @js.native
@@ -1133,11 +1143,11 @@ object mod {
     /* uplo */ MatrixUpperLower, 
     /* n */ Double, 
     /* alpha */ Double, 
-    /* ap */ Float32Array, 
-    /* x */ Float32Array, 
+    /* ap */ js.typedarray.Float32Array, 
+    /* x */ js.typedarray.Float32Array, 
     /* incx */ Double, 
     /* beta */ Double, 
-    /* y */ Float32Array, 
+    /* y */ js.typedarray.Float32Array, 
     /* incy */ Double, 
     scala.Unit
   ] = js.native
@@ -1148,9 +1158,9 @@ object mod {
     /* uplo */ MatrixUpperLower, 
     /* n */ Double, 
     /* alpha */ Double, 
-    /* x */ Float32Array, 
+    /* x */ js.typedarray.Float32Array, 
     /* incx */ Double, 
-    /* ap */ Float32Array, 
+    /* ap */ js.typedarray.Float32Array, 
     scala.Unit
   ] = js.native
   
@@ -1160,11 +1170,11 @@ object mod {
     /* uplo */ MatrixUpperLower, 
     /* n */ Double, 
     /* alpha */ Double, 
-    /* x */ Float32Array, 
+    /* x */ js.typedarray.Float32Array, 
     /* incx */ Double, 
-    /* y */ Float32Array, 
+    /* y */ js.typedarray.Float32Array, 
     /* incy */ Double, 
-    /* ap */ Float32Array, 
+    /* ap */ js.typedarray.Float32Array, 
     scala.Unit
   ] = js.native
   
@@ -1172,9 +1182,9 @@ object mod {
   @js.native
   val sswap: js.Function5[
     /* n */ Double, 
-    /* x */ Float32Array, 
+    /* x */ js.typedarray.Float32Array, 
     /* incx */ Double, 
-    /* y */ Float32Array, 
+    /* y */ js.typedarray.Float32Array, 
     /* incy */ Double, 
     scala.Unit
   ] = js.native
@@ -1187,12 +1197,12 @@ object mod {
     /* m */ Double, 
     /* n */ Double, 
     /* alpha */ Double, 
-    /* a */ Float32Array, 
+    /* a */ js.typedarray.Float32Array, 
     /* lda */ Double, 
-    /* b */ Float32Array, 
+    /* b */ js.typedarray.Float32Array, 
     /* ldb */ Double, 
     /* beta */ Double, 
-    /* c */ Float32Array, 
+    /* c */ js.typedarray.Float32Array, 
     /* ldc */ Double, 
     scala.Unit
   ] = js.native
@@ -1203,12 +1213,12 @@ object mod {
     /* uplo */ MatrixUpperLower, 
     /* n */ Double, 
     /* alpha */ Double, 
-    /* a */ Float32Array, 
+    /* a */ js.typedarray.Float32Array, 
     /* lda */ Double, 
-    /* x */ Float32Array, 
+    /* x */ js.typedarray.Float32Array, 
     /* incx */ Double, 
     /* beta */ Double, 
-    /* y */ Float32Array, 
+    /* y */ js.typedarray.Float32Array, 
     /* incy */ Double, 
     scala.Unit
   ] = js.native
@@ -1219,9 +1229,9 @@ object mod {
     /* uplo */ MatrixUpperLower, 
     /* n */ Double, 
     /* alpha */ Double, 
-    /* x */ Float32Array, 
+    /* x */ js.typedarray.Float32Array, 
     /* incx */ Double, 
-    /* a */ Float32Array, 
+    /* a */ js.typedarray.Float32Array, 
     /* lda */ Double, 
     scala.Unit
   ] = js.native
@@ -1232,11 +1242,11 @@ object mod {
     /* uplo */ MatrixUpperLower, 
     /* n */ Double, 
     /* alpha */ Double, 
-    /* x */ Float32Array, 
+    /* x */ js.typedarray.Float32Array, 
     /* incx */ Double, 
-    /* y */ Float32Array, 
+    /* y */ js.typedarray.Float32Array, 
     /* incy */ Double, 
-    /* a */ Float32Array, 
+    /* a */ js.typedarray.Float32Array, 
     /* lda */ Double, 
     scala.Unit
   ] = js.native
@@ -1249,12 +1259,12 @@ object mod {
     /* n */ Double, 
     /* k */ Double, 
     /* alpha */ Double, 
-    /* a */ Float32Array, 
+    /* a */ js.typedarray.Float32Array, 
     /* lda */ Double, 
-    /* b */ Float32Array, 
+    /* b */ js.typedarray.Float32Array, 
     /* ldb */ Double, 
     /* beta */ Double, 
-    /* c */ Float32Array, 
+    /* c */ js.typedarray.Float32Array, 
     /* ldc */ Double, 
     scala.Unit
   ] = js.native
@@ -1267,10 +1277,10 @@ object mod {
     /* n */ Double, 
     /* k */ Double, 
     /* alpha */ Double, 
-    /* a */ Float32Array, 
+    /* a */ js.typedarray.Float32Array, 
     /* lda */ Double, 
     /* beta */ Double, 
-    /* c */ Float32Array, 
+    /* c */ js.typedarray.Float32Array, 
     /* ldc */ Double, 
     scala.Unit
   ] = js.native
@@ -1283,9 +1293,9 @@ object mod {
     /* diag */ MatrixUnit, 
     /* n */ Double, 
     /* k */ Double, 
-    /* a */ Float32Array, 
+    /* a */ js.typedarray.Float32Array, 
     /* lda */ Double, 
-    /* x */ Float32Array, 
+    /* x */ js.typedarray.Float32Array, 
     /* incx */ Double, 
     scala.Unit
   ] = js.native
@@ -1298,9 +1308,9 @@ object mod {
     /* diag */ MatrixUnit, 
     /* n */ Double, 
     /* k */ Double, 
-    /* a */ Float32Array, 
+    /* a */ js.typedarray.Float32Array, 
     /* lda */ Double, 
-    /* x */ Float32Array, 
+    /* x */ js.typedarray.Float32Array, 
     /* incx */ Double, 
     scala.Unit
   ] = js.native
@@ -1312,8 +1322,8 @@ object mod {
     /* trans */ MatrixTrans, 
     /* diag */ MatrixUnit, 
     /* n */ Double, 
-    /* ap */ Float32Array, 
-    /* x */ Float32Array, 
+    /* ap */ js.typedarray.Float32Array, 
+    /* x */ js.typedarray.Float32Array, 
     /* incx */ Double, 
     scala.Unit
   ] = js.native
@@ -1325,8 +1335,8 @@ object mod {
     /* trans */ MatrixTrans, 
     /* diag */ MatrixUnit, 
     /* n */ Double, 
-    /* ap */ Float32Array, 
-    /* x */ Float32Array, 
+    /* ap */ js.typedarray.Float32Array, 
+    /* x */ js.typedarray.Float32Array, 
     /* incx */ Double, 
     scala.Unit
   ] = js.native
@@ -1341,9 +1351,9 @@ object mod {
     /* m */ Double, 
     /* n */ Double, 
     /* alpha */ Double, 
-    /* a */ Float32Array, 
+    /* a */ js.typedarray.Float32Array, 
     /* lda */ Double, 
-    /* b */ Float32Array, 
+    /* b */ js.typedarray.Float32Array, 
     /* ldb */ Double, 
     scala.Unit
   ] = js.native
@@ -1355,9 +1365,9 @@ object mod {
     /* trans */ MatrixTrans, 
     /* diag */ MatrixUnit, 
     /* n */ Double, 
-    /* a */ Float32Array, 
+    /* a */ js.typedarray.Float32Array, 
     /* lda */ Double, 
-    /* x */ Float32Array, 
+    /* x */ js.typedarray.Float32Array, 
     /* incx */ Double, 
     scala.Unit
   ] = js.native
@@ -1372,9 +1382,9 @@ object mod {
     /* m */ Double, 
     /* n */ Double, 
     /* alpha */ Double, 
-    /* a */ Float32Array, 
+    /* a */ js.typedarray.Float32Array, 
     /* lda */ Double, 
-    /* b */ Float32Array, 
+    /* b */ js.typedarray.Float32Array, 
     /* ldb */ Double, 
     scala.Unit
   ] = js.native
@@ -1386,9 +1396,9 @@ object mod {
     /* trans */ MatrixTrans, 
     /* diag */ MatrixUnit, 
     /* n */ Double, 
-    /* a */ Float32Array, 
+    /* a */ js.typedarray.Float32Array, 
     /* lda */ Double, 
-    /* x */ Float32Array, 
+    /* x */ js.typedarray.Float32Array, 
     /* incx */ Double, 
     scala.Unit
   ] = js.native
@@ -1574,10 +1584,10 @@ object mod {
   @js.native
   val zaxpy: js.Function6[
     /* n */ Double, 
-    /* alpha */ Float64Array, 
-    /* x */ Float64Array, 
+    /* alpha */ js.typedarray.Float64Array, 
+    /* x */ js.typedarray.Float64Array, 
     /* incx */ Double, 
-    /* y */ Float64Array, 
+    /* y */ js.typedarray.Float64Array, 
     /* incy */ Double, 
     scala.Unit
   ] = js.native
@@ -1586,9 +1596,9 @@ object mod {
   @js.native
   val zcopy: js.Function5[
     /* n */ Double, 
-    /* x */ Float64Array, 
+    /* x */ js.typedarray.Float64Array, 
     /* incx */ Double, 
-    /* y */ Float64Array, 
+    /* y */ js.typedarray.Float64Array, 
     /* incy */ Double, 
     scala.Unit
   ] = js.native
@@ -1601,13 +1611,13 @@ object mod {
     /* n */ Double, 
     /* kl */ Double, 
     /* ku */ Double, 
-    /* alpha */ Float64Array, 
-    /* a */ Float64Array, 
+    /* alpha */ js.typedarray.Float64Array, 
+    /* a */ js.typedarray.Float64Array, 
     /* lda */ Double, 
-    /* x */ Float64Array, 
+    /* x */ js.typedarray.Float64Array, 
     /* incx */ Double, 
-    /* beta */ Float64Array, 
-    /* y */ Float64Array, 
+    /* beta */ js.typedarray.Float64Array, 
+    /* y */ js.typedarray.Float64Array, 
     /* incy */ Double, 
     scala.Unit
   ] = js.native
@@ -1620,13 +1630,13 @@ object mod {
     /* m */ Double, 
     /* n */ Double, 
     /* k */ Double, 
-    /* alpha */ Float64Array, 
-    /* a */ Float64Array, 
+    /* alpha */ js.typedarray.Float64Array, 
+    /* a */ js.typedarray.Float64Array, 
     /* lda */ Double, 
-    /* b */ Float64Array, 
+    /* b */ js.typedarray.Float64Array, 
     /* ldb */ Double, 
-    /* beta */ Float64Array, 
-    /* c */ Float64Array, 
+    /* beta */ js.typedarray.Float64Array, 
+    /* c */ js.typedarray.Float64Array, 
     /* ldc */ Double, 
     scala.Unit
   ] = js.native
@@ -1637,13 +1647,13 @@ object mod {
     /* trans */ MatrixTrans, 
     /* m */ Double, 
     /* n */ Double, 
-    /* alpha */ Float64Array, 
-    /* a */ Float64Array, 
+    /* alpha */ js.typedarray.Float64Array, 
+    /* a */ js.typedarray.Float64Array, 
     /* lda */ Double, 
-    /* x */ Float64Array, 
+    /* x */ js.typedarray.Float64Array, 
     /* incx */ Double, 
-    /* beta */ Float64Array, 
-    /* y */ Float64Array, 
+    /* beta */ js.typedarray.Float64Array, 
+    /* y */ js.typedarray.Float64Array, 
     /* incy */ Double, 
     scala.Unit
   ] = js.native
@@ -1652,8 +1662,8 @@ object mod {
   @js.native
   val zscal: js.Function4[
     /* n */ Double, 
-    /* a */ Float64Array, 
-    /* x */ Float64Array, 
+    /* a */ js.typedarray.Float64Array, 
+    /* x */ js.typedarray.Float64Array, 
     /* incx */ Double, 
     scala.Unit
   ] = js.native
@@ -1662,9 +1672,9 @@ object mod {
   @js.native
   val zswap: js.Function5[
     /* n */ Double, 
-    /* x */ Float64Array, 
+    /* x */ js.typedarray.Float64Array, 
     /* incx */ Double, 
-    /* y */ Float64Array, 
+    /* y */ js.typedarray.Float64Array, 
     /* incy */ Double, 
     scala.Unit
   ] = js.native
@@ -1676,13 +1686,13 @@ object mod {
     /* uplo */ MatrixUpperLower, 
     /* m */ Double, 
     /* n */ Double, 
-    /* alpha */ Float64Array, 
-    /* a */ Float64Array, 
+    /* alpha */ js.typedarray.Float64Array, 
+    /* a */ js.typedarray.Float64Array, 
     /* lda */ Double, 
-    /* b */ Float64Array, 
+    /* b */ js.typedarray.Float64Array, 
     /* ldb */ Double, 
-    /* beta */ Float64Array, 
-    /* c */ Float64Array, 
+    /* beta */ js.typedarray.Float64Array, 
+    /* c */ js.typedarray.Float64Array, 
     /* ldc */ Double, 
     scala.Unit
   ] = js.native
@@ -1694,13 +1704,13 @@ object mod {
     /* trans */ MatrixTrans, 
     /* n */ Double, 
     /* k */ Double, 
-    /* alpha */ Float64Array, 
-    /* a */ Float64Array, 
+    /* alpha */ js.typedarray.Float64Array, 
+    /* a */ js.typedarray.Float64Array, 
     /* lda */ Double, 
-    /* b */ Float64Array, 
+    /* b */ js.typedarray.Float64Array, 
     /* ldb */ Double, 
-    /* beta */ Float64Array, 
-    /* c */ Float64Array, 
+    /* beta */ js.typedarray.Float64Array, 
+    /* c */ js.typedarray.Float64Array, 
     /* ldc */ Double, 
     scala.Unit
   ] = js.native
@@ -1712,11 +1722,11 @@ object mod {
     /* trans */ MatrixTrans, 
     /* n */ Double, 
     /* k */ Double, 
-    /* alpha */ Float64Array, 
-    /* a */ Float64Array, 
+    /* alpha */ js.typedarray.Float64Array, 
+    /* a */ js.typedarray.Float64Array, 
     /* lda */ Double, 
-    /* beta */ Float64Array, 
-    /* c */ Float64Array, 
+    /* beta */ js.typedarray.Float64Array, 
+    /* c */ js.typedarray.Float64Array, 
     /* ldc */ Double, 
     scala.Unit
   ] = js.native
@@ -1729,9 +1739,9 @@ object mod {
     /* diag */ MatrixUnit, 
     /* n */ Double, 
     /* k */ Double, 
-    /* a */ Float64Array, 
+    /* a */ js.typedarray.Float64Array, 
     /* lda */ Double, 
-    /* x */ Float64Array, 
+    /* x */ js.typedarray.Float64Array, 
     /* incx */ Double, 
     scala.Unit
   ] = js.native
@@ -1744,9 +1754,9 @@ object mod {
     /* diag */ MatrixUnit, 
     /* n */ Double, 
     /* k */ Double, 
-    /* a */ Float64Array, 
+    /* a */ js.typedarray.Float64Array, 
     /* lda */ Double, 
-    /* x */ Float64Array, 
+    /* x */ js.typedarray.Float64Array, 
     /* incx */ Double, 
     scala.Unit
   ] = js.native
@@ -1758,8 +1768,8 @@ object mod {
     /* trans */ MatrixTrans, 
     /* diag */ MatrixUnit, 
     /* n */ Double, 
-    /* ap */ Float64Array, 
-    /* x */ Float64Array, 
+    /* ap */ js.typedarray.Float64Array, 
+    /* x */ js.typedarray.Float64Array, 
     /* incx */ Double, 
     scala.Unit
   ] = js.native
@@ -1771,8 +1781,8 @@ object mod {
     /* trans */ MatrixTrans, 
     /* diag */ MatrixUnit, 
     /* n */ Double, 
-    /* ap */ Float64Array, 
-    /* x */ Float64Array, 
+    /* ap */ js.typedarray.Float64Array, 
+    /* x */ js.typedarray.Float64Array, 
     /* incx */ Double, 
     scala.Unit
   ] = js.native
@@ -1786,10 +1796,10 @@ object mod {
     /* diag */ MatrixUnit, 
     /* m */ Double, 
     /* n */ Double, 
-    /* alpha */ Float64Array, 
-    /* a */ Float64Array, 
+    /* alpha */ js.typedarray.Float64Array, 
+    /* a */ js.typedarray.Float64Array, 
     /* lda */ Double, 
-    /* b */ Float64Array, 
+    /* b */ js.typedarray.Float64Array, 
     /* ldb */ Double, 
     scala.Unit
   ] = js.native
@@ -1801,9 +1811,9 @@ object mod {
     /* trans */ MatrixTrans, 
     /* diag */ MatrixUnit, 
     /* n */ Double, 
-    /* a */ Float64Array, 
+    /* a */ js.typedarray.Float64Array, 
     /* lda */ Double, 
-    /* x */ Float64Array, 
+    /* x */ js.typedarray.Float64Array, 
     /* incx */ Double, 
     scala.Unit
   ] = js.native
@@ -1817,10 +1827,10 @@ object mod {
     /* diag */ MatrixUnit, 
     /* m */ Double, 
     /* n */ Double, 
-    /* alpha */ Float64Array, 
-    /* a */ Float64Array, 
+    /* alpha */ js.typedarray.Float64Array, 
+    /* a */ js.typedarray.Float64Array, 
     /* lda */ Double, 
-    /* b */ Float64Array, 
+    /* b */ js.typedarray.Float64Array, 
     /* ldb */ Double, 
     scala.Unit
   ] = js.native
@@ -1832,9 +1842,9 @@ object mod {
     /* trans */ MatrixTrans, 
     /* diag */ MatrixUnit, 
     /* n */ Double, 
-    /* a */ Float64Array, 
+    /* a */ js.typedarray.Float64Array, 
     /* lda */ Double, 
-    /* x */ Float64Array, 
+    /* x */ js.typedarray.Float64Array, 
     /* incx */ Double, 
     scala.Unit
   ] = js.native

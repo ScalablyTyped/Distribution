@@ -9,10 +9,10 @@
 | ------------------ | :-------------: |
 | Full name          | angular-agility |
 | Keywords           | angular, forms, validation, dsl, bootstrap, dirty, changed, select2, notificaiton, growl |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 2377 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 235.33333333333334 |
+| # stars            | 278.0 |
 
 ## Links
 - [Homepage](https://github.com/AngularAgility/AngularAgility#readme)

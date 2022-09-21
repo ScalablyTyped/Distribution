@@ -10,10 +10,10 @@ object refreshIndicatorMod {
   
   @JSImport("material-ui/RefreshIndicator", JSImport.Default)
   @js.native
-  class default () extends RefreshIndicator
+  open class default () extends RefreshIndicator
   
   @JSImport("material-ui/RefreshIndicator", "RefreshIndicator")
   @js.native
-  class RefreshIndicator ()
-    extends Component[RefreshIndicatorProps, js.Object, js.Any]
+  open class RefreshIndicator ()
+    extends Component[RefreshIndicatorProps, js.Object, Any]
 }

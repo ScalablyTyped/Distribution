@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ethersproject/abi" : "5.0.0-beta.153"
+      "@ethersproject/abi" : "5.7.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@ethersproject/abi" : "5.0.0-beta.153"
+      "@ethersproject/abi" : "5.7.0"
     }
   ],
   "compile-devDependencies" : [

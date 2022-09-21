@@ -22,6 +22,6 @@ object UpdateDeveloperMetadataResponse {
     
     inline def setDeveloperMetadataUndefined: Self = StObject.set(x, "developerMetadata", js.undefined)
     
-    inline def setDeveloperMetadataVarargs(value: DeveloperMetadata*): Self = StObject.set(x, "developerMetadata", js.Array(value :_*))
+    inline def setDeveloperMetadataVarargs(value: DeveloperMetadata*): Self = StObject.set(x, "developerMetadata", js.Array(value*))
   }
 }

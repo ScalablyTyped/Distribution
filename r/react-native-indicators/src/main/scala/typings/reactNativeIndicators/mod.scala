@@ -14,110 +14,110 @@ object mod {
   
   @JSImport("react-native-indicators", "BallIndicator")
   @js.native
-  class BallIndicator protected ()
-    extends Component[BallIndicatorProps, js.Object, js.Any] {
+  open class BallIndicator protected ()
+    extends Component[BallIndicatorProps, js.Object, Any] {
     def this(props: BallIndicatorProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: BallIndicatorProps, context: js.Any) = this()
+    def this(props: BallIndicatorProps, context: Any) = this()
   }
   
   @JSImport("react-native-indicators", "BarIndicator")
   @js.native
-  class BarIndicator protected ()
-    extends Component[BarIndicatorProps, js.Object, js.Any] {
+  open class BarIndicator protected ()
+    extends Component[BarIndicatorProps, js.Object, Any] {
     def this(props: BarIndicatorProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: BarIndicatorProps, context: js.Any) = this()
+    def this(props: BarIndicatorProps, context: Any) = this()
   }
   
   @JSImport("react-native-indicators", "DotIndicator")
   @js.native
-  class DotIndicator protected ()
-    extends Component[DotIndicatorProps, js.Object, js.Any] {
+  open class DotIndicator protected ()
+    extends Component[DotIndicatorProps, js.Object, Any] {
     def this(props: DotIndicatorProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: DotIndicatorProps, context: js.Any) = this()
+    def this(props: DotIndicatorProps, context: Any) = this()
   }
   
   @JSImport("react-native-indicators", "MaterialIndicator")
   @js.native
-  class MaterialIndicator protected ()
-    extends Component[MaterialIndicatorProps, js.Object, js.Any] {
+  open class MaterialIndicator protected ()
+    extends Component[MaterialIndicatorProps, js.Object, Any] {
     def this(props: MaterialIndicatorProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: MaterialIndicatorProps, context: js.Any) = this()
+    def this(props: MaterialIndicatorProps, context: Any) = this()
   }
   
   @JSImport("react-native-indicators", "PacmanIndicator")
   @js.native
-  class PacmanIndicator protected ()
-    extends Component[PacmanIndicatorProps, js.Object, js.Any] {
+  open class PacmanIndicator protected ()
+    extends Component[PacmanIndicatorProps, js.Object, Any] {
     def this(props: PacmanIndicatorProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: PacmanIndicatorProps, context: js.Any) = this()
+    def this(props: PacmanIndicatorProps, context: Any) = this()
   }
   
   @JSImport("react-native-indicators", "PulseIndicator")
   @js.native
-  class PulseIndicator protected ()
-    extends Component[PulseIndicatorProps, js.Object, js.Any] {
+  open class PulseIndicator protected ()
+    extends Component[PulseIndicatorProps, js.Object, Any] {
     def this(props: PulseIndicatorProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: PulseIndicatorProps, context: js.Any) = this()
+    def this(props: PulseIndicatorProps, context: Any) = this()
   }
   
   @JSImport("react-native-indicators", "SkypeIndicator")
   @js.native
-  class SkypeIndicator protected ()
-    extends Component[SkypeIndicatorProps, js.Object, js.Any] {
+  open class SkypeIndicator protected ()
+    extends Component[SkypeIndicatorProps, js.Object, Any] {
     def this(props: SkypeIndicatorProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: SkypeIndicatorProps, context: js.Any) = this()
+    def this(props: SkypeIndicatorProps, context: Any) = this()
   }
   
   @JSImport("react-native-indicators", "UIActivityIndicator")
   @js.native
-  class UIActivityIndicator protected ()
-    extends Component[UIActivityIndicatorProps, js.Object, js.Any] {
+  open class UIActivityIndicator protected ()
+    extends Component[UIActivityIndicatorProps, js.Object, Any] {
     def this(props: UIActivityIndicatorProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: UIActivityIndicatorProps, context: js.Any) = this()
+    def this(props: UIActivityIndicatorProps, context: Any) = this()
   }
   
   @JSImport("react-native-indicators", "WaveIndicator")
   @js.native
-  class WaveIndicator protected ()
-    extends Component[WaveIndicatorProps, js.Object, js.Any] {
+  open class WaveIndicator protected ()
+    extends Component[WaveIndicatorProps, js.Object, Any] {
     def this(props: WaveIndicatorProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: WaveIndicatorProps, context: js.Any) = this()
+    def this(props: WaveIndicatorProps, context: Any) = this()
   }
   
   trait BallIndicatorProps

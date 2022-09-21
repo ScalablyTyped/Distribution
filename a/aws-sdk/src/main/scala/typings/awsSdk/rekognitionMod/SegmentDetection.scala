@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SegmentDetection extends StObject {
   
   /**
+    *  The duration of a video segment, expressed in frames. 
+    */
+  var DurationFrames: js.UndefOr[ULong] = js.undefined
+  
+  /**
     * The duration of the detected segment in milliseconds. 
     */
   var DurationMillis: js.UndefOr[ULong] = js.undefined
@@ -15,6 +20,11 @@ trait SegmentDetection extends StObject {
     * The duration of the timecode for the detected segment in SMPTE format.
     */
   var DurationSMPTE: js.UndefOr[Timecode] = js.undefined
+  
+  /**
+    *  The frame number at the end of a video segment, using a frame index that starts with 0. 
+    */
+  var EndFrameNumber: js.UndefOr[ULong] = js.undefined
   
   /**
     * The frame-accurate SMPTE timecode, from the start of a video, for the end of a detected segment. EndTimecode is in HH:MM:SS:fr format (and ;fr for drop frame-rates).
@@ -30,6 +40,11 @@ trait SegmentDetection extends StObject {
     * If the segment is a shot detection, contains information about the shot detection.
     */
   var ShotSegment: js.UndefOr[typings.awsSdk.rekognitionMod.ShotSegment] = js.undefined
+  
+  /**
+    *  The frame number of the start of a video segment, using a frame index that starts with 0. 
+    */
+  var StartFrameNumber: js.UndefOr[ULong] = js.undefined
   
   /**
     * The frame-accurate SMPTE timecode, from the start of a video, for the start of a detected segment. StartTimecode is in HH:MM:SS:fr format (and ;fr for drop frame-rates). 
@@ -60,6 +75,10 @@ object SegmentDetection {
   
   extension [Self <: SegmentDetection](x: Self) {
     
+    inline def setDurationFrames(value: ULong): Self = StObject.set(x, "DurationFrames", value.asInstanceOf[js.Any])
+    
+    inline def setDurationFramesUndefined: Self = StObject.set(x, "DurationFrames", js.undefined)
+    
     inline def setDurationMillis(value: ULong): Self = StObject.set(x, "DurationMillis", value.asInstanceOf[js.Any])
     
     inline def setDurationMillisUndefined: Self = StObject.set(x, "DurationMillis", js.undefined)
@@ -67,6 +86,10 @@ object SegmentDetection {
     inline def setDurationSMPTE(value: Timecode): Self = StObject.set(x, "DurationSMPTE", value.asInstanceOf[js.Any])
     
     inline def setDurationSMPTEUndefined: Self = StObject.set(x, "DurationSMPTE", js.undefined)
+    
+    inline def setEndFrameNumber(value: ULong): Self = StObject.set(x, "EndFrameNumber", value.asInstanceOf[js.Any])
+    
+    inline def setEndFrameNumberUndefined: Self = StObject.set(x, "EndFrameNumber", js.undefined)
     
     inline def setEndTimecodeSMPTE(value: Timecode): Self = StObject.set(x, "EndTimecodeSMPTE", value.asInstanceOf[js.Any])
     
@@ -79,6 +102,10 @@ object SegmentDetection {
     inline def setShotSegment(value: ShotSegment): Self = StObject.set(x, "ShotSegment", value.asInstanceOf[js.Any])
     
     inline def setShotSegmentUndefined: Self = StObject.set(x, "ShotSegment", js.undefined)
+    
+    inline def setStartFrameNumber(value: ULong): Self = StObject.set(x, "StartFrameNumber", value.asInstanceOf[js.Any])
+    
+    inline def setStartFrameNumberUndefined: Self = StObject.set(x, "StartFrameNumber", js.undefined)
     
     inline def setStartTimecodeSMPTE(value: Timecode): Self = StObject.set(x, "StartTimecodeSMPTE", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,5 @@
 package typings.tableau.tableau
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RelativeDateFilterOptions extends StObject {
   
   /** The UTC date from which to filter. */
-  var anchorDate: Date
+  var anchorDate: js.Date
   
   /** Year, quarter, month, etc. */
   var periodType: PeriodType
@@ -21,14 +20,14 @@ trait RelativeDateFilterOptions extends StObject {
 }
 object RelativeDateFilterOptions {
   
-  inline def apply(anchorDate: Date, periodType: PeriodType, rangeN: Double, rangeType: DateRangeType): RelativeDateFilterOptions = {
+  inline def apply(anchorDate: js.Date, periodType: PeriodType, rangeN: Double, rangeType: DateRangeType): RelativeDateFilterOptions = {
     val __obj = js.Dynamic.literal(anchorDate = anchorDate.asInstanceOf[js.Any], periodType = periodType.asInstanceOf[js.Any], rangeN = rangeN.asInstanceOf[js.Any], rangeType = rangeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelativeDateFilterOptions]
   }
   
   extension [Self <: RelativeDateFilterOptions](x: Self) {
     
-    inline def setAnchorDate(value: Date): Self = StObject.set(x, "anchorDate", value.asInstanceOf[js.Any])
+    inline def setAnchorDate(value: js.Date): Self = StObject.set(x, "anchorDate", value.asInstanceOf[js.Any])
     
     inline def setPeriodType(value: PeriodType): Self = StObject.set(x, "periodType", value.asInstanceOf[js.Any])
     

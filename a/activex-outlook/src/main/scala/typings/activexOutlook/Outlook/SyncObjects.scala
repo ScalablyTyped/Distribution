@@ -14,12 +14,12 @@ trait SyncObjects extends StObject {
   
   val Count: Double
   
-  def Item(Index: js.Any): SyncObject
+  def Item(Index: Any): SyncObject
   
   /* private */ @JSName("Outlook.SyncObjects_typekey")
   var OutlookDotSyncObjects_typekey: SyncObjects
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
 }
@@ -30,9 +30,9 @@ object SyncObjects {
     Application: Application,
     Class: OlObjectClass,
     Count: Double,
-    Item: js.Any => SyncObject,
+    Item: Any => SyncObject,
     OutlookDotSyncObjects_typekey: SyncObjects,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace
   ): SyncObjects = {
     val __obj = js.Dynamic.literal(AppFolders = AppFolders.asInstanceOf[js.Any], Application = Application.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any])
@@ -50,11 +50,11 @@ object SyncObjects {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => SyncObject): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => SyncObject): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
     inline def setOutlookDotSyncObjects_typekey(value: SyncObjects): Self = StObject.set(x, "Outlook.SyncObjects_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }

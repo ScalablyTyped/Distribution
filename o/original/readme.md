@@ -10,10 +10,10 @@ Generate the origin from an URL or check if two URL/Origins are the same
 | ------------------ | :-------------: |
 | Full name          | original |
 | Keywords           | origin, url, parse |
-| # releases         | 0 |
-| # dependents       | 40 |
-| # downloads        | 352698516 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2.9268675666666668E7 |
+| # stars            | 8.0 |
 
 ## Links
 - [Homepage](https://github.com/unshiftio/original#readme)

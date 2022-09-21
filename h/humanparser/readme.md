@@ -10,10 +10,10 @@ Parse a human name string into salutation, first name, middle name, last name, s
 | ------------------ | :-------------: |
 | Full name          | humanparser |
 | Keywords           | human, address, name, parser, parse, fullname, full name, first name, last name, human name, city state zip, city, state, zip |
-| # releases         | 11 |
-| # dependents       | 6 |
-| # downloads        | 755193 |
-| # stars            | 1 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 84215.0 |
+| # stars            | 78.0 |
 
 ## Links
 - [Homepage](https://github.com/chovy/humanparser#readme)

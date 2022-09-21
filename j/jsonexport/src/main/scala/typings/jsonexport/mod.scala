@@ -1,7 +1,7 @@
 package typings.jsonexport
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.node.streamMod.Transform
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,20 +19,20 @@ object mod {
     */
   inline def apply(): Transform = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transform]
   inline def apply(json: js.Array[js.Object]): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(json.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  inline def apply(json: js.Array[js.Object], cb: js.Function2[/* err */ Error, /* csv */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(json.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(json: js.Array[js.Object], userOptions: UserOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(json.asInstanceOf[js.Any], userOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def apply(json: js.Array[js.Object], cb: js.Function2[/* err */ js.Error, /* csv */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(json.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(json: js.Array[js.Object], userOptions: UserOptionsWithHandlers): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(json.asInstanceOf[js.Any], userOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   inline def apply(
     json: js.Array[js.Object],
-    userOptions: UserOptions,
-    cb: js.Function2[/* err */ Error, /* csv */ String, Unit]
+    userOptions: UserOptionsWithHandlers,
+    cb: js.Function2[/* err */ js.Error, /* csv */ String, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(json.asInstanceOf[js.Any], userOptions.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(json: js.Object): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(json.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  inline def apply(json: js.Object, cb: js.Function2[/* err */ Error, /* csv */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(json.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(json: js.Object, userOptions: UserOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(json.asInstanceOf[js.Any], userOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def apply(json: js.Object, cb: js.Function2[/* err */ js.Error, /* csv */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(json.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(json: js.Object, userOptions: UserOptionsWithHandlers): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(json.asInstanceOf[js.Any], userOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   inline def apply(
     json: js.Object,
-    userOptions: UserOptions,
-    cb: js.Function2[/* err */ Error, /* csv */ String, Unit]
+    userOptions: UserOptionsWithHandlers,
+    cb: js.Function2[/* err */ js.Error, /* csv */ String, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(json.asInstanceOf[js.Any], userOptions.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(userOptions: UserOptions): Transform = ^.asInstanceOf[js.Dynamic].apply(userOptions.asInstanceOf[js.Any]).asInstanceOf[Transform]
   
@@ -40,36 +40,131 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    * A function to export the `type`
+    * @param value value is of type `key`
+    * For instance:
+    * ```
+    * // Correct
+    * Number: (value: number) => value.toFixed(2),
+    * // Incorrect, will error
+    * Number: (value: Date) => value.toLocaleDateString(),
+    * ```
+    * @param index the index in the {parent} object
+    * @param parent the parent object
+    */
+  type TypeHandlerFunction = js.Function3[/* value */ Any, /* index */ String, /* parent */ js.Object | js.Array[js.Object], Any]
+  
+  /** A key map of constructors used to match by instance to create a value using the defined function */
+  type TypeHandlers = StringDictionary[TypeHandlerFunction]
+  
+  /**
+    * @note This options should maybe be within the UserOptions interface
+    * However, a check make impossible to accept handlers and other options (not in the DEFAULT_OPTIONS) when the return is a Transform
+    * - The check: [lib/index.js#L56](https://github.com/kaue/jsonexport/blob/f486a71432d6ea6ab321554a2dd43418c107b418/lib/index.js#L56)
+    * - The `DEFAULT_OPTIONS`: [lib/index.js#L22](https://github.com/kaue/jsonexport/blob/f486a71432d6ea6ab321554a2dd43418c107b418/lib/index.js#L22)
+    */
+  trait UserHandlers extends StObject {
+    
+    /** Try filling top rows first for unpopular columns, defaults to `false` */
+    var fillTopRow: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Use this to customize all Date in the CSV file
+      * @deprecated Use typeHandlers
+      * @note Others specific handlers have been remove in 3.0.0 but this one remained by mistake (https://github.com/kaue/jsonexport/pull/74)
+      */
+    var handleDate: js.UndefOr[js.Function2[/* value */ js.Date, /* item */ String, Any]] = js.undefined
+    
+    /**
+      * Post-process headers after they are calculated with delimiters
+      * @example
+      * ```
+      * mapHeaders: (header) => header.replace(/foo\./, '')
+      * ```
+      */
+    var mapHeaders: js.UndefOr[js.Function1[/* header */ String, String]] = js.undefined
+    
+    /** A key map of constructors used to match by instance to create a value using the defined function */
+    var typeHandlers: js.UndefOr[TypeHandlers] = js.undefined
+  }
+  object UserHandlers {
+    
+    inline def apply(): UserHandlers = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[UserHandlers]
+    }
+    
+    extension [Self <: UserHandlers](x: Self) {
+      
+      inline def setFillTopRow(value: Boolean): Self = StObject.set(x, "fillTopRow", value.asInstanceOf[js.Any])
+      
+      inline def setFillTopRowUndefined: Self = StObject.set(x, "fillTopRow", js.undefined)
+      
+      inline def setHandleDate(value: (/* value */ js.Date, /* item */ String) => Any): Self = StObject.set(x, "handleDate", js.Any.fromFunction2(value))
+      
+      inline def setHandleDateUndefined: Self = StObject.set(x, "handleDate", js.undefined)
+      
+      inline def setMapHeaders(value: /* header */ String => String): Self = StObject.set(x, "mapHeaders", js.Any.fromFunction1(value))
+      
+      inline def setMapHeadersUndefined: Self = StObject.set(x, "mapHeaders", js.undefined)
+      
+      inline def setTypeHandlers(value: TypeHandlers): Self = StObject.set(x, "typeHandlers", value.asInstanceOf[js.Any])
+      
+      inline def setTypeHandlersUndefined: Self = StObject.set(x, "typeHandlers", js.undefined)
+    }
+  }
+  
   trait UserOptions extends StObject {
     
+    /** This is used to output primitive arrays in a single column, defaults to `;` */
     var arrayPathString: js.UndefOr[String] = js.undefined
     
+    /** Will be used instead of `false` */
     var booleanFalseString: js.UndefOr[String] = js.undefined
     
+    /** Will be used instead of `true` */
     var booleanTrueString: js.UndefOr[String] = js.undefined
     
+    /** Replace the OS default EOL */
     var endOfLine: js.UndefOr[String] = js.undefined
     
+    /** Set this option if don’t want to have empty cells in case of an object with multiple nested items (array prop), defaults to false */
     var fillGaps: js.UndefOr[Boolean] = js.undefined
     
+    /** Set this option to true to wrap every data item and header in the textDelimiter, defaults to `false` */
     var forceTextDelimiter: js.UndefOr[Boolean] = js.undefined
     
+    /** Used to create the propriety path, defaults to `.` */
     var headerPathString: js.UndefOr[String] = js.undefined
     
+    /** Used to set a custom header order, defaults to [] */
     var headers: js.UndefOr[js.Array[String]] = js.undefined
     
+    /** Set this option to `false` to hide the CSV headers */
     var includeHeaders: js.UndefOr[Boolean] = js.undefined
     
+    /** Every header will have the `mainPathItem` as the base */
     var mainPathItem: js.UndefOr[String] = js.undefined
     
+    /** Used to set a custom header text, defaults to [] */
     var rename: js.UndefOr[js.Array[String]] = js.undefined
     
+    /**
+      * Change the file row delimiter
+      * - Defaults to `,` (cvs format).
+      * - Use `\t` for xls format.
+      * - Use `;` for (windows excel .csv format)
+      */
     var rowDelimiter: js.UndefOr[String] = js.undefined
     
+    /** The character used to escape the text content if needed, defaults to `"` */
     var textDelimiter: js.UndefOr[String] = js.undefined
     
+    /** If you want to display a custom value for undefined strings, use this option, defaults to ` ` */
     var undefinedString: js.UndefOr[String] = js.undefined
     
+    /** Set this option to false to create a horizontal output for JSON Objects, headers in the first row, values in the second */
     var verticalOutput: js.UndefOr[Boolean] = js.undefined
   }
   object UserOptions {
@@ -113,7 +208,7 @@ object mod {
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value*))
       
       inline def setIncludeHeaders(value: Boolean): Self = StObject.set(x, "includeHeaders", value.asInstanceOf[js.Any])
       
@@ -127,7 +222,7 @@ object mod {
       
       inline def setRenameUndefined: Self = StObject.set(x, "rename", js.undefined)
       
-      inline def setRenameVarargs(value: String*): Self = StObject.set(x, "rename", js.Array(value :_*))
+      inline def setRenameVarargs(value: String*): Self = StObject.set(x, "rename", js.Array(value*))
       
       inline def setRowDelimiter(value: String): Self = StObject.set(x, "rowDelimiter", value.asInstanceOf[js.Any])
       
@@ -144,6 +239,18 @@ object mod {
       inline def setVerticalOutput(value: Boolean): Self = StObject.set(x, "verticalOutput", value.asInstanceOf[js.Any])
       
       inline def setVerticalOutputUndefined: Self = StObject.set(x, "verticalOutput", js.undefined)
+    }
+  }
+  
+  trait UserOptionsWithHandlers
+    extends StObject
+       with UserHandlers
+       with UserOptions
+  object UserOptionsWithHandlers {
+    
+    inline def apply(): UserOptionsWithHandlers = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[UserOptionsWithHandlers]
     }
   }
 }

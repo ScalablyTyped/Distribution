@@ -31,7 +31,7 @@ object ListHITsResponse {
     
     inline def setHITsUndefined: Self = StObject.set(x, "HITs", js.undefined)
     
-    inline def setHITsVarargs(value: HIT*): Self = StObject.set(x, "HITs", js.Array(value :_*))
+    inline def setHITsVarargs(value: HIT*): Self = StObject.set(x, "HITs", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

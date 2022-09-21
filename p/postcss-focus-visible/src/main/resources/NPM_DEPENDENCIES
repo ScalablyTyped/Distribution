@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "postcss-focus-visible" : "7.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "postcss-focus-visible" : "7.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

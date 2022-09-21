@@ -12,6 +12,7 @@ import typings.officeUiFabricReact.officeUiFabricReactStrings.h4
 import typings.officeUiFabricReact.officeUiFabricReactStrings.h5
 import typings.officeUiFabricReact.officeUiFabricReactStrings.h6
 import typings.officeUiFabricReact.tooltipHostTypesMod.ITooltipHostProps
+import typings.react.mod.AllHTMLAttributes
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
@@ -74,15 +75,17 @@ object breadcrumbTypesMod {
       
       inline def setRenderedItems(value: js.Array[IBreadcrumbItem]): Self = StObject.set(x, "renderedItems", value.asInstanceOf[js.Any])
       
-      inline def setRenderedItemsVarargs(value: IBreadcrumbItem*): Self = StObject.set(x, "renderedItems", js.Array(value :_*))
+      inline def setRenderedItemsVarargs(value: IBreadcrumbItem*): Self = StObject.set(x, "renderedItems", js.Array(value*))
       
       inline def setRenderedOverflowItems(value: js.Array[IBreadcrumbItem]): Self = StObject.set(x, "renderedOverflowItems", value.asInstanceOf[js.Any])
       
-      inline def setRenderedOverflowItemsVarargs(value: IBreadcrumbItem*): Self = StObject.set(x, "renderedOverflowItems", js.Array(value :_*))
+      inline def setRenderedOverflowItemsVarargs(value: IBreadcrumbItem*): Self = StObject.set(x, "renderedOverflowItems", js.Array(value*))
     }
   }
   
-  trait IBreadcrumbItem extends StObject {
+  trait IBreadcrumbItem
+    extends StObject
+       with AllHTMLAttributes[HTMLElement] {
     
     /**
       * Optional prop to render the item as a heading of your choice.
@@ -91,12 +94,8 @@ object breadcrumbTypesMod {
       * any item with a `href` renders as a link, and any item without a `href` renders as a button).
       * This is not generally recommended because it may prevent activating the link using the keyboard.
       */
-    var as: js.UndefOr[h1 | h2 | h3 | h4 | h5 | h6 | a] = js.undefined
-    
-    /**
-      * Url to navigate to when this breadcrumb item is clicked.
-      */
-    var href: js.UndefOr[String] = js.undefined
+    @JSName("as")
+    var as_IBreadcrumbItem: js.UndefOr[h1 | h2 | h3 | h4 | h5 | h6 | a] = js.undefined
     
     /**
       * Whether this is the breadcrumb item the user is currently navigated to.
@@ -112,7 +111,8 @@ object breadcrumbTypesMod {
     /**
       * Callback issued when the breadcrumb item is selected.
       */
-    var onClick: js.UndefOr[
+    @JSName("onClick")
+    var onClick_IBreadcrumbItem: js.UndefOr[
         js.Function2[
           /* ev */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]], 
           /* item */ js.UndefOr[this.type], 
@@ -121,9 +121,20 @@ object breadcrumbTypesMod {
       ] = js.undefined
     
     /**
+      * A function to render the outer content of the crumb (the link).
+      */
+    var onRender: js.UndefOr[IRenderFunction[IBreadcrumbItem]] = js.undefined
+    
+    /**
+      * A function to render the inner content of the crumb (the text inside the link).
+      */
+    var onRenderContent: js.UndefOr[IRenderFunction[IBreadcrumbItem]] = js.undefined
+    
+    /**
       * Optional role for the breadcrumb item (which renders as a button by default)
       */
-    var role: js.UndefOr[String] = js.undefined
+    @JSName("role")
+    var role_IBreadcrumbItem: js.UndefOr[String] = js.undefined
     
     /**
       * Text to display to the user for the breadcrumb item.
@@ -143,10 +154,6 @@ object breadcrumbTypesMod {
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
-      
-      inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
-      
       inline def setIsCurrentItem(value: Boolean): Self = StObject.set(x, "isCurrentItem", value.asInstanceOf[js.Any])
       
       inline def setIsCurrentItemUndefined: Self = StObject.set(x, "isCurrentItem", js.undefined)
@@ -158,6 +165,18 @@ object breadcrumbTypesMod {
       ): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      
+      inline def setOnRender(
+        value: (/* props */ js.UndefOr[IBreadcrumbItem], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IBreadcrumbItem], Element | Null]]) => Element | Null
+      ): Self = StObject.set(x, "onRender", js.Any.fromFunction2(value))
+      
+      inline def setOnRenderContent(
+        value: (/* props */ js.UndefOr[IBreadcrumbItem], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IBreadcrumbItem], Element | Null]]) => Element | Null
+      ): Self = StObject.set(x, "onRenderContent", js.Any.fromFunction2(value))
+      
+      inline def setOnRenderContentUndefined: Self = StObject.set(x, "onRenderContent", js.undefined)
+      
+      inline def setOnRenderUndefined: Self = StObject.set(x, "onRender", js.undefined)
       
       inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -215,8 +234,13 @@ object breadcrumbTypesMod {
       */
     var onReduceData: js.UndefOr[js.Function1[/* data */ IBreadcrumbData, js.UndefOr[IBreadcrumbData]]] = js.undefined
     
-    /** Custom render function for each breadcrumb item. */
+    /** Custom render function to render each crumb. Default renders as a link. */
     var onRenderItem: js.UndefOr[IRenderFunction[IBreadcrumbItem]] = js.undefined
+    
+    /**
+      * Custom render function to render the content within a crumb. Default renders the text.
+      */
+    var onRenderItemContent: js.UndefOr[IRenderFunction[IBreadcrumbItem]] = js.undefined
     
     /**
       * Render a custom overflow icon in place of the default icon `...`
@@ -276,7 +300,7 @@ object breadcrumbTypesMod {
       
       inline def setItems(value: js.Array[IBreadcrumbItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: IBreadcrumbItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: IBreadcrumbItem*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setMaxDisplayedItems(value: Double): Self = StObject.set(x, "maxDisplayedItems", value.asInstanceOf[js.Any])
       
@@ -293,6 +317,12 @@ object breadcrumbTypesMod {
       inline def setOnRenderItem(
         value: (/* props */ js.UndefOr[IBreadcrumbItem], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IBreadcrumbItem], Element | Null]]) => Element | Null
       ): Self = StObject.set(x, "onRenderItem", js.Any.fromFunction2(value))
+      
+      inline def setOnRenderItemContent(
+        value: (/* props */ js.UndefOr[IBreadcrumbItem], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IBreadcrumbItem], Element | Null]]) => Element | Null
+      ): Self = StObject.set(x, "onRenderItemContent", js.Any.fromFunction2(value))
+      
+      inline def setOnRenderItemContentUndefined: Self = StObject.set(x, "onRenderItemContent", js.undefined)
       
       inline def setOnRenderItemUndefined: Self = StObject.set(x, "onRenderItem", js.undefined)
       

@@ -4,21 +4,18 @@
 Typings are for version 0.2
 
 ## Library description:
-hCaptcha Component Library for Vue.js, compatible with Vue 2+.
+hCaptcha Component Library for Vue.js. Compatible with Vue 2 and 3.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @hcaptcha/vue-hcaptcha |
 | Keywords           | hcaptcha, captcha, component, vue, vue-component, earn |
-| # releases         | 6 |
-| # dependents       | 1 |
-| # downloads        | 14642 |
-| # stars            | 0 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 20113.333333333332 |
+| # stars            | 109.0 |
 
 ## Links
-- [Homepage](https://github.com/hCaptcha/vue-hcaptcha)
-- [Bugs](https://github.com/hCaptcha/vue-hcaptcha/issues)
-- [Repository](https://github.com/hCaptcha/vue-hcaptcha)
 - [Npm](https://www.npmjs.com/package/%40hcaptcha%2Fvue-hcaptcha)
     
 

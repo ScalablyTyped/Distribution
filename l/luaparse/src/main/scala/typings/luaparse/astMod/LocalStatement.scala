@@ -25,10 +25,10 @@ object LocalStatement {
     
     inline def setInit(value: js.Array[Expression]): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
     
-    inline def setInitVarargs(value: Expression*): Self = StObject.set(x, "init", js.Array(value :_*))
+    inline def setInitVarargs(value: Expression*): Self = StObject.set(x, "init", js.Array(value*))
     
     inline def setVariables(value: js.Array[Identifier]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     
-    inline def setVariablesVarargs(value: Identifier*): Self = StObject.set(x, "variables", js.Array(value :_*))
+    inline def setVariablesVarargs(value: Identifier*): Self = StObject.set(x, "variables", js.Array(value*))
   }
 }

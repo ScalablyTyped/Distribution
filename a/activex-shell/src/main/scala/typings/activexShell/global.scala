@@ -11,21 +11,21 @@ object global {
     /** FileSearchBand Class */
     @JSGlobal("Shell32.FileSearchBand")
     @js.native
-    /* private */ class FileSearchBand ()
+    /* private */ open class FileSearchBand ()
       extends StObject
          with typings.activexShell.Shell32.FileSearchBand
     
     /** Definition of interface Folder version 3 */
     @JSGlobal("Shell32.Folder3")
     @js.native
-    /* private */ class Folder3 ()
+    /* private */ open class Folder3 ()
       extends StObject
          with typings.activexShell.Shell32.Folder3
     
     /** Definition of interface FolderItemVerb */
     @JSGlobal("Shell32.FolderItemVerb")
     @js.native
-    /* private */ class FolderItemVerb ()
+    /* private */ open class FolderItemVerb ()
       extends StObject
          with typings.activexShell.Shell32.FolderItemVerb {
       
@@ -45,28 +45,28 @@ object global {
     /** Definition of interface FolderItemVerbs */
     @JSGlobal("Shell32.FolderItemVerbs")
     @js.native
-    /* private */ class FolderItemVerbs ()
+    /* private */ open class FolderItemVerbs ()
       extends StObject
          with typings.activexShell.Shell32.FolderItemVerbs
     
     /** Definition of interface FolderItems3 */
     @JSGlobal("Shell32.FolderItems3")
     @js.native
-    /* private */ class FolderItems3 ()
+    /* private */ open class FolderItems3 ()
       extends StObject
          with typings.activexShell.Shell32.FolderItems3
     
     /** Shell Object Type Information */
     @JSGlobal("Shell32.Shell")
     @js.native
-    /* private */ class Shell ()
+    /* private */ open class Shell ()
       extends StObject
          with typings.activexShell.Shell32.Shell
     
     /** ShellDispatch Load in Shell Context */
     @JSGlobal("Shell32.ShellDispatchInproc")
     @js.native
-    /* private */ class ShellDispatchInproc ()
+    /* private */ open class ShellDispatchInproc ()
       extends StObject
          with typings.activexShell.Shell32.ShellDispatchInproc {
       
@@ -78,14 +78,14 @@ object global {
     /** Shell Folder Item */
     @JSGlobal("Shell32.ShellFolderItem")
     @js.native
-    /* private */ class ShellFolderItem ()
+    /* private */ open class ShellFolderItem ()
       extends StObject
          with typings.activexShell.Shell32.ShellFolderItem
     
     /** Shell Folder View Object */
     @JSGlobal("Shell32.ShellFolderView")
     @js.native
-    /* private */ class ShellFolderView ()
+    /* private */ open class ShellFolderView ()
       extends StObject
          with typings.activexShell.Shell32.ShellFolderView
     
@@ -101,7 +101,7 @@ object global {
       */
     @JSGlobal("Shell32.ShellFolderViewOC")
     @js.native
-    /* private */ class ShellFolderViewOC ()
+    /* private */ open class ShellFolderViewOC ()
       extends StObject
          with typings.activexShell.Shell32.ShellFolderViewOC {
       
@@ -117,13 +117,13 @@ object global {
     /** Shell Link object */
     @JSGlobal("Shell32.ShellLinkObject")
     @js.native
-    /* private */ class ShellLinkObject ()
+    /* private */ open class ShellLinkObject ()
       extends StObject
          with typings.activexShell.Shell32.ShellLinkObject
     
     @JSGlobal("Shell32.ShellWindows")
     @js.native
-    /* private */ class ShellWindows ()
+    /* private */ open class ShellWindows ()
       extends StObject
          with typings.activexShell.Shell32.ShellWindows
   }

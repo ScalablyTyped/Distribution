@@ -17,7 +17,7 @@ object global {
     
     @JSGlobal("Box")
     @js.native
-    class ^ ()
+    open class ^ ()
       extends typings.`3box`.mod.^
     
     @JSGlobal("Box")
@@ -25,15 +25,15 @@ object global {
     val ^ : js.Any = js.native
     
     /* static member */
-    inline def create(ethereumProvider: js.Any): js.Promise[typings.`3box`.mod.Box] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(ethereumProvider.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.`3box`.mod.Box]]
+    inline def create(ethereumProvider: Any): js.Promise[typings.`3box`.mod.Box] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(ethereumProvider.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.`3box`.mod.Box]]
     
     /* static member */
     inline def getConfig(address: String): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")(address.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
     inline def getConfig(address: String, opts: ProfileServer): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")(address.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
     
     /* static member */
-    inline def getProfile(address: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProfile")(address.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
-    inline def getProfile(address: String, opts: Blocklist): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getProfile")(address.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    inline def getProfile(address: String): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProfile")(address.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+    inline def getProfile(address: String, opts: Blocklist): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getProfile")(address.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
     
     /* static member */
     inline def getProfiles(address: String): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProfiles")(address.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
@@ -78,8 +78,8 @@ object global {
     inline def listSpaces(address: String, opts: ProfileServer): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("listSpaces")(address.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
     
     /* static member */
-    inline def openBox(address: String, ethereumProvider: js.Any): js.Promise[typings.`3box`.mod.Box] = (^.asInstanceOf[js.Dynamic].applyDynamic("openBox")(address.asInstanceOf[js.Any], ethereumProvider.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.`3box`.mod.Box]]
-    inline def openBox(address: String, ethereumProvider: js.Any, opts: AddressServer): js.Promise[typings.`3box`.mod.Box] = (^.asInstanceOf[js.Dynamic].applyDynamic("openBox")(address.asInstanceOf[js.Any], ethereumProvider.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.`3box`.mod.Box]]
+    inline def openBox(address: String, ethereumProvider: Any): js.Promise[typings.`3box`.mod.Box] = (^.asInstanceOf[js.Dynamic].applyDynamic("openBox")(address.asInstanceOf[js.Any], ethereumProvider.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.`3box`.mod.Box]]
+    inline def openBox(address: String, ethereumProvider: Any, opts: AddressServer): js.Promise[typings.`3box`.mod.Box] = (^.asInstanceOf[js.Dynamic].applyDynamic("openBox")(address.asInstanceOf[js.Any], ethereumProvider.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.`3box`.mod.Box]]
     
     /* static member */
     inline def profileGraphQL(query: js.Object): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("profileGraphQL")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]

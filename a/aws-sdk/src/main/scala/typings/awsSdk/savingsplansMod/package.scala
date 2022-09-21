@@ -1,5 +1,6 @@
 package typings.awsSdk.savingsplansMod
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,25 +15,25 @@ type ClientToken = java.lang.String
   - typings.awsSdk.awsSdkStrings.USD
   - java.lang.String
 */
-type CurrencyCode = typings.awsSdk.savingsplansMod._CurrencyCode | java.lang.String
+type CurrencyCode = _CurrencyCode | java.lang.String
 
-type CurrencyList = js.Array[typings.awsSdk.savingsplansMod.CurrencyCode]
+type CurrencyList = js.Array[CurrencyCode]
 
-type DateTime = typings.std.Date
+type DateTime = js.Date
 
-type DurationsList = js.Array[typings.awsSdk.savingsplansMod.SavingsPlansDuration]
+type DurationsList = js.Array[SavingsPlansDuration]
 
 type EC2InstanceFamily = java.lang.String
 
-type FilterValuesList = js.Array[typings.awsSdk.savingsplansMod.JsonSafeFilterValueString]
+type FilterValuesList = js.Array[JsonSafeFilterValueString]
 
 type JsonSafeFilterValueString = java.lang.String
 
-type ListOfStrings = js.Array[typings.awsSdk.savingsplansMod.String]
+type ListOfStrings = js.Array[String]
 
-type MaxResults = scala.Double
+type MaxResults = Double
 
-type PageSize = scala.Double
+type PageSize = Double
 
 type PaginationToken = java.lang.String
 
@@ -40,28 +41,28 @@ type Region = java.lang.String
 
 type SavingsPlanArn = java.lang.String
 
-type SavingsPlanArnList = js.Array[typings.awsSdk.savingsplansMod.SavingsPlanArn]
+type SavingsPlanArnList = js.Array[SavingsPlanArn]
 
 type SavingsPlanDescription = java.lang.String
 
-type SavingsPlanDescriptionsList = js.Array[typings.awsSdk.savingsplansMod.SavingsPlanDescription]
+type SavingsPlanDescriptionsList = js.Array[SavingsPlanDescription]
 
-type SavingsPlanFilterList = js.Array[typings.awsSdk.savingsplansMod.SavingsPlanFilter]
+type SavingsPlanFilterList = js.Array[SavingsPlanFilter]
 
 type SavingsPlanId = java.lang.String
 
-type SavingsPlanIdList = js.Array[typings.awsSdk.savingsplansMod.SavingsPlanId]
+type SavingsPlanIdList = js.Array[SavingsPlanId]
 
-type SavingsPlanList = js.Array[typings.awsSdk.savingsplansMod.SavingsPlan]
+type SavingsPlanList = js.Array[SavingsPlan]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.region__
   - typings.awsSdk.awsSdkStrings.instanceFamily
   - java.lang.String
 */
-type SavingsPlanOfferingFilterAttribute = typings.awsSdk.savingsplansMod._SavingsPlanOfferingFilterAttribute | java.lang.String
+type SavingsPlanOfferingFilterAttribute = _SavingsPlanOfferingFilterAttribute | java.lang.String
 
-type SavingsPlanOfferingFiltersList = js.Array[typings.awsSdk.savingsplansMod.SavingsPlanOfferingFilterElement]
+type SavingsPlanOfferingFiltersList = js.Array[SavingsPlanOfferingFilterElement]
 
 type SavingsPlanOfferingId = java.lang.String
 
@@ -70,21 +71,21 @@ type SavingsPlanOfferingId = java.lang.String
   - typings.awsSdk.awsSdkStrings.instanceFamily
   - java.lang.String
 */
-type SavingsPlanOfferingPropertyKey = typings.awsSdk.savingsplansMod._SavingsPlanOfferingPropertyKey | java.lang.String
+type SavingsPlanOfferingPropertyKey = _SavingsPlanOfferingPropertyKey | java.lang.String
 
-type SavingsPlanOfferingPropertyList = js.Array[typings.awsSdk.savingsplansMod.SavingsPlanOfferingProperty]
+type SavingsPlanOfferingPropertyList = js.Array[SavingsPlanOfferingProperty]
 
-type SavingsPlanOfferingRateFiltersList = js.Array[typings.awsSdk.savingsplansMod.SavingsPlanOfferingRateFilterElement]
+type SavingsPlanOfferingRateFiltersList = js.Array[SavingsPlanOfferingRateFilterElement]
 
-type SavingsPlanOfferingRatePropertyList = js.Array[typings.awsSdk.savingsplansMod.SavingsPlanOfferingRateProperty]
+type SavingsPlanOfferingRatePropertyList = js.Array[SavingsPlanOfferingRateProperty]
 
-type SavingsPlanOfferingRatesList = js.Array[typings.awsSdk.savingsplansMod.SavingsPlanOfferingRate]
+type SavingsPlanOfferingRatesList = js.Array[SavingsPlanOfferingRate]
 
-type SavingsPlanOfferingsList = js.Array[typings.awsSdk.savingsplansMod.SavingsPlanOffering]
+type SavingsPlanOfferingsList = js.Array[SavingsPlanOffering]
 
 type SavingsPlanOperation = java.lang.String
 
-type SavingsPlanOperationList = js.Array[typings.awsSdk.savingsplansMod.SavingsPlanOperation]
+type SavingsPlanOperationList = js.Array[SavingsPlanOperation]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`All Upfront`
@@ -92,19 +93,20 @@ type SavingsPlanOperationList = js.Array[typings.awsSdk.savingsplansMod.SavingsP
   - typings.awsSdk.awsSdkStrings.`No Upfront`
   - java.lang.String
 */
-type SavingsPlanPaymentOption = typings.awsSdk.savingsplansMod._SavingsPlanPaymentOption | java.lang.String
+type SavingsPlanPaymentOption = _SavingsPlanPaymentOption | java.lang.String
 
-type SavingsPlanPaymentOptionList = js.Array[typings.awsSdk.savingsplansMod.SavingsPlanPaymentOption]
+type SavingsPlanPaymentOptionList = js.Array[SavingsPlanPaymentOption]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.EC2
   - typings.awsSdk.awsSdkStrings.Fargate_
   - typings.awsSdk.awsSdkStrings.Lambda_
+  - typings.awsSdk.awsSdkStrings.SageMaker_
   - java.lang.String
 */
-type SavingsPlanProductType = typings.awsSdk.savingsplansMod._SavingsPlanProductType | java.lang.String
+type SavingsPlanProductType = _SavingsPlanProductType | java.lang.String
 
-type SavingsPlanProductTypeList = js.Array[typings.awsSdk.savingsplansMod.SavingsPlanProductType]
+type SavingsPlanProductTypeList = js.Array[SavingsPlanProductType]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.region__
@@ -115,9 +117,9 @@ type SavingsPlanProductTypeList = js.Array[typings.awsSdk.savingsplansMod.Saving
   - typings.awsSdk.awsSdkStrings.productId
   - java.lang.String
 */
-type SavingsPlanRateFilterAttribute = typings.awsSdk.savingsplansMod._SavingsPlanRateFilterAttribute | java.lang.String
+type SavingsPlanRateFilterAttribute = _SavingsPlanRateFilterAttribute | java.lang.String
 
-type SavingsPlanRateFilterList = js.Array[typings.awsSdk.savingsplansMod.SavingsPlanRateFilter]
+type SavingsPlanRateFilterList = js.Array[SavingsPlanRateFilter]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.region__
@@ -130,13 +132,13 @@ type SavingsPlanRateFilterList = js.Array[typings.awsSdk.savingsplansMod.Savings
   - typings.awsSdk.awsSdkStrings.operation_
   - java.lang.String
 */
-type SavingsPlanRateFilterName = typings.awsSdk.savingsplansMod._SavingsPlanRateFilterName | java.lang.String
+type SavingsPlanRateFilterName = _SavingsPlanRateFilterName | java.lang.String
 
-type SavingsPlanRateList = js.Array[typings.awsSdk.savingsplansMod.SavingsPlanRate]
+type SavingsPlanRateList = js.Array[SavingsPlanRate]
 
 type SavingsPlanRateOperation = java.lang.String
 
-type SavingsPlanRateOperationList = js.Array[typings.awsSdk.savingsplansMod.SavingsPlanRateOperation]
+type SavingsPlanRateOperationList = js.Array[SavingsPlanRateOperation]
 
 type SavingsPlanRatePricePerUnit = java.lang.String
 
@@ -148,19 +150,21 @@ type SavingsPlanRatePricePerUnit = java.lang.String
   - typings.awsSdk.awsSdkStrings.tenancy_
   - java.lang.String
 */
-type SavingsPlanRatePropertyKey = typings.awsSdk.savingsplansMod._SavingsPlanRatePropertyKey | java.lang.String
+type SavingsPlanRatePropertyKey = _SavingsPlanRatePropertyKey | java.lang.String
 
-type SavingsPlanRatePropertyList = js.Array[typings.awsSdk.savingsplansMod.SavingsPlanRateProperty]
+type SavingsPlanRatePropertyList = js.Array[SavingsPlanRateProperty]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AmazonEC2
   - typings.awsSdk.awsSdkStrings.AmazonECS
+  - typings.awsSdk.awsSdkStrings.AmazonEKS
   - typings.awsSdk.awsSdkStrings.AWSLambda
+  - typings.awsSdk.awsSdkStrings.AmazonSageMaker
   - java.lang.String
 */
-type SavingsPlanRateServiceCode = typings.awsSdk.savingsplansMod._SavingsPlanRateServiceCode | java.lang.String
+type SavingsPlanRateServiceCode = _SavingsPlanRateServiceCode | java.lang.String
 
-type SavingsPlanRateServiceCodeList = js.Array[typings.awsSdk.savingsplansMod.SavingsPlanRateServiceCode]
+type SavingsPlanRateServiceCodeList = js.Array[SavingsPlanRateServiceCode]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Hrs
@@ -168,43 +172,44 @@ type SavingsPlanRateServiceCodeList = js.Array[typings.awsSdk.savingsplansMod.Sa
   - typings.awsSdk.awsSdkStrings.Request_
   - java.lang.String
 */
-type SavingsPlanRateUnit = typings.awsSdk.savingsplansMod._SavingsPlanRateUnit | java.lang.String
+type SavingsPlanRateUnit = _SavingsPlanRateUnit | java.lang.String
 
 type SavingsPlanRateUsageType = java.lang.String
 
-type SavingsPlanRateUsageTypeList = js.Array[typings.awsSdk.savingsplansMod.SavingsPlanRateUsageType]
+type SavingsPlanRateUsageTypeList = js.Array[SavingsPlanRateUsageType]
 
 type SavingsPlanServiceCode = java.lang.String
 
-type SavingsPlanServiceCodeList = js.Array[typings.awsSdk.savingsplansMod.SavingsPlanServiceCode]
+type SavingsPlanServiceCodeList = js.Array[SavingsPlanServiceCode]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`payment-pending`
   - typings.awsSdk.awsSdkStrings.`payment-failed`
   - typings.awsSdk.awsSdkStrings.active__
-  - typings.awsSdk.awsSdkStrings.retired
+  - typings.awsSdk.awsSdkStrings.retired_
   - typings.awsSdk.awsSdkStrings.queued__
   - typings.awsSdk.awsSdkStrings.`queued-deleted`
   - java.lang.String
 */
-type SavingsPlanState = typings.awsSdk.savingsplansMod._SavingsPlanState | java.lang.String
+type SavingsPlanState = _SavingsPlanState | java.lang.String
 
-type SavingsPlanStateList = js.Array[typings.awsSdk.savingsplansMod.SavingsPlanState]
+type SavingsPlanStateList = js.Array[SavingsPlanState]
 
 /* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.Compute
+  - typings.awsSdk.awsSdkStrings.Compute_
   - typings.awsSdk.awsSdkStrings.EC2Instance
+  - typings.awsSdk.awsSdkStrings.SageMaker_
   - java.lang.String
 */
-type SavingsPlanType = typings.awsSdk.savingsplansMod._SavingsPlanType | java.lang.String
+type SavingsPlanType = _SavingsPlanType | java.lang.String
 
-type SavingsPlanTypeList = js.Array[typings.awsSdk.savingsplansMod.SavingsPlanType]
+type SavingsPlanTypeList = js.Array[SavingsPlanType]
 
 type SavingsPlanUsageType = java.lang.String
 
-type SavingsPlanUsageTypeList = js.Array[typings.awsSdk.savingsplansMod.SavingsPlanUsageType]
+type SavingsPlanUsageTypeList = js.Array[SavingsPlanUsageType]
 
-type SavingsPlansDuration = scala.Double
+type SavingsPlansDuration = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.region__
@@ -218,27 +223,27 @@ type SavingsPlansDuration = scala.Double
   - typings.awsSdk.awsSdkStrings.end_
   - java.lang.String
 */
-type SavingsPlansFilterName = typings.awsSdk.savingsplansMod._SavingsPlansFilterName | java.lang.String
+type SavingsPlansFilterName = _SavingsPlansFilterName | java.lang.String
 
 type String = java.lang.String
 
 type TagKey = java.lang.String
 
-type TagKeyList = js.Array[typings.awsSdk.savingsplansMod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
-type TagMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.savingsplansMod.TagValue]
+type TagMap = StringDictionary[TagValue]
 
 type TagValue = java.lang.String
 
-type TermDurationInSeconds = scala.Double
+type TermDurationInSeconds = Double
 
 type UUID = java.lang.String
 
-type UUIDs = js.Array[typings.awsSdk.savingsplansMod.UUID]
+type UUIDs = js.Array[UUID]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2019-06-28`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.savingsplansMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | java.lang.String

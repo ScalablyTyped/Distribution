@@ -2,9 +2,9 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.FC
 import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticCOLORS
 import typings.semanticUiReact.genericMod.SemanticFLOATS
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
@@ -29,7 +29,7 @@ object segmentSegmentMod extends Shortcut {
     extends StObject
        with FunctionComponent[SegmentProps] {
     
-    var Group: StatelessComponent[SegmentGroupProps] = js.native
+    var Group: FC[SegmentGroupProps] = js.native
     
     var Inline: SegmentInlineComponent = js.native
   }
@@ -37,7 +37,7 @@ object segmentSegmentMod extends Shortcut {
   trait SegmentProps
     extends StObject
        with StrictSegmentProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object SegmentProps {
     
     inline def apply(): SegmentProps = {
@@ -76,7 +76,7 @@ object segmentSegmentMod extends Shortcut {
   trait StrictSegmentProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Attach segment to other content, like a header. */
     var attached: js.UndefOr[Boolean | top | bottom] = js.undefined
@@ -156,7 +156,7 @@ object segmentSegmentMod extends Shortcut {
     
     extension [Self <: StrictSegmentProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       

@@ -11,7 +11,7 @@ object streamMod {
   
   @JSImport("fast-glob/out/providers/stream", JSImport.Default)
   @js.native
-  class default () extends ProviderStream
+  open class default () extends ProviderStream
   
   @js.native
   trait ProviderStream

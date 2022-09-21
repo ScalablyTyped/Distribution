@@ -12,7 +12,7 @@ object mod extends Shortcut {
   @js.native
   val ^ : js.Object & PureRenderMixin = js.native
   
-  type PureRenderMixin = Mixin[js.Any, js.Any]
+  type PureRenderMixin = Mixin[Any, Any]
   
   type _To = js.Object & PureRenderMixin
   

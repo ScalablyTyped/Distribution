@@ -29,7 +29,7 @@ object AvailableCapacity {
     
     inline def setAvailableInstanceCapacityUndefined: Self = StObject.set(x, "AvailableInstanceCapacity", js.undefined)
     
-    inline def setAvailableInstanceCapacityVarargs(value: InstanceCapacity*): Self = StObject.set(x, "AvailableInstanceCapacity", js.Array(value :_*))
+    inline def setAvailableInstanceCapacityVarargs(value: InstanceCapacity*): Self = StObject.set(x, "AvailableInstanceCapacity", js.Array(value*))
     
     inline def setAvailableVCpus(value: Integer): Self = StObject.set(x, "AvailableVCpus", value.asInstanceOf[js.Any])
     

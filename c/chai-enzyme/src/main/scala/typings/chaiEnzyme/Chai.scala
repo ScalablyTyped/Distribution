@@ -3,7 +3,7 @@ package typings.chaiEnzyme
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -93,7 +93,7 @@ object Chai {
       * @param val
       */
     def prop(key: String): Assertion = js.native
-    def prop(key: String, `val`: js.Any): Assertion = js.native
+    def prop(key: String, `val`: Any): Assertion = js.native
     
     /**
       * Assert that the wrapper has given props [with values]:
@@ -123,7 +123,7 @@ object Chai {
       * @param val
       */
     def state(key: String): Assertion = js.native
-    def state(key: String, `val`: js.Any): Assertion = js.native
+    def state(key: String, `val`: Any): Assertion = js.native
     
     /**
       * Assert that the wrapper has given style:
@@ -159,7 +159,7 @@ object Chai {
     def value(str: String): Assertion = js.native
   }
   
-  type EnzymeSelector = String | StatelessComponent[js.Any] | (ComponentClass[js.Any, ComponentState]) | StringDictionary[js.Any]
+  type EnzymeSelector = String | FunctionComponent[Any] | (ComponentClass[Any, ComponentState]) | StringDictionary[Any]
   
   @js.native
   trait Include extends StObject {

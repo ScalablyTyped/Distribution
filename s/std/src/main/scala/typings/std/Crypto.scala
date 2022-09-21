@@ -5,20 +5,32 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Basic cryptography features available in the current context. It allows access to a cryptographically strong random number generator and to cryptographic primitives. */
-@js.native
 trait Crypto extends StObject {
   
-  def getRandomValues(array: Null): Null = js.native
-  def getRandomValues(array: DataView): DataView = js.native
-  def getRandomValues(array: Float32Array): Float32Array = js.native
-  def getRandomValues(array: Float64Array): Float64Array = js.native
-  def getRandomValues(array: Int16Array): Int16Array = js.native
-  def getRandomValues(array: Int32Array): Int32Array = js.native
-  def getRandomValues(array: Int8Array): Int8Array = js.native
-  def getRandomValues(array: Uint16Array): Uint16Array = js.native
-  def getRandomValues(array: Uint32Array): Uint32Array = js.native
-  def getRandomValues(array: Uint8Array): Uint8Array = js.native
-  def getRandomValues(array: Uint8ClampedArray): Uint8ClampedArray = js.native
+  /* standard dom */
+  def getRandomValues[T /* <: js.typedarray.ArrayBufferView | Null */](array: T): T
   
-  val subtle: SubtleCrypto = js.native
+  /** Available only in secure contexts. */
+  /* standard dom */
+  def randomUUID(): java.lang.String
+  
+  /** Available only in secure contexts. */
+  /* standard dom */
+  val subtle: SubtleCrypto
+}
+object Crypto {
+  
+  inline def apply(getRandomValues: Any => Any, randomUUID: () => java.lang.String, subtle: SubtleCrypto): Crypto = {
+    val __obj = js.Dynamic.literal(getRandomValues = js.Any.fromFunction1(getRandomValues), randomUUID = js.Any.fromFunction0(randomUUID), subtle = subtle.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Crypto]
+  }
+  
+  extension [Self <: Crypto](x: Self) {
+    
+    inline def setGetRandomValues(value: Any => Any): Self = StObject.set(x, "getRandomValues", js.Any.fromFunction1(value))
+    
+    inline def setRandomUUID(value: () => java.lang.String): Self = StObject.set(x, "randomUUID", js.Any.fromFunction0(value))
+    
+    inline def setSubtle(value: SubtleCrypto): Self = StObject.set(x, "subtle", value.asInstanceOf[js.Any])
+  }
 }

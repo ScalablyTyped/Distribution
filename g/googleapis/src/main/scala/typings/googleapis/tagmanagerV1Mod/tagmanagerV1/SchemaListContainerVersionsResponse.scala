@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * List container versions response.
-  */
 trait SchemaListContainerVersionsResponse extends StObject {
   
   /**
@@ -34,10 +31,10 @@ object SchemaListContainerVersionsResponse {
     
     inline def setContainerVersionHeaderUndefined: Self = StObject.set(x, "containerVersionHeader", js.undefined)
     
-    inline def setContainerVersionHeaderVarargs(value: SchemaContainerVersionHeader*): Self = StObject.set(x, "containerVersionHeader", js.Array(value :_*))
+    inline def setContainerVersionHeaderVarargs(value: SchemaContainerVersionHeader*): Self = StObject.set(x, "containerVersionHeader", js.Array(value*))
     
     inline def setContainerVersionUndefined: Self = StObject.set(x, "containerVersion", js.undefined)
     
-    inline def setContainerVersionVarargs(value: SchemaContainerVersion*): Self = StObject.set(x, "containerVersion", js.Array(value :_*))
+    inline def setContainerVersionVarargs(value: SchemaContainerVersion*): Self = StObject.set(x, "containerVersion", js.Array(value*))
   }
 }

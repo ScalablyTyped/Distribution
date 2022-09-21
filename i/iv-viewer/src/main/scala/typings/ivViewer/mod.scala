@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("iv-viewer", JSImport.Namespace)
   @js.native
-  class ^ () extends ImageViewer {
+  open class ^ () extends ImageViewer {
     def this(element: Element) = this()
     def this(element: Null, options: Options) = this()
     def this(element: Element, options: Options) = this()
@@ -23,7 +23,7 @@ object mod {
   
   @JSImport("iv-viewer", "FullScreenViewer")
   @js.native
-  class FullScreenViewer () extends ImageViewer {
+  open class FullScreenViewer () extends ImageViewer {
     def this(options: Options) = this()
     
     /* protected */ @JSName("_elements")
@@ -42,7 +42,7 @@ object mod {
   
   @JSImport("iv-viewer", "ImageViewer")
   @js.native
-  class ImageViewer () extends StObject {
+  open class ImageViewer () extends StObject {
     def this(element: Element) = this()
     def this(element: Null, options: Options) = this()
     def this(element: Element, options: Options) = this()

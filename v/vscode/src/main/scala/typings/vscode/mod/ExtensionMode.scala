@@ -15,7 +15,7 @@ object ExtensionMode extends StObject {
   
   /**
     * The extension is running from an `--extensionDevelopmentPath` provided
-    * when launching VS Code.
+    * when launching the editor.
     */
   @js.native
   sealed trait Development
@@ -25,7 +25,7 @@ object ExtensionMode extends StObject {
   
   /**
     * The extension is installed normally (for example, from the marketplace
-    * or VSIX) in VS Code.
+    * or VSIX) in the editor.
     */
   @js.native
   sealed trait Production

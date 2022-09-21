@@ -1,6 +1,7 @@
 
 # Scala.js typings for google_dot_picker
 
+Typings are for version 0.0
 
 
 

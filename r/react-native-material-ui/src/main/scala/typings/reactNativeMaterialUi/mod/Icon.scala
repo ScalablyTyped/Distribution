@@ -7,12 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-material-ui", "Icon")
 @js.native
-class Icon protected ()
-  extends Component[IconProps, js.Any, js.Any] {
+open class Icon protected () extends Component[IconProps, Any, Any] {
   def this(props: IconProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: IconProps, context: js.Any) = this()
+  def this(props: IconProps, context: Any) = this()
 }

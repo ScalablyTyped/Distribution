@@ -2,6 +2,7 @@ package typings.babylonjs.BABYLON
 
 import typings.babylonjs.XRFrame
 import typings.babylonjs.XRInputSource
+import typings.babylonjs.XRPose
 import typings.babylonjs.XRReferenceSpace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,15 +11,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait WebXRInputSource extends StObject {
   
-  /* private */ var _disposed: js.Any = js.native
+  /* private */ var _disposed: Any = js.native
   
-  /* private */ var _options: js.Any = js.native
+  /**
+    * The last XRPose the was calculated on the current XRFrame
+    * @hidden
+    */
+  var _lastXRPose: js.UndefOr[XRPose] = js.native
   
-  /* private */ var _scene: js.Any = js.native
+  /* private */ var _options: Any = js.native
   
-  /* private */ var _tmpVector: js.Any = js.native
+  /* private */ var _scene: Any = js.native
   
-  /* private */ var _uniqueId: js.Any = js.native
+  /* private */ var _tmpVector: Any = js.native
+  
+  /* private */ var _uniqueId: Any = js.native
   
   /**
     * Disposes of the object
@@ -34,7 +41,7 @@ trait WebXRInputSource extends StObject {
   def getWorldPointerRayToRef(result: Ray, gripIfAvailable: Boolean): Unit = js.native
   
   /**
-    * Represents the part of the controller that is held. This may not exist if the controller is the head mounted display itself, if thats the case only the pointer from the head will be availible
+    * Represents the part of the controller that is held. This may not exist if the controller is the head mounted display itself, if that's the case only the pointer from the head will be available
     */
   var grip: js.UndefOr[AbstractMesh] = js.native
   
@@ -81,6 +88,7 @@ trait WebXRInputSource extends StObject {
     * Updates the controller pose based on the given XRFrame
     * @param xrFrame xr frame to update the pose with
     * @param referenceSpace reference space to use
+    * @param xrCamera the xr camera, used for parenting
     */
-  def updateFromXRFrame(xrFrame: XRFrame, referenceSpace: XRReferenceSpace): Unit = js.native
+  def updateFromXRFrame(xrFrame: XRFrame, referenceSpace: XRReferenceSpace, xrCamera: WebXRCamera): Unit = js.native
 }

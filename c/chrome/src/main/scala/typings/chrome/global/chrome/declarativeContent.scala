@@ -22,7 +22,7 @@ object declarativeContent {
   
   @JSGlobal("chrome.declarativeContent.PageStateMatcher")
   @js.native
-  class PageStateMatcher protected ()
+  open class PageStateMatcher protected ()
     extends StObject
        with typings.chrome.chrome.declarativeContent.PageStateMatcher {
     def this(options: typings.chrome.chrome.declarativeContent.PageStateMatcherProperties) = this()
@@ -30,21 +30,27 @@ object declarativeContent {
   
   @JSGlobal("chrome.declarativeContent.PageStateMatcherProperties")
   @js.native
-  class PageStateMatcherProperties ()
+  open class PageStateMatcherProperties ()
     extends StObject
        with typings.chrome.chrome.declarativeContent.PageStateMatcherProperties
   
   @JSGlobal("chrome.declarativeContent.SetIcon")
   @js.native
-  class SetIcon ()
+  open class SetIcon ()
     extends StObject
        with typings.chrome.chrome.declarativeContent.SetIcon {
     def this(options: ImageData) = this()
   }
   
+  @JSGlobal("chrome.declarativeContent.ShowAction")
+  @js.native
+  open class ShowAction ()
+    extends StObject
+       with typings.chrome.chrome.declarativeContent.ShowAction
+  
   @JSGlobal("chrome.declarativeContent.ShowPageAction")
   @js.native
-  class ShowPageAction ()
+  open class ShowPageAction ()
     extends StObject
        with typings.chrome.chrome.declarativeContent.ShowPageAction
   

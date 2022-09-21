@@ -11,7 +11,7 @@ object global {
     
     @JSGlobal("zumly")
     @js.native
-    class ^ protected ()
+    open class ^ protected ()
       extends typings.zumly.mod.^ {
       /**
         * Creates a Zumly instance

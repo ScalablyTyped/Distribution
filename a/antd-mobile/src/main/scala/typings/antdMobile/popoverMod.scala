@@ -1,90 +1,123 @@
 package typings.antdMobile
 
-import typings.antdMobile.anon.Placement
-import typings.antdMobile.anon.TypeofItemInstantiable
-import typings.antdMobile.antdMobileStrings.bottom
-import typings.antdMobile.antdMobileStrings.bottomLeft
-import typings.antdMobile.antdMobileStrings.bottomRight
-import typings.antdMobile.antdMobileStrings.left
-import typings.antdMobile.antdMobileStrings.right
-import typings.antdMobile.antdMobileStrings.top
-import typings.antdMobile.antdMobileStrings.topLeft
-import typings.antdMobile.antdMobileStrings.topRight
-import typings.antdMobile.popoverPropsTypeMod.PopoverPropsType
-import typings.react.mod.Component
+import typings.antdMobile.anon.OmitPopoverPropscontentac
+import typings.antdMobile.anon.PartialdefaultVisiblebool
+import typings.antdMobile.anon.WeakValidationMapdefaultV
+import typings.antdMobile.anon.defaultVisiblebooleanunde
+import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object popoverMod {
   
-  @JSImport("antd-mobile/lib/popover", JSImport.Default)
-  @js.native
-  class default () extends Popover
-  /* static members */
+  /* Inlined react.react.ForwardRefExoticComponent<{  defaultVisible :boolean | undefined,   visible :boolean | undefined,   onVisibleChange :(visible : boolean): void | undefined,   getContainer :antd-mobile.antd-mobile/es/utils/render-to-container.GetContainer | undefined,   destroyOnHide :boolean | undefined,   children :react.react.ReactElement,   mode :'dark' | 'light' | undefined,   trigger :'click' | undefined,   placement :antd-mobile.antd-mobile/es/components/popover.DeprecatedPlacement | antd-mobile.antd-mobile/es/components/popover.Placement | undefined,   stopPropagation :std.Array<'click'> | undefined,   content :react.react.ReactNode,   className :string | undefined,   style :react.react.CSSProperties & std.Partial<std.Record<'--z-index', string>> | undefined,   tabIndex :number | undefined} & react.react.AriaAttributes & react.react.RefAttributes<antd-mobile.antd-mobile/es/components/popover/popover.PopoverRef>> & {  Menu :react.react.ForwardRefExoticComponent<std.Omit<antd-mobile.antd-mobile/es/components/popover/popover.PopoverProps, 'content'> & {  actions :std.Array<antd-mobile.antd-mobile/es/components/popover/popover-menu.Action>,   onAction :(item : antd-mobile.antd-mobile/es/components/popover/popover-menu.Action): void | undefined} & react.react.RefAttributes<antd-mobile.antd-mobile/es/components/popover/popover.PopoverRef>>} */
   object default {
     
-    @JSImport("antd-mobile/lib/popover", JSImport.Default)
+    /**
+      * **NOTE**: Exotic components are not callable.
+      */
+    inline def apply(props: defaultVisiblebooleanunde): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    
+    @JSImport("antd-mobile/es/components/popover", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("antd-mobile/lib/popover", "default.Item")
+    @JSImport("antd-mobile/es/components/popover", "default.Menu")
     @js.native
-    def Item: TypeofItemInstantiable = js.native
-    inline def Item_=(x: TypeofItemInstantiable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+    def Menu: ForwardRefExoticComponent[OmitPopoverPropscontentac] = js.native
+    inline def Menu_=(x: ForwardRefExoticComponent[OmitPopoverPropscontentac]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Menu")(x.asInstanceOf[js.Any])
     
-    @JSImport("antd-mobile/lib/popover", "default.defaultProps")
+    @JSImport("antd-mobile/es/components/popover", "default.defaultProps")
     @js.native
-    def defaultProps: Placement = js.native
-    inline def defaultProps_=(x: Placement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: js.UndefOr[PartialdefaultVisiblebool] = js.native
+    inline def defaultProps_=(x: js.UndefOr[PartialdefaultVisiblebool]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    
+    @JSImport("antd-mobile/es/components/popover", "default.displayName")
+    @js.native
+    def displayName: js.UndefOr[String] = js.native
+    inline def displayName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    
+    @JSImport("antd-mobile/es/components/popover", "default.propTypes")
+    @js.native
+    def propTypes: js.UndefOr[WeakValidationMapdefaultV] = js.native
+    inline def propTypes_=(x: js.UndefOr[WeakValidationMapdefaultV]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    
+    @JSImport("antd-mobile/es/components/popover", "default.$$typeof")
+    @js.native
+    val typeof: js.Symbol = js.native
   }
   
-  trait PopOverPropsType
-    extends StObject
-       with PopoverPropsType {
+  /* Rewritten from type alias, can be one of: 
+    - typings.antdMobile.antdMobileStrings.topLeft
+    - typings.antdMobile.antdMobileStrings.topRight
+    - typings.antdMobile.antdMobileStrings.bottomLeft
+    - typings.antdMobile.antdMobileStrings.bottomRight
+    - typings.antdMobile.antdMobileStrings.leftTop
+    - typings.antdMobile.antdMobileStrings.leftBottom
+    - typings.antdMobile.antdMobileStrings.rightTop
+    - typings.antdMobile.antdMobileStrings.rightBottom
+  */
+  trait DeprecatedPlacement extends StObject
+  object DeprecatedPlacement {
     
-    var mask: js.UndefOr[Boolean] = js.undefined
+    inline def bottomLeft: typings.antdMobile.antdMobileStrings.bottomLeft = "bottomLeft".asInstanceOf[typings.antdMobile.antdMobileStrings.bottomLeft]
     
-    var onVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
+    inline def bottomRight: typings.antdMobile.antdMobileStrings.bottomRight = "bottomRight".asInstanceOf[typings.antdMobile.antdMobileStrings.bottomRight]
     
-    var placement: js.UndefOr[left | right | top | bottom | topLeft | topRight | bottomLeft | bottomRight] = js.undefined
+    inline def leftBottom: typings.antdMobile.antdMobileStrings.leftBottom = "leftBottom".asInstanceOf[typings.antdMobile.antdMobileStrings.leftBottom]
     
-    var prefixCls: js.UndefOr[String] = js.undefined
+    inline def leftTop: typings.antdMobile.antdMobileStrings.leftTop = "leftTop".asInstanceOf[typings.antdMobile.antdMobileStrings.leftTop]
     
-    var visible: js.UndefOr[Boolean] = js.undefined
-  }
-  object PopOverPropsType {
+    inline def rightBottom: typings.antdMobile.antdMobileStrings.rightBottom = "rightBottom".asInstanceOf[typings.antdMobile.antdMobileStrings.rightBottom]
     
-    inline def apply(): PopOverPropsType = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PopOverPropsType]
-    }
+    inline def rightTop: typings.antdMobile.antdMobileStrings.rightTop = "rightTop".asInstanceOf[typings.antdMobile.antdMobileStrings.rightTop]
     
-    extension [Self <: PopOverPropsType](x: Self) {
-      
-      inline def setMask(value: Boolean): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
-      
-      inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
-      
-      inline def setOnVisibleChange(value: /* visible */ Boolean => Unit): Self = StObject.set(x, "onVisibleChange", js.Any.fromFunction1(value))
-      
-      inline def setOnVisibleChangeUndefined: Self = StObject.set(x, "onVisibleChange", js.undefined)
-      
-      inline def setPlacement(value: left | right | top | bottom | topLeft | topRight | bottomLeft | bottomRight): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
-      
-      inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
-      
-      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
-      
-      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
-      
-      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
-      
-      inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
-    }
+    inline def topLeft: typings.antdMobile.antdMobileStrings.topLeft = "topLeft".asInstanceOf[typings.antdMobile.antdMobileStrings.topLeft]
+    
+    inline def topRight: typings.antdMobile.antdMobileStrings.topRight = "topRight".asInstanceOf[typings.antdMobile.antdMobileStrings.topRight]
   }
   
-  @js.native
-  trait Popover
-    extends Component[PopOverPropsType, js.Any, js.Any]
+  /* Rewritten from type alias, can be one of: 
+    - typings.antdMobile.antdMobileStrings.top
+    - typings.antdMobile.antdMobileStrings.`top-start`
+    - typings.antdMobile.antdMobileStrings.`top-end`
+    - typings.antdMobile.antdMobileStrings.right
+    - typings.antdMobile.antdMobileStrings.`right-start`
+    - typings.antdMobile.antdMobileStrings.`right-end`
+    - typings.antdMobile.antdMobileStrings.bottom
+    - typings.antdMobile.antdMobileStrings.`bottom-start`
+    - typings.antdMobile.antdMobileStrings.`bottom-end`
+    - typings.antdMobile.antdMobileStrings.left
+    - typings.antdMobile.antdMobileStrings.`left-start`
+    - typings.antdMobile.antdMobileStrings.`left-end`
+  */
+  trait Placement extends StObject
+  object Placement {
+    
+    inline def bottom: typings.antdMobile.antdMobileStrings.bottom = "bottom".asInstanceOf[typings.antdMobile.antdMobileStrings.bottom]
+    
+    inline def `bottom-end`: typings.antdMobile.antdMobileStrings.`bottom-end` = "bottom-end".asInstanceOf[typings.antdMobile.antdMobileStrings.`bottom-end`]
+    
+    inline def `bottom-start`: typings.antdMobile.antdMobileStrings.`bottom-start` = "bottom-start".asInstanceOf[typings.antdMobile.antdMobileStrings.`bottom-start`]
+    
+    inline def left: typings.antdMobile.antdMobileStrings.left = "left".asInstanceOf[typings.antdMobile.antdMobileStrings.left]
+    
+    inline def `left-end`: typings.antdMobile.antdMobileStrings.`left-end` = "left-end".asInstanceOf[typings.antdMobile.antdMobileStrings.`left-end`]
+    
+    inline def `left-start`: typings.antdMobile.antdMobileStrings.`left-start` = "left-start".asInstanceOf[typings.antdMobile.antdMobileStrings.`left-start`]
+    
+    inline def right: typings.antdMobile.antdMobileStrings.right = "right".asInstanceOf[typings.antdMobile.antdMobileStrings.right]
+    
+    inline def `right-end`: typings.antdMobile.antdMobileStrings.`right-end` = "right-end".asInstanceOf[typings.antdMobile.antdMobileStrings.`right-end`]
+    
+    inline def `right-start`: typings.antdMobile.antdMobileStrings.`right-start` = "right-start".asInstanceOf[typings.antdMobile.antdMobileStrings.`right-start`]
+    
+    inline def top: typings.antdMobile.antdMobileStrings.top = "top".asInstanceOf[typings.antdMobile.antdMobileStrings.top]
+    
+    inline def `top-end`: typings.antdMobile.antdMobileStrings.`top-end` = "top-end".asInstanceOf[typings.antdMobile.antdMobileStrings.`top-end`]
+    
+    inline def `top-start`: typings.antdMobile.antdMobileStrings.`top-start` = "top-start".asInstanceOf[typings.antdMobile.antdMobileStrings.`top-start`]
+  }
 }

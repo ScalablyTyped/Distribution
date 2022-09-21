@@ -173,11 +173,11 @@ object anon {
     var title: String
     
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    var `type`: js.Array[js.Any]
+    var `type`: js.Array[Any]
   }
   object Label {
     
-    inline def apply(id: String, label: String, title: String, `type`: js.Array[js.Any]): Label = {
+    inline def apply(id: String, label: String, title: String, `type`: js.Array[Any]): Label = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Label]
@@ -191,9 +191,9 @@ object anon {
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      inline def setType(value: js.Array[js.Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: js.Array[Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      inline def setTypeVarargs(value: js.Any*): Self = StObject.set(x, "type", js.Array(value :_*))
+      inline def setTypeVarargs(value: Any*): Self = StObject.set(x, "type", js.Array(value*))
     }
   }
   
@@ -220,7 +220,7 @@ object anon {
       
       inline def setScope(value: js.Array[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value*))
     }
   }
   

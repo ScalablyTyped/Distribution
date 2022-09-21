@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.OutlookBarShortcut")
 @js.native
-/* private */ class OutlookBarShortcut ()
+/* private */ open class OutlookBarShortcut ()
   extends StObject
      with typings.activexOutlook.Outlook.OutlookBarShortcut {
   
@@ -25,14 +25,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OutlookDotOutlookBarShortcut_typekey: typings.activexOutlook.Outlook.OutlookBarShortcut = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Session: typings.activexOutlook.Outlook.NameSpace = js.native
   
   /* CompleteClass */
-  override def SetIcon(Icon: js.Any): Unit = js.native
+  override def SetIcon(Icon: Any): Unit = js.native
   
   /* CompleteClass */
-  override val Target: js.Any = js.native
+  override val Target: Any = js.native
 }

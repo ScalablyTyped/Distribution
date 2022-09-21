@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.ImageEditor")
 @js.native
-class ImageEditor protected ()
+open class ImageEditor protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.ImageEditor {
   def this(element: Element) = this()

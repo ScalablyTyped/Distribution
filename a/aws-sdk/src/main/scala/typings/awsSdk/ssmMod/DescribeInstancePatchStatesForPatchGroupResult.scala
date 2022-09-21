@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeInstancePatchStatesForPatchGroupResult extends StObject {
   
   /**
-    * The high-level patch state for the requested instances. 
+    * The high-level patch state for the requested managed nodes. 
     */
   var InstancePatchStates: js.UndefOr[InstancePatchStatesList] = js.undefined
   
@@ -29,7 +29,7 @@ object DescribeInstancePatchStatesForPatchGroupResult {
     
     inline def setInstancePatchStatesUndefined: Self = StObject.set(x, "InstancePatchStates", js.undefined)
     
-    inline def setInstancePatchStatesVarargs(value: InstancePatchState*): Self = StObject.set(x, "InstancePatchStates", js.Array(value :_*))
+    inline def setInstancePatchStatesVarargs(value: InstancePatchState*): Self = StObject.set(x, "InstancePatchStates", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

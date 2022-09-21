@@ -1,6 +1,5 @@
 package typings.awsSdkClientPinpointBrowser
 
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +21,7 @@ object typesAttributesResourceMod {
     /**
       * The attributes for the application.
       */
-    var Attributes: js.UndefOr[js.Array[String] | Iterable[String]] = js.undefined
+    var Attributes: js.UndefOr[js.Array[String] | js.Iterable[String]] = js.undefined
   }
   object AttributesResource {
     
@@ -41,11 +40,11 @@ object typesAttributesResourceMod {
       
       inline def setAttributeTypeUndefined: Self = StObject.set(x, "AttributeType", js.undefined)
       
-      inline def setAttributes(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Array[String] | js.Iterable[String]): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
       
       inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
       
-      inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
+      inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "Attributes", js.Array(value*))
     }
   }
   
@@ -72,7 +71,7 @@ object typesAttributesResourceMod {
       
       inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
       
-      inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
+      inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "Attributes", js.Array(value*))
     }
   }
 }

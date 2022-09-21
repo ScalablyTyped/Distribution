@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.Schedule")
 @js.native
-class Schedule protected ()
+open class Schedule protected ()
   extends StObject
      with typings.ejWebAll.ej.Schedule {
   def this(element: JQuery) = this()
@@ -45,8 +45,8 @@ object Schedule {
   /* static member */
   @JSGlobal("ej.Schedule.Locale")
   @js.native
-  def Locale: js.Any = js.native
-  inline def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  def Locale: Any = js.native
+  inline def Locale_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
   
   @JSGlobal("ej.Schedule.Orientation")
   @js.native

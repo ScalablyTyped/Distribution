@@ -22,6 +22,6 @@ object ManagedConfigurationsSettingsListResponse {
     
     inline def setManagedConfigurationsSettingsUndefined: Self = StObject.set(x, "managedConfigurationsSettings", js.undefined)
     
-    inline def setManagedConfigurationsSettingsVarargs(value: ManagedConfigurationsSettings*): Self = StObject.set(x, "managedConfigurationsSettings", js.Array(value :_*))
+    inline def setManagedConfigurationsSettingsVarargs(value: ManagedConfigurationsSettings*): Self = StObject.set(x, "managedConfigurationsSettings", js.Array(value*))
   }
 }

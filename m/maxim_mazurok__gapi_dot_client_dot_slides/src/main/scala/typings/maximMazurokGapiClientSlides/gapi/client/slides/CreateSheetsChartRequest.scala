@@ -25,7 +25,10 @@ trait CreateSheetsChartRequest extends StObject {
     */
   var objectId: js.UndefOr[String] = js.undefined
   
-  /** The ID of the Google Sheets spreadsheet that contains the chart. */
+  /**
+    * The ID of the Google Sheets spreadsheet that contains the chart. You might need to add a resource key to the HTTP header for a subset of old files. For more information, see [Access
+    * link-shared files using resource keys](https://developers.google.com/drive/api/v3/resource-keys).
+    */
   var spreadsheetId: js.UndefOr[String] = js.undefined
 }
 object CreateSheetsChartRequest {

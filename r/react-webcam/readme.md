@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-webcam
 
-Typings are for version 5.2.2
+Typings are for version 7.0.1
 
 ## Library description:
 React webcam component
@@ -10,10 +10,10 @@ React webcam component
 | ------------------ | :-------------: |
 | Full name          | react-webcam |
 | Keywords           | react, react-component, webcam |
-| # releases         | 25 |
-| # dependents       | 41 |
-| # downloads        | 1675491 |
-| # stars            | 6 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 391715.0 |
+| # stars            | 1271.0 |
 
 ## Links
 - [Homepage](https://github.com/mozmorris/react-webcam)

@@ -56,7 +56,7 @@ object RealmDto {
     
     inline def setN(value: js.Array[StringDictionary[String]]): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
     
-    inline def setNVarargs(value: StringDictionary[String]*): Self = StObject.set(x, "n", js.Array(value :_*))
+    inline def setNVarargs(value: StringDictionary[String]*): Self = StObject.set(x, "n", js.Array(value*))
     
     inline def setProfileiconmax(value: Double): Self = StObject.set(x, "profileiconmax", value.asInstanceOf[js.Any])
     

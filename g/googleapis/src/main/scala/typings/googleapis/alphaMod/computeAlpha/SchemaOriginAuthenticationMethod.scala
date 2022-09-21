@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Configuration for the origin authentication method.
-  */
 trait SchemaOriginAuthenticationMethod extends StObject {
   
   var jwt: js.UndefOr[SchemaJwt] = js.undefined

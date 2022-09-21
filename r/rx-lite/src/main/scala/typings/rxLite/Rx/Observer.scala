@@ -17,7 +17,7 @@ object Observer {
   inline def apply[T](
     asObserver: () => Observer[T],
     onCompleted: () => Unit,
-    onError: js.Any => Unit,
+    onError: Any => Unit,
     onNext: T => Unit,
     toNotifier: () => js.Function1[/* notification */ Notification[T], Unit]
   ): Observer[T] = {

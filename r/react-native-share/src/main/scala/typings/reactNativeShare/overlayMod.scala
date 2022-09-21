@@ -13,11 +13,10 @@ object overlayMod {
   
   @JSImport("react-native-share/Overlay", JSImport.Default)
   @js.native
-  class default () extends Overlay
+  open class default () extends Overlay
   
   @js.native
-  trait Overlay
-    extends Component[OverlayProps, OverlayState, js.Any] {
+  trait Overlay extends Component[OverlayProps, OverlayState, Any] {
     
     @JSName("UNSAFE_componentWillReceiveProps")
     def UNSAFE_componentWillReceiveProps_MOverlay(newProps: OverlayProps): Unit = js.native

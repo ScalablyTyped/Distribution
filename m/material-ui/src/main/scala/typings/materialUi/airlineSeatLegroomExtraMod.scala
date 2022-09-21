@@ -10,10 +10,10 @@ object airlineSeatLegroomExtraMod {
   
   @JSImport("material-ui/svg-icons/notification/airline-seat-legroom-extra", JSImport.Default)
   @js.native
-  class default () extends NotificationAirlineSeatLegroomExtra
+  open class default () extends NotificationAirlineSeatLegroomExtra
   
   @JSImport("material-ui/svg-icons/notification/airline-seat-legroom-extra", "NotificationAirlineSeatLegroomExtra")
   @js.native
-  class NotificationAirlineSeatLegroomExtra ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NotificationAirlineSeatLegroomExtra ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

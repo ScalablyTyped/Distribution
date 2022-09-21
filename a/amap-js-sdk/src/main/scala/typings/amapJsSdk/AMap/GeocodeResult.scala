@@ -23,7 +23,7 @@ object GeocodeResult {
     
     inline def setGeocodes(value: js.Array[LngLat]): Self = StObject.set(x, "geocodes", value.asInstanceOf[js.Any])
     
-    inline def setGeocodesVarargs(value: LngLat*): Self = StObject.set(x, "geocodes", js.Array(value :_*))
+    inline def setGeocodesVarargs(value: LngLat*): Self = StObject.set(x, "geocodes", js.Array(value*))
     
     inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     

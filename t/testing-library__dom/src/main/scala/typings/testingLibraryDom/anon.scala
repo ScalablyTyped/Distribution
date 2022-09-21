@@ -2,16 +2,14 @@ package typings.testingLibraryDom
 
 import typings.prettyFormat.mod.OptionsReceived
 import typings.std.Element
-import typings.std.Error
 import typings.std.HTMLDocument
 import typings.std.HTMLElement
-import typings.testingLibraryDom.matchesMod.ByRoleMatcher
-import typings.testingLibraryDom.matchesMod.Matcher
-import typings.testingLibraryDom.matchesMod.MatcherOptions
+import typings.std.Parameters
+import typings.std.ReturnType
+import typings.testingLibraryDom.getQueriesForElementMod.BoundFunction
 import typings.testingLibraryDom.queriesMod.AllByBoundAttribute
 import typings.testingLibraryDom.queriesMod.AllByRole
 import typings.testingLibraryDom.queriesMod.AllByText
-import typings.testingLibraryDom.queriesMod.ByRoleOptions
 import typings.testingLibraryDom.queriesMod.FindAllByBoundAttribute
 import typings.testingLibraryDom.queriesMod.FindAllByRole_
 import typings.testingLibraryDom.queriesMod.FindAllByText_
@@ -24,8 +22,6 @@ import typings.testingLibraryDom.queriesMod.GetByText_
 import typings.testingLibraryDom.queriesMod.QueryByBoundAttribute
 import typings.testingLibraryDom.queriesMod.QueryByRole_
 import typings.testingLibraryDom.queriesMod.QueryByText_
-import typings.testingLibraryDom.queryHelpersMod.SelectorMatcherOptions
-import typings.testingLibraryDom.waitForMod.waitForOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,12 +53,12 @@ object anon {
     def debug(element: HTMLDocument, maxLength: Unit, options: OptionsReceived): Unit = js.native
     
     /**
-      * Convenience function for `Testing Playground` which logs URL that
+      * Convenience function for `Testing Playground` which logs and returns the URL that
       * can be opened in a browser
       */
-    def logTestingPlaygroundURL(): Unit = js.native
-    def logTestingPlaygroundURL(element: Element): Unit = js.native
-    def logTestingPlaygroundURL(element: HTMLDocument): Unit = js.native
+    def logTestingPlaygroundURL(): String = js.native
+    def logTestingPlaygroundURL(element: Element): String = js.native
+    def logTestingPlaygroundURL(element: HTMLDocument): String = js.native
   }
   
   trait DefaultInit extends StObject {
@@ -90,28 +86,383 @@ object anon {
     }
   }
   
-  trait Interval extends StObject {
+  trait FindAllByAltText extends StObject {
     
-    var interval: js.UndefOr[Double] = js.undefined
+    def findAllByAltText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.FindAllByBoundAttribute<T>>> is not an array type */ args: Parameters[BoundFunction[FindAllByBoundAttribute[T]]]
+    ): ReturnType[FindAllByBoundAttribute[T]]
     
-    var timeout: js.UndefOr[Double] = js.undefined
+    def findAllByDisplayValue[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.FindAllByBoundAttribute<T>>> is not an array type */ args: Parameters[BoundFunction[FindAllByBoundAttribute[T]]]
+    ): ReturnType[FindAllByBoundAttribute[T]]
+    
+    def findAllByLabelText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.FindAllByText<T>>> is not an array type */ args: Parameters[BoundFunction[FindAllByText_[T]]]
+    ): ReturnType[FindAllByText_[T]]
+    
+    def findAllByPlaceholderText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.FindAllByBoundAttribute<T>>> is not an array type */ args: Parameters[BoundFunction[FindAllByBoundAttribute[T]]]
+    ): ReturnType[FindAllByBoundAttribute[T]]
+    
+    def findAllByRole[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.FindAllByRole<T>>> is not an array type */ args: Parameters[BoundFunction[FindAllByRole_[T]]]
+    ): ReturnType[FindAllByRole_[T]]
+    
+    def findAllByTestId[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.FindAllByBoundAttribute<T>>> is not an array type */ args: Parameters[BoundFunction[FindAllByBoundAttribute[T]]]
+    ): ReturnType[FindAllByBoundAttribute[T]]
+    
+    def findAllByText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.FindAllByText<T>>> is not an array type */ args: Parameters[BoundFunction[FindAllByText_[T]]]
+    ): ReturnType[FindAllByText_[T]]
+    
+    def findAllByTitle[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.FindAllByBoundAttribute<T>>> is not an array type */ args: Parameters[BoundFunction[FindAllByBoundAttribute[T]]]
+    ): ReturnType[FindAllByBoundAttribute[T]]
+    
+    def findByAltText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.FindByBoundAttribute<T>>> is not an array type */ args: Parameters[BoundFunction[FindByBoundAttribute[T]]]
+    ): ReturnType[FindByBoundAttribute[T]]
+    
+    def findByDisplayValue[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.FindByBoundAttribute<T>>> is not an array type */ args: Parameters[BoundFunction[FindByBoundAttribute[T]]]
+    ): ReturnType[FindByBoundAttribute[T]]
+    
+    def findByLabelText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.FindByText<T>>> is not an array type */ args: Parameters[BoundFunction[FindByText_[T]]]
+    ): ReturnType[FindByText_[T]]
+    
+    def findByPlaceholderText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.FindByBoundAttribute<T>>> is not an array type */ args: Parameters[BoundFunction[FindByBoundAttribute[T]]]
+    ): ReturnType[FindByBoundAttribute[T]]
+    
+    def findByRole[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.FindByRole<T>>> is not an array type */ args: Parameters[BoundFunction[FindByRole_[T]]]
+    ): ReturnType[FindByRole_[T]]
+    
+    def findByTestId[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.FindByBoundAttribute<T>>> is not an array type */ args: Parameters[BoundFunction[FindByBoundAttribute[T]]]
+    ): ReturnType[FindByBoundAttribute[T]]
+    
+    def findByText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.FindByText<T>>> is not an array type */ args: Parameters[BoundFunction[FindByText_[T]]]
+    ): ReturnType[FindByText_[T]]
+    
+    def findByTitle[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.FindByBoundAttribute<T>>> is not an array type */ args: Parameters[BoundFunction[FindByBoundAttribute[T]]]
+    ): ReturnType[FindByBoundAttribute[T]]
+    
+    def getAllByAltText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.AllByBoundAttribute<T>>> is not an array type */ args: Parameters[BoundFunction[AllByBoundAttribute[T]]]
+    ): ReturnType[AllByBoundAttribute[T]]
+    
+    def getAllByDisplayValue[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.AllByBoundAttribute<T>>> is not an array type */ args: Parameters[BoundFunction[AllByBoundAttribute[T]]]
+    ): ReturnType[AllByBoundAttribute[T]]
+    
+    def getAllByLabelText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.AllByText<T>>> is not an array type */ args: Parameters[BoundFunction[AllByText[T]]]
+    ): ReturnType[AllByText[T]]
+    
+    def getAllByPlaceholderText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.AllByBoundAttribute<T>>> is not an array type */ args: Parameters[BoundFunction[AllByBoundAttribute[T]]]
+    ): ReturnType[AllByBoundAttribute[T]]
+    
+    def getAllByRole[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.AllByRole<T>>> is not an array type */ args: Parameters[BoundFunction[AllByRole[T]]]
+    ): ReturnType[AllByRole[T]]
+    
+    def getAllByTestId[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.AllByBoundAttribute<T>>> is not an array type */ args: Parameters[BoundFunction[AllByBoundAttribute[T]]]
+    ): ReturnType[AllByBoundAttribute[T]]
+    
+    def getAllByText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.AllByText<T>>> is not an array type */ args: Parameters[BoundFunction[AllByText[T]]]
+    ): ReturnType[AllByText[T]]
+    
+    def getAllByTitle[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.AllByBoundAttribute<T>>> is not an array type */ args: Parameters[BoundFunction[AllByBoundAttribute[T]]]
+    ): ReturnType[AllByBoundAttribute[T]]
+    
+    def getByAltText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.GetByBoundAttribute<T>>> is not an array type */ args: Parameters[BoundFunction[GetByBoundAttribute[T]]]
+    ): ReturnType[GetByBoundAttribute[T]]
+    
+    def getByDisplayValue[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.GetByBoundAttribute<T>>> is not an array type */ args: Parameters[BoundFunction[GetByBoundAttribute[T]]]
+    ): ReturnType[GetByBoundAttribute[T]]
+    
+    def getByLabelText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.GetByText<T>>> is not an array type */ args: Parameters[BoundFunction[GetByText_[T]]]
+    ): ReturnType[GetByText_[T]]
+    
+    def getByPlaceholderText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.GetByBoundAttribute<T>>> is not an array type */ args: Parameters[BoundFunction[GetByBoundAttribute[T]]]
+    ): ReturnType[GetByBoundAttribute[T]]
+    
+    def getByRole[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.GetByRole<T>>> is not an array type */ args: Parameters[BoundFunction[GetByRole_[T]]]
+    ): ReturnType[GetByRole_[T]]
+    
+    def getByTestId[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.GetByBoundAttribute<T>>> is not an array type */ args: Parameters[BoundFunction[GetByBoundAttribute[T]]]
+    ): ReturnType[GetByBoundAttribute[T]]
+    
+    def getByText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.GetByText<T>>> is not an array type */ args: Parameters[BoundFunction[GetByText_[T]]]
+    ): ReturnType[GetByText_[T]]
+    
+    def getByTitle[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.GetByBoundAttribute<T>>> is not an array type */ args: Parameters[BoundFunction[GetByBoundAttribute[T]]]
+    ): ReturnType[GetByBoundAttribute[T]]
+    
+    def queryAllByAltText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.AllByBoundAttribute<T>>> is not an array type */ args: Parameters[BoundFunction[AllByBoundAttribute[T]]]
+    ): ReturnType[AllByBoundAttribute[T]]
+    
+    def queryAllByDisplayValue[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.AllByBoundAttribute<T>>> is not an array type */ args: Parameters[BoundFunction[AllByBoundAttribute[T]]]
+    ): ReturnType[AllByBoundAttribute[T]]
+    
+    def queryAllByLabelText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.AllByText<T>>> is not an array type */ args: Parameters[BoundFunction[AllByText[T]]]
+    ): ReturnType[AllByText[T]]
+    
+    def queryAllByPlaceholderText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.AllByBoundAttribute<T>>> is not an array type */ args: Parameters[BoundFunction[AllByBoundAttribute[T]]]
+    ): ReturnType[AllByBoundAttribute[T]]
+    
+    def queryAllByRole[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.AllByRole<T>>> is not an array type */ args: Parameters[BoundFunction[AllByRole[T]]]
+    ): ReturnType[AllByRole[T]]
+    
+    def queryAllByTestId[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.AllByBoundAttribute<T>>> is not an array type */ args: Parameters[BoundFunction[AllByBoundAttribute[T]]]
+    ): ReturnType[AllByBoundAttribute[T]]
+    
+    def queryAllByText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.AllByText<T>>> is not an array type */ args: Parameters[BoundFunction[AllByText[T]]]
+    ): ReturnType[AllByText[T]]
+    
+    def queryAllByTitle[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.AllByBoundAttribute<T>>> is not an array type */ args: Parameters[BoundFunction[AllByBoundAttribute[T]]]
+    ): ReturnType[AllByBoundAttribute[T]]
+    
+    def queryByAltText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.QueryByBoundAttribute<T>>> is not an array type */ args: Parameters[BoundFunction[QueryByBoundAttribute[T]]]
+    ): ReturnType[QueryByBoundAttribute[T]]
+    
+    def queryByDisplayValue[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.QueryByBoundAttribute<T>>> is not an array type */ args: Parameters[BoundFunction[QueryByBoundAttribute[T]]]
+    ): ReturnType[QueryByBoundAttribute[T]]
+    
+    def queryByLabelText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.QueryByText<T>>> is not an array type */ args: Parameters[BoundFunction[QueryByText_[T]]]
+    ): ReturnType[QueryByText_[T]]
+    
+    def queryByPlaceholderText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.QueryByBoundAttribute<T>>> is not an array type */ args: Parameters[BoundFunction[QueryByBoundAttribute[T]]]
+    ): ReturnType[QueryByBoundAttribute[T]]
+    
+    def queryByRole[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.QueryByRole<T>>> is not an array type */ args: Parameters[BoundFunction[QueryByRole_[T]]]
+    ): ReturnType[QueryByRole_[T]]
+    
+    def queryByTestId[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.QueryByBoundAttribute<T>>> is not an array type */ args: Parameters[BoundFunction[QueryByBoundAttribute[T]]]
+    ): ReturnType[QueryByBoundAttribute[T]]
+    
+    def queryByText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.QueryByText<T>>> is not an array type */ args: Parameters[BoundFunction[QueryByText_[T]]]
+    ): ReturnType[QueryByText_[T]]
+    
+    def queryByTitle[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<BoundFunction<queries.QueryByBoundAttribute<T>>> is not an array type */ args: Parameters[BoundFunction[QueryByBoundAttribute[T]]]
+    ): ReturnType[QueryByBoundAttribute[T]]
   }
-  object Interval {
+  object FindAllByAltText {
     
-    inline def apply(): Interval = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Interval]
+    inline def apply(
+      findAllByAltText: Parameters[BoundFunction[FindAllByBoundAttribute[Any]]] => ReturnType[FindAllByBoundAttribute[Any]],
+      findAllByDisplayValue: Parameters[BoundFunction[FindAllByBoundAttribute[Any]]] => ReturnType[FindAllByBoundAttribute[Any]],
+      findAllByLabelText: Parameters[BoundFunction[FindAllByText_[Any]]] => ReturnType[FindAllByText_[Any]],
+      findAllByPlaceholderText: Parameters[BoundFunction[FindAllByBoundAttribute[Any]]] => ReturnType[FindAllByBoundAttribute[Any]],
+      findAllByRole: Parameters[BoundFunction[FindAllByRole_[Any]]] => ReturnType[FindAllByRole_[Any]],
+      findAllByTestId: Parameters[BoundFunction[FindAllByBoundAttribute[Any]]] => ReturnType[FindAllByBoundAttribute[Any]],
+      findAllByText: Parameters[BoundFunction[FindAllByText_[Any]]] => ReturnType[FindAllByText_[Any]],
+      findAllByTitle: Parameters[BoundFunction[FindAllByBoundAttribute[Any]]] => ReturnType[FindAllByBoundAttribute[Any]],
+      findByAltText: Parameters[BoundFunction[FindByBoundAttribute[Any]]] => ReturnType[FindByBoundAttribute[Any]],
+      findByDisplayValue: Parameters[BoundFunction[FindByBoundAttribute[Any]]] => ReturnType[FindByBoundAttribute[Any]],
+      findByLabelText: Parameters[BoundFunction[FindByText_[Any]]] => ReturnType[FindByText_[Any]],
+      findByPlaceholderText: Parameters[BoundFunction[FindByBoundAttribute[Any]]] => ReturnType[FindByBoundAttribute[Any]],
+      findByRole: Parameters[BoundFunction[FindByRole_[Any]]] => ReturnType[FindByRole_[Any]],
+      findByTestId: Parameters[BoundFunction[FindByBoundAttribute[Any]]] => ReturnType[FindByBoundAttribute[Any]],
+      findByText: Parameters[BoundFunction[FindByText_[Any]]] => ReturnType[FindByText_[Any]],
+      findByTitle: Parameters[BoundFunction[FindByBoundAttribute[Any]]] => ReturnType[FindByBoundAttribute[Any]],
+      getAllByAltText: Parameters[BoundFunction[AllByBoundAttribute[Any]]] => ReturnType[AllByBoundAttribute[Any]],
+      getAllByDisplayValue: Parameters[BoundFunction[AllByBoundAttribute[Any]]] => ReturnType[AllByBoundAttribute[Any]],
+      getAllByLabelText: Parameters[BoundFunction[AllByText[Any]]] => ReturnType[AllByText[Any]],
+      getAllByPlaceholderText: Parameters[BoundFunction[AllByBoundAttribute[Any]]] => ReturnType[AllByBoundAttribute[Any]],
+      getAllByRole: Parameters[BoundFunction[AllByRole[Any]]] => ReturnType[AllByRole[Any]],
+      getAllByTestId: Parameters[BoundFunction[AllByBoundAttribute[Any]]] => ReturnType[AllByBoundAttribute[Any]],
+      getAllByText: Parameters[BoundFunction[AllByText[Any]]] => ReturnType[AllByText[Any]],
+      getAllByTitle: Parameters[BoundFunction[AllByBoundAttribute[Any]]] => ReturnType[AllByBoundAttribute[Any]],
+      getByAltText: Parameters[BoundFunction[GetByBoundAttribute[Any]]] => ReturnType[GetByBoundAttribute[Any]],
+      getByDisplayValue: Parameters[BoundFunction[GetByBoundAttribute[Any]]] => ReturnType[GetByBoundAttribute[Any]],
+      getByLabelText: Parameters[BoundFunction[GetByText_[Any]]] => ReturnType[GetByText_[Any]],
+      getByPlaceholderText: Parameters[BoundFunction[GetByBoundAttribute[Any]]] => ReturnType[GetByBoundAttribute[Any]],
+      getByRole: Parameters[BoundFunction[GetByRole_[Any]]] => ReturnType[GetByRole_[Any]],
+      getByTestId: Parameters[BoundFunction[GetByBoundAttribute[Any]]] => ReturnType[GetByBoundAttribute[Any]],
+      getByText: Parameters[BoundFunction[GetByText_[Any]]] => ReturnType[GetByText_[Any]],
+      getByTitle: Parameters[BoundFunction[GetByBoundAttribute[Any]]] => ReturnType[GetByBoundAttribute[Any]],
+      queryAllByAltText: Parameters[BoundFunction[AllByBoundAttribute[Any]]] => ReturnType[AllByBoundAttribute[Any]],
+      queryAllByDisplayValue: Parameters[BoundFunction[AllByBoundAttribute[Any]]] => ReturnType[AllByBoundAttribute[Any]],
+      queryAllByLabelText: Parameters[BoundFunction[AllByText[Any]]] => ReturnType[AllByText[Any]],
+      queryAllByPlaceholderText: Parameters[BoundFunction[AllByBoundAttribute[Any]]] => ReturnType[AllByBoundAttribute[Any]],
+      queryAllByRole: Parameters[BoundFunction[AllByRole[Any]]] => ReturnType[AllByRole[Any]],
+      queryAllByTestId: Parameters[BoundFunction[AllByBoundAttribute[Any]]] => ReturnType[AllByBoundAttribute[Any]],
+      queryAllByText: Parameters[BoundFunction[AllByText[Any]]] => ReturnType[AllByText[Any]],
+      queryAllByTitle: Parameters[BoundFunction[AllByBoundAttribute[Any]]] => ReturnType[AllByBoundAttribute[Any]],
+      queryByAltText: Parameters[BoundFunction[QueryByBoundAttribute[Any]]] => ReturnType[QueryByBoundAttribute[Any]],
+      queryByDisplayValue: Parameters[BoundFunction[QueryByBoundAttribute[Any]]] => ReturnType[QueryByBoundAttribute[Any]],
+      queryByLabelText: Parameters[BoundFunction[QueryByText_[Any]]] => ReturnType[QueryByText_[Any]],
+      queryByPlaceholderText: Parameters[BoundFunction[QueryByBoundAttribute[Any]]] => ReturnType[QueryByBoundAttribute[Any]],
+      queryByRole: Parameters[BoundFunction[QueryByRole_[Any]]] => ReturnType[QueryByRole_[Any]],
+      queryByTestId: Parameters[BoundFunction[QueryByBoundAttribute[Any]]] => ReturnType[QueryByBoundAttribute[Any]],
+      queryByText: Parameters[BoundFunction[QueryByText_[Any]]] => ReturnType[QueryByText_[Any]],
+      queryByTitle: Parameters[BoundFunction[QueryByBoundAttribute[Any]]] => ReturnType[QueryByBoundAttribute[Any]]
+    ): FindAllByAltText = {
+      val __obj = js.Dynamic.literal(findAllByAltText = js.Any.fromFunction1(findAllByAltText), findAllByDisplayValue = js.Any.fromFunction1(findAllByDisplayValue), findAllByLabelText = js.Any.fromFunction1(findAllByLabelText), findAllByPlaceholderText = js.Any.fromFunction1(findAllByPlaceholderText), findAllByRole = js.Any.fromFunction1(findAllByRole), findAllByTestId = js.Any.fromFunction1(findAllByTestId), findAllByText = js.Any.fromFunction1(findAllByText), findAllByTitle = js.Any.fromFunction1(findAllByTitle), findByAltText = js.Any.fromFunction1(findByAltText), findByDisplayValue = js.Any.fromFunction1(findByDisplayValue), findByLabelText = js.Any.fromFunction1(findByLabelText), findByPlaceholderText = js.Any.fromFunction1(findByPlaceholderText), findByRole = js.Any.fromFunction1(findByRole), findByTestId = js.Any.fromFunction1(findByTestId), findByText = js.Any.fromFunction1(findByText), findByTitle = js.Any.fromFunction1(findByTitle), getAllByAltText = js.Any.fromFunction1(getAllByAltText), getAllByDisplayValue = js.Any.fromFunction1(getAllByDisplayValue), getAllByLabelText = js.Any.fromFunction1(getAllByLabelText), getAllByPlaceholderText = js.Any.fromFunction1(getAllByPlaceholderText), getAllByRole = js.Any.fromFunction1(getAllByRole), getAllByTestId = js.Any.fromFunction1(getAllByTestId), getAllByText = js.Any.fromFunction1(getAllByText), getAllByTitle = js.Any.fromFunction1(getAllByTitle), getByAltText = js.Any.fromFunction1(getByAltText), getByDisplayValue = js.Any.fromFunction1(getByDisplayValue), getByLabelText = js.Any.fromFunction1(getByLabelText), getByPlaceholderText = js.Any.fromFunction1(getByPlaceholderText), getByRole = js.Any.fromFunction1(getByRole), getByTestId = js.Any.fromFunction1(getByTestId), getByText = js.Any.fromFunction1(getByText), getByTitle = js.Any.fromFunction1(getByTitle), queryAllByAltText = js.Any.fromFunction1(queryAllByAltText), queryAllByDisplayValue = js.Any.fromFunction1(queryAllByDisplayValue), queryAllByLabelText = js.Any.fromFunction1(queryAllByLabelText), queryAllByPlaceholderText = js.Any.fromFunction1(queryAllByPlaceholderText), queryAllByRole = js.Any.fromFunction1(queryAllByRole), queryAllByTestId = js.Any.fromFunction1(queryAllByTestId), queryAllByText = js.Any.fromFunction1(queryAllByText), queryAllByTitle = js.Any.fromFunction1(queryAllByTitle), queryByAltText = js.Any.fromFunction1(queryByAltText), queryByDisplayValue = js.Any.fromFunction1(queryByDisplayValue), queryByLabelText = js.Any.fromFunction1(queryByLabelText), queryByPlaceholderText = js.Any.fromFunction1(queryByPlaceholderText), queryByRole = js.Any.fromFunction1(queryByRole), queryByTestId = js.Any.fromFunction1(queryByTestId), queryByText = js.Any.fromFunction1(queryByText), queryByTitle = js.Any.fromFunction1(queryByTitle))
+      __obj.asInstanceOf[FindAllByAltText]
     }
     
-    extension [Self <: Interval](x: Self) {
+    extension [Self <: FindAllByAltText](x: Self) {
       
-      inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setFindAllByAltText(
+        value: Parameters[BoundFunction[FindAllByBoundAttribute[Any]]] => ReturnType[FindAllByBoundAttribute[Any]]
+      ): Self = StObject.set(x, "findAllByAltText", js.Any.fromFunction1(value))
       
-      inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+      inline def setFindAllByDisplayValue(
+        value: Parameters[BoundFunction[FindAllByBoundAttribute[Any]]] => ReturnType[FindAllByBoundAttribute[Any]]
+      ): Self = StObject.set(x, "findAllByDisplayValue", js.Any.fromFunction1(value))
       
-      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setFindAllByLabelText(value: Parameters[BoundFunction[FindAllByText_[Any]]] => ReturnType[FindAllByText_[Any]]): Self = StObject.set(x, "findAllByLabelText", js.Any.fromFunction1(value))
       
-      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setFindAllByPlaceholderText(
+        value: Parameters[BoundFunction[FindAllByBoundAttribute[Any]]] => ReturnType[FindAllByBoundAttribute[Any]]
+      ): Self = StObject.set(x, "findAllByPlaceholderText", js.Any.fromFunction1(value))
+      
+      inline def setFindAllByRole(value: Parameters[BoundFunction[FindAllByRole_[Any]]] => ReturnType[FindAllByRole_[Any]]): Self = StObject.set(x, "findAllByRole", js.Any.fromFunction1(value))
+      
+      inline def setFindAllByTestId(
+        value: Parameters[BoundFunction[FindAllByBoundAttribute[Any]]] => ReturnType[FindAllByBoundAttribute[Any]]
+      ): Self = StObject.set(x, "findAllByTestId", js.Any.fromFunction1(value))
+      
+      inline def setFindAllByText(value: Parameters[BoundFunction[FindAllByText_[Any]]] => ReturnType[FindAllByText_[Any]]): Self = StObject.set(x, "findAllByText", js.Any.fromFunction1(value))
+      
+      inline def setFindAllByTitle(
+        value: Parameters[BoundFunction[FindAllByBoundAttribute[Any]]] => ReturnType[FindAllByBoundAttribute[Any]]
+      ): Self = StObject.set(x, "findAllByTitle", js.Any.fromFunction1(value))
+      
+      inline def setFindByAltText(
+        value: Parameters[BoundFunction[FindByBoundAttribute[Any]]] => ReturnType[FindByBoundAttribute[Any]]
+      ): Self = StObject.set(x, "findByAltText", js.Any.fromFunction1(value))
+      
+      inline def setFindByDisplayValue(
+        value: Parameters[BoundFunction[FindByBoundAttribute[Any]]] => ReturnType[FindByBoundAttribute[Any]]
+      ): Self = StObject.set(x, "findByDisplayValue", js.Any.fromFunction1(value))
+      
+      inline def setFindByLabelText(value: Parameters[BoundFunction[FindByText_[Any]]] => ReturnType[FindByText_[Any]]): Self = StObject.set(x, "findByLabelText", js.Any.fromFunction1(value))
+      
+      inline def setFindByPlaceholderText(
+        value: Parameters[BoundFunction[FindByBoundAttribute[Any]]] => ReturnType[FindByBoundAttribute[Any]]
+      ): Self = StObject.set(x, "findByPlaceholderText", js.Any.fromFunction1(value))
+      
+      inline def setFindByRole(value: Parameters[BoundFunction[FindByRole_[Any]]] => ReturnType[FindByRole_[Any]]): Self = StObject.set(x, "findByRole", js.Any.fromFunction1(value))
+      
+      inline def setFindByTestId(
+        value: Parameters[BoundFunction[FindByBoundAttribute[Any]]] => ReturnType[FindByBoundAttribute[Any]]
+      ): Self = StObject.set(x, "findByTestId", js.Any.fromFunction1(value))
+      
+      inline def setFindByText(value: Parameters[BoundFunction[FindByText_[Any]]] => ReturnType[FindByText_[Any]]): Self = StObject.set(x, "findByText", js.Any.fromFunction1(value))
+      
+      inline def setFindByTitle(
+        value: Parameters[BoundFunction[FindByBoundAttribute[Any]]] => ReturnType[FindByBoundAttribute[Any]]
+      ): Self = StObject.set(x, "findByTitle", js.Any.fromFunction1(value))
+      
+      inline def setGetAllByAltText(value: Parameters[BoundFunction[AllByBoundAttribute[Any]]] => ReturnType[AllByBoundAttribute[Any]]): Self = StObject.set(x, "getAllByAltText", js.Any.fromFunction1(value))
+      
+      inline def setGetAllByDisplayValue(value: Parameters[BoundFunction[AllByBoundAttribute[Any]]] => ReturnType[AllByBoundAttribute[Any]]): Self = StObject.set(x, "getAllByDisplayValue", js.Any.fromFunction1(value))
+      
+      inline def setGetAllByLabelText(value: Parameters[BoundFunction[AllByText[Any]]] => ReturnType[AllByText[Any]]): Self = StObject.set(x, "getAllByLabelText", js.Any.fromFunction1(value))
+      
+      inline def setGetAllByPlaceholderText(value: Parameters[BoundFunction[AllByBoundAttribute[Any]]] => ReturnType[AllByBoundAttribute[Any]]): Self = StObject.set(x, "getAllByPlaceholderText", js.Any.fromFunction1(value))
+      
+      inline def setGetAllByRole(value: Parameters[BoundFunction[AllByRole[Any]]] => ReturnType[AllByRole[Any]]): Self = StObject.set(x, "getAllByRole", js.Any.fromFunction1(value))
+      
+      inline def setGetAllByTestId(value: Parameters[BoundFunction[AllByBoundAttribute[Any]]] => ReturnType[AllByBoundAttribute[Any]]): Self = StObject.set(x, "getAllByTestId", js.Any.fromFunction1(value))
+      
+      inline def setGetAllByText(value: Parameters[BoundFunction[AllByText[Any]]] => ReturnType[AllByText[Any]]): Self = StObject.set(x, "getAllByText", js.Any.fromFunction1(value))
+      
+      inline def setGetAllByTitle(value: Parameters[BoundFunction[AllByBoundAttribute[Any]]] => ReturnType[AllByBoundAttribute[Any]]): Self = StObject.set(x, "getAllByTitle", js.Any.fromFunction1(value))
+      
+      inline def setGetByAltText(value: Parameters[BoundFunction[GetByBoundAttribute[Any]]] => ReturnType[GetByBoundAttribute[Any]]): Self = StObject.set(x, "getByAltText", js.Any.fromFunction1(value))
+      
+      inline def setGetByDisplayValue(value: Parameters[BoundFunction[GetByBoundAttribute[Any]]] => ReturnType[GetByBoundAttribute[Any]]): Self = StObject.set(x, "getByDisplayValue", js.Any.fromFunction1(value))
+      
+      inline def setGetByLabelText(value: Parameters[BoundFunction[GetByText_[Any]]] => ReturnType[GetByText_[Any]]): Self = StObject.set(x, "getByLabelText", js.Any.fromFunction1(value))
+      
+      inline def setGetByPlaceholderText(value: Parameters[BoundFunction[GetByBoundAttribute[Any]]] => ReturnType[GetByBoundAttribute[Any]]): Self = StObject.set(x, "getByPlaceholderText", js.Any.fromFunction1(value))
+      
+      inline def setGetByRole(value: Parameters[BoundFunction[GetByRole_[Any]]] => ReturnType[GetByRole_[Any]]): Self = StObject.set(x, "getByRole", js.Any.fromFunction1(value))
+      
+      inline def setGetByTestId(value: Parameters[BoundFunction[GetByBoundAttribute[Any]]] => ReturnType[GetByBoundAttribute[Any]]): Self = StObject.set(x, "getByTestId", js.Any.fromFunction1(value))
+      
+      inline def setGetByText(value: Parameters[BoundFunction[GetByText_[Any]]] => ReturnType[GetByText_[Any]]): Self = StObject.set(x, "getByText", js.Any.fromFunction1(value))
+      
+      inline def setGetByTitle(value: Parameters[BoundFunction[GetByBoundAttribute[Any]]] => ReturnType[GetByBoundAttribute[Any]]): Self = StObject.set(x, "getByTitle", js.Any.fromFunction1(value))
+      
+      inline def setQueryAllByAltText(value: Parameters[BoundFunction[AllByBoundAttribute[Any]]] => ReturnType[AllByBoundAttribute[Any]]): Self = StObject.set(x, "queryAllByAltText", js.Any.fromFunction1(value))
+      
+      inline def setQueryAllByDisplayValue(value: Parameters[BoundFunction[AllByBoundAttribute[Any]]] => ReturnType[AllByBoundAttribute[Any]]): Self = StObject.set(x, "queryAllByDisplayValue", js.Any.fromFunction1(value))
+      
+      inline def setQueryAllByLabelText(value: Parameters[BoundFunction[AllByText[Any]]] => ReturnType[AllByText[Any]]): Self = StObject.set(x, "queryAllByLabelText", js.Any.fromFunction1(value))
+      
+      inline def setQueryAllByPlaceholderText(value: Parameters[BoundFunction[AllByBoundAttribute[Any]]] => ReturnType[AllByBoundAttribute[Any]]): Self = StObject.set(x, "queryAllByPlaceholderText", js.Any.fromFunction1(value))
+      
+      inline def setQueryAllByRole(value: Parameters[BoundFunction[AllByRole[Any]]] => ReturnType[AllByRole[Any]]): Self = StObject.set(x, "queryAllByRole", js.Any.fromFunction1(value))
+      
+      inline def setQueryAllByTestId(value: Parameters[BoundFunction[AllByBoundAttribute[Any]]] => ReturnType[AllByBoundAttribute[Any]]): Self = StObject.set(x, "queryAllByTestId", js.Any.fromFunction1(value))
+      
+      inline def setQueryAllByText(value: Parameters[BoundFunction[AllByText[Any]]] => ReturnType[AllByText[Any]]): Self = StObject.set(x, "queryAllByText", js.Any.fromFunction1(value))
+      
+      inline def setQueryAllByTitle(value: Parameters[BoundFunction[AllByBoundAttribute[Any]]] => ReturnType[AllByBoundAttribute[Any]]): Self = StObject.set(x, "queryAllByTitle", js.Any.fromFunction1(value))
+      
+      inline def setQueryByAltText(
+        value: Parameters[BoundFunction[QueryByBoundAttribute[Any]]] => ReturnType[QueryByBoundAttribute[Any]]
+      ): Self = StObject.set(x, "queryByAltText", js.Any.fromFunction1(value))
+      
+      inline def setQueryByDisplayValue(
+        value: Parameters[BoundFunction[QueryByBoundAttribute[Any]]] => ReturnType[QueryByBoundAttribute[Any]]
+      ): Self = StObject.set(x, "queryByDisplayValue", js.Any.fromFunction1(value))
+      
+      inline def setQueryByLabelText(value: Parameters[BoundFunction[QueryByText_[Any]]] => ReturnType[QueryByText_[Any]]): Self = StObject.set(x, "queryByLabelText", js.Any.fromFunction1(value))
+      
+      inline def setQueryByPlaceholderText(
+        value: Parameters[BoundFunction[QueryByBoundAttribute[Any]]] => ReturnType[QueryByBoundAttribute[Any]]
+      ): Self = StObject.set(x, "queryByPlaceholderText", js.Any.fromFunction1(value))
+      
+      inline def setQueryByRole(value: Parameters[BoundFunction[QueryByRole_[Any]]] => ReturnType[QueryByRole_[Any]]): Self = StObject.set(x, "queryByRole", js.Any.fromFunction1(value))
+      
+      inline def setQueryByTestId(
+        value: Parameters[BoundFunction[QueryByBoundAttribute[Any]]] => ReturnType[QueryByBoundAttribute[Any]]
+      ): Self = StObject.set(x, "queryByTestId", js.Any.fromFunction1(value))
+      
+      inline def setQueryByText(value: Parameters[BoundFunction[QueryByText_[Any]]] => ReturnType[QueryByText_[Any]]): Self = StObject.set(x, "queryByText", js.Any.fromFunction1(value))
+      
+      inline def setQueryByTitle(
+        value: Parameters[BoundFunction[QueryByBoundAttribute[Any]]] => ReturnType[QueryByBoundAttribute[Any]]
+      ): Self = StObject.set(x, "queryByTitle", js.Any.fromFunction1(value))
     }
   }
   
@@ -120,23 +471,25 @@ object anon {
     
     var asyncUtilTimeout: js.UndefOr[Double] = js.undefined
     
-    var asyncWrapper: js.UndefOr[
-        js.Function1[/* cb */ js.Function1[/* repeated */ js.Any, js.Any], js.Promise[js.Any]]
-      ] = js.undefined
+    var asyncWrapper: js.UndefOr[js.Function1[/* cb */ js.Function1[/* repeated */ Any, Any], js.Promise[Any]]] = js.undefined
     
     var computedStyleSupportsPseudoElements: js.UndefOr[Boolean] = js.undefined
     
     var defaultHidden: js.UndefOr[Boolean] = js.undefined
     
-    var eventWrapper: js.UndefOr[js.Function1[/* cb */ js.Function1[/* repeated */ js.Any, js.Any], Unit]] = js.undefined
+    var defaultIgnore: js.UndefOr[String] = js.undefined
     
-    var getElementError: js.UndefOr[js.Function2[/* message */ String, /* container */ HTMLElement, Error]] = js.undefined
+    var eventWrapper: js.UndefOr[js.Function1[/* cb */ js.Function1[/* repeated */ Any, Any], Unit]] = js.undefined
+    
+    var getElementError: js.UndefOr[js.Function2[/* message */ String | Null, /* container */ Element, js.Error]] = js.undefined
     
     var showOriginalStackTrace: js.UndefOr[Boolean] = js.undefined
     
     var testIdAttribute: js.UndefOr[String] = js.undefined
     
     var throwSuggestions: js.UndefOr[Boolean] = js.undefined
+    
+    var unstable_advanceTimersWrapper: js.UndefOr[js.Function1[/* cb */ js.Function1[/* repeated */ Any, Any], Any]] = js.undefined
   }
   object PartialConfig {
     
@@ -151,7 +504,7 @@ object anon {
       
       inline def setAsyncUtilTimeoutUndefined: Self = StObject.set(x, "asyncUtilTimeout", js.undefined)
       
-      inline def setAsyncWrapper(value: /* cb */ js.Function1[/* repeated */ js.Any, js.Any] => js.Promise[js.Any]): Self = StObject.set(x, "asyncWrapper", js.Any.fromFunction1(value))
+      inline def setAsyncWrapper(value: /* cb */ js.Function1[/* repeated */ Any, Any] => js.Promise[Any]): Self = StObject.set(x, "asyncWrapper", js.Any.fromFunction1(value))
       
       inline def setAsyncWrapperUndefined: Self = StObject.set(x, "asyncWrapper", js.undefined)
       
@@ -163,11 +516,15 @@ object anon {
       
       inline def setDefaultHiddenUndefined: Self = StObject.set(x, "defaultHidden", js.undefined)
       
-      inline def setEventWrapper(value: /* cb */ js.Function1[/* repeated */ js.Any, js.Any] => Unit): Self = StObject.set(x, "eventWrapper", js.Any.fromFunction1(value))
+      inline def setDefaultIgnore(value: String): Self = StObject.set(x, "defaultIgnore", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultIgnoreUndefined: Self = StObject.set(x, "defaultIgnore", js.undefined)
+      
+      inline def setEventWrapper(value: /* cb */ js.Function1[/* repeated */ Any, Any] => Unit): Self = StObject.set(x, "eventWrapper", js.Any.fromFunction1(value))
       
       inline def setEventWrapperUndefined: Self = StObject.set(x, "eventWrapper", js.undefined)
       
-      inline def setGetElementError(value: (/* message */ String, /* container */ HTMLElement) => Error): Self = StObject.set(x, "getElementError", js.Any.fromFunction2(value))
+      inline def setGetElementError(value: (/* message */ String | Null, /* container */ Element) => js.Error): Self = StObject.set(x, "getElementError", js.Any.fromFunction2(value))
       
       inline def setGetElementErrorUndefined: Self = StObject.set(x, "getElementError", js.undefined)
       
@@ -182,356 +539,360 @@ object anon {
       inline def setThrowSuggestions(value: Boolean): Self = StObject.set(x, "throwSuggestions", value.asInstanceOf[js.Any])
       
       inline def setThrowSuggestionsUndefined: Self = StObject.set(x, "throwSuggestions", js.undefined)
+      
+      inline def setUnstable_advanceTimersWrapper(value: /* cb */ js.Function1[/* repeated */ Any, Any] => Any): Self = StObject.set(x, "unstable_advanceTimersWrapper", js.Any.fromFunction1(value))
+      
+      inline def setUnstable_advanceTimersWrapperUndefined: Self = StObject.set(x, "unstable_advanceTimersWrapper", js.undefined)
     }
   }
   
   trait Typeofqueries extends StObject {
     
-    val findAllByAltText: FindAllByBoundAttribute
+    def findAllByAltText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByBoundAttribute<T>> is not an array type */ args: Parameters[FindAllByBoundAttribute[T]]
+    ): ReturnType[FindAllByBoundAttribute[T]]
     
-    val findAllByDisplayValue: FindAllByBoundAttribute
+    def findAllByDisplayValue[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByBoundAttribute<T>> is not an array type */ args: Parameters[FindAllByBoundAttribute[T]]
+    ): ReturnType[FindAllByBoundAttribute[T]]
     
-    val findAllByLabelText: FindAllByText_
+    def findAllByLabelText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByText<T>> is not an array type */ args: Parameters[FindAllByText_[T]]
+    ): ReturnType[FindAllByText_[T]]
     
-    val findAllByPlaceholderText: FindAllByBoundAttribute
+    def findAllByPlaceholderText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByBoundAttribute<T>> is not an array type */ args: Parameters[FindAllByBoundAttribute[T]]
+    ): ReturnType[FindAllByBoundAttribute[T]]
     
-    val findAllByRole: FindAllByRole_
+    def findAllByRole[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByRole<T>> is not an array type */ args: Parameters[FindAllByRole_[T]]
+    ): ReturnType[FindAllByRole_[T]]
     
-    val findAllByTestId: FindAllByBoundAttribute
+    def findAllByTestId[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByBoundAttribute<T>> is not an array type */ args: Parameters[FindAllByBoundAttribute[T]]
+    ): ReturnType[FindAllByBoundAttribute[T]]
     
-    val findAllByText: FindAllByText_
+    def findAllByText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByText<T>> is not an array type */ args: Parameters[FindAllByText_[T]]
+    ): ReturnType[FindAllByText_[T]]
     
-    val findAllByTitle: FindAllByBoundAttribute
+    def findAllByTitle[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByBoundAttribute<T>> is not an array type */ args: Parameters[FindAllByBoundAttribute[T]]
+    ): ReturnType[FindAllByBoundAttribute[T]]
     
-    val findByAltText: FindByBoundAttribute
+    def findByAltText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByBoundAttribute<T>> is not an array type */ args: Parameters[FindByBoundAttribute[T]]
+    ): ReturnType[FindByBoundAttribute[T]]
     
-    val findByDisplayValue: FindByBoundAttribute
+    def findByDisplayValue[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByBoundAttribute<T>> is not an array type */ args: Parameters[FindByBoundAttribute[T]]
+    ): ReturnType[FindByBoundAttribute[T]]
     
-    val findByLabelText: FindByText_
+    def findByLabelText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByText<T>> is not an array type */ args: Parameters[FindByText_[T]]
+    ): ReturnType[FindByText_[T]]
     
-    val findByPlaceholderText: FindByBoundAttribute
+    def findByPlaceholderText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByBoundAttribute<T>> is not an array type */ args: Parameters[FindByBoundAttribute[T]]
+    ): ReturnType[FindByBoundAttribute[T]]
     
-    val findByRole: FindByRole_
+    def findByRole[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByRole<T>> is not an array type */ args: Parameters[FindByRole_[T]]
+    ): ReturnType[FindByRole_[T]]
     
-    val findByTestId: FindByBoundAttribute
+    def findByTestId[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByBoundAttribute<T>> is not an array type */ args: Parameters[FindByBoundAttribute[T]]
+    ): ReturnType[FindByBoundAttribute[T]]
     
-    val findByText: FindByText_
+    def findByText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByText<T>> is not an array type */ args: Parameters[FindByText_[T]]
+    ): ReturnType[FindByText_[T]]
     
-    val findByTitle: FindByBoundAttribute
+    def findByTitle[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByBoundAttribute<T>> is not an array type */ args: Parameters[FindByBoundAttribute[T]]
+    ): ReturnType[FindByBoundAttribute[T]]
     
-    val getAllByAltText: AllByBoundAttribute
+    def getAllByAltText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+    ): ReturnType[AllByBoundAttribute[T]]
     
-    val getAllByDisplayValue: AllByBoundAttribute
+    def getAllByDisplayValue[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+    ): ReturnType[AllByBoundAttribute[T]]
     
-    val getAllByLabelText: AllByText
+    def getAllByLabelText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByText<T>> is not an array type */ args: Parameters[AllByText[T]]
+    ): ReturnType[AllByText[T]]
     
-    val getAllByPlaceholderText: AllByBoundAttribute
+    def getAllByPlaceholderText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+    ): ReturnType[AllByBoundAttribute[T]]
     
-    val getAllByRole: AllByRole
+    def getAllByRole[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByRole<T>> is not an array type */ args: Parameters[AllByRole[T]]
+    ): ReturnType[AllByRole[T]]
     
-    val getAllByTestId: AllByBoundAttribute
+    def getAllByTestId[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+    ): ReturnType[AllByBoundAttribute[T]]
     
-    val getAllByText: AllByText
+    def getAllByText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByText<T>> is not an array type */ args: Parameters[AllByText[T]]
+    ): ReturnType[AllByText[T]]
     
-    val getAllByTitle: AllByBoundAttribute
+    def getAllByTitle[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+    ): ReturnType[AllByBoundAttribute[T]]
     
-    val getByAltText: GetByBoundAttribute
+    def getByAltText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByBoundAttribute<T>> is not an array type */ args: Parameters[GetByBoundAttribute[T]]
+    ): ReturnType[GetByBoundAttribute[T]]
     
-    val getByDisplayValue: GetByBoundAttribute
+    def getByDisplayValue[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByBoundAttribute<T>> is not an array type */ args: Parameters[GetByBoundAttribute[T]]
+    ): ReturnType[GetByBoundAttribute[T]]
     
-    val getByLabelText: GetByText_
+    def getByLabelText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByText<T>> is not an array type */ args: Parameters[GetByText_[T]]
+    ): ReturnType[GetByText_[T]]
     
-    val getByPlaceholderText: GetByBoundAttribute
+    def getByPlaceholderText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByBoundAttribute<T>> is not an array type */ args: Parameters[GetByBoundAttribute[T]]
+    ): ReturnType[GetByBoundAttribute[T]]
     
-    val getByRole: GetByRole_
+    def getByRole[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByRole<T>> is not an array type */ args: Parameters[GetByRole_[T]]
+    ): ReturnType[GetByRole_[T]]
     
-    val getByTestId: GetByBoundAttribute
+    def getByTestId[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByBoundAttribute<T>> is not an array type */ args: Parameters[GetByBoundAttribute[T]]
+    ): ReturnType[GetByBoundAttribute[T]]
     
-    val getByText: GetByText_
+    def getByText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByText<T>> is not an array type */ args: Parameters[GetByText_[T]]
+    ): ReturnType[GetByText_[T]]
     
-    val getByTitle: GetByBoundAttribute
+    def getByTitle[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByBoundAttribute<T>> is not an array type */ args: Parameters[GetByBoundAttribute[T]]
+    ): ReturnType[GetByBoundAttribute[T]]
     
-    val queryAllByAltText: AllByBoundAttribute
+    def queryAllByAltText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+    ): ReturnType[AllByBoundAttribute[T]]
     
-    val queryAllByDisplayValue: AllByBoundAttribute
+    def queryAllByDisplayValue[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+    ): ReturnType[AllByBoundAttribute[T]]
     
-    val queryAllByLabelText: AllByText
+    def queryAllByLabelText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByText<T>> is not an array type */ args: Parameters[AllByText[T]]
+    ): ReturnType[AllByText[T]]
     
-    val queryAllByPlaceholderText: AllByBoundAttribute
+    def queryAllByPlaceholderText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+    ): ReturnType[AllByBoundAttribute[T]]
     
-    val queryAllByRole: AllByRole
+    def queryAllByRole[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByRole<T>> is not an array type */ args: Parameters[AllByRole[T]]
+    ): ReturnType[AllByRole[T]]
     
-    val queryAllByTestId: AllByBoundAttribute
+    def queryAllByTestId[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+    ): ReturnType[AllByBoundAttribute[T]]
     
-    val queryAllByText: AllByText
+    def queryAllByText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByText<T>> is not an array type */ args: Parameters[AllByText[T]]
+    ): ReturnType[AllByText[T]]
     
-    val queryAllByTitle: AllByBoundAttribute
+    def queryAllByTitle[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+    ): ReturnType[AllByBoundAttribute[T]]
     
-    val queryByAltText: QueryByBoundAttribute
+    def queryByAltText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByBoundAttribute<T>> is not an array type */ args: Parameters[QueryByBoundAttribute[T]]
+    ): ReturnType[QueryByBoundAttribute[T]]
     
-    val queryByDisplayValue: QueryByBoundAttribute
+    def queryByDisplayValue[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByBoundAttribute<T>> is not an array type */ args: Parameters[QueryByBoundAttribute[T]]
+    ): ReturnType[QueryByBoundAttribute[T]]
     
-    val queryByLabelText: QueryByText_
+    def queryByLabelText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByText<T>> is not an array type */ args: Parameters[QueryByText_[T]]
+    ): ReturnType[QueryByText_[T]]
     
-    val queryByPlaceholderText: QueryByBoundAttribute
+    def queryByPlaceholderText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByBoundAttribute<T>> is not an array type */ args: Parameters[QueryByBoundAttribute[T]]
+    ): ReturnType[QueryByBoundAttribute[T]]
     
-    val queryByRole: QueryByRole_
+    def queryByRole[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByRole<T>> is not an array type */ args: Parameters[QueryByRole_[T]]
+    ): ReturnType[QueryByRole_[T]]
     
-    val queryByTestId: QueryByBoundAttribute
+    def queryByTestId[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByBoundAttribute<T>> is not an array type */ args: Parameters[QueryByBoundAttribute[T]]
+    ): ReturnType[QueryByBoundAttribute[T]]
     
-    val queryByText: QueryByText_
+    def queryByText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByText<T>> is not an array type */ args: Parameters[QueryByText_[T]]
+    ): ReturnType[QueryByText_[T]]
     
-    val queryByTitle: QueryByBoundAttribute
+    def queryByTitle[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByBoundAttribute<T>> is not an array type */ args: Parameters[QueryByBoundAttribute[T]]
+    ): ReturnType[QueryByBoundAttribute[T]]
   }
   object Typeofqueries {
     
     inline def apply(
-      findAllByAltText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]],
-      findAllByDisplayValue: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]],
-      findAllByLabelText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]],
-      findAllByPlaceholderText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]],
-      findAllByRole: (/* container */ HTMLElement, /* role */ ByRoleMatcher, /* options */ js.UndefOr[ByRoleOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]],
-      findAllByTestId: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]],
-      findAllByText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]],
-      findAllByTitle: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]],
-      findByAltText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement],
-      findByDisplayValue: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement],
-      findByLabelText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement],
-      findByPlaceholderText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement],
-      findByRole: (/* container */ HTMLElement, /* role */ ByRoleMatcher, /* options */ js.UndefOr[ByRoleOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement],
-      findByTestId: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement],
-      findByText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement],
-      findByTitle: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement],
-      getAllByAltText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement],
-      getAllByDisplayValue: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement],
-      getAllByLabelText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions]) => js.Array[HTMLElement],
-      getAllByPlaceholderText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement],
-      getAllByRole: (/* container */ HTMLElement, /* role */ ByRoleMatcher, /* options */ js.UndefOr[ByRoleOptions]) => js.Array[HTMLElement],
-      getAllByTestId: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement],
-      getAllByText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions]) => js.Array[HTMLElement],
-      getAllByTitle: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement],
-      getByAltText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement,
-      getByDisplayValue: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement,
-      getByLabelText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions]) => HTMLElement,
-      getByPlaceholderText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement,
-      getByRole: (/* container */ HTMLElement, /* role */ ByRoleMatcher, /* options */ js.UndefOr[ByRoleOptions]) => HTMLElement,
-      getByTestId: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement,
-      getByText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions]) => HTMLElement,
-      getByTitle: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement,
-      queryAllByAltText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement],
-      queryAllByDisplayValue: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement],
-      queryAllByLabelText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions]) => js.Array[HTMLElement],
-      queryAllByPlaceholderText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement],
-      queryAllByRole: (/* container */ HTMLElement, /* role */ ByRoleMatcher, /* options */ js.UndefOr[ByRoleOptions]) => js.Array[HTMLElement],
-      queryAllByTestId: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement],
-      queryAllByText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions]) => js.Array[HTMLElement],
-      queryAllByTitle: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement],
-      queryByAltText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement | Null,
-      queryByDisplayValue: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement | Null,
-      queryByLabelText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions]) => HTMLElement | Null,
-      queryByPlaceholderText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement | Null,
-      queryByRole: (/* container */ HTMLElement, /* role */ ByRoleMatcher, /* options */ js.UndefOr[ByRoleOptions]) => HTMLElement | Null,
-      queryByTestId: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement | Null,
-      queryByText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions]) => HTMLElement | Null,
-      queryByTitle: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement | Null
+      findAllByAltText: Parameters[FindAllByBoundAttribute[Any]] => ReturnType[FindAllByBoundAttribute[Any]],
+      findAllByDisplayValue: Parameters[FindAllByBoundAttribute[Any]] => ReturnType[FindAllByBoundAttribute[Any]],
+      findAllByLabelText: Parameters[FindAllByText_[Any]] => ReturnType[FindAllByText_[Any]],
+      findAllByPlaceholderText: Parameters[FindAllByBoundAttribute[Any]] => ReturnType[FindAllByBoundAttribute[Any]],
+      findAllByRole: Parameters[FindAllByRole_[Any]] => ReturnType[FindAllByRole_[Any]],
+      findAllByTestId: Parameters[FindAllByBoundAttribute[Any]] => ReturnType[FindAllByBoundAttribute[Any]],
+      findAllByText: Parameters[FindAllByText_[Any]] => ReturnType[FindAllByText_[Any]],
+      findAllByTitle: Parameters[FindAllByBoundAttribute[Any]] => ReturnType[FindAllByBoundAttribute[Any]],
+      findByAltText: Parameters[FindByBoundAttribute[Any]] => ReturnType[FindByBoundAttribute[Any]],
+      findByDisplayValue: Parameters[FindByBoundAttribute[Any]] => ReturnType[FindByBoundAttribute[Any]],
+      findByLabelText: Parameters[FindByText_[Any]] => ReturnType[FindByText_[Any]],
+      findByPlaceholderText: Parameters[FindByBoundAttribute[Any]] => ReturnType[FindByBoundAttribute[Any]],
+      findByRole: Parameters[FindByRole_[Any]] => ReturnType[FindByRole_[Any]],
+      findByTestId: Parameters[FindByBoundAttribute[Any]] => ReturnType[FindByBoundAttribute[Any]],
+      findByText: Parameters[FindByText_[Any]] => ReturnType[FindByText_[Any]],
+      findByTitle: Parameters[FindByBoundAttribute[Any]] => ReturnType[FindByBoundAttribute[Any]],
+      getAllByAltText: Parameters[AllByBoundAttribute[Any]] => ReturnType[AllByBoundAttribute[Any]],
+      getAllByDisplayValue: Parameters[AllByBoundAttribute[Any]] => ReturnType[AllByBoundAttribute[Any]],
+      getAllByLabelText: Parameters[AllByText[Any]] => ReturnType[AllByText[Any]],
+      getAllByPlaceholderText: Parameters[AllByBoundAttribute[Any]] => ReturnType[AllByBoundAttribute[Any]],
+      getAllByRole: Parameters[AllByRole[Any]] => ReturnType[AllByRole[Any]],
+      getAllByTestId: Parameters[AllByBoundAttribute[Any]] => ReturnType[AllByBoundAttribute[Any]],
+      getAllByText: Parameters[AllByText[Any]] => ReturnType[AllByText[Any]],
+      getAllByTitle: Parameters[AllByBoundAttribute[Any]] => ReturnType[AllByBoundAttribute[Any]],
+      getByAltText: Parameters[GetByBoundAttribute[Any]] => ReturnType[GetByBoundAttribute[Any]],
+      getByDisplayValue: Parameters[GetByBoundAttribute[Any]] => ReturnType[GetByBoundAttribute[Any]],
+      getByLabelText: Parameters[GetByText_[Any]] => ReturnType[GetByText_[Any]],
+      getByPlaceholderText: Parameters[GetByBoundAttribute[Any]] => ReturnType[GetByBoundAttribute[Any]],
+      getByRole: Parameters[GetByRole_[Any]] => ReturnType[GetByRole_[Any]],
+      getByTestId: Parameters[GetByBoundAttribute[Any]] => ReturnType[GetByBoundAttribute[Any]],
+      getByText: Parameters[GetByText_[Any]] => ReturnType[GetByText_[Any]],
+      getByTitle: Parameters[GetByBoundAttribute[Any]] => ReturnType[GetByBoundAttribute[Any]],
+      queryAllByAltText: Parameters[AllByBoundAttribute[Any]] => ReturnType[AllByBoundAttribute[Any]],
+      queryAllByDisplayValue: Parameters[AllByBoundAttribute[Any]] => ReturnType[AllByBoundAttribute[Any]],
+      queryAllByLabelText: Parameters[AllByText[Any]] => ReturnType[AllByText[Any]],
+      queryAllByPlaceholderText: Parameters[AllByBoundAttribute[Any]] => ReturnType[AllByBoundAttribute[Any]],
+      queryAllByRole: Parameters[AllByRole[Any]] => ReturnType[AllByRole[Any]],
+      queryAllByTestId: Parameters[AllByBoundAttribute[Any]] => ReturnType[AllByBoundAttribute[Any]],
+      queryAllByText: Parameters[AllByText[Any]] => ReturnType[AllByText[Any]],
+      queryAllByTitle: Parameters[AllByBoundAttribute[Any]] => ReturnType[AllByBoundAttribute[Any]],
+      queryByAltText: Parameters[QueryByBoundAttribute[Any]] => ReturnType[QueryByBoundAttribute[Any]],
+      queryByDisplayValue: Parameters[QueryByBoundAttribute[Any]] => ReturnType[QueryByBoundAttribute[Any]],
+      queryByLabelText: Parameters[QueryByText_[Any]] => ReturnType[QueryByText_[Any]],
+      queryByPlaceholderText: Parameters[QueryByBoundAttribute[Any]] => ReturnType[QueryByBoundAttribute[Any]],
+      queryByRole: Parameters[QueryByRole_[Any]] => ReturnType[QueryByRole_[Any]],
+      queryByTestId: Parameters[QueryByBoundAttribute[Any]] => ReturnType[QueryByBoundAttribute[Any]],
+      queryByText: Parameters[QueryByText_[Any]] => ReturnType[QueryByText_[Any]],
+      queryByTitle: Parameters[QueryByBoundAttribute[Any]] => ReturnType[QueryByBoundAttribute[Any]]
     ): Typeofqueries = {
-      val __obj = js.Dynamic.literal(findAllByAltText = js.Any.fromFunction4(findAllByAltText), findAllByDisplayValue = js.Any.fromFunction4(findAllByDisplayValue), findAllByLabelText = js.Any.fromFunction4(findAllByLabelText), findAllByPlaceholderText = js.Any.fromFunction4(findAllByPlaceholderText), findAllByRole = js.Any.fromFunction4(findAllByRole), findAllByTestId = js.Any.fromFunction4(findAllByTestId), findAllByText = js.Any.fromFunction4(findAllByText), findAllByTitle = js.Any.fromFunction4(findAllByTitle), findByAltText = js.Any.fromFunction4(findByAltText), findByDisplayValue = js.Any.fromFunction4(findByDisplayValue), findByLabelText = js.Any.fromFunction4(findByLabelText), findByPlaceholderText = js.Any.fromFunction4(findByPlaceholderText), findByRole = js.Any.fromFunction4(findByRole), findByTestId = js.Any.fromFunction4(findByTestId), findByText = js.Any.fromFunction4(findByText), findByTitle = js.Any.fromFunction4(findByTitle), getAllByAltText = js.Any.fromFunction3(getAllByAltText), getAllByDisplayValue = js.Any.fromFunction3(getAllByDisplayValue), getAllByLabelText = js.Any.fromFunction3(getAllByLabelText), getAllByPlaceholderText = js.Any.fromFunction3(getAllByPlaceholderText), getAllByRole = js.Any.fromFunction3(getAllByRole), getAllByTestId = js.Any.fromFunction3(getAllByTestId), getAllByText = js.Any.fromFunction3(getAllByText), getAllByTitle = js.Any.fromFunction3(getAllByTitle), getByAltText = js.Any.fromFunction3(getByAltText), getByDisplayValue = js.Any.fromFunction3(getByDisplayValue), getByLabelText = js.Any.fromFunction3(getByLabelText), getByPlaceholderText = js.Any.fromFunction3(getByPlaceholderText), getByRole = js.Any.fromFunction3(getByRole), getByTestId = js.Any.fromFunction3(getByTestId), getByText = js.Any.fromFunction3(getByText), getByTitle = js.Any.fromFunction3(getByTitle), queryAllByAltText = js.Any.fromFunction3(queryAllByAltText), queryAllByDisplayValue = js.Any.fromFunction3(queryAllByDisplayValue), queryAllByLabelText = js.Any.fromFunction3(queryAllByLabelText), queryAllByPlaceholderText = js.Any.fromFunction3(queryAllByPlaceholderText), queryAllByRole = js.Any.fromFunction3(queryAllByRole), queryAllByTestId = js.Any.fromFunction3(queryAllByTestId), queryAllByText = js.Any.fromFunction3(queryAllByText), queryAllByTitle = js.Any.fromFunction3(queryAllByTitle), queryByAltText = js.Any.fromFunction3(queryByAltText), queryByDisplayValue = js.Any.fromFunction3(queryByDisplayValue), queryByLabelText = js.Any.fromFunction3(queryByLabelText), queryByPlaceholderText = js.Any.fromFunction3(queryByPlaceholderText), queryByRole = js.Any.fromFunction3(queryByRole), queryByTestId = js.Any.fromFunction3(queryByTestId), queryByText = js.Any.fromFunction3(queryByText), queryByTitle = js.Any.fromFunction3(queryByTitle))
+      val __obj = js.Dynamic.literal(findAllByAltText = js.Any.fromFunction1(findAllByAltText), findAllByDisplayValue = js.Any.fromFunction1(findAllByDisplayValue), findAllByLabelText = js.Any.fromFunction1(findAllByLabelText), findAllByPlaceholderText = js.Any.fromFunction1(findAllByPlaceholderText), findAllByRole = js.Any.fromFunction1(findAllByRole), findAllByTestId = js.Any.fromFunction1(findAllByTestId), findAllByText = js.Any.fromFunction1(findAllByText), findAllByTitle = js.Any.fromFunction1(findAllByTitle), findByAltText = js.Any.fromFunction1(findByAltText), findByDisplayValue = js.Any.fromFunction1(findByDisplayValue), findByLabelText = js.Any.fromFunction1(findByLabelText), findByPlaceholderText = js.Any.fromFunction1(findByPlaceholderText), findByRole = js.Any.fromFunction1(findByRole), findByTestId = js.Any.fromFunction1(findByTestId), findByText = js.Any.fromFunction1(findByText), findByTitle = js.Any.fromFunction1(findByTitle), getAllByAltText = js.Any.fromFunction1(getAllByAltText), getAllByDisplayValue = js.Any.fromFunction1(getAllByDisplayValue), getAllByLabelText = js.Any.fromFunction1(getAllByLabelText), getAllByPlaceholderText = js.Any.fromFunction1(getAllByPlaceholderText), getAllByRole = js.Any.fromFunction1(getAllByRole), getAllByTestId = js.Any.fromFunction1(getAllByTestId), getAllByText = js.Any.fromFunction1(getAllByText), getAllByTitle = js.Any.fromFunction1(getAllByTitle), getByAltText = js.Any.fromFunction1(getByAltText), getByDisplayValue = js.Any.fromFunction1(getByDisplayValue), getByLabelText = js.Any.fromFunction1(getByLabelText), getByPlaceholderText = js.Any.fromFunction1(getByPlaceholderText), getByRole = js.Any.fromFunction1(getByRole), getByTestId = js.Any.fromFunction1(getByTestId), getByText = js.Any.fromFunction1(getByText), getByTitle = js.Any.fromFunction1(getByTitle), queryAllByAltText = js.Any.fromFunction1(queryAllByAltText), queryAllByDisplayValue = js.Any.fromFunction1(queryAllByDisplayValue), queryAllByLabelText = js.Any.fromFunction1(queryAllByLabelText), queryAllByPlaceholderText = js.Any.fromFunction1(queryAllByPlaceholderText), queryAllByRole = js.Any.fromFunction1(queryAllByRole), queryAllByTestId = js.Any.fromFunction1(queryAllByTestId), queryAllByText = js.Any.fromFunction1(queryAllByText), queryAllByTitle = js.Any.fromFunction1(queryAllByTitle), queryByAltText = js.Any.fromFunction1(queryByAltText), queryByDisplayValue = js.Any.fromFunction1(queryByDisplayValue), queryByLabelText = js.Any.fromFunction1(queryByLabelText), queryByPlaceholderText = js.Any.fromFunction1(queryByPlaceholderText), queryByRole = js.Any.fromFunction1(queryByRole), queryByTestId = js.Any.fromFunction1(queryByTestId), queryByText = js.Any.fromFunction1(queryByText), queryByTitle = js.Any.fromFunction1(queryByTitle))
       __obj.asInstanceOf[Typeofqueries]
     }
     
     extension [Self <: Typeofqueries](x: Self) {
       
-      inline def setFindAllByAltText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]]
-      ): Self = StObject.set(x, "findAllByAltText", js.Any.fromFunction4(value))
+      inline def setFindAllByAltText(value: Parameters[FindAllByBoundAttribute[Any]] => ReturnType[FindAllByBoundAttribute[Any]]): Self = StObject.set(x, "findAllByAltText", js.Any.fromFunction1(value))
       
-      inline def setFindAllByDisplayValue(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]]
-      ): Self = StObject.set(x, "findAllByDisplayValue", js.Any.fromFunction4(value))
+      inline def setFindAllByDisplayValue(value: Parameters[FindAllByBoundAttribute[Any]] => ReturnType[FindAllByBoundAttribute[Any]]): Self = StObject.set(x, "findAllByDisplayValue", js.Any.fromFunction1(value))
       
-      inline def setFindAllByLabelText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]]
-      ): Self = StObject.set(x, "findAllByLabelText", js.Any.fromFunction4(value))
+      inline def setFindAllByLabelText(value: Parameters[FindAllByText_[Any]] => ReturnType[FindAllByText_[Any]]): Self = StObject.set(x, "findAllByLabelText", js.Any.fromFunction1(value))
       
-      inline def setFindAllByPlaceholderText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]]
-      ): Self = StObject.set(x, "findAllByPlaceholderText", js.Any.fromFunction4(value))
+      inline def setFindAllByPlaceholderText(value: Parameters[FindAllByBoundAttribute[Any]] => ReturnType[FindAllByBoundAttribute[Any]]): Self = StObject.set(x, "findAllByPlaceholderText", js.Any.fromFunction1(value))
       
-      inline def setFindAllByRole(
-        value: (/* container */ HTMLElement, /* role */ ByRoleMatcher, /* options */ js.UndefOr[ByRoleOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]]
-      ): Self = StObject.set(x, "findAllByRole", js.Any.fromFunction4(value))
+      inline def setFindAllByRole(value: Parameters[FindAllByRole_[Any]] => ReturnType[FindAllByRole_[Any]]): Self = StObject.set(x, "findAllByRole", js.Any.fromFunction1(value))
       
-      inline def setFindAllByTestId(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]]
-      ): Self = StObject.set(x, "findAllByTestId", js.Any.fromFunction4(value))
+      inline def setFindAllByTestId(value: Parameters[FindAllByBoundAttribute[Any]] => ReturnType[FindAllByBoundAttribute[Any]]): Self = StObject.set(x, "findAllByTestId", js.Any.fromFunction1(value))
       
-      inline def setFindAllByText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]]
-      ): Self = StObject.set(x, "findAllByText", js.Any.fromFunction4(value))
+      inline def setFindAllByText(value: Parameters[FindAllByText_[Any]] => ReturnType[FindAllByText_[Any]]): Self = StObject.set(x, "findAllByText", js.Any.fromFunction1(value))
       
-      inline def setFindAllByTitle(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]]
-      ): Self = StObject.set(x, "findAllByTitle", js.Any.fromFunction4(value))
+      inline def setFindAllByTitle(value: Parameters[FindAllByBoundAttribute[Any]] => ReturnType[FindAllByBoundAttribute[Any]]): Self = StObject.set(x, "findAllByTitle", js.Any.fromFunction1(value))
       
-      inline def setFindByAltText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement]
-      ): Self = StObject.set(x, "findByAltText", js.Any.fromFunction4(value))
+      inline def setFindByAltText(value: Parameters[FindByBoundAttribute[Any]] => ReturnType[FindByBoundAttribute[Any]]): Self = StObject.set(x, "findByAltText", js.Any.fromFunction1(value))
       
-      inline def setFindByDisplayValue(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement]
-      ): Self = StObject.set(x, "findByDisplayValue", js.Any.fromFunction4(value))
+      inline def setFindByDisplayValue(value: Parameters[FindByBoundAttribute[Any]] => ReturnType[FindByBoundAttribute[Any]]): Self = StObject.set(x, "findByDisplayValue", js.Any.fromFunction1(value))
       
-      inline def setFindByLabelText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement]
-      ): Self = StObject.set(x, "findByLabelText", js.Any.fromFunction4(value))
+      inline def setFindByLabelText(value: Parameters[FindByText_[Any]] => ReturnType[FindByText_[Any]]): Self = StObject.set(x, "findByLabelText", js.Any.fromFunction1(value))
       
-      inline def setFindByPlaceholderText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement]
-      ): Self = StObject.set(x, "findByPlaceholderText", js.Any.fromFunction4(value))
+      inline def setFindByPlaceholderText(value: Parameters[FindByBoundAttribute[Any]] => ReturnType[FindByBoundAttribute[Any]]): Self = StObject.set(x, "findByPlaceholderText", js.Any.fromFunction1(value))
       
-      inline def setFindByRole(
-        value: (/* container */ HTMLElement, /* role */ ByRoleMatcher, /* options */ js.UndefOr[ByRoleOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement]
-      ): Self = StObject.set(x, "findByRole", js.Any.fromFunction4(value))
+      inline def setFindByRole(value: Parameters[FindByRole_[Any]] => ReturnType[FindByRole_[Any]]): Self = StObject.set(x, "findByRole", js.Any.fromFunction1(value))
       
-      inline def setFindByTestId(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement]
-      ): Self = StObject.set(x, "findByTestId", js.Any.fromFunction4(value))
+      inline def setFindByTestId(value: Parameters[FindByBoundAttribute[Any]] => ReturnType[FindByBoundAttribute[Any]]): Self = StObject.set(x, "findByTestId", js.Any.fromFunction1(value))
       
-      inline def setFindByText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement]
-      ): Self = StObject.set(x, "findByText", js.Any.fromFunction4(value))
+      inline def setFindByText(value: Parameters[FindByText_[Any]] => ReturnType[FindByText_[Any]]): Self = StObject.set(x, "findByText", js.Any.fromFunction1(value))
       
-      inline def setFindByTitle(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement]
-      ): Self = StObject.set(x, "findByTitle", js.Any.fromFunction4(value))
+      inline def setFindByTitle(value: Parameters[FindByBoundAttribute[Any]] => ReturnType[FindByBoundAttribute[Any]]): Self = StObject.set(x, "findByTitle", js.Any.fromFunction1(value))
       
-      inline def setGetAllByAltText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement]
-      ): Self = StObject.set(x, "getAllByAltText", js.Any.fromFunction3(value))
+      inline def setGetAllByAltText(value: Parameters[AllByBoundAttribute[Any]] => ReturnType[AllByBoundAttribute[Any]]): Self = StObject.set(x, "getAllByAltText", js.Any.fromFunction1(value))
       
-      inline def setGetAllByDisplayValue(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement]
-      ): Self = StObject.set(x, "getAllByDisplayValue", js.Any.fromFunction3(value))
+      inline def setGetAllByDisplayValue(value: Parameters[AllByBoundAttribute[Any]] => ReturnType[AllByBoundAttribute[Any]]): Self = StObject.set(x, "getAllByDisplayValue", js.Any.fromFunction1(value))
       
-      inline def setGetAllByLabelText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions]) => js.Array[HTMLElement]
-      ): Self = StObject.set(x, "getAllByLabelText", js.Any.fromFunction3(value))
+      inline def setGetAllByLabelText(value: Parameters[AllByText[Any]] => ReturnType[AllByText[Any]]): Self = StObject.set(x, "getAllByLabelText", js.Any.fromFunction1(value))
       
-      inline def setGetAllByPlaceholderText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement]
-      ): Self = StObject.set(x, "getAllByPlaceholderText", js.Any.fromFunction3(value))
+      inline def setGetAllByPlaceholderText(value: Parameters[AllByBoundAttribute[Any]] => ReturnType[AllByBoundAttribute[Any]]): Self = StObject.set(x, "getAllByPlaceholderText", js.Any.fromFunction1(value))
       
-      inline def setGetAllByRole(
-        value: (/* container */ HTMLElement, /* role */ ByRoleMatcher, /* options */ js.UndefOr[ByRoleOptions]) => js.Array[HTMLElement]
-      ): Self = StObject.set(x, "getAllByRole", js.Any.fromFunction3(value))
+      inline def setGetAllByRole(value: Parameters[AllByRole[Any]] => ReturnType[AllByRole[Any]]): Self = StObject.set(x, "getAllByRole", js.Any.fromFunction1(value))
       
-      inline def setGetAllByTestId(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement]
-      ): Self = StObject.set(x, "getAllByTestId", js.Any.fromFunction3(value))
+      inline def setGetAllByTestId(value: Parameters[AllByBoundAttribute[Any]] => ReturnType[AllByBoundAttribute[Any]]): Self = StObject.set(x, "getAllByTestId", js.Any.fromFunction1(value))
       
-      inline def setGetAllByText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions]) => js.Array[HTMLElement]
-      ): Self = StObject.set(x, "getAllByText", js.Any.fromFunction3(value))
+      inline def setGetAllByText(value: Parameters[AllByText[Any]] => ReturnType[AllByText[Any]]): Self = StObject.set(x, "getAllByText", js.Any.fromFunction1(value))
       
-      inline def setGetAllByTitle(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement]
-      ): Self = StObject.set(x, "getAllByTitle", js.Any.fromFunction3(value))
+      inline def setGetAllByTitle(value: Parameters[AllByBoundAttribute[Any]] => ReturnType[AllByBoundAttribute[Any]]): Self = StObject.set(x, "getAllByTitle", js.Any.fromFunction1(value))
       
-      inline def setGetByAltText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement
-      ): Self = StObject.set(x, "getByAltText", js.Any.fromFunction3(value))
+      inline def setGetByAltText(value: Parameters[GetByBoundAttribute[Any]] => ReturnType[GetByBoundAttribute[Any]]): Self = StObject.set(x, "getByAltText", js.Any.fromFunction1(value))
       
-      inline def setGetByDisplayValue(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement
-      ): Self = StObject.set(x, "getByDisplayValue", js.Any.fromFunction3(value))
+      inline def setGetByDisplayValue(value: Parameters[GetByBoundAttribute[Any]] => ReturnType[GetByBoundAttribute[Any]]): Self = StObject.set(x, "getByDisplayValue", js.Any.fromFunction1(value))
       
-      inline def setGetByLabelText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions]) => HTMLElement
-      ): Self = StObject.set(x, "getByLabelText", js.Any.fromFunction3(value))
+      inline def setGetByLabelText(value: Parameters[GetByText_[Any]] => ReturnType[GetByText_[Any]]): Self = StObject.set(x, "getByLabelText", js.Any.fromFunction1(value))
       
-      inline def setGetByPlaceholderText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement
-      ): Self = StObject.set(x, "getByPlaceholderText", js.Any.fromFunction3(value))
+      inline def setGetByPlaceholderText(value: Parameters[GetByBoundAttribute[Any]] => ReturnType[GetByBoundAttribute[Any]]): Self = StObject.set(x, "getByPlaceholderText", js.Any.fromFunction1(value))
       
-      inline def setGetByRole(
-        value: (/* container */ HTMLElement, /* role */ ByRoleMatcher, /* options */ js.UndefOr[ByRoleOptions]) => HTMLElement
-      ): Self = StObject.set(x, "getByRole", js.Any.fromFunction3(value))
+      inline def setGetByRole(value: Parameters[GetByRole_[Any]] => ReturnType[GetByRole_[Any]]): Self = StObject.set(x, "getByRole", js.Any.fromFunction1(value))
       
-      inline def setGetByTestId(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement
-      ): Self = StObject.set(x, "getByTestId", js.Any.fromFunction3(value))
+      inline def setGetByTestId(value: Parameters[GetByBoundAttribute[Any]] => ReturnType[GetByBoundAttribute[Any]]): Self = StObject.set(x, "getByTestId", js.Any.fromFunction1(value))
       
-      inline def setGetByText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions]) => HTMLElement
-      ): Self = StObject.set(x, "getByText", js.Any.fromFunction3(value))
+      inline def setGetByText(value: Parameters[GetByText_[Any]] => ReturnType[GetByText_[Any]]): Self = StObject.set(x, "getByText", js.Any.fromFunction1(value))
       
-      inline def setGetByTitle(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement
-      ): Self = StObject.set(x, "getByTitle", js.Any.fromFunction3(value))
+      inline def setGetByTitle(value: Parameters[GetByBoundAttribute[Any]] => ReturnType[GetByBoundAttribute[Any]]): Self = StObject.set(x, "getByTitle", js.Any.fromFunction1(value))
       
-      inline def setQueryAllByAltText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement]
-      ): Self = StObject.set(x, "queryAllByAltText", js.Any.fromFunction3(value))
+      inline def setQueryAllByAltText(value: Parameters[AllByBoundAttribute[Any]] => ReturnType[AllByBoundAttribute[Any]]): Self = StObject.set(x, "queryAllByAltText", js.Any.fromFunction1(value))
       
-      inline def setQueryAllByDisplayValue(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement]
-      ): Self = StObject.set(x, "queryAllByDisplayValue", js.Any.fromFunction3(value))
+      inline def setQueryAllByDisplayValue(value: Parameters[AllByBoundAttribute[Any]] => ReturnType[AllByBoundAttribute[Any]]): Self = StObject.set(x, "queryAllByDisplayValue", js.Any.fromFunction1(value))
       
-      inline def setQueryAllByLabelText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions]) => js.Array[HTMLElement]
-      ): Self = StObject.set(x, "queryAllByLabelText", js.Any.fromFunction3(value))
+      inline def setQueryAllByLabelText(value: Parameters[AllByText[Any]] => ReturnType[AllByText[Any]]): Self = StObject.set(x, "queryAllByLabelText", js.Any.fromFunction1(value))
       
-      inline def setQueryAllByPlaceholderText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement]
-      ): Self = StObject.set(x, "queryAllByPlaceholderText", js.Any.fromFunction3(value))
+      inline def setQueryAllByPlaceholderText(value: Parameters[AllByBoundAttribute[Any]] => ReturnType[AllByBoundAttribute[Any]]): Self = StObject.set(x, "queryAllByPlaceholderText", js.Any.fromFunction1(value))
       
-      inline def setQueryAllByRole(
-        value: (/* container */ HTMLElement, /* role */ ByRoleMatcher, /* options */ js.UndefOr[ByRoleOptions]) => js.Array[HTMLElement]
-      ): Self = StObject.set(x, "queryAllByRole", js.Any.fromFunction3(value))
+      inline def setQueryAllByRole(value: Parameters[AllByRole[Any]] => ReturnType[AllByRole[Any]]): Self = StObject.set(x, "queryAllByRole", js.Any.fromFunction1(value))
       
-      inline def setQueryAllByTestId(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement]
-      ): Self = StObject.set(x, "queryAllByTestId", js.Any.fromFunction3(value))
+      inline def setQueryAllByTestId(value: Parameters[AllByBoundAttribute[Any]] => ReturnType[AllByBoundAttribute[Any]]): Self = StObject.set(x, "queryAllByTestId", js.Any.fromFunction1(value))
       
-      inline def setQueryAllByText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions]) => js.Array[HTMLElement]
-      ): Self = StObject.set(x, "queryAllByText", js.Any.fromFunction3(value))
+      inline def setQueryAllByText(value: Parameters[AllByText[Any]] => ReturnType[AllByText[Any]]): Self = StObject.set(x, "queryAllByText", js.Any.fromFunction1(value))
       
-      inline def setQueryAllByTitle(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement]
-      ): Self = StObject.set(x, "queryAllByTitle", js.Any.fromFunction3(value))
+      inline def setQueryAllByTitle(value: Parameters[AllByBoundAttribute[Any]] => ReturnType[AllByBoundAttribute[Any]]): Self = StObject.set(x, "queryAllByTitle", js.Any.fromFunction1(value))
       
-      inline def setQueryByAltText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement | Null
-      ): Self = StObject.set(x, "queryByAltText", js.Any.fromFunction3(value))
+      inline def setQueryByAltText(value: Parameters[QueryByBoundAttribute[Any]] => ReturnType[QueryByBoundAttribute[Any]]): Self = StObject.set(x, "queryByAltText", js.Any.fromFunction1(value))
       
-      inline def setQueryByDisplayValue(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement | Null
-      ): Self = StObject.set(x, "queryByDisplayValue", js.Any.fromFunction3(value))
+      inline def setQueryByDisplayValue(value: Parameters[QueryByBoundAttribute[Any]] => ReturnType[QueryByBoundAttribute[Any]]): Self = StObject.set(x, "queryByDisplayValue", js.Any.fromFunction1(value))
       
-      inline def setQueryByLabelText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions]) => HTMLElement | Null
-      ): Self = StObject.set(x, "queryByLabelText", js.Any.fromFunction3(value))
+      inline def setQueryByLabelText(value: Parameters[QueryByText_[Any]] => ReturnType[QueryByText_[Any]]): Self = StObject.set(x, "queryByLabelText", js.Any.fromFunction1(value))
       
-      inline def setQueryByPlaceholderText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement | Null
-      ): Self = StObject.set(x, "queryByPlaceholderText", js.Any.fromFunction3(value))
+      inline def setQueryByPlaceholderText(value: Parameters[QueryByBoundAttribute[Any]] => ReturnType[QueryByBoundAttribute[Any]]): Self = StObject.set(x, "queryByPlaceholderText", js.Any.fromFunction1(value))
       
-      inline def setQueryByRole(
-        value: (/* container */ HTMLElement, /* role */ ByRoleMatcher, /* options */ js.UndefOr[ByRoleOptions]) => HTMLElement | Null
-      ): Self = StObject.set(x, "queryByRole", js.Any.fromFunction3(value))
+      inline def setQueryByRole(value: Parameters[QueryByRole_[Any]] => ReturnType[QueryByRole_[Any]]): Self = StObject.set(x, "queryByRole", js.Any.fromFunction1(value))
       
-      inline def setQueryByTestId(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement | Null
-      ): Self = StObject.set(x, "queryByTestId", js.Any.fromFunction3(value))
+      inline def setQueryByTestId(value: Parameters[QueryByBoundAttribute[Any]] => ReturnType[QueryByBoundAttribute[Any]]): Self = StObject.set(x, "queryByTestId", js.Any.fromFunction1(value))
       
-      inline def setQueryByText(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions]) => HTMLElement | Null
-      ): Self = StObject.set(x, "queryByText", js.Any.fromFunction3(value))
+      inline def setQueryByText(value: Parameters[QueryByText_[Any]] => ReturnType[QueryByText_[Any]]): Self = StObject.set(x, "queryByText", js.Any.fromFunction1(value))
       
-      inline def setQueryByTitle(
-        value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement | Null
-      ): Self = StObject.set(x, "queryByTitle", js.Any.fromFunction3(value))
+      inline def setQueryByTitle(value: Parameters[QueryByBoundAttribute[Any]] => ReturnType[QueryByBoundAttribute[Any]]): Self = StObject.set(x, "queryByTitle", js.Any.fromFunction1(value))
     }
   }
 }

@@ -8,11 +8,11 @@ trait ErrorPlatformEvent
   extends StObject
      with EventObject {
   
-  var data: js.Any
+  var data: Any
 }
 object ErrorPlatformEvent {
   
-  inline def apply(data: js.Any, `type`: String): ErrorPlatformEvent = {
+  inline def apply(data: Any, `type`: String): ErrorPlatformEvent = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorPlatformEvent]
@@ -20,6 +20,6 @@ object ErrorPlatformEvent {
   
   extension [Self <: ErrorPlatformEvent](x: Self) {
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

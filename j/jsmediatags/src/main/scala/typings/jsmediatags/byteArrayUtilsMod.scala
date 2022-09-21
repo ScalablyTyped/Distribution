@@ -19,5 +19,5 @@ object byteArrayUtilsMod {
   
   inline def getSynchsafeInteger32(number: Double): ByteArray = ^.asInstanceOf[js.Dynamic].applyDynamic("getSynchsafeInteger32")(number.asInstanceOf[js.Any]).asInstanceOf[ByteArray]
   
-  inline def pad(array: js.Array[js.Any], size: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("pad")(array.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def pad(array: js.Array[Any], size: Double): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("pad")(array.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
 }

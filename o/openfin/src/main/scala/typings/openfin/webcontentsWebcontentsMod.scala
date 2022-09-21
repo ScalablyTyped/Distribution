@@ -17,7 +17,7 @@ object webcontentsWebcontentsMod {
   
   @JSImport("openfin/_v2/api/webcontents/webcontents", "WebContents")
   @js.native
-  class WebContents[T /* <: WebContentsEventMapping[String, String] */] protected () extends EmitterBase[T] {
+  open class WebContents[T /* <: WebContentsEventMapping[String, String] */] protected () extends EmitterBase[T] {
     def this(wire: default, identity: Identity, entityType: String) = this()
     
     def capturePage(): js.Promise[String] = js.native

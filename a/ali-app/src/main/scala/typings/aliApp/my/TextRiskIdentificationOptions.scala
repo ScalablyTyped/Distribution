@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TextRiskIdentificationOptions
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   /**
     * 需要进行风险识别的文本内容
@@ -40,6 +40,6 @@ object TextRiskIdentificationOptions {
     
     inline def setType(value: js.Array[TextRiskIdentificationType]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setTypeVarargs(value: TextRiskIdentificationType*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: TextRiskIdentificationType*): Self = StObject.set(x, "type", js.Array(value*))
   }
 }

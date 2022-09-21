@@ -1,7 +1,7 @@
 
 # Scala.js typings for bunyan-bugsnag
 
-Typings are for version 3.0.0
+Typings are for version 4.0.0
 
 ## Library description:
 A Bunyan stream for logging errors and warnings to Bugsnag
@@ -10,10 +10,10 @@ A Bunyan stream for logging errors and warnings to Bugsnag
 | ------------------ | :-------------: |
 | Full name          | bunyan-bugsnag |
 | Keywords           | bunyan, bugsnag, logging |
-| # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 18874 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1200.6666666666667 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/marnusw/bunyan-bugsnag)

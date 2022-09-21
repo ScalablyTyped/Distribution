@@ -1,6 +1,5 @@
 package typings.winrt.global.Windows.Storage
 
-import typings.std.Date
 import typings.winrt.Windows.Foundation.Collections.IIterator
 import typings.winrt.Windows.Foundation.Collections.IKeyValuePair
 import typings.winrt.Windows.Foundation.Collections.IMap
@@ -23,7 +22,7 @@ object Pickers {
   
   @JSGlobal("Windows.Storage.Pickers.FileExtensionVector")
   @js.native
-  class FileExtensionVector ()
+  open class FileExtensionVector ()
     extends StObject
        with typings.winrt.Windows.Storage.Pickers.FileExtensionVector {
     
@@ -33,7 +32,7 @@ object Pickers {
   
   @JSGlobal("Windows.Storage.Pickers.FileOpenPicker")
   @js.native
-  class FileOpenPicker ()
+  open class FileOpenPicker ()
     extends StObject
        with typings.winrt.Windows.Storage.Pickers.FileOpenPicker {
     
@@ -70,7 +69,7 @@ object Pickers {
   
   @JSGlobal("Windows.Storage.Pickers.FilePickerFileTypesOrderedMap")
   @js.native
-  class FilePickerFileTypesOrderedMap ()
+  open class FilePickerFileTypesOrderedMap ()
     extends StObject
        with typings.winrt.Windows.Storage.Pickers.FilePickerFileTypesOrderedMap {
     
@@ -101,7 +100,7 @@ object Pickers {
   
   @JSGlobal("Windows.Storage.Pickers.FilePickerSelectedFilesArray")
   @js.native
-  class FilePickerSelectedFilesArray ()
+  open class FilePickerSelectedFilesArray ()
     extends StObject
        with typings.winrt.Windows.Storage.Pickers.FilePickerSelectedFilesArray {
     
@@ -111,7 +110,7 @@ object Pickers {
   
   @JSGlobal("Windows.Storage.Pickers.FileSavePicker")
   @js.native
-  class FileSavePicker ()
+  open class FileSavePicker ()
     extends StObject
        with typings.winrt.Windows.Storage.Pickers.FileSavePicker {
     
@@ -148,7 +147,7 @@ object Pickers {
   
   @JSGlobal("Windows.Storage.Pickers.FolderPicker")
   @js.native
-  class FolderPicker ()
+  open class FolderPicker ()
     extends StObject
        with typings.winrt.Windows.Storage.Pickers.FolderPicker {
     
@@ -233,7 +232,7 @@ object Pickers {
     
     @JSGlobal("Windows.Storage.Pickers.Provider.FileOpenPickerUI")
     @js.native
-    class FileOpenPickerUI ()
+    open class FileOpenPickerUI ()
       extends StObject
          with typings.winrt.Windows.Storage.Pickers.Provider.FileOpenPickerUI {
       
@@ -250,10 +249,10 @@ object Pickers {
       override def containsFile(id: String): Boolean = js.native
       
       /* CompleteClass */
-      var onclosing: js.Any = js.native
+      var onclosing: Any = js.native
       
       /* CompleteClass */
-      var onfileremoved: js.Any = js.native
+      var onfileremoved: Any = js.native
       
       /* CompleteClass */
       override def removeFile(id: String): Unit = js.native
@@ -270,7 +269,7 @@ object Pickers {
     
     @JSGlobal("Windows.Storage.Pickers.Provider.FileRemovedEventArgs")
     @js.native
-    class FileRemovedEventArgs ()
+    open class FileRemovedEventArgs ()
       extends StObject
          with typings.winrt.Windows.Storage.Pickers.Provider.FileRemovedEventArgs {
       
@@ -280,7 +279,7 @@ object Pickers {
     
     @JSGlobal("Windows.Storage.Pickers.Provider.FileSavePickerUI")
     @js.native
-    class FileSavePickerUI ()
+    open class FileSavePickerUI ()
       extends StObject
          with typings.winrt.Windows.Storage.Pickers.Provider.FileSavePickerUI {
       
@@ -291,10 +290,10 @@ object Pickers {
       var fileName: String = js.native
       
       /* CompleteClass */
-      var onfilenamechanged: js.Any = js.native
+      var onfilenamechanged: Any = js.native
       
       /* CompleteClass */
-      var ontargetfilerequested: js.Any = js.native
+      var ontargetfilerequested: Any = js.native
       
       /* CompleteClass */
       var settingsIdentifier: String = js.native
@@ -320,7 +319,7 @@ object Pickers {
     
     @JSGlobal("Windows.Storage.Pickers.Provider.PickerClosingDeferral")
     @js.native
-    class PickerClosingDeferral ()
+    open class PickerClosingDeferral ()
       extends StObject
          with typings.winrt.Windows.Storage.Pickers.Provider.PickerClosingDeferral {
       
@@ -330,7 +329,7 @@ object Pickers {
     
     @JSGlobal("Windows.Storage.Pickers.Provider.PickerClosingEventArgs")
     @js.native
-    class PickerClosingEventArgs ()
+    open class PickerClosingEventArgs ()
       extends StObject
          with typings.winrt.Windows.Storage.Pickers.Provider.PickerClosingEventArgs {
       
@@ -343,12 +342,12 @@ object Pickers {
     
     @JSGlobal("Windows.Storage.Pickers.Provider.PickerClosingOperation")
     @js.native
-    class PickerClosingOperation ()
+    open class PickerClosingOperation ()
       extends StObject
          with typings.winrt.Windows.Storage.Pickers.Provider.PickerClosingOperation {
       
       /* CompleteClass */
-      var deadline: Date = js.native
+      var deadline: js.Date = js.native
       
       /* CompleteClass */
       override def getDeferral(): typings.winrt.Windows.Storage.Pickers.Provider.PickerClosingDeferral = js.native
@@ -370,7 +369,7 @@ object Pickers {
     
     @JSGlobal("Windows.Storage.Pickers.Provider.TargetFileRequest")
     @js.native
-    class TargetFileRequest ()
+    open class TargetFileRequest ()
       extends StObject
          with typings.winrt.Windows.Storage.Pickers.Provider.TargetFileRequest {
       
@@ -383,7 +382,7 @@ object Pickers {
     
     @JSGlobal("Windows.Storage.Pickers.Provider.TargetFileRequestDeferral")
     @js.native
-    class TargetFileRequestDeferral ()
+    open class TargetFileRequestDeferral ()
       extends StObject
          with typings.winrt.Windows.Storage.Pickers.Provider.TargetFileRequestDeferral {
       
@@ -393,7 +392,7 @@ object Pickers {
     
     @JSGlobal("Windows.Storage.Pickers.Provider.TargetFileRequestedEventArgs")
     @js.native
-    class TargetFileRequestedEventArgs ()
+    open class TargetFileRequestedEventArgs ()
       extends StObject
          with typings.winrt.Windows.Storage.Pickers.Provider.TargetFileRequestedEventArgs {
       

@@ -47,7 +47,7 @@ object Table {
     
     inline def setHorizontalBorderRowsUndefined: Self = StObject.set(x, "horizontalBorderRows", js.undefined)
     
-    inline def setHorizontalBorderRowsVarargs(value: TableBorderRow*): Self = StObject.set(x, "horizontalBorderRows", js.Array(value :_*))
+    inline def setHorizontalBorderRowsVarargs(value: TableBorderRow*): Self = StObject.set(x, "horizontalBorderRows", js.Array(value*))
     
     inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
@@ -57,18 +57,18 @@ object Table {
     
     inline def setTableColumnsUndefined: Self = StObject.set(x, "tableColumns", js.undefined)
     
-    inline def setTableColumnsVarargs(value: TableColumnProperties*): Self = StObject.set(x, "tableColumns", js.Array(value :_*))
+    inline def setTableColumnsVarargs(value: TableColumnProperties*): Self = StObject.set(x, "tableColumns", js.Array(value*))
     
     inline def setTableRows(value: js.Array[TableRow]): Self = StObject.set(x, "tableRows", value.asInstanceOf[js.Any])
     
     inline def setTableRowsUndefined: Self = StObject.set(x, "tableRows", js.undefined)
     
-    inline def setTableRowsVarargs(value: TableRow*): Self = StObject.set(x, "tableRows", js.Array(value :_*))
+    inline def setTableRowsVarargs(value: TableRow*): Self = StObject.set(x, "tableRows", js.Array(value*))
     
     inline def setVerticalBorderRows(value: js.Array[TableBorderRow]): Self = StObject.set(x, "verticalBorderRows", value.asInstanceOf[js.Any])
     
     inline def setVerticalBorderRowsUndefined: Self = StObject.set(x, "verticalBorderRows", js.undefined)
     
-    inline def setVerticalBorderRowsVarargs(value: TableBorderRow*): Self = StObject.set(x, "verticalBorderRows", js.Array(value :_*))
+    inline def setVerticalBorderRowsVarargs(value: TableBorderRow*): Self = StObject.set(x, "verticalBorderRows", js.Array(value*))
   }
 }

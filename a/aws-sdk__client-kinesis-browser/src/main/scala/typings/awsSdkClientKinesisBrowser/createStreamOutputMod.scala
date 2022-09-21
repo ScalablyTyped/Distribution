@@ -8,5 +8,5 @@ object createStreamOutputMod {
   
   @JSImport("@aws-sdk/client-kinesis-browser/model/CreateStreamOutput", "CreateStreamOutput")
   @js.native
-  val CreateStreamOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val CreateStreamOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

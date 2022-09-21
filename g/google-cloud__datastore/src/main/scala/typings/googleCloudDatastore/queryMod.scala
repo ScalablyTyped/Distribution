@@ -6,8 +6,7 @@ import typings.googleCloudDatastore.googleCloudDatastoreStrings.MORE_RESULTS_AFT
 import typings.googleCloudDatastore.googleCloudDatastoreStrings.NO_MORE_RESULTS
 import typings.googleCloudDatastore.googleCloudDatastoreStrings.eventual
 import typings.googleCloudDatastore.googleCloudDatastoreStrings.strong
-import typings.node.NodeJS.ReadableStream
-import typings.std.Error
+import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,13 +15,13 @@ object queryMod {
   
   @JSImport("@google-cloud/datastore/query", "Query")
   @js.native
-  class Query protected () extends StObject {
+  open class Query protected () extends StObject {
     def this(scope: String, kinds: String, namespace: String) = this()
     
     def end(cursorToken: String): this.type = js.native
     
-    def filter(property: String, operator: QueryFilterOperator, value: js.Any): this.type = js.native
-    def filter(property: String, value: js.Any): this.type = js.native
+    def filter(property: String, operator: QueryFilterOperator, value: Any): this.type = js.native
+    def filter(property: String, value: Any): this.type = js.native
     
     def groupBy(properties: String): this.type = js.native
     def groupBy(properties: js.Array[String]): this.type = js.native
@@ -41,7 +40,7 @@ object queryMod {
     def run(options: QueryOptions): js.Promise[QueryResult] = js.native
     def run(options: QueryOptions, callback: QueryCallback): Unit = js.native
     
-    def runStream(): ReadableStream = js.native
+    def runStream(): ReadableStream[Any] = js.native
     
     def select(properties: String): this.type = js.native
     def select(properties: js.Array[String]): this.type = js.native
@@ -72,7 +71,7 @@ object queryMod {
     }
   }
   
-  type QueryCallback = js.Function3[/* err */ Error, /* entities */ js.Array[js.Object], /* info */ QueryInfo, Unit]
+  type QueryCallback = js.Function3[/* err */ js.Error, /* entities */ js.Array[js.Object], /* info */ QueryInfo, Unit]
   
   /* Rewritten from type alias, can be one of: 
     - typings.googleCloudDatastore.googleCloudDatastoreStrings.Lessthansign

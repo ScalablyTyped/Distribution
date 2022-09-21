@@ -12,7 +12,7 @@ trait ClaimGameServerInput extends StObject {
   var GameServerData: js.UndefOr[typings.awsSdk.gameliftMod.GameServerData] = js.undefined
   
   /**
-    * A unique identifier for the game server group where the game server is running. Use either the GameServerGroup name or ARN value.. If you are not specifying a game server to claim, this value identifies where you want GameLift FleetIQ to look for an available game server to claim. 
+    * A unique identifier for the game server group where the game server is running. Use either the GameServerGroup name or ARN value. If you are not specifying a game server to claim, this value identifies where you want GameLift FleetIQ to look for an available game server to claim. 
     */
   var GameServerGroupName: GameServerGroupNameOrArn
   

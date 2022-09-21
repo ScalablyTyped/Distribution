@@ -8,5 +8,5 @@ object repositoryMetadataListMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/_RepositoryMetadataList", "_RepositoryMetadataList")
   @js.native
-  val RepositoryMetadataList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val RepositoryMetadataList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

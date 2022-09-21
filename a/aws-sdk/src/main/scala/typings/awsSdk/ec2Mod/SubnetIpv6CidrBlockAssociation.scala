@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SubnetIpv6CidrBlockAssociation extends StObject {
   
   /**
-    * The association ID for the CIDR block.
+    * The ID of the association.
     */
-  var AssociationId: js.UndefOr[String] = js.undefined
+  var AssociationId: js.UndefOr[SubnetCidrAssociationId] = js.undefined
   
   /**
     * The IPv6 CIDR block.
@@ -17,7 +17,7 @@ trait SubnetIpv6CidrBlockAssociation extends StObject {
   var Ipv6CidrBlock: js.UndefOr[String] = js.undefined
   
   /**
-    * Information about the state of the CIDR block.
+    * The state of the CIDR block.
     */
   var Ipv6CidrBlockState: js.UndefOr[SubnetCidrBlockState] = js.undefined
 }
@@ -30,7 +30,7 @@ object SubnetIpv6CidrBlockAssociation {
   
   extension [Self <: SubnetIpv6CidrBlockAssociation](x: Self) {
     
-    inline def setAssociationId(value: String): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
+    inline def setAssociationId(value: SubnetCidrAssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
     
     inline def setAssociationIdUndefined: Self = StObject.set(x, "AssociationId", js.undefined)
     

@@ -29,15 +29,15 @@ object Properties {
     
     inline def setEdges(value: js.Array[String]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     
-    inline def setEdgesVarargs(value: String*): Self = StObject.set(x, "edges", js.Array(value :_*))
+    inline def setEdgesVarargs(value: String*): Self = StObject.set(x, "edges", js.Array(value*))
     
     inline def setEvent(value: js.Array[String]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    inline def setEventVarargs(value: String*): Self = StObject.set(x, "event", js.Array(value :_*))
+    inline def setEventVarargs(value: String*): Self = StObject.set(x, "event", js.Array(value*))
     
     inline def setNodes(value: js.Array[String]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    inline def setNodesVarargs(value: String*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: String*): Self = StObject.set(x, "nodes", js.Array(value*))
     
     inline def setPointer(value: Canvas): Self = StObject.set(x, "pointer", value.asInstanceOf[js.Any])
     

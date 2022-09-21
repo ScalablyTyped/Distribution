@@ -2,7 +2,7 @@ package typings.consul.mod
 
 import typings.consul.mod.Event.FireOptions
 import typings.consul.mod.Event.ListOptions
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ trait Event extends StObject {
   /**
     * Fires a new user event
     */
-  def fire[TData](name: String): Thenable[TData] = js.native
+  def fire[TData](name: String): js.Promise[TData] = js.native
   /**
     * Fires a new user event
     */
@@ -23,17 +23,17 @@ trait Event extends StObject {
   /**
     * Fires a new user event
     */
-  def fire[TData](name: String, payload: String): Thenable[TData] = js.native
+  def fire[TData](name: String, payload: String): js.Promise[TData] = js.native
   /**
     * Fires a new user event
     */
   def fire[TData](name: String, payload: String, callback: Callback[TData]): Unit = js.native
-  def fire[TData](name: String, payload: Buffer): Thenable[TData] = js.native
+  def fire[TData](name: String, payload: Buffer): js.Promise[TData] = js.native
   def fire[TData](name: String, payload: Buffer, callback: Callback[TData]): Unit = js.native
   /**
     * Fires a new user event
     */
-  def fire[TData](opts: FireOptions): Thenable[TData] = js.native
+  def fire[TData](opts: FireOptions): js.Promise[TData] = js.native
   /**
     * Fires a new user event
     */
@@ -42,17 +42,17 @@ trait Event extends StObject {
   /**
     * Lists the most recent events an agent has seen
     */
-  def list[TData](): Thenable[TData] = js.native
+  def list[TData](): js.Promise[TData] = js.native
   /**
     * Lists the most recent events an agent has seen
     */
   def list[TData](callback: Callback[TData]): Unit = js.native
-  def list[TData](name: String): Thenable[TData] = js.native
+  def list[TData](name: String): js.Promise[TData] = js.native
   /**
     * Lists the most recent events an agent has seen
     */
   def list[TData](name: String, callback: Callback[TData]): Unit = js.native
-  def list[TData](opts: ListOptions): Thenable[TData] = js.native
+  def list[TData](opts: ListOptions): js.Promise[TData] = js.native
   /**
     * Lists the most recent events an agent has seen
     */

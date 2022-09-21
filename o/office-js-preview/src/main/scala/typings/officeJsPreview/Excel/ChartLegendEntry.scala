@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents the legend entry in `legendEntryCollection`.
   *
-  * Represents the legendEntry in legendEntryCollection.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 @js.native
@@ -26,25 +26,25 @@ trait ChartLegendEntry
   var context_ChartLegendEntry: RequestContext = js.native
   
   /**
+    * Specifies the height of the legend entry on the chart legend.
     *
-    * Specifies the height of the legendEntry on the chart legend.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   val height: Double = js.native
   
   /**
+    * Specifies the index of the legend entry in the chart legend.
     *
-    * Specifies the index of the legendEntry in the chart legend.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   val index: Double = js.native
   
   /**
+    * Specifies the left value of a chart legend entry.
     *
-    * Specifies the left of a chart legendEntry.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   val left: Double = js.native
@@ -62,14 +62,8 @@ trait ChartLegendEntry
   
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ChartLegendEntry): Unit = js.native
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.ChartLegendEntry): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */
@@ -83,25 +77,25 @@ trait ChartLegendEntry
   def toJSON(): ChartLegendEntryData = js.native
   
   /**
+    * Specifies the top of a chart legend entry.
     *
-    * Specifies the top of a chart legendEntry.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   val top: Double = js.native
   
   /**
+    * Represents the visibility of a chart legend entry.
     *
-    * Represents the visible of a chart legend entry.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var visible: Boolean = js.native
   
   /**
+    * Represents the width of the legend entry on the chart Legend.
     *
-    * Represents the width of the legendEntry on the chart Legend.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   val width: Double = js.native

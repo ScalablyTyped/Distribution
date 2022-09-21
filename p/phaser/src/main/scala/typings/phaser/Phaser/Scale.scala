@@ -6,7 +6,6 @@ import typings.phaser.Phaser.Geom.Rectangle
 import typings.phaser.Phaser.Math.Vector2
 import typings.phaser.Phaser.Structs.Size
 import typings.phaser.Phaser.Types.Core.GameConfig
-import typings.phaser.integer
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -342,7 +341,7 @@ object Scale {
     /**
       * The Base Size component.
       * 
-      * The modified game size, which is the gameSize * resolution, used to set the canvas width and height
+      * The modified game size, which is the auto-rounded gameSize, used to set the canvas width and height
       * (but not the CSS style)
       */
     var baseSize: Size = js.native
@@ -389,7 +388,7 @@ object Scale {
     /**
       * The DOM Element which is sent into fullscreen mode.
       */
-    var fullscreenTarget: js.Any = js.native
+    var fullscreenTarget: Any = js.native
     
     /**
       * A reference to the Phaser.Game instance.
@@ -414,7 +413,7 @@ object Scale {
       * parent and game sizes. If the parent has no dimensions (i.e. an unstyled div),
       * or is smaller than the un-zoomed game, then this will return a value of 1 (no zoom)
       */
-    def getMaxZoom(): integer = js.native
+    def getMaxZoom(): Double = js.native
     
     /**
       * Determines the parent element of the game canvas, if any, based on the game configuration.
@@ -477,7 +476,7 @@ object Scale {
     /**
       * Triggered when a fullscreenchange event is dispatched by the DOM.
       */
-    def onFullScreenChange(): Unit = js.native
+    /* protected */ def onFullScreenChange(): Unit = js.native
     
     /**
       * Triggered when a fullscreenerror event is dispatched by the DOM.
@@ -497,7 +496,7 @@ object Scale {
       * This is set in the Game Config as the `parent` property. If undefined (or just not present), it will default
       * to use the document body. If specifically set to `null` Phaser will ignore all parent operations.
       */
-    var parent: js.Any = js.native
+    var parent: Any = js.native
     
     /**
       * Is the parent element the browser window?
@@ -572,14 +571,7 @@ object Scale {
       * more traditional 'size check' based on a time interval. You can control how often it is
       * checked here.
       */
-    var resizeInterval: integer = js.native
-    
-    /**
-      * The canvas resolution.
-      * 
-      * This is hard-coded to a value of 1 in the 3.16 release of Phaser and will be enabled at a later date.
-      */
-    var resolution: Double = js.native
+    var resizeInterval: Double = js.native
     
     /**
       * The game scale mode.
@@ -616,14 +608,14 @@ object Scale {
       * Sets the zoom value of the Scale Manager.
       * @param value The new zoom value of the game.
       */
-    def setZoom(value: integer): this.type = js.native
+    def setZoom(value: Double): this.type = js.native
     
     /**
       * Sends a request to the browser to ask it to go in to full screen mode, using the {@link https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API Fullscreen API}.
       * 
       * If the browser does not support this, a `FULLSCREEN_UNSUPPORTED` event will be emitted.
       * 
-      * This method _must_ be called from a user-input gesture, such as `pointerup`. You cannot launch
+      * This method _must_ be called from a `pointerup` user-input gesture (**not** `pointerdown`). You cannot launch
       * games fullscreen without this, as most browsers block it. Games within an iframe will also be blocked
       * from fullscreen unless the iframe has the `allowfullscreen` attribute.
       * 

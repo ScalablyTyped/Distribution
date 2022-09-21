@@ -17,7 +17,7 @@ trait SignUpResponse extends StObject {
   var UserConfirmed: BooleanType
   
   /**
-    * The UUID of the authenticated user. This is not the same as username.
+    * The UUID of the authenticated user. This isn't the same as username.
     */
   var UserSub: StringType
 }

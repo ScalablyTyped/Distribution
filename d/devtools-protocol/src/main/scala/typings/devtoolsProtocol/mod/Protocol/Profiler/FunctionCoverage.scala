@@ -36,6 +36,6 @@ object FunctionCoverage {
     
     inline def setRanges(value: js.Array[CoverageRange]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
     
-    inline def setRangesVarargs(value: CoverageRange*): Self = StObject.set(x, "ranges", js.Array(value :_*))
+    inline def setRangesVarargs(value: CoverageRange*): Self = StObject.set(x, "ranges", js.Array(value*))
   }
 }

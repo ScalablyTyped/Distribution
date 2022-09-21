@@ -52,15 +52,15 @@ object ServiceEndpointType {
     
     inline def setAuthenticationSchemes(value: js.Array[ServiceEndpointAuthenticationScheme]): Self = StObject.set(x, "authenticationSchemes", value.asInstanceOf[js.Any])
     
-    inline def setAuthenticationSchemesVarargs(value: ServiceEndpointAuthenticationScheme*): Self = StObject.set(x, "authenticationSchemes", js.Array(value :_*))
+    inline def setAuthenticationSchemesVarargs(value: ServiceEndpointAuthenticationScheme*): Self = StObject.set(x, "authenticationSchemes", js.Array(value*))
     
     inline def setDataSources(value: js.Array[DataSource]): Self = StObject.set(x, "dataSources", value.asInstanceOf[js.Any])
     
-    inline def setDataSourcesVarargs(value: DataSource*): Self = StObject.set(x, "dataSources", js.Array(value :_*))
+    inline def setDataSourcesVarargs(value: DataSource*): Self = StObject.set(x, "dataSources", js.Array(value*))
     
     inline def setDependencyData(value: js.Array[DependencyData]): Self = StObject.set(x, "dependencyData", value.asInstanceOf[js.Any])
     
-    inline def setDependencyDataVarargs(value: DependencyData*): Self = StObject.set(x, "dependencyData", js.Array(value :_*))
+    inline def setDependencyDataVarargs(value: DependencyData*): Self = StObject.set(x, "dependencyData", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -76,7 +76,7 @@ object ServiceEndpointType {
     
     inline def setInputDescriptors(value: js.Array[InputDescriptor]): Self = StObject.set(x, "inputDescriptors", value.asInstanceOf[js.Any])
     
-    inline def setInputDescriptorsVarargs(value: InputDescriptor*): Self = StObject.set(x, "inputDescriptors", js.Array(value :_*))
+    inline def setInputDescriptorsVarargs(value: InputDescriptor*): Self = StObject.set(x, "inputDescriptors", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

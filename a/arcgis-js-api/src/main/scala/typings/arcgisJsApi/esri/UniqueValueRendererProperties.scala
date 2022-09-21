@@ -14,7 +14,7 @@ trait UniqueValueRendererProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#backgroundFillSymbol)
     */
-  var backgroundFillSymbol: js.UndefOr[FillSymbolProperties | PolygonSymbol3DProperties] = js.undefined
+  var backgroundFillSymbol: js.UndefOr[FillSymbolProperties | typings.arcgisJsApi.anon.PolygonSymbol3DProperties] = js.undefined
   
   /**
     * Label used in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) to describe features assigned the [default symbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#defaultSymbol).
@@ -73,14 +73,14 @@ trait UniqueValueRendererProperties
   var uniqueValueInfos: js.UndefOr[js.Array[UniqueValueInfoProperties]] = js.undefined
   
   /**
-    * An [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression evaluating to either a string or a number.
+    * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Arcade Visualization Profile](https://developers.arcgis.com/javascript/latest/arcade/#visualization).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#valueExpression)
     */
   var valueExpression: js.UndefOr[String] = js.undefined
   
   /**
-    * The title identifying and describing the associated [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression as defined in the [valueExpression](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#valueExpression) property.
+    * The title identifying and describing the associated [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression as defined in the [valueExpression](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#valueExpression) property.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#valueExpressionTitle)
     */
@@ -95,7 +95,7 @@ object UniqueValueRendererProperties {
   
   extension [Self <: UniqueValueRendererProperties](x: Self) {
     
-    inline def setBackgroundFillSymbol(value: FillSymbolProperties | PolygonSymbol3DProperties): Self = StObject.set(x, "backgroundFillSymbol", value.asInstanceOf[js.Any])
+    inline def setBackgroundFillSymbol(value: FillSymbolProperties | typings.arcgisJsApi.anon.PolygonSymbol3DProperties): Self = StObject.set(x, "backgroundFillSymbol", value.asInstanceOf[js.Any])
     
     inline def setBackgroundFillSymbolUndefined: Self = StObject.set(x, "backgroundFillSymbol", js.undefined)
     
@@ -131,7 +131,7 @@ object UniqueValueRendererProperties {
     
     inline def setUniqueValueInfosUndefined: Self = StObject.set(x, "uniqueValueInfos", js.undefined)
     
-    inline def setUniqueValueInfosVarargs(value: UniqueValueInfoProperties*): Self = StObject.set(x, "uniqueValueInfos", js.Array(value :_*))
+    inline def setUniqueValueInfosVarargs(value: UniqueValueInfoProperties*): Self = StObject.set(x, "uniqueValueInfos", js.Array(value*))
     
     inline def setValueExpression(value: String): Self = StObject.set(x, "valueExpression", value.asInstanceOf[js.Any])
     

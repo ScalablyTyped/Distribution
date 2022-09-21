@@ -11,9 +11,9 @@ React component to render math using MathJax
 | Full name          | react-mathjax |
 | Keywords           | react, mathjax, math |
 | # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 2679630 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 59076.666666666664 |
+| # stars            | 85.0 |
 
 ## Links
 - [Homepage](https://github.com/SamyPesse/react-mathjax#readme)

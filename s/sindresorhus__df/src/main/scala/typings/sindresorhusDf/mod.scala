@@ -6,65 +6,52 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /**
-  	 * Get free disk space info from [`df -kP`](https://en.wikipedia.org/wiki/Df_\(Unix\)).
-  	 *
-  	 * @returns A list of space info objects for each filesystem.
-  	 */
-  inline def apply(): js.Promise[js.Array[SpaceInfo]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[js.Array[SpaceInfo]]]
-  
   @JSImport("@sindresorhus/df", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  // TODO: remove this in the next major version
-  @JSImport("@sindresorhus/df", "default")
-  @js.native
-  def default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof df */ js.Any = js.native
-  inline def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof df */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def diskSpace(): js.Promise[js.Array[SpaceInfo]] = ^.asInstanceOf[js.Dynamic].applyDynamic("diskSpace")().asInstanceOf[js.Promise[js.Array[SpaceInfo]]]
   
-  /**
-  	 * @param path - Path to a file on the filesystem to get the space info for.
-  	 * @returns Space info for the filesystem the given file is part of.
-  	 */
-  inline def file(path: String): js.Promise[SpaceInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SpaceInfo]]
+  inline def diskSpaceForFilesystem(pathToDeviceFile: String): js.Promise[SpaceInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("diskSpaceForFilesystem")(pathToDeviceFile.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SpaceInfo]]
   
-  /**
-  	 * @param path - Path to a filesystem device file. Example: `'/dev/disk1'`.
-  	 * @returns Space info for the given filesystem.
-  	 */
-  inline def fs(path: String): js.Promise[SpaceInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("fs")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SpaceInfo]]
+  inline def diskSpaceForFilesystemOwningPath(path: String): js.Promise[SpaceInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("diskSpaceForFilesystemOwningPath")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SpaceInfo]]
   
   trait SpaceInfo extends StObject {
     
     /**
-    		 * Available size in bytes.
-    		 */
+    	Available size in bytes.
+    	*/
     val available: Double
     
     /**
-    		 * Capacity as a float from `0` to `1`.
-    		 */
+    	Capacity as a float from `0` to `1`.
+    	*/
     val capacity: Double
     
     /**
-    		 * Name of the filesystem.
-    		 */
+    	Name of the filesystem.
+    	*/
     val filesystem: String
     
     /**
-    		 * Disk mount location.
-    		 */
+    	Disk mount location.
+    	*/
     val mountpoint: String
     
     /**
-    		 * Total size in bytes.
-    		 */
+    	Total size in bytes.
+    	*/
     val size: Double
     
     /**
-    		 * Used size in bytes.
-    		 */
+    	Type of the filesystem.
+    	_(Not available on macOS)_
+    	*/
+    val `type`: String
+    
+    /**
+    	Used size in bytes.
+    	*/
     val used: Double
   }
   object SpaceInfo {
@@ -75,9 +62,11 @@ object mod {
       filesystem: String,
       mountpoint: String,
       size: Double,
+      `type`: String,
       used: Double
     ): SpaceInfo = {
       val __obj = js.Dynamic.literal(available = available.asInstanceOf[js.Any], capacity = capacity.asInstanceOf[js.Any], filesystem = filesystem.asInstanceOf[js.Any], mountpoint = mountpoint.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], used = used.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[SpaceInfo]
     }
     
@@ -92,6 +81,8 @@ object mod {
       inline def setMountpoint(value: String): Self = StObject.set(x, "mountpoint", value.asInstanceOf[js.Any])
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setUsed(value: Double): Self = StObject.set(x, "used", value.asInstanceOf[js.Any])
     }

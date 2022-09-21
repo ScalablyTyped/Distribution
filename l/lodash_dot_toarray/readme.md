@@ -10,10 +10,10 @@ The lodash method `_.toArray` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.toarray |
 | Keywords           | lodash-modularized, toarray |
-| # releases         | 0 |
-| # dependents       | 77 |
-| # downloads        | 69348125 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4979095.0 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui", "StepLabel")
 @js.native
-class StepLabel ()
-  extends Component[StepLabelProps, js.Object, js.Any]
+open class StepLabel ()
+  extends Component[StepLabelProps, js.Object, Any]

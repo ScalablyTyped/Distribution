@@ -7,7 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ProresSettings extends StObject {
   
   /**
-    * Use Profile (ProResCodecProfile) to specifiy the type of Apple ProRes codec to use for this output.
+    * This setting applies only to ProRes 4444 and ProRes 4444 XQ outputs that you create from inputs that use 4:4:4 chroma sampling. Set Preserve 4:4:4 sampling (PRESERVE_444_SAMPLING) to allow outputs to also use 4:4:4 chroma sampling. You must specify a value for this setting when your output codec profile supports 4:4:4 chroma sampling. Related Settings: When you set Chroma sampling to Preserve 4:4:4 sampling (PRESERVE_444_SAMPLING), you must choose an output codec profile that supports 4:4:4 chroma sampling. These values for Profile (CodecProfile) support 4:4:4 chroma sampling: Apple ProRes 4444 (APPLE_PRORES_4444) or Apple ProRes 4444 XQ (APPLE_PRORES_4444_XQ). When you set Chroma sampling to Preserve 4:4:4 sampling, you must disable all video preprocessors except for Nexguard file marker (PartnerWatermarking). When you set Chroma sampling to Preserve 4:4:4 sampling and use framerate conversion, you must set Frame rate conversion algorithm (FramerateConversionAlgorithm) to Drop duplicate (DUPLICATE_DROP).
+    */
+  var ChromaSampling: js.UndefOr[ProresChromaSampling] = js.undefined
+  
+  /**
+    * Use Profile (ProResCodecProfile) to specify the type of Apple ProRes codec to use for this output.
     */
   var CodecProfile: js.UndefOr[ProresCodecProfile] = js.undefined
   
@@ -52,6 +57,11 @@ trait ProresSettings extends StObject {
   var ParNumerator: js.UndefOr[integerMin1Max2147483647] = js.undefined
   
   /**
+    * Use this setting for interlaced outputs, when your output frame rate is half of your input frame rate. In this situation, choose Optimized interlacing (INTERLACED_OPTIMIZE) to create a better quality interlaced output. In this case, each progressive frame from the input corresponds to an interlaced field in the output. Keep the default value, Basic interlacing (INTERLACED), for all other output frame rates. With basic interlacing, MediaConvert performs any frame rate conversion first and then interlaces the frames. When you choose Optimized interlacing and you set your output frame rate to a value that isn't suitable for optimized interlacing, MediaConvert automatically falls back to basic interlacing. Required settings: To use optimized interlacing, you must set Telecine (telecine) to None (NONE) or Soft (SOFT). You can't use optimized interlacing for hard telecine outputs. You must also set Interlace mode (interlaceMode) to a value other than Progressive (PROGRESSIVE).
+    */
+  var ScanTypeConversionMode: js.UndefOr[ProresScanTypeConversionMode] = js.undefined
+  
+  /**
     * Ignore this setting unless your input frame rate is 23.976 or 24 frames per second (fps). Enable slow PAL to create a 25 fps output. When you enable slow PAL, MediaConvert relabels the video frames to 25 fps and resamples your audio to keep it synchronized with the video. Note that enabling this setting will slightly reduce the duration of your video. Required settings: You must also set Framerate to 25. In your JSON job specification, set (framerateControl) to (SPECIFIED), (framerateNumerator) to 25 and (framerateDenominator) to 1.
     */
   var SlowPal: js.UndefOr[ProresSlowPal] = js.undefined
@@ -69,6 +79,10 @@ object ProresSettings {
   }
   
   extension [Self <: ProresSettings](x: Self) {
+    
+    inline def setChromaSampling(value: ProresChromaSampling): Self = StObject.set(x, "ChromaSampling", value.asInstanceOf[js.Any])
+    
+    inline def setChromaSamplingUndefined: Self = StObject.set(x, "ChromaSampling", js.undefined)
     
     inline def setCodecProfile(value: ProresCodecProfile): Self = StObject.set(x, "CodecProfile", value.asInstanceOf[js.Any])
     
@@ -105,6 +119,10 @@ object ProresSettings {
     inline def setParNumerator(value: integerMin1Max2147483647): Self = StObject.set(x, "ParNumerator", value.asInstanceOf[js.Any])
     
     inline def setParNumeratorUndefined: Self = StObject.set(x, "ParNumerator", js.undefined)
+    
+    inline def setScanTypeConversionMode(value: ProresScanTypeConversionMode): Self = StObject.set(x, "ScanTypeConversionMode", value.asInstanceOf[js.Any])
+    
+    inline def setScanTypeConversionModeUndefined: Self = StObject.set(x, "ScanTypeConversionMode", js.undefined)
     
     inline def setSlowPal(value: ProresSlowPal): Self = StObject.set(x, "SlowPal", value.asInstanceOf[js.Any])
     

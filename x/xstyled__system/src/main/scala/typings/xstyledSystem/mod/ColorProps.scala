@@ -9,7 +9,7 @@ trait ColorProps extends StObject {
   // Clash with HTMLAttributes interface declared in React module
   // that includes a non-standard HTML attribute `color?: string`.
   // Type here should be `ResponsiveValue<CSS.Property.Color>`.
-  val color: js.UndefOr[js.Any] = js.undefined
+  val color: js.UndefOr[Any] = js.undefined
 }
 object ColorProps {
   
@@ -20,7 +20,7 @@ object ColorProps {
   
   extension [Self <: ColorProps](x: Self) {
     
-    inline def setColor(value: js.Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
   }

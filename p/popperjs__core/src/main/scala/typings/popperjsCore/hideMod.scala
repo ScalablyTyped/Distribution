@@ -11,12 +11,12 @@ object hideMod extends Shortcut {
   
   @JSImport("@popperjs/core/lib/modifiers/hide", JSImport.Default)
   @js.native
-  val default: Modifier[hide, js.Object] = js.native
+  val default: HideModifier = js.native
   
   type HideModifier = Modifier[hide, js.Object]
   
-  type _To = Modifier[hide, js.Object]
+  type _To = HideModifier
   
   /* This means you don't have to write `default`, but can instead just say `hideMod.foo` */
-  override def _to: Modifier[hide, js.Object] = default
+  override def _to: HideModifier = default
 }

@@ -8,7 +8,6 @@ import typings.awsSdkClientS3Browser.typesInitiatorMod.Initiator
 import typings.awsSdkClientS3Browser.typesInitiatorMod.UnmarshalledInitiator
 import typings.awsSdkClientS3Browser.typesOwnerMod.Owner
 import typings.awsSdkClientS3Browser.typesOwnerMod.UnmarshalledOwner
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ object typesMultipartUploadMod {
     /**
       * <p>Date and time at which the multipart upload was initiated.</p>
       */
-    var Initiated: js.UndefOr[Date | String | Double] = js.undefined
+    var Initiated: js.UndefOr[js.Date | String | Double] = js.undefined
     
     /**
       * <p>Identifies who initiated the multipart upload.</p>
@@ -56,7 +55,7 @@ object typesMultipartUploadMod {
     
     extension [Self <: MultipartUpload](x: Self) {
       
-      inline def setInitiated(value: Date | String | Double): Self = StObject.set(x, "Initiated", value.asInstanceOf[js.Any])
+      inline def setInitiated(value: js.Date | String | Double): Self = StObject.set(x, "Initiated", value.asInstanceOf[js.Any])
       
       inline def setInitiatedUndefined: Self = StObject.set(x, "Initiated", js.undefined)
       
@@ -90,7 +89,7 @@ object typesMultipartUploadMod {
       * <p>Date and time at which the multipart upload was initiated.</p>
       */
     @JSName("Initiated")
-    var Initiated_UnmarshalledMultipartUpload: js.UndefOr[Date] = js.undefined
+    var Initiated_UnmarshalledMultipartUpload: js.UndefOr[js.Date] = js.undefined
     
     /**
       * <p>Identifies who initiated the multipart upload.</p>
@@ -113,7 +112,7 @@ object typesMultipartUploadMod {
     
     extension [Self <: UnmarshalledMultipartUpload](x: Self) {
       
-      inline def setInitiated(value: Date): Self = StObject.set(x, "Initiated", value.asInstanceOf[js.Any])
+      inline def setInitiated(value: js.Date): Self = StObject.set(x, "Initiated", value.asInstanceOf[js.Any])
       
       inline def setInitiatedUndefined: Self = StObject.set(x, "Initiated", js.undefined)
       

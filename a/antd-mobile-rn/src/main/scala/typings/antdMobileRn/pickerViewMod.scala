@@ -12,7 +12,7 @@ object pickerViewMod {
   
   @JSImport("antd-mobile-rn/lib/picker-view/PickerView", JSImport.Default)
   @js.native
-  class default () extends PickerView
+  open class default () extends PickerView
   /* static members */
   object default {
     
@@ -34,21 +34,21 @@ object pickerViewMod {
     
     var data: js.UndefOr[js.Array[js.Array[PickerData] | PickerData]] = js.undefined
     
-    var indicatorStyle: js.UndefOr[js.Any] = js.undefined
+    var indicatorStyle: js.UndefOr[Any] = js.undefined
     
-    var itemStyle: js.UndefOr[js.Any] = js.undefined
+    var itemStyle: js.UndefOr[Any] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onChange: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], Unit]] = js.undefined
     
-    var onScrollChange: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onScrollChange: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], Unit]] = js.undefined
     
     var pickerPrefixCls: js.UndefOr[String] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
-    var styles: js.UndefOr[js.Any] = js.undefined
+    var styles: js.UndefOr[Any] = js.undefined
     
-    var value: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var value: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object IPickerView {
     
@@ -71,21 +71,21 @@ object pickerViewMod {
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDataVarargs(value: (js.Array[PickerData] | PickerData)*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: (js.Array[PickerData] | PickerData)*): Self = StObject.set(x, "data", js.Array(value*))
       
-      inline def setIndicatorStyle(value: js.Any): Self = StObject.set(x, "indicatorStyle", value.asInstanceOf[js.Any])
+      inline def setIndicatorStyle(value: Any): Self = StObject.set(x, "indicatorStyle", value.asInstanceOf[js.Any])
       
       inline def setIndicatorStyleUndefined: Self = StObject.set(x, "indicatorStyle", js.undefined)
       
-      inline def setItemStyle(value: js.Any): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
+      inline def setItemStyle(value: Any): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
       
       inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
       
-      inline def setOnChange(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* value */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      inline def setOnScrollChange(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onScrollChange", js.Any.fromFunction1(value))
+      inline def setOnScrollChange(value: /* value */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onScrollChange", js.Any.fromFunction1(value))
       
       inline def setOnScrollChangeUndefined: Self = StObject.set(x, "onScrollChange", js.undefined)
       
@@ -97,21 +97,20 @@ object pickerViewMod {
       
       inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      inline def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
       inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      inline def setValue(value: js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Array[Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: Any*): Self = StObject.set(x, "value", js.Array(value*))
     }
   }
   
   @js.native
-  trait PickerView
-    extends Component[IPickerView, js.Any, js.Any] {
+  trait PickerView extends Component[IPickerView, Any, Any] {
     
     def getCol(): js.Array[Element] = js.native
   }

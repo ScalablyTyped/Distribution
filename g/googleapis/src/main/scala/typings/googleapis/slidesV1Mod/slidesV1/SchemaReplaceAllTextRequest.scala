@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Replaces all instances of text matching a criteria with replace text.
-  */
 trait SchemaReplaceAllTextRequest extends StObject {
   
   /**
@@ -15,17 +12,14 @@ trait SchemaReplaceAllTextRequest extends StObject {
   var containsText: js.UndefOr[SchemaSubstringMatchCriteria] = js.undefined
   
   /**
-    * If non-empty, limits the matches to page elements only on the given
-    * pages.  Returns a 400 bad request error if given the page object ID of a
-    * notes master, or if a page with that object ID doesn&#39;t exist in the
-    * presentation.
+    * If non-empty, limits the matches to page elements only on the given pages. Returns a 400 bad request error if given the page object ID of a notes master, or if a page with that object ID doesn't exist in the presentation.
     */
-  var pageObjectIds: js.UndefOr[js.Array[String]] = js.undefined
+  var pageObjectIds: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
     * The text that will replace the matched text.
     */
-  var replaceText: js.UndefOr[String] = js.undefined
+  var replaceText: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaReplaceAllTextRequest {
   
@@ -42,11 +36,15 @@ object SchemaReplaceAllTextRequest {
     
     inline def setPageObjectIds(value: js.Array[String]): Self = StObject.set(x, "pageObjectIds", value.asInstanceOf[js.Any])
     
+    inline def setPageObjectIdsNull: Self = StObject.set(x, "pageObjectIds", null)
+    
     inline def setPageObjectIdsUndefined: Self = StObject.set(x, "pageObjectIds", js.undefined)
     
-    inline def setPageObjectIdsVarargs(value: String*): Self = StObject.set(x, "pageObjectIds", js.Array(value :_*))
+    inline def setPageObjectIdsVarargs(value: String*): Self = StObject.set(x, "pageObjectIds", js.Array(value*))
     
     inline def setReplaceText(value: String): Self = StObject.set(x, "replaceText", value.asInstanceOf[js.Any])
+    
+    inline def setReplaceTextNull: Self = StObject.set(x, "replaceText", null)
     
     inline def setReplaceTextUndefined: Self = StObject.set(x, "replaceText", js.undefined)
   }

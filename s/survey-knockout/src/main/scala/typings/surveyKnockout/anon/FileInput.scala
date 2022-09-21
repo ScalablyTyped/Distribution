@@ -8,13 +8,15 @@ trait FileInput extends StObject {
   
   var chooseFile: String
   
-  var disabled: String
+  var controlDisabled: String
+  
+  var dragAreaPlaceholder: String
   
   var fileDecorator: String
   
   var fileInput: String
   
-  var fileSign: String
+  var fileList: String
   
   var fileSignBottom: String
   
@@ -34,6 +36,8 @@ trait FileInput extends StObject {
   
   var removeFileSvg: String
   
+  var removeFileSvgIconId: String
+  
   var root: String
   
   var wrapper: String
@@ -42,10 +46,11 @@ object FileInput {
   
   inline def apply(
     chooseFile: String,
-    disabled: String,
+    controlDisabled: String,
+    dragAreaPlaceholder: String,
     fileDecorator: String,
     fileInput: String,
-    fileSign: String,
+    fileList: String,
     fileSignBottom: String,
     noFileChosen: String,
     other: String,
@@ -55,10 +60,11 @@ object FileInput {
     removeButtonBottom: String,
     removeFile: String,
     removeFileSvg: String,
+    removeFileSvgIconId: String,
     root: String,
     wrapper: String
   ): FileInput = {
-    val __obj = js.Dynamic.literal(chooseFile = chooseFile.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], fileDecorator = fileDecorator.asInstanceOf[js.Any], fileInput = fileInput.asInstanceOf[js.Any], fileSign = fileSign.asInstanceOf[js.Any], fileSignBottom = fileSignBottom.asInstanceOf[js.Any], noFileChosen = noFileChosen.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], placeholderInput = placeholderInput.asInstanceOf[js.Any], preview = preview.asInstanceOf[js.Any], removeButton = removeButton.asInstanceOf[js.Any], removeButtonBottom = removeButtonBottom.asInstanceOf[js.Any], removeFile = removeFile.asInstanceOf[js.Any], removeFileSvg = removeFileSvg.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], wrapper = wrapper.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(chooseFile = chooseFile.asInstanceOf[js.Any], controlDisabled = controlDisabled.asInstanceOf[js.Any], dragAreaPlaceholder = dragAreaPlaceholder.asInstanceOf[js.Any], fileDecorator = fileDecorator.asInstanceOf[js.Any], fileInput = fileInput.asInstanceOf[js.Any], fileList = fileList.asInstanceOf[js.Any], fileSignBottom = fileSignBottom.asInstanceOf[js.Any], noFileChosen = noFileChosen.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], placeholderInput = placeholderInput.asInstanceOf[js.Any], preview = preview.asInstanceOf[js.Any], removeButton = removeButton.asInstanceOf[js.Any], removeButtonBottom = removeButtonBottom.asInstanceOf[js.Any], removeFile = removeFile.asInstanceOf[js.Any], removeFileSvg = removeFileSvg.asInstanceOf[js.Any], removeFileSvgIconId = removeFileSvgIconId.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], wrapper = wrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileInput]
   }
   
@@ -66,13 +72,15 @@ object FileInput {
     
     inline def setChooseFile(value: String): Self = StObject.set(x, "chooseFile", value.asInstanceOf[js.Any])
     
-    inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setControlDisabled(value: String): Self = StObject.set(x, "controlDisabled", value.asInstanceOf[js.Any])
+    
+    inline def setDragAreaPlaceholder(value: String): Self = StObject.set(x, "dragAreaPlaceholder", value.asInstanceOf[js.Any])
     
     inline def setFileDecorator(value: String): Self = StObject.set(x, "fileDecorator", value.asInstanceOf[js.Any])
     
     inline def setFileInput(value: String): Self = StObject.set(x, "fileInput", value.asInstanceOf[js.Any])
     
-    inline def setFileSign(value: String): Self = StObject.set(x, "fileSign", value.asInstanceOf[js.Any])
+    inline def setFileList(value: String): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
     
     inline def setFileSignBottom(value: String): Self = StObject.set(x, "fileSignBottom", value.asInstanceOf[js.Any])
     
@@ -91,6 +99,8 @@ object FileInput {
     inline def setRemoveFile(value: String): Self = StObject.set(x, "removeFile", value.asInstanceOf[js.Any])
     
     inline def setRemoveFileSvg(value: String): Self = StObject.set(x, "removeFileSvg", value.asInstanceOf[js.Any])
+    
+    inline def setRemoveFileSvgIconId(value: String): Self = StObject.set(x, "removeFileSvgIconId", value.asInstanceOf[js.Any])
     
     inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     

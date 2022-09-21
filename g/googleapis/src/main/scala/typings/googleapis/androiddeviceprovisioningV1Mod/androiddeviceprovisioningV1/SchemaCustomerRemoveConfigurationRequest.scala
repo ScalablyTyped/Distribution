@@ -4,13 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request message for customer to remove the configuration from device.
-  */
 trait SchemaCustomerRemoveConfigurationRequest extends StObject {
   
   /**
-    * Required. The device to remove the configuration from.
+    * Required. The device to remove the configuration from. There are custom validations in RemoveConfigurationRequestValidator
     */
   var device: js.UndefOr[SchemaDeviceReference] = js.undefined
 }

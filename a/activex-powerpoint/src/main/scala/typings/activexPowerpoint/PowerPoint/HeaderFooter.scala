@@ -11,7 +11,7 @@ trait HeaderFooter extends StObject {
   
   var Format: PpDateTimeFormat
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.HeaderFooter_typekey")
   var PowerPointDotHeaderFooter_typekey: HeaderFooter
@@ -27,7 +27,7 @@ object HeaderFooter {
   inline def apply(
     Application: Application,
     Format: PpDateTimeFormat,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotHeaderFooter_typekey: HeaderFooter,
     Text: String,
     UseFormat: MsoTriState,
@@ -44,7 +44,7 @@ object HeaderFooter {
     
     inline def setFormat(value: PpDateTimeFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotHeaderFooter_typekey(value: HeaderFooter): Self = StObject.set(x, "PowerPoint.HeaderFooter_typekey", value.asInstanceOf[js.Any])
     

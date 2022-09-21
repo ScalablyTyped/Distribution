@@ -11,9 +11,9 @@ A simple utility for creating an object with values equal to its keys. Identical
 | Full name          | keymirror |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 363 |
-| # downloads        | 10372064 |
-| # stars            | 27 |
+| # dependents       | 0.0 |
+| # downloads        | 965752.6666666666 |
+| # stars            | 385.0 |
 
 ## Links
 - [Homepage](https://github.com/STRML/keyMirror)

@@ -1,12 +1,11 @@
 package typings.ignoreWalk
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ignoreWalk.anon.Follow
+import typings.ignoreWalk.anon.Dir
+import typings.ignoreWalk.anon.Entry
 import typings.ignoreWalk.ignoreWalkStrings.done
 import typings.ignoreWalk.ignoreWalkStrings.error
 import typings.node.eventsMod.EventEmitter
-import typings.node.fsMod.Stats
-import typings.std.Error
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -25,7 +24,7 @@ object mod {
   
   @JSImport("ignore-walk", "Walker")
   @js.native
-  class Walker () extends EventEmitter {
+  open class Walker () extends EventEmitter {
     def this(opts: WalkerOptions) = this()
     
     def addIgnoreFile(file: String, `then`: js.Function0[Unit]): Unit = js.native
@@ -35,11 +34,11 @@ object mod {
     @JSName("addListener")
     def addListener_done(event: done, listener: js.Function1[/* data */ js.Array[String], Unit]): this.type = js.native
     @JSName("addListener")
-    def addListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def addListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
     var basename: String = js.native
     
-    def emit(ev: String, data: js.Any): Boolean = js.native
+    def emit(ev: String, data: Any): Boolean = js.native
     
     var entries: js.Array[String] = js.native
     
@@ -64,14 +63,14 @@ object mod {
     @JSName("on")
     def on_done(event: done, listener: js.Function1[/* data */ js.Array[String], Unit]): this.type = js.native
     @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def on_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
     @JSName("once")
     def once_done(event: done, listener: js.Function1[/* data */ js.Array[String], Unit]): this.type = js.native
     @JSName("once")
-    def once_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def once_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
-    def onstat(st: Stats, entry: String, file: Boolean, dir: Boolean, `then`: js.Function0[Unit]): Unit = js.native
+    def onstat(opts: Dir, `then`: js.Function0[Unit]): Unit = js.native
     
     var parent: Walker | WalkerSync | Null = js.native
     
@@ -80,12 +79,12 @@ object mod {
     @JSName("prependListener")
     def prependListener_done(event: done, listener: js.Function1[/* data */ js.Array[String], Unit]): this.type = js.native
     @JSName("prependListener")
-    def prependListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def prependListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
     @JSName("prependOnceListener")
     def prependOnceListener_done(event: done, listener: js.Function1[/* data */ js.Array[String], Unit]): this.type = js.native
     @JSName("prependOnceListener")
-    def prependOnceListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def prependOnceListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
     var result: Set[String] | js.Array[String] = js.native
     
@@ -97,21 +96,71 @@ object mod {
     
     def start(): this.type = js.native
     
-    def stat(entry: String, file: Boolean, dir: Boolean, the: js.Function0[Unit]): Unit = js.native
+    def stat(opts: Entry, `then`: js.Function0[Unit]): Unit = js.native
     
-    def walker(entry: String, `then`: js.Function0[Unit]): Unit = js.native
+    def walker(entry: String, opts: Unit, `then`: js.Function0[Unit]): Unit = js.native
+    def walker(entry: String, opts: WalkerOptions, `then`: js.Function0[Unit]): Unit = js.native
     
-    def walkerOpt(entry: String): Follow = js.native
+    def walkerOpt(entry: String): ConcreteWalkerOptions = js.native
+    def walkerOpt(entry: String, opts: WalkerOptions): ConcreteWalkerOptions = js.native
   }
   
   @JSImport("ignore-walk", "WalkerSync")
   @js.native
-  class WalkerSync () extends Walker {
+  open class WalkerSync () extends Walker {
     def this(opts: WalkerOptions) = this()
   }
   
   inline def sync(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")().asInstanceOf[js.Array[String]]
   inline def sync(options: WalkerOptions): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  
+  trait ConcreteWalkerOptions
+    extends StObject
+       with WalkerOptions {
+    
+    @JSName("follow")
+    var follow_ConcreteWalkerOptions: Boolean
+    
+    @JSName("ignoreFiles")
+    var ignoreFiles_ConcreteWalkerOptions: js.Array[String]
+    
+    @JSName("includeEmpty")
+    var includeEmpty_ConcreteWalkerOptions: Boolean
+    
+    @JSName("parent")
+    var parent_ConcreteWalkerOptions: Walker | WalkerSync
+    
+    @JSName("path")
+    var path_ConcreteWalkerOptions: String
+  }
+  object ConcreteWalkerOptions {
+    
+    inline def apply(
+      follow: Boolean,
+      ignoreFiles: js.Array[String],
+      includeEmpty: Boolean,
+      parent: Walker | WalkerSync,
+      path: String
+    ): ConcreteWalkerOptions = {
+      val __obj = js.Dynamic.literal(follow = follow.asInstanceOf[js.Any], ignoreFiles = ignoreFiles.asInstanceOf[js.Any], includeEmpty = includeEmpty.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ConcreteWalkerOptions]
+    }
+    
+    extension [Self <: ConcreteWalkerOptions](x: Self) {
+      
+      inline def setFollow(value: Boolean): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreFiles(value: js.Array[String]): Self = StObject.set(x, "ignoreFiles", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreFilesVarargs(value: String*): Self = StObject.set(x, "ignoreFiles", js.Array(value*))
+      
+      inline def setIncludeEmpty(value: Boolean): Self = StObject.set(x, "includeEmpty", value.asInstanceOf[js.Any])
+      
+      inline def setParent(value: Walker | WalkerSync): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    }
+  }
   
   trait WalkerOptions extends StObject {
     
@@ -120,6 +169,8 @@ object mod {
     var ignoreFiles: js.UndefOr[js.Array[String]] = js.undefined
     
     var includeEmpty: js.UndefOr[Boolean] = js.undefined
+    
+    var isSymbolicLink: js.UndefOr[Boolean] = js.undefined
     
     var parent: js.UndefOr[Walker | WalkerSync | Null] = js.undefined
     
@@ -142,11 +193,15 @@ object mod {
       
       inline def setIgnoreFilesUndefined: Self = StObject.set(x, "ignoreFiles", js.undefined)
       
-      inline def setIgnoreFilesVarargs(value: String*): Self = StObject.set(x, "ignoreFiles", js.Array(value :_*))
+      inline def setIgnoreFilesVarargs(value: String*): Self = StObject.set(x, "ignoreFiles", js.Array(value*))
       
       inline def setIncludeEmpty(value: Boolean): Self = StObject.set(x, "includeEmpty", value.asInstanceOf[js.Any])
       
       inline def setIncludeEmptyUndefined: Self = StObject.set(x, "includeEmpty", js.undefined)
+      
+      inline def setIsSymbolicLink(value: Boolean): Self = StObject.set(x, "isSymbolicLink", value.asInstanceOf[js.Any])
+      
+      inline def setIsSymbolicLinkUndefined: Self = StObject.set(x, "isSymbolicLink", js.undefined)
       
       inline def setParent(value: Walker | WalkerSync): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       

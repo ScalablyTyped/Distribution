@@ -25,7 +25,7 @@ trait IToastOptions extends StObject {
   // default: false
   var hideDelay: js.UndefOr[Double | `false`] = js.undefined
   
-  var locals: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var locals: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   var parent: js.UndefOr[String | Element | JQuery] = js.undefined
   
@@ -70,17 +70,17 @@ object IToastOptions {
     
     inline def setControllerAsUndefined: Self = StObject.set(x, "controllerAs", js.undefined)
     
-    inline def setControllerFunction1(value: /* repeated */ js.Any => Unit | IController): Self = StObject.set(x, "controller", js.Any.fromFunction1(value))
+    inline def setControllerFunction1(value: /* repeated */ Any => Unit | IController): Self = StObject.set(x, "controller", js.Any.fromFunction1(value))
     
     inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
     
-    inline def setControllerVarargs(value: (String | IControllerConstructor)*): Self = StObject.set(x, "controller", js.Array(value :_*))
+    inline def setControllerVarargs(value: (String | IControllerConstructor)*): Self = StObject.set(x, "controller", js.Array(value*))
     
     inline def setHideDelay(value: Double | `false`): Self = StObject.set(x, "hideDelay", value.asInstanceOf[js.Any])
     
     inline def setHideDelayUndefined: Self = StObject.set(x, "hideDelay", js.undefined)
     
-    inline def setLocals(value: StringDictionary[js.Any]): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
+    inline def setLocals(value: StringDictionary[Any]): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
     
     inline def setLocalsUndefined: Self = StObject.set(x, "locals", js.undefined)
     

@@ -12,10 +12,9 @@ trait SchemaListMembershipsResponse extends StObject {
   var memberships: js.UndefOr[js.Array[SchemaMembership]] = js.undefined
   
   /**
-    * Continuation token to retrieve the next page of results. It will be empty
-    * for the last page of results.
+    * Continuation token to retrieve the next page of results. It will be empty for the last page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListMembershipsResponse {
   
@@ -30,9 +29,11 @@ object SchemaListMembershipsResponse {
     
     inline def setMembershipsUndefined: Self = StObject.set(x, "memberships", js.undefined)
     
-    inline def setMembershipsVarargs(value: SchemaMembership*): Self = StObject.set(x, "memberships", js.Array(value :_*))
+    inline def setMembershipsVarargs(value: SchemaMembership*): Self = StObject.set(x, "memberships", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

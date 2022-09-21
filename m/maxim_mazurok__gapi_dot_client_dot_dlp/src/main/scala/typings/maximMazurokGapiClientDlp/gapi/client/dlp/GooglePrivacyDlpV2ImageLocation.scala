@@ -22,6 +22,6 @@ object GooglePrivacyDlpV2ImageLocation {
     
     inline def setBoundingBoxesUndefined: Self = StObject.set(x, "boundingBoxes", js.undefined)
     
-    inline def setBoundingBoxesVarargs(value: GooglePrivacyDlpV2BoundingBox*): Self = StObject.set(x, "boundingBoxes", js.Array(value :_*))
+    inline def setBoundingBoxesVarargs(value: GooglePrivacyDlpV2BoundingBox*): Self = StObject.set(x, "boundingBoxes", js.Array(value*))
   }
 }

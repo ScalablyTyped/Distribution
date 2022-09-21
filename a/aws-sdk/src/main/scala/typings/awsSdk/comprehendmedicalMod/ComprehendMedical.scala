@@ -73,6 +73,20 @@ trait ComprehendMedical extends Service {
   ): Request[DescribeRxNormInferenceJobResponse, AWSError] = js.native
   
   /**
+    *  Gets the properties associated with an InferSNOMEDCT job. Use this operation to get the status of an inference job. 
+    */
+  def describeSNOMEDCTInferenceJob(): Request[DescribeSNOMEDCTInferenceJobResponse, AWSError] = js.native
+  def describeSNOMEDCTInferenceJob(callback: js.Function2[/* err */ AWSError, /* data */ DescribeSNOMEDCTInferenceJobResponse, Unit]): Request[DescribeSNOMEDCTInferenceJobResponse, AWSError] = js.native
+  /**
+    *  Gets the properties associated with an InferSNOMEDCT job. Use this operation to get the status of an inference job. 
+    */
+  def describeSNOMEDCTInferenceJob(params: DescribeSNOMEDCTInferenceJobRequest): Request[DescribeSNOMEDCTInferenceJobResponse, AWSError] = js.native
+  def describeSNOMEDCTInferenceJob(
+    params: DescribeSNOMEDCTInferenceJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeSNOMEDCTInferenceJobResponse, Unit]
+  ): Request[DescribeSNOMEDCTInferenceJobResponse, AWSError] = js.native
+  
+  /**
     * The DetectEntities operation is deprecated. You should use the DetectEntitiesV2 operation instead.  Inspects the clinical text for a variety of medical entities and returns specific information about them such as entity category, location, and confidence score on that information .
     */
   def detectEntities(): Request[DetectEntitiesResponse, AWSError] = js.native
@@ -115,12 +129,12 @@ trait ComprehendMedical extends Service {
   ): Request[DetectPHIResponse, AWSError] = js.native
   
   /**
-    * InferICD10CM detects medical conditions as entities listed in a patient record and links those entities to normalized concept identifiers in the ICD-10-CM knowledge base from the Centers for Disease Control. Amazon Comprehend Medical only detects medical entities in English language texts.
+    * InferICD10CM detects medical conditions as entities listed in a patient record and links those entities to normalized concept identifiers in the ICD-10-CM knowledge base from the Centers for Disease Control. Amazon Comprehend Medical only detects medical entities in English language texts. 
     */
   def inferICD10CM(): Request[InferICD10CMResponse, AWSError] = js.native
   def inferICD10CM(callback: js.Function2[/* err */ AWSError, /* data */ InferICD10CMResponse, Unit]): Request[InferICD10CMResponse, AWSError] = js.native
   /**
-    * InferICD10CM detects medical conditions as entities listed in a patient record and links those entities to normalized concept identifiers in the ICD-10-CM knowledge base from the Centers for Disease Control. Amazon Comprehend Medical only detects medical entities in English language texts.
+    * InferICD10CM detects medical conditions as entities listed in a patient record and links those entities to normalized concept identifiers in the ICD-10-CM knowledge base from the Centers for Disease Control. Amazon Comprehend Medical only detects medical entities in English language texts. 
     */
   def inferICD10CM(params: InferICD10CMRequest): Request[InferICD10CMResponse, AWSError] = js.native
   def inferICD10CM(
@@ -129,18 +143,32 @@ trait ComprehendMedical extends Service {
   ): Request[InferICD10CMResponse, AWSError] = js.native
   
   /**
-    * InferRxNorm detects medications as entities listed in a patient record and links to the normalized concept identifiers in the RxNorm database from the National Library of Medicine. Amazon Comprehend Medical only detects medical entities in English language texts.
+    * InferRxNorm detects medications as entities listed in a patient record and links to the normalized concept identifiers in the RxNorm database from the National Library of Medicine. Amazon Comprehend Medical only detects medical entities in English language texts. 
     */
   def inferRxNorm(): Request[InferRxNormResponse, AWSError] = js.native
   def inferRxNorm(callback: js.Function2[/* err */ AWSError, /* data */ InferRxNormResponse, Unit]): Request[InferRxNormResponse, AWSError] = js.native
   /**
-    * InferRxNorm detects medications as entities listed in a patient record and links to the normalized concept identifiers in the RxNorm database from the National Library of Medicine. Amazon Comprehend Medical only detects medical entities in English language texts.
+    * InferRxNorm detects medications as entities listed in a patient record and links to the normalized concept identifiers in the RxNorm database from the National Library of Medicine. Amazon Comprehend Medical only detects medical entities in English language texts. 
     */
   def inferRxNorm(params: InferRxNormRequest): Request[InferRxNormResponse, AWSError] = js.native
   def inferRxNorm(
     params: InferRxNormRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ InferRxNormResponse, Unit]
   ): Request[InferRxNormResponse, AWSError] = js.native
+  
+  /**
+    *  InferSNOMEDCT detects possible medical concepts as entities and links them to codes from the Systematized Nomenclature of Medicine, Clinical Terms (SNOMED-CT) ontology
+    */
+  def inferSNOMEDCT(): Request[InferSNOMEDCTResponse, AWSError] = js.native
+  def inferSNOMEDCT(callback: js.Function2[/* err */ AWSError, /* data */ InferSNOMEDCTResponse, Unit]): Request[InferSNOMEDCTResponse, AWSError] = js.native
+  /**
+    *  InferSNOMEDCT detects possible medical concepts as entities and links them to codes from the Systematized Nomenclature of Medicine, Clinical Terms (SNOMED-CT) ontology
+    */
+  def inferSNOMEDCT(params: InferSNOMEDCTRequest): Request[InferSNOMEDCTResponse, AWSError] = js.native
+  def inferSNOMEDCT(
+    params: InferSNOMEDCTRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ InferSNOMEDCTResponse, Unit]
+  ): Request[InferSNOMEDCTResponse, AWSError] = js.native
   
   /**
     * Gets a list of medical entity detection jobs that you have submitted.
@@ -199,6 +227,20 @@ trait ComprehendMedical extends Service {
   ): Request[ListRxNormInferenceJobsResponse, AWSError] = js.native
   
   /**
+    *  Gets a list of InferSNOMEDCT jobs a user has submitted. 
+    */
+  def listSNOMEDCTInferenceJobs(): Request[ListSNOMEDCTInferenceJobsResponse, AWSError] = js.native
+  def listSNOMEDCTInferenceJobs(callback: js.Function2[/* err */ AWSError, /* data */ ListSNOMEDCTInferenceJobsResponse, Unit]): Request[ListSNOMEDCTInferenceJobsResponse, AWSError] = js.native
+  /**
+    *  Gets a list of InferSNOMEDCT jobs a user has submitted. 
+    */
+  def listSNOMEDCTInferenceJobs(params: ListSNOMEDCTInferenceJobsRequest): Request[ListSNOMEDCTInferenceJobsResponse, AWSError] = js.native
+  def listSNOMEDCTInferenceJobs(
+    params: ListSNOMEDCTInferenceJobsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListSNOMEDCTInferenceJobsResponse, Unit]
+  ): Request[ListSNOMEDCTInferenceJobsResponse, AWSError] = js.native
+  
+  /**
     * Starts an asynchronous medical entity detection job for a collection of documents. Use the DescribeEntitiesDetectionV2Job operation to track the status of a job.
     */
   def startEntitiesDetectionV2Job(): Request[StartEntitiesDetectionV2JobResponse, AWSError] = js.native
@@ -255,6 +297,20 @@ trait ComprehendMedical extends Service {
   ): Request[StartRxNormInferenceJobResponse, AWSError] = js.native
   
   /**
+    *  Starts an asynchronous job to detect medical concepts and link them to the SNOMED-CT ontology. Use the DescribeSNOMEDCTInferenceJob operation to track the status of a job. 
+    */
+  def startSNOMEDCTInferenceJob(): Request[StartSNOMEDCTInferenceJobResponse, AWSError] = js.native
+  def startSNOMEDCTInferenceJob(callback: js.Function2[/* err */ AWSError, /* data */ StartSNOMEDCTInferenceJobResponse, Unit]): Request[StartSNOMEDCTInferenceJobResponse, AWSError] = js.native
+  /**
+    *  Starts an asynchronous job to detect medical concepts and link them to the SNOMED-CT ontology. Use the DescribeSNOMEDCTInferenceJob operation to track the status of a job. 
+    */
+  def startSNOMEDCTInferenceJob(params: StartSNOMEDCTInferenceJobRequest): Request[StartSNOMEDCTInferenceJobResponse, AWSError] = js.native
+  def startSNOMEDCTInferenceJob(
+    params: StartSNOMEDCTInferenceJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartSNOMEDCTInferenceJobResponse, Unit]
+  ): Request[StartSNOMEDCTInferenceJobResponse, AWSError] = js.native
+  
+  /**
     * Stops a medical entities detection job in progress.
     */
   def stopEntitiesDetectionV2Job(): Request[StopEntitiesDetectionV2JobResponse, AWSError] = js.native
@@ -309,4 +365,18 @@ trait ComprehendMedical extends Service {
     params: StopRxNormInferenceJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StopRxNormInferenceJobResponse, Unit]
   ): Request[StopRxNormInferenceJobResponse, AWSError] = js.native
+  
+  /**
+    *  Stops an InferSNOMEDCT inference job in progress. 
+    */
+  def stopSNOMEDCTInferenceJob(): Request[StopSNOMEDCTInferenceJobResponse, AWSError] = js.native
+  def stopSNOMEDCTInferenceJob(callback: js.Function2[/* err */ AWSError, /* data */ StopSNOMEDCTInferenceJobResponse, Unit]): Request[StopSNOMEDCTInferenceJobResponse, AWSError] = js.native
+  /**
+    *  Stops an InferSNOMEDCT inference job in progress. 
+    */
+  def stopSNOMEDCTInferenceJob(params: StopSNOMEDCTInferenceJobRequest): Request[StopSNOMEDCTInferenceJobResponse, AWSError] = js.native
+  def stopSNOMEDCTInferenceJob(
+    params: StopSNOMEDCTInferenceJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StopSNOMEDCTInferenceJobResponse, Unit]
+  ): Request[StopSNOMEDCTInferenceJobResponse, AWSError] = js.native
 }

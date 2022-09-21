@@ -71,7 +71,7 @@ trait XLayerHandler
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't an extensible node in progress currentlyif a property with that nam
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def addPropertyWithValue(aName: String, aAttributes: Double, aValue: js.Any): Unit
+  def addPropertyWithValue(aName: String, aAttributes: Double, aValue: Any): Unit
   
   /**
     * receives notification that a node is dropped from a set.
@@ -146,7 +146,7 @@ trait XLayerHandler
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't a property in progress currentlyif there already was a change to th
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def setPropertyValue(aValue: js.Any): Unit
+  def setPropertyValue(aValue: Any): Unit
   
   /**
     * receives notification that the value of the current localized property is overridden for a specific locale .
@@ -156,7 +156,7 @@ trait XLayerHandler
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't a property in progress currentlyif the current property isn't local
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def setPropertyValueForLocale(aValue: js.Any, aLocale: String): Unit
+  def setPropertyValueForLocale(aValue: Any, aLocale: String): Unit
   
   /**
     * receives notification that a layer description is started for a component.
@@ -174,17 +174,17 @@ object XLayerHandler {
     addOrReplaceNode: (String, Double) => Unit,
     addOrReplaceNodeFromTemplate: (String, TemplateIdentifier, Double) => Unit,
     addProperty: (String, Double, `type`) => Unit,
-    addPropertyWithValue: (String, Double, js.Any) => Unit,
+    addPropertyWithValue: (String, Double, Any) => Unit,
     dropNode: String => Unit,
     endLayer: () => Unit,
     endNode: () => Unit,
     endProperty: () => Unit,
     overrideNode: (String, Double, Boolean) => Unit,
     overrideProperty: (String, Double, `type`, Boolean) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
-    setPropertyValue: js.Any => Unit,
-    setPropertyValueForLocale: (js.Any, String) => Unit,
+    setPropertyValue: Any => Unit,
+    setPropertyValueForLocale: (Any, String) => Unit,
     startLayer: () => Unit
   ): XLayerHandler = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addOrReplaceNode = js.Any.fromFunction2(addOrReplaceNode), addOrReplaceNodeFromTemplate = js.Any.fromFunction3(addOrReplaceNodeFromTemplate), addProperty = js.Any.fromFunction3(addProperty), addPropertyWithValue = js.Any.fromFunction3(addPropertyWithValue), dropNode = js.Any.fromFunction1(dropNode), endLayer = js.Any.fromFunction0(endLayer), endNode = js.Any.fromFunction0(endNode), endProperty = js.Any.fromFunction0(endProperty), overrideNode = js.Any.fromFunction3(overrideNode), overrideProperty = js.Any.fromFunction4(overrideProperty), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setPropertyValue = js.Any.fromFunction1(setPropertyValue), setPropertyValueForLocale = js.Any.fromFunction2(setPropertyValueForLocale), startLayer = js.Any.fromFunction0(startLayer))
@@ -199,7 +199,7 @@ object XLayerHandler {
     
     inline def setAddProperty(value: (String, Double, `type`) => Unit): Self = StObject.set(x, "addProperty", js.Any.fromFunction3(value))
     
-    inline def setAddPropertyWithValue(value: (String, Double, js.Any) => Unit): Self = StObject.set(x, "addPropertyWithValue", js.Any.fromFunction3(value))
+    inline def setAddPropertyWithValue(value: (String, Double, Any) => Unit): Self = StObject.set(x, "addPropertyWithValue", js.Any.fromFunction3(value))
     
     inline def setDropNode(value: String => Unit): Self = StObject.set(x, "dropNode", js.Any.fromFunction1(value))
     
@@ -213,9 +213,9 @@ object XLayerHandler {
     
     inline def setOverrideProperty(value: (String, Double, `type`, Boolean) => Unit): Self = StObject.set(x, "overrideProperty", js.Any.fromFunction4(value))
     
-    inline def setSetPropertyValue(value: js.Any => Unit): Self = StObject.set(x, "setPropertyValue", js.Any.fromFunction1(value))
+    inline def setSetPropertyValue(value: Any => Unit): Self = StObject.set(x, "setPropertyValue", js.Any.fromFunction1(value))
     
-    inline def setSetPropertyValueForLocale(value: (js.Any, String) => Unit): Self = StObject.set(x, "setPropertyValueForLocale", js.Any.fromFunction2(value))
+    inline def setSetPropertyValueForLocale(value: (Any, String) => Unit): Self = StObject.set(x, "setPropertyValueForLocale", js.Any.fromFunction2(value))
     
     inline def setStartLayer(value: () => Unit): Self = StObject.set(x, "startLayer", js.Any.fromFunction0(value))
   }

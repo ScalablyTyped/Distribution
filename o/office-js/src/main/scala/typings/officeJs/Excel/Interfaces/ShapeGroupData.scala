@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ShapeGroupData extends StObject {
   
   /**
-    *
     * Specifies the shape identifier.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var id: js.UndefOr[String] = js.undefined
   
   /**
+    * Returns the collection of `Shape` objects.
     *
-    * Returns the collection of Shape objects.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var shapes: js.UndefOr[js.Array[ShapeData]] = js.undefined
@@ -40,6 +40,6 @@ object ShapeGroupData {
     
     inline def setShapesUndefined: Self = StObject.set(x, "shapes", js.undefined)
     
-    inline def setShapesVarargs(value: ShapeData*): Self = StObject.set(x, "shapes", js.Array(value :_*))
+    inline def setShapesVarargs(value: ShapeData*): Self = StObject.set(x, "shapes", js.Array(value*))
   }
 }

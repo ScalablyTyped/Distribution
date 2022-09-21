@@ -21,9 +21,7 @@ object dom {
       * @param root HTMLElement/String The root element of the query or id of the root.
       * @returns Ext.dom.CompositeElementLite This Composite object.
       */
-    var add: js.UndefOr[
-        js.Function2[/* els */ js.UndefOr[js.Any], /* root */ js.UndefOr[js.Any], this.type]
-      ] = js.undefined
+    var add: js.UndefOr[js.Function2[/* els */ js.UndefOr[Any], /* root */ js.UndefOr[Any], this.type]] = js.undefined
     
     /** [Method] Adds the given CSS class es to this Element
       * @param names String The CSS class(es) to add to this element.
@@ -51,10 +49,10 @@ object dom {
     @JSName("addListener")
     var addListener_ICompositeElementLite: js.UndefOr[
         js.Function4[
-          /* eventName */ js.UndefOr[js.Any], 
-          /* handler */ js.UndefOr[js.Any], 
-          /* scope */ js.UndefOr[js.Any], 
-          /* opt */ js.UndefOr[js.Any], 
+          /* eventName */ js.UndefOr[Any], 
+          /* handler */ js.UndefOr[Any], 
+          /* scope */ js.UndefOr[Any], 
+          /* opt */ js.UndefOr[Any], 
           this.type
         ]
       ] = js.undefined
@@ -65,7 +63,7 @@ object dom {
       */
     @JSName("appendChild")
     var appendChild_ICompositeElementLite: js.UndefOr[
-        js.Function1[/* element */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
+        js.Function1[/* element */ js.UndefOr[Any], typings.senchaTouch.Ext.dom.IElement]
       ] = js.undefined
     
     /** [Method] Appends this element to the passed element
@@ -73,16 +71,14 @@ object dom {
       * @returns Ext.dom.Element This element.
       */
     @JSName("appendTo")
-    var appendTo_ICompositeElementLite: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
+    var appendTo_ICompositeElementLite: js.UndefOr[js.Function1[/* el */ js.UndefOr[Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
     
     /** [Method] More flexible version of setStyle for setting style properties
       * @param styles String/Object/Function A style specification string, e.g. "width:100px", or object in the form {width:"100px"}, or a function which returns such a specification.
       * @returns Ext.dom.Element this
       */
     @JSName("applyStyles")
-    var applyStyles_ICompositeElementLite: js.UndefOr[
-        js.Function1[/* styles */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
-      ] = js.undefined
+    var applyStyles_ICompositeElementLite: js.UndefOr[js.Function1[/* styles */ js.UndefOr[Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
     
     /** [Method] Removes all elements  */
     var clear: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -96,7 +92,7 @@ object dom {
     @JSName("createChild")
     var createChild_ICompositeElementLite: js.UndefOr[
         js.Function3[
-          /* config */ js.UndefOr[js.Any], 
+          /* config */ js.UndefOr[Any], 
           /* insertBefore */ js.UndefOr[HTMLElement], 
           /* returnDom */ js.UndefOr[Boolean], 
           typings.senchaTouch.Ext.dom.IElement
@@ -108,9 +104,7 @@ object dom {
       * @param scope Object The scope (this reference) in which the function is executed. Defaults to the Element.
       * @returns Ext.dom.CompositeElementLite this
       */
-    var each: js.UndefOr[
-        js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], this.type]
-      ] = js.undefined
+    var each: js.UndefOr[js.Function2[/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], this.type]] = js.undefined
     
     /** [Property] (HTMLElement[]) */
     var elements: js.UndefOr[Array] = js.undefined
@@ -119,13 +113,13 @@ object dom {
       * @param els HTMLElement[]/Ext.dom.CompositeElementLite Either an array of DOM elements, or another Composite from which to fill this Composite.
       * @returns Ext.dom.CompositeElementLite this
       */
-    var fill: js.UndefOr[js.Function1[/* els */ js.UndefOr[js.Any], this.type]] = js.undefined
+    var fill: js.UndefOr[js.Function1[/* els */ js.UndefOr[Any], this.type]] = js.undefined
     
     /** [Method] Filters this composite to only elements that match the passed selector
       * @param selector String/Function A string CSS selector or a comparison function. The comparison function will be called with the following arguments:
       * @returns Ext.dom.CompositeElementLite this
       */
-    var filter: js.UndefOr[js.Function1[/* selector */ js.UndefOr[js.Any], this.type]] = js.undefined
+    var filter: js.UndefOr[js.Function1[/* selector */ js.UndefOr[Any], this.type]] = js.undefined
     
     /** [Method] Returns the number of elements in this Composite
       * @returns Number
@@ -136,21 +130,21 @@ object dom {
       * @param el String/HTMLElement/Ext.Element/Number The id of an element, or an Ext.dom.Element, or an HtmlElement to find within the composite collection.
       * @returns Number The index of the passed Ext.dom.Element in the composite collection, or -1 if not found.
       */
-    var indexOf: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], Double]] = js.undefined
+    var indexOf: js.UndefOr[js.Function1[/* el */ js.UndefOr[Any], Double]] = js.undefined
     
     /** [Method] Inserts this element after the passed element in the DOM
       * @param el String/HTMLElement/Ext.dom.Element The element to insert after. The id of the node, a DOM Node or an existing Element.
       * @returns Ext.dom.Element This element.
       */
     @JSName("insertAfter")
-    var insertAfter_ICompositeElementLite: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
+    var insertAfter_ICompositeElementLite: js.UndefOr[js.Function1[/* el */ js.UndefOr[Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
     
     /** [Method] Inserts this element before the passed element in the DOM
       * @param el String/HTMLElement/Ext.dom.Element The element before which this element will be inserted. The id of the node, a DOM Node or an existing Element.
       * @returns Ext.dom.Element This element.
       */
     @JSName("insertBefore")
-    var insertBefore_ICompositeElementLite: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
+    var insertBefore_ICompositeElementLite: js.UndefOr[js.Function1[/* el */ js.UndefOr[Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
     
     /** [Method] Inserts an element as the first child of this element
       * @param element String/HTMLElement/Ext.dom.Element The id or element to insert.
@@ -158,7 +152,7 @@ object dom {
       */
     @JSName("insertFirst")
     var insertFirst_ICompositeElementLite: js.UndefOr[
-        js.Function1[/* element */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
+        js.Function1[/* element */ js.UndefOr[Any], typings.senchaTouch.Ext.dom.IElement]
       ] = js.undefined
     
     /** [Method] Inserts or creates the passed element or DomHelper config as a sibling of this element
@@ -170,7 +164,7 @@ object dom {
     @JSName("insertSibling")
     var insertSibling_ICompositeElementLite: js.UndefOr[
         js.Function3[
-          /* el */ js.UndefOr[js.Any], 
+          /* el */ js.UndefOr[Any], 
           /* where */ js.UndefOr[java.lang.String], 
           /* returnDom */ js.UndefOr[Boolean], 
           typings.senchaTouch.Ext.dom.IElement
@@ -191,7 +185,7 @@ object dom {
       */
     @JSName("radioCls")
     var radioCls_ICompositeElementLite: js.UndefOr[
-        js.Function1[/* className */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
+        js.Function1[/* className */ js.UndefOr[Any], typings.senchaTouch.Ext.dom.IElement]
       ] = js.undefined
     
     /** [Method] Removes the given CSS class es from this Element
@@ -216,7 +210,7 @@ object dom {
       * @returns Ext.dom.CompositeElementLite this
       */
     var removeElement: js.UndefOr[
-        js.Function2[/* el */ js.UndefOr[js.Any], /* removeDom */ js.UndefOr[Boolean], this.type]
+        js.Function2[/* el */ js.UndefOr[Any], /* removeDom */ js.UndefOr[Boolean], this.type]
       ] = js.undefined
     
     /** [Method] Forces the browser to repaint this element
@@ -251,8 +245,8 @@ object dom {
       */
     var replaceElement: js.UndefOr[
         js.Function3[
-          /* el */ js.UndefOr[js.Any], 
-          /* replacement */ js.UndefOr[js.Any], 
+          /* el */ js.UndefOr[Any], 
+          /* replacement */ js.UndefOr[Any], 
           /* domReplace */ js.UndefOr[Boolean], 
           this.type
         ]
@@ -263,7 +257,7 @@ object dom {
       * @returns Ext.dom.Element This element.
       */
     @JSName("replaceWith")
-    var replaceWith_ICompositeElementLite: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
+    var replaceWith_ICompositeElementLite: js.UndefOr[js.Function1[/* el */ js.UndefOr[Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
     
     /** [Method] Replaces the passed element with this element
       * @param element String/HTMLElement/Ext.dom.Element The element to replace. The id of the node, a DOM Node or an existing Element.
@@ -271,7 +265,7 @@ object dom {
       */
     @JSName("replace")
     var replace_ICompositeElementLite: js.UndefOr[
-        js.Function1[/* element */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
+        js.Function1[/* element */ js.UndefOr[Any], typings.senchaTouch.Ext.dom.IElement]
       ] = js.undefined
     
     /** [Method] Selects elements based on the passed CSS selector to enable Element methods to be applied to many related elements in
@@ -280,7 +274,7 @@ object dom {
       * @returns Ext.dom.CompositeElementLite/Ext.dom.CompositeElement
       */
     var select: js.UndefOr[
-        js.Function2[/* selector */ js.UndefOr[js.Any], /* composite */ js.UndefOr[Boolean], this.type]
+        js.Function2[/* selector */ js.UndefOr[Any], /* composite */ js.UndefOr[Boolean], this.type]
       ] = js.undefined
     
     /** [Method] Sets the element s CSS bottom style
@@ -297,16 +291,14 @@ object dom {
       * @returns Ext.dom.Element this
       */
     @JSName("setBox")
-    var setBox_ICompositeElementLite: js.UndefOr[js.Function1[/* box */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
+    var setBox_ICompositeElementLite: js.UndefOr[js.Function1[/* box */ js.UndefOr[Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
     
     /** [Method] Set the height of this Element
       * @param height Number/String The new height.
       * @returns Ext.dom.Element this
       */
     @JSName("setHeight")
-    var setHeight_ICompositeElementLite: js.UndefOr[
-        js.Function1[/* height */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
-      ] = js.undefined
+    var setHeight_ICompositeElementLite: js.UndefOr[js.Function1[/* height */ js.UndefOr[Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
     
     /** [Method] Sets the element s left position directly using CSS style instead of setX
       * @param left String The left CSS property value.
@@ -322,36 +314,28 @@ object dom {
       * @returns Ext.dom.Element this
       */
     @JSName("setMaxHeight")
-    var setMaxHeight_ICompositeElementLite: js.UndefOr[
-        js.Function1[/* height */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
-      ] = js.undefined
+    var setMaxHeight_ICompositeElementLite: js.UndefOr[js.Function1[/* height */ js.UndefOr[Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
     
     /** [Method] Set the maximum width of this Element
       * @param width Number/String The new maximum width.
       * @returns Ext.dom.Element this
       */
     @JSName("setMaxWidth")
-    var setMaxWidth_ICompositeElementLite: js.UndefOr[
-        js.Function1[/* width */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
-      ] = js.undefined
+    var setMaxWidth_ICompositeElementLite: js.UndefOr[js.Function1[/* width */ js.UndefOr[Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
     
     /** [Method] Set the minimum height of this Element
       * @param height Number/String The new minimum height.
       * @returns Ext.dom.Element this
       */
     @JSName("setMinHeight")
-    var setMinHeight_ICompositeElementLite: js.UndefOr[
-        js.Function1[/* height */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
-      ] = js.undefined
+    var setMinHeight_ICompositeElementLite: js.UndefOr[js.Function1[/* height */ js.UndefOr[Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
     
     /** [Method] Set the minimum width of this Element
       * @param width Number/String The new minimum width.
       * @returns Ext.dom.Element this
       */
     @JSName("setMinWidth")
-    var setMinWidth_ICompositeElementLite: js.UndefOr[
-        js.Function1[/* width */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
-      ] = js.undefined
+    var setMinWidth_ICompositeElementLite: js.UndefOr[js.Function1[/* width */ js.UndefOr[Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
     
     /** [Method] Sets the element s CSS right style
       * @param right String The right CSS property value.
@@ -370,8 +354,8 @@ object dom {
     @JSName("setSize")
     var setSize_ICompositeElementLite: js.UndefOr[
         js.Function2[
-          /* width */ js.UndefOr[js.Any], 
-          /* height */ js.UndefOr[js.Any], 
+          /* width */ js.UndefOr[Any], 
+          /* height */ js.UndefOr[Any], 
           typings.senchaTouch.Ext.dom.IElement
         ]
       ] = js.undefined
@@ -384,7 +368,7 @@ object dom {
     @JSName("setStyle")
     var setStyle_ICompositeElementLite: js.UndefOr[
         js.Function2[
-          /* property */ js.UndefOr[js.Any], 
+          /* property */ js.UndefOr[Any], 
           /* value */ js.UndefOr[java.lang.String], 
           typings.senchaTouch.Ext.dom.IElement
         ]
@@ -404,9 +388,7 @@ object dom {
       * @returns Ext.dom.Element this
       */
     @JSName("setVisibilityMode")
-    var setVisibilityMode_ICompositeElementLite: js.UndefOr[
-        js.Function1[/* mode */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
-      ] = js.undefined
+    var setVisibilityMode_ICompositeElementLite: js.UndefOr[js.Function1[/* mode */ js.UndefOr[Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
     
     /** [Method] Sets the visibility of the element see details
       * @param visible Boolean Whether the element is visible.
@@ -422,9 +404,7 @@ object dom {
       * @returns Ext.dom.Element this
       */
     @JSName("setWidth")
-    var setWidth_ICompositeElementLite: js.UndefOr[
-        js.Function1[/* width */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
-      ] = js.undefined
+    var setWidth_ICompositeElementLite: js.UndefOr[js.Function1[/* width */ js.UndefOr[Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
     
     /** [Method] Sets the position of the element in page coordinates regardless of how the element is positioned
       * @param pos Number[] Contains X &amp; Y [x, y] values for new position (coordinates are page-based).
@@ -455,7 +435,7 @@ object dom {
     @JSName("set")
     var set_ICompositeElementLite: js.UndefOr[
         js.Function2[
-          /* attributes */ js.UndefOr[js.Any], 
+          /* attributes */ js.UndefOr[Any], 
           /* useSet */ js.UndefOr[Boolean], 
           typings.senchaTouch.Ext.dom.IElement
         ]
@@ -480,7 +460,7 @@ object dom {
     extension [Self <: typings.senchaTouch.Ext.dom.ICompositeElementLite](x: Self) {
       
       inline def setAdd(
-        value: (/* els */ js.UndefOr[js.Any], /* root */ js.UndefOr[js.Any]) => typings.senchaTouch.Ext.dom.ICompositeElementLite
+        value: (/* els */ js.UndefOr[Any], /* root */ js.UndefOr[Any]) => typings.senchaTouch.Ext.dom.ICompositeElementLite
       ): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       
       inline def setAddCls(
@@ -490,22 +470,22 @@ object dom {
       inline def setAddClsUndefined: Self = StObject.set(x, "addCls", js.undefined)
       
       inline def setAddListener(
-        value: (/* eventName */ js.UndefOr[js.Any], /* handler */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* opt */ js.UndefOr[js.Any]) => typings.senchaTouch.Ext.dom.ICompositeElementLite
+        value: (/* eventName */ js.UndefOr[Any], /* handler */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* opt */ js.UndefOr[Any]) => typings.senchaTouch.Ext.dom.ICompositeElementLite
       ): Self = StObject.set(x, "addListener", js.Any.fromFunction4(value))
       
       inline def setAddListenerUndefined: Self = StObject.set(x, "addListener", js.undefined)
       
       inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
       
-      inline def setAppendChild(value: /* element */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
+      inline def setAppendChild(value: /* element */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
       
       inline def setAppendChildUndefined: Self = StObject.set(x, "appendChild", js.undefined)
       
-      inline def setAppendTo(value: /* el */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "appendTo", js.Any.fromFunction1(value))
+      inline def setAppendTo(value: /* el */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "appendTo", js.Any.fromFunction1(value))
       
       inline def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
       
-      inline def setApplyStyles(value: /* styles */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "applyStyles", js.Any.fromFunction1(value))
+      inline def setApplyStyles(value: /* styles */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "applyStyles", js.Any.fromFunction1(value))
       
       inline def setApplyStylesUndefined: Self = StObject.set(x, "applyStyles", js.undefined)
       
@@ -514,13 +494,13 @@ object dom {
       inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
       
       inline def setCreateChild(
-        value: (/* config */ js.UndefOr[js.Any], /* insertBefore */ js.UndefOr[HTMLElement], /* returnDom */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.IElement
+        value: (/* config */ js.UndefOr[Any], /* insertBefore */ js.UndefOr[HTMLElement], /* returnDom */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.IElement
       ): Self = StObject.set(x, "createChild", js.Any.fromFunction3(value))
       
       inline def setCreateChildUndefined: Self = StObject.set(x, "createChild", js.undefined)
       
       inline def setEach(
-        value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => typings.senchaTouch.Ext.dom.ICompositeElementLite
+        value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => typings.senchaTouch.Ext.dom.ICompositeElementLite
       ): Self = StObject.set(x, "each", js.Any.fromFunction2(value))
       
       inline def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
@@ -529,11 +509,11 @@ object dom {
       
       inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
       
-      inline def setFill(value: /* els */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.ICompositeElementLite): Self = StObject.set(x, "fill", js.Any.fromFunction1(value))
+      inline def setFill(value: /* els */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.ICompositeElementLite): Self = StObject.set(x, "fill", js.Any.fromFunction1(value))
       
       inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
-      inline def setFilter(value: /* selector */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.ICompositeElementLite): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: /* selector */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.ICompositeElementLite): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
       inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
@@ -541,24 +521,24 @@ object dom {
       
       inline def setGetCountUndefined: Self = StObject.set(x, "getCount", js.undefined)
       
-      inline def setIndexOf(value: /* el */ js.UndefOr[js.Any] => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
+      inline def setIndexOf(value: /* el */ js.UndefOr[Any] => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
       
       inline def setIndexOfUndefined: Self = StObject.set(x, "indexOf", js.undefined)
       
-      inline def setInsertAfter(value: /* el */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "insertAfter", js.Any.fromFunction1(value))
+      inline def setInsertAfter(value: /* el */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "insertAfter", js.Any.fromFunction1(value))
       
       inline def setInsertAfterUndefined: Self = StObject.set(x, "insertAfter", js.undefined)
       
-      inline def setInsertBefore(value: /* el */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "insertBefore", js.Any.fromFunction1(value))
+      inline def setInsertBefore(value: /* el */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "insertBefore", js.Any.fromFunction1(value))
       
       inline def setInsertBeforeUndefined: Self = StObject.set(x, "insertBefore", js.undefined)
       
-      inline def setInsertFirst(value: /* element */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "insertFirst", js.Any.fromFunction1(value))
+      inline def setInsertFirst(value: /* element */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "insertFirst", js.Any.fromFunction1(value))
       
       inline def setInsertFirstUndefined: Self = StObject.set(x, "insertFirst", js.undefined)
       
       inline def setInsertSibling(
-        value: (/* el */ js.UndefOr[js.Any], /* where */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.IElement
+        value: (/* el */ js.UndefOr[Any], /* where */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.IElement
       ): Self = StObject.set(x, "insertSibling", js.Any.fromFunction3(value))
       
       inline def setInsertSiblingUndefined: Self = StObject.set(x, "insertSibling", js.undefined)
@@ -567,7 +547,7 @@ object dom {
       
       inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
       
-      inline def setRadioCls(value: /* className */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "radioCls", js.Any.fromFunction1(value))
+      inline def setRadioCls(value: /* className */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "radioCls", js.Any.fromFunction1(value))
       
       inline def setRadioClsUndefined: Self = StObject.set(x, "radioCls", js.undefined)
       
@@ -578,7 +558,7 @@ object dom {
       inline def setRemoveClsUndefined: Self = StObject.set(x, "removeCls", js.undefined)
       
       inline def setRemoveElement(
-        value: (/* el */ js.UndefOr[js.Any], /* removeDom */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.ICompositeElementLite
+        value: (/* el */ js.UndefOr[Any], /* removeDom */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.ICompositeElementLite
       ): Self = StObject.set(x, "removeElement", js.Any.fromFunction2(value))
       
       inline def setRemoveElementUndefined: Self = StObject.set(x, "removeElement", js.undefined)
@@ -587,7 +567,7 @@ object dom {
       
       inline def setRepaintUndefined: Self = StObject.set(x, "repaint", js.undefined)
       
-      inline def setReplace(value: /* element */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "replace", js.Any.fromFunction1(value))
+      inline def setReplace(value: /* element */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "replace", js.Any.fromFunction1(value))
       
       inline def setReplaceCls(
         value: (/* oldName */ js.UndefOr[java.lang.String], /* newName */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => typings.senchaTouch.Ext.dom.IElement
@@ -596,36 +576,36 @@ object dom {
       inline def setReplaceClsUndefined: Self = StObject.set(x, "replaceCls", js.undefined)
       
       inline def setReplaceElement(
-        value: (/* el */ js.UndefOr[js.Any], /* replacement */ js.UndefOr[js.Any], /* domReplace */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.ICompositeElementLite
+        value: (/* el */ js.UndefOr[Any], /* replacement */ js.UndefOr[Any], /* domReplace */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.ICompositeElementLite
       ): Self = StObject.set(x, "replaceElement", js.Any.fromFunction3(value))
       
       inline def setReplaceElementUndefined: Self = StObject.set(x, "replaceElement", js.undefined)
       
       inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
       
-      inline def setReplaceWith(value: /* el */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "replaceWith", js.Any.fromFunction1(value))
+      inline def setReplaceWith(value: /* el */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "replaceWith", js.Any.fromFunction1(value))
       
       inline def setReplaceWithUndefined: Self = StObject.set(x, "replaceWith", js.undefined)
       
       inline def setSelect(
-        value: (/* selector */ js.UndefOr[js.Any], /* composite */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.ICompositeElementLite
+        value: (/* selector */ js.UndefOr[Any], /* composite */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.ICompositeElementLite
       ): Self = StObject.set(x, "select", js.Any.fromFunction2(value))
       
       inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       
       inline def setSet(
-        value: (/* attributes */ js.UndefOr[js.Any], /* useSet */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.IElement
+        value: (/* attributes */ js.UndefOr[Any], /* useSet */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.IElement
       ): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
       
       inline def setSetBottom(value: /* bottom */ js.UndefOr[java.lang.String] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setBottom", js.Any.fromFunction1(value))
       
       inline def setSetBottomUndefined: Self = StObject.set(x, "setBottom", js.undefined)
       
-      inline def setSetBox(value: /* box */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setBox", js.Any.fromFunction1(value))
+      inline def setSetBox(value: /* box */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setBox", js.Any.fromFunction1(value))
       
       inline def setSetBoxUndefined: Self = StObject.set(x, "setBox", js.undefined)
       
-      inline def setSetHeight(value: /* height */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setHeight", js.Any.fromFunction1(value))
+      inline def setSetHeight(value: /* height */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setHeight", js.Any.fromFunction1(value))
       
       inline def setSetHeightUndefined: Self = StObject.set(x, "setHeight", js.undefined)
       
@@ -633,19 +613,19 @@ object dom {
       
       inline def setSetLeftUndefined: Self = StObject.set(x, "setLeft", js.undefined)
       
-      inline def setSetMaxHeight(value: /* height */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setMaxHeight", js.Any.fromFunction1(value))
+      inline def setSetMaxHeight(value: /* height */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setMaxHeight", js.Any.fromFunction1(value))
       
       inline def setSetMaxHeightUndefined: Self = StObject.set(x, "setMaxHeight", js.undefined)
       
-      inline def setSetMaxWidth(value: /* width */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setMaxWidth", js.Any.fromFunction1(value))
+      inline def setSetMaxWidth(value: /* width */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setMaxWidth", js.Any.fromFunction1(value))
       
       inline def setSetMaxWidthUndefined: Self = StObject.set(x, "setMaxWidth", js.undefined)
       
-      inline def setSetMinHeight(value: /* height */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setMinHeight", js.Any.fromFunction1(value))
+      inline def setSetMinHeight(value: /* height */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setMinHeight", js.Any.fromFunction1(value))
       
       inline def setSetMinHeightUndefined: Self = StObject.set(x, "setMinHeight", js.undefined)
       
-      inline def setSetMinWidth(value: /* width */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setMinWidth", js.Any.fromFunction1(value))
+      inline def setSetMinWidth(value: /* width */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setMinWidth", js.Any.fromFunction1(value))
       
       inline def setSetMinWidthUndefined: Self = StObject.set(x, "setMinWidth", js.undefined)
       
@@ -654,13 +634,13 @@ object dom {
       inline def setSetRightUndefined: Self = StObject.set(x, "setRight", js.undefined)
       
       inline def setSetSize(
-        value: (/* width */ js.UndefOr[js.Any], /* height */ js.UndefOr[js.Any]) => typings.senchaTouch.Ext.dom.IElement
+        value: (/* width */ js.UndefOr[Any], /* height */ js.UndefOr[Any]) => typings.senchaTouch.Ext.dom.IElement
       ): Self = StObject.set(x, "setSize", js.Any.fromFunction2(value))
       
       inline def setSetSizeUndefined: Self = StObject.set(x, "setSize", js.undefined)
       
       inline def setSetStyle(
-        value: (/* property */ js.UndefOr[js.Any], /* value */ js.UndefOr[java.lang.String]) => typings.senchaTouch.Ext.dom.IElement
+        value: (/* property */ js.UndefOr[Any], /* value */ js.UndefOr[java.lang.String]) => typings.senchaTouch.Ext.dom.IElement
       ): Self = StObject.set(x, "setStyle", js.Any.fromFunction2(value))
       
       inline def setSetStyleUndefined: Self = StObject.set(x, "setStyle", js.undefined)
@@ -671,7 +651,7 @@ object dom {
       
       inline def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
       
-      inline def setSetVisibilityMode(value: /* mode */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setVisibilityMode", js.Any.fromFunction1(value))
+      inline def setSetVisibilityMode(value: /* mode */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setVisibilityMode", js.Any.fromFunction1(value))
       
       inline def setSetVisibilityModeUndefined: Self = StObject.set(x, "setVisibilityMode", js.undefined)
       
@@ -679,7 +659,7 @@ object dom {
       
       inline def setSetVisibleUndefined: Self = StObject.set(x, "setVisible", js.undefined)
       
-      inline def setSetWidth(value: /* width */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
+      inline def setSetWidth(value: /* width */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
       
       inline def setSetWidthUndefined: Self = StObject.set(x, "setWidth", js.undefined)
       
@@ -733,19 +713,19 @@ object dom {
       * @param element HTMLElement/Ext.dom.Element a DOM Node or an existing Element.
       * @returns Ext.dom.Element This element.
       */
-    var appendChild: js.UndefOr[js.Function1[/* element */ js.UndefOr[js.Any], this.type]] = js.undefined
+    var appendChild: js.UndefOr[js.Function1[/* element */ js.UndefOr[Any], this.type]] = js.undefined
     
     /** [Method] Appends this element to the passed element
       * @param el String/HTMLElement/Ext.dom.Element The new parent element. The id of the node, a DOM Node or an existing Element.
       * @returns Ext.dom.Element This element.
       */
-    var appendTo: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], this.type]] = js.undefined
+    var appendTo: js.UndefOr[js.Function1[/* el */ js.UndefOr[Any], this.type]] = js.undefined
     
     /** [Method] More flexible version of setStyle for setting style properties
       * @param styles String/Object/Function A style specification string, e.g. "width:100px", or object in the form {width:"100px"}, or a function which returns such a specification.
       * @returns Ext.dom.Element this
       */
-    var applyStyles: js.UndefOr[js.Function1[/* styles */ js.UndefOr[js.Any], this.type]] = js.undefined
+    var applyStyles: js.UndefOr[js.Function1[/* styles */ js.UndefOr[Any], this.type]] = js.undefined
     
     /** [Method] Selects a single direct child based on the passed CSS selector the selector should not contain an id
       * @param selector String The CSS selector.
@@ -756,7 +736,7 @@ object dom {
         js.Function2[
           /* selector */ js.UndefOr[java.lang.String], 
           /* returnDom */ js.UndefOr[Boolean], 
-          js.Any
+          Any
         ]
       ] = js.undefined
     
@@ -764,7 +744,7 @@ object dom {
       * @param element HTMLElement/String The element to check.
       * @returns Boolean true if this element is an ancestor of el, else false.
       */
-    var contains: js.UndefOr[js.Function1[/* element */ js.UndefOr[js.Any], Boolean]] = js.undefined
+    var contains: js.UndefOr[js.Function1[/* element */ js.UndefOr[Any], Boolean]] = js.undefined
     
     /** [Method] Creates the passed DomHelper config and appends it to this element or optionally inserts it before the passed child e
       * @param config Object DomHelper element config object. If no tag is specified (e.g., {tag:'input'}) then a div will be automatically generated with the specified attributes.
@@ -774,7 +754,7 @@ object dom {
       */
     var createChild: js.UndefOr[
         js.Function3[
-          /* config */ js.UndefOr[js.Any], 
+          /* config */ js.UndefOr[Any], 
           /* insertBefore */ js.UndefOr[HTMLElement], 
           /* returnDom */ js.UndefOr[Boolean], 
           this.type
@@ -799,7 +779,7 @@ object dom {
         js.Function2[
           /* selector */ js.UndefOr[java.lang.String], 
           /* returnDom */ js.UndefOr[Boolean], 
-          js.Any
+          Any
         ]
       ] = js.undefined
     
@@ -812,9 +792,9 @@ object dom {
     var findParent: js.UndefOr[
         js.Function3[
           /* simpleSelector */ js.UndefOr[java.lang.String], 
-          /* maxDepth */ js.UndefOr[js.Any], 
+          /* maxDepth */ js.UndefOr[Any], 
           /* returnEl */ js.UndefOr[Boolean], 
-          js.Any
+          Any
         ]
       ] = js.undefined
     
@@ -827,9 +807,9 @@ object dom {
     var findParentNode: js.UndefOr[
         js.Function3[
           /* simpleSelector */ js.UndefOr[java.lang.String], 
-          /* maxDepth */ js.UndefOr[js.Any], 
+          /* maxDepth */ js.UndefOr[Any], 
           /* returnEl */ js.UndefOr[Boolean], 
-          js.Any
+          Any
         ]
       ] = js.undefined
     
@@ -842,7 +822,7 @@ object dom {
         js.Function2[
           /* selector */ js.UndefOr[java.lang.String], 
           /* returnDom */ js.UndefOr[Boolean], 
-          js.Any
+          Any
         ]
       ] = js.undefined
     
@@ -854,7 +834,7 @@ object dom {
       */
     var getAlignToXY: js.UndefOr[
         js.Function3[
-          /* element */ js.UndefOr[js.Any], 
+          /* element */ js.UndefOr[Any], 
           /* position */ js.UndefOr[java.lang.String], 
           /* offsets */ js.UndefOr[Array], 
           Array
@@ -871,7 +851,7 @@ object dom {
         js.Function3[
           /* anchor */ js.UndefOr[java.lang.String], 
           /* local */ js.UndefOr[Boolean], 
-          /* size */ js.UndefOr[js.Any], 
+          /* size */ js.UndefOr[Any], 
           Array
         ]
       ] = js.undefined
@@ -906,7 +886,7 @@ object dom {
       * @returns Object An object in the format
       */
     var getBox: js.UndefOr[
-        js.Function2[/* contentBox */ js.UndefOr[Boolean], /* local */ js.UndefOr[Boolean], js.Any]
+        js.Function2[/* contentBox */ js.UndefOr[Boolean], /* local */ js.UndefOr[Boolean], Any]
       ] = js.undefined
     
     /** [Method] Returns the innerHTML of an element
@@ -934,13 +914,13 @@ object dom {
       * @param sides String Any combination of 'l', 'r', 't', 'b' to get the sum of those sides.
       * @returns Object/Number
       */
-    var getMargin: js.UndefOr[js.Function1[/* sides */ js.UndefOr[java.lang.String], js.Any]] = js.undefined
+    var getMargin: js.UndefOr[js.Function1[/* sides */ js.UndefOr[java.lang.String], Any]] = js.undefined
     
     /** [Method] Returns the offsets of this element from the passed element
       * @param element Mixed The element to get the offsets from.
       * @returns Array The XY page offsets (e.g. [100, -200])
       */
-    var getOffsetsTo: js.UndefOr[js.Function1[/* element */ js.UndefOr[js.Any], Array]] = js.undefined
+    var getOffsetsTo: js.UndefOr[js.Function1[/* element */ js.UndefOr[Any], Array]] = js.undefined
     
     /** [Method] Retrieves the height of the element account for the top and bottom margins  */
     var getOuterHeight: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -958,7 +938,7 @@ object dom {
       * @param asRegion Boolean If true an Ext.util.Region will be returned.
       * @returns Object box An object in the format: {  x: &lt;Element's X position&gt;,  y: &lt;Element's Y position&gt;,  width: &lt;Element's width&gt;,  height: &lt;Element's height&gt;,  bottom: &lt;Element's lower bound&gt;,  right: &lt;Element's rightmost bound&gt; }  The returned object may also be addressed as an Array where index 0 contains the X position and index 1 contains the Y position. So the result may also be used for setXY.
       */
-    var getPageBox: js.UndefOr[js.Function1[/* asRegion */ js.UndefOr[Boolean], js.Any]] = js.undefined
+    var getPageBox: js.UndefOr[js.Function1[/* asRegion */ js.UndefOr[Boolean], Any]] = js.undefined
     
     /** [Method] Gets the right X coordinate of the element element X position  element width
       * @returns Number
@@ -972,7 +952,7 @@ object dom {
       * @param contentSize Boolean true to get the width/size minus borders and padding.
       * @returns Object An object containing the element's size:
       */
-    var getSize: js.UndefOr[js.Function1[/* contentSize */ js.UndefOr[Boolean], js.Any]] = js.undefined
+    var getSize: js.UndefOr[js.Function1[/* contentSize */ js.UndefOr[Boolean], Any]] = js.undefined
     
     /** [Method] Normalizes currentStyle and computedStyle
       * @param prop String The style property whose value is returned.
@@ -989,12 +969,12 @@ object dom {
       * @param asNumber Boolean true to parse the value as a number.
       * @returns String/Number
       */
-    var getValue: js.UndefOr[js.Function1[/* asNumber */ js.UndefOr[Boolean], js.Any]] = js.undefined
+    var getValue: js.UndefOr[js.Function1[/* asNumber */ js.UndefOr[Boolean], Any]] = js.undefined
     
     /** [Method] Returns the dimensions of the element available to lay content out in
       * @returns Object Object describing width and height:
       */
-    var getViewSize: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getViewSize: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the offset width of the element
       * @param contentWidth Boolean true to get the width minus borders and padding.
@@ -1033,19 +1013,19 @@ object dom {
       * @param el String/HTMLElement/Ext.dom.Element The element to insert after. The id of the node, a DOM Node or an existing Element.
       * @returns Ext.dom.Element This element.
       */
-    var insertAfter: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], this.type]] = js.undefined
+    var insertAfter: js.UndefOr[js.Function1[/* el */ js.UndefOr[Any], this.type]] = js.undefined
     
     /** [Method] Inserts this element before the passed element in the DOM
       * @param el String/HTMLElement/Ext.dom.Element The element before which this element will be inserted. The id of the node, a DOM Node or an existing Element.
       * @returns Ext.dom.Element This element.
       */
-    var insertBefore: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], this.type]] = js.undefined
+    var insertBefore: js.UndefOr[js.Function1[/* el */ js.UndefOr[Any], this.type]] = js.undefined
     
     /** [Method] Inserts an element as the first child of this element
       * @param element String/HTMLElement/Ext.dom.Element The id or element to insert.
       * @returns Ext.dom.Element this
       */
-    var insertFirst: js.UndefOr[js.Function1[/* element */ js.UndefOr[js.Any], this.type]] = js.undefined
+    var insertFirst: js.UndefOr[js.Function1[/* element */ js.UndefOr[Any], this.type]] = js.undefined
     
     /** [Method] Inserts an HTML fragment into this element
       * @param where String Where to insert the HTML in relation to this element - 'beforeBegin', 'afterBegin', 'beforeEnd', 'afterEnd'. See Ext.DomHelper.insertHtml for details.
@@ -1058,7 +1038,7 @@ object dom {
           /* where */ js.UndefOr[java.lang.String], 
           /* html */ js.UndefOr[java.lang.String], 
           /* returnEl */ js.UndefOr[Boolean], 
-          js.Any
+          Any
         ]
       ] = js.undefined
     
@@ -1070,7 +1050,7 @@ object dom {
       */
     var insertSibling: js.UndefOr[
         js.Function3[
-          /* el */ js.UndefOr[js.Any], 
+          /* el */ js.UndefOr[Any], 
           /* where */ js.UndefOr[java.lang.String], 
           /* returnDom */ js.UndefOr[Boolean], 
           this.type
@@ -1114,7 +1094,7 @@ object dom {
         js.Function2[
           /* selector */ js.UndefOr[java.lang.String], 
           /* returnDom */ js.UndefOr[Boolean], 
-          js.Any
+          Any
         ]
       ] = js.undefined
     
@@ -1130,7 +1110,7 @@ object dom {
         js.Function2[
           /* selector */ js.UndefOr[java.lang.String], 
           /* returnDom */ js.UndefOr[Boolean], 
-          js.Any
+          Any
         ]
       ] = js.undefined
     
@@ -1143,7 +1123,7 @@ object dom {
         js.Function2[
           /* selector */ js.UndefOr[java.lang.String], 
           /* returnDom */ js.UndefOr[Boolean], 
-          js.Any
+          Any
         ]
       ] = js.undefined
     
@@ -1156,7 +1136,7 @@ object dom {
         js.Function2[
           /* selector */ js.UndefOr[java.lang.String], 
           /* returnDom */ js.UndefOr[Boolean], 
-          js.Any
+          Any
         ]
       ] = js.undefined
     
@@ -1173,7 +1153,7 @@ object dom {
       * @param className String/String[] The CSS class to add, or an array of classes.
       * @returns Ext.dom.Element this
       */
-    var radioCls: js.UndefOr[js.Function1[/* className */ js.UndefOr[js.Any], this.type]] = js.undefined
+    var radioCls: js.UndefOr[js.Function1[/* className */ js.UndefOr[Any], this.type]] = js.undefined
     
     /** [Method] Relays selected events from the specified Observable as if the events were fired by this
       * @param object Object The Observable whose events this object is to relay.
@@ -1182,7 +1162,7 @@ object dom {
       */
     @JSName("relayEvents")
     var relayEvents_IElement: js.UndefOr[
-        js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
+        js.Function2[/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any], IObservable]
       ] = js.undefined
     
     /** [Method] Removes this element s DOM reference  */
@@ -1215,7 +1195,7 @@ object dom {
       * @param element String/HTMLElement/Ext.dom.Element The element to replace. The id of the node, a DOM Node or an existing Element.
       * @returns Ext.dom.Element This element.
       */
-    var replace: js.UndefOr[js.Function1[/* element */ js.UndefOr[js.Any], this.type]] = js.undefined
+    var replace: js.UndefOr[js.Function1[/* element */ js.UndefOr[Any], this.type]] = js.undefined
     
     /** [Method] Replaces a CSS class on the element with another
       * @param oldName String The CSS class to replace.
@@ -1238,13 +1218,13 @@ object dom {
       * @param el String/HTMLElement/Ext.dom.Element/Object The new element (id of the node, a DOM Node or an existing Element) or a DomHelper config of an element to create.
       * @returns Ext.dom.Element This element.
       */
-    var replaceWith: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], this.type]] = js.undefined
+    var replaceWith: js.UndefOr[js.Function1[/* el */ js.UndefOr[Any], this.type]] = js.undefined
     
     /** [Method] Serializes a DOM form into a url encoded string
       * @param form Object The form
       * @returns String The url encoded form
       */
-    var serializeForm: js.UndefOr[js.Function1[/* form */ js.UndefOr[js.Any], java.lang.String]] = js.undefined
+    var serializeForm: js.UndefOr[js.Function1[/* form */ js.UndefOr[Any], java.lang.String]] = js.undefined
     
     /** [Method] Sets the passed attributes as attributes of this element a style attribute can be a string object or function
       * @param attributes Object The object with the attributes.
@@ -1252,7 +1232,7 @@ object dom {
       * @returns Ext.dom.Element this
       */
     var set: js.UndefOr[
-        js.Function2[/* attributes */ js.UndefOr[js.Any], /* useSet */ js.UndefOr[Boolean], this.type]
+        js.Function2[/* attributes */ js.UndefOr[Any], /* useSet */ js.UndefOr[Boolean], this.type]
       ] = js.undefined
     
     /** [Method] Sets the element s CSS bottom style
@@ -1265,12 +1245,12 @@ object dom {
       * @param box Object The box to fill, for example: {  left: ...,  top: ...,  width: ...,  height: ... }
       * @returns Ext.dom.Element this
       */
-    var setBox: js.UndefOr[js.Function1[/* box */ js.UndefOr[js.Any], this.type]] = js.undefined
+    var setBox: js.UndefOr[js.Function1[/* box */ js.UndefOr[Any], this.type]] = js.undefined
     
     /** [Method] Sets the specified CSS class on this element s DOM node
       * @param className String/Array The CSS class to set on this element.
       */
-    var setCls: js.UndefOr[js.Function1[/* className */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setCls: js.UndefOr[js.Function1[/* className */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the innerHTML of this element
       * @param html String The new HTML.
@@ -1281,7 +1261,7 @@ object dom {
       * @param height Number/String The new height.
       * @returns Ext.dom.Element this
       */
-    var setHeight: js.UndefOr[js.Function1[/* height */ js.UndefOr[js.Any], this.type]] = js.undefined
+    var setHeight: js.UndefOr[js.Function1[/* height */ js.UndefOr[Any], this.type]] = js.undefined
     
     /** [Method] Sets the innerHTML of this element
       * @param html String The new HTML.
@@ -1298,25 +1278,25 @@ object dom {
       * @param height Number/String The new maximum height.
       * @returns Ext.dom.Element this
       */
-    var setMaxHeight: js.UndefOr[js.Function1[/* height */ js.UndefOr[js.Any], this.type]] = js.undefined
+    var setMaxHeight: js.UndefOr[js.Function1[/* height */ js.UndefOr[Any], this.type]] = js.undefined
     
     /** [Method] Set the maximum width of this Element
       * @param width Number/String The new maximum width.
       * @returns Ext.dom.Element this
       */
-    var setMaxWidth: js.UndefOr[js.Function1[/* width */ js.UndefOr[js.Any], this.type]] = js.undefined
+    var setMaxWidth: js.UndefOr[js.Function1[/* width */ js.UndefOr[Any], this.type]] = js.undefined
     
     /** [Method] Set the minimum height of this Element
       * @param height Number/String The new minimum height.
       * @returns Ext.dom.Element this
       */
-    var setMinHeight: js.UndefOr[js.Function1[/* height */ js.UndefOr[js.Any], this.type]] = js.undefined
+    var setMinHeight: js.UndefOr[js.Function1[/* height */ js.UndefOr[Any], this.type]] = js.undefined
     
     /** [Method] Set the minimum width of this Element
       * @param width Number/String The new minimum width.
       * @returns Ext.dom.Element this
       */
-    var setMinWidth: js.UndefOr[js.Function1[/* width */ js.UndefOr[js.Any], this.type]] = js.undefined
+    var setMinWidth: js.UndefOr[js.Function1[/* width */ js.UndefOr[Any], this.type]] = js.undefined
     
     /** [Method] Sets the element s CSS right style
       * @param right String The right CSS property value.
@@ -1330,7 +1310,7 @@ object dom {
       * @returns Ext.dom.Element this
       */
     var setSize: js.UndefOr[
-        js.Function2[/* width */ js.UndefOr[js.Any], /* height */ js.UndefOr[js.Any], this.type]
+        js.Function2[/* width */ js.UndefOr[Any], /* height */ js.UndefOr[Any], this.type]
       ] = js.undefined
     
     /** [Method] Wrapper for setting style properties also takes single object parameter of multiple styles
@@ -1339,11 +1319,7 @@ object dom {
       * @returns Ext.dom.Element this
       */
     var setStyle: js.UndefOr[
-        js.Function2[
-          /* property */ js.UndefOr[js.Any], 
-          /* value */ js.UndefOr[java.lang.String], 
-          this.type
-        ]
+        js.Function2[/* property */ js.UndefOr[Any], /* value */ js.UndefOr[java.lang.String], this.type]
       ] = js.undefined
     
     /** [Method] Sets the element s top position directly using CSS style instead of setY
@@ -1359,7 +1335,7 @@ object dom {
       * @param mode Object
       * @returns Ext.dom.Element this
       */
-    var setVisibilityMode: js.UndefOr[js.Function1[/* mode */ js.UndefOr[js.Any], this.type]] = js.undefined
+    var setVisibilityMode: js.UndefOr[js.Function1[/* mode */ js.UndefOr[Any], this.type]] = js.undefined
     
     /** [Method] Sets the visibility of the element see details
       * @param visible Boolean Whether the element is visible.
@@ -1371,7 +1347,7 @@ object dom {
       * @param width Number/String The new width.
       * @returns Ext.dom.Element this
       */
-    var setWidth: js.UndefOr[js.Function1[/* width */ js.UndefOr[js.Any], this.type]] = js.undefined
+    var setWidth: js.UndefOr[js.Function1[/* width */ js.UndefOr[Any], this.type]] = js.undefined
     
     /** [Method] Sets the X position of the element based on page coordinates
       * @param x Number The X position of the element
@@ -1405,7 +1381,7 @@ object dom {
       * @param y Number The page y, required if x is not an array.
       * @returns Object An object with left and top properties. e.g. {left: (value), top: (value)}.
       */
-    var translatePoints: js.UndefOr[js.Function2[/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[Double], js.Any]] = js.undefined
+    var translatePoints: js.UndefOr[js.Function2[/* x */ js.UndefOr[Any], /* y */ js.UndefOr[Double], Any]] = js.undefined
     
     /** [Method] Removes a previously applied mask  */
     var unmask: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -1418,8 +1394,8 @@ object dom {
     var up: js.UndefOr[
         js.Function2[
           /* simpleSelector */ js.UndefOr[java.lang.String], 
-          /* maxDepth */ js.UndefOr[js.Any], 
-          js.Any
+          /* maxDepth */ js.UndefOr[Any], 
+          Any
         ]
       ] = js.undefined
     
@@ -1434,7 +1410,7 @@ object dom {
       * @returns HTMLElement/Ext.dom.Element The newly created wrapper element.
       */
     var wrap: js.UndefOr[
-        js.Function2[/* config */ js.UndefOr[js.Any], /* domNode */ js.UndefOr[Boolean], js.Any]
+        js.Function2[/* config */ js.UndefOr[Any], /* domNode */ js.UndefOr[Boolean], Any]
       ] = js.undefined
   }
   object IElement {
@@ -1452,30 +1428,28 @@ object dom {
       
       inline def setAddClsUndefined: Self = StObject.set(x, "addCls", js.undefined)
       
-      inline def setAppendChild(value: /* element */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
+      inline def setAppendChild(value: /* element */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
       
       inline def setAppendChildUndefined: Self = StObject.set(x, "appendChild", js.undefined)
       
-      inline def setAppendTo(value: /* el */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "appendTo", js.Any.fromFunction1(value))
+      inline def setAppendTo(value: /* el */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "appendTo", js.Any.fromFunction1(value))
       
       inline def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
       
-      inline def setApplyStyles(value: /* styles */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "applyStyles", js.Any.fromFunction1(value))
+      inline def setApplyStyles(value: /* styles */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "applyStyles", js.Any.fromFunction1(value))
       
       inline def setApplyStylesUndefined: Self = StObject.set(x, "applyStyles", js.undefined)
       
-      inline def setChild(
-        value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => js.Any
-      ): Self = StObject.set(x, "child", js.Any.fromFunction2(value))
+      inline def setChild(value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => Any): Self = StObject.set(x, "child", js.Any.fromFunction2(value))
       
       inline def setChildUndefined: Self = StObject.set(x, "child", js.undefined)
       
-      inline def setContains(value: /* element */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+      inline def setContains(value: /* element */ js.UndefOr[Any] => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
       
       inline def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
       
       inline def setCreateChild(
-        value: (/* config */ js.UndefOr[js.Any], /* insertBefore */ js.UndefOr[HTMLElement], /* returnDom */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.IElement
+        value: (/* config */ js.UndefOr[Any], /* insertBefore */ js.UndefOr[HTMLElement], /* returnDom */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.IElement
       ): Self = StObject.set(x, "createChild", js.Any.fromFunction3(value))
       
       inline def setCreateChildUndefined: Self = StObject.set(x, "createChild", js.undefined)
@@ -1496,38 +1470,34 @@ object dom {
       
       inline def setDomUndefined: Self = StObject.set(x, "dom", js.undefined)
       
-      inline def setDown(
-        value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => js.Any
-      ): Self = StObject.set(x, "down", js.Any.fromFunction2(value))
+      inline def setDown(value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => Any): Self = StObject.set(x, "down", js.Any.fromFunction2(value))
       
       inline def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
       
       inline def setFindParent(
-        value: (/* simpleSelector */ js.UndefOr[java.lang.String], /* maxDepth */ js.UndefOr[js.Any], /* returnEl */ js.UndefOr[Boolean]) => js.Any
+        value: (/* simpleSelector */ js.UndefOr[java.lang.String], /* maxDepth */ js.UndefOr[Any], /* returnEl */ js.UndefOr[Boolean]) => Any
       ): Self = StObject.set(x, "findParent", js.Any.fromFunction3(value))
       
       inline def setFindParentNode(
-        value: (/* simpleSelector */ js.UndefOr[java.lang.String], /* maxDepth */ js.UndefOr[js.Any], /* returnEl */ js.UndefOr[Boolean]) => js.Any
+        value: (/* simpleSelector */ js.UndefOr[java.lang.String], /* maxDepth */ js.UndefOr[Any], /* returnEl */ js.UndefOr[Boolean]) => Any
       ): Self = StObject.set(x, "findParentNode", js.Any.fromFunction3(value))
       
       inline def setFindParentNodeUndefined: Self = StObject.set(x, "findParentNode", js.undefined)
       
       inline def setFindParentUndefined: Self = StObject.set(x, "findParent", js.undefined)
       
-      inline def setFirst(
-        value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => js.Any
-      ): Self = StObject.set(x, "first", js.Any.fromFunction2(value))
+      inline def setFirst(value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => Any): Self = StObject.set(x, "first", js.Any.fromFunction2(value))
       
       inline def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
       
       inline def setGetAlignToXY(
-        value: (/* element */ js.UndefOr[js.Any], /* position */ js.UndefOr[java.lang.String], /* offsets */ js.UndefOr[Array]) => Array
+        value: (/* element */ js.UndefOr[Any], /* position */ js.UndefOr[java.lang.String], /* offsets */ js.UndefOr[Array]) => Array
       ): Self = StObject.set(x, "getAlignToXY", js.Any.fromFunction3(value))
       
       inline def setGetAlignToXYUndefined: Self = StObject.set(x, "getAlignToXY", js.undefined)
       
       inline def setGetAnchorXY(
-        value: (/* anchor */ js.UndefOr[java.lang.String], /* local */ js.UndefOr[Boolean], /* size */ js.UndefOr[js.Any]) => Array
+        value: (/* anchor */ js.UndefOr[java.lang.String], /* local */ js.UndefOr[Boolean], /* size */ js.UndefOr[Any]) => Array
       ): Self = StObject.set(x, "getAnchorXY", js.Any.fromFunction3(value))
       
       inline def setGetAnchorXYUndefined: Self = StObject.set(x, "getAnchorXY", js.undefined)
@@ -1546,7 +1516,7 @@ object dom {
       
       inline def setGetBottomUndefined: Self = StObject.set(x, "getBottom", js.undefined)
       
-      inline def setGetBox(value: (/* contentBox */ js.UndefOr[Boolean], /* local */ js.UndefOr[Boolean]) => js.Any): Self = StObject.set(x, "getBox", js.Any.fromFunction2(value))
+      inline def setGetBox(value: (/* contentBox */ js.UndefOr[Boolean], /* local */ js.UndefOr[Boolean]) => Any): Self = StObject.set(x, "getBox", js.Any.fromFunction2(value))
       
       inline def setGetBoxUndefined: Self = StObject.set(x, "getBox", js.undefined)
       
@@ -1562,11 +1532,11 @@ object dom {
       
       inline def setGetLeftUndefined: Self = StObject.set(x, "getLeft", js.undefined)
       
-      inline def setGetMargin(value: /* sides */ js.UndefOr[java.lang.String] => js.Any): Self = StObject.set(x, "getMargin", js.Any.fromFunction1(value))
+      inline def setGetMargin(value: /* sides */ js.UndefOr[java.lang.String] => Any): Self = StObject.set(x, "getMargin", js.Any.fromFunction1(value))
       
       inline def setGetMarginUndefined: Self = StObject.set(x, "getMargin", js.undefined)
       
-      inline def setGetOffsetsTo(value: /* element */ js.UndefOr[js.Any] => Array): Self = StObject.set(x, "getOffsetsTo", js.Any.fromFunction1(value))
+      inline def setGetOffsetsTo(value: /* element */ js.UndefOr[Any] => Array): Self = StObject.set(x, "getOffsetsTo", js.Any.fromFunction1(value))
       
       inline def setGetOffsetsToUndefined: Self = StObject.set(x, "getOffsetsTo", js.undefined)
       
@@ -1582,7 +1552,7 @@ object dom {
       
       inline def setGetPaddingUndefined: Self = StObject.set(x, "getPadding", js.undefined)
       
-      inline def setGetPageBox(value: /* asRegion */ js.UndefOr[Boolean] => js.Any): Self = StObject.set(x, "getPageBox", js.Any.fromFunction1(value))
+      inline def setGetPageBox(value: /* asRegion */ js.UndefOr[Boolean] => Any): Self = StObject.set(x, "getPageBox", js.Any.fromFunction1(value))
       
       inline def setGetPageBoxUndefined: Self = StObject.set(x, "getPageBox", js.undefined)
       
@@ -1594,7 +1564,7 @@ object dom {
       
       inline def setGetScrollParentUndefined: Self = StObject.set(x, "getScrollParent", js.undefined)
       
-      inline def setGetSize(value: /* contentSize */ js.UndefOr[Boolean] => js.Any): Self = StObject.set(x, "getSize", js.Any.fromFunction1(value))
+      inline def setGetSize(value: /* contentSize */ js.UndefOr[Boolean] => Any): Self = StObject.set(x, "getSize", js.Any.fromFunction1(value))
       
       inline def setGetSizeUndefined: Self = StObject.set(x, "getSize", js.undefined)
       
@@ -1606,11 +1576,11 @@ object dom {
       
       inline def setGetTopUndefined: Self = StObject.set(x, "getTop", js.undefined)
       
-      inline def setGetValue(value: /* asNumber */ js.UndefOr[Boolean] => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
+      inline def setGetValue(value: /* asNumber */ js.UndefOr[Boolean] => Any): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
       
       inline def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
       
-      inline def setGetViewSize(value: () => js.Any): Self = StObject.set(x, "getViewSize", js.Any.fromFunction0(value))
+      inline def setGetViewSize(value: () => Any): Self = StObject.set(x, "getViewSize", js.Any.fromFunction0(value))
       
       inline def setGetViewSizeUndefined: Self = StObject.set(x, "getViewSize", js.undefined)
       
@@ -1642,26 +1612,26 @@ object dom {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setInsertAfter(value: /* el */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "insertAfter", js.Any.fromFunction1(value))
+      inline def setInsertAfter(value: /* el */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "insertAfter", js.Any.fromFunction1(value))
       
       inline def setInsertAfterUndefined: Self = StObject.set(x, "insertAfter", js.undefined)
       
-      inline def setInsertBefore(value: /* el */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "insertBefore", js.Any.fromFunction1(value))
+      inline def setInsertBefore(value: /* el */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "insertBefore", js.Any.fromFunction1(value))
       
       inline def setInsertBeforeUndefined: Self = StObject.set(x, "insertBefore", js.undefined)
       
-      inline def setInsertFirst(value: /* element */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "insertFirst", js.Any.fromFunction1(value))
+      inline def setInsertFirst(value: /* element */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "insertFirst", js.Any.fromFunction1(value))
       
       inline def setInsertFirstUndefined: Self = StObject.set(x, "insertFirst", js.undefined)
       
       inline def setInsertHtml(
-        value: (/* where */ js.UndefOr[java.lang.String], /* html */ js.UndefOr[java.lang.String], /* returnEl */ js.UndefOr[Boolean]) => js.Any
+        value: (/* where */ js.UndefOr[java.lang.String], /* html */ js.UndefOr[java.lang.String], /* returnEl */ js.UndefOr[Boolean]) => Any
       ): Self = StObject.set(x, "insertHtml", js.Any.fromFunction3(value))
       
       inline def setInsertHtmlUndefined: Self = StObject.set(x, "insertHtml", js.undefined)
       
       inline def setInsertSibling(
-        value: (/* el */ js.UndefOr[js.Any], /* where */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.IElement
+        value: (/* el */ js.UndefOr[Any], /* where */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.IElement
       ): Self = StObject.set(x, "insertSibling", js.Any.fromFunction3(value))
       
       inline def setInsertSiblingUndefined: Self = StObject.set(x, "insertSibling", js.undefined)
@@ -1684,9 +1654,7 @@ object dom {
       
       inline def setIsUndefined: Self = StObject.set(x, "is", js.undefined)
       
-      inline def setLast(
-        value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => js.Any
-      ): Self = StObject.set(x, "last", js.Any.fromFunction2(value))
+      inline def setLast(value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => Any): Self = StObject.set(x, "last", js.Any.fromFunction2(value))
       
       inline def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
       
@@ -1694,9 +1662,7 @@ object dom {
       
       inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
       
-      inline def setNext(
-        value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => js.Any
-      ): Self = StObject.set(x, "next", js.Any.fromFunction2(value))
+      inline def setNext(value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => Any): Self = StObject.set(x, "next", js.Any.fromFunction2(value))
       
       inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
       
@@ -1704,15 +1670,11 @@ object dom {
       
       inline def setOFFSETSUndefined: Self = StObject.set(x, "OFFSETS", js.undefined)
       
-      inline def setParent(
-        value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => js.Any
-      ): Self = StObject.set(x, "parent", js.Any.fromFunction2(value))
+      inline def setParent(value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => Any): Self = StObject.set(x, "parent", js.Any.fromFunction2(value))
       
       inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
       
-      inline def setPrev(
-        value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => js.Any
-      ): Self = StObject.set(x, "prev", js.Any.fromFunction2(value))
+      inline def setPrev(value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => Any): Self = StObject.set(x, "prev", js.Any.fromFunction2(value))
       
       inline def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
       
@@ -1724,11 +1686,11 @@ object dom {
       
       inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
-      inline def setRadioCls(value: /* className */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "radioCls", js.Any.fromFunction1(value))
+      inline def setRadioCls(value: /* className */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "radioCls", js.Any.fromFunction1(value))
       
       inline def setRadioClsUndefined: Self = StObject.set(x, "radioCls", js.undefined)
       
-      inline def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
+      inline def setRelayEvents(value: (/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
       
       inline def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
       
@@ -1750,7 +1712,7 @@ object dom {
       
       inline def setRepaintUndefined: Self = StObject.set(x, "repaint", js.undefined)
       
-      inline def setReplace(value: /* element */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "replace", js.Any.fromFunction1(value))
+      inline def setReplace(value: /* element */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "replace", js.Any.fromFunction1(value))
       
       inline def setReplaceCls(
         value: (/* oldName */ js.UndefOr[java.lang.String], /* newName */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => typings.senchaTouch.Ext.dom.IElement
@@ -1760,27 +1722,27 @@ object dom {
       
       inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
       
-      inline def setReplaceWith(value: /* el */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "replaceWith", js.Any.fromFunction1(value))
+      inline def setReplaceWith(value: /* el */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "replaceWith", js.Any.fromFunction1(value))
       
       inline def setReplaceWithUndefined: Self = StObject.set(x, "replaceWith", js.undefined)
       
-      inline def setSerializeForm(value: /* form */ js.UndefOr[js.Any] => java.lang.String): Self = StObject.set(x, "serializeForm", js.Any.fromFunction1(value))
+      inline def setSerializeForm(value: /* form */ js.UndefOr[Any] => java.lang.String): Self = StObject.set(x, "serializeForm", js.Any.fromFunction1(value))
       
       inline def setSerializeFormUndefined: Self = StObject.set(x, "serializeForm", js.undefined)
       
       inline def setSet(
-        value: (/* attributes */ js.UndefOr[js.Any], /* useSet */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.IElement
+        value: (/* attributes */ js.UndefOr[Any], /* useSet */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.IElement
       ): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
       
       inline def setSetBottom(value: /* bottom */ js.UndefOr[java.lang.String] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setBottom", js.Any.fromFunction1(value))
       
       inline def setSetBottomUndefined: Self = StObject.set(x, "setBottom", js.undefined)
       
-      inline def setSetBox(value: /* box */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setBox", js.Any.fromFunction1(value))
+      inline def setSetBox(value: /* box */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setBox", js.Any.fromFunction1(value))
       
       inline def setSetBoxUndefined: Self = StObject.set(x, "setBox", js.undefined)
       
-      inline def setSetCls(value: /* className */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setCls", js.Any.fromFunction1(value))
+      inline def setSetCls(value: /* className */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setCls", js.Any.fromFunction1(value))
       
       inline def setSetClsUndefined: Self = StObject.set(x, "setCls", js.undefined)
       
@@ -1788,7 +1750,7 @@ object dom {
       
       inline def setSetHTMLUndefined: Self = StObject.set(x, "setHTML", js.undefined)
       
-      inline def setSetHeight(value: /* height */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setHeight", js.Any.fromFunction1(value))
+      inline def setSetHeight(value: /* height */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setHeight", js.Any.fromFunction1(value))
       
       inline def setSetHeightUndefined: Self = StObject.set(x, "setHeight", js.undefined)
       
@@ -1796,19 +1758,19 @@ object dom {
       
       inline def setSetLeftUndefined: Self = StObject.set(x, "setLeft", js.undefined)
       
-      inline def setSetMaxHeight(value: /* height */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setMaxHeight", js.Any.fromFunction1(value))
+      inline def setSetMaxHeight(value: /* height */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setMaxHeight", js.Any.fromFunction1(value))
       
       inline def setSetMaxHeightUndefined: Self = StObject.set(x, "setMaxHeight", js.undefined)
       
-      inline def setSetMaxWidth(value: /* width */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setMaxWidth", js.Any.fromFunction1(value))
+      inline def setSetMaxWidth(value: /* width */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setMaxWidth", js.Any.fromFunction1(value))
       
       inline def setSetMaxWidthUndefined: Self = StObject.set(x, "setMaxWidth", js.undefined)
       
-      inline def setSetMinHeight(value: /* height */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setMinHeight", js.Any.fromFunction1(value))
+      inline def setSetMinHeight(value: /* height */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setMinHeight", js.Any.fromFunction1(value))
       
       inline def setSetMinHeightUndefined: Self = StObject.set(x, "setMinHeight", js.undefined)
       
-      inline def setSetMinWidth(value: /* width */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setMinWidth", js.Any.fromFunction1(value))
+      inline def setSetMinWidth(value: /* width */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setMinWidth", js.Any.fromFunction1(value))
       
       inline def setSetMinWidthUndefined: Self = StObject.set(x, "setMinWidth", js.undefined)
       
@@ -1817,13 +1779,13 @@ object dom {
       inline def setSetRightUndefined: Self = StObject.set(x, "setRight", js.undefined)
       
       inline def setSetSize(
-        value: (/* width */ js.UndefOr[js.Any], /* height */ js.UndefOr[js.Any]) => typings.senchaTouch.Ext.dom.IElement
+        value: (/* width */ js.UndefOr[Any], /* height */ js.UndefOr[Any]) => typings.senchaTouch.Ext.dom.IElement
       ): Self = StObject.set(x, "setSize", js.Any.fromFunction2(value))
       
       inline def setSetSizeUndefined: Self = StObject.set(x, "setSize", js.undefined)
       
       inline def setSetStyle(
-        value: (/* property */ js.UndefOr[js.Any], /* value */ js.UndefOr[java.lang.String]) => typings.senchaTouch.Ext.dom.IElement
+        value: (/* property */ js.UndefOr[Any], /* value */ js.UndefOr[java.lang.String]) => typings.senchaTouch.Ext.dom.IElement
       ): Self = StObject.set(x, "setStyle", js.Any.fromFunction2(value))
       
       inline def setSetStyleUndefined: Self = StObject.set(x, "setStyle", js.undefined)
@@ -1838,7 +1800,7 @@ object dom {
       
       inline def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
       
-      inline def setSetVisibilityMode(value: /* mode */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setVisibilityMode", js.Any.fromFunction1(value))
+      inline def setSetVisibilityMode(value: /* mode */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setVisibilityMode", js.Any.fromFunction1(value))
       
       inline def setSetVisibilityModeUndefined: Self = StObject.set(x, "setVisibilityMode", js.undefined)
       
@@ -1846,7 +1808,7 @@ object dom {
       
       inline def setSetVisibleUndefined: Self = StObject.set(x, "setVisible", js.undefined)
       
-      inline def setSetWidth(value: /* width */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
+      inline def setSetWidth(value: /* width */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
       
       inline def setSetWidthUndefined: Self = StObject.set(x, "setWidth", js.undefined)
       
@@ -1870,7 +1832,7 @@ object dom {
       
       inline def setToggleClsUndefined: Self = StObject.set(x, "toggleCls", js.undefined)
       
-      inline def setTranslatePoints(value: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[Double]) => js.Any): Self = StObject.set(x, "translatePoints", js.Any.fromFunction2(value))
+      inline def setTranslatePoints(value: (/* x */ js.UndefOr[Any], /* y */ js.UndefOr[Double]) => Any): Self = StObject.set(x, "translatePoints", js.Any.fromFunction2(value))
       
       inline def setTranslatePointsUndefined: Self = StObject.set(x, "translatePoints", js.undefined)
       
@@ -1878,9 +1840,7 @@ object dom {
       
       inline def setUnmaskUndefined: Self = StObject.set(x, "unmask", js.undefined)
       
-      inline def setUp(
-        value: (/* simpleSelector */ js.UndefOr[java.lang.String], /* maxDepth */ js.UndefOr[js.Any]) => js.Any
-      ): Self = StObject.set(x, "up", js.Any.fromFunction2(value))
+      inline def setUp(value: (/* simpleSelector */ js.UndefOr[java.lang.String], /* maxDepth */ js.UndefOr[Any]) => Any): Self = StObject.set(x, "up", js.Any.fromFunction2(value))
       
       inline def setUpUndefined: Self = StObject.set(x, "up", js.undefined)
       
@@ -1892,7 +1852,7 @@ object dom {
       
       inline def setVISIBILITYUndefined: Self = StObject.set(x, "VISIBILITY", js.undefined)
       
-      inline def setWrap(value: (/* config */ js.UndefOr[js.Any], /* domNode */ js.UndefOr[Boolean]) => js.Any): Self = StObject.set(x, "wrap", js.Any.fromFunction2(value))
+      inline def setWrap(value: (/* config */ js.UndefOr[Any], /* domNode */ js.UndefOr[Boolean]) => Any): Self = StObject.set(x, "wrap", js.Any.fromFunction2(value))
       
       inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
     }
@@ -1908,10 +1868,10 @@ object dom {
       */
     var append: js.UndefOr[
         js.Function3[
-          /* el */ js.UndefOr[js.Any], 
-          /* o */ js.UndefOr[js.Any], 
+          /* el */ js.UndefOr[Any], 
+          /* o */ js.UndefOr[Any], 
           /* returnElement */ js.UndefOr[Boolean], 
-          js.Any
+          Any
         ]
       ] = js.undefined
     
@@ -1919,22 +1879,20 @@ object dom {
       * @param el String/HTMLElement The element to apply styles to
       * @param styles String/Object/Function A style specification string e.g. 'width:100px', or object in the form {width:'100px'}, or a function which returns such a specification.
       */
-    var applyStyles: js.UndefOr[js.Function2[/* el */ js.UndefOr[js.Any], /* styles */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var applyStyles: js.UndefOr[js.Function2[/* el */ js.UndefOr[Any], /* styles */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Creates a new Ext Template from the DOM object spec
       * @param o Object The DOM object spec (and children)
       * @returns Ext.Template The new template
       */
-    var createTemplate: js.UndefOr[js.Function1[/* o */ js.UndefOr[js.Any], ITemplate]] = js.undefined
+    var createTemplate: js.UndefOr[js.Function1[/* o */ js.UndefOr[Any], ITemplate]] = js.undefined
     
     /** [Method] Converts the styles from the given object to text
       * @param styles Object The object describing the styles.
       * @param buffer String[] The output buffer.
       * @returns String/String[] If buffer is passed, it is returned. Otherwise the style string is returned.
       */
-    var generateStyles: js.UndefOr[
-        js.Function2[/* styles */ js.UndefOr[js.Any], /* buffer */ js.UndefOr[Array], js.Any]
-      ] = js.undefined
+    var generateStyles: js.UndefOr[js.Function2[/* styles */ js.UndefOr[Any], /* buffer */ js.UndefOr[Array], Any]] = js.undefined
     
     /** [Method] Creates new DOM element s and inserts them after el
       * @param el String/HTMLElement/Ext.Element The context element
@@ -1944,10 +1902,10 @@ object dom {
       */
     var insertAfter: js.UndefOr[
         js.Function3[
-          /* el */ js.UndefOr[js.Any], 
-          /* o */ js.UndefOr[js.Any], 
+          /* el */ js.UndefOr[Any], 
+          /* o */ js.UndefOr[Any], 
           /* returnElement */ js.UndefOr[Boolean], 
-          js.Any
+          Any
         ]
       ] = js.undefined
     
@@ -1959,10 +1917,10 @@ object dom {
       */
     var insertBefore: js.UndefOr[
         js.Function3[
-          /* el */ js.UndefOr[js.Any], 
-          /* o */ js.UndefOr[js.Any], 
+          /* el */ js.UndefOr[Any], 
+          /* o */ js.UndefOr[Any], 
           /* returnElement */ js.UndefOr[Boolean], 
-          js.Any
+          Any
         ]
       ] = js.undefined
     
@@ -1974,10 +1932,10 @@ object dom {
       */
     var insertFirst: js.UndefOr[
         js.Function3[
-          /* el */ js.UndefOr[js.Any], 
-          /* o */ js.UndefOr[js.Any], 
+          /* el */ js.UndefOr[Any], 
+          /* o */ js.UndefOr[Any], 
           /* returnElement */ js.UndefOr[Boolean], 
-          js.Any
+          Any
         ]
       ] = js.undefined
     
@@ -1990,7 +1948,7 @@ object dom {
     var insertHtml: js.UndefOr[
         js.Function3[
           /* where */ js.UndefOr[java.lang.String], 
-          /* el */ js.UndefOr[js.Any], 
+          /* el */ js.UndefOr[Any], 
           /* html */ js.UndefOr[java.lang.String], 
           HTMLElement
         ]
@@ -2000,7 +1958,7 @@ object dom {
       * @param spec Object The DOM object spec (and children).
       * @returns String
       */
-    var markup: js.UndefOr[js.Function1[/* spec */ js.UndefOr[js.Any], java.lang.String]] = js.undefined
+    var markup: js.UndefOr[js.Function1[/* spec */ js.UndefOr[Any], java.lang.String]] = js.undefined
     
     /** [Method] Creates new DOM element s and overwrites the contents of el with them
       * @param el String/HTMLElement/Ext.Element The context element
@@ -2010,10 +1968,10 @@ object dom {
       */
     var overwrite: js.UndefOr[
         js.Function3[
-          /* el */ js.UndefOr[js.Any], 
-          /* o */ js.UndefOr[js.Any], 
+          /* el */ js.UndefOr[Any], 
+          /* o */ js.UndefOr[Any], 
           /* returnElement */ js.UndefOr[Boolean], 
-          js.Any
+          Any
         ]
       ] = js.undefined
   }
@@ -2027,53 +1985,53 @@ object dom {
     extension [Self <: IHelper](x: Self) {
       
       inline def setAppend(
-        value: (/* el */ js.UndefOr[js.Any], /* o */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => js.Any
+        value: (/* el */ js.UndefOr[Any], /* o */ js.UndefOr[Any], /* returnElement */ js.UndefOr[Boolean]) => Any
       ): Self = StObject.set(x, "append", js.Any.fromFunction3(value))
       
       inline def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
       
-      inline def setApplyStyles(value: (/* el */ js.UndefOr[js.Any], /* styles */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "applyStyles", js.Any.fromFunction2(value))
+      inline def setApplyStyles(value: (/* el */ js.UndefOr[Any], /* styles */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "applyStyles", js.Any.fromFunction2(value))
       
       inline def setApplyStylesUndefined: Self = StObject.set(x, "applyStyles", js.undefined)
       
-      inline def setCreateTemplate(value: /* o */ js.UndefOr[js.Any] => ITemplate): Self = StObject.set(x, "createTemplate", js.Any.fromFunction1(value))
+      inline def setCreateTemplate(value: /* o */ js.UndefOr[Any] => ITemplate): Self = StObject.set(x, "createTemplate", js.Any.fromFunction1(value))
       
       inline def setCreateTemplateUndefined: Self = StObject.set(x, "createTemplate", js.undefined)
       
-      inline def setGenerateStyles(value: (/* styles */ js.UndefOr[js.Any], /* buffer */ js.UndefOr[Array]) => js.Any): Self = StObject.set(x, "generateStyles", js.Any.fromFunction2(value))
+      inline def setGenerateStyles(value: (/* styles */ js.UndefOr[Any], /* buffer */ js.UndefOr[Array]) => Any): Self = StObject.set(x, "generateStyles", js.Any.fromFunction2(value))
       
       inline def setGenerateStylesUndefined: Self = StObject.set(x, "generateStyles", js.undefined)
       
       inline def setInsertAfter(
-        value: (/* el */ js.UndefOr[js.Any], /* o */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => js.Any
+        value: (/* el */ js.UndefOr[Any], /* o */ js.UndefOr[Any], /* returnElement */ js.UndefOr[Boolean]) => Any
       ): Self = StObject.set(x, "insertAfter", js.Any.fromFunction3(value))
       
       inline def setInsertAfterUndefined: Self = StObject.set(x, "insertAfter", js.undefined)
       
       inline def setInsertBefore(
-        value: (/* el */ js.UndefOr[js.Any], /* o */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => js.Any
+        value: (/* el */ js.UndefOr[Any], /* o */ js.UndefOr[Any], /* returnElement */ js.UndefOr[Boolean]) => Any
       ): Self = StObject.set(x, "insertBefore", js.Any.fromFunction3(value))
       
       inline def setInsertBeforeUndefined: Self = StObject.set(x, "insertBefore", js.undefined)
       
       inline def setInsertFirst(
-        value: (/* el */ js.UndefOr[js.Any], /* o */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => js.Any
+        value: (/* el */ js.UndefOr[Any], /* o */ js.UndefOr[Any], /* returnElement */ js.UndefOr[Boolean]) => Any
       ): Self = StObject.set(x, "insertFirst", js.Any.fromFunction3(value))
       
       inline def setInsertFirstUndefined: Self = StObject.set(x, "insertFirst", js.undefined)
       
       inline def setInsertHtml(
-        value: (/* where */ js.UndefOr[java.lang.String], /* el */ js.UndefOr[js.Any], /* html */ js.UndefOr[java.lang.String]) => HTMLElement
+        value: (/* where */ js.UndefOr[java.lang.String], /* el */ js.UndefOr[Any], /* html */ js.UndefOr[java.lang.String]) => HTMLElement
       ): Self = StObject.set(x, "insertHtml", js.Any.fromFunction3(value))
       
       inline def setInsertHtmlUndefined: Self = StObject.set(x, "insertHtml", js.undefined)
       
-      inline def setMarkup(value: /* spec */ js.UndefOr[js.Any] => java.lang.String): Self = StObject.set(x, "markup", js.Any.fromFunction1(value))
+      inline def setMarkup(value: /* spec */ js.UndefOr[Any] => java.lang.String): Self = StObject.set(x, "markup", js.Any.fromFunction1(value))
       
       inline def setMarkupUndefined: Self = StObject.set(x, "markup", js.undefined)
       
       inline def setOverwrite(
-        value: (/* el */ js.UndefOr[js.Any], /* o */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => js.Any
+        value: (/* el */ js.UndefOr[Any], /* o */ js.UndefOr[Any], /* returnElement */ js.UndefOr[Boolean]) => Any
       ): Self = StObject.set(x, "overwrite", js.Any.fromFunction3(value))
       
       inline def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
@@ -2090,7 +2048,7 @@ object dom {
       * @returns Boolean
       */
     var is: js.UndefOr[
-        js.Function2[/* el */ js.UndefOr[js.Any], /* selector */ js.UndefOr[java.lang.String], Boolean]
+        js.Function2[/* el */ js.UndefOr[Any], /* selector */ js.UndefOr[java.lang.String], Boolean]
       ] = js.undefined
     
     /** [Method] Selects a group of elements
@@ -2099,7 +2057,7 @@ object dom {
       * @returns HTMLElement[] An Array of DOM elements which match the selector. If there are no matches, and empty Array is returned.
       */
     var select: js.UndefOr[
-        js.Function2[/* selector */ js.UndefOr[java.lang.String], /* root */ js.UndefOr[js.Any], Array]
+        js.Function2[/* selector */ js.UndefOr[java.lang.String], /* root */ js.UndefOr[Any], Array]
       ] = js.undefined
     
     /** [Method] Selects a single element
@@ -2108,11 +2066,7 @@ object dom {
       * @returns HTMLElement The DOM element which matched the selector.
       */
     var selectNode: js.UndefOr[
-        js.Function2[
-          /* selector */ js.UndefOr[java.lang.String], 
-          /* root */ js.UndefOr[js.Any], 
-          HTMLElement
-        ]
+        js.Function2[/* selector */ js.UndefOr[java.lang.String], /* root */ js.UndefOr[Any], HTMLElement]
       ] = js.undefined
   }
   object IQuery {
@@ -2124,13 +2078,13 @@ object dom {
     
     extension [Self <: IQuery](x: Self) {
       
-      inline def setIs(value: (/* el */ js.UndefOr[js.Any], /* selector */ js.UndefOr[java.lang.String]) => Boolean): Self = StObject.set(x, "is", js.Any.fromFunction2(value))
+      inline def setIs(value: (/* el */ js.UndefOr[Any], /* selector */ js.UndefOr[java.lang.String]) => Boolean): Self = StObject.set(x, "is", js.Any.fromFunction2(value))
       
       inline def setIsUndefined: Self = StObject.set(x, "is", js.undefined)
       
-      inline def setSelect(value: (/* selector */ js.UndefOr[java.lang.String], /* root */ js.UndefOr[js.Any]) => Array): Self = StObject.set(x, "select", js.Any.fromFunction2(value))
+      inline def setSelect(value: (/* selector */ js.UndefOr[java.lang.String], /* root */ js.UndefOr[Any]) => Array): Self = StObject.set(x, "select", js.Any.fromFunction2(value))
       
-      inline def setSelectNode(value: (/* selector */ js.UndefOr[java.lang.String], /* root */ js.UndefOr[js.Any]) => HTMLElement): Self = StObject.set(x, "selectNode", js.Any.fromFunction2(value))
+      inline def setSelectNode(value: (/* selector */ js.UndefOr[java.lang.String], /* root */ js.UndefOr[Any]) => HTMLElement): Self = StObject.set(x, "selectNode", js.Any.fromFunction2(value))
       
       inline def setSelectNodeUndefined: Self = StObject.set(x, "selectNode", js.undefined)
       

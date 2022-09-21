@@ -11,9 +11,9 @@ Show diffs for files in the stream against those in a target directory
 | Full name          | gulp-diff |
 | Keywords           | gulpplugin, diff, diffs |
 | # releases         | 1 |
-| # dependents       | 2 |
-| # downloads        | 85701 |
-| # stars            | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 15793.0 |
+| # stars            | 7.0 |
 
 ## Links
 - [Homepage](https://github.com/creativelive/gulp-diff)

@@ -2,7 +2,7 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,12 +11,12 @@ object buttonOrMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/elements/Button/ButtonOr", JSImport.Default)
   @js.native
-  val default: StatelessComponent[ButtonOrProps] = js.native
+  val default: FC[ButtonOrProps] = js.native
   
   trait ButtonOrProps
     extends StObject
        with StrictButtonOrProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object ButtonOrProps {
     
     inline def apply(): ButtonOrProps = {
@@ -28,7 +28,7 @@ object buttonOrMod extends Shortcut {
   trait StrictButtonOrProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Additional classes. */
     var className: js.UndefOr[String] = js.undefined
@@ -45,7 +45,7 @@ object buttonOrMod extends Shortcut {
     
     extension [Self <: StrictButtonOrProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -59,8 +59,8 @@ object buttonOrMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[ButtonOrProps]
+  type _To = FC[ButtonOrProps]
   
   /* This means you don't have to write `default`, but can instead just say `buttonOrMod.foo` */
-  override def _to: StatelessComponent[ButtonOrProps] = default
+  override def _to: FC[ButtonOrProps] = default
 }

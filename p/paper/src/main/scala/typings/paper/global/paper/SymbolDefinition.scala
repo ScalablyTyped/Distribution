@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("paper.SymbolDefinition")
 @js.native
-class SymbolDefinition protected ()
+open class SymbolDefinition protected ()
   extends StObject
      with typings.paper.paper.SymbolDefinition {
   /** 

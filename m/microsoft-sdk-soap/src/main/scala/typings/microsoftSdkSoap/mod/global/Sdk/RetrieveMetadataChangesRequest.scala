@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Sdk.RetrieveMetadataChangesRequest")
 @js.native
-class RetrieveMetadataChangesRequest protected () extends OrganizationRequest {
+open class RetrieveMetadataChangesRequest protected () extends OrganizationRequest {
   def this(query: EntityQueryExpression) = this()
   def this(query: EntityQueryExpression, clientVersionStamp: java.lang.String) = this()
   def this(

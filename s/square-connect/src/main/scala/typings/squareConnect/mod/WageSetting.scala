@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "WageSetting")
 @js.native
-class WageSetting () extends StObject {
+open class WageSetting () extends StObject {
   
   /**
     * The timestamp in RFC 3339 format describing when the wage setting object was created.

@@ -12,7 +12,7 @@ trait Column extends StObject {
   
   def Delete(): Unit
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.Column_typekey")
   var PowerPointDotColumn_typekey: Column
@@ -27,7 +27,7 @@ object Column {
     Application: Application,
     Cells: CellRange,
     Delete: () => Unit,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotColumn_typekey: Column,
     Select: () => Unit,
     Width: Double
@@ -45,7 +45,7 @@ object Column {
     
     inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotColumn_typekey(value: Column): Self = StObject.set(x, "PowerPoint.Column_typekey", value.asInstanceOf[js.Any])
     

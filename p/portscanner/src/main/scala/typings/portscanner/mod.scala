@@ -1,6 +1,5 @@
 package typings.portscanner
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,7 +66,7 @@ object mod {
     }
   }
   
-  type PortCallback = js.Function2[/* error */ Error | Null, /* port */ Double, Unit]
+  type PortCallback = js.Function2[/* error */ js.Error | Null, /* port */ Double, Unit]
   
   /* Rewritten from type alias, can be one of: 
     - typings.portscanner.portscannerStrings.open
@@ -81,5 +80,5 @@ object mod {
     inline def open: typings.portscanner.portscannerStrings.open = "open".asInstanceOf[typings.portscanner.portscannerStrings.open]
   }
   
-  type StatusCallback = js.Function2[/* error */ Error | Null, /* port */ Status, Unit]
+  type StatusCallback = js.Function2[/* error */ js.Error | Null, /* port */ Status, Unit]
 }

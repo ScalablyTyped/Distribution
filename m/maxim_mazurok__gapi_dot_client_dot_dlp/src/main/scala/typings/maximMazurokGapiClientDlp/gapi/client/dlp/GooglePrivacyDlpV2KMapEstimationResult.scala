@@ -26,6 +26,6 @@ object GooglePrivacyDlpV2KMapEstimationResult {
     
     inline def setKMapEstimationHistogramUndefined: Self = StObject.set(x, "kMapEstimationHistogram", js.undefined)
     
-    inline def setKMapEstimationHistogramVarargs(value: GooglePrivacyDlpV2KMapEstimationHistogramBucket*): Self = StObject.set(x, "kMapEstimationHistogram", js.Array(value :_*))
+    inline def setKMapEstimationHistogramVarargs(value: GooglePrivacyDlpV2KMapEstimationHistogramBucket*): Self = StObject.set(x, "kMapEstimationHistogram", js.Array(value*))
   }
 }

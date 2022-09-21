@@ -1,15 +1,21 @@
 package typings.cytoscape.mod.Css
 
+import typings.cytoscape.cytoscapeStrings.anywhere
+import typings.cytoscape.cytoscapeStrings.auto
+import typings.cytoscape.cytoscapeStrings.autorotate
 import typings.cytoscape.cytoscapeStrings.bottom
 import typings.cytoscape.cytoscapeStrings.center
 import typings.cytoscape.cytoscapeStrings.ellipsis
 import typings.cytoscape.cytoscapeStrings.left
+import typings.cytoscape.cytoscapeStrings.no
 import typings.cytoscape.cytoscapeStrings.none
 import typings.cytoscape.cytoscapeStrings.rectangle
 import typings.cytoscape.cytoscapeStrings.right
 import typings.cytoscape.cytoscapeStrings.roundrectangle
 import typings.cytoscape.cytoscapeStrings.top
+import typings.cytoscape.cytoscapeStrings.whitespace
 import typings.cytoscape.cytoscapeStrings.wrap
+import typings.cytoscape.cytoscapeStrings.yes
 import typings.cytoscape.mod.EdgeSingular
 import typings.cytoscape.mod.NodeSingular
 import org.scalablytyped.runtime.StObject
@@ -60,6 +66,15 @@ trait Labels[SingularType /* <: NodeSingular | EdgeSingular */] extends StObject
   var label: PropertyValue[SingularType, String]
   
   /**
+    * The line height of multiline text, as a relative, unitless value. It specifies the
+    * vertical spacing between each line. With value `1` (default), the lines are stacked
+    * directly on top of one another with no additional whitespace between them.
+    * With value `2`, for example, there is whitespace between each line equal to the visible
+    * height of a line of text.
+    */
+  var `line-height`: PropertyValue[SingularType, Double]
+  
+  /**
     * Interactivity:
     */
   /**
@@ -98,7 +113,7 @@ trait Labels[SingularType /* <: NodeSingular | EdgeSingular */] extends StObject
   /**
     * (For the source label of an edge.)
     */
-  var `source-text-rotation`: PropertyValue[SingularType, Double]
+  var `source-text-rotation`: PropertyValue[SingularType, Double | autorotate | none]
   
   /**
     * The text to display for an edge’s target label.
@@ -123,7 +138,7 @@ trait Labels[SingularType /* <: NodeSingular | EdgeSingular */] extends StObject
   /**
     * (For the target label of an edge.)
     */
-  var `target-text-rotation`: PropertyValue[SingularType, Double]
+  var `target-text-rotation`: PropertyValue[SingularType, Double | autorotate | none]
   
   /**
     * A colour to apply on the text background.
@@ -172,12 +187,26 @@ trait Labels[SingularType /* <: NodeSingular | EdgeSingular */] extends StObject
   var `text-border-width`: PropertyValue[SingularType, Double]
   
   /**
+    * Whether events should occur on an element if the label receives an event; may be `yes` or `no`.
+    * You may want a style applied to the text on active so you know the text is activatable.
+    */
+  var `text-events`: PropertyValue[SingularType, yes | no]
+  
+  /**
     * Node label alignment:
     */
   /**
     * The vertical alignment of a node’s label.
     */
   var `text-halign`: PropertyValue[SingularType, left | center | right]
+  
+  /**
+    * The justification of multiline (wrapped) labels; may be
+    * `left`, `center`, `right`, or `auto` (default). The auto value makes it so that a
+    * node’s label is justified along the node — e.g. a label on the right side
+    * of a node is left justified.
+    */
+  var `text-justification`: PropertyValue[SingularType, auto | left | center | right]
   
   /**
     * Margins:
@@ -224,46 +253,26 @@ trait Labels[SingularType /* <: NodeSingular | EdgeSingular */] extends StObject
   var `text-outline-width`: PropertyValue[SingularType, Double | String]
   
   /**
+    * The characters that may be used for possible wrapping locations when
+    * a line overflows `text-max-width`; may be `whitespace` (default) or `anywhere`.
+    * Note that anywhere is suited to CJK, where the characters are in a grid
+    * and no whitespace exists. Using anywhere with text in the Latin alphabet,
+    * for example, will split words at arbitrary locations.
+    */
+  var `text-overflow-wrap`: PropertyValue[SingularType, whitespace | anywhere]
+  
+  /**
     * Rotating text:
     */
   /**
     * A rotation angle that is applied to the label.
-    *  * For edges, the special value autorotate can be used to align the label to the edge.
+    *  * Rotations are clockwise.
+    *  * For edges, the special value `autorotate` can be used to align the label to the edge.
     *  * For nodes, the label is rotated along its anchor point on the node, so a label margin may help for some usecases.
-    *  * The special value none can be used to denote 0deg.
-    *  * Rotations works best with left- to - right text.
+    *  * The special value `none` can be used to denote 0deg.
+    *  * Rotations works best with left-to-right text.
     */
-  var `text-rotation`: PropertyValue[SingularType, Double]
-  
-  /**
-    * Shadow:
-    */
-  /**
-    * The shadow blur distance.
-    */
-  var `text-shadow-blur`: PropertyValue[SingularType, Double]
-  
-  /**
-    * The colour of the shadow.
-    */
-  var `text-shadow-color`: PropertyValue[SingularType, Colour]
-  
-  /**
-    * The x offset relative to the text where the shadow will be displayed, can be negative.
-    * If you set blur to 0, add an offset to view your shadow.
-    */
-  var `text-shadow-offset-x`: PropertyValue[SingularType, Double]
-  
-  /**
-    * The y offset relative to the text where the shadow will be displayed, can be negative.
-    * If you set blur to 0, add an offset to view your shadow.
-    */
-  var `text-shadow-offset-y`: PropertyValue[SingularType, Double]
-  
-  /**
-    * The opacity of the shadow on the text; the shadow is disabled for 0 (default value).
-    */
-  var `text-shadow-opacity`: PropertyValue[SingularType, Double]
+  var `text-rotation`: PropertyValue[SingularType, Double | autorotate | none]
   
   /**
     * A transformation to apply to the label text.
@@ -282,6 +291,7 @@ trait Labels[SingularType /* <: NodeSingular | EdgeSingular */] extends StObject
     * A wrapping style to apply to the label text; may be
     *  * "none" for no wrapping (including manual newlines ) or
     *  * "wrap" for manual and/ or autowrapping.
+    *  * "ellipsis" to truncate the string and append
     */
   var `text-wrap`: PropertyValue[SingularType, none | wrap | ellipsis]
 }
@@ -294,17 +304,18 @@ object Labels {
     `font-style`: PropertyValue[SingularType, FontStyle],
     `font-weight`: PropertyValue[SingularType, FontWeight],
     label: PropertyValue[SingularType, String],
+    `line-height`: PropertyValue[SingularType, Double],
     `min-zoomed-font-size`: PropertyValue[SingularType, Double],
     `source-label`: PropertyValue[SingularType, String],
     `source-text-margin-x`: PropertyValue[SingularType, Double],
     `source-text-margin-y`: PropertyValue[SingularType, Double],
     `source-text-offset`: PropertyValue[SingularType, Double],
-    `source-text-rotation`: PropertyValue[SingularType, Double],
+    `source-text-rotation`: PropertyValue[SingularType, Double | autorotate | none],
     `target-label`: PropertyValue[SingularType, String],
     `target-text-margin-x`: PropertyValue[SingularType, Double],
     `target-text-margin-y`: PropertyValue[SingularType, Double],
     `target-text-offset`: PropertyValue[SingularType, Double],
-    `target-text-rotation`: PropertyValue[SingularType, Double],
+    `target-text-rotation`: PropertyValue[SingularType, Double | autorotate | none],
     `text-background-color`: PropertyValue[SingularType, Colour],
     `text-background-opacity`: PropertyValue[SingularType, Double],
     `text-background-padding`: PropertyValue[SingularType, String],
@@ -313,7 +324,9 @@ object Labels {
     `text-border-opacity`: PropertyValue[SingularType, Double],
     `text-border-style`: PropertyValue[SingularType, LineStyle],
     `text-border-width`: PropertyValue[SingularType, Double],
+    `text-events`: PropertyValue[SingularType, yes | no],
     `text-halign`: PropertyValue[SingularType, left | center | right],
+    `text-justification`: PropertyValue[SingularType, auto | left | center | right],
     `text-margin-x`: PropertyValue[SingularType, Double],
     `text-margin-y`: PropertyValue[SingularType, Double],
     `text-max-width`: PropertyValue[SingularType, String],
@@ -321,12 +334,8 @@ object Labels {
     `text-outline-color`: PropertyValue[SingularType, Colour],
     `text-outline-opacity`: PropertyValue[SingularType, Double],
     `text-outline-width`: PropertyValue[SingularType, Double | String],
-    `text-rotation`: PropertyValue[SingularType, Double],
-    `text-shadow-blur`: PropertyValue[SingularType, Double],
-    `text-shadow-color`: PropertyValue[SingularType, Colour],
-    `text-shadow-offset-x`: PropertyValue[SingularType, Double],
-    `text-shadow-offset-y`: PropertyValue[SingularType, Double],
-    `text-shadow-opacity`: PropertyValue[SingularType, Double],
+    `text-overflow-wrap`: PropertyValue[SingularType, whitespace | anywhere],
+    `text-rotation`: PropertyValue[SingularType, Double | autorotate | none],
     `text-transform`: PropertyValue[SingularType, TextTranformation],
     `text-valign`: PropertyValue[SingularType, top | center | bottom],
     `text-wrap`: PropertyValue[SingularType, none | wrap | ellipsis]
@@ -336,6 +345,7 @@ object Labels {
     __obj.updateDynamic("font-size")(`font-size`.asInstanceOf[js.Any])
     __obj.updateDynamic("font-style")(`font-style`.asInstanceOf[js.Any])
     __obj.updateDynamic("font-weight")(`font-weight`.asInstanceOf[js.Any])
+    __obj.updateDynamic("line-height")(`line-height`.asInstanceOf[js.Any])
     __obj.updateDynamic("min-zoomed-font-size")(`min-zoomed-font-size`.asInstanceOf[js.Any])
     __obj.updateDynamic("source-label")(`source-label`.asInstanceOf[js.Any])
     __obj.updateDynamic("source-text-margin-x")(`source-text-margin-x`.asInstanceOf[js.Any])
@@ -355,7 +365,9 @@ object Labels {
     __obj.updateDynamic("text-border-opacity")(`text-border-opacity`.asInstanceOf[js.Any])
     __obj.updateDynamic("text-border-style")(`text-border-style`.asInstanceOf[js.Any])
     __obj.updateDynamic("text-border-width")(`text-border-width`.asInstanceOf[js.Any])
+    __obj.updateDynamic("text-events")(`text-events`.asInstanceOf[js.Any])
     __obj.updateDynamic("text-halign")(`text-halign`.asInstanceOf[js.Any])
+    __obj.updateDynamic("text-justification")(`text-justification`.asInstanceOf[js.Any])
     __obj.updateDynamic("text-margin-x")(`text-margin-x`.asInstanceOf[js.Any])
     __obj.updateDynamic("text-margin-y")(`text-margin-y`.asInstanceOf[js.Any])
     __obj.updateDynamic("text-max-width")(`text-max-width`.asInstanceOf[js.Any])
@@ -363,12 +375,8 @@ object Labels {
     __obj.updateDynamic("text-outline-color")(`text-outline-color`.asInstanceOf[js.Any])
     __obj.updateDynamic("text-outline-opacity")(`text-outline-opacity`.asInstanceOf[js.Any])
     __obj.updateDynamic("text-outline-width")(`text-outline-width`.asInstanceOf[js.Any])
+    __obj.updateDynamic("text-overflow-wrap")(`text-overflow-wrap`.asInstanceOf[js.Any])
     __obj.updateDynamic("text-rotation")(`text-rotation`.asInstanceOf[js.Any])
-    __obj.updateDynamic("text-shadow-blur")(`text-shadow-blur`.asInstanceOf[js.Any])
-    __obj.updateDynamic("text-shadow-color")(`text-shadow-color`.asInstanceOf[js.Any])
-    __obj.updateDynamic("text-shadow-offset-x")(`text-shadow-offset-x`.asInstanceOf[js.Any])
-    __obj.updateDynamic("text-shadow-offset-y")(`text-shadow-offset-y`.asInstanceOf[js.Any])
-    __obj.updateDynamic("text-shadow-opacity")(`text-shadow-opacity`.asInstanceOf[js.Any])
     __obj.updateDynamic("text-transform")(`text-transform`.asInstanceOf[js.Any])
     __obj.updateDynamic("text-valign")(`text-valign`.asInstanceOf[js.Any])
     __obj.updateDynamic("text-wrap")(`text-wrap`.asInstanceOf[js.Any])
@@ -401,6 +409,10 @@ object Labels {
     
     inline def setLabelFunction1(value: SingularType => String): Self = StObject.set(x, "label", js.Any.fromFunction1(value))
     
+    inline def `setLine-height`(value: PropertyValue[SingularType, Double]): Self = StObject.set(x, "line-height", value.asInstanceOf[js.Any])
+    
+    inline def `setLine-heightFunction1`(value: SingularType => Double): Self = StObject.set(x, "line-height", js.Any.fromFunction1(value))
+    
     inline def `setMin-zoomed-font-size`(value: PropertyValue[SingularType, Double]): Self = StObject.set(x, "min-zoomed-font-size", value.asInstanceOf[js.Any])
     
     inline def `setMin-zoomed-font-sizeFunction1`(value: SingularType => Double): Self = StObject.set(x, "min-zoomed-font-size", js.Any.fromFunction1(value))
@@ -421,9 +433,9 @@ object Labels {
     
     inline def `setSource-text-offsetFunction1`(value: SingularType => Double): Self = StObject.set(x, "source-text-offset", js.Any.fromFunction1(value))
     
-    inline def `setSource-text-rotation`(value: PropertyValue[SingularType, Double]): Self = StObject.set(x, "source-text-rotation", value.asInstanceOf[js.Any])
+    inline def `setSource-text-rotation`(value: PropertyValue[SingularType, Double | autorotate | none]): Self = StObject.set(x, "source-text-rotation", value.asInstanceOf[js.Any])
     
-    inline def `setSource-text-rotationFunction1`(value: SingularType => Double): Self = StObject.set(x, "source-text-rotation", js.Any.fromFunction1(value))
+    inline def `setSource-text-rotationFunction1`(value: SingularType => Double | autorotate | none): Self = StObject.set(x, "source-text-rotation", js.Any.fromFunction1(value))
     
     inline def `setTarget-label`(value: PropertyValue[SingularType, String]): Self = StObject.set(x, "target-label", value.asInstanceOf[js.Any])
     
@@ -441,9 +453,9 @@ object Labels {
     
     inline def `setTarget-text-offsetFunction1`(value: SingularType => Double): Self = StObject.set(x, "target-text-offset", js.Any.fromFunction1(value))
     
-    inline def `setTarget-text-rotation`(value: PropertyValue[SingularType, Double]): Self = StObject.set(x, "target-text-rotation", value.asInstanceOf[js.Any])
+    inline def `setTarget-text-rotation`(value: PropertyValue[SingularType, Double | autorotate | none]): Self = StObject.set(x, "target-text-rotation", value.asInstanceOf[js.Any])
     
-    inline def `setTarget-text-rotationFunction1`(value: SingularType => Double): Self = StObject.set(x, "target-text-rotation", js.Any.fromFunction1(value))
+    inline def `setTarget-text-rotationFunction1`(value: SingularType => Double | autorotate | none): Self = StObject.set(x, "target-text-rotation", js.Any.fromFunction1(value))
     
     inline def `setText-background-color`(value: PropertyValue[SingularType, Colour]): Self = StObject.set(x, "text-background-color", value.asInstanceOf[js.Any])
     
@@ -477,9 +489,17 @@ object Labels {
     
     inline def `setText-border-widthFunction1`(value: SingularType => Double): Self = StObject.set(x, "text-border-width", js.Any.fromFunction1(value))
     
+    inline def `setText-events`(value: PropertyValue[SingularType, yes | no]): Self = StObject.set(x, "text-events", value.asInstanceOf[js.Any])
+    
+    inline def `setText-eventsFunction1`(value: SingularType => yes | no): Self = StObject.set(x, "text-events", js.Any.fromFunction1(value))
+    
     inline def `setText-halign`(value: PropertyValue[SingularType, left | center | right]): Self = StObject.set(x, "text-halign", value.asInstanceOf[js.Any])
     
     inline def `setText-halignFunction1`(value: SingularType => left | center | right): Self = StObject.set(x, "text-halign", js.Any.fromFunction1(value))
+    
+    inline def `setText-justification`(value: PropertyValue[SingularType, auto | left | center | right]): Self = StObject.set(x, "text-justification", value.asInstanceOf[js.Any])
+    
+    inline def `setText-justificationFunction1`(value: SingularType => auto | left | center | right): Self = StObject.set(x, "text-justification", js.Any.fromFunction1(value))
     
     inline def `setText-margin-x`(value: PropertyValue[SingularType, Double]): Self = StObject.set(x, "text-margin-x", value.asInstanceOf[js.Any])
     
@@ -509,29 +529,13 @@ object Labels {
     
     inline def `setText-outline-widthFunction1`(value: SingularType => Double | String): Self = StObject.set(x, "text-outline-width", js.Any.fromFunction1(value))
     
-    inline def `setText-rotation`(value: PropertyValue[SingularType, Double]): Self = StObject.set(x, "text-rotation", value.asInstanceOf[js.Any])
+    inline def `setText-overflow-wrap`(value: PropertyValue[SingularType, whitespace | anywhere]): Self = StObject.set(x, "text-overflow-wrap", value.asInstanceOf[js.Any])
     
-    inline def `setText-rotationFunction1`(value: SingularType => Double): Self = StObject.set(x, "text-rotation", js.Any.fromFunction1(value))
+    inline def `setText-overflow-wrapFunction1`(value: SingularType => whitespace | anywhere): Self = StObject.set(x, "text-overflow-wrap", js.Any.fromFunction1(value))
     
-    inline def `setText-shadow-blur`(value: PropertyValue[SingularType, Double]): Self = StObject.set(x, "text-shadow-blur", value.asInstanceOf[js.Any])
+    inline def `setText-rotation`(value: PropertyValue[SingularType, Double | autorotate | none]): Self = StObject.set(x, "text-rotation", value.asInstanceOf[js.Any])
     
-    inline def `setText-shadow-blurFunction1`(value: SingularType => Double): Self = StObject.set(x, "text-shadow-blur", js.Any.fromFunction1(value))
-    
-    inline def `setText-shadow-color`(value: PropertyValue[SingularType, Colour]): Self = StObject.set(x, "text-shadow-color", value.asInstanceOf[js.Any])
-    
-    inline def `setText-shadow-colorFunction1`(value: SingularType => Colour): Self = StObject.set(x, "text-shadow-color", js.Any.fromFunction1(value))
-    
-    inline def `setText-shadow-offset-x`(value: PropertyValue[SingularType, Double]): Self = StObject.set(x, "text-shadow-offset-x", value.asInstanceOf[js.Any])
-    
-    inline def `setText-shadow-offset-xFunction1`(value: SingularType => Double): Self = StObject.set(x, "text-shadow-offset-x", js.Any.fromFunction1(value))
-    
-    inline def `setText-shadow-offset-y`(value: PropertyValue[SingularType, Double]): Self = StObject.set(x, "text-shadow-offset-y", value.asInstanceOf[js.Any])
-    
-    inline def `setText-shadow-offset-yFunction1`(value: SingularType => Double): Self = StObject.set(x, "text-shadow-offset-y", js.Any.fromFunction1(value))
-    
-    inline def `setText-shadow-opacity`(value: PropertyValue[SingularType, Double]): Self = StObject.set(x, "text-shadow-opacity", value.asInstanceOf[js.Any])
-    
-    inline def `setText-shadow-opacityFunction1`(value: SingularType => Double): Self = StObject.set(x, "text-shadow-opacity", js.Any.fromFunction1(value))
+    inline def `setText-rotationFunction1`(value: SingularType => Double | autorotate | none): Self = StObject.set(x, "text-rotation", js.Any.fromFunction1(value))
     
     inline def `setText-transform`(value: PropertyValue[SingularType, TextTranformation]): Self = StObject.set(x, "text-transform", value.asInstanceOf[js.Any])
     

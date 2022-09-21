@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait S3Logs extends StObject {
   
   /**
-    * The Amazon S3 bucket in which to store the logs.
+    * The S3 bucket in which to store the logs.
     */
   var s3BucketName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The Amazon S3 path in which to store the logs.
+    * The Amazon S3 path to the bucket where the logs are stored.
     */
   var s3KeyPrefix: js.UndefOr[NonEmptyString] = js.undefined
 }

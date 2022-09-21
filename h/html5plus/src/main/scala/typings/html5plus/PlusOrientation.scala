@@ -42,11 +42,8 @@ trait PlusOrientation extends StObject {
     */
   def getCurrentOrientation(): Unit = js.native
   def getCurrentOrientation(successCB: js.Function1[/* result */ String, Unit]): Unit = js.native
-  def getCurrentOrientation(
-    successCB: js.Function1[/* result */ String, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getCurrentOrientation(successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def getCurrentOrientation(successCB: js.Function1[/* result */ String, Unit], errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
+  def getCurrentOrientation(successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   
   /**
     * 监听设备方向信息的变化
@@ -56,13 +53,10 @@ trait PlusOrientation extends StObject {
     */
   def watchOrientation(): Double = js.native
   def watchOrientation(successCB: js.Function1[/* result */ String, Unit]): Double = js.native
+  def watchOrientation(successCB: js.Function1[/* result */ String, Unit], errorCB: js.Function1[/* result */ Any, Unit]): Double = js.native
   def watchOrientation(
     successCB: js.Function1[/* result */ String, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Double = js.native
-  def watchOrientation(
-    successCB: js.Function1[/* result */ String, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit],
+    errorCB: js.Function1[/* result */ Any, Unit],
     option: PlusOrientationOrientationOption
   ): Double = js.native
   def watchOrientation(
@@ -70,10 +64,10 @@ trait PlusOrientation extends StObject {
     errorCB: Unit,
     option: PlusOrientationOrientationOption
   ): Double = js.native
-  def watchOrientation(successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Double = js.native
+  def watchOrientation(successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Double = js.native
   def watchOrientation(
     successCB: Unit,
-    errorCB: js.Function1[/* result */ js.Any, Unit],
+    errorCB: js.Function1[/* result */ Any, Unit],
     option: PlusOrientationOrientationOption
   ): Double = js.native
   def watchOrientation(successCB: Unit, errorCB: Unit, option: PlusOrientationOrientationOption): Double = js.native

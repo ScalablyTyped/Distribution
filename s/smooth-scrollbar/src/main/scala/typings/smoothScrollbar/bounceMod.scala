@@ -10,10 +10,10 @@ object bounceMod {
   
   @JSImport("smooth-scrollbar/plugins/overscroll/bounce", "Bounce")
   @js.native
-  class Bounce protected () extends StObject {
+  open class Bounce protected () extends StObject {
     def this(_scrollbar: default) = this()
     
-    /* private */ var _scrollbar: js.Any = js.native
+    /* private */ var _scrollbar: Any = js.native
     
     def render(hasXY: X): Unit = js.native
   }

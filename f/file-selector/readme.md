@@ -1,7 +1,7 @@
 
 # Scala.js typings for file-selector
 
-Typings are for version 0.2.3
+Typings are for version 0.6.0
 
 ## Library description:
 Convert DataTransfer object to a list of File objects
@@ -10,10 +10,10 @@ Convert DataTransfer object to a list of File objects
 | ------------------ | :-------------: |
 | Full name          | file-selector |
 | Keywords           | drag-and-drop, html5, file-api, DataTransfer, File |
-| # releases         | 19 |
-| # dependents       | 26 |
-| # downloads        | 28261191 |
-| # stars            | 0 |
+| # releases         | 18 |
+| # dependents       | 0.0 |
+| # downloads        | 7294270.666666667 |
+| # stars            | 56.0 |
 
 ## Links
 - [Homepage](https://github.com/react-dropzone/file-selector)

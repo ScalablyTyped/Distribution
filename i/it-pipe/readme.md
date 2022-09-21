@@ -1,7 +1,7 @@
 
 # Scala.js typings for it-pipe
 
-Typings are for version 1.1.0
+Typings are for version 2.0.4
 
 ## Library description:
 Utility to "pipe" async iterables together
@@ -9,11 +9,11 @@ Utility to "pipe" async iterables together
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | it-pipe |
-| Keywords           | pipe, pipeline, iterable, iterator, async, await, stream, pump, pull |
-| # releases         | 5 |
-| # dependents       | 45 |
-| # downloads        | 283403 |
-| # stars            | 0 |
+| Keywords           | async, await, iterable, iterator, pipe, pipeline, pull, pump, stream |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 132888.66666666666 |
+| # stars            | 34.0 |
 
 ## Links
 - [Homepage](https://github.com/alanshaw/it-pipe#readme)

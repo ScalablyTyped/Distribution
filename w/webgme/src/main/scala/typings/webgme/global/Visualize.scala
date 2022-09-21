@@ -8,7 +8,7 @@ object Visualize {
   
   @JSGlobal("Visualize.Visualizer")
   @js.native
-  class Visualizer ()
+  open class Visualizer ()
     extends StObject
        with typings.webgme.Visualize.Visualizer
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * Used for enqueuing and dequeuing Oracle Advanced Queuing messages. Each can be used for enqueuing, dequeuing, or for both.
-  * 
+  *
   * @see https://oracle.github.io/node-oracledb/doc/api.html#aq
   * @since 4.0
   */
@@ -15,7 +15,7 @@ trait AdvancedQueue[T] extends StObject {
   
   /**
     * Dequeues up to the specified number of messages
-    * 
+    *
     * @param maxMessages Maximum number of messages to dequeue.
     */
   def deqMany(maxMessages: Double): js.Promise[js.Array[AdvancedQueueMessage[T]]] = js.native
@@ -37,11 +37,11 @@ trait AdvancedQueue[T] extends StObject {
   
   /**
     * Enqueues multiple messages.
-    * 
+    *
     * Warning: calling enqMany() in parallel on different connections acquired from the same pool may fail due to Oracle bug 29928074.
     * Ensure that enqMany() is not run in parallel, use standalone connections, or make multiple calls to enqOne().
     * The deqMany() method is not affected.
-    * 
+    *
     * @param messages Messages to enqueue.
     */
   def enqMany(messages: js.Array[EnqueueMessage[T]]): js.Promise[Unit] = js.native
@@ -49,8 +49,8 @@ trait AdvancedQueue[T] extends StObject {
   
   /**
     * Enqueues a single message.
-    * 
-    * @param message 
+    *
+    * @param message
     */
   def enqOne(message: EnqueueMessage[T]): js.Promise[Unit] = js.native
   def enqOne(message: EnqueueMessage[T], callback: js.Function1[/* error */ DBError, Unit]): Unit = js.native
@@ -66,7 +66,7 @@ trait AdvancedQueue[T] extends StObject {
   
   /**
     * The DBObject Class corresponding to the payload type specified when the queue was created
-    * 
+    *
     * This is defined only if payloadType has the value oracledb.DB_TYPE_OBJECT.
     */
   val payloadTypeClass: js.UndefOr[DBObjectClass[T]] = js.native

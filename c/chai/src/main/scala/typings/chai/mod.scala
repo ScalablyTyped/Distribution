@@ -15,17 +15,17 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("chai", "Assertion")
   @js.native
-  class Assertion protected ()
+  open class Assertion protected ()
     extends StObject
        with typings.chai.Chai.Assertion {
-    def this(target: js.Any) = this()
-    def this(target: js.Any, message: String) = this()
-    def this(target: js.Any, message: String, ssfi: js.Function) = this()
-    def this(target: js.Any, message: Unit, ssfi: js.Function) = this()
-    def this(target: js.Any, message: String, ssfi: js.Function, lockSsfi: Boolean) = this()
-    def this(target: js.Any, message: String, ssfi: Unit, lockSsfi: Boolean) = this()
-    def this(target: js.Any, message: Unit, ssfi: js.Function, lockSsfi: Boolean) = this()
-    def this(target: js.Any, message: Unit, ssfi: Unit, lockSsfi: Boolean) = this()
+    def this(target: Any) = this()
+    def this(target: Any, message: String) = this()
+    def this(target: Any, message: String, ssfi: js.Function) = this()
+    def this(target: Any, message: Unit, ssfi: js.Function) = this()
+    def this(target: Any, message: String, ssfi: js.Function, lockSsfi: Boolean) = this()
+    def this(target: Any, message: String, ssfi: Unit, lockSsfi: Boolean) = this()
+    def this(target: Any, message: Unit, ssfi: js.Function, lockSsfi: Boolean) = this()
+    def this(target: Any, message: Unit, ssfi: Unit, lockSsfi: Boolean) = this()
     
     /* CompleteClass */
     override def and(`type`: String): typings.chai.Chai.Assertion = js.native
@@ -151,12 +151,12 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("chai", "AssertionError")
   @js.native
-  class AssertionError protected ()
+  open class AssertionError protected ()
     extends StObject
        with typings.chai.Chai.AssertionError {
     def this(message: String) = this()
-    def this(message: String, _props: js.Any) = this()
-    def this(message: String, _props: js.Any, ssf: js.Function) = this()
+    def this(message: String, _props: Any) = this()
+    def this(message: String, _props: Any, ssf: js.Function) = this()
     def this(message: String, _props: Unit, ssf: js.Function) = this()
     
     /* CompleteClass */

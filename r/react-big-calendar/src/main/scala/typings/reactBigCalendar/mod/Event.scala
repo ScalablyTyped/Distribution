@@ -1,6 +1,6 @@
 package typings.reactBigCalendar.mod
 
-import typings.std.Date
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,13 +9,13 @@ trait Event extends StObject {
   
   var allDay: js.UndefOr[Boolean] = js.undefined
   
-  var end: js.UndefOr[Date] = js.undefined
+  var end: js.UndefOr[js.Date] = js.undefined
   
-  var resource: js.UndefOr[js.Any] = js.undefined
+  var resource: js.UndefOr[Any] = js.undefined
   
-  var start: js.UndefOr[Date] = js.undefined
+  var start: js.UndefOr[js.Date] = js.undefined
   
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[ReactNode] = js.undefined
 }
 object Event {
   
@@ -30,19 +30,19 @@ object Event {
     
     inline def setAllDayUndefined: Self = StObject.set(x, "allDay", js.undefined)
     
-    inline def setEnd(value: Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: js.Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    inline def setResource(value: js.Any): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: Any): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
-    inline def setStart(value: Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: js.Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }

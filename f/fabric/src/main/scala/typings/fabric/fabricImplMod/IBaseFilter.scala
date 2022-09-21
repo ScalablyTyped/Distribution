@@ -13,14 +13,14 @@ trait IBaseFilter extends StObject {
     * @param {Object} options
     * @param {ImageData} options.imageData The Uint8Array to be filtered.
     */
-  def applyTo2d(options: js.Any): Unit = js.native
+  def applyTo2d(options: Any): Unit = js.native
   
   /**
     * Sets filter's properties from options
     * @param [options] Options object
     */
   def setOptions(): Unit = js.native
-  def setOptions(options: js.Any): Unit = js.native
+  def setOptions(options: Any): Unit = js.native
   
   /**
     * Returns a JSON representation of an instance
@@ -30,5 +30,5 @@ trait IBaseFilter extends StObject {
   /**
     * Returns object representation of an instance
     */
-  def toObject(): js.Any = js.native
+  def toObject(): Any = js.native
 }

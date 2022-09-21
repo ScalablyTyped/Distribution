@@ -14,7 +14,7 @@ object wikisMod {
   
   @JSImport("gitlab/dist/types/core/services/Wikis", "Wikis")
   @js.native
-  class Wikis () extends BaseService {
+  open class Wikis () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def all(projectId: String): js.Promise[GetResponse] = js.native

@@ -32,7 +32,7 @@ trait relationshipRendererResult
   var classBreaks: RendererResultClassBreaks
   
   /**
-    * The relationship scheme used by the renderer based on the given basemap.
+    * The relationship scheme used by the renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#RendererResult)
     */
@@ -83,6 +83,6 @@ object relationshipRendererResult {
     
     inline def setUniqueValueInfos(value: js.Array[typeUniqueValueInfo]): Self = StObject.set(x, "uniqueValueInfos", value.asInstanceOf[js.Any])
     
-    inline def setUniqueValueInfosVarargs(value: typeUniqueValueInfo*): Self = StObject.set(x, "uniqueValueInfos", js.Array(value :_*))
+    inline def setUniqueValueInfosVarargs(value: typeUniqueValueInfo*): Self = StObject.set(x, "uniqueValueInfos", js.Array(value*))
   }
 }

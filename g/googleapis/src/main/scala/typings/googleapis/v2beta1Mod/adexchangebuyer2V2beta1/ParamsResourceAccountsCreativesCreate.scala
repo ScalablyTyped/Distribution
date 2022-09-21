@@ -1,9 +1,5 @@
 package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,19 +9,12 @@ trait ParamsResourceAccountsCreativesCreate
      with StandardParameters {
   
   /**
-    * The account that this creative belongs to. Can be used to filter the
-    * response of the creatives.list method.
+    * The account that this creative belongs to. Can be used to filter the response of the creatives.list method.
     */
   var accountId: js.UndefOr[String] = js.undefined
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Indicates if multiple creatives can share an ID or not. Default is
-    * NO_DUPLICATES (one ID per creative).
+    * Indicates if multiple creatives can share an ID or not. Default is NO_DUPLICATES (one ID per creative).
     */
   var duplicateIdMode: js.UndefOr[String] = js.undefined
   
@@ -46,10 +35,6 @@ object ParamsResourceAccountsCreativesCreate {
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setDuplicateIdMode(value: String): Self = StObject.set(x, "duplicateIdMode", value.asInstanceOf[js.Any])
     

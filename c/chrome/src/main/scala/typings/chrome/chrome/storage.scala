@@ -16,11 +16,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object storage {
   
-  /* Inlined keyof std.Pick<{  local :chrome.chrome.storage.LocalStorageArea,   sync :chrome.chrome.storage.SyncStorageArea,   managed :chrome.chrome.storage.StorageArea,   onChanged :chrome.chrome.storage.StorageChangedEvent}, 'sync' | 'local' | 'managed'> */
+  /* keyof chrome.anon.TRUSTEDANDUNTRUSTEDCONTEXTS */ /* Rewritten from type alias, can be one of: 
+    - typings.chrome.chromeStrings.TRUSTED_AND_UNTRUSTED_CONTEXTS
+    - typings.chrome.chromeStrings.TRUSTED_CONTEXTS
+  */
+  trait AccessLevel extends StObject
+  
+  /* Inlined keyof std.Pick<{  AccessLevel :{  TRUSTED_AND_UNTRUSTED_CONTEXTS :'TRUSTED_AND_UNTRUSTED_CONTEXTS',   TRUSTED_CONTEXTS :'TRUSTED_CONTEXTS'},   local :chrome.chrome.storage.LocalStorageArea,   sync :chrome.chrome.storage.SyncStorageArea,   managed :chrome.chrome.storage.StorageArea,   session :chrome.chrome.storage.SessionStorageArea,   onChanged :chrome.chrome.storage.StorageChangedEvent}, 'sync' | 'local' | 'managed' | 'session'> */
   /* Rewritten from type alias, can be one of: 
     - typings.chrome.chromeStrings.sync
     - typings.chrome.chromeStrings.local
     - typings.chrome.chromeStrings.managed
+    - typings.chrome.chromeStrings.session
   */
   trait AreaName extends StObject
   object AreaName {
@@ -28,6 +35,8 @@ object storage {
     inline def local: typings.chrome.chromeStrings.local = "local".asInstanceOf[typings.chrome.chromeStrings.local]
     
     inline def managed: typings.chrome.chromeStrings.managed = "managed".asInstanceOf[typings.chrome.chromeStrings.managed]
+    
+    inline def session: typings.chrome.chromeStrings.session = "session".asInstanceOf[typings.chrome.chromeStrings.session]
     
     inline def sync: typings.chrome.chromeStrings.sync = "sync".asInstanceOf[typings.chrome.chromeStrings.sync]
   }
@@ -42,6 +51,15 @@ object storage {
   }
   
   @js.native
+  trait SessionStorageArea
+    extends StObject
+       with StorageArea {
+    
+    /** The maximum amount (in bytes) of data that can be stored in memory, as measured by estimating the dynamically allocated memory usage of every value and key. Updates that would cause this limit to be exceeded fail immediately and set runtime.lastError. */
+    var QUOTA_BYTES: Double = js.native
+  }
+  
+  @js.native
   trait StorageArea extends StObject {
     
     /**
@@ -51,13 +69,29 @@ object storage {
       */
     def clear(): Unit = js.native
     def clear(callback: js.Function0[Unit]): Unit = js.native
+    /**
+      * Removes all items from storage.
+      * @return A void Promise
+      * @since MV3
+      */
+    @JSName("clear")
+    def clear_Promise(): js.Promise[Unit] = js.native
     
     /**
       * Gets one or more items from storage.
+      * @param keys A single key to get, list of keys to get, or a dictionary specifying default values.
+      * An empty list or object will return an empty result object. Pass in null to get the entire contents of storage.
+      * @return A Promise that resolves with an object containing items
+      * @since MV3
+      */
+    def get(): js.Promise[StringDictionary[Any]] = js.native
+    /**
+      * Gets the entire contents of storage.
       * @param callback Callback with storage items, or on failure (in which case runtime.lastError will be set).
       * Parameter items: Object with items in their key-value mappings.
       */
-    def get(callback: js.Function1[/* items */ StringDictionary[js.Any], Unit]): Unit = js.native
+    def get(callback: js.Function1[/* items */ StringDictionary[Any], Unit]): Unit = js.native
+    def get(keys: String): js.Promise[StringDictionary[Any]] = js.native
     /**
       * Gets one or more items from storage.
       * @param keys A single key to get, list of keys to get, or a dictionary specifying default values.
@@ -65,26 +99,46 @@ object storage {
       * @param callback Callback with storage items, or on failure (in which case runtime.lastError will be set).
       * Parameter items: Object with items in their key-value mappings.
       */
-    def get(keys: String, callback: js.Function1[/* items */ StringDictionary[js.Any], Unit]): Unit = js.native
-    def get(keys: js.Array[String], callback: js.Function1[/* items */ StringDictionary[js.Any], Unit]): Unit = js.native
-    def get(keys: js.Object, callback: js.Function1[/* items */ StringDictionary[js.Any], Unit]): Unit = js.native
-    def get(keys: Null, callback: js.Function1[/* items */ StringDictionary[js.Any], Unit]): Unit = js.native
+    def get(keys: String, callback: js.Function1[/* items */ StringDictionary[Any], Unit]): Unit = js.native
+    def get(keys: js.Array[String]): js.Promise[StringDictionary[Any]] = js.native
+    def get(keys: js.Array[String], callback: js.Function1[/* items */ StringDictionary[Any], Unit]): Unit = js.native
+    def get(keys: StringDictionary[Any]): js.Promise[StringDictionary[Any]] = js.native
+    def get(keys: StringDictionary[Any], callback: js.Function1[/* items */ StringDictionary[Any], Unit]): Unit = js.native
+    def get(keys: Null, callback: js.Function1[/* items */ StringDictionary[Any], Unit]): Unit = js.native
     
+    /**
+      * Gets the amount of space (in bytes) being used by one or more items.
+      * @param keys Optional. A single key or list of keys to get the total usage for. An empty list will return 0. Pass in null to get the total usage of all of storage.
+      * @return A Promise that resolves with a number
+      * @since MV3
+      */
+    def getBytesInUse(): js.Promise[Double] = js.native
     /**
       * Gets the amount of space (in bytes) being used by one or more items.
       * @param callback Callback with the amount of space being used by storage, or on failure (in which case runtime.lastError will be set).
       * Parameter bytesInUse: Amount of space being used in storage, in bytes.
       */
     def getBytesInUse(callback: js.Function1[/* bytesInUse */ Double, Unit]): Unit = js.native
+    def getBytesInUse(keys: String): js.Promise[Double] = js.native
     /**
       * Gets the amount of space (in bytes) being used by one or more items.
-      * @param keys A single key or list of keys to get the total usage for. An empty list will return 0. Pass in null to get the total usage of all of storage.
+      * @param keys Optional. A single key or list of keys to get the total usage for. An empty list will return 0. Pass in null to get the total usage of all of storage.
       * @param callback Callback with the amount of space being used by storage, or on failure (in which case runtime.lastError will be set).
       * Parameter bytesInUse: Amount of space being used in storage, in bytes.
       */
     def getBytesInUse(keys: String, callback: js.Function1[/* bytesInUse */ Double, Unit]): Unit = js.native
+    def getBytesInUse(keys: js.Array[String]): js.Promise[Double] = js.native
     def getBytesInUse(keys: js.Array[String], callback: js.Function1[/* bytesInUse */ Double, Unit]): Unit = js.native
     def getBytesInUse(keys: Null, callback: js.Function1[/* bytesInUse */ Double, Unit]): Unit = js.native
+    
+    /**
+      * Fired when one or more items change within this storage area.
+      * @param keys A single key to get, list of keys to get, or a dictionary specifying default values.
+      * An empty list or object will return an empty result object. Pass in null to get the entire contents of storage.
+      * @param callback Callback with storage items, or on failure (in which case runtime.lastError will be set).
+      * Parameter items: Object with items in their key-value mappings.
+      */
+    var onChanged: StorageAreaChangedEvent = js.native
     
     /**
       * Removes one or more items from storage.
@@ -96,6 +150,17 @@ object storage {
     def remove(keys: String, callback: js.Function0[Unit]): Unit = js.native
     def remove(keys: js.Array[String]): Unit = js.native
     def remove(keys: js.Array[String], callback: js.Function0[Unit]): Unit = js.native
+    /**
+      * Removes one or more items from storage.
+      * @param keys A single key or a list of keys for items to remove.
+      * @param callback Optional.
+      * @return A void Promise
+      * @since MV3
+      */
+    @JSName("remove")
+    def remove_Promise(keys: String): js.Promise[Unit] = js.native
+    @JSName("remove")
+    def remove_Promise(keys: js.Array[String]): js.Promise[Unit] = js.native
     
     /**
       * Sets multiple items.
@@ -104,17 +169,44 @@ object storage {
       * @param callback Optional.
       * Callback on success, or on failure (in which case runtime.lastError will be set).
       */
-    def set(items: js.Object): Unit = js.native
-    def set(items: js.Object, callback: js.Function0[Unit]): Unit = js.native
+    def set(items: StringDictionary[Any]): Unit = js.native
+    def set(items: StringDictionary[Any], callback: js.Function0[Unit]): Unit = js.native
+    
+    /**
+      * Sets the desired access level for the storage area. The default will be only trusted contexts.
+      * @param accessOptions An object containing an accessLevel key which contains the access level of the storage area.
+      * @return A void Promise.
+      * @since Chrome 102
+      */
+    def setAccessLevel(accessOptions: typings.chrome.anon.AccessLevel): js.Promise[Unit] = js.native
+    /**
+      * Sets the desired access level for the storage area. The default will be only trusted contexts.
+      * @param accessOptions An object containing an accessLevel key which contains the access level of the storage area.
+      * @param callback Optional.
+      * @since Chrome 102
+      */
+    def setAccessLevel(accessOptions: typings.chrome.anon.AccessLevel, callback: js.Function0[Unit]): Unit = js.native
+    
+    /**
+      * Sets multiple items.
+      * @param items An object which gives each key/value pair to update storage with. Any other key/value pairs in storage will not be affected.
+      * Primitive values such as numbers will serialize as expected. Values with a typeof "object" and "function" will typically serialize to {}, with the exception of Array (serializes as expected), Date, and Regex (serialize using their String representation).
+      * @return A void Promise
+      * @since MV3
+      */
+    @JSName("set")
+    def set_Promise(items: StringDictionary[Any]): js.Promise[Unit] = js.native
   }
+  
+  type StorageAreaChangedEvent = Event[js.Function1[/* changes */ StringDictionary[StorageChange], Unit]]
   
   trait StorageChange extends StObject {
     
     /** Optional. The new value of the item, if there is a new value. */
-    var newValue: js.UndefOr[js.Any] = js.undefined
+    var newValue: js.UndefOr[Any] = js.undefined
     
     /** Optional. The old value of the item, if there was an old value. */
-    var oldValue: js.UndefOr[js.Any] = js.undefined
+    var oldValue: js.UndefOr[Any] = js.undefined
   }
   object StorageChange {
     
@@ -125,11 +217,11 @@ object storage {
     
     extension [Self <: StorageChange](x: Self) {
       
-      inline def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+      inline def setNewValue(value: Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
       
       inline def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
       
-      inline def setOldValue(value: js.Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+      inline def setOldValue(value: Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
       
       inline def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
     }

@@ -17,5 +17,5 @@ trait PointCloudReturnFilterConstructor
 Instantiable0[PointCloudReturnFilter]
      with Instantiable1[/* properties */ PointCloudReturnFilterProperties, PointCloudReturnFilter] {
   
-  def fromJSON(json: js.Any): PointCloudReturnFilter = js.native
+  def fromJSON(json: Any): PointCloudReturnFilter = js.native
 }

@@ -109,7 +109,7 @@ object FontConstructorOptions {
     
     inline def setGlyphs(value: js.Array[Glyph]): Self = StObject.set(x, "glyphs", value.asInstanceOf[js.Any])
     
-    inline def setGlyphsVarargs(value: Glyph*): Self = StObject.set(x, "glyphs", js.Array(value :_*))
+    inline def setGlyphsVarargs(value: Glyph*): Self = StObject.set(x, "glyphs", js.Array(value*))
     
     inline def setLicense(value: String): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
     

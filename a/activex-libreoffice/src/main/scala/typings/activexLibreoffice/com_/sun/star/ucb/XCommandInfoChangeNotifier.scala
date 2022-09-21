@@ -34,7 +34,7 @@ object XCommandInfoChangeNotifier {
   inline def apply(
     acquire: () => Unit,
     addCommandInfoChangeListener: XCommandInfoChangeListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeCommandInfoChangeListener: XCommandInfoChangeListener => Unit
   ): XCommandInfoChangeNotifier = {

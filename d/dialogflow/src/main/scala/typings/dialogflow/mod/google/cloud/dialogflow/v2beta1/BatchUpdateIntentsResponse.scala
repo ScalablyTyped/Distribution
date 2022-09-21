@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new BatchUpdateIntentsResponse.
   * @param [properties] Properties to set
   */
-class BatchUpdateIntentsResponse ()
+open class BatchUpdateIntentsResponse ()
   extends StObject
      with IBatchUpdateIntentsResponse {
   def this(properties: IBatchUpdateIntentsResponse) = this()
@@ -29,7 +28,7 @@ class BatchUpdateIntentsResponse ()
     * Converts this BatchUpdateIntentsResponse to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object BatchUpdateIntentsResponse {
   
@@ -46,6 +45,8 @@ object BatchUpdateIntentsResponse {
   inline def create(): BatchUpdateIntentsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BatchUpdateIntentsResponse]
   inline def create(properties: IBatchUpdateIntentsResponse): BatchUpdateIntentsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[BatchUpdateIntentsResponse]
   
+  inline def decode(reader: js.typedarray.Uint8Array): BatchUpdateIntentsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchUpdateIntentsResponse]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): BatchUpdateIntentsResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BatchUpdateIntentsResponse]
   /**
     * Decodes a BatchUpdateIntentsResponse message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -57,9 +58,8 @@ object BatchUpdateIntentsResponse {
   /* static member */
   inline def decode(reader: Reader): BatchUpdateIntentsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchUpdateIntentsResponse]
   inline def decode(reader: Reader, length: Double): BatchUpdateIntentsResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BatchUpdateIntentsResponse]
-  inline def decode(reader: Uint8Array): BatchUpdateIntentsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchUpdateIntentsResponse]
-  inline def decode(reader: Uint8Array, length: Double): BatchUpdateIntentsResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BatchUpdateIntentsResponse]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): BatchUpdateIntentsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchUpdateIntentsResponse]
   /**
     * Decodes a BatchUpdateIntentsResponse message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -69,7 +69,6 @@ object BatchUpdateIntentsResponse {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): BatchUpdateIntentsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchUpdateIntentsResponse]
-  inline def decodeDelimited(reader: Uint8Array): BatchUpdateIntentsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchUpdateIntentsResponse]
   
   /**
     * Encodes the specified BatchUpdateIntentsResponse message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.BatchUpdateIntentsResponse.verify|verify} messages.
@@ -97,7 +96,7 @@ object BatchUpdateIntentsResponse {
     * @returns BatchUpdateIntentsResponse
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): BatchUpdateIntentsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[BatchUpdateIntentsResponse]
+  inline def fromObject(`object`: StringDictionary[Any]): BatchUpdateIntentsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[BatchUpdateIntentsResponse]
   
   /**
     * Creates a plain object from a BatchUpdateIntentsResponse message. Also converts values to other types if specified.
@@ -106,8 +105,8 @@ object BatchUpdateIntentsResponse {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: BatchUpdateIntentsResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: BatchUpdateIntentsResponse, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: BatchUpdateIntentsResponse): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: BatchUpdateIntentsResponse, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a BatchUpdateIntentsResponse message.
@@ -115,5 +114,5 @@ object BatchUpdateIntentsResponse {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

@@ -12,15 +12,13 @@ trait Format extends StObject {
 }
 object Format {
   
-  inline def apply(): Format = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(format: NonNullable[js.UndefOr[SearchLayoutButtonFormat]]): Format = {
+    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
     __obj.asInstanceOf[Format]
   }
   
   extension [Self <: Format](x: Self) {
     
     inline def setFormat(value: NonNullable[js.UndefOr[SearchLayoutButtonFormat]]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
-    
-    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
   }
 }

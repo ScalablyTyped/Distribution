@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "PullTypeSymbol")
 @js.native
-class PullTypeSymbol protected ()
+open class PullTypeSymbol protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.PullTypeSymbol {
   def this(name: String, kind: typings.typescriptServices.TypeScript.PullElementKind) = this()

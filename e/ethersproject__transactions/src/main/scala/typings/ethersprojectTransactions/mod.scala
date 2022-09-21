@@ -4,6 +4,8 @@ import typings.ethersprojectBignumber.bignumberMod.BigNumberish
 import typings.ethersprojectBignumber.mod.BigNumber
 import typings.ethersprojectBytes.mod.BytesLike
 import typings.ethersprojectBytes.mod.SignatureLike
+import typings.ethersprojectTransactions.anon.Address
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,6 +15,36 @@ object mod {
   @JSImport("@ethersproject/transactions", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  @js.native
+  sealed trait TransactionTypes extends StObject
+  @JSImport("@ethersproject/transactions", "TransactionTypes")
+  @js.native
+  object TransactionTypes extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[TransactionTypes & Double] = js.native
+    
+    @js.native
+    sealed trait eip1559
+      extends StObject
+         with TransactionTypes
+    /* 2 */ val eip1559: typings.ethersprojectTransactions.mod.TransactionTypes.eip1559 & Double = js.native
+    
+    @js.native
+    sealed trait eip2930
+      extends StObject
+         with TransactionTypes
+    /* 1 */ val eip2930: typings.ethersprojectTransactions.mod.TransactionTypes.eip2930 & Double = js.native
+    
+    @js.native
+    sealed trait legacy
+      extends StObject
+         with TransactionTypes
+    /* 0 */ val legacy: typings.ethersprojectTransactions.mod.TransactionTypes.legacy & Double = js.native
+  }
+  
+  inline def accessListify(value: AccessListish): AccessList = ^.asInstanceOf[js.Dynamic].applyDynamic("accessListify")(value.asInstanceOf[js.Any]).asInstanceOf[AccessList]
   
   inline def computeAddress(key: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("computeAddress")(key.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def computeAddress(key: BytesLike): String = ^.asInstanceOf[js.Dynamic].applyDynamic("computeAddress")(key.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -24,7 +56,13 @@ object mod {
   inline def serialize(transaction: UnsignedTransaction): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(transaction.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def serialize(transaction: UnsignedTransaction, signature: SignatureLike): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(transaction.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  type AccessList = js.Array[Address]
+  
+  type AccessListish = AccessList | (js.Array[js.Tuple2[String, js.Array[String]]]) | (Record[String, js.Array[String]])
+  
   trait Transaction extends StObject {
+    
+    var accessList: js.UndefOr[AccessList] = js.undefined
     
     var chainId: Double
     
@@ -34,9 +72,13 @@ object mod {
     
     var gasLimit: BigNumber
     
-    var gasPrice: BigNumber
+    var gasPrice: js.UndefOr[BigNumber] = js.undefined
     
     var hash: js.UndefOr[String] = js.undefined
+    
+    var maxFeePerGas: js.UndefOr[BigNumber] = js.undefined
+    
+    var maxPriorityFeePerGas: js.UndefOr[BigNumber] = js.undefined
     
     var nonce: Double
     
@@ -46,25 +88,26 @@ object mod {
     
     var to: js.UndefOr[String] = js.undefined
     
+    var `type`: js.UndefOr[Double | Null] = js.undefined
+    
     var v: js.UndefOr[Double] = js.undefined
     
     var value: BigNumber
   }
   object Transaction {
     
-    inline def apply(
-      chainId: Double,
-      data: String,
-      gasLimit: BigNumber,
-      gasPrice: BigNumber,
-      nonce: Double,
-      value: BigNumber
-    ): Transaction = {
-      val __obj = js.Dynamic.literal(chainId = chainId.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], gasLimit = gasLimit.asInstanceOf[js.Any], gasPrice = gasPrice.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    inline def apply(chainId: Double, data: String, gasLimit: BigNumber, nonce: Double, value: BigNumber): Transaction = {
+      val __obj = js.Dynamic.literal(chainId = chainId.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], gasLimit = gasLimit.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Transaction]
     }
     
     extension [Self <: Transaction](x: Self) {
+      
+      inline def setAccessList(value: AccessList): Self = StObject.set(x, "accessList", value.asInstanceOf[js.Any])
+      
+      inline def setAccessListUndefined: Self = StObject.set(x, "accessList", js.undefined)
+      
+      inline def setAccessListVarargs(value: Address*): Self = StObject.set(x, "accessList", js.Array(value*))
       
       inline def setChainId(value: Double): Self = StObject.set(x, "chainId", value.asInstanceOf[js.Any])
       
@@ -78,9 +121,19 @@ object mod {
       
       inline def setGasPrice(value: BigNumber): Self = StObject.set(x, "gasPrice", value.asInstanceOf[js.Any])
       
+      inline def setGasPriceUndefined: Self = StObject.set(x, "gasPrice", js.undefined)
+      
       inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
       inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+      
+      inline def setMaxFeePerGas(value: BigNumber): Self = StObject.set(x, "maxFeePerGas", value.asInstanceOf[js.Any])
+      
+      inline def setMaxFeePerGasUndefined: Self = StObject.set(x, "maxFeePerGas", js.undefined)
+      
+      inline def setMaxPriorityFeePerGas(value: BigNumber): Self = StObject.set(x, "maxPriorityFeePerGas", value.asInstanceOf[js.Any])
+      
+      inline def setMaxPriorityFeePerGasUndefined: Self = StObject.set(x, "maxPriorityFeePerGas", js.undefined)
       
       inline def setNonce(value: Double): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
@@ -96,6 +149,12 @@ object mod {
       
       inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
       
+      inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeNull: Self = StObject.set(x, "type", null)
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      
       inline def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
       
       inline def setVUndefined: Self = StObject.set(x, "v", js.undefined)
@@ -106,6 +165,8 @@ object mod {
   
   trait UnsignedTransaction extends StObject {
     
+    var accessList: js.UndefOr[AccessListish] = js.undefined
+    
     var chainId: js.UndefOr[Double] = js.undefined
     
     var data: js.UndefOr[BytesLike] = js.undefined
@@ -114,9 +175,15 @@ object mod {
     
     var gasPrice: js.UndefOr[BigNumberish] = js.undefined
     
+    var maxFeePerGas: js.UndefOr[BigNumberish] = js.undefined
+    
+    var maxPriorityFeePerGas: js.UndefOr[BigNumberish] = js.undefined
+    
     var nonce: js.UndefOr[Double] = js.undefined
     
     var to: js.UndefOr[String] = js.undefined
+    
+    var `type`: js.UndefOr[Double | Null] = js.undefined
     
     var value: js.UndefOr[BigNumberish] = js.undefined
   }
@@ -128,6 +195,12 @@ object mod {
     }
     
     extension [Self <: UnsignedTransaction](x: Self) {
+      
+      inline def setAccessList(value: AccessListish): Self = StObject.set(x, "accessList", value.asInstanceOf[js.Any])
+      
+      inline def setAccessListUndefined: Self = StObject.set(x, "accessList", js.undefined)
+      
+      inline def setAccessListVarargs(value: (Address | (js.Tuple2[String, js.Array[String]]))*): Self = StObject.set(x, "accessList", js.Array(value*))
       
       inline def setChainId(value: Double): Self = StObject.set(x, "chainId", value.asInstanceOf[js.Any])
       
@@ -145,6 +218,14 @@ object mod {
       
       inline def setGasPriceUndefined: Self = StObject.set(x, "gasPrice", js.undefined)
       
+      inline def setMaxFeePerGas(value: BigNumberish): Self = StObject.set(x, "maxFeePerGas", value.asInstanceOf[js.Any])
+      
+      inline def setMaxFeePerGasUndefined: Self = StObject.set(x, "maxFeePerGas", js.undefined)
+      
+      inline def setMaxPriorityFeePerGas(value: BigNumberish): Self = StObject.set(x, "maxPriorityFeePerGas", value.asInstanceOf[js.Any])
+      
+      inline def setMaxPriorityFeePerGasUndefined: Self = StObject.set(x, "maxPriorityFeePerGas", js.undefined)
+      
       inline def setNonce(value: Double): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
       inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
@@ -152,6 +233,12 @@ object mod {
       inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
       inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+      
+      inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeNull: Self = StObject.set(x, "type", null)
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
       inline def setValue(value: BigNumberish): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       

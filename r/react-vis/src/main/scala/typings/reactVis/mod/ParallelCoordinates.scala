@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-vis", "ParallelCoordinates")
 @js.native
-class ParallelCoordinates[T] protected ()
-  extends Component[ParallelCoordinatesProps & T, js.Object, js.Any] {
+open class ParallelCoordinates[T] protected ()
+  extends Component[ParallelCoordinatesProps & T, js.Object, Any] {
   def this(props: ParallelCoordinatesProps & T) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: ParallelCoordinatesProps & T, context: js.Any) = this()
+  def this(props: ParallelCoordinatesProps & T, context: Any) = this()
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.UniqueIdGenerator")
 @js.native
-class UniqueIdGenerator ()
+open class UniqueIdGenerator ()
   extends StObject
      with typings.babylonjs.BABYLON.UniqueIdGenerator
 /* static members */
@@ -18,6 +18,6 @@ object UniqueIdGenerator {
   
   @JSGlobal("BABYLON.UniqueIdGenerator._UniqueIdCounter")
   @js.native
-  def _UniqueIdCounter: js.Any = js.native
-  inline def _UniqueIdCounter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_UniqueIdCounter")(x.asInstanceOf[js.Any])
+  def _UniqueIdCounter: Any = js.native
+  inline def _UniqueIdCounter_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_UniqueIdCounter")(x.asInstanceOf[js.Any])
 }

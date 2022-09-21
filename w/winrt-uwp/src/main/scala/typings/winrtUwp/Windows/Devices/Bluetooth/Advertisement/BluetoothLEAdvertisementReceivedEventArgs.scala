@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +20,7 @@ trait BluetoothLEAdvertisementReceivedEventArgs extends StObject {
   var rawSignalStrengthInDBm: Double
   
   /** Gets the timestamp when the Received event occurred. */
-  var timestamp: Date
+  var timestamp: js.Date
 }
 object BluetoothLEAdvertisementReceivedEventArgs {
   
@@ -30,7 +29,7 @@ object BluetoothLEAdvertisementReceivedEventArgs {
     advertisementType: BluetoothLEAdvertisementType,
     bluetoothAddress: Double,
     rawSignalStrengthInDBm: Double,
-    timestamp: Date
+    timestamp: js.Date
   ): BluetoothLEAdvertisementReceivedEventArgs = {
     val __obj = js.Dynamic.literal(advertisement = advertisement.asInstanceOf[js.Any], advertisementType = advertisementType.asInstanceOf[js.Any], bluetoothAddress = bluetoothAddress.asInstanceOf[js.Any], rawSignalStrengthInDBm = rawSignalStrengthInDBm.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[BluetoothLEAdvertisementReceivedEventArgs]
@@ -46,6 +45,6 @@ object BluetoothLEAdvertisementReceivedEventArgs {
     
     inline def setRawSignalStrengthInDBm(value: Double): Self = StObject.set(x, "rawSignalStrengthInDBm", value.asInstanceOf[js.Any])
     
-    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

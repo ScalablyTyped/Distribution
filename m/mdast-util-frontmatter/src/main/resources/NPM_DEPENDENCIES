@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "mdast-util-frontmatter" : "1.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "mdast-util-frontmatter" : "1.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

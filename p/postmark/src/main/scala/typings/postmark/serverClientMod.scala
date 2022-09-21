@@ -48,7 +48,7 @@ import typings.postmark.statsMod.BounceCounts
 import typings.postmark.statsMod.BrowserUsageCounts
 import typings.postmark.statsMod.ClickCounts
 import typings.postmark.statsMod.ClickLocationCounts
-import typings.postmark.statsMod.ClickPlaformUsageCounts
+import typings.postmark.statsMod.ClickPlatformUsageCounts
 import typings.postmark.statsMod.EmailClientUsageCounts
 import typings.postmark.statsMod.EmailPlaformUsageCounts
 import typings.postmark.statsMod.EmailReadTimesCounts
@@ -74,7 +74,7 @@ object serverClientMod {
   
   @JSImport("postmark/dist/client/ServerClient", JSImport.Default)
   @js.native
-  class default protected () extends ServerClient {
+  open class default protected () extends ServerClient {
     /**
       * Create a client.
       *
@@ -345,10 +345,10 @@ object serverClientMod {
       * @param callback - If the callback is provided, it will be passed to the resulting promise as a continuation.
       * @returns A promise that will complete when the API responds (or an error occurs).
       */
-    def getClickPlatformUsage(): js.Promise[ClickPlaformUsageCounts] = js.native
-    def getClickPlatformUsage(filter: Unit, callback: Callback[ClickPlaformUsageCounts]): js.Promise[ClickPlaformUsageCounts] = js.native
-    def getClickPlatformUsage(filter: StatisticsFilteringParameters): js.Promise[ClickPlaformUsageCounts] = js.native
-    def getClickPlatformUsage(filter: StatisticsFilteringParameters, callback: Callback[ClickPlaformUsageCounts]): js.Promise[ClickPlaformUsageCounts] = js.native
+    def getClickPlatformUsage(): js.Promise[ClickPlatformUsageCounts] = js.native
+    def getClickPlatformUsage(filter: Unit, callback: Callback[ClickPlatformUsageCounts]): js.Promise[ClickPlatformUsageCounts] = js.native
+    def getClickPlatformUsage(filter: StatisticsFilteringParameters): js.Promise[ClickPlatformUsageCounts] = js.native
+    def getClickPlatformUsage(filter: StatisticsFilteringParameters, callback: Callback[ClickPlatformUsageCounts]): js.Promise[ClickPlatformUsageCounts] = js.native
     
     /**
       * Get bounce statistic information for the associated Server.
@@ -713,7 +713,7 @@ object serverClientMod {
     def sendEmailWithTemplate(template: TemplatedMessage, callback: Callback[MessageSendingResponse]): js.Promise[MessageSendingResponse] = js.native
     
     /**
-      * Unrchive a message stream on the associated server.
+      * Unarchive a message stream on the associated server.
       *
       * @param options - Configuration options to be used when creating message stream on the server.
       * @param callback - If the callback is provided, it will be passed to the resulting promise as a continuation.

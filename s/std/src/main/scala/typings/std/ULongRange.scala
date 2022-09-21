@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ULongRange extends StObject {
   
+  /* standard dom */
   var max: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var min: js.UndefOr[Double] = js.undefined
 }
 object ULongRange {

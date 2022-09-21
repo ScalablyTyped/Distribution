@@ -32,6 +32,6 @@ object IProgressMessage {
     
     inline def setQMessageParameters(value: js.Array[String]): Self = StObject.set(x, "qMessageParameters", value.asInstanceOf[js.Any])
     
-    inline def setQMessageParametersVarargs(value: String*): Self = StObject.set(x, "qMessageParameters", js.Array(value :_*))
+    inline def setQMessageParametersVarargs(value: String*): Self = StObject.set(x, "qMessageParameters", js.Array(value*))
   }
 }

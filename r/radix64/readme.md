@@ -11,9 +11,9 @@ radix64, library to convert Unsigned Interger into a base64 like String
 | Full name          | radix64 |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 942 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 74.0 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/maxired/radix64#readme)

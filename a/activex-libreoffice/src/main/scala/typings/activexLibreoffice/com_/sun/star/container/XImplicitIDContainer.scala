@@ -14,7 +14,7 @@ trait XImplicitIDContainer
     * adds a new object to the container and generates an implicit (unique) ID for this object.
     * @returns the implicit ID for the new object.
     */
-  def addWithImplicitID(aElement: js.Any): String
+  def addWithImplicitID(aElement: Any): String
   
   /** removes an object from the container which is specified by an implicit (unique) identifier. */
   def removeByImplicitID(ID: String): Unit
@@ -23,11 +23,11 @@ object XImplicitIDContainer {
   
   inline def apply(
     acquire: () => Unit,
-    addWithImplicitID: js.Any => String,
-    queryInterface: `type` => js.Any,
+    addWithImplicitID: Any => String,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeByImplicitID: String => Unit,
-    replaceByUniqueID: (String, js.Any) => Unit
+    replaceByUniqueID: (String, Any) => Unit
   ): XImplicitIDContainer = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addWithImplicitID = js.Any.fromFunction1(addWithImplicitID), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeByImplicitID = js.Any.fromFunction1(removeByImplicitID), replaceByUniqueID = js.Any.fromFunction2(replaceByUniqueID))
     __obj.asInstanceOf[XImplicitIDContainer]
@@ -35,7 +35,7 @@ object XImplicitIDContainer {
   
   extension [Self <: XImplicitIDContainer](x: Self) {
     
-    inline def setAddWithImplicitID(value: js.Any => String): Self = StObject.set(x, "addWithImplicitID", js.Any.fromFunction1(value))
+    inline def setAddWithImplicitID(value: Any => String): Self = StObject.set(x, "addWithImplicitID", js.Any.fromFunction1(value))
     
     inline def setRemoveByImplicitID(value: String => Unit): Self = StObject.set(x, "removeByImplicitID", js.Any.fromFunction1(value))
   }

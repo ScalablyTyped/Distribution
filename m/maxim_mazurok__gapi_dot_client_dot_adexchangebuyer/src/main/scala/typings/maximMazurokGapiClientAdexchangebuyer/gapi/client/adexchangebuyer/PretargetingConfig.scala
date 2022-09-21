@@ -127,49 +127,49 @@ object PretargetingConfig {
     
     inline def setCreativeTypeUndefined: Self = StObject.set(x, "creativeType", js.undefined)
     
-    inline def setCreativeTypeVarargs(value: String*): Self = StObject.set(x, "creativeType", js.Array(value :_*))
+    inline def setCreativeTypeVarargs(value: String*): Self = StObject.set(x, "creativeType", js.Array(value*))
     
     inline def setDimensions(value: js.Array[Width]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
     inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
-    inline def setDimensionsVarargs(value: Width*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: Width*): Self = StObject.set(x, "dimensions", js.Array(value*))
     
     inline def setExcludedContentLabels(value: js.Array[String]): Self = StObject.set(x, "excludedContentLabels", value.asInstanceOf[js.Any])
     
     inline def setExcludedContentLabelsUndefined: Self = StObject.set(x, "excludedContentLabels", js.undefined)
     
-    inline def setExcludedContentLabelsVarargs(value: String*): Self = StObject.set(x, "excludedContentLabels", js.Array(value :_*))
+    inline def setExcludedContentLabelsVarargs(value: String*): Self = StObject.set(x, "excludedContentLabels", js.Array(value*))
     
     inline def setExcludedGeoCriteriaIds(value: js.Array[String]): Self = StObject.set(x, "excludedGeoCriteriaIds", value.asInstanceOf[js.Any])
     
     inline def setExcludedGeoCriteriaIdsUndefined: Self = StObject.set(x, "excludedGeoCriteriaIds", js.undefined)
     
-    inline def setExcludedGeoCriteriaIdsVarargs(value: String*): Self = StObject.set(x, "excludedGeoCriteriaIds", js.Array(value :_*))
+    inline def setExcludedGeoCriteriaIdsVarargs(value: String*): Self = StObject.set(x, "excludedGeoCriteriaIds", js.Array(value*))
     
     inline def setExcludedPlacements(value: js.Array[Token]): Self = StObject.set(x, "excludedPlacements", value.asInstanceOf[js.Any])
     
     inline def setExcludedPlacementsUndefined: Self = StObject.set(x, "excludedPlacements", js.undefined)
     
-    inline def setExcludedPlacementsVarargs(value: Token*): Self = StObject.set(x, "excludedPlacements", js.Array(value :_*))
+    inline def setExcludedPlacementsVarargs(value: Token*): Self = StObject.set(x, "excludedPlacements", js.Array(value*))
     
     inline def setExcludedUserLists(value: js.Array[String]): Self = StObject.set(x, "excludedUserLists", value.asInstanceOf[js.Any])
     
     inline def setExcludedUserListsUndefined: Self = StObject.set(x, "excludedUserLists", js.undefined)
     
-    inline def setExcludedUserListsVarargs(value: String*): Self = StObject.set(x, "excludedUserLists", js.Array(value :_*))
+    inline def setExcludedUserListsVarargs(value: String*): Self = StObject.set(x, "excludedUserLists", js.Array(value*))
     
     inline def setExcludedVerticals(value: js.Array[String]): Self = StObject.set(x, "excludedVerticals", value.asInstanceOf[js.Any])
     
     inline def setExcludedVerticalsUndefined: Self = StObject.set(x, "excludedVerticals", js.undefined)
     
-    inline def setExcludedVerticalsVarargs(value: String*): Self = StObject.set(x, "excludedVerticals", js.Array(value :_*))
+    inline def setExcludedVerticalsVarargs(value: String*): Self = StObject.set(x, "excludedVerticals", js.Array(value*))
     
     inline def setGeoCriteriaIds(value: js.Array[String]): Self = StObject.set(x, "geoCriteriaIds", value.asInstanceOf[js.Any])
     
     inline def setGeoCriteriaIdsUndefined: Self = StObject.set(x, "geoCriteriaIds", js.undefined)
     
-    inline def setGeoCriteriaIdsVarargs(value: String*): Self = StObject.set(x, "geoCriteriaIds", js.Array(value :_*))
+    inline def setGeoCriteriaIdsVarargs(value: String*): Self = StObject.set(x, "geoCriteriaIds", js.Array(value*))
     
     inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
@@ -183,7 +183,7 @@ object PretargetingConfig {
     
     inline def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
     
-    inline def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value :_*))
+    inline def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value*))
     
     inline def setMaximumQps(value: String): Self = StObject.set(x, "maximumQps", value.asInstanceOf[js.Any])
     
@@ -197,66 +197,66 @@ object PretargetingConfig {
     
     inline def setMobileCarriersUndefined: Self = StObject.set(x, "mobileCarriers", js.undefined)
     
-    inline def setMobileCarriersVarargs(value: String*): Self = StObject.set(x, "mobileCarriers", js.Array(value :_*))
+    inline def setMobileCarriersVarargs(value: String*): Self = StObject.set(x, "mobileCarriers", js.Array(value*))
     
     inline def setMobileDevices(value: js.Array[String]): Self = StObject.set(x, "mobileDevices", value.asInstanceOf[js.Any])
     
     inline def setMobileDevicesUndefined: Self = StObject.set(x, "mobileDevices", js.undefined)
     
-    inline def setMobileDevicesVarargs(value: String*): Self = StObject.set(x, "mobileDevices", js.Array(value :_*))
+    inline def setMobileDevicesVarargs(value: String*): Self = StObject.set(x, "mobileDevices", js.Array(value*))
     
     inline def setMobileOperatingSystemVersions(value: js.Array[String]): Self = StObject.set(x, "mobileOperatingSystemVersions", value.asInstanceOf[js.Any])
     
     inline def setMobileOperatingSystemVersionsUndefined: Self = StObject.set(x, "mobileOperatingSystemVersions", js.undefined)
     
-    inline def setMobileOperatingSystemVersionsVarargs(value: String*): Self = StObject.set(x, "mobileOperatingSystemVersions", js.Array(value :_*))
+    inline def setMobileOperatingSystemVersionsVarargs(value: String*): Self = StObject.set(x, "mobileOperatingSystemVersions", js.Array(value*))
     
     inline def setPlacements(value: js.Array[Token]): Self = StObject.set(x, "placements", value.asInstanceOf[js.Any])
     
     inline def setPlacementsUndefined: Self = StObject.set(x, "placements", js.undefined)
     
-    inline def setPlacementsVarargs(value: Token*): Self = StObject.set(x, "placements", js.Array(value :_*))
+    inline def setPlacementsVarargs(value: Token*): Self = StObject.set(x, "placements", js.Array(value*))
     
     inline def setPlatforms(value: js.Array[String]): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
     
     inline def setPlatformsUndefined: Self = StObject.set(x, "platforms", js.undefined)
     
-    inline def setPlatformsVarargs(value: String*): Self = StObject.set(x, "platforms", js.Array(value :_*))
+    inline def setPlatformsVarargs(value: String*): Self = StObject.set(x, "platforms", js.Array(value*))
     
     inline def setSupportedCreativeAttributes(value: js.Array[String]): Self = StObject.set(x, "supportedCreativeAttributes", value.asInstanceOf[js.Any])
     
     inline def setSupportedCreativeAttributesUndefined: Self = StObject.set(x, "supportedCreativeAttributes", js.undefined)
     
-    inline def setSupportedCreativeAttributesVarargs(value: String*): Self = StObject.set(x, "supportedCreativeAttributes", js.Array(value :_*))
+    inline def setSupportedCreativeAttributesVarargs(value: String*): Self = StObject.set(x, "supportedCreativeAttributes", js.Array(value*))
     
     inline def setUserIdentifierDataRequired(value: js.Array[String]): Self = StObject.set(x, "userIdentifierDataRequired", value.asInstanceOf[js.Any])
     
     inline def setUserIdentifierDataRequiredUndefined: Self = StObject.set(x, "userIdentifierDataRequired", js.undefined)
     
-    inline def setUserIdentifierDataRequiredVarargs(value: String*): Self = StObject.set(x, "userIdentifierDataRequired", js.Array(value :_*))
+    inline def setUserIdentifierDataRequiredVarargs(value: String*): Self = StObject.set(x, "userIdentifierDataRequired", js.Array(value*))
     
     inline def setUserLists(value: js.Array[String]): Self = StObject.set(x, "userLists", value.asInstanceOf[js.Any])
     
     inline def setUserListsUndefined: Self = StObject.set(x, "userLists", js.undefined)
     
-    inline def setUserListsVarargs(value: String*): Self = StObject.set(x, "userLists", js.Array(value :_*))
+    inline def setUserListsVarargs(value: String*): Self = StObject.set(x, "userLists", js.Array(value*))
     
     inline def setVendorTypes(value: js.Array[String]): Self = StObject.set(x, "vendorTypes", value.asInstanceOf[js.Any])
     
     inline def setVendorTypesUndefined: Self = StObject.set(x, "vendorTypes", js.undefined)
     
-    inline def setVendorTypesVarargs(value: String*): Self = StObject.set(x, "vendorTypes", js.Array(value :_*))
+    inline def setVendorTypesVarargs(value: String*): Self = StObject.set(x, "vendorTypes", js.Array(value*))
     
     inline def setVerticals(value: js.Array[String]): Self = StObject.set(x, "verticals", value.asInstanceOf[js.Any])
     
     inline def setVerticalsUndefined: Self = StObject.set(x, "verticals", js.undefined)
     
-    inline def setVerticalsVarargs(value: String*): Self = StObject.set(x, "verticals", js.Array(value :_*))
+    inline def setVerticalsVarargs(value: String*): Self = StObject.set(x, "verticals", js.Array(value*))
     
     inline def setVideoPlayerSizes(value: js.Array[AspectRatio]): Self = StObject.set(x, "videoPlayerSizes", value.asInstanceOf[js.Any])
     
     inline def setVideoPlayerSizesUndefined: Self = StObject.set(x, "videoPlayerSizes", js.undefined)
     
-    inline def setVideoPlayerSizesVarargs(value: AspectRatio*): Self = StObject.set(x, "videoPlayerSizes", js.Array(value :_*))
+    inline def setVideoPlayerSizesVarargs(value: AspectRatio*): Self = StObject.set(x, "videoPlayerSizes", js.Array(value*))
   }
 }

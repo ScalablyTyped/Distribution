@@ -105,7 +105,7 @@ object outboundMessageClickMod {
       
       inline def setClicks(value: js.Array[ClickEvent]): Self = StObject.set(x, "Clicks", value.asInstanceOf[js.Any])
       
-      inline def setClicksVarargs(value: ClickEvent*): Self = StObject.set(x, "Clicks", js.Array(value :_*))
+      inline def setClicksVarargs(value: ClickEvent*): Self = StObject.set(x, "Clicks", js.Array(value*))
       
       inline def setTotalCount(value: Double): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     }

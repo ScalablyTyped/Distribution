@@ -10,10 +10,10 @@ Proxies nodejs require in order to allow overriding dependencies during testing.
 | ------------------ | :-------------: |
 | Full name          | proxyquire |
 | Keywords           | require, dependency, injection, di, inject, swap, test, mock, stub |
-| # releases         | 4 |
-| # dependents       | 192 |
-| # downloads        | 19533139 |
-| # stars            | 76 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2941207.3333333335 |
+| # stars            | 2686.0 |
 
 ## Links
 - [Homepage](https://github.com/thlorenz/proxyquire#readme)

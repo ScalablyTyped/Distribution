@@ -6,41 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object dsnMod {
   
-  trait Dsn
-    extends StObject
-       with DsnComponents {
-    
-    /**
-      * Renders the string representation of this Dsn.
-      *
-      * By default, this will render the public representation without the password
-      * component. To get the deprecated private representation, set `withPassword`
-      * to true.
-      *
-      * @param withPassword When set to true, the password will be included.
-      */
-    def toString(withPassword: Boolean): String
-  }
-  object Dsn {
-    
-    inline def apply(
-      host: String,
-      projectId: String,
-      protocol: DsnProtocol,
-      toString_ : Boolean => String,
-      user: String
-    ): Dsn = {
-      val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-      __obj.updateDynamic("toString")(js.Any.fromFunction1(toString_))
-      __obj.asInstanceOf[Dsn]
-    }
-    
-    extension [Self <: Dsn](x: Self) {
-      
-      inline def setToString_(value: Boolean => String): Self = StObject.set(x, "toString", js.Any.fromFunction1(value))
-    }
-  }
-  
   trait DsnComponents extends StObject {
     
     /** Hostname of the Sentry instance. */
@@ -62,12 +27,12 @@ object dsnMod {
     var protocol: DsnProtocol
     
     /** Public authorization key. */
-    var user: String
+    var publicKey: js.UndefOr[String] = js.undefined
   }
   object DsnComponents {
     
-    inline def apply(host: String, projectId: String, protocol: DsnProtocol, user: String): DsnComponents = {
-      val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
+    inline def apply(host: String, projectId: String, protocol: DsnProtocol): DsnComponents = {
+      val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
       __obj.asInstanceOf[DsnComponents]
     }
     
@@ -91,7 +56,9 @@ object dsnMod {
       
       inline def setProtocol(value: DsnProtocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setPublicKey(value: String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+      
+      inline def setPublicKeyUndefined: Self = StObject.set(x, "publicKey", js.undefined)
     }
   }
   

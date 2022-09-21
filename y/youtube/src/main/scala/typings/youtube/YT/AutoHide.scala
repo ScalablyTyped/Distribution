@@ -1,32 +1,36 @@
 package typings.youtube.YT
 
-import typings.youtube.youtubeNumbers.`0`
-import typings.youtube.youtubeNumbers.`1`
-import typings.youtube.youtubeNumbers.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.youtube.youtubeNumbers.`0`
-  - typings.youtube.youtubeNumbers.`1`
-  - typings.youtube.youtubeNumbers.`2`
-*/
-trait AutoHide extends StObject
-object AutoHide {
+@js.native
+sealed trait AutoHide extends StObject
+@JSGlobal("YT.AutoHide")
+@js.native
+object AutoHide extends StObject {
   
   /**
     * Controls are visible throughout the video
     */
-  inline def AlwaysVisible: `0` = 0.asInstanceOf[`0`]
+  @js.native
+  sealed trait AlwaysVisible
+    extends StObject
+       with AutoHide
   
   /**
     * Progress bar and player controls slide out of view after a couple of seconds.
     */
-  inline def HideAllControls: `1` = 1.asInstanceOf[`1`]
+  @js.native
+  sealed trait HideAllControls
+    extends StObject
+       with AutoHide
   
   /**
     * Progress bar fades out while the player controls remain visible.
     */
-  inline def HideProgressBar: `2` = 2.asInstanceOf[`2`]
+  @js.native
+  sealed trait HideProgressBar
+    extends StObject
+       with AutoHide
 }

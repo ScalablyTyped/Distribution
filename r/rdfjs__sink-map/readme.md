@@ -10,10 +10,10 @@ Map for RDFJS Sinks including shortcut methods
 | ------------------ | :-------------: |
 | Full name          | @rdfjs/sink-map |
 | Keywords           | map, rdf, rdfjs, sink |
-| # releases         | 4 |
-| # dependents       | 1 |
-| # downloads        | 13447 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 20757.333333333332 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/rdfjs-base/sink-map)

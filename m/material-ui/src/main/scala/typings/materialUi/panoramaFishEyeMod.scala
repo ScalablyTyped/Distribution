@@ -10,10 +10,10 @@ object panoramaFishEyeMod {
   
   @JSImport("material-ui/svg-icons/image/panorama-fish-eye", JSImport.Default)
   @js.native
-  class default () extends ImagePanoramaFishEye
+  open class default () extends ImagePanoramaFishEye
   
   @JSImport("material-ui/svg-icons/image/panorama-fish-eye", "ImagePanoramaFishEye")
   @js.native
-  class ImagePanoramaFishEye ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImagePanoramaFishEye ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

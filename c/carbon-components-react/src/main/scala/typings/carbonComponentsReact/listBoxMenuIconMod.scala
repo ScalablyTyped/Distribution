@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.Shortcut
 import typings.carbonComponentsReact.translationMod._CarbonTranslationKey
 import typings.carbonComponentsReact.typingsSharedMod.InternationalProps
 import typings.react.mod.FC
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ object listBoxMenuIconMod extends Shortcut {
   
   trait ListBoxMenuIconProps
     extends StObject
-       with InternationalProps[ListBoxMenuIconTranslationKey] {
+       with InternationalProps[ListBoxMenuIconTranslationKey, Record[String, Any]] {
     
     var isOpen: Boolean
   }

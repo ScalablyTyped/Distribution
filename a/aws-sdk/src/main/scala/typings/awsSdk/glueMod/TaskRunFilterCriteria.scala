@@ -9,12 +9,12 @@ trait TaskRunFilterCriteria extends StObject {
   /**
     * Filter on task runs started after this date.
     */
-  var StartedAfter: js.UndefOr[Timestamp] = js.undefined
+  var StartedAfter: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Filter on task runs started before this date.
     */
-  var StartedBefore: js.UndefOr[Timestamp] = js.undefined
+  var StartedBefore: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The current status of the task run.
@@ -35,11 +35,11 @@ object TaskRunFilterCriteria {
   
   extension [Self <: TaskRunFilterCriteria](x: Self) {
     
-    inline def setStartedAfter(value: Timestamp): Self = StObject.set(x, "StartedAfter", value.asInstanceOf[js.Any])
+    inline def setStartedAfter(value: js.Date): Self = StObject.set(x, "StartedAfter", value.asInstanceOf[js.Any])
     
     inline def setStartedAfterUndefined: Self = StObject.set(x, "StartedAfter", js.undefined)
     
-    inline def setStartedBefore(value: Timestamp): Self = StObject.set(x, "StartedBefore", value.asInstanceOf[js.Any])
+    inline def setStartedBefore(value: js.Date): Self = StObject.set(x, "StartedBefore", value.asInstanceOf[js.Any])
     
     inline def setStartedBeforeUndefined: Self = StObject.set(x, "StartedBefore", js.undefined)
     

@@ -7,32 +7,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CurrentInstance extends StObject {
   
   /**
-    *  The currency code that AWS used to calculate the costs for this instance.
+    * The currency code that Amazon Web Services used to calculate the costs for this instance.
     */
   var CurrencyCode: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * The name you've given an instance. This field will show as blank if you haven't given the instance a name.
+    * The name that you given an instance. This field shows as blank if you haven't given the instance a name.
     */
   var InstanceName: js.UndefOr[GenericString] = js.undefined
   
   /**
-    *  Current On-Demand cost of operating this instance on a monthly basis.
+    * The current On-Demand cost of operating this instance on a monthly basis.
     */
   var MonthlyCost: js.UndefOr[GenericString] = js.undefined
   
   /**
-    *  Number of hours during the lookback period billed at On-Demand rates.
+    * The number of hours during the lookback period that's billed at On-Demand rates.
     */
   var OnDemandHoursInLookbackPeriod: js.UndefOr[GenericString] = js.undefined
   
   /**
-    *  Number of hours during the lookback period covered by reservations.
+    * The number of hours during the lookback period that's covered by reservations.
     */
   var ReservationCoveredHoursInLookbackPeriod: js.UndefOr[GenericString] = js.undefined
   
   /**
-    *  Details about the resource and utilization.
+    * Details about the resource and utilization.
     */
   var ResourceDetails: js.UndefOr[typings.awsSdk.costexplorerMod.ResourceDetails] = js.undefined
   
@@ -42,22 +42,22 @@ trait CurrentInstance extends StObject {
   var ResourceId: js.UndefOr[GenericString] = js.undefined
   
   /**
-    *  Utilization information of the current instance during the lookback period.
+    * Utilization information of the current instance during the lookback period.
     */
   var ResourceUtilization: js.UndefOr[typings.awsSdk.costexplorerMod.ResourceUtilization] = js.undefined
   
   /**
-    * Number of hours during the lookback period covered by Savings Plans.
+    * The number of hours during the lookback period that's covered by Savings Plans.
     */
   var SavingsPlansCoveredHoursInLookbackPeriod: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * Cost allocation resource tags applied to the instance.
+    * Cost allocation resource tags that are applied to the instance.
     */
   var Tags: js.UndefOr[TagValuesList] = js.undefined
   
   /**
-    *  The total number of hours the instance ran during the lookback period.
+    * The total number of hours that the instance ran during the lookback period.
     */
   var TotalRunningHoursInLookbackPeriod: js.UndefOr[GenericString] = js.undefined
 }
@@ -110,7 +110,7 @@ object CurrentInstance {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: TagValues*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: TagValues*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setTotalRunningHoursInLookbackPeriod(value: GenericString): Self = StObject.set(x, "TotalRunningHoursInLookbackPeriod", value.asInstanceOf[js.Any])
     

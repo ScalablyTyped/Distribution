@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface describing the data returned by calling "shapeDataItem.toJSON()". */
+/** An interface describing the data returned by calling `shapeDataItem.toJSON()`. */
 trait ShapeDataItemData extends StObject {
   
   /**

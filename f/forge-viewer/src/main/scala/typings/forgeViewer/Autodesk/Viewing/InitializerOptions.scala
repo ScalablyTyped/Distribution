@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait InitializerOptions
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var accessToken: js.UndefOr[String] = js.undefined
   
@@ -24,6 +24,8 @@ trait InitializerOptions
   
   var language: js.UndefOr[String] = js.undefined
   
+  var optOutTrackingByDefault: js.UndefOr[Boolean] = js.undefined
+  
   var refreshToken: js.UndefOr[
     js.Function1[
       /* callback */ js.UndefOr[js.Function2[/* accessToken */ String, /* expires */ Double, Unit]], 
@@ -31,9 +33,13 @@ trait InitializerOptions
     ]
   ] = js.undefined
   
+  var shouldInitializeAuth: js.UndefOr[Boolean] = js.undefined
+  
   var useADP: js.UndefOr[Boolean] = js.undefined
   
   var useConsolidation: js.UndefOr[Boolean] = js.undefined
+  
+  var useCredentials: js.UndefOr[Boolean] = js.undefined
   
   var webGLHelpLink: js.UndefOr[String] = js.undefined
 }
@@ -68,11 +74,19 @@ object InitializerOptions {
     
     inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
+    inline def setOptOutTrackingByDefault(value: Boolean): Self = StObject.set(x, "optOutTrackingByDefault", value.asInstanceOf[js.Any])
+    
+    inline def setOptOutTrackingByDefaultUndefined: Self = StObject.set(x, "optOutTrackingByDefault", js.undefined)
+    
     inline def setRefreshToken(
       value: /* callback */ js.UndefOr[js.Function2[/* accessToken */ String, /* expires */ Double, Unit]] => Unit
     ): Self = StObject.set(x, "refreshToken", js.Any.fromFunction1(value))
     
     inline def setRefreshTokenUndefined: Self = StObject.set(x, "refreshToken", js.undefined)
+    
+    inline def setShouldInitializeAuth(value: Boolean): Self = StObject.set(x, "shouldInitializeAuth", value.asInstanceOf[js.Any])
+    
+    inline def setShouldInitializeAuthUndefined: Self = StObject.set(x, "shouldInitializeAuth", js.undefined)
     
     inline def setUseADP(value: Boolean): Self = StObject.set(x, "useADP", value.asInstanceOf[js.Any])
     
@@ -81,6 +95,10 @@ object InitializerOptions {
     inline def setUseConsolidation(value: Boolean): Self = StObject.set(x, "useConsolidation", value.asInstanceOf[js.Any])
     
     inline def setUseConsolidationUndefined: Self = StObject.set(x, "useConsolidation", js.undefined)
+    
+    inline def setUseCredentials(value: Boolean): Self = StObject.set(x, "useCredentials", value.asInstanceOf[js.Any])
+    
+    inline def setUseCredentialsUndefined: Self = StObject.set(x, "useCredentials", js.undefined)
     
     inline def setWebGLHelpLink(value: String): Self = StObject.set(x, "webGLHelpLink", value.asInstanceOf[js.Any])
     

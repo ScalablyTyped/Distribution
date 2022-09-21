@@ -14,6 +14,8 @@ trait typeCreatePCClassRendererParams
   /**
     * The number of points per inch in the view.
     *
+    * @default 25
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createPCClassRenderer)
     */
   var density: js.UndefOr[Double] = js.undefined
@@ -41,6 +43,8 @@ trait typeCreatePCClassRendererParams
   
   /**
     * The size of each point expressed as a percentage.
+    *
+    * @default 100%
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createPCClassRenderer)
     */

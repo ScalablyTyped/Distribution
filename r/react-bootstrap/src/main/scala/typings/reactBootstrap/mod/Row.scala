@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap", "Row")
 @js.native
-class Row ()
+open class Row ()
   extends typings.reactBootstrap.libMod.Row

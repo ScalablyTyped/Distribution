@@ -9,9 +9,8 @@ object wingBlankDemoBasicNativeMod {
   
   @JSImport("antd-mobile-rn/lib/wing-blank/demo/basic.native", JSImport.Default)
   @js.native
-  class default () extends WingBlankExample
+  open class default () extends WingBlankExample
   
   @js.native
-  trait WingBlankExample
-    extends Component[js.Any, js.Any, js.Any]
+  trait WingBlankExample extends Component[Any, Any, Any]
 }

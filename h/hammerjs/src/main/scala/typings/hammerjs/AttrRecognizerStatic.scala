@@ -8,11 +8,11 @@ trait AttrRecognizerStatic extends StObject {
   
   def attrTest(input: HammerInput): Boolean
   
-  def process(input: HammerInput): js.Any
+  def process(input: HammerInput): Any
 }
 object AttrRecognizerStatic {
   
-  inline def apply(attrTest: HammerInput => Boolean, process: HammerInput => js.Any): AttrRecognizerStatic = {
+  inline def apply(attrTest: HammerInput => Boolean, process: HammerInput => Any): AttrRecognizerStatic = {
     val __obj = js.Dynamic.literal(attrTest = js.Any.fromFunction1(attrTest), process = js.Any.fromFunction1(process))
     __obj.asInstanceOf[AttrRecognizerStatic]
   }
@@ -21,6 +21,6 @@ object AttrRecognizerStatic {
     
     inline def setAttrTest(value: HammerInput => Boolean): Self = StObject.set(x, "attrTest", js.Any.fromFunction1(value))
     
-    inline def setProcess(value: HammerInput => js.Any): Self = StObject.set(x, "process", js.Any.fromFunction1(value))
+    inline def setProcess(value: HammerInput => Any): Self = StObject.set(x, "process", js.Any.fromFunction1(value))
   }
 }

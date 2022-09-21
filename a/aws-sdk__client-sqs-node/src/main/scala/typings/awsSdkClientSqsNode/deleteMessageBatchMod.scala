@@ -8,5 +8,5 @@ object deleteMessageBatchMod {
   
   @JSImport("@aws-sdk/client-sqs-node/model/DeleteMessageBatch", "DeleteMessageBatch")
   @js.native
-  val DeleteMessageBatch: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val DeleteMessageBatch: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

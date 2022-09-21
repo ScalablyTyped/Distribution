@@ -4,14 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A single Drive activity comprising one or more Actions by one or more
-  * Actors on one or more Targets. Some Action groupings occur spontaneously,
-  * such as moving an item into a shared folder triggering a permission change.
-  * Other groupings of related Actions, such as multiple Actors editing one
-  * item or moving multiple files into a new folder, are controlled by the
-  * selection of a ConsolidationStrategy in the QueryDriveActivityRequest.
-  */
 trait SchemaDriveActivity extends StObject {
   
   /**
@@ -25,16 +17,12 @@ trait SchemaDriveActivity extends StObject {
   var actors: js.UndefOr[js.Array[SchemaActor]] = js.undefined
   
   /**
-    * Key information about the primary action for this activity. This is
-    * either representative, or the most important, of all actions in the
-    * activity, according to the ConsolidationStrategy in the request.
+    * Key information about the primary action for this activity. This is either representative, or the most important, of all actions in the activity, according to the ConsolidationStrategy in the request.
     */
   var primaryActionDetail: js.UndefOr[SchemaActionDetail] = js.undefined
   
   /**
-    * All Drive objects this activity is about (e.g. file, folder, Team Drive).
-    * This represents the state of the target immediately after the actions
-    * occurred.
+    * All Google Drive objects this activity is about (e.g. file, folder, drive). This represents the state of the target immediately after the actions occurred.
     */
   var targets: js.UndefOr[js.Array[SchemaTarget]] = js.undefined
   
@@ -46,7 +34,7 @@ trait SchemaDriveActivity extends StObject {
   /**
     * The activity occurred at this specific time.
     */
-  var timestamp: js.UndefOr[String] = js.undefined
+  var timestamp: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaDriveActivity {
   
@@ -61,13 +49,13 @@ object SchemaDriveActivity {
     
     inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    inline def setActionsVarargs(value: SchemaAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: SchemaAction*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setActors(value: js.Array[SchemaActor]): Self = StObject.set(x, "actors", value.asInstanceOf[js.Any])
     
     inline def setActorsUndefined: Self = StObject.set(x, "actors", js.undefined)
     
-    inline def setActorsVarargs(value: SchemaActor*): Self = StObject.set(x, "actors", js.Array(value :_*))
+    inline def setActorsVarargs(value: SchemaActor*): Self = StObject.set(x, "actors", js.Array(value*))
     
     inline def setPrimaryActionDetail(value: SchemaActionDetail): Self = StObject.set(x, "primaryActionDetail", value.asInstanceOf[js.Any])
     
@@ -77,13 +65,15 @@ object SchemaDriveActivity {
     
     inline def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
     
-    inline def setTargetsVarargs(value: SchemaTarget*): Self = StObject.set(x, "targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: SchemaTarget*): Self = StObject.set(x, "targets", js.Array(value*))
     
     inline def setTimeRange(value: SchemaTimeRange): Self = StObject.set(x, "timeRange", value.asInstanceOf[js.Any])
     
     inline def setTimeRangeUndefined: Self = StObject.set(x, "timeRange", js.undefined)
     
     inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    
+    inline def setTimestampNull: Self = StObject.set(x, "timestamp", null)
     
     inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
   }

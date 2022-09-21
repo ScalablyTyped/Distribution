@@ -1,6 +1,9 @@
 package typings.webpackHotClient
 
 import typings.node.netMod.Server
+import typings.webpack.mod.Compiler
+import typings.webpack.mod.MultiCompiler
+import typings.webpack.mod.Stats
 import typings.webpackHotClient.anon.ReadonlyOptions
 import typings.webpackHotClient.webpackHotClientStrings.debug
 import typings.webpackHotClient.webpackHotClientStrings.error
@@ -8,16 +11,15 @@ import typings.webpackHotClient.webpackHotClientStrings.info
 import typings.webpackHotClient.webpackHotClientStrings.silent
 import typings.webpackHotClient.webpackHotClientStrings.trace
 import typings.webpackHotClient.webpackHotClientStrings.warn
+import typings.ws.mod.WebSocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(
-    compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.MultiCompiler */ js.Any,
-    options: Options
-  ): Client = (^.asInstanceOf[js.Dynamic].apply(compiler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Client]
+  inline def apply(compiler: Compiler, options: Options): Client = (^.asInstanceOf[js.Dynamic].apply(compiler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Client]
+  inline def apply(compiler: MultiCompiler, options: Options): Client = (^.asInstanceOf[js.Dynamic].apply(compiler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Client]
   
   @JSImport("webpack-hot-client", JSImport.Namespace)
   @js.native
@@ -71,7 +73,7 @@ object mod {
     
     /** Webpack stats configuration */
     var stats: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Options.Stats */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Options.Stats */ Any
       ] = js.undefined
     
     /** Webpack compile target */
@@ -127,7 +129,7 @@ object mod {
       inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
       
       inline def setStats(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Options.Stats */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Options.Stats */ Any
       ): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
       
       inline def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
@@ -136,21 +138,19 @@ object mod {
       
       inline def setValidTargetsUndefined: Self = StObject.set(x, "validTargets", js.undefined)
       
-      inline def setValidTargetsVarargs(value: String*): Self = StObject.set(x, "validTargets", js.Array(value :_*))
+      inline def setValidTargetsVarargs(value: String*): Self = StObject.set(x, "validTargets", js.Array(value*))
     }
   }
   
   @js.native
   trait WebSocketServer
-    extends typings.ws.mod.Server {
+    extends typings.ws.mod.Server[WebSocket] {
     
     /** Forwards a message to each open client on the WebSocketServer */
-    def broadcast(data: js.Any): Unit = js.native
+    def broadcast(data: Any): Unit = js.native
     
     /** Processes stats and sends messages through broadcast() */
-    def send(
-      stats: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Stats */ js.Any
-    ): Unit = js.native
+    def send(stats: Stats): Unit = js.native
   }
   
   trait WebpackHotHost extends StObject {

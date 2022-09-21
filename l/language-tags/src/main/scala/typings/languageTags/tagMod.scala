@@ -24,7 +24,7 @@ object tagMod {
   
   @JSImport("language-tags/Tag", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Tag {
     
@@ -64,7 +64,7 @@ object tagMod {
       * Find a subtag of the given type from those making up the tag.
       */
     /* CompleteClass */
-    override def find(`type`: String): typings.languageTags.subtagMod.^ = js.native
+    override def find(`type`: String): js.UndefOr[typings.languageTags.subtagMod.^] = js.native
     
     /**
       * Format a tag according to the case conventions defined in
@@ -82,7 +82,7 @@ object tagMod {
       * Shortcut for `tag.find('language')`.
       */
     /* CompleteClass */
-    override def language(): typings.languageTags.subtagMod.^ = js.native
+    override def language(): js.UndefOr[typings.languageTags.subtagMod.^] = js.native
     
     /**
       * If the tag is listed as 'deprecated' or 'redundant' it might have a preferred value. This method returns a `Tag`
@@ -100,13 +100,13 @@ object tagMod {
       * Shortcut for `tag.find('region')`.
       */
     /* CompleteClass */
-    override def region(): typings.languageTags.subtagMod.^ = js.native
+    override def region(): js.UndefOr[typings.languageTags.subtagMod.^] = js.native
     
     /**
       * Shortcut for `tag.find('script')`.
       */
     /* CompleteClass */
-    override def script(): typings.languageTags.subtagMod.^ = js.native
+    override def script(): js.UndefOr[typings.languageTags.subtagMod.^] = js.native
     
     /**
       * Returns an array of subtags making up the tag, as `Subtag` objects.
@@ -333,7 +333,7 @@ object tagMod {
     /**
       * Find a subtag of the given type from those making up the tag.
       */
-    def find(`type`: String): typings.languageTags.subtagMod.^
+    def find(`type`: String): js.UndefOr[typings.languageTags.subtagMod.^]
     
     /**
       * Format a tag according to the case conventions defined in
@@ -349,7 +349,7 @@ object tagMod {
     /**
       * Shortcut for `tag.find('language')`.
       */
-    def language(): typings.languageTags.subtagMod.^
+    def language(): js.UndefOr[typings.languageTags.subtagMod.^]
     
     /**
       * If the tag is listed as 'deprecated' or 'redundant' it might have a preferred value. This method returns a `Tag`
@@ -365,12 +365,12 @@ object tagMod {
     /**
       * Shortcut for `tag.find('region')`.
       */
-    def region(): typings.languageTags.subtagMod.^
+    def region(): js.UndefOr[typings.languageTags.subtagMod.^]
     
     /**
       * Shortcut for `tag.find('script')`.
       */
-    def script(): typings.languageTags.subtagMod.^
+    def script(): js.UndefOr[typings.languageTags.subtagMod.^]
     
     /**
       * Returns an array of subtags making up the tag, as `Subtag` objects.
@@ -396,12 +396,12 @@ object tagMod {
       deprecated: () => String | Null,
       descriptions: () => js.Array[String],
       errors: () => js.Array[LanguageTagsError],
-      find: String => typings.languageTags.subtagMod.^,
+      find: String => js.UndefOr[typings.languageTags.subtagMod.^],
       format: () => String,
-      language: () => typings.languageTags.subtagMod.^,
+      language: () => js.UndefOr[typings.languageTags.subtagMod.^],
       preferred: () => Tag,
-      region: () => typings.languageTags.subtagMod.^,
-      script: () => typings.languageTags.subtagMod.^,
+      region: () => js.UndefOr[typings.languageTags.subtagMod.^],
+      script: () => js.UndefOr[typings.languageTags.subtagMod.^],
       subtags: () => js.Array[typings.languageTags.subtagMod.^],
       `type`: () => grandfathered | redundant | tag,
       valid: () => Boolean
@@ -421,17 +421,17 @@ object tagMod {
       
       inline def setErrors(value: () => js.Array[LanguageTagsError]): Self = StObject.set(x, "errors", js.Any.fromFunction0(value))
       
-      inline def setFind(value: String => typings.languageTags.subtagMod.^): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
+      inline def setFind(value: String => js.UndefOr[typings.languageTags.subtagMod.^]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
       
       inline def setFormat(value: () => String): Self = StObject.set(x, "format", js.Any.fromFunction0(value))
       
-      inline def setLanguage(value: () => typings.languageTags.subtagMod.^): Self = StObject.set(x, "language", js.Any.fromFunction0(value))
+      inline def setLanguage(value: () => js.UndefOr[typings.languageTags.subtagMod.^]): Self = StObject.set(x, "language", js.Any.fromFunction0(value))
       
       inline def setPreferred(value: () => Tag): Self = StObject.set(x, "preferred", js.Any.fromFunction0(value))
       
-      inline def setRegion(value: () => typings.languageTags.subtagMod.^): Self = StObject.set(x, "region", js.Any.fromFunction0(value))
+      inline def setRegion(value: () => js.UndefOr[typings.languageTags.subtagMod.^]): Self = StObject.set(x, "region", js.Any.fromFunction0(value))
       
-      inline def setScript(value: () => typings.languageTags.subtagMod.^): Self = StObject.set(x, "script", js.Any.fromFunction0(value))
+      inline def setScript(value: () => js.UndefOr[typings.languageTags.subtagMod.^]): Self = StObject.set(x, "script", js.Any.fromFunction0(value))
       
       inline def setSubtags(value: () => js.Array[typings.languageTags.subtagMod.^]): Self = StObject.set(x, "subtags", js.Any.fromFunction0(value))
       

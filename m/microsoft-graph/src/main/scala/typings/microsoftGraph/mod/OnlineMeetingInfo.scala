@@ -54,7 +54,7 @@ object OnlineMeetingInfo {
     
     inline def setPhonesUndefined: Self = StObject.set(x, "phones", js.undefined)
     
-    inline def setPhonesVarargs(value: Phone*): Self = StObject.set(x, "phones", js.Array(value :_*))
+    inline def setPhonesVarargs(value: Phone*): Self = StObject.set(x, "phones", js.Array(value*))
     
     inline def setQuickDial(value: NullableOption[String]): Self = StObject.set(x, "quickDial", value.asInstanceOf[js.Any])
     
@@ -68,7 +68,7 @@ object OnlineMeetingInfo {
     
     inline def setTollFreeNumbersUndefined: Self = StObject.set(x, "tollFreeNumbers", js.undefined)
     
-    inline def setTollFreeNumbersVarargs(value: String*): Self = StObject.set(x, "tollFreeNumbers", js.Array(value :_*))
+    inline def setTollFreeNumbersVarargs(value: String*): Self = StObject.set(x, "tollFreeNumbers", js.Array(value*))
     
     inline def setTollNumber(value: NullableOption[String]): Self = StObject.set(x, "tollNumber", value.asInstanceOf[js.Any])
     

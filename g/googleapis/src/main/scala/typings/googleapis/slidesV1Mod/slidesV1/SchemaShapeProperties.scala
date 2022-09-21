@@ -4,49 +4,35 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The properties of a Shape.  If the shape is a placeholder shape as
-  * determined by the placeholder field, then these properties may be inherited
-  * from a parent placeholder shape. Determining the rendered value of the
-  * property depends on the corresponding property_state field value.
-  */
 trait SchemaShapeProperties extends StObject {
   
   /**
-    * The alignment of the content in the shape. If unspecified, the alignment
-    * is inherited from a parent placeholder if it exists. If the shape has no
-    * parent, the default alignment matches the alignment for new shapes
-    * created in the Slides editor.
+    * The autofit properties of the shape. This property is only set for shapes that allow text.
     */
-  var contentAlignment: js.UndefOr[String] = js.undefined
+  var autofit: js.UndefOr[SchemaAutofit] = js.undefined
   
   /**
-    * The hyperlink destination of the shape. If unset, there is no link. Links
-    * are not inherited from parent placeholders.
+    * The alignment of the content in the shape. If unspecified, the alignment is inherited from a parent placeholder if it exists. If the shape has no parent, the default alignment matches the alignment for new shapes created in the Slides editor.
+    */
+  var contentAlignment: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The hyperlink destination of the shape. If unset, there is no link. Links are not inherited from parent placeholders.
     */
   var link: js.UndefOr[SchemaLink] = js.undefined
   
   /**
-    * The outline of the shape. If unset, the outline is inherited from a
-    * parent placeholder if it exists. If the shape has no parent, then the
-    * default outline depends on the shape type, matching the defaults for new
-    * shapes created in the Slides editor.
+    * The outline of the shape. If unset, the outline is inherited from a parent placeholder if it exists. If the shape has no parent, then the default outline depends on the shape type, matching the defaults for new shapes created in the Slides editor.
     */
   var outline: js.UndefOr[SchemaOutline] = js.undefined
   
   /**
-    * The shadow properties of the shape. If unset, the shadow is inherited
-    * from a parent placeholder if it exists. If the shape has no parent, then
-    * the default shadow matches the defaults for new shapes created in the
-    * Slides editor. This property is read-only.
+    * The shadow properties of the shape. If unset, the shadow is inherited from a parent placeholder if it exists. If the shape has no parent, then the default shadow matches the defaults for new shapes created in the Slides editor. This property is read-only.
     */
   var shadow: js.UndefOr[SchemaShadow] = js.undefined
   
   /**
-    * The background fill of the shape. If unset, the background fill is
-    * inherited from a parent placeholder if it exists. If the shape has no
-    * parent, then the default background fill depends on the shape type,
-    * matching the defaults for new shapes created in the Slides editor.
+    * The background fill of the shape. If unset, the background fill is inherited from a parent placeholder if it exists. If the shape has no parent, then the default background fill depends on the shape type, matching the defaults for new shapes created in the Slides editor.
     */
   var shapeBackgroundFill: js.UndefOr[SchemaShapeBackgroundFill] = js.undefined
 }
@@ -59,7 +45,13 @@ object SchemaShapeProperties {
   
   extension [Self <: SchemaShapeProperties](x: Self) {
     
+    inline def setAutofit(value: SchemaAutofit): Self = StObject.set(x, "autofit", value.asInstanceOf[js.Any])
+    
+    inline def setAutofitUndefined: Self = StObject.set(x, "autofit", js.undefined)
+    
     inline def setContentAlignment(value: String): Self = StObject.set(x, "contentAlignment", value.asInstanceOf[js.Any])
+    
+    inline def setContentAlignmentNull: Self = StObject.set(x, "contentAlignment", null)
     
     inline def setContentAlignmentUndefined: Self = StObject.set(x, "contentAlignment", js.undefined)
     

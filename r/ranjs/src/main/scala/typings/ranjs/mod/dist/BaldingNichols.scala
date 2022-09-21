@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ranjs", "dist.BaldingNichols")
 @js.native
-class BaldingNichols ()
+open class BaldingNichols ()
   extends StObject
      with typings.ranjs.mod._dist.Distribution[typings.ranjs.ranjsStrings.BaldingNichols] {
   def this(F: Double) = this()

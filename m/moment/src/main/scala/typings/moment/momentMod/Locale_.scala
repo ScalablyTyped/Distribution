@@ -1,6 +1,5 @@
 package typings.moment.momentMod
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,13 +34,13 @@ trait Locale_ extends StObject {
   
   def monthsParse(monthName: String, format: String, strict: Boolean): Double = js.native
   
-  def monthsRegex(strict: Boolean): RegExp = js.native
+  def monthsRegex(strict: Boolean): js.RegExp = js.native
   
   def monthsShort(): js.Array[String] = js.native
   def monthsShort(m: Moment): String = js.native
   def monthsShort(m: Moment, format: String): String = js.native
   
-  def monthsShortRegex(strict: Boolean): RegExp = js.native
+  def monthsShortRegex(strict: Boolean): js.RegExp = js.native
   
   def ordinal(n: Double): String = js.native
   
@@ -64,14 +63,14 @@ trait Locale_ extends StObject {
   def weekdaysMin(): js.Array[String] = js.native
   def weekdaysMin(m: Moment): String = js.native
   
-  def weekdaysMinRegex(strict: Boolean): RegExp = js.native
+  def weekdaysMinRegex(strict: Boolean): js.RegExp = js.native
   
   def weekdaysParse(weekdayName: String, format: String, strict: Boolean): Double = js.native
   
-  def weekdaysRegex(strict: Boolean): RegExp = js.native
+  def weekdaysRegex(strict: Boolean): js.RegExp = js.native
   
   def weekdaysShort(): js.Array[String] = js.native
   def weekdaysShort(m: Moment): String = js.native
   
-  def weekdaysShortRegex(strict: Boolean): RegExp = js.native
+  def weekdaysShortRegex(strict: Boolean): js.RegExp = js.native
 }

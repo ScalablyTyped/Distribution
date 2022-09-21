@@ -41,6 +41,7 @@ object tagMod extends Shortcut {
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
+    /** @deprecated `visible` will be removed in next major version. */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
   object TagProps {

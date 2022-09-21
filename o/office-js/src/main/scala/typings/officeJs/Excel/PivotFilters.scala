@@ -5,41 +5,41 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * An interface representing all PivotFilters currently applied to a given PivotField.
   *
+  * @remarks
   * [Api set: ExcelApi 1.12]
   */
 trait PivotFilters extends StObject {
   
   /**
+    * The PivotField's currently applied date filter. This property is `null` if no value filter is applied.
     *
-    * The PivotField's currently applied date filter. Null if none is applied.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var dateFilter: js.UndefOr[PivotDateFilter] = js.undefined
   
   /**
+    * The PivotField's currently applied label filter. This property is `null` if no value filter is applied.
     *
-    * The PivotField's currently applied label filter. Null if none is applied.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var labelFilter: js.UndefOr[PivotLabelFilter] = js.undefined
   
   /**
+    * The PivotField's currently applied manual filter. This property is `null` if no value filter is applied.
     *
-    * The PivotField's currently applied manual filter. Null if none is applied.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var manualFilter: js.UndefOr[PivotManualFilter] = js.undefined
   
   /**
+    * The PivotField's currently applied value filter. This property is `null` if no value filter is applied.
     *
-    * The PivotField's currently applied value filter. Null if none is applied.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var valueFilter: js.UndefOr[PivotValueFilter] = js.undefined

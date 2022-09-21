@@ -1,7 +1,7 @@
 package typings.babylonjs
 
 import typings.babylonjs.anon.PartialVirtualJoystickCus
-import typings.babylonjs.anon.Y
+import typings.babylonjs.anon.X
 import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
@@ -48,87 +48,87 @@ object virtualJoystickMod {
     * @param leftJoystick defines that the joystick is for left hand (false by default)
     * @param customizations Defines the options we want to customize the VirtualJoystick
     */
-  class VirtualJoystick () extends StObject {
+  open class VirtualJoystick () extends StObject {
     def this(leftJoystick: Boolean) = this()
     def this(leftJoystick: Boolean, customizations: PartialVirtualJoystickCus) = this()
     def this(leftJoystick: Unit, customizations: PartialVirtualJoystickCus) = this()
     
-    /* private */ var _action: js.Any = js.native
+    /* private */ var _action: Any = js.native
     
-    /* private */ var _alwaysVisible: js.Any = js.native
+    /* private */ var _alwaysVisible: Any = js.native
     
-    /* private */ var _axisTargetedByLeftAndRight: js.Any = js.native
+    /* private */ var _axisTargetedByLeftAndRight: Any = js.native
     
-    /* private */ var _axisTargetedByUpAndDown: js.Any = js.native
+    /* private */ var _axisTargetedByUpAndDown: Any = js.native
     
-    /* private */ var _clearContainerSize: js.Any = js.native
+    /* private */ var _clearContainerSize: Any = js.native
     
-    /* private */ var _clearContainerSizeOffset: js.Any = js.native
+    /* private */ var _clearContainerSizeOffset: Any = js.native
     
     /**
       * Clears the canvas from the previous puck / container draw
       */
-    /* private */ var _clearPreviousDraw: js.Any = js.native
+    /* private */ var _clearPreviousDraw: Any = js.native
     
-    /* private */ var _clearPuckSize: js.Any = js.native
+    /* private */ var _clearPuckSize: Any = js.native
     
-    /* private */ var _clearPuckSizeOffset: js.Any = js.native
+    /* private */ var _clearPuckSizeOffset: Any = js.native
     
-    /* private */ var _containerImage: js.Any = js.native
+    /* private */ var _containerImage: Any = js.native
     
-    /* private */ var _deltaJoystickVector: js.Any = js.native
+    /* private */ var _deltaJoystickVector: Any = js.native
     
     /**
       * Draws the Virtual Joystick's container
       */
-    /* private */ var _drawContainer: js.Any = js.native
+    /* private */ var _drawContainer: Any = js.native
     
     /**
       * Draws the Virtual Joystick's puck
       */
-    /* private */ var _drawPuck: js.Any = js.native
+    /* private */ var _drawPuck: Any = js.native
     
-    /* private */ var _drawVirtualJoystick: js.Any = js.native
+    /* private */ var _drawVirtualJoystick: Any = js.native
     
-    /* private */ var _inversedSensibility: js.Any = js.native
+    /* private */ var _inversedSensibility: Any = js.native
     
-    /* private */ var _joystickColor: js.Any = js.native
+    /* private */ var _joystickColor: Any = js.native
     
-    /* private */ var _joystickContainerSize: js.Any = js.native
+    /* private */ var _joystickContainerSize: Any = js.native
     
-    /* private */ var _joystickPointerID: js.Any = js.native
+    /* private */ var _joystickPointerId: Any = js.native
     
-    /* private */ var _joystickPointerPos: js.Any = js.native
+    /* private */ var _joystickPointerPos: Any = js.native
     
-    /* private */ var _joystickPointerStartPos: js.Any = js.native
+    /* private */ var _joystickPointerStartPos: Any = js.native
     
-    /* private */ var _joystickPosition: js.Any = js.native
+    /* private */ var _joystickPosition: Any = js.native
     
-    /* private */ var _joystickPreviousPointerPos: js.Any = js.native
+    /* private */ var _joystickPreviousPointerPos: Any = js.native
     
-    /* private */ var _joystickPuckSize: js.Any = js.native
+    /* private */ var _joystickPuckSize: Any = js.native
     
-    /* private */ var _joystickSensibility: js.Any = js.native
+    /* private */ var _joystickSensibility: Any = js.native
     
-    /* private */ var _leftJoystick: js.Any = js.native
+    /* private */ var _leftJoystick: Any = js.native
     
-    /* private */ var _onPointerDown: js.Any = js.native
+    /* private */ var _onPointerDown: Any = js.native
     
-    /* private */ var _onPointerDownHandlerRef: js.Any = js.native
+    /* private */ var _onPointerDownHandlerRef: Any = js.native
     
-    /* private */ var _onPointerMove: js.Any = js.native
+    /* private */ var _onPointerMove: Any = js.native
     
-    /* private */ var _onPointerMoveHandlerRef: js.Any = js.native
+    /* private */ var _onPointerMoveHandlerRef: Any = js.native
     
-    /* private */ var _onPointerUp: js.Any = js.native
+    /* private */ var _onPointerUp: Any = js.native
     
-    /* private */ var _onPointerUpHandlerRef: js.Any = js.native
+    /* private */ var _onPointerUpHandlerRef: Any = js.native
     
-    /* private */ var _onResize: js.Any = js.native
+    /* private */ var _onResize: Any = js.native
     
-    /* private */ var _puckImage: js.Any = js.native
+    /* private */ var _puckImage: Any = js.native
     
-    /* private */ var _touches: js.Any = js.native
+    /* private */ var _touches: Any = js.native
     
     def alwaysVisible: Boolean = js.native
     /**
@@ -187,7 +187,7 @@ object virtualJoystickMod {
       * Defines a callback to call when the joystick is touched
       * @param action defines the callback
       */
-    def setActionOnTouch(action: js.Function0[js.Any]): Unit = js.native
+    def setActionOnTouch(action: js.Function0[Any]): Unit = js.native
     
     /**
       * Defines which axis you'd like to control for left & right
@@ -214,7 +214,7 @@ object virtualJoystickMod {
     def setJoystickColor(newColor: String): Unit = js.native
     
     /**
-      * Defines joystick sensibility (ie. the ratio beteen a physical move and virtual joystick position change)
+      * Defines joystick sensibility (ie. the ratio between a physical move and virtual joystick position change)
       * @param newJoystickSensibility defines the new sensibility
       */
     def setJoystickSensibility(newJoystickSensibility: Double): Unit = js.native
@@ -247,40 +247,40 @@ object virtualJoystickMod {
     def Canvas: Nullable[HTMLCanvasElement] = js.native
     inline def Canvas_=(x: Nullable[HTMLCanvasElement]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Canvas")(x.asInstanceOf[js.Any])
     
+    @JSImport("babylonjs/Misc/virtualJoystick", "VirtualJoystick._AlwaysVisibleSticks")
+    @js.native
+    def _AlwaysVisibleSticks: Any = js.native
+    inline def _AlwaysVisibleSticks_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_AlwaysVisibleSticks")(x.asInstanceOf[js.Any])
+    
     @JSImport("babylonjs/Misc/virtualJoystick", "VirtualJoystick._GetDefaultOptions")
     @js.native
-    def _GetDefaultOptions: js.Any = js.native
-    inline def _GetDefaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetDefaultOptions")(x.asInstanceOf[js.Any])
+    def _GetDefaultOptions: Any = js.native
+    inline def _GetDefaultOptions_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetDefaultOptions")(x.asInstanceOf[js.Any])
     
-    @JSImport("babylonjs/Misc/virtualJoystick", "VirtualJoystick._alwaysVisibleSticks")
+    @JSImport("babylonjs/Misc/virtualJoystick", "VirtualJoystick._GlobalJoystickIndex")
     @js.native
-    def _alwaysVisibleSticks: js.Any = js.native
-    inline def _alwaysVisibleSticks_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_alwaysVisibleSticks")(x.asInstanceOf[js.Any])
+    def _GlobalJoystickIndex: Any = js.native
+    inline def _GlobalJoystickIndex_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GlobalJoystickIndex")(x.asInstanceOf[js.Any])
     
-    @JSImport("babylonjs/Misc/virtualJoystick", "VirtualJoystick._globalJoystickIndex")
+    @JSImport("babylonjs/Misc/virtualJoystick", "VirtualJoystick._HalfWidth")
     @js.native
-    def _globalJoystickIndex: js.Any = js.native
-    inline def _globalJoystickIndex_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_globalJoystickIndex")(x.asInstanceOf[js.Any])
+    def _HalfWidth: Any = js.native
+    inline def _HalfWidth_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_HalfWidth")(x.asInstanceOf[js.Any])
     
-    @JSImport("babylonjs/Misc/virtualJoystick", "VirtualJoystick.halfWidth")
+    @JSImport("babylonjs/Misc/virtualJoystick", "VirtualJoystick._VJCanvasContext")
     @js.native
-    def halfWidth: js.Any = js.native
-    inline def halfWidth_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("halfWidth")(x.asInstanceOf[js.Any])
+    def _VJCanvasContext: Any = js.native
+    inline def _VJCanvasContext_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_VJCanvasContext")(x.asInstanceOf[js.Any])
     
-    @JSImport("babylonjs/Misc/virtualJoystick", "VirtualJoystick.vjCanvasContext")
+    @JSImport("babylonjs/Misc/virtualJoystick", "VirtualJoystick._VJCanvasHeight")
     @js.native
-    def vjCanvasContext: js.Any = js.native
-    inline def vjCanvasContext_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("vjCanvasContext")(x.asInstanceOf[js.Any])
+    def _VJCanvasHeight: Any = js.native
+    inline def _VJCanvasHeight_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_VJCanvasHeight")(x.asInstanceOf[js.Any])
     
-    @JSImport("babylonjs/Misc/virtualJoystick", "VirtualJoystick.vjCanvasHeight")
+    @JSImport("babylonjs/Misc/virtualJoystick", "VirtualJoystick._VJCanvasWidth")
     @js.native
-    def vjCanvasHeight: js.Any = js.native
-    inline def vjCanvasHeight_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("vjCanvasHeight")(x.asInstanceOf[js.Any])
-    
-    @JSImport("babylonjs/Misc/virtualJoystick", "VirtualJoystick.vjCanvasWidth")
-    @js.native
-    def vjCanvasWidth: js.Any = js.native
-    inline def vjCanvasWidth_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("vjCanvasWidth")(x.asInstanceOf[js.Any])
+    def _VJCanvasWidth: Any = js.native
+    inline def _VJCanvasWidth_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_VJCanvasWidth")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -317,7 +317,7 @@ object virtualJoystickMod {
     /**
       * Defines the unmoving position of the joystick container
       */
-    var position: js.UndefOr[Y] = js.undefined
+    var position: js.UndefOr[X] = js.undefined
     
     /**
       * Image URL for the joystick's puck
@@ -356,7 +356,7 @@ object virtualJoystickMod {
       
       inline def setLimitToContainer(value: Boolean): Self = StObject.set(x, "limitToContainer", value.asInstanceOf[js.Any])
       
-      inline def setPosition(value: Y): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: X): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       

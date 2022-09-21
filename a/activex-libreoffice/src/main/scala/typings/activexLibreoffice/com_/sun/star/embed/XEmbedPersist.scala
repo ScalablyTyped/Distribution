@@ -120,7 +120,7 @@ object XEmbedPersist {
     getEntryName: () => String,
     hasEntry: () => Boolean,
     isReadonly: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     reload: (SeqEquiv[PropertyValue], SeqEquiv[PropertyValue]) => Unit,
     saveCompleted: Boolean => Unit,

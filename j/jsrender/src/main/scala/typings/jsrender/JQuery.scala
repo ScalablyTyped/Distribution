@@ -22,14 +22,14 @@ trait JQuery extends StObject {
   	 */
   /* var htmlString = $("#template").render(data, myHelpersObject); // Render template, and pass in helpers or context */
   def render(): String
-  def render(data: js.Any): String
-  def render(data: js.Any, helpersOrContext: Unit, noIteration: Boolean): String
-  def render(data: js.Any, helpersOrContext: Hash[js.Any]): String
-  def render(data: js.Any, helpersOrContext: Hash[js.Any], noIteration: Boolean): String
-  def render(data: js.Any, noIteration: Boolean): String
+  def render(data: Any): String
+  def render(data: Any, helpersOrContext: Unit, noIteration: Boolean): String
+  def render(data: Any, helpersOrContext: Hash[Any]): String
+  def render(data: Any, helpersOrContext: Hash[Any], noIteration: Boolean): String
+  def render(data: Any, noIteration: Boolean): String
   def render(data: Unit, helpersOrContext: Unit, noIteration: Boolean): String
-  def render(data: Unit, helpersOrContext: Hash[js.Any]): String
-  def render(data: Unit, helpersOrContext: Hash[js.Any], noIteration: Boolean): String
+  def render(data: Unit, helpersOrContext: Hash[Any]): String
+  def render(data: Unit, helpersOrContext: Hash[Any], noIteration: Boolean): String
   def render(data: Unit, noIteration: Boolean): String
   /* var htmlString = $("#template").render(data, myHelpersObject); // Render template, and pass in helpers or context */
   @JSName("render")

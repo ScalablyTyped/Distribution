@@ -1,6 +1,5 @@
 package typings.devexpressWeb.global
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientDiagramCoordinates")
 @js.native
-class ASPxClientDiagramCoordinates ()
+open class ASPxClientDiagramCoordinates ()
   extends StObject
      with typings.devexpressWeb.ASPxClientDiagramCoordinates {
   
@@ -49,13 +48,13 @@ class ASPxClientDiagramCoordinates ()
     * Gets the date-time representation of the data point's argument.
     */
   /* CompleteClass */
-  var dateTimeArgument: Date = js.native
+  var dateTimeArgument: js.Date = js.native
   
   /**
     * Gets the date-time representation of the data point's value.
     */
   /* CompleteClass */
-  var dateTimeValue: Date = js.native
+  var dateTimeValue: js.Date = js.native
   
   /**
     * Gets the numerical representation of the data point's argument.
@@ -82,10 +81,10 @@ class ASPxClientDiagramCoordinates ()
   var qualitativeArgument: String = js.native
   
   /* CompleteClass */
-  var timeSpanArgument: js.Any = js.native
+  var timeSpanArgument: Any = js.native
   
   /* CompleteClass */
-  var timeSpanValue: js.Any = js.native
+  var timeSpanValue: Any = js.native
   
   /**
     * Gets the type of the value scale.

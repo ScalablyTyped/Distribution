@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChartPanningOptions extends StObject {
   
   /**
-    * (Highcharts, Highstock, Gantt) Enable or disable chart panning.
+    * (Highcharts, Highstock, Highmaps, Gantt) Enable or disable chart panning.
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Highcharts, Highstock, Gantt) Decides in what dimensions the user can
-    * pan the chart. Can be one of `x`, `y`, or `xy`.
+    * (Highcharts, Highstock, Highmaps, Gantt) Decides in what dimensions the
+    * user can pan the chart. Can be one of `x`, `y`, or `xy`.
     */
   var `type`: js.UndefOr[OptionsTypeValue] = js.undefined
 }

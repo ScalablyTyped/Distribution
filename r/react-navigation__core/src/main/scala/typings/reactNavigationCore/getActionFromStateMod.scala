@@ -1,6 +1,6 @@
 package typings.reactNavigationCore
 
-import typings.reactNavigationCore.anon.Name
+import typings.reactNavigationCore.anon.Params
 import typings.reactNavigationCore.anon.PartialStateNavigationSta
 import typings.reactNavigationCore.reactNavigationCoreStrings.NAVIGATE
 import typings.reactNavigationCore.typesMod.PathConfigMap
@@ -22,13 +22,13 @@ object getActionFromStateMod {
   
   trait NavigateAction[State /* <: NavigationState[ParamListBase] */] extends StObject {
     
-    var payload: Name[State]
+    var payload: Params[State]
     
     var `type`: NAVIGATE
   }
   object NavigateAction {
     
-    inline def apply[State /* <: NavigationState[ParamListBase] */](payload: Name[State]): NavigateAction[State] = {
+    inline def apply[State /* <: NavigationState[ParamListBase] */](payload: Params[State]): NavigateAction[State] = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("NAVIGATE")
       __obj.asInstanceOf[NavigateAction[State]]
@@ -36,7 +36,7 @@ object getActionFromStateMod {
     
     extension [Self <: NavigateAction[?], State /* <: NavigationState[ParamListBase] */](x: Self & NavigateAction[State]) {
       
-      inline def setPayload(value: Name[State]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Params[State]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
       inline def setType(value: NAVIGATE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -46,11 +46,11 @@ object getActionFromStateMod {
     
     var initialRouteName: js.UndefOr[String] = js.undefined
     
-    var screens: PathConfigMap
+    var screens: PathConfigMap[js.Object]
   }
   object Options {
     
-    inline def apply(screens: PathConfigMap): Options = {
+    inline def apply(screens: PathConfigMap[js.Object]): Options = {
       val __obj = js.Dynamic.literal(screens = screens.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
@@ -61,7 +61,7 @@ object getActionFromStateMod {
       
       inline def setInitialRouteNameUndefined: Self = StObject.set(x, "initialRouteName", js.undefined)
       
-      inline def setScreens(value: PathConfigMap): Self = StObject.set(x, "screens", value.asInstanceOf[js.Any])
+      inline def setScreens(value: PathConfigMap[js.Object]): Self = StObject.set(x, "screens", value.asInstanceOf[js.Any])
     }
   }
 }

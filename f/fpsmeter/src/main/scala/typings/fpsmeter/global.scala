@@ -9,7 +9,7 @@ object global {
   
   @JSGlobal("FPSMeter")
   @js.native
-  class FPSMeter ()
+  open class FPSMeter ()
     extends StObject
        with typings.fpsmeter.FPSMeter {
     def this(anchor: HTMLElement) = this()
@@ -32,7 +32,7 @@ object global {
     override def resume(): typings.fpsmeter.FPSMeter = js.native
     
     /* CompleteClass */
-    override def set(name: String, value: js.Any): typings.fpsmeter.FPSMeter = js.native
+    override def set(name: String, value: Any): typings.fpsmeter.FPSMeter = js.native
     
     /* CompleteClass */
     override def show(): typings.fpsmeter.FPSMeter = js.native

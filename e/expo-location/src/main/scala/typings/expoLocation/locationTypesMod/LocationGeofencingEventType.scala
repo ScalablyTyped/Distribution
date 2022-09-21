@@ -13,12 +13,18 @@ object LocationGeofencingEventType extends StObject {
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[LocationGeofencingEventType & Double] = js.native
   
+  /**
+    * Emitted when the device entered observed region.
+    */
   @js.native
   sealed trait Enter
     extends StObject
        with LocationGeofencingEventType
   /* 1 */ val Enter: typings.expoLocation.locationTypesMod.LocationGeofencingEventType.Enter & Double = js.native
   
+  /**
+    * Occurs as soon as the device left observed region
+    */
   @js.native
   sealed trait Exit
     extends StObject

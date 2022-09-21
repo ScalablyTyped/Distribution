@@ -51,7 +51,7 @@ trait LineChartBuilder extends StObject {
   
   def setLegendTextStyle(textStyle: TextStyle): LineChartBuilder = js.native
   
-  def setOption(option: String, value: js.Any): LineChartBuilder = js.native
+  def setOption(option: String, value: Any): LineChartBuilder = js.native
   
   def setPointStyle(style: PointStyle): LineChartBuilder = js.native
   

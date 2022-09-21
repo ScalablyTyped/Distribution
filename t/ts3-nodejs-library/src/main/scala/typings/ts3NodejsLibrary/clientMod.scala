@@ -1,6 +1,6 @@
 package typings.ts3NodejsLibrary
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.ts3NodejsLibrary.abstractMod.Abstract
 import typings.ts3NodejsLibrary.anon.Cldbid
 import typings.ts3NodejsLibrary.channelMod.TeamSpeakChannel
@@ -23,16 +23,16 @@ object clientMod {
   
   @JSImport("ts3-nodejs-library/lib/node/Client", "TeamSpeakClient")
   @js.native
-  class TeamSpeakClient protected () extends Abstract[ClientEntry] {
+  open class TeamSpeakClient protected () extends Abstract[ClientEntry] {
     def this(parent: TeamSpeak, list: ClientEntry) = this()
     
     /**
       * adds the client to one or more groups
       * @param sgid one or more servergroup ids which the client should be added to
       */
-    def addGroups(sgid: String): js.Promise[js.Array[js.Any]] = js.native
-    def addGroups(sgid: js.Array[String | TeamSpeakServerGroup]): js.Promise[js.Array[js.Any]] = js.native
-    def addGroups(sgid: TeamSpeakServerGroup): js.Promise[js.Array[js.Any]] = js.native
+    def addGroups(sgid: String): js.Promise[js.Array[Any]] = js.native
+    def addGroups(sgid: js.Array[String | TeamSpeakServerGroup]): js.Promise[js.Array[Any]] = js.native
+    def addGroups(sgid: TeamSpeakServerGroup): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Adds a set of specified permissions to a client.
@@ -40,7 +40,7 @@ object clientMod {
       * A permission can be specified by permid or permsid.
       * @param perm the permission object to set
       */
-    def addPerm(perm: PermType): js.Promise[js.Array[js.Any]] = js.native
+    def addPerm(perm: PermType): js.Promise[js.Array[Any]] = js.native
     
     def away: Double = js.native
     
@@ -73,7 +73,7 @@ object clientMod {
       * Multiple permissions can be added by providing the three parameters of each permission.
       * A permission can be specified by permid or permsid.
       */
-    def createPerm(): Permission[js.Any] = js.native
+    def createPerm(): Permission[Any] = js.native
     
     def created: Double = js.native
     
@@ -81,7 +81,7 @@ object clientMod {
       * removes a custom property from the client
       * @param ident the key which should be deleted
       */
-    def customDelete(ident: String): js.Promise[js.Array[js.Any]] = js.native
+    def customDelete(ident: String): js.Promise[js.Array[Any]] = js.native
     
     /** returns a list of custom properties for the client */
     def customInfo(): js.Promise[CustomInfo] = js.native
@@ -92,7 +92,7 @@ object clientMod {
       * @param ident the key which should be set
       * @param value the value which should be set
       */
-    def customSet(ident: String, value: String): js.Promise[js.Array[js.Any]] = js.native
+    def customSet(ident: String, value: String): js.Promise[js.Array[Any]] = js.native
     
     def databaseId: String = js.native
     
@@ -100,15 +100,15 @@ object clientMod {
       * Changes a clients settings using given properties.
       * @param properties the properties which should be modified
       */
-    def dbEdit(properties: ClientDBEdit): js.Promise[js.Array[js.Any]] = js.native
+    def dbEdit(properties: ClientDBEdit): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Removes the client from one or more groups
       * @param sgid one or more servergroup ids which the client should be added to
       */
-    def delGroups(sgid: String): js.Promise[js.Array[js.Any]] = js.native
-    def delGroups(sgid: js.Array[String | TeamSpeakServerGroup]): js.Promise[js.Array[js.Any]] = js.native
-    def delGroups(sgid: TeamSpeakServerGroup): js.Promise[js.Array[js.Any]] = js.native
+    def delGroups(sgid: String): js.Promise[js.Array[Any]] = js.native
+    def delGroups(sgid: js.Array[String | TeamSpeakServerGroup]): js.Promise[js.Array[Any]] = js.native
+    def delGroups(sgid: TeamSpeakServerGroup): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Removes a set of specified permissions from a client.
@@ -116,14 +116,14 @@ object clientMod {
       * A permission can be specified by permid or permsid
       * @param perm the permid or permsid
       */
-    def delPerm(perm: String): js.Promise[js.Array[js.Any]] = js.native
-    def delPerm(perm: Double): js.Promise[js.Array[js.Any]] = js.native
+    def delPerm(perm: String): js.Promise[js.Array[Any]] = js.native
+    def delPerm(perm: Double): js.Promise[js.Array[Any]] = js.native
     
     /**
       * edits the client
       * @param properties the properties to change
       */
-    def edit(properties: ClientEdit): js.Promise[js.Array[js.Any]] = js.native
+    def edit(properties: ClientEdit): js.Promise[js.Array[Any]] = js.native
     
     def estimatedLocation: js.UndefOr[String] = js.native
     
@@ -173,13 +173,13 @@ object clientMod {
       * kicks the client from their currently joined channel
       * @param msg the message the client should receive when getting kicked (max 40 Chars)
       */
-    def kickFromChannel(msg: String): js.Promise[js.Array[js.Any]] = js.native
+    def kickFromChannel(msg: String): js.Promise[js.Array[Any]] = js.native
     
     /**
       * kicks the client from the server
       * @param msg the message the client should receive when getting kicked
       */
-    def kickFromServer(msg: String): js.Promise[js.Array[js.Any]] = js.native
+    def kickFromServer(msg: String): js.Promise[js.Array[Any]] = js.native
     
     def lastconnected: Double = js.native
     
@@ -187,17 +187,17 @@ object clientMod {
       * sends a textmessage to the client
       * @param msg the message the client should receive
       */
-    def message(msg: String): js.Any = js.native
+    def message(msg: String): Any = js.native
     
     /**
       * moves the client to a different channel
       * @param cid channel id in which the client should get moved
       * @param cpw the channel password
       */
-    def move(cid: String): js.Promise[js.Array[js.Any]] = js.native
-    def move(cid: String, cpw: String): js.Promise[js.Array[js.Any]] = js.native
-    def move(cid: TeamSpeakChannel): js.Promise[js.Array[js.Any]] = js.native
-    def move(cid: TeamSpeakChannel, cpw: String): js.Promise[js.Array[js.Any]] = js.native
+    def move(cid: String): js.Promise[js.Array[Any]] = js.native
+    def move(cid: String, cpw: String): js.Promise[js.Array[Any]] = js.native
+    def move(cid: TeamSpeakChannel): js.Promise[js.Array[Any]] = js.native
+    def move(cid: TeamSpeakChannel, cpw: String): js.Promise[js.Array[Any]] = js.native
     
     def nickname: String = js.native
     
@@ -218,7 +218,7 @@ object clientMod {
       * pokes the client with a certain message
       * @param msg the message the client should receive
       */
-    def poke(msg: String): js.Promise[js.Array[js.Any]] = js.native
+    def poke(msg: String): js.Promise[js.Array[Any]] = js.native
     
     def servergroups: js.Array[String] = js.native
     

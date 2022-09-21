@@ -1,7 +1,7 @@
 
 # Scala.js typings for sade
 
-Typings are for version 1.7
+Typings are for version 1.8.1
 
 ## Library description:
 Smooth (CLI) operator 🎶
@@ -10,10 +10,10 @@ Smooth (CLI) operator 🎶
 | ------------------ | :-------------: |
 | Full name          | sade |
 | Keywords           | cli, cli-app, commander, arguments, parser, yargs, argv |
-| # releases         | 12 |
-| # dependents       | 215 |
-| # downloads        | 3522000 |
-| # stars            | 2 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 4872535.333333333 |
+| # stars            | 940.0 |
 
 ## Links
 - [Homepage](https://github.com/lukeed/sade#readme)
@@ -24,7 +24,7 @@ Smooth (CLI) operator 🎶
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

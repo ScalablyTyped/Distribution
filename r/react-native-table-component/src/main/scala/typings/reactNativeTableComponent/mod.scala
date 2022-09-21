@@ -1,7 +1,8 @@
 package typings.reactNativeTableComponent
 
 import typings.react.mod.Component
-import typings.react.mod.ReactChildren
+import typings.react.mod.ReactNode
+import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
@@ -12,105 +13,105 @@ object mod {
   
   @JSImport("react-native-table-component", "Cell")
   @js.native
-  class Cell protected ()
-    extends Component[CellProps, js.Object, js.Any] {
+  open class Cell protected ()
+    extends Component[CellProps, js.Object, Any] {
     def this(props: CellProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: CellProps, context: js.Any) = this()
+    def this(props: CellProps, context: Any) = this()
   }
   
   @JSImport("react-native-table-component", "Col")
   @js.native
-  class Col protected ()
-    extends Component[ColProps, js.Object, js.Any] {
+  open class Col protected ()
+    extends Component[ColProps, js.Object, Any] {
     def this(props: ColProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ColProps, context: js.Any) = this()
+    def this(props: ColProps, context: Any) = this()
   }
   
   @JSImport("react-native-table-component", "Cols")
   @js.native
-  class Cols protected ()
-    extends Component[ColsProps, js.Object, js.Any] {
+  open class Cols protected ()
+    extends Component[ColsProps, js.Object, Any] {
     def this(props: ColsProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ColsProps, context: js.Any) = this()
+    def this(props: ColsProps, context: Any) = this()
   }
   
   @JSImport("react-native-table-component", "Row")
   @js.native
-  class Row protected ()
-    extends Component[RowProps, js.Object, js.Any] {
+  open class Row protected ()
+    extends Component[RowProps, js.Object, Any] {
     def this(props: RowProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: RowProps, context: js.Any) = this()
+    def this(props: RowProps, context: Any) = this()
   }
   
   @JSImport("react-native-table-component", "Rows")
   @js.native
-  class Rows protected ()
-    extends Component[RowsProps, js.Object, js.Any] {
+  open class Rows protected ()
+    extends Component[RowsProps, js.Object, Any] {
     def this(props: RowsProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: RowsProps, context: js.Any) = this()
+    def this(props: RowsProps, context: Any) = this()
   }
   
   @JSImport("react-native-table-component", "Table")
   @js.native
-  class Table protected ()
-    extends Component[TableProps, js.Object, js.Any] {
+  open class Table protected ()
+    extends Component[TableProps, js.Object, Any] {
     def this(props: TableProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: TableProps, context: js.Any) = this()
+    def this(props: TableProps, context: Any) = this()
     
-    def _renderChildren(props: TableProps): ReactChildren = js.native
+    def _renderChildren(props: TableProps): ReactNode = js.native
   }
   
   @JSImport("react-native-table-component", "TableWrapper")
   @js.native
-  class TableWrapper protected ()
-    extends Component[TableWrapperProps, js.Object, js.Any] {
+  open class TableWrapper protected ()
+    extends Component[TableWrapperProps, js.Object, Any] {
     def this(props: TableWrapperProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: TableWrapperProps, context: js.Any) = this()
+    def this(props: TableWrapperProps, context: Any) = this()
     
-    def _renderChildren(props: TableWrapperProps): ReactChildren = js.native
+    def _renderChildren(props: TableWrapperProps): ReactNode = js.native
   }
   
   trait CellProps extends StObject {
     
-    var borderStyle: js.UndefOr[ViewStyle] = js.undefined
+    var borderStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     var flex: js.UndefOr[Double] = js.undefined
     
     var height: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[ViewStyle] = js.undefined
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var textStyle: js.UndefOr[TextStyle] = js.undefined
+    var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -123,11 +124,13 @@ object mod {
     
     extension [Self <: CellProps](x: Self) {
       
-      inline def setBorderStyle(value: ViewStyle): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
+      inline def setBorderStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
+      
+      inline def setBorderStyleNull: Self = StObject.set(x, "borderStyle", null)
       
       inline def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -139,11 +142,15 @@ object mod {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+      inline def setTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+      
+      inline def setTextStyleNull: Self = StObject.set(x, "textStyle", null)
       
       inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
       
@@ -155,13 +162,13 @@ object mod {
   
   trait ColProps extends StObject {
     
-    var data: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var data: js.UndefOr[js.Array[Any]] = js.undefined
     
     var heightArr: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var style: js.UndefOr[ViewStyle] = js.undefined
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var textStyle: js.UndefOr[TextStyle] = js.undefined
+    var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -174,23 +181,27 @@ object mod {
     
     extension [Self <: ColProps](x: Self) {
       
-      inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setHeightArr(value: js.Array[Double]): Self = StObject.set(x, "heightArr", value.asInstanceOf[js.Any])
       
       inline def setHeightArrUndefined: Self = StObject.set(x, "heightArr", js.undefined)
       
-      inline def setHeightArrVarargs(value: Double*): Self = StObject.set(x, "heightArr", js.Array(value :_*))
+      inline def setHeightArrVarargs(value: Double*): Self = StObject.set(x, "heightArr", js.Array(value*))
       
-      inline def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+      inline def setTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+      
+      inline def setTextStyleNull: Self = StObject.set(x, "textStyle", null)
       
       inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
       
@@ -202,15 +213,15 @@ object mod {
   
   trait ColsProps extends StObject {
     
-    var data: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var data: js.UndefOr[js.Array[Any]] = js.undefined
     
     var flexArr: js.UndefOr[js.Array[Double]] = js.undefined
     
     var heightArr: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var style: js.UndefOr[ViewStyle] = js.undefined
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var textStyle: js.UndefOr[TextStyle] = js.undefined
+    var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
     var widthArr: js.UndefOr[js.Array[Double]] = js.undefined
   }
@@ -223,29 +234,33 @@ object mod {
     
     extension [Self <: ColsProps](x: Self) {
       
-      inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setFlexArr(value: js.Array[Double]): Self = StObject.set(x, "flexArr", value.asInstanceOf[js.Any])
       
       inline def setFlexArrUndefined: Self = StObject.set(x, "flexArr", js.undefined)
       
-      inline def setFlexArrVarargs(value: Double*): Self = StObject.set(x, "flexArr", js.Array(value :_*))
+      inline def setFlexArrVarargs(value: Double*): Self = StObject.set(x, "flexArr", js.Array(value*))
       
       inline def setHeightArr(value: js.Array[Double]): Self = StObject.set(x, "heightArr", value.asInstanceOf[js.Any])
       
       inline def setHeightArrUndefined: Self = StObject.set(x, "heightArr", js.undefined)
       
-      inline def setHeightArrVarargs(value: Double*): Self = StObject.set(x, "heightArr", js.Array(value :_*))
+      inline def setHeightArrVarargs(value: Double*): Self = StObject.set(x, "heightArr", js.Array(value*))
       
-      inline def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+      inline def setTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+      
+      inline def setTextStyleNull: Self = StObject.set(x, "textStyle", null)
       
       inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
       
@@ -253,21 +268,21 @@ object mod {
       
       inline def setWidthArrUndefined: Self = StObject.set(x, "widthArr", js.undefined)
       
-      inline def setWidthArrVarargs(value: Double*): Self = StObject.set(x, "widthArr", js.Array(value :_*))
+      inline def setWidthArrVarargs(value: Double*): Self = StObject.set(x, "widthArr", js.Array(value*))
     }
   }
   
   trait RowProps extends StObject {
     
-    var data: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var data: js.UndefOr[js.Array[Any]] = js.undefined
     
     var flexArr: js.UndefOr[js.Array[Double]] = js.undefined
     
     var height: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[ViewStyle] = js.undefined
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var textStyle: js.UndefOr[TextStyle] = js.undefined
+    var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
     var widthArr: js.UndefOr[js.Array[Double]] = js.undefined
   }
@@ -280,27 +295,31 @@ object mod {
     
     extension [Self <: RowProps](x: Self) {
       
-      inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setFlexArr(value: js.Array[Double]): Self = StObject.set(x, "flexArr", value.asInstanceOf[js.Any])
       
       inline def setFlexArrUndefined: Self = StObject.set(x, "flexArr", js.undefined)
       
-      inline def setFlexArrVarargs(value: Double*): Self = StObject.set(x, "flexArr", js.Array(value :_*))
+      inline def setFlexArrVarargs(value: Double*): Self = StObject.set(x, "flexArr", js.Array(value*))
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+      inline def setTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+      
+      inline def setTextStyleNull: Self = StObject.set(x, "textStyle", null)
       
       inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
       
@@ -308,21 +327,21 @@ object mod {
       
       inline def setWidthArrUndefined: Self = StObject.set(x, "widthArr", js.undefined)
       
-      inline def setWidthArrVarargs(value: Double*): Self = StObject.set(x, "widthArr", js.Array(value :_*))
+      inline def setWidthArrVarargs(value: Double*): Self = StObject.set(x, "widthArr", js.Array(value*))
     }
   }
   
   trait RowsProps extends StObject {
     
-    var data: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
+    var data: js.UndefOr[js.Array[js.Array[Any]]] = js.undefined
     
     var flexArr: js.UndefOr[js.Array[Double]] = js.undefined
     
     var heightArr: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var style: js.UndefOr[ViewStyle] = js.undefined
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var textStyle: js.UndefOr[TextStyle] = js.undefined
+    var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
     var widthArr: js.UndefOr[js.Array[Double]] = js.undefined
   }
@@ -335,29 +354,33 @@ object mod {
     
     extension [Self <: RowsProps](x: Self) {
       
-      inline def setData(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[js.Array[Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDataVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: js.Array[Any]*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setFlexArr(value: js.Array[Double]): Self = StObject.set(x, "flexArr", value.asInstanceOf[js.Any])
       
       inline def setFlexArrUndefined: Self = StObject.set(x, "flexArr", js.undefined)
       
-      inline def setFlexArrVarargs(value: Double*): Self = StObject.set(x, "flexArr", js.Array(value :_*))
+      inline def setFlexArrVarargs(value: Double*): Self = StObject.set(x, "flexArr", js.Array(value*))
       
       inline def setHeightArr(value: js.Array[Double]): Self = StObject.set(x, "heightArr", value.asInstanceOf[js.Any])
       
       inline def setHeightArrUndefined: Self = StObject.set(x, "heightArr", js.undefined)
       
-      inline def setHeightArrVarargs(value: Double*): Self = StObject.set(x, "heightArr", js.Array(value :_*))
+      inline def setHeightArrVarargs(value: Double*): Self = StObject.set(x, "heightArr", js.Array(value*))
       
-      inline def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+      inline def setTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+      
+      inline def setTextStyleNull: Self = StObject.set(x, "textStyle", null)
       
       inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
       
@@ -365,15 +388,17 @@ object mod {
       
       inline def setWidthArrUndefined: Self = StObject.set(x, "widthArr", js.undefined)
       
-      inline def setWidthArrVarargs(value: Double*): Self = StObject.set(x, "widthArr", js.Array(value :_*))
+      inline def setWidthArrVarargs(value: Double*): Self = StObject.set(x, "widthArr", js.Array(value*))
     }
   }
   
   trait TableProps extends StObject {
     
-    var borderStyle: js.UndefOr[ViewStyle] = js.undefined
+    var borderStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var style: js.UndefOr[ViewStyle] = js.undefined
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   }
   object TableProps {
     
@@ -384,11 +409,19 @@ object mod {
     
     extension [Self <: TableProps](x: Self) {
       
-      inline def setBorderStyle(value: ViewStyle): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
+      inline def setBorderStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
+      
+      inline def setBorderStyleNull: Self = StObject.set(x, "borderStyle", null)
       
       inline def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
       
-      inline def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
@@ -396,9 +429,11 @@ object mod {
   
   trait TableWrapperProps extends StObject {
     
-    var borderStyle: js.UndefOr[ViewStyle] = js.undefined
+    var borderStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var style: js.UndefOr[ViewStyle] = js.undefined
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   }
   object TableWrapperProps {
     
@@ -409,11 +444,19 @@ object mod {
     
     extension [Self <: TableWrapperProps](x: Self) {
       
-      inline def setBorderStyle(value: ViewStyle): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
+      inline def setBorderStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
+      
+      inline def setBorderStyleNull: Self = StObject.set(x, "borderStyle", null)
       
       inline def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
       
-      inline def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }

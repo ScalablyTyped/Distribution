@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("X86Writer")
 @js.native
-class X86Writer protected ()
+open class X86Writer protected ()
   extends StObject
      with typings.fridaGum.X86Writer {
   /**

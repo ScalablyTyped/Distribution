@@ -9,17 +9,17 @@ trait TileMaximizingEventUIParam extends StObject {
   /**
     * Used to get reference to the tile that is minimizing simultaneously or null if no tile is minimizing.
     */
-  var minimizingTile: js.UndefOr[js.Any] = js.undefined
+  var minimizingTile: js.UndefOr[Any] = js.undefined
   
   /**
     * Used to get a reference to the tile manager performing the maximizing the tile belongs to.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
   
   /**
     * Used to get the jQuery element of the tile being maximized
     */
-  var tile: js.UndefOr[js.Any] = js.undefined
+  var tile: js.UndefOr[Any] = js.undefined
 }
 object TileMaximizingEventUIParam {
   
@@ -30,15 +30,15 @@ object TileMaximizingEventUIParam {
   
   extension [Self <: TileMaximizingEventUIParam](x: Self) {
     
-    inline def setMinimizingTile(value: js.Any): Self = StObject.set(x, "minimizingTile", value.asInstanceOf[js.Any])
+    inline def setMinimizingTile(value: Any): Self = StObject.set(x, "minimizingTile", value.asInstanceOf[js.Any])
     
     inline def setMinimizingTileUndefined: Self = StObject.set(x, "minimizingTile", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    inline def setTile(value: js.Any): Self = StObject.set(x, "tile", value.asInstanceOf[js.Any])
+    inline def setTile(value: Any): Self = StObject.set(x, "tile", value.asInstanceOf[js.Any])
     
     inline def setTileUndefined: Self = StObject.set(x, "tile", js.undefined)
   }

@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait CamlBuilder extends StObject {
   
+  /** Generate CAML Query, starting from <Query> tag */
+  def Query(): IQuery = js.native
+  
   /** Generate <View> tag for SP.CamlQuery
     @param viewFields If omitted, default view fields are requested; otherwise, only values for the fields with the specified internal names are returned.
     Specifying view fields is a good practice, as it decreases traffic between server and client.

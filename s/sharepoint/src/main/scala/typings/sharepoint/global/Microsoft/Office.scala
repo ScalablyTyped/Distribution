@@ -13,7 +13,7 @@ object Office {
       
       @JSGlobal("Microsoft.Office.Server.ReputationModel.Reputation")
       @js.native
-      class Reputation ()
+      open class Reputation ()
         extends StObject
            with typings.sharepoint.Microsoft.Office.Server.ReputationModel.Reputation
       object Reputation {

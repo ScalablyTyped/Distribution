@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object vanillaSwipeStrings {
   
   @js.native
-  sealed trait x extends StObject
-  inline def x: x = "x".asInstanceOf[x]
-  
-  @js.native
-  sealed trait y extends StObject
-  inline def y: y = "y".asInstanceOf[y]
+  sealed trait TraceDirection extends StObject
+  inline def TraceDirection: TraceDirection = "TraceDirection".asInstanceOf[TraceDirection]
 }

@@ -10,10 +10,10 @@ object translateMod {
   
   @JSImport("material-ui/svg-icons/action/translate", JSImport.Default)
   @js.native
-  class default () extends ActionTranslate
+  open class default () extends ActionTranslate
   
   @JSImport("material-ui/svg-icons/action/translate", "ActionTranslate")
   @js.native
-  class ActionTranslate ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionTranslate ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

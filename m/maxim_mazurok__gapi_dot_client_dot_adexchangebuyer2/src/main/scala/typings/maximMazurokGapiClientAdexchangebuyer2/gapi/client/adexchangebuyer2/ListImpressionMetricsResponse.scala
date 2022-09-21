@@ -28,7 +28,7 @@ object ListImpressionMetricsResponse {
     
     inline def setImpressionMetricsRowsUndefined: Self = StObject.set(x, "impressionMetricsRows", js.undefined)
     
-    inline def setImpressionMetricsRowsVarargs(value: ImpressionMetricsRow*): Self = StObject.set(x, "impressionMetricsRows", js.Array(value :_*))
+    inline def setImpressionMetricsRowsVarargs(value: ImpressionMetricsRow*): Self = StObject.set(x, "impressionMetricsRows", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

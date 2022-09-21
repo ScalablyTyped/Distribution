@@ -10,6 +10,6 @@ object maxMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def max[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("max")().asInstanceOf[js.Any]
-  inline def max[T](comparer: js.Function2[/* x */ T, /* y */ T, Double]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(comparer.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def max[T](): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("max")().asInstanceOf[Any]
+  inline def max[T](comparer: js.Function2[/* x */ T, /* y */ T, Double]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(comparer.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

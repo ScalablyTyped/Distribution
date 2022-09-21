@@ -15,10 +15,10 @@ trait PhononI18n extends StObject {
   def bind(element: Element): Unit = js.native
   def bind(element: Element, callback: js.Function0[Unit]): Unit = js.native
   
-  def get(key: String, callback: js.Function1[/* value */ js.Any, Unit]): Unit = js.native
-  def get(key: js.Array[String], callback: js.Function1[/* values */ js.Any, Unit]): Unit = js.native
+  def get(key: String, callback: js.Function1[/* value */ Any, Unit]): Unit = js.native
+  def get(key: js.Array[String], callback: js.Function1[/* values */ Any, Unit]): Unit = js.native
   
-  def getAll(callback: js.Function1[/* json */ js.Any, Unit]): Unit = js.native
+  def getAll(callback: js.Function1[/* json */ Any, Unit]): Unit = js.native
   
   def getLocale(): String = js.native
   

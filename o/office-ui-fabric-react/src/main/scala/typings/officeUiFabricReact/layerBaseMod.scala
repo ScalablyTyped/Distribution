@@ -11,19 +11,18 @@ object layerBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Layer/Layer.base", "LayerBase")
   @js.native
-  class LayerBase protected ()
-    extends Component[ILayerProps, ILayerBaseState, js.Any] {
+  open class LayerBase protected () extends Component[ILayerProps, ILayerBaseState, Any] {
     def this(props: ILayerProps) = this()
     
-    /* private */ var _createLayerElement: js.Any = js.native
+    /* private */ var _createLayerElement: Any = js.native
     
-    /* private */ var _getClassNames: js.Any = js.native
+    /* private */ var _getClassNames: Any = js.native
     
-    /* private */ var _getHost: js.Any = js.native
+    /* private */ var _getHost: Any = js.native
     
-    /* private */ var _removeLayerElement: js.Any = js.native
+    /* private */ var _removeLayerElement: Any = js.native
     
-    /* private */ var _rootRef: js.Any = js.native
+    /* private */ var _rootRef: Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MLayerBase(): Unit = js.native

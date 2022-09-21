@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.InlineShape")
 @js.native
-/* private */ class InlineShape ()
+/* private */ open class InlineShape ()
   extends StObject
      with typings.activexWord.Word.InlineShape {
   
@@ -88,7 +88,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val OWSAnchor: Double = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var PictureFormat: typings.activexWord.Word.PictureFormat = js.native

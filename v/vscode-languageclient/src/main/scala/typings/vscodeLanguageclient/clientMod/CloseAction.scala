@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait CloseAction extends StObject
-@JSImport("vscode-languageclient/lib/client", "CloseAction")
+@JSImport("vscode-languageclient/lib/common/client", "CloseAction")
 @js.native
 object CloseAction extends StObject {
   

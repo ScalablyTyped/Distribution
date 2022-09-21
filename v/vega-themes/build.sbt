@@ -1,14 +1,16 @@
 organization := "org.scalablytyped"
 name := "vega-themes"
-version := "2.9.1-2379b6"
-scalaVersion := "3.0.1"
+version := "2.12.0-adedcc"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab",
-  "org.scalablytyped" %%% "vega-lite" % "4.17.0-e25c01",
-  "org.scalablytyped" %%% "vega-typings" % "0.19.1-2eb7f1",
-  "org.scalablytyped" %%% "vega-util" % "1.16.0-a9c3cc")
+  "org.scalablytyped" %%% "estree" % "1.0-dt-20220712Z-bee5c7",
+  "org.scalablytyped" %%% "std" % "4.8-958c79",
+  "org.scalablytyped" %%% "vega-expression" % "5.0.0-b0e6d9",
+  "org.scalablytyped" %%% "vega-lite" % "5.5.0-219895",
+  "org.scalablytyped" %%% "vega-typings" % "0.22.3-2fed17",
+  "org.scalablytyped" %%% "vega-util" % "1.17.0-6a7b83")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

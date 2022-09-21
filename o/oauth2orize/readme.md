@@ -10,14 +10,14 @@ OAuth 2.0 authorization server toolkit for Node.js.
 | ------------------ | :-------------: |
 | Full name          | oauth2orize |
 | Keywords           | oauth, oauth2, auth, authz, authorization, connect, express, passport, middleware |
-| # releases         | 0 |
-| # dependents       | 107 |
-| # downloads        | 2409525 |
-| # stars            | 28 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 217644.0 |
+| # stars            | 3336.0 |
 
 ## Links
 - [Homepage](https://github.com/jaredhanson/oauth2orize#readme)
-- [Bugs](http://github.com/jaredhanson/oauth2orize/issues)
+- [Bugs](https://github.com/jaredhanson/oauth2orize/issues)
 - [Repository](https://github.com/jaredhanson/oauth2orize)
 - [Npm](https://www.npmjs.com/package/oauth2orize)
     

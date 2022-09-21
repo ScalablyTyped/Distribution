@@ -14,20 +14,20 @@ trait ResourceMetadata extends StObject {
   /**
     * The Unix epoch timestamp in seconds for when the resource was created.
     */
-  var createdAt: Timestamp
+  var createdAt: js.Date
   
   /**
     * The Unix epoch timestamp in seconds for when the resource was last updated.
     */
-  var lastUpdatedAt: Timestamp
+  var lastUpdatedAt: js.Date
   
   /**
-    * The AWS IAM account ID of the service mesh owner. If the account ID is not your own, then it's the ID of the account that shared the mesh with your account. For more information about mesh sharing, see Working with shared meshes.
+    * The Amazon Web Services IAM account ID of the service mesh owner. If the account ID is not your own, then it's the ID of the account that shared the mesh with your account. For more information about mesh sharing, see Working with shared meshes.
     */
   var meshOwner: AccountId
   
   /**
-    * The AWS IAM account ID of the resource owner. If the account ID is not your own, then it's the ID of the mesh owner or of another account that the mesh is shared with. For more information about mesh sharing, see Working with shared meshes.
+    * The Amazon Web Services IAM account ID of the resource owner. If the account ID is not your own, then it's the ID of the mesh owner or of another account that the mesh is shared with. For more information about mesh sharing, see Working with shared meshes.
     */
   var resourceOwner: AccountId
   
@@ -45,8 +45,8 @@ object ResourceMetadata {
   
   inline def apply(
     arn: Arn,
-    createdAt: Timestamp,
-    lastUpdatedAt: Timestamp,
+    createdAt: js.Date,
+    lastUpdatedAt: js.Date,
     meshOwner: AccountId,
     resourceOwner: AccountId,
     uid: String,
@@ -60,9 +60,9 @@ object ResourceMetadata {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    inline def setLastUpdatedAt(value: Timestamp): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedAt(value: js.Date): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
     
     inline def setMeshOwner(value: AccountId): Self = StObject.set(x, "meshOwner", value.asInstanceOf[js.Any])
     

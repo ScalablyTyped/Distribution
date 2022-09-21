@@ -4,10 +4,10 @@ import typings.materialUi.materialUiStrings.horizontal
 import typings.materialUi.materialUiStrings.vertical
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
+import typings.react.mod.LegacyRef
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
-import typings.react.mod.Props
 import typings.react.mod.ReactNode
 import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
@@ -18,15 +18,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Stepper {
   
-  trait SnackbarProps
-    extends StObject
-       with Props[Snackbar] {
+  trait SnackbarProps extends StObject {
     
     var action: js.UndefOr[String] = js.undefined
     
     var autoHideDuration: js.UndefOr[Double] = js.undefined
     
     var bodyStyle: js.UndefOr[CSSProperties] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -48,6 +48,8 @@ object Stepper {
     
     /** @deprecated Use the open property to control the component instead */
     var openOnMount: js.UndefOr[Boolean] = js.undefined
+    
+    var ref: js.UndefOr[LegacyRef[Snackbar]] = js.undefined
   }
   object SnackbarProps {
     
@@ -69,6 +71,10 @@ object Stepper {
       inline def setBodyStyle(value: CSSProperties): Self = StObject.set(x, "bodyStyle", value.asInstanceOf[js.Any])
       
       inline def setBodyStyleUndefined: Self = StObject.set(x, "bodyStyle", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -95,20 +101,28 @@ object Stepper {
       inline def setOpenOnMount(value: Boolean): Self = StObject.set(x, "openOnMount", value.asInstanceOf[js.Any])
       
       inline def setOpenOnMountUndefined: Self = StObject.set(x, "openOnMount", js.undefined)
+      
+      inline def setRef(value: LegacyRef[Snackbar]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefFunction1(value: /* instance */ Snackbar | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     }
   }
   
-  type Step = Component[StepProps, js.Object, js.Any]
+  type Step = Component[StepProps, js.Object, Any]
   
-  @js.native
-  trait StepButton
-    extends Component[StepButtonProps, js.Object, js.Any]
+  type StepButton = Component[StepButtonProps, js.Object, Any]
   
   trait StepButtonProps
     extends StObject
        with SharedEnhancedButtonProps[StepButton] {
     
     var active: js.UndefOr[Boolean] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var completed: js.UndefOr[Boolean] = js.undefined
     
@@ -134,6 +148,10 @@ object Stepper {
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
       inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setCompleted(value: Boolean): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
       
@@ -161,11 +179,13 @@ object Stepper {
     }
   }
   
-  type StepContent = Component[StepContentProps, js.Object, js.Any]
+  type StepContent = Component[StepContentProps, js.Object, Any]
   
   trait StepContentProps extends StObject {
     
     var active: js.UndefOr[Boolean] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var last: js.UndefOr[Boolean] = js.undefined
     
@@ -184,6 +204,10 @@ object Stepper {
       
       inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setLast(value: Boolean): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
       
       inline def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
@@ -194,11 +218,13 @@ object Stepper {
     }
   }
   
-  type StepLabel = Component[StepLabelProps, js.Object, js.Any]
+  type StepLabel = Component[StepLabelProps, js.Object, Any]
   
   trait StepLabelProps extends StObject {
     
     var active: js.UndefOr[Boolean] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var completed: js.UndefOr[Boolean] = js.undefined
     
@@ -222,6 +248,10 @@ object Stepper {
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
       inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setCompleted(value: Boolean): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
       
@@ -249,6 +279,8 @@ object Stepper {
     
     var active: js.UndefOr[Boolean] = js.undefined
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var completed: js.UndefOr[Boolean] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
@@ -268,6 +300,10 @@ object Stepper {
       
       inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setCompleted(value: Boolean): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
       
       inline def setCompletedUndefined: Self = StObject.set(x, "completed", js.undefined)
@@ -282,11 +318,13 @@ object Stepper {
     }
   }
   
-  type Stepper = Component[StepperProps, js.Object, js.Any]
+  type Stepper = Component[StepperProps, js.Object, Any]
   
   trait StepperProps extends StObject {
     
     var activeStep: js.UndefOr[Double] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var linear: js.UndefOr[Boolean] = js.undefined
     
@@ -306,6 +344,10 @@ object Stepper {
       inline def setActiveStep(value: Double): Self = StObject.set(x, "activeStep", value.asInstanceOf[js.Any])
       
       inline def setActiveStepUndefined: Self = StObject.set(x, "activeStep", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setLinear(value: Boolean): Self = StObject.set(x, "linear", value.asInstanceOf[js.Any])
       

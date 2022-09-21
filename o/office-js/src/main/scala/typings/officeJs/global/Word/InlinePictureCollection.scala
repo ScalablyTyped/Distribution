@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Contains a collection of {@link Word.InlinePicture} objects.
   *
+  * @remarks
   * [Api set: WordApi 1.1]
   */
 @JSGlobal("Word.InlinePictureCollection")
 @js.native
-class InlinePictureCollection ()
+open class InlinePictureCollection ()
   extends StObject
      with typings.officeJs.Word.InlinePictureCollection {
   

@@ -5,14 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Returns a new pc.VertexIterator object.
-  * @property element - The vertex buffer elements.
-  * @param vertexBuffer - The vertex buffer to be iterated.
+  * A vertex iterator simplifies the process of writing vertex data to a vertex buffer.
   */
 @JSGlobal("pc.VertexIterator")
 @js.native
-class VertexIterator protected ()
-  extends StObject
-     with typings.playcanvas.pc.VertexIterator {
-  def this(vertexBuffer: typings.playcanvas.pc.VertexBuffer) = this()
+open class VertexIterator protected ()
+  extends typings.playcanvas.mod.VertexIterator {
+  /**
+    * Create a new VertexIterator instance.
+    *
+    * @param {VertexBuffer} vertexBuffer - The vertex buffer to be iterated.
+    */
+  def this(vertexBuffer: typings.playcanvas.mod.VertexBuffer) = this()
 }

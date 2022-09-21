@@ -24,6 +24,6 @@ object DescribeConfigurationRecorderStatusResponse {
     
     inline def setConfigurationRecordersStatusUndefined: Self = StObject.set(x, "ConfigurationRecordersStatus", js.undefined)
     
-    inline def setConfigurationRecordersStatusVarargs(value: ConfigurationRecorderStatus*): Self = StObject.set(x, "ConfigurationRecordersStatus", js.Array(value :_*))
+    inline def setConfigurationRecordersStatusVarargs(value: ConfigurationRecorderStatus*): Self = StObject.set(x, "ConfigurationRecordersStatus", js.Array(value*))
   }
 }

@@ -32,6 +32,6 @@ object PointCloudReturnFilterProperties {
     
     inline def setIncludedReturnsUndefined: Self = StObject.set(x, "includedReturns", js.undefined)
     
-    inline def setIncludedReturnsVarargs(value: (firstOfMany | last | lastOfMany | single)*): Self = StObject.set(x, "includedReturns", js.Array(value :_*))
+    inline def setIncludedReturnsVarargs(value: (firstOfMany | last | lastOfMany | single)*): Self = StObject.set(x, "includedReturns", js.Array(value*))
   }
 }

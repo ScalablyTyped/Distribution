@@ -171,42 +171,39 @@ object ScCommunicator {
       * Access to the public methods of the service
       */
     @JSName("$get")
-    def $get(): js.Any
+    def $get(): Any
     
     /**
       * Get current environment
       * If environment was not previously configured, use default environment
       *
-      * @public
-      * @returns {Object} Current or default environment
+      * @returns Current or default environment
       */
     def getCurrentEnvironment(): Environment
     
     /**
       * Get specific environment
       *
-      * @public
-      * @param {string} name - Environment name
-      * @returns {Object} Specific or default environment
+      * @param name - Environment name
+      * @returns Specific or default environment
       */
     def getSpecificEnvironment(name: String): Environment
     
     /**
       * Set current environment
       *
-      * @public
-      * @param {string|Object} env - Environment name or custom environment object
-      * @returns {Object} Named or custom environment
+      * @param env - Environment name or custom environment object
+      * @returns Named or custom environment
       */
-    def setCurrentEnvironment(env: js.Any): Environment
+    def setCurrentEnvironment(env: Any): Environment
   }
   object ScEnvironmentsProvider {
     
     inline def apply(
-      $get: () => js.Any,
+      $get: () => Any,
       getCurrentEnvironment: () => Environment,
       getSpecificEnvironment: String => Environment,
-      setCurrentEnvironment: js.Any => Environment
+      setCurrentEnvironment: Any => Environment
     ): ScEnvironmentsProvider = {
       val __obj = js.Dynamic.literal($get = js.Any.fromFunction0($get), getCurrentEnvironment = js.Any.fromFunction0(getCurrentEnvironment), getSpecificEnvironment = js.Any.fromFunction1(getSpecificEnvironment), setCurrentEnvironment = js.Any.fromFunction1(setCurrentEnvironment))
       __obj.asInstanceOf[ScEnvironmentsProvider]
@@ -214,13 +211,13 @@ object ScCommunicator {
     
     extension [Self <: ScEnvironmentsProvider](x: Self) {
       
-      inline def set$get(value: () => js.Any): Self = StObject.set(x, "$get", js.Any.fromFunction0(value))
+      inline def set$get(value: () => Any): Self = StObject.set(x, "$get", js.Any.fromFunction0(value))
       
       inline def setGetCurrentEnvironment(value: () => Environment): Self = StObject.set(x, "getCurrentEnvironment", js.Any.fromFunction0(value))
       
       inline def setGetSpecificEnvironment(value: String => Environment): Self = StObject.set(x, "getSpecificEnvironment", js.Any.fromFunction1(value))
       
-      inline def setSetCurrentEnvironment(value: js.Any => Environment): Self = StObject.set(x, "setCurrentEnvironment", js.Any.fromFunction1(value))
+      inline def setSetCurrentEnvironment(value: Any => Environment): Self = StObject.set(x, "setCurrentEnvironment", js.Any.fromFunction1(value))
     }
   }
 }

@@ -53,19 +53,19 @@ object DescribeLaunchTemplatesRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setLaunchTemplateIds(value: LaunchTemplateIdStringList): Self = StObject.set(x, "LaunchTemplateIds", value.asInstanceOf[js.Any])
     
     inline def setLaunchTemplateIdsUndefined: Self = StObject.set(x, "LaunchTemplateIds", js.undefined)
     
-    inline def setLaunchTemplateIdsVarargs(value: LaunchTemplateId*): Self = StObject.set(x, "LaunchTemplateIds", js.Array(value :_*))
+    inline def setLaunchTemplateIdsVarargs(value: LaunchTemplateId*): Self = StObject.set(x, "LaunchTemplateIds", js.Array(value*))
     
     inline def setLaunchTemplateNames(value: LaunchTemplateNameStringList): Self = StObject.set(x, "LaunchTemplateNames", value.asInstanceOf[js.Any])
     
     inline def setLaunchTemplateNamesUndefined: Self = StObject.set(x, "LaunchTemplateNames", js.undefined)
     
-    inline def setLaunchTemplateNamesVarargs(value: LaunchTemplateName*): Self = StObject.set(x, "LaunchTemplateNames", js.Array(value :_*))
+    inline def setLaunchTemplateNamesVarargs(value: LaunchTemplateName*): Self = StObject.set(x, "LaunchTemplateNames", js.Array(value*))
     
     inline def setMaxResults(value: DescribeLaunchTemplatesMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

@@ -131,13 +131,13 @@ object Utilities {
   @js.native
   trait Utilities extends StObject {
     
-    var Charset: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Charset */ js.Any = js.native
+    var Charset: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Charset */ Any = js.native
     
-    var DigestAlgorithm: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DigestAlgorithm */ js.Any = js.native
+    var DigestAlgorithm: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DigestAlgorithm */ Any = js.native
     
-    var MacAlgorithm: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MacAlgorithm */ js.Any = js.native
+    var MacAlgorithm: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MacAlgorithm */ Any = js.native
     
-    var RsaAlgorithm: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof RsaAlgorithm */ js.Any = js.native
+    var RsaAlgorithm: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof RsaAlgorithm */ Any = js.native
     
     def base64Decode(encoded: String): js.Array[Byte] = js.native
     def base64Decode(encoded: String, charset: Charset): js.Array[Byte] = js.native
@@ -176,16 +176,16 @@ object Utilities {
     
     def formatDate(date: Date, timeZone: String, format: String): String = js.native
     
-    def formatString(template: String, args: js.Any*): String = js.native
+    def formatString(template: String, args: Any*): String = js.native
     
     def getUuid(): String = js.native
     
     def gzip(blob: BlobSource): Blob = js.native
     def gzip(blob: BlobSource, name: String): Blob = js.native
     
-    /** @deprecated DO NOT USE */ def jsonParse(jsonString: String): js.Any = js.native
+    /** @deprecated DO NOT USE */ def jsonParse(jsonString: String): Any = js.native
     
-    /** @deprecated DO NOT USE */ def jsonStringify(obj: js.Any): String = js.native
+    /** @deprecated DO NOT USE */ def jsonStringify(obj: Any): String = js.native
     
     def newBlob(data: String): Blob = js.native
     def newBlob(data: String, contentType: String): Blob = js.native

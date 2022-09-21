@@ -39,7 +39,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("color", JSImport.Namespace)
   @js.native
-  class Class[T /* <: ColorParam */] ()
+  open class Class[T /* <: ColorParam */] ()
     extends StObject
        with Color[T] {
     def this(obj: T) = this()
@@ -109,6 +109,9 @@ object mod extends Shortcut {
     
     def hex(): String = js.native
     def hex[V /* <: String */](`val`: V): Color[V] = js.native
+    
+    def hexa(): String = js.native
+    def hexa[V /* <: String */](`val`: V): Color[V] = js.native
     
     def hsl(args: Double*): Color[ColorParam] = js.native
     
@@ -271,9 +274,7 @@ object mod extends Shortcut {
     def xyz(`val`: Double*): Color[ColorParam] = js.native
   }
   
-  type ColorParam = (Color[
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias color.color.ColorParam */ js.Object
-  ]) | String | ArrayLike[Double] | Double | StringDictionary[js.Any]
+  type ColorParam = Color[Any] | String | ArrayLike[Double] | Double | StringDictionary[Any]
   
   type _To = js.Object & ColorConstructor
   

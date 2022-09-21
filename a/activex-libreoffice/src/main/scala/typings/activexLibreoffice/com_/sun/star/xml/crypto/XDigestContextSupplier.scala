@@ -29,7 +29,7 @@ object XDigestContextSupplier {
   inline def apply(
     acquire: () => Unit,
     getDigestContext: (Double, SeqEquiv[NamedValue]) => XDigestContext,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XDigestContextSupplier = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getDigestContext = js.Any.fromFunction2(getDigestContext), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

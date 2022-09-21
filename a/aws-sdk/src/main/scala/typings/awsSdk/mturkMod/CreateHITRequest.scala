@@ -121,7 +121,7 @@ object CreateHITRequest {
     
     inline def setHITLayoutParametersUndefined: Self = StObject.set(x, "HITLayoutParameters", js.undefined)
     
-    inline def setHITLayoutParametersVarargs(value: HITLayoutParameter*): Self = StObject.set(x, "HITLayoutParameters", js.Array(value :_*))
+    inline def setHITLayoutParametersVarargs(value: HITLayoutParameter*): Self = StObject.set(x, "HITLayoutParameters", js.Array(value*))
     
     inline def setHITReviewPolicy(value: ReviewPolicy): Self = StObject.set(x, "HITReviewPolicy", value.asInstanceOf[js.Any])
     
@@ -141,7 +141,7 @@ object CreateHITRequest {
     
     inline def setQualificationRequirementsUndefined: Self = StObject.set(x, "QualificationRequirements", js.undefined)
     
-    inline def setQualificationRequirementsVarargs(value: QualificationRequirement*): Self = StObject.set(x, "QualificationRequirements", js.Array(value :_*))
+    inline def setQualificationRequirementsVarargs(value: QualificationRequirement*): Self = StObject.set(x, "QualificationRequirements", js.Array(value*))
     
     inline def setQuestion(value: String): Self = StObject.set(x, "Question", value.asInstanceOf[js.Any])
     

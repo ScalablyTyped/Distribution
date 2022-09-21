@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Devices.Sensors
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,5 +17,5 @@ abstract class SimpleOrientationSensorOrientationChangedEventArgs ()
   
   /** Gets the time of the current sensor reading. */
   /* CompleteClass */
-  var timestamp: Date = js.native
+  var timestamp: js.Date = js.native
 }

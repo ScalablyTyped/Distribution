@@ -4,51 +4,52 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Probe describes a health check to be performed against a container to
-  * determine whether it is alive or ready to receive traffic.
-  */
 trait SchemaProbe extends StObject {
   
   /**
-    * Minimum consecutive failures for the probe to be considered failed after
-    * having succeeded. Defaults to 3. Minimum value is 1. +optional
+    * (Optional) Not supported by Cloud Run One and only one of the following should be specified. Exec specifies the action to take. A field inlined from the Handler message.
     */
-  var failureThreshold: js.UndefOr[Double] = js.undefined
+  var exec: js.UndefOr[SchemaExecAction] = js.undefined
   
   /**
-    * The action taken to determine the health of a container
+    * (Optional) Minimum consecutive failures for the probe to be considered failed after having succeeded. Defaults to 3. Minimum value is 1.
     */
-  var handler: js.UndefOr[SchemaHandler] = js.undefined
+  var failureThreshold: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * Number of seconds after the container has started before liveness probes
-    * are initiated. More info:
-    * https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
-    * +optional
+    * (Optional) GRPCAction specifies an action involving a GRPC port. A field inlined from the Handler message.
     */
-  var initialDelaySeconds: js.UndefOr[Double] = js.undefined
+  var grpc: js.UndefOr[SchemaGRPCAction] = js.undefined
   
   /**
-    * How often (in seconds) to perform the probe. Default to 10 seconds.
-    * Minimum value is 1. +optional
+    * (Optional) HTTPGet specifies the http request to perform. A field inlined from the Handler message.
     */
-  var periodSeconds: js.UndefOr[Double] = js.undefined
+  var httpGet: js.UndefOr[SchemaHTTPGetAction] = js.undefined
   
   /**
-    * Minimum consecutive successes for the probe to be considered successful
-    * after having failed. Defaults to 1. Must be 1 for liveness. Minimum value
-    * is 1. +optional
+    * (Optional) Number of seconds after the container has started before the probe is initiated. Defaults to 0 seconds. Minimum value is 0. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
     */
-  var successThreshold: js.UndefOr[Double] = js.undefined
+  var initialDelaySeconds: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * Number of seconds after which the probe times out. Defaults to 1 second.
-    * Minimum value is 1. More info:
-    * https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
-    * +optional
+    * (Optional) How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240. Must be greater or equal than timeout_seconds.
     */
-  var timeoutSeconds: js.UndefOr[Double] = js.undefined
+  var periodSeconds: js.UndefOr[Double | Null] = js.undefined
+  
+  /**
+    * (Optional) Minimum consecutive successes for the probe to be considered successful after having failed. Must be 1 if set.
+    */
+  var successThreshold: js.UndefOr[Double | Null] = js.undefined
+  
+  /**
+    * (Optional) TCPSocket specifies an action involving a TCP port. TCP hooks not yet supported A field inlined from the Handler message.
+    */
+  var tcpSocket: js.UndefOr[SchemaTCPSocketAction] = js.undefined
+  
+  /**
+    * (Optional) Number of seconds after which the probe times out. Defaults to 1 second. Minimum value is 1. Maximum value is 3600. Must be smaller than period_seconds. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+    */
+  var timeoutSeconds: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaProbe {
   
@@ -59,27 +60,49 @@ object SchemaProbe {
   
   extension [Self <: SchemaProbe](x: Self) {
     
+    inline def setExec(value: SchemaExecAction): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
+    
+    inline def setExecUndefined: Self = StObject.set(x, "exec", js.undefined)
+    
     inline def setFailureThreshold(value: Double): Self = StObject.set(x, "failureThreshold", value.asInstanceOf[js.Any])
+    
+    inline def setFailureThresholdNull: Self = StObject.set(x, "failureThreshold", null)
     
     inline def setFailureThresholdUndefined: Self = StObject.set(x, "failureThreshold", js.undefined)
     
-    inline def setHandler(value: SchemaHandler): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+    inline def setGrpc(value: SchemaGRPCAction): Self = StObject.set(x, "grpc", value.asInstanceOf[js.Any])
     
-    inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
+    inline def setGrpcUndefined: Self = StObject.set(x, "grpc", js.undefined)
+    
+    inline def setHttpGet(value: SchemaHTTPGetAction): Self = StObject.set(x, "httpGet", value.asInstanceOf[js.Any])
+    
+    inline def setHttpGetUndefined: Self = StObject.set(x, "httpGet", js.undefined)
     
     inline def setInitialDelaySeconds(value: Double): Self = StObject.set(x, "initialDelaySeconds", value.asInstanceOf[js.Any])
+    
+    inline def setInitialDelaySecondsNull: Self = StObject.set(x, "initialDelaySeconds", null)
     
     inline def setInitialDelaySecondsUndefined: Self = StObject.set(x, "initialDelaySeconds", js.undefined)
     
     inline def setPeriodSeconds(value: Double): Self = StObject.set(x, "periodSeconds", value.asInstanceOf[js.Any])
     
+    inline def setPeriodSecondsNull: Self = StObject.set(x, "periodSeconds", null)
+    
     inline def setPeriodSecondsUndefined: Self = StObject.set(x, "periodSeconds", js.undefined)
     
     inline def setSuccessThreshold(value: Double): Self = StObject.set(x, "successThreshold", value.asInstanceOf[js.Any])
     
+    inline def setSuccessThresholdNull: Self = StObject.set(x, "successThreshold", null)
+    
     inline def setSuccessThresholdUndefined: Self = StObject.set(x, "successThreshold", js.undefined)
     
+    inline def setTcpSocket(value: SchemaTCPSocketAction): Self = StObject.set(x, "tcpSocket", value.asInstanceOf[js.Any])
+    
+    inline def setTcpSocketUndefined: Self = StObject.set(x, "tcpSocket", js.undefined)
+    
     inline def setTimeoutSeconds(value: Double): Self = StObject.set(x, "timeoutSeconds", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutSecondsNull: Self = StObject.set(x, "timeoutSeconds", null)
     
     inline def setTimeoutSecondsUndefined: Self = StObject.set(x, "timeoutSeconds", js.undefined)
   }

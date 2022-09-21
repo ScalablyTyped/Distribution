@@ -24,6 +24,6 @@ object GetLoadBalancerTlsCertificatesResult {
     
     inline def setTlsCertificatesUndefined: Self = StObject.set(x, "tlsCertificates", js.undefined)
     
-    inline def setTlsCertificatesVarargs(value: LoadBalancerTlsCertificate*): Self = StObject.set(x, "tlsCertificates", js.Array(value :_*))
+    inline def setTlsCertificatesVarargs(value: LoadBalancerTlsCertificate*): Self = StObject.set(x, "tlsCertificates", js.Array(value*))
   }
 }

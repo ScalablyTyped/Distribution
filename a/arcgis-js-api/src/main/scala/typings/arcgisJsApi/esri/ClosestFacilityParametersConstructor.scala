@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ClosestFacilityParametersConstructor
   extends StObject
      with /**
-  * Input parameters for [ClosestFacilityTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-ClosestFacilityTask.html).
+  * Input parameters for [closestFacility](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-closestFacility.html).
   *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html)
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html)
   */
 Instantiable0[ClosestFacilityParameters]
      with Instantiable1[/* properties */ ClosestFacilityParametersProperties, ClosestFacilityParameters] {
   
-  def fromJSON(json: js.Any): ClosestFacilityParameters = js.native
+  def fromJSON(json: Any): ClosestFacilityParameters = js.native
 }

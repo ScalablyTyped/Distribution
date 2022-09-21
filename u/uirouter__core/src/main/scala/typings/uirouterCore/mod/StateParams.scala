@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@uirouter/core", "StateParams")
 @js.native
-class StateParams ()
+open class StateParams ()
   extends typings.uirouterCore.paramsMod.StateParams {
   def this(params: Obj) = this()
 }

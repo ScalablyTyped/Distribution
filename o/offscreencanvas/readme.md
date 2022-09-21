@@ -1,7 +1,7 @@
 
 # Scala.js typings for offscreencanvas
 
-Typings are for version 2019.6
+Typings are for version 2019.7
 
 
 

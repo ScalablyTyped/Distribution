@@ -11,7 +11,7 @@ trait IHTMLDOMAttribute extends StObject {
   
   val nodeName: String
   
-  var nodeValue: js.Any
+  var nodeValue: Any
   
   val specified: Boolean
 }
@@ -20,7 +20,7 @@ object IHTMLDOMAttribute {
   inline def apply(
     MSHTMLDotIHTMLDOMAttribute_typekey: IHTMLDOMAttribute,
     nodeName: String,
-    nodeValue: js.Any,
+    nodeValue: Any,
     specified: Boolean
   ): IHTMLDOMAttribute = {
     val __obj = js.Dynamic.literal(nodeName = nodeName.asInstanceOf[js.Any], nodeValue = nodeValue.asInstanceOf[js.Any], specified = specified.asInstanceOf[js.Any])
@@ -34,7 +34,7 @@ object IHTMLDOMAttribute {
     
     inline def setNodeName(value: String): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
     
-    inline def setNodeValue(value: js.Any): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
+    inline def setNodeValue(value: Any): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
     
     inline def setSpecified(value: Boolean): Self = StObject.set(x, "specified", value.asInstanceOf[js.Any])
   }

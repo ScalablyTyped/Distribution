@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/core", "NgZone")
 @js.native
-class NgZone protected () extends StObject {
-  def this(hasEnableLongStackTraceShouldCoalesceEventChangeDetection: EnableLongStackTrace) = this()
+open class NgZone protected () extends StObject {
+  def this(hasEnableLongStackTraceShouldCoalesceEventChangeDetectionShouldCoalesceRunChangeDetection: EnableLongStackTrace) = this()
   
   val hasPendingMacrotasks: Boolean = js.native
   
@@ -22,26 +22,26 @@ class NgZone protected () extends StObject {
   /**
     * Notifies that an error has been delivered.
     */
-  val onError: EventEmitter[js.Any] = js.native
+  val onError: EventEmitter[Any] = js.native
   
   /**
     * Notifies when there is no more microtasks enqueued in the current VM Turn.
     * This is a hint for Angular to do change detection, which may enqueue more microtasks.
     * For this reason this event can fire multiple times per VM Turn.
     */
-  val onMicrotaskEmpty: EventEmitter[js.Any] = js.native
+  val onMicrotaskEmpty: EventEmitter[Any] = js.native
   
   /**
     * Notifies when the last `onMicrotaskEmpty` has run and there are no more microtasks, which
     * implies we are about to relinquish VM turn.
     * This event gets called just once.
     */
-  val onStable: EventEmitter[js.Any] = js.native
+  val onStable: EventEmitter[Any] = js.native
   
   /**
     * Notifies when code enters Angular Zone. This gets fired first on VM Turn.
     */
-  val onUnstable: EventEmitter[js.Any] = js.native
+  val onUnstable: EventEmitter[Any] = js.native
   
   /**
     * Executes the `fn` function synchronously within the Angular zone and returns value returned by
@@ -55,19 +55,19 @@ class NgZone protected () extends StObject {
     *
     * If a synchronous error happens it will be rethrown and not reported via `onError`.
     */
-  def run[T](fn: js.Function1[/* repeated */ js.Any, T]): T = js.native
-  def run[T](fn: js.Function1[/* repeated */ js.Any, T], applyThis: js.Any): T = js.native
-  def run[T](fn: js.Function1[/* repeated */ js.Any, T], applyThis: js.Any, applyArgs: js.Array[js.Any]): T = js.native
-  def run[T](fn: js.Function1[/* repeated */ js.Any, T], applyThis: Unit, applyArgs: js.Array[js.Any]): T = js.native
+  def run[T](fn: js.Function1[/* repeated */ Any, T]): T = js.native
+  def run[T](fn: js.Function1[/* repeated */ Any, T], applyThis: Any): T = js.native
+  def run[T](fn: js.Function1[/* repeated */ Any, T], applyThis: Any, applyArgs: js.Array[Any]): T = js.native
+  def run[T](fn: js.Function1[/* repeated */ Any, T], applyThis: Unit, applyArgs: js.Array[Any]): T = js.native
   
   /**
     * Same as `run`, except that synchronous errors are caught and forwarded via `onError` and not
     * rethrown.
     */
-  def runGuarded[T](fn: js.Function1[/* repeated */ js.Any, T]): T = js.native
-  def runGuarded[T](fn: js.Function1[/* repeated */ js.Any, T], applyThis: js.Any): T = js.native
-  def runGuarded[T](fn: js.Function1[/* repeated */ js.Any, T], applyThis: js.Any, applyArgs: js.Array[js.Any]): T = js.native
-  def runGuarded[T](fn: js.Function1[/* repeated */ js.Any, T], applyThis: Unit, applyArgs: js.Array[js.Any]): T = js.native
+  def runGuarded[T](fn: js.Function1[/* repeated */ Any, T]): T = js.native
+  def runGuarded[T](fn: js.Function1[/* repeated */ Any, T], applyThis: Any): T = js.native
+  def runGuarded[T](fn: js.Function1[/* repeated */ Any, T], applyThis: Any, applyArgs: js.Array[Any]): T = js.native
+  def runGuarded[T](fn: js.Function1[/* repeated */ Any, T], applyThis: Unit, applyArgs: js.Array[Any]): T = js.native
   
   /**
     * Executes the `fn` function synchronously in Angular's parent zone and returns value returned by
@@ -82,7 +82,7 @@ class NgZone protected () extends StObject {
     *
     * Use {@link #run} to reenter the Angular zone and do work that updates the application model.
     */
-  def runOutsideAngular[T](fn: js.Function1[/* repeated */ js.Any, T]): T = js.native
+  def runOutsideAngular[T](fn: js.Function1[/* repeated */ Any, T]): T = js.native
   
   /**
     * Executes the `fn` function synchronously within the Angular zone as a task and returns value
@@ -96,24 +96,14 @@ class NgZone protected () extends StObject {
     *
     * If a synchronous error happens it will be rethrown and not reported via `onError`.
     */
-  def runTask[T](fn: js.Function1[/* repeated */ js.Any, T]): T = js.native
-  def runTask[T](fn: js.Function1[/* repeated */ js.Any, T], applyThis: js.Any): T = js.native
-  def runTask[T](fn: js.Function1[/* repeated */ js.Any, T], applyThis: js.Any, applyArgs: js.Array[js.Any]): T = js.native
-  def runTask[T](
-    fn: js.Function1[/* repeated */ js.Any, T],
-    applyThis: js.Any,
-    applyArgs: js.Array[js.Any],
-    name: String
-  ): T = js.native
-  def runTask[T](fn: js.Function1[/* repeated */ js.Any, T], applyThis: js.Any, applyArgs: Unit, name: String): T = js.native
-  def runTask[T](fn: js.Function1[/* repeated */ js.Any, T], applyThis: Unit, applyArgs: js.Array[js.Any]): T = js.native
-  def runTask[T](
-    fn: js.Function1[/* repeated */ js.Any, T],
-    applyThis: Unit,
-    applyArgs: js.Array[js.Any],
-    name: String
-  ): T = js.native
-  def runTask[T](fn: js.Function1[/* repeated */ js.Any, T], applyThis: Unit, applyArgs: Unit, name: String): T = js.native
+  def runTask[T](fn: js.Function1[/* repeated */ Any, T]): T = js.native
+  def runTask[T](fn: js.Function1[/* repeated */ Any, T], applyThis: Any): T = js.native
+  def runTask[T](fn: js.Function1[/* repeated */ Any, T], applyThis: Any, applyArgs: js.Array[Any]): T = js.native
+  def runTask[T](fn: js.Function1[/* repeated */ Any, T], applyThis: Any, applyArgs: js.Array[Any], name: String): T = js.native
+  def runTask[T](fn: js.Function1[/* repeated */ Any, T], applyThis: Any, applyArgs: Unit, name: String): T = js.native
+  def runTask[T](fn: js.Function1[/* repeated */ Any, T], applyThis: Unit, applyArgs: js.Array[Any]): T = js.native
+  def runTask[T](fn: js.Function1[/* repeated */ Any, T], applyThis: Unit, applyArgs: js.Array[Any], name: String): T = js.native
+  def runTask[T](fn: js.Function1[/* repeated */ Any, T], applyThis: Unit, applyArgs: Unit, name: String): T = js.native
 }
 /* static members */
 object NgZone {

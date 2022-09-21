@@ -24,7 +24,7 @@ trait ojButtonsetManySettableProperties
   
   var focusManagement: oneTabstop | none
   
-  var value: js.Array[js.Any] | Null
+  var value: js.Array[Any] | Null
 }
 object ojButtonsetManySettableProperties {
   
@@ -48,10 +48,10 @@ object ojButtonsetManySettableProperties {
     
     inline def setFocusManagement(value: oneTabstop | none): Self = StObject.set(x, "focusManagement", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Array[Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueNull: Self = StObject.set(x, "value", null)
     
-    inline def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: Any*): Self = StObject.set(x, "value", js.Array(value*))
   }
 }

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Creates a CameraGizmo
   * @param gizmoLayer The utility layer the gizmo will be added to
   */
-class CameraGizmo ()
+open class CameraGizmo ()
   extends typings.babylonjs.indexMod.CameraGizmo {
   def this(gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer) = this()
 }
@@ -23,16 +23,16 @@ object CameraGizmo {
   
   @JSImport("babylonjs/Legacy/legacy", "CameraGizmo._CreateCameraFrustum")
   @js.native
-  def _CreateCameraFrustum: js.Any = js.native
-  inline def _CreateCameraFrustum_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateCameraFrustum")(x.asInstanceOf[js.Any])
+  def _CreateCameraFrustum: Any = js.native
+  inline def _CreateCameraFrustum_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateCameraFrustum")(x.asInstanceOf[js.Any])
   
   @JSImport("babylonjs/Legacy/legacy", "CameraGizmo._CreateCameraMesh")
   @js.native
-  def _CreateCameraMesh: js.Any = js.native
-  inline def _CreateCameraMesh_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateCameraMesh")(x.asInstanceOf[js.Any])
+  def _CreateCameraMesh: Any = js.native
+  inline def _CreateCameraMesh_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateCameraMesh")(x.asInstanceOf[js.Any])
   
   @JSImport("babylonjs/Legacy/legacy", "CameraGizmo._Scale")
   @js.native
-  def _Scale: js.Any = js.native
-  inline def _Scale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Scale")(x.asInstanceOf[js.Any])
+  def _Scale: Any = js.native
+  inline def _Scale_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Scale")(x.asInstanceOf[js.Any])
 }

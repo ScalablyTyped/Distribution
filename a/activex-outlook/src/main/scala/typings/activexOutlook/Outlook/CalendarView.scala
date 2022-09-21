@@ -33,7 +33,7 @@ trait CalendarView extends StObject {
   
   def Delete(): Unit
   
-  val DisplayedDates: js.Any
+  val DisplayedDates: Any
   
   var EndField: String
   
@@ -54,7 +54,7 @@ trait CalendarView extends StObject {
   /* private */ @JSName("Outlook.CalendarView_typekey")
   var OutlookDotCalendarView_typekey: CalendarView
   
-  val Parent: js.Any
+  val Parent: Any
   
   def Reset(): Unit
   
@@ -92,7 +92,7 @@ object CalendarView {
     DayWeekTimeScale: OlDayWeekTimeScale,
     DaysInMultiDayMode: Double,
     Delete: () => Unit,
-    DisplayedDates: js.Any,
+    DisplayedDates: Any,
     EndField: String,
     Filter: String,
     GoToDate: VarDate => Unit,
@@ -102,7 +102,7 @@ object CalendarView {
     MonthShowEndTime: Boolean,
     Name: String,
     OutlookDotCalendarView_typekey: CalendarView,
-    Parent: js.Any,
+    Parent: Any,
     Reset: () => Unit,
     Save: () => Unit,
     SaveOption: OlViewSaveOption,
@@ -147,7 +147,7 @@ object CalendarView {
     
     inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    inline def setDisplayedDates(value: js.Any): Self = StObject.set(x, "DisplayedDates", value.asInstanceOf[js.Any])
+    inline def setDisplayedDates(value: Any): Self = StObject.set(x, "DisplayedDates", value.asInstanceOf[js.Any])
     
     inline def setEndField(value: String): Self = StObject.set(x, "EndField", value.asInstanceOf[js.Any])
     
@@ -167,7 +167,7 @@ object CalendarView {
     
     inline def setOutlookDotCalendarView_typekey(value: CalendarView): Self = StObject.set(x, "Outlook.CalendarView_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setReset(value: () => Unit): Self = StObject.set(x, "Reset", js.Any.fromFunction0(value))
     

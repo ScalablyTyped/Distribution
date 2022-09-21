@@ -1,5 +1,6 @@
 package typings.nodeZendesk.mod.Tickets
 
+import typings.nodeZendesk.mod.Requests.RequesterAnonymous
 import typings.nodeZendesk.mod.ZendeskID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +17,7 @@ trait CreateModel extends StObject {
   
   var collaborator_ids: js.UndefOr[js.Array[Double] | Null] = js.undefined
   
-  var collaborators: js.UndefOr[js.Array[js.Any] | Null] = js.undefined
+  var collaborators: js.UndefOr[js.Array[Any] | Null] = js.undefined
   
   var comment: typings.nodeZendesk.mod.Requests.Comments.CreateModel
   
@@ -47,6 +48,8 @@ trait CreateModel extends StObject {
   var raw_subject: js.UndefOr[String | Null] = js.undefined
   
   var recipient: js.UndefOr[String | Null] = js.undefined
+  
+  var requester: js.UndefOr[RequesterAnonymous] = js.undefined
   
   var requester_id: js.UndefOr[ZendeskID] = js.undefined
   
@@ -91,15 +94,15 @@ object CreateModel {
     
     inline def setCollaborator_idsUndefined: Self = StObject.set(x, "collaborator_ids", js.undefined)
     
-    inline def setCollaborator_idsVarargs(value: Double*): Self = StObject.set(x, "collaborator_ids", js.Array(value :_*))
+    inline def setCollaborator_idsVarargs(value: Double*): Self = StObject.set(x, "collaborator_ids", js.Array(value*))
     
-    inline def setCollaborators(value: js.Array[js.Any]): Self = StObject.set(x, "collaborators", value.asInstanceOf[js.Any])
+    inline def setCollaborators(value: js.Array[Any]): Self = StObject.set(x, "collaborators", value.asInstanceOf[js.Any])
     
     inline def setCollaboratorsNull: Self = StObject.set(x, "collaborators", null)
     
     inline def setCollaboratorsUndefined: Self = StObject.set(x, "collaborators", js.undefined)
     
-    inline def setCollaboratorsVarargs(value: js.Any*): Self = StObject.set(x, "collaborators", js.Array(value :_*))
+    inline def setCollaboratorsVarargs(value: Any*): Self = StObject.set(x, "collaborators", js.Array(value*))
     
     inline def setComment(value: typings.nodeZendesk.mod.Requests.Comments.CreateModel): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
@@ -109,7 +112,7 @@ object CreateModel {
     
     inline def setCustom_fieldsUndefined: Self = StObject.set(x, "custom_fields", js.undefined)
     
-    inline def setCustom_fieldsVarargs(value: Field*): Self = StObject.set(x, "custom_fields", js.Array(value :_*))
+    inline def setCustom_fieldsVarargs(value: Field*): Self = StObject.set(x, "custom_fields", js.Array(value*))
     
     inline def setDue_at(value: String): Self = StObject.set(x, "due_at", value.asInstanceOf[js.Any])
     
@@ -123,7 +126,7 @@ object CreateModel {
     
     inline def setEmail_cc_idsUndefined: Self = StObject.set(x, "email_cc_ids", js.undefined)
     
-    inline def setEmail_cc_idsVarargs(value: Double*): Self = StObject.set(x, "email_cc_ids", js.Array(value :_*))
+    inline def setEmail_cc_idsVarargs(value: Double*): Self = StObject.set(x, "email_cc_ids", js.Array(value*))
     
     inline def setExternal_id(value: String): Self = StObject.set(x, "external_id", value.asInstanceOf[js.Any])
     
@@ -137,7 +140,7 @@ object CreateModel {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: Field*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: Field*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setFollower_ids(value: js.Array[Double]): Self = StObject.set(x, "follower_ids", value.asInstanceOf[js.Any])
     
@@ -145,7 +148,7 @@ object CreateModel {
     
     inline def setFollower_idsUndefined: Self = StObject.set(x, "follower_ids", js.undefined)
     
-    inline def setFollower_idsVarargs(value: Double*): Self = StObject.set(x, "follower_ids", js.Array(value :_*))
+    inline def setFollower_idsVarargs(value: Double*): Self = StObject.set(x, "follower_ids", js.Array(value*))
     
     inline def setForum_topic_id(value: Double): Self = StObject.set(x, "forum_topic_id", value.asInstanceOf[js.Any])
     
@@ -165,7 +168,7 @@ object CreateModel {
     
     inline def setMacro_idsUndefined: Self = StObject.set(x, "macro_ids", js.undefined)
     
-    inline def setMacro_idsVarargs(value: Double*): Self = StObject.set(x, "macro_ids", js.Array(value :_*))
+    inline def setMacro_idsVarargs(value: Double*): Self = StObject.set(x, "macro_ids", js.Array(value*))
     
     inline def setOrganization_id(value: Double): Self = StObject.set(x, "organization_id", value.asInstanceOf[js.Any])
     
@@ -197,6 +200,10 @@ object CreateModel {
     
     inline def setRecipientUndefined: Self = StObject.set(x, "recipient", js.undefined)
     
+    inline def setRequester(value: RequesterAnonymous): Self = StObject.set(x, "requester", value.asInstanceOf[js.Any])
+    
+    inline def setRequesterUndefined: Self = StObject.set(x, "requester", js.undefined)
+    
     inline def setRequester_id(value: ZendeskID): Self = StObject.set(x, "requester_id", value.asInstanceOf[js.Any])
     
     inline def setRequester_idUndefined: Self = StObject.set(x, "requester_id", js.undefined)
@@ -225,7 +232,7 @@ object CreateModel {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setTicket_form_id(value: Double): Self = StObject.set(x, "ticket_form_id", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,10 @@ A JavaScript 2D physics engine.
 | ------------------ | :-------------: |
 | Full name          | p2 |
 | Keywords           | p2.js, p2, physics, engine, 2d |
-| # releases         | 0 |
-| # dependents       | 16 |
-| # downloads        | 19998 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2055.6666666666665 |
+| # stars            | 2448.0 |
 
 ## Links
 - [Homepage](https://github.com/schteppe/p2.js#readme)

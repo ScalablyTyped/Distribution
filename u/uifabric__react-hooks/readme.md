@@ -1,7 +1,7 @@
 
 # Scala.js typings for uifabric__react-hooks
 
-Typings are for version 7.13.9
+Typings are for version 7.16.2
 
 ## Library description:
 Fluent UI React hooks.
@@ -10,10 +10,10 @@ Fluent UI React hooks.
 | ------------------ | :-------------: |
 | Full name          | @uifabric/react-hooks |
 | Keywords           | - |
-| # releases         | 91 |
-| # dependents       | 18 |
-| # downloads        | 2839180 |
-| # stars            | 0 |
+| # releases         | 21 |
+| # dependents       | 0.0 |
+| # downloads        | 184253.33333333334 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/microsoft/fluentui#readme)

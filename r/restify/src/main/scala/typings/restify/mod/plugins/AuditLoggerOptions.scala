@@ -36,7 +36,7 @@ trait AuditLoggerOptions extends StObject {
   /**
     * Ringbuffer which is written to if passed in
     */
-  var logBuffer: js.UndefOr[js.Any] = js.undefined
+  var logBuffer: js.UndefOr[Any] = js.undefined
   
   /**
     * When true, prints audit logs. default true.
@@ -61,7 +61,7 @@ object AuditLoggerOptions {
     
     inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    inline def setContext(value: (/* req */ Request, /* res */ Response, /* route */ js.Any, /* error */ js.Any) => js.Any): Self = StObject.set(x, "context", js.Any.fromFunction4(value))
+    inline def setContext(value: (/* req */ Request, /* res */ Response, /* route */ Any, /* error */ Any) => Any): Self = StObject.set(x, "context", js.Any.fromFunction4(value))
     
     inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
@@ -69,7 +69,7 @@ object AuditLoggerOptions {
     
     inline def setLog(value: typings.bunyan.mod.^): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
-    inline def setLogBuffer(value: js.Any): Self = StObject.set(x, "logBuffer", value.asInstanceOf[js.Any])
+    inline def setLogBuffer(value: Any): Self = StObject.set(x, "logBuffer", value.asInstanceOf[js.Any])
     
     inline def setLogBufferUndefined: Self = StObject.set(x, "logBuffer", js.undefined)
     

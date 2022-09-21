@@ -10,10 +10,10 @@ A fluent API to FFMPEG (http://www.ffmpeg.org)
 | ------------------ | :-------------: |
 | Full name          | fluent-ffmpeg |
 | Keywords           | ffmpeg |
-| # releases         | 0 |
-| # dependents       | 520 |
-| # downloads        | 3521944 |
-| # stars            | 75 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 946354.3333333334 |
+| # stars            | 6420.0 |
 
 ## Links
 - [Homepage](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg#readme)

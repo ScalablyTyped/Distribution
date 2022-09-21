@@ -7,14 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NatGateway extends StObject {
   
   /**
+    * Indicates whether the NAT gateway supports public or private connectivity.
+    */
+  var ConnectivityType: js.UndefOr[typings.awsSdk.ec2Mod.ConnectivityType] = js.undefined
+  
+  /**
     * The date and time the NAT gateway was created.
     */
-  var CreateTime: js.UndefOr[DateTime] = js.undefined
+  var CreateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The date and time the NAT gateway was deleted, if applicable.
     */
-  var DeleteTime: js.UndefOr[DateTime] = js.undefined
+  var DeleteTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * If the NAT gateway could not be created, specifies the error code for the failure. (InsufficientFreeAddressesInSubnet | Gateway.NotAttached | InvalidAllocationID.NotFound | Resource.AlreadyAssociated | InternalError | InvalidSubnetID.NotFound)
@@ -70,11 +75,15 @@ object NatGateway {
   
   extension [Self <: NatGateway](x: Self) {
     
-    inline def setCreateTime(value: DateTime): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
+    inline def setConnectivityType(value: ConnectivityType): Self = StObject.set(x, "ConnectivityType", value.asInstanceOf[js.Any])
+    
+    inline def setConnectivityTypeUndefined: Self = StObject.set(x, "ConnectivityType", js.undefined)
+    
+    inline def setCreateTime(value: js.Date): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     
     inline def setCreateTimeUndefined: Self = StObject.set(x, "CreateTime", js.undefined)
     
-    inline def setDeleteTime(value: DateTime): Self = StObject.set(x, "DeleteTime", value.asInstanceOf[js.Any])
+    inline def setDeleteTime(value: js.Date): Self = StObject.set(x, "DeleteTime", value.asInstanceOf[js.Any])
     
     inline def setDeleteTimeUndefined: Self = StObject.set(x, "DeleteTime", js.undefined)
     
@@ -90,7 +99,7 @@ object NatGateway {
     
     inline def setNatGatewayAddressesUndefined: Self = StObject.set(x, "NatGatewayAddresses", js.undefined)
     
-    inline def setNatGatewayAddressesVarargs(value: NatGatewayAddress*): Self = StObject.set(x, "NatGatewayAddresses", js.Array(value :_*))
+    inline def setNatGatewayAddressesVarargs(value: NatGatewayAddress*): Self = StObject.set(x, "NatGatewayAddresses", js.Array(value*))
     
     inline def setNatGatewayId(value: String): Self = StObject.set(x, "NatGatewayId", value.asInstanceOf[js.Any])
     
@@ -112,7 +121,7 @@ object NatGateway {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     

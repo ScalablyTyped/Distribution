@@ -7,14 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-big-calendar", "DateLocalizer")
 @js.native
-class DateLocalizer protected () extends StObject {
+open class DateLocalizer protected () extends StObject {
   def this(spec: DateLocalizerSpec) = this()
   
+  def format(value: FormatInput, format: String): String = js.native
   def format(value: FormatInput, format: String, culture: Culture): String = js.native
   
   var formats: Formats = js.native
   
-  var propType: Validator[js.Any] = js.native
+  var messages: Messages = js.native
+  
+  var propType: Validator[Any] = js.native
   
   def startOfWeek(culture: Culture): Double = js.native
 }

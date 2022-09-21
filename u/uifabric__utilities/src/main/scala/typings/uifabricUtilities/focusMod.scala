@@ -96,7 +96,5 @@ object focusMod {
   inline def isElementVisible(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElementVisible")().asInstanceOf[Boolean]
   inline def isElementVisible(element: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElementVisible")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def shouldWrapFocus_datanohorizontalwrap(element: HTMLElement, noWrapDataAttribute: `data-no-horizontal-wrap`): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shouldWrapFocus")(element.asInstanceOf[js.Any], noWrapDataAttribute.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  
-  inline def shouldWrapFocus_datanoverticalwrap(element: HTMLElement, noWrapDataAttribute: `data-no-vertical-wrap`): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shouldWrapFocus")(element.asInstanceOf[js.Any], noWrapDataAttribute.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def shouldWrapFocus(element: HTMLElement, noWrapDataAttribute: `data-no-vertical-wrap` | `data-no-horizontal-wrap`): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shouldWrapFocus")(element.asInstanceOf[js.Any], noWrapDataAttribute.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

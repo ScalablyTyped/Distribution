@@ -20,8 +20,8 @@ object shellbarMod {
   
   @JSImport("fundamental-react/lib/Shellbar/Shellbar", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ShellbarProps, js.Object, js.Any]
+  open class default ()
+    extends Component[ShellbarProps, js.Object, Any]
   object default {
     
     @JSImport("fundamental-react/lib/Shellbar/Shellbar", JSImport.Default)
@@ -35,7 +35,7 @@ object shellbarMod {
     inline def displayName_=(x: typings.fundamentalReact.fundamentalReactStrings.Shellbar): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  type Shellbar = Component[ShellbarProps, js.Object, js.Any]
+  type Shellbar = Component[ShellbarProps, js.Object, Any]
   
   trait ShellbarProps
     extends StObject
@@ -67,11 +67,11 @@ object shellbarMod {
     
     var productTitle: js.UndefOr[String] = js.undefined
     
-    var profile: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var profile: js.UndefOr[StringDictionary[Any]] = js.undefined
     
-    var profileMenu: js.UndefOr[js.Array[StringDictionary[js.Any]]] = js.undefined
+    var profileMenu: js.UndefOr[js.Array[StringDictionary[Any]]] = js.undefined
     
-    var searchInput: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var searchInput: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var subtitle: js.UndefOr[String] = js.undefined
   }
@@ -88,7 +88,7 @@ object shellbarMod {
       
       inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
       
-      inline def setActionsVarargs(value: Glyph*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: Glyph*): Self = StObject.set(x, "actions", js.Array(value*))
       
       inline def setBackAction(value: /* event */ typings.react.mod.MouseEvent[HTMLButtonElement, MouseEvent] => Unit): Self = StObject.set(x, "backAction", js.Any.fromFunction1(value))
       
@@ -122,7 +122,7 @@ object shellbarMod {
       
       inline def setProductMenuUndefined: Self = StObject.set(x, "productMenu", js.undefined)
       
-      inline def setProductMenuVarargs(value: Link*): Self = StObject.set(x, "productMenu", js.Array(value :_*))
+      inline def setProductMenuVarargs(value: Link*): Self = StObject.set(x, "productMenu", js.Array(value*))
       
       inline def setProductSwitch(value: js.Object): Self = StObject.set(x, "productSwitch", value.asInstanceOf[js.Any])
       
@@ -130,7 +130,7 @@ object shellbarMod {
       
       inline def setProductSwitchListUndefined: Self = StObject.set(x, "productSwitchList", js.undefined)
       
-      inline def setProductSwitchListVarargs(value: Image*): Self = StObject.set(x, "productSwitchList", js.Array(value :_*))
+      inline def setProductSwitchListVarargs(value: Image*): Self = StObject.set(x, "productSwitchList", js.Array(value*))
       
       inline def setProductSwitchUndefined: Self = StObject.set(x, "productSwitch", js.undefined)
       
@@ -138,17 +138,17 @@ object shellbarMod {
       
       inline def setProductTitleUndefined: Self = StObject.set(x, "productTitle", js.undefined)
       
-      inline def setProfile(value: StringDictionary[js.Any]): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+      inline def setProfile(value: StringDictionary[Any]): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
       
-      inline def setProfileMenu(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "profileMenu", value.asInstanceOf[js.Any])
+      inline def setProfileMenu(value: js.Array[StringDictionary[Any]]): Self = StObject.set(x, "profileMenu", value.asInstanceOf[js.Any])
       
       inline def setProfileMenuUndefined: Self = StObject.set(x, "profileMenu", js.undefined)
       
-      inline def setProfileMenuVarargs(value: StringDictionary[js.Any]*): Self = StObject.set(x, "profileMenu", js.Array(value :_*))
+      inline def setProfileMenuVarargs(value: StringDictionary[Any]*): Self = StObject.set(x, "profileMenu", js.Array(value*))
       
       inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
       
-      inline def setSearchInput(value: StringDictionary[js.Any]): Self = StObject.set(x, "searchInput", value.asInstanceOf[js.Any])
+      inline def setSearchInput(value: StringDictionary[Any]): Self = StObject.set(x, "searchInput", value.asInstanceOf[js.Any])
       
       inline def setSearchInputUndefined: Self = StObject.set(x, "searchInput", js.undefined)
       

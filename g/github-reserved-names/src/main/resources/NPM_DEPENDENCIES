@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "github-reserved-names" : "2.0.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "github-reserved-names" : "2.0.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

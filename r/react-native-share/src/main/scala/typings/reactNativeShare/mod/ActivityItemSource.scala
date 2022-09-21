@@ -10,12 +10,12 @@ trait ActivityItemSource extends StObject {
   var dataTypeIdentifier: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in react-native-share.react-native-share.ActivityType | string ]: string}
-    */ typings.reactNativeShare.reactNativeShareStrings.ActivityItemSource & TopLevel[js.Any]
+    */ typings.reactNativeShare.reactNativeShareStrings.ActivityItemSource & TopLevel[Any]
   ] = js.undefined
   
   var item: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in react-native-share.react-native-share.ActivityType | string ]: react-native-share.react-native-share.ActivityItem | null | undefined}
-    */ typings.reactNativeShare.reactNativeShareStrings.ActivityItemSource & TopLevel[js.Any]
+    */ typings.reactNativeShare.reactNativeShareStrings.ActivityItemSource & TopLevel[Any]
   
   var linkMetadata: js.UndefOr[LinkMetadata] = js.undefined
   
@@ -24,13 +24,13 @@ trait ActivityItemSource extends StObject {
   var subject: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in react-native-share.react-native-share.ActivityType | string ]: string}
-    */ typings.reactNativeShare.reactNativeShareStrings.ActivityItemSource & TopLevel[js.Any]
+    */ typings.reactNativeShare.reactNativeShareStrings.ActivityItemSource & TopLevel[Any]
   ] = js.undefined
   
   var thumbnailImage: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in react-native-share.react-native-share.ActivityType | string ]: string}
-    */ typings.reactNativeShare.reactNativeShareStrings.ActivityItemSource & TopLevel[js.Any]
+    */ typings.reactNativeShare.reactNativeShareStrings.ActivityItemSource & TopLevel[Any]
   ] = js.undefined
 }
 object ActivityItemSource {
@@ -38,7 +38,7 @@ object ActivityItemSource {
   inline def apply(
     item: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in react-native-share.react-native-share.ActivityType | string ]: react-native-share.react-native-share.ActivityItem | null | undefined}
-    */ typings.reactNativeShare.reactNativeShareStrings.ActivityItemSource & TopLevel[js.Any],
+    */ typings.reactNativeShare.reactNativeShareStrings.ActivityItemSource & TopLevel[Any],
     placeholderItem: ActivityItem
   ): ActivityItemSource = {
     val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], placeholderItem = placeholderItem.asInstanceOf[js.Any])
@@ -50,7 +50,7 @@ object ActivityItemSource {
     inline def setDataTypeIdentifier(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in react-native-share.react-native-share.ActivityType | string ]: string}
-      */ typings.reactNativeShare.reactNativeShareStrings.ActivityItemSource & TopLevel[js.Any]
+      */ typings.reactNativeShare.reactNativeShareStrings.ActivityItemSource & TopLevel[Any]
     ): Self = StObject.set(x, "dataTypeIdentifier", value.asInstanceOf[js.Any])
     
     inline def setDataTypeIdentifierUndefined: Self = StObject.set(x, "dataTypeIdentifier", js.undefined)
@@ -58,7 +58,7 @@ object ActivityItemSource {
     inline def setItem(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in react-native-share.react-native-share.ActivityType | string ]: react-native-share.react-native-share.ActivityItem | null | undefined}
-      */ typings.reactNativeShare.reactNativeShareStrings.ActivityItemSource & TopLevel[js.Any]
+      */ typings.reactNativeShare.reactNativeShareStrings.ActivityItemSource & TopLevel[Any]
     ): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     inline def setLinkMetadata(value: LinkMetadata): Self = StObject.set(x, "linkMetadata", value.asInstanceOf[js.Any])
@@ -70,7 +70,7 @@ object ActivityItemSource {
     inline def setSubject(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in react-native-share.react-native-share.ActivityType | string ]: string}
-      */ typings.reactNativeShare.reactNativeShareStrings.ActivityItemSource & TopLevel[js.Any]
+      */ typings.reactNativeShare.reactNativeShareStrings.ActivityItemSource & TopLevel[Any]
     ): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
@@ -78,7 +78,7 @@ object ActivityItemSource {
     inline def setThumbnailImage(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in react-native-share.react-native-share.ActivityType | string ]: string}
-      */ typings.reactNativeShare.reactNativeShareStrings.ActivityItemSource & TopLevel[js.Any]
+      */ typings.reactNativeShare.reactNativeShareStrings.ActivityItemSource & TopLevel[Any]
     ): Self = StObject.set(x, "thumbnailImage", value.asInstanceOf[js.Any])
     
     inline def setThumbnailImageUndefined: Self = StObject.set(x, "thumbnailImage", js.undefined)

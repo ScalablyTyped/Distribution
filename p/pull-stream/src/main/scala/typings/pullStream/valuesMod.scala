@@ -14,10 +14,10 @@ object valuesMod {
     */
   inline def apply[T](): Source[T] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Source[T]]
   inline def apply[T](arrayOrObject: js.Array[T]): Source[T] = ^.asInstanceOf[js.Dynamic].apply(arrayOrObject.asInstanceOf[js.Any]).asInstanceOf[Source[T]]
-  inline def apply[T](arrayOrObject: js.Array[T], onAbort: js.Function1[/* err */ js.UndefOr[EndOrError], js.Any]): Source[T] = (^.asInstanceOf[js.Dynamic].apply(arrayOrObject.asInstanceOf[js.Any], onAbort.asInstanceOf[js.Any])).asInstanceOf[Source[T]]
-  inline def apply[T](arrayOrObject: Unit, onAbort: js.Function1[/* err */ js.UndefOr[EndOrError], js.Any]): Source[T] = (^.asInstanceOf[js.Dynamic].apply(arrayOrObject.asInstanceOf[js.Any], onAbort.asInstanceOf[js.Any])).asInstanceOf[Source[T]]
-  inline def apply[T](arrayOrObject: Record[js.Any, T]): Source[T] = ^.asInstanceOf[js.Dynamic].apply(arrayOrObject.asInstanceOf[js.Any]).asInstanceOf[Source[T]]
-  inline def apply[T](arrayOrObject: Record[js.Any, T], onAbort: js.Function1[/* err */ js.UndefOr[EndOrError], js.Any]): Source[T] = (^.asInstanceOf[js.Dynamic].apply(arrayOrObject.asInstanceOf[js.Any], onAbort.asInstanceOf[js.Any])).asInstanceOf[Source[T]]
+  inline def apply[T](arrayOrObject: js.Array[T], onAbort: js.Function1[/* err */ js.UndefOr[EndOrError], Any]): Source[T] = (^.asInstanceOf[js.Dynamic].apply(arrayOrObject.asInstanceOf[js.Any], onAbort.asInstanceOf[js.Any])).asInstanceOf[Source[T]]
+  inline def apply[T](arrayOrObject: Unit, onAbort: js.Function1[/* err */ js.UndefOr[EndOrError], Any]): Source[T] = (^.asInstanceOf[js.Dynamic].apply(arrayOrObject.asInstanceOf[js.Any], onAbort.asInstanceOf[js.Any])).asInstanceOf[Source[T]]
+  inline def apply[T](arrayOrObject: Record[Any, T]): Source[T] = ^.asInstanceOf[js.Dynamic].apply(arrayOrObject.asInstanceOf[js.Any]).asInstanceOf[Source[T]]
+  inline def apply[T](arrayOrObject: Record[Any, T], onAbort: js.Function1[/* err */ js.UndefOr[EndOrError], Any]): Source[T] = (^.asInstanceOf[js.Dynamic].apply(arrayOrObject.asInstanceOf[js.Any], onAbort.asInstanceOf[js.Any])).asInstanceOf[Source[T]]
   
   @JSImport("pull-stream/sources/values", JSImport.Namespace)
   @js.native

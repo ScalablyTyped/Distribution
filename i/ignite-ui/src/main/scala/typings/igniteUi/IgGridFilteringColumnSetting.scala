@@ -10,7 +10,7 @@ trait IgGridFilteringColumnSetting
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Enables/disables filtering for the column.
@@ -74,7 +74,7 @@ trait IgGridFilteringColumnSetting
     * An array of strings that determine which [conditions](ui.iggridfiltering#options:columnSettings.condition) to display for this column.
     *
     */
-  var conditionList: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var conditionList: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * An object used to specify custom filtering conditions as objects for this column.
@@ -85,7 +85,7 @@ trait IgGridFilteringColumnSetting
     * filterImgIcon  Class applied to the dropdown item when in simple mode.
     * filterFunc  The custom comparing filter function. Signature: function (value, expression, dataType, ignoreCase, preciseDateFormat).
     */
-  var customConditions: js.UndefOr[js.Any] = js.undefined
+  var customConditions: js.UndefOr[Any] = js.undefined
   
   /**
     * Initial filtering expressions - if set they will be applied on initialization together with the preset [condition](ui.iggridfiltering#options:columnSettings.condition).
@@ -97,7 +97,7 @@ trait IgGridFilteringColumnSetting
     * Specifies options to initialize the corresponding editor with.
     *
     */
-  var editorOptions: js.UndefOr[js.Any] = js.undefined
+  var editorOptions: js.UndefOr[Any] = js.undefined
   
   /**
     * Specifies а custom editor provider instance. More information about editor providers can be found [here](http://www.igniteui.com/help/implementing-custom-editor-provider) and [here](http://www.igniteui.com/help/working-with-combo-editor-provider).
@@ -119,7 +119,7 @@ trait IgGridFilteringColumnSetting
     * });
     *
     */
-  var editorProvider: js.UndefOr[js.Any] = js.undefined
+  var editorProvider: js.UndefOr[Any] = js.undefined
   
   /**
     * Specifies the type of editor to use for the column.
@@ -163,15 +163,15 @@ object IgGridFilteringColumnSetting {
     
     inline def setCondition(value: String | Boolean): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    inline def setConditionList(value: js.Array[js.Any]): Self = StObject.set(x, "conditionList", value.asInstanceOf[js.Any])
+    inline def setConditionList(value: js.Array[Any]): Self = StObject.set(x, "conditionList", value.asInstanceOf[js.Any])
     
     inline def setConditionListUndefined: Self = StObject.set(x, "conditionList", js.undefined)
     
-    inline def setConditionListVarargs(value: js.Any*): Self = StObject.set(x, "conditionList", js.Array(value :_*))
+    inline def setConditionListVarargs(value: Any*): Self = StObject.set(x, "conditionList", js.Array(value*))
     
     inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
-    inline def setCustomConditions(value: js.Any): Self = StObject.set(x, "customConditions", value.asInstanceOf[js.Any])
+    inline def setCustomConditions(value: Any): Self = StObject.set(x, "customConditions", value.asInstanceOf[js.Any])
     
     inline def setCustomConditionsUndefined: Self = StObject.set(x, "customConditions", js.undefined)
     
@@ -179,11 +179,11 @@ object IgGridFilteringColumnSetting {
     
     inline def setDefaultExpressionsUndefined: Self = StObject.set(x, "defaultExpressions", js.undefined)
     
-    inline def setEditorOptions(value: js.Any): Self = StObject.set(x, "editorOptions", value.asInstanceOf[js.Any])
+    inline def setEditorOptions(value: Any): Self = StObject.set(x, "editorOptions", value.asInstanceOf[js.Any])
     
     inline def setEditorOptionsUndefined: Self = StObject.set(x, "editorOptions", js.undefined)
     
-    inline def setEditorProvider(value: js.Any): Self = StObject.set(x, "editorProvider", value.asInstanceOf[js.Any])
+    inline def setEditorProvider(value: Any): Self = StObject.set(x, "editorProvider", value.asInstanceOf[js.Any])
     
     inline def setEditorProviderUndefined: Self = StObject.set(x, "editorProvider", js.undefined)
     

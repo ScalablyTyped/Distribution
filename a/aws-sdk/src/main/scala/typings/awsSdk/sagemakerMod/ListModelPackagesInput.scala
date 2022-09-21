@@ -9,17 +9,32 @@ trait ListModelPackagesInput extends StObject {
   /**
     * A filter that returns only model packages created after the specified time (timestamp).
     */
-  var CreationTimeAfter: js.UndefOr[CreationTime] = js.undefined
+  var CreationTimeAfter: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A filter that returns only model packages created before the specified time (timestamp).
     */
-  var CreationTimeBefore: js.UndefOr[CreationTime] = js.undefined
+  var CreationTimeBefore: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The maximum number of model packages to return in the response.
     */
   var MaxResults: js.UndefOr[typings.awsSdk.sagemakerMod.MaxResults] = js.undefined
+  
+  /**
+    * A filter that returns only the model packages with the specified approval status.
+    */
+  var ModelApprovalStatus: js.UndefOr[typings.awsSdk.sagemakerMod.ModelApprovalStatus] = js.undefined
+  
+  /**
+    * A filter that returns only model versions that belong to the specified model group.
+    */
+  var ModelPackageGroupName: js.UndefOr[ArnOrName] = js.undefined
+  
+  /**
+    * A filter that returns only the model packages of the specified type. This can be one of the following values.    UNVERSIONED - List only unversioined models. This is the default value if no ModelPackageType is specified.    VERSIONED - List only versioned models.    BOTH - List both versioned and unversioned models.  
+    */
+  var ModelPackageType: js.UndefOr[typings.awsSdk.sagemakerMod.ModelPackageType] = js.undefined
   
   /**
     * A string in the model package name. This filter returns only model packages whose name contains the specified string.
@@ -50,17 +65,29 @@ object ListModelPackagesInput {
   
   extension [Self <: ListModelPackagesInput](x: Self) {
     
-    inline def setCreationTimeAfter(value: CreationTime): Self = StObject.set(x, "CreationTimeAfter", value.asInstanceOf[js.Any])
+    inline def setCreationTimeAfter(value: js.Date): Self = StObject.set(x, "CreationTimeAfter", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeAfterUndefined: Self = StObject.set(x, "CreationTimeAfter", js.undefined)
     
-    inline def setCreationTimeBefore(value: CreationTime): Self = StObject.set(x, "CreationTimeBefore", value.asInstanceOf[js.Any])
+    inline def setCreationTimeBefore(value: js.Date): Self = StObject.set(x, "CreationTimeBefore", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeBeforeUndefined: Self = StObject.set(x, "CreationTimeBefore", js.undefined)
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    
+    inline def setModelApprovalStatus(value: ModelApprovalStatus): Self = StObject.set(x, "ModelApprovalStatus", value.asInstanceOf[js.Any])
+    
+    inline def setModelApprovalStatusUndefined: Self = StObject.set(x, "ModelApprovalStatus", js.undefined)
+    
+    inline def setModelPackageGroupName(value: ArnOrName): Self = StObject.set(x, "ModelPackageGroupName", value.asInstanceOf[js.Any])
+    
+    inline def setModelPackageGroupNameUndefined: Self = StObject.set(x, "ModelPackageGroupName", js.undefined)
+    
+    inline def setModelPackageType(value: ModelPackageType): Self = StObject.set(x, "ModelPackageType", value.asInstanceOf[js.Any])
+    
+    inline def setModelPackageTypeUndefined: Self = StObject.set(x, "ModelPackageType", js.undefined)
     
     inline def setNameContains(value: NameContains): Self = StObject.set(x, "NameContains", value.asInstanceOf[js.Any])
     

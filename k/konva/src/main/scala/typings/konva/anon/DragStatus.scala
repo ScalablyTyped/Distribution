@@ -3,7 +3,6 @@ package typings.konva.anon
 import typings.konva.konvaStrings.dragging
 import typings.konva.konvaStrings.ready
 import typings.konva.konvaStrings.stopped
-import typings.konva.nodeMod.Node
 import typings.konva.nodeMod.NodeConfig
 import typings.konva.typesMod.Vector2d
 import org.scalablytyped.runtime.StObject
@@ -14,7 +13,7 @@ trait DragStatus extends StObject {
   
   var dragStatus: stopped | ready | dragging
   
-  var node: Node[NodeConfig]
+  var node: typings.konva.nodeMod.Node[NodeConfig]
   
   var offset: Vector2d
   
@@ -26,7 +25,7 @@ object DragStatus {
   
   inline def apply(
     dragStatus: stopped | ready | dragging,
-    node: Node[NodeConfig],
+    node: typings.konva.nodeMod.Node[NodeConfig],
     offset: Vector2d,
     startPointerPos: Vector2d
   ): DragStatus = {
@@ -38,7 +37,7 @@ object DragStatus {
     
     inline def setDragStatus(value: stopped | ready | dragging): Self = StObject.set(x, "dragStatus", value.asInstanceOf[js.Any])
     
-    inline def setNode(value: Node[NodeConfig]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: typings.konva.nodeMod.Node[NodeConfig]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     inline def setOffset(value: Vector2d): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     

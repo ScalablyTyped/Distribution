@@ -9,17 +9,17 @@ trait DescribeAuditMitigationActionsTaskRequest extends StObject {
   /**
     * The unique identifier for the audit mitigation task.
     */
-  var taskId: AuditMitigationActionsTaskId
+  var taskId: MitigationActionsTaskId
 }
 object DescribeAuditMitigationActionsTaskRequest {
   
-  inline def apply(taskId: AuditMitigationActionsTaskId): DescribeAuditMitigationActionsTaskRequest = {
+  inline def apply(taskId: MitigationActionsTaskId): DescribeAuditMitigationActionsTaskRequest = {
     val __obj = js.Dynamic.literal(taskId = taskId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAuditMitigationActionsTaskRequest]
   }
   
   extension [Self <: DescribeAuditMitigationActionsTaskRequest](x: Self) {
     
-    inline def setTaskId(value: AuditMitigationActionsTaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
+    inline def setTaskId(value: MitigationActionsTaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
   }
 }

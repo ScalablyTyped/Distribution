@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.Media.Protection.PlayReady.NDStorageFileHelper")
 @js.native
 /** Creates a new instance of the NDStorageFileHelper class. */
-class NDStorageFileHelper ()
+open class NDStorageFileHelper ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Protection.PlayReady.NDStorageFileHelper {
   

@@ -12,7 +12,7 @@ object global {
       
       @JSGlobal("google.feeds.Feed")
       @js.native
-      class Feed ()
+      open class Feed ()
         extends StObject
            with typings.googleFeeds.google.feeds.Feed {
         def this(url: String) = this()

@@ -18,7 +18,7 @@ object mousePositionMod {
   
   @JSImport("ol/control/MousePosition", JSImport.Default)
   @js.native
-  class default () extends MousePosition {
+  open class default () extends MousePosition {
     def this(opt_options: Options) = this()
   }
   

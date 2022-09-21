@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RemoveTagsInput extends StObject {
   
   /**
-    * The Amazon EMR resource identifier from which tags will be removed. This value must be a cluster identifier.
+    * The Amazon EMR resource identifier from which tags will be removed. For example, a cluster identifier or an Amazon EMR Studio ID.
     */
   var ResourceId: typings.awsSdk.emrMod.ResourceId
   
   /**
-    * A list of tag keys to remove from a resource.
+    * A list of tag keys to remove from the resource.
     */
   var TagKeys: StringList
 }
@@ -29,6 +29,6 @@ object RemoveTagsInput {
     
     inline def setTagKeys(value: StringList): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
     
-    inline def setTagKeysVarargs(value: String*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
+    inline def setTagKeysVarargs(value: String*): Self = StObject.set(x, "TagKeys", js.Array(value*))
   }
 }

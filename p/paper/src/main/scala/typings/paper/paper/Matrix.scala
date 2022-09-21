@@ -247,7 +247,7 @@ trait Matrix extends StObject {
     * parameters that is supported by the various {@link Matrix} constructors
     * also work for calls of `set()`.
     */
-  def set(values: js.Any*): Point = js.native
+  def set(values: Any*): Point = js.native
   
   /** 
     * Concatenates this matrix with a shear transformation.

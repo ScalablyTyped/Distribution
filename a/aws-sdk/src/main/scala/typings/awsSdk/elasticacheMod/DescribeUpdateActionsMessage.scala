@@ -69,7 +69,7 @@ object DescribeUpdateActionsMessage {
     
     inline def setCacheClusterIdsUndefined: Self = StObject.set(x, "CacheClusterIds", js.undefined)
     
-    inline def setCacheClusterIdsVarargs(value: String*): Self = StObject.set(x, "CacheClusterIds", js.Array(value :_*))
+    inline def setCacheClusterIdsVarargs(value: String*): Self = StObject.set(x, "CacheClusterIds", js.Array(value*))
     
     inline def setEngine(value: String): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
     
@@ -87,7 +87,7 @@ object DescribeUpdateActionsMessage {
     
     inline def setReplicationGroupIdsUndefined: Self = StObject.set(x, "ReplicationGroupIds", js.undefined)
     
-    inline def setReplicationGroupIdsVarargs(value: String*): Self = StObject.set(x, "ReplicationGroupIds", js.Array(value :_*))
+    inline def setReplicationGroupIdsVarargs(value: String*): Self = StObject.set(x, "ReplicationGroupIds", js.Array(value*))
     
     inline def setServiceUpdateName(value: String): Self = StObject.set(x, "ServiceUpdateName", value.asInstanceOf[js.Any])
     
@@ -97,7 +97,7 @@ object DescribeUpdateActionsMessage {
     
     inline def setServiceUpdateStatusUndefined: Self = StObject.set(x, "ServiceUpdateStatus", js.undefined)
     
-    inline def setServiceUpdateStatusVarargs(value: ServiceUpdateStatus*): Self = StObject.set(x, "ServiceUpdateStatus", js.Array(value :_*))
+    inline def setServiceUpdateStatusVarargs(value: ServiceUpdateStatus*): Self = StObject.set(x, "ServiceUpdateStatus", js.Array(value*))
     
     inline def setServiceUpdateTimeRange(value: TimeRangeFilter): Self = StObject.set(x, "ServiceUpdateTimeRange", value.asInstanceOf[js.Any])
     
@@ -111,6 +111,6 @@ object DescribeUpdateActionsMessage {
     
     inline def setUpdateActionStatusUndefined: Self = StObject.set(x, "UpdateActionStatus", js.undefined)
     
-    inline def setUpdateActionStatusVarargs(value: UpdateActionStatus*): Self = StObject.set(x, "UpdateActionStatus", js.Array(value :_*))
+    inline def setUpdateActionStatusVarargs(value: UpdateActionStatus*): Self = StObject.set(x, "UpdateActionStatus", js.Array(value*))
   }
 }

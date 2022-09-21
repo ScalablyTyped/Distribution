@@ -9,7 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait websceneApplicationPropertiesConstructor
   extends StObject
-     with Instantiable0[websceneApplicationProperties]
+     with /**
+  * Represents configuration of application and UI elements.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-ApplicationProperties.html)
+  */
+Instantiable0[websceneApplicationProperties]
      with Instantiable1[
       /* properties */ websceneApplicationPropertiesProperties, 
       websceneApplicationProperties

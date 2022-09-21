@@ -34,7 +34,7 @@ trait Instance extends StObject {
   /**
     * The timestamp when the instance was created (e.g., 1479734909.17) in Unix time format.
     */
-  var createdAt: js.UndefOr[IsoDate] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The size of the vCPU and the amount of RAM for the instance.
@@ -42,9 +42,14 @@ trait Instance extends StObject {
   var hardware: js.UndefOr[InstanceHardware] = js.undefined
   
   /**
-    * The IPv6 address of the instance.
+    * The IP address type of the instance. The possible values are ipv4 for IPv4 only, and dualstack for IPv4 and IPv6.
     */
-  var ipv6Address: js.UndefOr[IpV6Address] = js.undefined
+  var ipAddressType: js.UndefOr[IpAddressType] = js.undefined
+  
+  /**
+    * The IPv6 addresses of the instance.
+    */
+  var ipv6Addresses: js.UndefOr[Ipv6AddressList] = js.undefined
   
   /**
     * A Boolean value indicating whether this instance has a static IP assigned to it.
@@ -97,7 +102,7 @@ trait Instance extends StObject {
   var supportCode: js.UndefOr[String] = js.undefined
   
   /**
-    * The tag keys and optional values for the resource. For more information about tags in Lightsail, see the Lightsail Dev Guide.
+    * The tag keys and optional values for the resource. For more information about tags in Lightsail, see the Amazon Lightsail Developer Guide.
     */
   var tags: js.UndefOr[TagList] = js.undefined
   
@@ -119,7 +124,7 @@ object Instance {
     
     inline def setAddOnsUndefined: Self = StObject.set(x, "addOns", js.undefined)
     
-    inline def setAddOnsVarargs(value: AddOn*): Self = StObject.set(x, "addOns", js.Array(value :_*))
+    inline def setAddOnsVarargs(value: AddOn*): Self = StObject.set(x, "addOns", js.Array(value*))
     
     inline def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
@@ -137,7 +142,7 @@ object Instance {
     
     inline def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
     
-    inline def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
@@ -145,9 +150,15 @@ object Instance {
     
     inline def setHardwareUndefined: Self = StObject.set(x, "hardware", js.undefined)
     
-    inline def setIpv6Address(value: IpV6Address): Self = StObject.set(x, "ipv6Address", value.asInstanceOf[js.Any])
+    inline def setIpAddressType(value: IpAddressType): Self = StObject.set(x, "ipAddressType", value.asInstanceOf[js.Any])
     
-    inline def setIpv6AddressUndefined: Self = StObject.set(x, "ipv6Address", js.undefined)
+    inline def setIpAddressTypeUndefined: Self = StObject.set(x, "ipAddressType", js.undefined)
+    
+    inline def setIpv6Addresses(value: Ipv6AddressList): Self = StObject.set(x, "ipv6Addresses", value.asInstanceOf[js.Any])
+    
+    inline def setIpv6AddressesUndefined: Self = StObject.set(x, "ipv6Addresses", js.undefined)
+    
+    inline def setIpv6AddressesVarargs(value: Ipv6Address*): Self = StObject.set(x, "ipv6Addresses", js.Array(value*))
     
     inline def setIsStaticIp(value: Boolean): Self = StObject.set(x, "isStaticIp", value.asInstanceOf[js.Any])
     
@@ -193,7 +204,7 @@ object Instance {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setUsername(value: NonEmptyString): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     

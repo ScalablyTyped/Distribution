@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "RetrieveCustomerGroupRequest")
 @js.native
-class RetrieveCustomerGroupRequest () extends StObject
+open class RetrieveCustomerGroupRequest () extends StObject

@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The result of deleting a group.
-  */
 trait SchemaDeleteDimensionGroupResponse extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaDeleteDimensionGroupResponse {
     
     inline def setDimensionGroupsUndefined: Self = StObject.set(x, "dimensionGroups", js.undefined)
     
-    inline def setDimensionGroupsVarargs(value: SchemaDimensionGroup*): Self = StObject.set(x, "dimensionGroups", js.Array(value :_*))
+    inline def setDimensionGroupsVarargs(value: SchemaDimensionGroup*): Self = StObject.set(x, "dimensionGroups", js.Array(value*))
   }
 }

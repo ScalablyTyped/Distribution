@@ -10,10 +10,10 @@ Chain promises declaratively using high-level graphs. Tiny, portable, dependency
 | ------------------ | :-------------: |
 | Full name          | promise-dag |
 | Keywords           | promise, async, graph, dag |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 2316 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 395.6666666666667 |
+| # stars            | 20.0 |
 
 ## Links
 - [Homepage](https://github.com/vvvvalvalval/promise-dag#readme)

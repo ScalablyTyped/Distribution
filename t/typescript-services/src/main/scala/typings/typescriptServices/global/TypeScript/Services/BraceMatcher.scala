@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.Services.BraceMatcher")
 @js.native
-class BraceMatcher ()
+open class BraceMatcher ()
   extends StObject
      with typings.typescriptServices.TypeScript.Services.BraceMatcher
 object BraceMatcher {
@@ -21,14 +21,14 @@ object BraceMatcher {
   inline def getMatchSpans(syntaxTree: SyntaxTree, position: Double): js.Array[TextSpan] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMatchSpans")(syntaxTree.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Array[TextSpan]]
   
   /* static member */
-  inline def getMatchingCloseBrace(currentToken: js.Any, position: js.Any, result: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getMatchingCloseBrace")(currentToken.asInstanceOf[js.Any], position.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getMatchingCloseBrace(currentToken: Any, position: Any, result: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getMatchingCloseBrace")(currentToken.asInstanceOf[js.Any], position.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /* static member */
-  inline def getMatchingCloseBraceTokenKind(positionedElement: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getMatchingCloseBraceTokenKind")(positionedElement.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getMatchingCloseBraceTokenKind(positionedElement: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getMatchingCloseBraceTokenKind")(positionedElement.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /* static member */
-  inline def getMatchingOpenBrace(currentToken: js.Any, position: js.Any, result: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getMatchingOpenBrace")(currentToken.asInstanceOf[js.Any], position.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getMatchingOpenBrace(currentToken: Any, position: Any, result: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getMatchingOpenBrace")(currentToken.asInstanceOf[js.Any], position.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /* static member */
-  inline def getMatchingOpenBraceTokenKind(positionedElement: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getMatchingOpenBraceTokenKind")(positionedElement.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getMatchingOpenBraceTokenKind(positionedElement: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getMatchingOpenBraceTokenKind")(positionedElement.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

@@ -7,10 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaUnreserveItemsRequest extends StObject {
   
   /**
-    * Name of connector making this call. &lt;br /&gt;Format:
-    * datasources/{source_id}/connectors/{ID}
+    * The name of connector making this call. Format: datasources/{source_id\}/connectors/{ID\}
     */
-  var connectorName: js.UndefOr[String] = js.undefined
+  var connectorName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Common debug options.
@@ -18,9 +17,9 @@ trait SchemaUnreserveItemsRequest extends StObject {
   var debugOptions: js.UndefOr[SchemaDebugOptions] = js.undefined
   
   /**
-    * Name of a queue to unreserve items from.
+    * The name of a queue to unreserve items from.
     */
-  var queue: js.UndefOr[String] = js.undefined
+  var queue: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaUnreserveItemsRequest {
   
@@ -33,6 +32,8 @@ object SchemaUnreserveItemsRequest {
     
     inline def setConnectorName(value: String): Self = StObject.set(x, "connectorName", value.asInstanceOf[js.Any])
     
+    inline def setConnectorNameNull: Self = StObject.set(x, "connectorName", null)
+    
     inline def setConnectorNameUndefined: Self = StObject.set(x, "connectorName", js.undefined)
     
     inline def setDebugOptions(value: SchemaDebugOptions): Self = StObject.set(x, "debugOptions", value.asInstanceOf[js.Any])
@@ -40,6 +41,8 @@ object SchemaUnreserveItemsRequest {
     inline def setDebugOptionsUndefined: Self = StObject.set(x, "debugOptions", js.undefined)
     
     inline def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+    
+    inline def setQueueNull: Self = StObject.set(x, "queue", null)
     
     inline def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
   }

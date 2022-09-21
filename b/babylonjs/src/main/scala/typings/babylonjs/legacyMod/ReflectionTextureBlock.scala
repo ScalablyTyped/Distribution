@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "ReflectionTextureBlock")
 @js.native
-class ReflectionTextureBlock protected ()
+open class ReflectionTextureBlock protected ()
   extends typings.babylonjs.indexMod.ReflectionTextureBlock {
   /**
     * Create a new ReflectionTextureBlock

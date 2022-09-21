@@ -20,6 +20,22 @@ object privacy {
     */
   object network {
     
+    /** The mode for https-only mode. */
+    /* Rewritten from type alias, can be one of: 
+      - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.always
+      - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.private_browsing
+      - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.never
+    */
+    trait HTTPSOnlyModeOption extends StObject
+    object HTTPSOnlyModeOption {
+      
+      inline def always: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.always = "always".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.always]
+      
+      inline def never: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.never = "never".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.never]
+      
+      inline def private_browsing: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.private_browsing = "private_browsing".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.private_browsing]
+    }
+    
     /* privacy.network types */
     /** The IP handling policy of WebRTC. */
     /* Rewritten from type alias, can be one of: 

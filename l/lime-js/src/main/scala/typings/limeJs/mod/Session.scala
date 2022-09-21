@@ -8,7 +8,7 @@ trait Session
   extends StObject
      with Envelope {
   
-  var authentication: js.UndefOr[js.Any] = js.undefined
+  var authentication: js.UndefOr[Any] = js.undefined
   
   var compression: js.UndefOr[String] = js.undefined
   
@@ -33,7 +33,7 @@ object Session {
   
   extension [Self <: Session](x: Self) {
     
-    inline def setAuthentication(value: js.Any): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
+    inline def setAuthentication(value: Any): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
     
     inline def setAuthenticationUndefined: Self = StObject.set(x, "authentication", js.undefined)
     
@@ -43,7 +43,7 @@ object Session {
     
     inline def setCompressionOptionsUndefined: Self = StObject.set(x, "compressionOptions", js.undefined)
     
-    inline def setCompressionOptionsVarargs(value: String*): Self = StObject.set(x, "compressionOptions", js.Array(value :_*))
+    inline def setCompressionOptionsVarargs(value: String*): Self = StObject.set(x, "compressionOptions", js.Array(value*))
     
     inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
     
@@ -53,7 +53,7 @@ object Session {
     
     inline def setEncryptionOptionsUndefined: Self = StObject.set(x, "encryptionOptions", js.undefined)
     
-    inline def setEncryptionOptionsVarargs(value: String*): Self = StObject.set(x, "encryptionOptions", js.Array(value :_*))
+    inline def setEncryptionOptionsVarargs(value: String*): Self = StObject.set(x, "encryptionOptions", js.Array(value*))
     
     inline def setEncryptionUndefined: Self = StObject.set(x, "encryption", js.undefined)
     

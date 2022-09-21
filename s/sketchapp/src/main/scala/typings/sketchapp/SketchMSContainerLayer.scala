@@ -44,6 +44,6 @@ object SketchMSContainerLayer {
     
     inline def setLayers(value: js.Array[SketchMSContainerLayer]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
-    inline def setLayersVarargs(value: SketchMSContainerLayer*): Self = StObject.set(x, "layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: SketchMSContainerLayer*): Self = StObject.set(x, "layers", js.Array(value*))
   }
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "material-components-web" : "8.0.0"
+      "material-components-web" : "14.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "material-components-web" : "8.0.0"
+      "material-components-web" : "14.0.0"
     }
   ],
   "compile-devDependencies" : [

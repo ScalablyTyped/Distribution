@@ -79,7 +79,7 @@ object adapterMod {
       addClassToBackIndicator: String => Unit,
       addClassToForwardIndicator: String => Unit,
       deregisterBackIndicatorClickHandler: SpecificEventListener[click] => Unit,
-      deregisterCapturedInteractionHandler: (js.Any, SpecificEventListener[js.Any]) => Unit,
+      deregisterCapturedInteractionHandler: (Any, SpecificEventListener[Any]) => Unit,
       deregisterForwardIndicatorClickHandler: SpecificEventListener[click] => Unit,
       deregisterWindowResizeHandler: SpecificEventListener[resize] => Unit,
       eventTargetHasClass: (Element, String) => Boolean,
@@ -93,7 +93,7 @@ object adapterMod {
       getScrollLeftForScrollFrame: () => Double,
       isRTL: () => Boolean,
       registerBackIndicatorClickHandler: SpecificEventListener[click] => Unit,
-      registerCapturedInteractionHandler: (js.Any, SpecificEventListener[js.Any]) => Unit,
+      registerCapturedInteractionHandler: (Any, SpecificEventListener[Any]) => Unit,
       registerForwardIndicatorClickHandler: SpecificEventListener[click] => Unit,
       registerWindowResizeHandler: SpecificEventListener[resize] => Unit,
       removeClass: String => Unit,
@@ -116,7 +116,7 @@ object adapterMod {
       
       inline def setDeregisterBackIndicatorClickHandler(value: SpecificEventListener[click] => Unit): Self = StObject.set(x, "deregisterBackIndicatorClickHandler", js.Any.fromFunction1(value))
       
-      inline def setDeregisterCapturedInteractionHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "deregisterCapturedInteractionHandler", js.Any.fromFunction2(value))
+      inline def setDeregisterCapturedInteractionHandler(value: (Any, SpecificEventListener[Any]) => Unit): Self = StObject.set(x, "deregisterCapturedInteractionHandler", js.Any.fromFunction2(value))
       
       inline def setDeregisterForwardIndicatorClickHandler(value: SpecificEventListener[click] => Unit): Self = StObject.set(x, "deregisterForwardIndicatorClickHandler", js.Any.fromFunction1(value))
       
@@ -144,7 +144,7 @@ object adapterMod {
       
       inline def setRegisterBackIndicatorClickHandler(value: SpecificEventListener[click] => Unit): Self = StObject.set(x, "registerBackIndicatorClickHandler", js.Any.fromFunction1(value))
       
-      inline def setRegisterCapturedInteractionHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "registerCapturedInteractionHandler", js.Any.fromFunction2(value))
+      inline def setRegisterCapturedInteractionHandler(value: (Any, SpecificEventListener[Any]) => Unit): Self = StObject.set(x, "registerCapturedInteractionHandler", js.Any.fromFunction2(value))
       
       inline def setRegisterForwardIndicatorClickHandler(value: SpecificEventListener[click] => Unit): Self = StObject.set(x, "registerForwardIndicatorClickHandler", js.Any.fromFunction1(value))
       

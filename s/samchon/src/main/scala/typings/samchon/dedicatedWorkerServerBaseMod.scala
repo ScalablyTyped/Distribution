@@ -10,7 +10,7 @@ object dedicatedWorkerServerBaseMod {
   
   @JSImport("samchon/protocol/server/base/DedicatedWorkerServerBase", "DedicatedWorkerServerBase")
   @js.native
-  class DedicatedWorkerServerBase protected () extends DedicatedWorkerServer {
+  open class DedicatedWorkerServerBase protected () extends DedicatedWorkerServer {
     /**
       * Construct from a *hooker*.
       *
@@ -21,6 +21,6 @@ object dedicatedWorkerServerBaseMod {
     /**
       * @hidden
       */
-    /* private */ var hooker_ : js.Any = js.native
+    /* private */ var hooker_ : Any = js.native
   }
 }

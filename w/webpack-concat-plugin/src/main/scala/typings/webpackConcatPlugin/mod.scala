@@ -1,8 +1,8 @@
 package typings.webpackConcatPlugin
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Plugin
 import typings.uglifyJs.mod.MinifyOptions
+import typings.webpack.mod.Compiler
 import typings.webpackConcatPlugin.webpackConcatPluginStrings.append
 import typings.webpackConcatPlugin.webpackConcatPluginStrings.none
 import typings.webpackConcatPlugin.webpackConcatPluginStrings.prepend
@@ -17,7 +17,7 @@ object mod {
     */
   @JSImport("webpack-concat-plugin", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with ConcatPlugin {
     def this(options: Options) = this()
@@ -26,10 +26,9 @@ object mod {
   /**
     * A plugin to help webpack concat js and inject into html
     */
-  @js.native
-  trait ConcatPlugin
-    extends StObject
-       with Plugin {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped webpack.anon.Apply | (this : webpack.webpack.Resolver, arg1 : webpack.webpack.Resolver): void */ @js.native
+  trait ConcatPlugin extends StObject {
     
     def ensureTrailingSlash(str: String): String = js.native
     
@@ -44,19 +43,17 @@ object mod {
     def hashFile(files: StringDictionary[String]): String = js.native
     
     def resolveConcatAndUglify(
-      compilation: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Compilation */ js.Any,
+      compilation: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Compilation */ Any,
       files: js.Array[String]
     ): Unit = js.native
     
-    def resolveReadFiles(
-      compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any
-    ): Unit = js.native
+    def resolveReadFiles(compiler: Compiler): Unit = js.native
   }
   
   trait Options extends StObject {
     
     /** if set, will be used as the extra attributes of the script tag. */
-    var attributes: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var attributes: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     /**
       * if set, will be used as the output fileName
@@ -118,7 +115,7 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setAttributes(value: StringDictionary[js.Any]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: StringDictionary[Any]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
       inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
@@ -128,7 +125,7 @@ object mod {
       
       inline def setFilesToConcat(value: js.Array[String | js.Array[String]]): Self = StObject.set(x, "filesToConcat", value.asInstanceOf[js.Any])
       
-      inline def setFilesToConcatVarargs(value: (String | js.Array[String])*): Self = StObject.set(x, "filesToConcat", js.Array(value :_*))
+      inline def setFilesToConcatVarargs(value: (String | js.Array[String])*): Self = StObject.set(x, "filesToConcat", js.Array(value*))
       
       inline def setInjectType(value: prepend | append | none): Self = StObject.set(x, "injectType", value.asInstanceOf[js.Any])
       

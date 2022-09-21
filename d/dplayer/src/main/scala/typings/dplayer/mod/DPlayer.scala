@@ -11,7 +11,7 @@ trait DPlayer extends StObject {
   
   def destroy(): Unit
   
-  var events: js.Any
+  var events: Any
   
   var fullScreen: FullScreen
   
@@ -42,7 +42,7 @@ object DPlayer {
   inline def apply(
     danmaku: Danmaku,
     destroy: () => Unit,
-    events: js.Any,
+    events: Any,
     fullScreen: FullScreen,
     notice: (String, Double, Double) => Unit,
     on: (DPlayerEvents, js.Function0[Unit]) => Unit,
@@ -66,7 +66,7 @@ object DPlayer {
     
     inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     inline def setFullScreen(value: FullScreen): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
     

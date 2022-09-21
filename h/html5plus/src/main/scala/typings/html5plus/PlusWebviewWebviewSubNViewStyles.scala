@@ -36,7 +36,7 @@ trait PlusWebviewWebviewSubNViewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var tags: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var tags: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * 原生子View控件类型
@@ -72,11 +72,11 @@ object PlusWebviewWebviewSubNViewStyles {
     
     inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
-    inline def setTags(value: js.Array[js.Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: js.Any*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Any*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setType(value: NView | ImageSlider): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

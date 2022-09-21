@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * List of object values.
-  */
 trait SchemaObjectValues extends StObject {
   
   var values: js.UndefOr[js.Array[SchemaStructuredDataObject]] = js.undefined
@@ -24,6 +21,6 @@ object SchemaObjectValues {
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: SchemaStructuredDataObject*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: SchemaStructuredDataObject*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

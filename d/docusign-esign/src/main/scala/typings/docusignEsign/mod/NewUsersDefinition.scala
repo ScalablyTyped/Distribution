@@ -24,6 +24,6 @@ object NewUsersDefinition {
     
     inline def setNewUsersUndefined: Self = StObject.set(x, "newUsers", js.undefined)
     
-    inline def setNewUsersVarargs(value: UserInformation*): Self = StObject.set(x, "newUsers", js.Array(value :_*))
+    inline def setNewUsersVarargs(value: UserInformation*): Self = StObject.set(x, "newUsers", js.Array(value*))
   }
 }

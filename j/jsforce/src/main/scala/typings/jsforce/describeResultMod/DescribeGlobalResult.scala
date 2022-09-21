@@ -27,6 +27,6 @@ object DescribeGlobalResult {
     
     inline def setSobjects(value: js.Array[DescribeGlobalSObjectResult]): Self = StObject.set(x, "sobjects", value.asInstanceOf[js.Any])
     
-    inline def setSobjectsVarargs(value: DescribeGlobalSObjectResult*): Self = StObject.set(x, "sobjects", js.Array(value :_*))
+    inline def setSobjectsVarargs(value: DescribeGlobalSObjectResult*): Self = StObject.set(x, "sobjects", js.Array(value*))
   }
 }

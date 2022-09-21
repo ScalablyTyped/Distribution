@@ -1,6 +1,5 @@
 package typings.doccookies
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,6 +49,14 @@ trait docCookies extends StObject {
   def setItem(sKey: String, sValue: String, vEnd: String, sPath: Unit, sDomain: String): Boolean = js.native
   def setItem(sKey: String, sValue: String, vEnd: String, sPath: Unit, sDomain: String, bSecure: Boolean): Boolean = js.native
   def setItem(sKey: String, sValue: String, vEnd: String, sPath: Unit, sDomain: Unit, bSecure: Boolean): Boolean = js.native
+  def setItem(sKey: String, sValue: String, vEnd: js.Date): Boolean = js.native
+  def setItem(sKey: String, sValue: String, vEnd: js.Date, sPath: String): Boolean = js.native
+  def setItem(sKey: String, sValue: String, vEnd: js.Date, sPath: String, sDomain: String): Boolean = js.native
+  def setItem(sKey: String, sValue: String, vEnd: js.Date, sPath: String, sDomain: String, bSecure: Boolean): Boolean = js.native
+  def setItem(sKey: String, sValue: String, vEnd: js.Date, sPath: String, sDomain: Unit, bSecure: Boolean): Boolean = js.native
+  def setItem(sKey: String, sValue: String, vEnd: js.Date, sPath: Unit, sDomain: String): Boolean = js.native
+  def setItem(sKey: String, sValue: String, vEnd: js.Date, sPath: Unit, sDomain: String, bSecure: Boolean): Boolean = js.native
+  def setItem(sKey: String, sValue: String, vEnd: js.Date, sPath: Unit, sDomain: Unit, bSecure: Boolean): Boolean = js.native
   def setItem(sKey: String, sValue: String, vEnd: Double): Boolean = js.native
   def setItem(sKey: String, sValue: String, vEnd: Double, sPath: String): Boolean = js.native
   def setItem(sKey: String, sValue: String, vEnd: Double, sPath: String, sDomain: String): Boolean = js.native
@@ -65,12 +72,4 @@ trait docCookies extends StObject {
   def setItem(sKey: String, sValue: String, vEnd: Unit, sPath: Unit, sDomain: String): Boolean = js.native
   def setItem(sKey: String, sValue: String, vEnd: Unit, sPath: Unit, sDomain: String, bSecure: Boolean): Boolean = js.native
   def setItem(sKey: String, sValue: String, vEnd: Unit, sPath: Unit, sDomain: Unit, bSecure: Boolean): Boolean = js.native
-  def setItem(sKey: String, sValue: String, vEnd: Date): Boolean = js.native
-  def setItem(sKey: String, sValue: String, vEnd: Date, sPath: String): Boolean = js.native
-  def setItem(sKey: String, sValue: String, vEnd: Date, sPath: String, sDomain: String): Boolean = js.native
-  def setItem(sKey: String, sValue: String, vEnd: Date, sPath: String, sDomain: String, bSecure: Boolean): Boolean = js.native
-  def setItem(sKey: String, sValue: String, vEnd: Date, sPath: String, sDomain: Unit, bSecure: Boolean): Boolean = js.native
-  def setItem(sKey: String, sValue: String, vEnd: Date, sPath: Unit, sDomain: String): Boolean = js.native
-  def setItem(sKey: String, sValue: String, vEnd: Date, sPath: Unit, sDomain: String, bSecure: Boolean): Boolean = js.native
-  def setItem(sKey: String, sValue: String, vEnd: Date, sPath: Unit, sDomain: Unit, bSecure: Boolean): Boolean = js.native
 }

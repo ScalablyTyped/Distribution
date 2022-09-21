@@ -1,6 +1,5 @@
 package typings.nanotimer
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ object mod {
     * Creates an instance of NanoTimer.
     * @param log - if true, will enable logging.
     */
-  class ^ ()
+  open class ^ ()
     extends StObject
        with NanoTimer {
     def this(log: Boolean) = this()
@@ -37,27 +36,27 @@ object mod {
       */
     def hasTimeout(): Boolean = js.native
     
-    def setInterval(task: js.Function1[/* repeated */ js.Any, Unit], args: String, interval: String): Unit = js.native
+    def setInterval(task: js.Function1[/* repeated */ Any, Unit], args: String, interval: String): Unit = js.native
     def setInterval(
-      task: js.Function1[/* repeated */ js.Any, Unit],
+      task: js.Function1[/* repeated */ Any, Unit],
       args: String,
       interval: String,
-      callback: js.Function1[/* error */ Error, Unit]
+      callback: js.Function1[/* error */ js.Error, Unit]
     ): Unit = js.native
     /**
       * Call the task at the regular interval specified in interval.
       */
-    def setInterval(task: js.Function1[/* repeated */ js.Any, Unit], args: js.Array[js.Any], interval: String): Unit = js.native
+    def setInterval(task: js.Function1[/* repeated */ Any, Unit], args: js.Array[Any], interval: String): Unit = js.native
     def setInterval(
-      task: js.Function1[/* repeated */ js.Any, Unit],
-      args: js.Array[js.Any],
+      task: js.Function1[/* repeated */ Any, Unit],
+      args: js.Array[Any],
       interval: String,
-      callback: js.Function1[/* error */ Error, Unit]
+      callback: js.Function1[/* error */ js.Error, Unit]
     ): Unit = js.native
     
-    def setTimeout(task: js.Function1[/* repeated */ js.Any, Unit], args: String, timeout: String): Unit = js.native
+    def setTimeout(task: js.Function1[/* repeated */ Any, Unit], args: String, timeout: String): Unit = js.native
     def setTimeout(
-      task: js.Function1[/* repeated */ js.Any, Unit],
+      task: js.Function1[/* repeated */ Any, Unit],
       args: String,
       timeout: String,
       callback: js.Function1[/* results */ TimeoutResults, Unit]
@@ -65,10 +64,10 @@ object mod {
     /**
       * Call the task after the waiting the the timeout specified.
       */
-    def setTimeout(task: js.Function1[/* repeated */ js.Any, Unit], args: js.Array[js.Any], timeout: String): Unit = js.native
+    def setTimeout(task: js.Function1[/* repeated */ Any, Unit], args: js.Array[Any], timeout: String): Unit = js.native
     def setTimeout(
-      task: js.Function1[/* repeated */ js.Any, Unit],
-      args: js.Array[js.Any],
+      task: js.Function1[/* repeated */ Any, Unit],
+      args: js.Array[Any],
       timeout: String,
       callback: js.Function1[/* results */ TimeoutResults, Unit]
     ): Unit = js.native
@@ -81,14 +80,14 @@ object mod {
       task: js.Function1[/* cb */ js.Function0[Unit], Unit],
       args: String,
       interval: String,
-      callback: js.Function1[/* error */ Error, Unit]
+      callback: js.Function1[/* error */ js.Error, Unit]
     ): Double = js.native
-    def time(task: js.Function1[/* cb */ js.Function0[Unit], Unit], args: js.Array[js.Any], interval: String): Double = js.native
+    def time(task: js.Function1[/* cb */ js.Function0[Unit], Unit], args: js.Array[Any], interval: String): Double = js.native
     def time(
       task: js.Function1[/* cb */ js.Function0[Unit], Unit],
-      args: js.Array[js.Any],
+      args: js.Array[Any],
       interval: String,
-      callback: js.Function1[/* error */ Error, Unit]
+      callback: js.Function1[/* error */ js.Error, Unit]
     ): Double = js.native
   }
   

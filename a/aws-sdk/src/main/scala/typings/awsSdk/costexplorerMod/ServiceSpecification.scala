@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ServiceSpecification extends StObject {
   
   /**
-    * The Amazon EC2 hardware specifications that you want AWS to provide recommendations for.
+    * The Amazon EC2 hardware specifications that you want Amazon Web Services to provide recommendations for.
     */
   var EC2Specification: js.UndefOr[typings.awsSdk.costexplorerMod.EC2Specification] = js.undefined
 }

@@ -9,7 +9,7 @@ trait ViewKeyDownEvent extends StObject {
   
   var key: String
   
-  var native: js.Any
+  var native: Any
   
   var repeat: Boolean
   
@@ -21,7 +21,7 @@ trait ViewKeyDownEvent extends StObject {
 }
 object ViewKeyDownEvent {
   
-  inline def apply(key: String, native: js.Any, repeat: Boolean, stopPropagation: js.Function, timestamp: Double): ViewKeyDownEvent = {
+  inline def apply(key: String, native: Any, repeat: Boolean, stopPropagation: js.Function, timestamp: Double): ViewKeyDownEvent = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any], repeat = repeat.asInstanceOf[js.Any], stopPropagation = stopPropagation.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("key-down")
     __obj.asInstanceOf[ViewKeyDownEvent]
@@ -31,7 +31,7 @@ object ViewKeyDownEvent {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    inline def setNative(value: js.Any): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
+    inline def setNative(value: Any): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
     
     inline def setRepeat(value: Boolean): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
     

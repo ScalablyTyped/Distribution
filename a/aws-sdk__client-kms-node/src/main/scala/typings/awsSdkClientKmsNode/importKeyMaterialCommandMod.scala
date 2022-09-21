@@ -16,7 +16,7 @@ object importKeyMaterialCommandMod {
   
   @JSImport("@aws-sdk/client-kms-node/commands/ImportKeyMaterialCommand", "ImportKeyMaterialCommand")
   @js.native
-  class ImportKeyMaterialCommand protected ()
+  open class ImportKeyMaterialCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object importKeyMaterialCommandMod {
     override val middlewareStack: MiddlewareStack[ImportKeyMaterialInput, ImportKeyMaterialOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: KMSResolvedConfiguration
     ): Handler[ImportKeyMaterialInput, ImportKeyMaterialOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: KMSResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[ImportKeyMaterialInput, ImportKeyMaterialOutput] = js.native
   }
 }

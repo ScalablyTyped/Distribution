@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("go", "Iterable")
 @js.native
-class Iterable[T] () extends StObject {
+open class Iterable[T] () extends StObject {
   
   /*This is an interface and thus does not have a constructor.*/
   /**Gets an Iterator that can iterate over the items in the collection.*/

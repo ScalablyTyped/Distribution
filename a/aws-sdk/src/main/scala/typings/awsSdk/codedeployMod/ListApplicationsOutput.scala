@@ -29,7 +29,7 @@ object ListApplicationsOutput {
     
     inline def setApplicationsUndefined: Self = StObject.set(x, "applications", js.undefined)
     
-    inline def setApplicationsVarargs(value: ApplicationName*): Self = StObject.set(x, "applications", js.Array(value :_*))
+    inline def setApplicationsVarargs(value: ApplicationName*): Self = StObject.set(x, "applications", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

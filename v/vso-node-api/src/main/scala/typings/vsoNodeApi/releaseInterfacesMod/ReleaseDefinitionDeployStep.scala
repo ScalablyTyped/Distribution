@@ -24,6 +24,6 @@ object ReleaseDefinitionDeployStep {
     
     inline def setTasks(value: js.Array[WorkflowTask]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
     
-    inline def setTasksVarargs(value: WorkflowTask*): Self = StObject.set(x, "tasks", js.Array(value :_*))
+    inline def setTasksVarargs(value: WorkflowTask*): Self = StObject.set(x, "tasks", js.Array(value*))
   }
 }

@@ -22,6 +22,6 @@ object PolicyDelta {
     
     inline def setBindingDeltasUndefined: Self = StObject.set(x, "bindingDeltas", js.undefined)
     
-    inline def setBindingDeltasVarargs(value: BindingDelta*): Self = StObject.set(x, "bindingDeltas", js.Array(value :_*))
+    inline def setBindingDeltasVarargs(value: BindingDelta*): Self = StObject.set(x, "bindingDeltas", js.Array(value*))
   }
 }

@@ -292,23 +292,23 @@ trait Report extends StObject {
   
   var Pages: Double = js.native
   
-  var PaintPalette: js.Any = js.native
+  var PaintPalette: Any = js.native
   
   var Painting: Boolean = js.native
   
   var PaletteSource: String = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   var Picture: String = js.native
   
   var PictureAlignment: Double = js.native
   
-  var PictureData: js.Any = js.native
+  var PictureData: Any = js.native
   
   var PicturePages: Double = js.native
   
-  var PicturePalette: js.Any = js.native
+  var PicturePalette: Any = js.native
   
   var PictureSizeMode: Double = js.native
   
@@ -331,11 +331,11 @@ trait Report extends StObject {
   @JSName("Properties")
   val Properties_Original: Properties = js.native
   
-  var PrtDevMode: js.Any = js.native
+  var PrtDevMode: Any = js.native
   
-  var PrtDevNames: js.Any = js.native
+  var PrtDevNames: Any = js.native
   
-  var PrtMip: js.Any = js.native
+  var PrtMip: Any = js.native
   
   var RecordLocks: Double = js.native
   
@@ -368,7 +368,7 @@ trait Report extends StObject {
   def Section(Index: String): typings.activexAccess.Access.Section = js.native
   def Section(Index: AcReportSection): typings.activexAccess.Access.Section = js.native
   
-  def SectionOld(Index: js.Any): Section = js.native
+  def SectionOld(Index: Any): Section = js.native
   
   var ServerFilter: String = js.native
   
@@ -406,7 +406,7 @@ trait Report extends StObject {
   
   var ZoomControl: Double = js.native
   
-  def _Evaluate(bstrExpr: String, ppsa: js.Any*): js.Any = js.native
+  def _Evaluate(bstrExpr: String, ppsa: Any*): Any = js.native
   
   var _Name: String = js.native
   

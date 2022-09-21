@@ -1,7 +1,7 @@
 
 # Scala.js typings for realm-network-transport
 
-Typings are for version 0.7.0
+Typings are for version 0.7.2
 
 ## Library description:
 Implements cross-platform fetching used by Realm JS
@@ -10,10 +10,10 @@ Implements cross-platform fetching used by Realm JS
 | ------------------ | :-------------: |
 | Full name          | realm-network-transport |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 1 |
-| # downloads        | 62541 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 75386.0 |
+| # stars            | 4874.0 |
 
 ## Links
 - [Homepage](https://github.com/realm/realm-js#readme)

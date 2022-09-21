@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("AMap.BezierCurve")
 @js.native
-class BezierCurve[ExtraData] protected ()
+open class BezierCurve[ExtraData] protected ()
   extends StObject
      with typings.amapJsApi.AMap.BezierCurve[ExtraData] {
   /**

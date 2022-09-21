@@ -33,6 +33,18 @@ object pdfkitStrings {
   inline def `1Dot7ext3`: `1Dot7ext3` = "1.7ext3".asInstanceOf[`1Dot7ext3`]
   
   @js.native
+  sealed trait Layout extends StObject
+  inline def Layout: Layout = "Layout".asInstanceOf[Layout]
+  
+  @js.native
+  sealed trait Page extends StObject
+  inline def Page: Page = "Page".asInstanceOf[Page]
+  
+  @js.native
+  sealed trait Pagination extends StObject
+  inline def Pagination: Pagination = "Pagination".asInstanceOf[Pagination]
+  
+  @js.native
   sealed trait aalt
     extends StObject
        with OpenTypeFeatures
@@ -93,6 +105,10 @@ object pdfkitStrings {
   @js.native
   sealed trait bottom extends StObject
   inline def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @js.native
+  sealed trait bullet extends StObject
+  inline def bullet: bullet = "bullet".asInstanceOf[bullet]
   
   @js.native
   sealed trait c2pc
@@ -981,6 +997,10 @@ object pdfkitStrings {
   inline def left: left = "left".asInstanceOf[left]
   
   @js.native
+  sealed trait lettered extends StObject
+  inline def lettered: lettered = "lettered".asInstanceOf[lettered]
+  
+  @js.native
   sealed trait lfbd
     extends StObject
        with OpenTypeFeatures
@@ -1099,6 +1119,10 @@ object pdfkitStrings {
     extends StObject
        with OpenTypeFeatures
   inline def nukt: nukt = "nukt".asInstanceOf[nukt]
+  
+  @js.native
+  sealed trait numbered extends StObject
+  inline def numbered: numbered = "numbered".asInstanceOf[numbered]
   
   @js.native
   sealed trait numr

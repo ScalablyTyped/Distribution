@@ -14,7 +14,7 @@ object mod {
   
   @JSImport("shevyjs", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Shevy {
     def this(options: PartialOptions) = this()

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("opentype.js", "BoundingBox")
 @js.native
-class BoundingBox () extends StObject {
+open class BoundingBox () extends StObject {
   
   def addBezier(x0: Double, y0: Double, x1: Double, y1: Double, x2: Double, y2: Double, x: Double, y: Double): Unit = js.native
   

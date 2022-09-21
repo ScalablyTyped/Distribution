@@ -24,12 +24,12 @@ object BabelFileMetadata {
     
     inline def setMarked(value: js.Array[Loc]): Self = StObject.set(x, "marked", value.asInstanceOf[js.Any])
     
-    inline def setMarkedVarargs(value: Loc*): Self = StObject.set(x, "marked", js.Array(value :_*))
+    inline def setMarkedVarargs(value: Loc*): Self = StObject.set(x, "marked", js.Array(value*))
     
     inline def setModules(value: BabelFileModulesMetadata): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
     
     inline def setUsedHelpers(value: js.Array[String]): Self = StObject.set(x, "usedHelpers", value.asInstanceOf[js.Any])
     
-    inline def setUsedHelpersVarargs(value: String*): Self = StObject.set(x, "usedHelpers", js.Array(value :_*))
+    inline def setUsedHelpersVarargs(value: String*): Self = StObject.set(x, "usedHelpers", js.Array(value*))
   }
 }

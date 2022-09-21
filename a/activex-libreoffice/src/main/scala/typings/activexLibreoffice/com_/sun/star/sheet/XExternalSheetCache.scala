@@ -46,7 +46,7 @@ trait XExternalSheetCache extends StObject {
     * It retrieves a cached value from a specified cell position. The cached value can be either string or double.
     * @returns any cached cell value
     */
-  def getCellValue(nColumn: Double, nRow: Double): js.Any
+  def getCellValue(nColumn: Double, nRow: Double): Any
   
   /**
     * It sets a cached value for a specified cell position. The value is expected to be either of type string or of type double. No other data types are
@@ -55,7 +55,7 @@ trait XExternalSheetCache extends StObject {
     * @param nColumn column position (0-based)
     * @param aValue cell value to be cached
     */
-  def setCellValue(nColumn: Double, nRow: Double, aValue: js.Any): Unit
+  def setCellValue(nColumn: Double, nRow: Double, aValue: Any): Unit
 }
 object XExternalSheetCache {
   
@@ -64,8 +64,8 @@ object XExternalSheetCache {
     TokenIndex: Double,
     getAllColumns: Double => SafeArray[Double],
     getAllRows: () => SafeArray[Double],
-    getCellValue: (Double, Double) => js.Any,
-    setCellValue: (Double, Double, js.Any) => Unit
+    getCellValue: (Double, Double) => Any,
+    setCellValue: (Double, Double, Any) => Unit
   ): XExternalSheetCache = {
     val __obj = js.Dynamic.literal(AllRows = AllRows.asInstanceOf[js.Any], TokenIndex = TokenIndex.asInstanceOf[js.Any], getAllColumns = js.Any.fromFunction1(getAllColumns), getAllRows = js.Any.fromFunction0(getAllRows), getCellValue = js.Any.fromFunction2(getCellValue), setCellValue = js.Any.fromFunction3(setCellValue))
     __obj.asInstanceOf[XExternalSheetCache]
@@ -79,9 +79,9 @@ object XExternalSheetCache {
     
     inline def setGetAllRows(value: () => SafeArray[Double]): Self = StObject.set(x, "getAllRows", js.Any.fromFunction0(value))
     
-    inline def setGetCellValue(value: (Double, Double) => js.Any): Self = StObject.set(x, "getCellValue", js.Any.fromFunction2(value))
+    inline def setGetCellValue(value: (Double, Double) => Any): Self = StObject.set(x, "getCellValue", js.Any.fromFunction2(value))
     
-    inline def setSetCellValue(value: (Double, Double, js.Any) => Unit): Self = StObject.set(x, "setCellValue", js.Any.fromFunction3(value))
+    inline def setSetCellValue(value: (Double, Double, Any) => Unit): Self = StObject.set(x, "setCellValue", js.Any.fromFunction3(value))
     
     inline def setTokenIndex(value: Double): Self = StObject.set(x, "TokenIndex", value.asInstanceOf[js.Any])
   }

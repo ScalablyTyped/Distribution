@@ -5,23 +5,30 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs", "HemisphereBuilder")
-@js.native
-class HemisphereBuilder ()
-  extends typings.babylonjs.legacyMod.HemisphereBuilder
-/* static members */
 object HemisphereBuilder {
   
   @JSImport("babylonjs", "HemisphereBuilder")
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-    * Creates a hemisphere mesh
-    * @param name defines the name of the mesh
-    * @param options defines the options used to create the mesh
-    * @param scene defines the hosting scene
-    * @returns the hemisphere mesh
-    */
-  inline def CreateHemisphere(name: String, options: Segments, scene: js.Any): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateHemisphere")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  @JSImport("babylonjs", "HemisphereBuilder.CreateHemisphere")
+  @js.native
+  def CreateHemisphere: js.Function3[
+    /* name */ String, 
+    /* options */ js.UndefOr[Segments], 
+    /* scene */ js.UndefOr[typings.babylonjs.sceneMod.Scene], 
+    typings.babylonjs.meshMod.Mesh
+  ] = js.native
+  inline def CreateHemisphere(name: String): typings.babylonjs.meshMod.Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateHemisphere")(name.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateHemisphere(name: String, options: Unit, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateHemisphere")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateHemisphere(name: String, options: Segments): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateHemisphere")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateHemisphere(name: String, options: Segments, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateHemisphere")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateHemisphere_=(
+    x: js.Function3[
+      /* name */ String, 
+      /* options */ js.UndefOr[Segments], 
+      /* scene */ js.UndefOr[typings.babylonjs.sceneMod.Scene], 
+      typings.babylonjs.meshMod.Mesh
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreateHemisphere")(x.asInstanceOf[js.Any])
 }

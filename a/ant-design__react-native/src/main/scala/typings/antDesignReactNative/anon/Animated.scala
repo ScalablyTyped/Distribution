@@ -17,7 +17,7 @@ trait Animated extends StObject {
   
   var animated: Boolean
   
-  var goToTab: js.Any
+  var goToTab: Any
   
   var instanceId: Double
   
@@ -25,7 +25,7 @@ trait Animated extends StObject {
   
   var renderTab: js.UndefOr[js.Function1[/* tab */ TabData, ReactNode]] = js.undefined
   
-  var renderUnderline: js.UndefOr[js.Function1[/* style */ js.Any, ReactNode]] = js.undefined
+  var renderUnderline: js.UndefOr[js.Function1[/* style */ Any, ReactNode]] = js.undefined
   
   var tabBarActiveTextColor: js.UndefOr[String] = js.undefined
   
@@ -43,7 +43,7 @@ trait Animated extends StObject {
 }
 object Animated {
   
-  inline def apply(activeTab: Double, animated: Boolean, goToTab: js.Any, instanceId: Double, tabs: js.Array[TabData]): Animated = {
+  inline def apply(activeTab: Double, animated: Boolean, goToTab: Any, instanceId: Double, tabs: js.Array[TabData]): Animated = {
     val __obj = js.Dynamic.literal(activeTab = activeTab.asInstanceOf[js.Any], animated = animated.asInstanceOf[js.Any], goToTab = goToTab.asInstanceOf[js.Any], instanceId = instanceId.asInstanceOf[js.Any], tabs = tabs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Animated]
   }
@@ -54,7 +54,7 @@ object Animated {
     
     inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     
-    inline def setGoToTab(value: js.Any): Self = StObject.set(x, "goToTab", value.asInstanceOf[js.Any])
+    inline def setGoToTab(value: Any): Self = StObject.set(x, "goToTab", value.asInstanceOf[js.Any])
     
     inline def setInstanceId(value: Double): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
     
@@ -66,7 +66,7 @@ object Animated {
     
     inline def setRenderTabUndefined: Self = StObject.set(x, "renderTab", js.undefined)
     
-    inline def setRenderUnderline(value: /* style */ js.Any => ReactNode): Self = StObject.set(x, "renderUnderline", js.Any.fromFunction1(value))
+    inline def setRenderUnderline(value: /* style */ Any => ReactNode): Self = StObject.set(x, "renderUnderline", js.Any.fromFunction1(value))
     
     inline def setRenderUnderlineUndefined: Self = StObject.set(x, "renderUnderline", js.undefined)
     
@@ -100,6 +100,6 @@ object Animated {
     
     inline def setTabs(value: js.Array[TabData]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
     
-    inline def setTabsVarargs(value: TabData*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+    inline def setTabsVarargs(value: TabData*): Self = StObject.set(x, "tabs", js.Array(value*))
   }
 }

@@ -10,15 +10,12 @@ Mock HTTP calls in your protractor specs.
 | ------------------ | :-------------: |
 | Full name          | protractor-http-mock |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 188172 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 18563.0 |
+| # stars            | 174.0 |
 
 ## Links
-- [Homepage](https://github.com/atecarlos/protractor-http-mock#readme)
-- [Bugs](https://github.com/atecarlos/protractor-http-mock/issues)
-- [Repository](https://github.com/atecarlos/protractor-http-mock)
 - [Npm](https://www.npmjs.com/package/protractor-http-mock)
     
 

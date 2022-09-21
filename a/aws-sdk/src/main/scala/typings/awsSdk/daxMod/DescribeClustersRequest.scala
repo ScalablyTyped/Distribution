@@ -34,7 +34,7 @@ object DescribeClustersRequest {
     
     inline def setClusterNamesUndefined: Self = StObject.set(x, "ClusterNames", js.undefined)
     
-    inline def setClusterNamesVarargs(value: String*): Self = StObject.set(x, "ClusterNames", js.Array(value :_*))
+    inline def setClusterNamesVarargs(value: String*): Self = StObject.set(x, "ClusterNames", js.Array(value*))
     
     inline def setMaxResults(value: IntegerOptional): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

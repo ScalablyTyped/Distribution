@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("loopback", "SharedClass")
 @js.native
-class SharedClass protected () extends StObject {
+open class SharedClass protected () extends StObject {
   def this(name: String, constructor: js.Function0[Unit]) = this()
   
   /** The SharedClass name */
@@ -29,7 +29,7 @@ class SharedClass protected () extends StObject {
     * @param {string} name The method name
     * @param {any} options Set of options used to create a SharedMethod. See the full set of options https://apidocs.strongloop.com/strong-remoting/#sharedmethod
     */
-  def defineMethod(name: String, options: js.Any): Unit = js.native
+  def defineMethod(name: String, options: Any): Unit = js.native
   
   /**
     * Disable a sharedMethod with the given name or function object.
@@ -50,14 +50,14 @@ class SharedClass protected () extends StObject {
     * @param {boolean} isStatic Required if fn is a String. Only find a static method with the given name.
     * @return {any} SharedMethod https://apidocs.strongloop.com/strong-remoting/#sharedmethod
     */
-  def find(fn: js.Function0[Unit | String], isStatic: Boolean): js.Any = js.native
+  def find(fn: js.Function0[Unit | String], isStatic: Boolean): Any = js.native
   
   /**
     * Find a sharedMethod with the given static or prototype method name.
     * @param {string} methodName the method name Find a static or prototype method with the given name.
     * @return {any} SharedMethod
     */
-  def findMethodByName(methodName: String): js.Any = js.native
+  def findMethodByName(methodName: String): Any = js.native
   
   /**
     * Get a key for the given method.
@@ -66,14 +66,14 @@ class SharedClass protected () extends StObject {
     */
   def getKeyFromMethodNameAndTarget(fn: String, isStatic: Boolean): Unit = js.native
   
-  var http: js.Any = js.native
+  var http: Any = js.native
   
   /**
     * Get all shared methods belonging to this shared class.
     * @param {any} options
     * @return {any[]} An array of shared methods SharedMethod[]
     */
-  def methods(options: IncludeDisabled): js.Array[js.Any] = js.native
+  def methods(options: IncludeDisabled): js.Array[Any] = js.native
   
   /**
     * Define a shared method resolver for dynamically defining methods.

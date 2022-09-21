@@ -1,5 +1,6 @@
 package typings.reactLatexNext
 
+import typings.reactLatexNext.typesMod.Delimiter
 import typings.reactLatexNext.typesMod.KatexData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,10 +12,5 @@ object splitAtDelimitersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(
-    startData: js.Array[KatexData],
-    leftDelimiterValue: String,
-    rightDelimiterValue: String,
-    display: Boolean
-  ): js.Array[KatexData] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(startData.asInstanceOf[js.Any], leftDelimiterValue.asInstanceOf[js.Any], rightDelimiterValue.asInstanceOf[js.Any], display.asInstanceOf[js.Any])).asInstanceOf[js.Array[KatexData]]
+  inline def default(text: String, delimiters: js.Array[Delimiter]): js.Array[KatexData] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any], delimiters.asInstanceOf[js.Any])).asInstanceOf[js.Array[KatexData]]
 }

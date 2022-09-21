@@ -1,19 +1,19 @@
 
 # Scala.js typings for html-void-elements
 
-Typings are for version 1.0
+Typings are for version 2.0.1
 
 ## Library description:
-List of known void HTML elements
+List of HTML void tag names
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | html-void-elements |
 | Keywords           | html, void, tag, name, element, tagname, w3c, whatwg |
 | # releases         | 3 |
-| # dependents       | 15 |
-| # downloads        | 33746895 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1.5778907333333334E7 |
+| # stars            | 21.0 |
 
 ## Links
 - [Homepage](https://github.com/wooorm/html-void-elements#readme)
@@ -24,7 +24,7 @@ List of known void HTML elements
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

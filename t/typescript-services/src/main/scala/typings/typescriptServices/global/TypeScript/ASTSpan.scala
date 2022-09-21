@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.ASTSpan")
 @js.native
-class ASTSpan protected ()
+open class ASTSpan protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.ASTSpan {
   def this(_start: Double, _end: Double) = this()

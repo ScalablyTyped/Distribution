@@ -112,14 +112,7 @@ object mod {
       * all lines saved in the scrollback buffer (some terminals only).
       */
     inline def display(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("display")().asInstanceOf[String]
-    
-    inline def display_0(n: `0`): String = ^.asInstanceOf[js.Dynamic].applyDynamic("display")(n.asInstanceOf[js.Any]).asInstanceOf[String]
-    
-    inline def display_1(n: `1`): String = ^.asInstanceOf[js.Dynamic].applyDynamic("display")(n.asInstanceOf[js.Any]).asInstanceOf[String]
-    
-    inline def display_2(n: `2`): String = ^.asInstanceOf[js.Dynamic].applyDynamic("display")(n.asInstanceOf[js.Any]).asInstanceOf[String]
-    
-    inline def display_3(n: `3`): String = ^.asInstanceOf[js.Dynamic].applyDynamic("display")(n.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def display(n: `0` | `1` | `2` | `3`): String = ^.asInstanceOf[js.Dynamic].applyDynamic("display")(n.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Erases part of the line. If n is zero (or missing), clear from cursor to
@@ -127,12 +120,7 @@ object mod {
       * line. If n is two, clear entire line. Cursor position does not change.
       */
     inline def inLine(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("inLine")().asInstanceOf[String]
-    
-    inline def inLine_0(n: `0`): String = ^.asInstanceOf[js.Dynamic].applyDynamic("inLine")(n.asInstanceOf[js.Any]).asInstanceOf[String]
-    
-    inline def inLine_1(n: `1`): String = ^.asInstanceOf[js.Dynamic].applyDynamic("inLine")(n.asInstanceOf[js.Any]).asInstanceOf[String]
-    
-    inline def inLine_2(n: `2`): String = ^.asInstanceOf[js.Dynamic].applyDynamic("inLine")(n.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def inLine(n: `0` | `1` | `2`): String = ^.asInstanceOf[js.Dynamic].applyDynamic("inLine")(n.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   inline def format(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(str.asInstanceOf[js.Any]).asInstanceOf[String]

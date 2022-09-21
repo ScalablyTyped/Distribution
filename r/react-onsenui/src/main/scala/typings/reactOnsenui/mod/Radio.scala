@@ -8,12 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-onsenui", "Radio")
 @js.native
-class Radio protected ()
-  extends Component[Checked, js.Any] {
+open class Radio protected () extends Component[Checked, Any] {
   def this(props: HTMLAttributesidclassName & Checked) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: HTMLAttributesidclassName & Checked, context: js.Any) = this()
+  def this(props: HTMLAttributesidclassName & Checked, context: Any) = this()
 }

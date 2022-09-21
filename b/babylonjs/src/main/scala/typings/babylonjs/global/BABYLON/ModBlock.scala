@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.ModBlock")
 @js.native
-class ModBlock protected ()
+open class ModBlock protected ()
   extends StObject
      with typings.babylonjs.BABYLON.ModBlock {
   /**

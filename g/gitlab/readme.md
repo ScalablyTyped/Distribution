@@ -10,12 +10,15 @@ Full NodeJS implementation of the GitLab API. Supports Promises, Async/Await.
 | ------------------ | :-------------: |
 | Full name          | gitlab |
 | Keywords           | api, browser, cli, es5, es6, gitlab, ky |
-| # releases         | 77 |
-| # dependents       | 110 |
-| # downloads        | 7222725 |
-| # stars            | 18 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1627369.6666666667 |
+| # stars            | 1114.0 |
 
 ## Links
+- [Homepage](https://github.com/jdalrymple/node-gitlab#readme)
+- [Bugs](https://github.com/jdalrymple/node-gitlab/issues)
+- [Repository](https://github.com/jdalrymple/node-gitlab)
 - [Npm](https://www.npmjs.com/package/gitlab)
     
 

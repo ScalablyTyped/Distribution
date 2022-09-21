@@ -34,7 +34,9 @@ trait IWebXRTeleportationOptions extends StObject {
   /**
     * If provided, this function will be used to generate the ray mesh instead of the lines mesh being used per default
     */
-  var generateRayPathMesh: js.UndefOr[js.Function1[/* points */ js.Array[Vector3], AbstractMesh]] = js.undefined
+  var generateRayPathMesh: js.UndefOr[
+    js.Function2[/* points */ js.Array[Vector3], /* pickingInfo */ PickingInfo, AbstractMesh]
+  ] = js.undefined
   
   /**
     * Meshes that the teleportation ray cannot go through
@@ -113,13 +115,13 @@ object IWebXRTeleportationOptions {
     
     inline def setFloorMeshesUndefined: Self = StObject.set(x, "floorMeshes", js.undefined)
     
-    inline def setFloorMeshesVarargs(value: AbstractMesh*): Self = StObject.set(x, "floorMeshes", js.Array(value :_*))
+    inline def setFloorMeshesVarargs(value: AbstractMesh*): Self = StObject.set(x, "floorMeshes", js.Array(value*))
     
     inline def setForceHandedness(value: XRHandedness): Self = StObject.set(x, "forceHandedness", value.asInstanceOf[js.Any])
     
     inline def setForceHandednessUndefined: Self = StObject.set(x, "forceHandedness", js.undefined)
     
-    inline def setGenerateRayPathMesh(value: /* points */ js.Array[Vector3] => AbstractMesh): Self = StObject.set(x, "generateRayPathMesh", js.Any.fromFunction1(value))
+    inline def setGenerateRayPathMesh(value: (/* points */ js.Array[Vector3], /* pickingInfo */ PickingInfo) => AbstractMesh): Self = StObject.set(x, "generateRayPathMesh", js.Any.fromFunction2(value))
     
     inline def setGenerateRayPathMeshUndefined: Self = StObject.set(x, "generateRayPathMesh", js.undefined)
     
@@ -127,7 +129,7 @@ object IWebXRTeleportationOptions {
     
     inline def setPickBlockerMeshesUndefined: Self = StObject.set(x, "pickBlockerMeshes", js.undefined)
     
-    inline def setPickBlockerMeshesVarargs(value: AbstractMesh*): Self = StObject.set(x, "pickBlockerMeshes", js.Array(value :_*))
+    inline def setPickBlockerMeshesVarargs(value: AbstractMesh*): Self = StObject.set(x, "pickBlockerMeshes", js.Array(value*))
     
     inline def setRenderingGroupId(value: Double): Self = StObject.set(x, "renderingGroupId", value.asInstanceOf[js.Any])
     
@@ -141,7 +143,7 @@ object IWebXRTeleportationOptions {
     
     inline def setSnapPositionsUndefined: Self = StObject.set(x, "snapPositions", js.undefined)
     
-    inline def setSnapPositionsVarargs(value: Vector3*): Self = StObject.set(x, "snapPositions", js.Array(value :_*))
+    inline def setSnapPositionsVarargs(value: Vector3*): Self = StObject.set(x, "snapPositions", js.Array(value*))
     
     inline def setSnapToPositionRadius(value: Double): Self = StObject.set(x, "snapToPositionRadius", value.asInstanceOf[js.Any])
     

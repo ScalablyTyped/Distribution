@@ -14,7 +14,7 @@ trait ColumnMetadata[T /* <: SlickData */] extends StObject {
   /**
     * A custom cell editor.
     */
-  var editor: js.UndefOr[js.Any] = js.undefined
+  var editor: js.UndefOr[Any] = js.undefined
   
   /**
     * Whether or not a cell can be set as "active".
@@ -44,7 +44,7 @@ object ColumnMetadata {
     
     inline def setColspanUndefined: Self = StObject.set(x, "colspan", js.undefined)
     
-    inline def setEditor(value: js.Any): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
+    inline def setEditor(value: Any): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     
     inline def setEditorUndefined: Self = StObject.set(x, "editor", js.undefined)
     
@@ -53,7 +53,7 @@ object ColumnMetadata {
     inline def setFocusableUndefined: Self = StObject.set(x, "focusable", js.undefined)
     
     inline def setFormatter(
-      value: (/* row */ Double, /* cell */ Double, /* value */ js.Any, /* columnDef */ Column[T], /* dataContext */ SlickData) => String
+      value: (/* row */ Double, /* cell */ Double, /* value */ Any, /* columnDef */ Column[T], /* dataContext */ SlickData) => String
     ): Self = StObject.set(x, "formatter", js.Any.fromFunction5(value))
     
     inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)

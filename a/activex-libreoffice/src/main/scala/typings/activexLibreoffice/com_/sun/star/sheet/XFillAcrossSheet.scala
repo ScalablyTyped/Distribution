@@ -19,7 +19,7 @@ object XFillAcrossSheet {
   inline def apply(
     acquire: () => Unit,
     fillAcrossSheets: Double => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XFillAcrossSheet = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), fillAcrossSheets = js.Any.fromFunction1(fillAcrossSheets), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

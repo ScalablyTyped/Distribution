@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("prom-client", "Counter")
 @js.native
-class Counter[T /* <: String */] protected ()
+open class Counter[T /* <: String */] protected ()
   extends StObject
      with Metric_[T] {
   /**
@@ -31,11 +31,22 @@ class Counter[T /* <: String */] protected ()
   
   /**
   	 * Return the child for given labels
+  	 * @param labels Object with label keys and values
+  	 * @return Configured counter with given labels
+  	 */
+  def labels(labels: LabelValues[T]): Internal = js.native
+  /**
+  	 * Return the child for given labels
   	 * @param values Label values
   	 * @return Configured counter with given labels
   	 */
   def labels(values: String*): Internal = js.native
   
+  /**
+  	 * Remove metrics for the given label values
+  	 * @param labels Object with label keys and values
+  	 */
+  def remove(labels: LabelValues[T]): Unit = js.native
   /**
   	 * Remove metrics for the given label values
   	 * @param values Label values

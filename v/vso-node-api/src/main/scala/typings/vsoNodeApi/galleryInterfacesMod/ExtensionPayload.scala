@@ -50,7 +50,7 @@ object ExtensionPayload {
     
     inline def setInstallationTargets(value: js.Array[InstallationTarget]): Self = StObject.set(x, "installationTargets", value.asInstanceOf[js.Any])
     
-    inline def setInstallationTargetsVarargs(value: InstallationTarget*): Self = StObject.set(x, "installationTargets", js.Array(value :_*))
+    inline def setInstallationTargetsVarargs(value: InstallationTarget*): Self = StObject.set(x, "installationTargets", js.Array(value*))
     
     inline def setIsSignedByMicrosoft(value: Boolean): Self = StObject.set(x, "isSignedByMicrosoft", value.asInstanceOf[js.Any])
     
@@ -58,7 +58,7 @@ object ExtensionPayload {
     
     inline def setMetadata(value: js.Array[KeyValue]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    inline def setMetadataVarargs(value: KeyValue*): Self = StObject.set(x, "metadata", js.Array(value :_*))
+    inline def setMetadataVarargs(value: KeyValue*): Self = StObject.set(x, "metadata", js.Array(value*))
     
     inline def setType(value: ExtensionDeploymentTechnology): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

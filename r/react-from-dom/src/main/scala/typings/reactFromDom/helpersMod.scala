@@ -17,7 +17,10 @@ object helpersMod {
   
   @JSImport("react-from-dom/lib/helpers", "possibleStandardNames")
   @js.native
-  val possibleStandardNames: Record[String, js.Any] = js.native
+  val possibleStandardNames: Record[String, Any] = js.native
   
-  inline def styleToObject(input: String): Record[String, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("styleToObject")(input.asInstanceOf[js.Any]).asInstanceOf[Record[String, js.Any]]
+  inline def randomString(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("randomString")().asInstanceOf[String]
+  inline def randomString(length: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("randomString")(length.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def styleToObject(input: String): Record[String, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("styleToObject")(input.asInstanceOf[js.Any]).asInstanceOf[Record[String, Any]]
 }

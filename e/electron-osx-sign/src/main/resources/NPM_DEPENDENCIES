@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "electron-osx-sign" : "0.4.17"
+      "electron-osx-sign" : "0.6.0"
     }
   ],
   "test-dependencies" : [
     {
-      "electron-osx-sign" : "0.4.17"
+      "electron-osx-sign" : "0.6.0"
     }
   ],
   "compile-devDependencies" : [

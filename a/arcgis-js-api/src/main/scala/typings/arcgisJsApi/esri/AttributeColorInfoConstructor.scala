@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AttributeColorInfoConstructor
   extends StObject
      with /**
-  * Defines the symbology for a [DotDensityRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html) in the renderer's [attributes](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#attributes) property.
+  * Defines colors for dots in a [DotDensityRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#attributes), or colors for pie chart slices in a [PieChartRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PieChartRenderer.html#attributes).
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AttributeColorInfo.html)
   */
 Instantiable0[AttributeColorInfo]
      with Instantiable1[/* properties */ AttributeColorInfoProperties, AttributeColorInfo] {
   
-  def fromJSON(json: js.Any): AttributeColorInfo = js.native
+  def fromJSON(json: Any): AttributeColorInfo = js.native
 }

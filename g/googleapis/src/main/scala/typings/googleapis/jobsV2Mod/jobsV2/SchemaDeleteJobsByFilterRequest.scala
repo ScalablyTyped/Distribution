@@ -4,22 +4,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Deprecated. Use BatchDeleteJobsRequest instead.  Input only.  Delete job by
-  * filter request.  The job typically becomes unsearchable within 10 seconds,
-  * but it may take up to 5 minutes.
-  */
 trait SchemaDeleteJobsByFilterRequest extends StObject {
   
   /**
-    * Optional.  If set to true, this call waits for all processing steps to
-    * complete before the job is cleaned up. Otherwise, the call returns while
-    * some steps are still taking place asynchronously, hence faster.
+    * Optional. If set to true, this call waits for all processing steps to complete before the job is cleaned up. Otherwise, the call returns while some steps are still taking place asynchronously, hence faster.
     */
-  var disableFastProcess: js.UndefOr[Boolean] = js.undefined
+  var disableFastProcess: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * Required.  Restrictions on the scope of the delete request.
+    * Required. Restrictions on the scope of the delete request.
     */
   var filter: js.UndefOr[SchemaFilter] = js.undefined
 }
@@ -33,6 +26,8 @@ object SchemaDeleteJobsByFilterRequest {
   extension [Self <: SchemaDeleteJobsByFilterRequest](x: Self) {
     
     inline def setDisableFastProcess(value: Boolean): Self = StObject.set(x, "disableFastProcess", value.asInstanceOf[js.Any])
+    
+    inline def setDisableFastProcessNull: Self = StObject.set(x, "disableFastProcess", null)
     
     inline def setDisableFastProcessUndefined: Self = StObject.set(x, "disableFastProcess", js.undefined)
     

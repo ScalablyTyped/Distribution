@@ -8,5 +8,5 @@ object restoreTableFromBackupInputMod {
   
   @JSImport("@aws-sdk/client-dynamodb-browser/model/RestoreTableFromBackupInput", "RestoreTableFromBackupInput")
   @js.native
-  val RestoreTableFromBackupInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val RestoreTableFromBackupInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -1,16 +1,13 @@
 package typings.xstyledSystem.mod
 
+import typings.csstype.mod.Property.Height
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait SizeProps[TLength] extends StObject {
   
-  val size: js.UndefOr[
-    ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLength> */ js.Any
-    ]
-  ] = js.undefined
+  val size: js.UndefOr[ResponsiveValue[Height[TLength]]] = js.undefined
 }
 object SizeProps {
   
@@ -21,16 +18,10 @@ object SizeProps {
   
   extension [Self <: SizeProps[?], TLength](x: Self & SizeProps[TLength]) {
     
-    inline def setSize(
-      value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLength> */ js.Any
-        ]
-    ): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: ResponsiveValue[Height[TLength]]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    inline def setSizeVarargs(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLength> */ js.Any)*
-    ): Self = StObject.set(x, "size", js.Array(value :_*))
+    inline def setSizeVarargs(value: Height[TLength]*): Self = StObject.set(x, "size", js.Array(value*))
   }
 }

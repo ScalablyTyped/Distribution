@@ -11,5 +11,5 @@ object propTypesExtensionsMod {
   
   @JSImport("rbx/prop-types-extensions", "renderablePropType")
   @js.native
-  val renderablePropType: Requireable[String | (js.Function1[/* repeated */ js.Any, js.Any]) | InferProps[Render]] = js.native
+  val renderablePropType: Requireable[String | (js.Function1[/* repeated */ Any, Any]) | InferProps[Render]] = js.native
 }

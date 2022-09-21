@@ -8,5 +8,5 @@ object aliasListMod {
   
   @JSImport("@aws-sdk/client-lambda-node/model/_AliasList", "_AliasList")
   @js.native
-  val AliasList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val AliasList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

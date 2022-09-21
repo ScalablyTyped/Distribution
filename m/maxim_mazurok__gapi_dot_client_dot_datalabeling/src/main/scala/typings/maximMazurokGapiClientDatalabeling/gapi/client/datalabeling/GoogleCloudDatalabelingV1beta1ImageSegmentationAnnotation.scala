@@ -11,7 +11,7 @@ trait GoogleCloudDatalabelingV1beta1ImageSegmentationAnnotation extends StObject
   var annotationColors: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.datalabeling.gapi.client.datalabeling.GoogleCloudDatalabelingV1beta1AnnotationSpec}
-    */ typings.maximMazurokGapiClientDatalabeling.maximMazurokGapiClientDatalabelingStrings.GoogleCloudDatalabelingV1beta1ImageSegmentationAnnotation & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDatalabeling.maximMazurokGapiClientDatalabelingStrings.GoogleCloudDatalabelingV1beta1ImageSegmentationAnnotation & TopLevel[Any]
   ] = js.undefined
   
   /** A byte string of a full image's color map. */
@@ -32,7 +32,7 @@ object GoogleCloudDatalabelingV1beta1ImageSegmentationAnnotation {
     inline def setAnnotationColors(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.datalabeling.gapi.client.datalabeling.GoogleCloudDatalabelingV1beta1AnnotationSpec}
-      */ typings.maximMazurokGapiClientDatalabeling.maximMazurokGapiClientDatalabelingStrings.GoogleCloudDatalabelingV1beta1ImageSegmentationAnnotation & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDatalabeling.maximMazurokGapiClientDatalabelingStrings.GoogleCloudDatalabelingV1beta1ImageSegmentationAnnotation & TopLevel[Any]
     ): Self = StObject.set(x, "annotationColors", value.asInstanceOf[js.Any])
     
     inline def setAnnotationColorsUndefined: Self = StObject.set(x, "annotationColors", js.undefined)

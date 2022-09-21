@@ -33,6 +33,6 @@ object ListPermissionsResponse {
     
     inline def setPrincipalResourcePermissionsUndefined: Self = StObject.set(x, "PrincipalResourcePermissions", js.undefined)
     
-    inline def setPrincipalResourcePermissionsVarargs(value: PrincipalResourcePermissions*): Self = StObject.set(x, "PrincipalResourcePermissions", js.Array(value :_*))
+    inline def setPrincipalResourcePermissionsVarargs(value: PrincipalResourcePermissions*): Self = StObject.set(x, "PrincipalResourcePermissions", js.Array(value*))
   }
 }

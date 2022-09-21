@@ -10,10 +10,10 @@ object cropDinMod {
   
   @JSImport("material-ui/svg-icons/image/crop-din", JSImport.Default)
   @js.native
-  class default () extends ImageCropDin
+  open class default () extends ImageCropDin
   
   @JSImport("material-ui/svg-icons/image/crop-din", "ImageCropDin")
   @js.native
-  class ImageCropDin ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageCropDin ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

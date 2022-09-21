@@ -33,19 +33,19 @@ object sslMod {
   
   @JSImport("ssl", "Handler")
   @js.native
-  class Handler ()
+  open class Handler ()
     extends StObject
        with ClassSslHandler
   
   @JSImport("ssl", "Server")
   @js.native
-  class Server ()
+  open class Server ()
     extends StObject
        with ClassSslServer
   
   @JSImport("ssl", "Socket")
   @js.native
-  class Socket ()
+  open class Socket ()
     extends StObject
        with ClassSslSocket
   

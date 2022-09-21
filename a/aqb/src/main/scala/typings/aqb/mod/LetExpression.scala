@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LetExpression
   extends StObject
      with PartialStatement
-     with Instantiable2[/* prev */ PartialStatement, /* dfns (repeated) */ js.Any, PartialStatement] {
+     with Instantiable2[/* prev */ PartialStatement, /* dfns (repeated) */ Any, PartialStatement] {
   
   var _dfns: Definitions = js.native
   

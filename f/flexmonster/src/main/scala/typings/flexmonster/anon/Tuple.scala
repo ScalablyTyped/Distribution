@@ -27,7 +27,7 @@ object Tuple {
     
     inline def setTuple(value: js.Array[String]): Self = StObject.set(x, "tuple", value.asInstanceOf[js.Any])
     
-    inline def setTupleVarargs(value: String*): Self = StObject.set(x, "tuple", js.Array(value :_*))
+    inline def setTupleVarargs(value: String*): Self = StObject.set(x, "tuple", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

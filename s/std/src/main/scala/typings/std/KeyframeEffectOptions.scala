@@ -8,9 +8,14 @@ trait KeyframeEffectOptions
   extends StObject
      with EffectTiming {
   
+  /* standard dom */
   var composite: js.UndefOr[CompositeOperation] = js.undefined
   
+  /* standard dom */
   var iterationComposite: js.UndefOr[IterationCompositeOperation] = js.undefined
+  
+  /* standard dom */
+  var pseudoElement: js.UndefOr[java.lang.String | Null] = js.undefined
 }
 object KeyframeEffectOptions {
   
@@ -28,5 +33,11 @@ object KeyframeEffectOptions {
     inline def setIterationComposite(value: IterationCompositeOperation): Self = StObject.set(x, "iterationComposite", value.asInstanceOf[js.Any])
     
     inline def setIterationCompositeUndefined: Self = StObject.set(x, "iterationComposite", js.undefined)
+    
+    inline def setPseudoElement(value: java.lang.String): Self = StObject.set(x, "pseudoElement", value.asInstanceOf[js.Any])
+    
+    inline def setPseudoElementNull: Self = StObject.set(x, "pseudoElement", null)
+    
+    inline def setPseudoElementUndefined: Self = StObject.set(x, "pseudoElement", js.undefined)
   }
 }

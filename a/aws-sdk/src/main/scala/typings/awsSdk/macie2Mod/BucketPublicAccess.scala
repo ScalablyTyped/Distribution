@@ -12,7 +12,7 @@ trait BucketPublicAccess extends StObject {
   var effectivePermission: js.UndefOr[EffectivePermission] = js.undefined
   
   /**
-    * The account-level and bucket-level permissions for the bucket.
+    * The account-level and bucket-level permissions settings for the bucket.
     */
   var permissionConfiguration: js.UndefOr[BucketPermissionConfiguration] = js.undefined
 }

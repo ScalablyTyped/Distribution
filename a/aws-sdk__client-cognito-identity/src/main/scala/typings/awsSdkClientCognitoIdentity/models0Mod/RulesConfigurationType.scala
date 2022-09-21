@@ -19,18 +19,12 @@ object RulesConfigurationType {
     __obj.asInstanceOf[RulesConfigurationType]
   }
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "RulesConfigurationType")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  inline def filterSensitiveLog(obj: RulesConfigurationType): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
   extension [Self <: RulesConfigurationType](x: Self) {
     
     inline def setRules(value: js.Array[MappingRule]): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
     
     inline def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
     
-    inline def setRulesVarargs(value: MappingRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: MappingRule*): Self = StObject.set(x, "Rules", js.Array(value*))
   }
 }

@@ -27,9 +27,9 @@ trait AQLfunctions
     * If the value is already an  Boolean, its own value will be wrapped instead.
     *
     */
-  def bool(value: js.Any): BooleanLiteral = js.native
+  def bool(value: Any): BooleanLiteral = js.native
   
-  def expr(value: js.Any): RawExpression = js.native
+  def expr(value: Any): RawExpression = js.native
   
   /**
     * declare Function Call
@@ -52,7 +52,7 @@ trait AQLfunctions
     * qb.FLOOR(qb.div(5, 2)): FLOOR((5 / 2))
     *
     */
-  def fn(functionName: String): js.Function1[/* repeated */ js.Any, FunctionCall] = js.native
+  def fn(functionName: String): js.Function1[/* repeated */ Any, FunctionCall] = js.native
   
   /**
     * Ternary(if / else)
@@ -71,7 +71,7 @@ trait AQLfunctions
     * qb.ref('x').then('y').else('z'): (x ? y: z)
     *
     */
-  def `if`(cond: js.Any, `then`: js.Any, otherwise: js.Any): Expression | Double = js.native
+  def `if`(cond: Any, `then`: Any, otherwise: Any): Expression | Double = js.native
   
   /**
     * Integer
@@ -85,7 +85,7 @@ trait AQLfunctions
     * If the value is already an  Number or  Integer, its own value will be wrapped instead.
     *
     */
-  def int(value: js.Any): IntegerLiteral = js.native
+  def int(value: Any): IntegerLiteral = js.native
   
   /**
     * List
@@ -99,7 +99,7 @@ trait AQLfunctions
     * Any list elements that are not already  values will be converted automatically.
     *
     */
-  def list(value: js.Array[js.Any]): ListLiteral = js.native
+  def list(value: js.Array[Any]): ListLiteral = js.native
   
   /**
     * Number
@@ -113,7 +113,7 @@ trait AQLfunctions
     * If the value is already an  Number or  Integer, its own value will be wrapped instead.
     *
     */
-  def num(value: js.Any): NumberLiteral = js.native
+  def num(value: Any): NumberLiteral = js.native
   
   /**
     * Object
@@ -209,5 +209,5 @@ trait AQLfunctions
     * '"some string"' => "\"some string\""
     *
     */
-  def str(value: js.Any): StringLiteral = js.native
+  def str(value: Any): StringLiteral = js.native
 }

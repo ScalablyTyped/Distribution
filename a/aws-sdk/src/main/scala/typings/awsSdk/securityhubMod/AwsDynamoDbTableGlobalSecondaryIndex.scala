@@ -27,7 +27,7 @@ trait AwsDynamoDbTableGlobalSecondaryIndex extends StObject {
   var IndexSizeBytes: js.UndefOr[SizeBytes] = js.undefined
   
   /**
-    * The current status of the index.
+    * The current status of the index.    ACTIVE     CREATING     DELETING     UPDATING   
     */
   var IndexStatus: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -88,7 +88,7 @@ object AwsDynamoDbTableGlobalSecondaryIndex {
     
     inline def setKeySchemaUndefined: Self = StObject.set(x, "KeySchema", js.undefined)
     
-    inline def setKeySchemaVarargs(value: AwsDynamoDbTableKeySchema*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
+    inline def setKeySchemaVarargs(value: AwsDynamoDbTableKeySchema*): Self = StObject.set(x, "KeySchema", js.Array(value*))
     
     inline def setProjection(value: AwsDynamoDbTableProjection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
     

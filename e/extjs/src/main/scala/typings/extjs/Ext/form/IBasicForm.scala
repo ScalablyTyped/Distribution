@@ -13,22 +13,22 @@ trait IBasicForm
      with IObservable {
   
   /** [Config Option] (Object) */
-  var api: js.UndefOr[js.Any] = js.undefined
+  var api: js.UndefOr[Any] = js.undefined
   
   /** [Method] Calls Ext applyIf for all field in this form with the passed object
     * @param obj Object The object to be applied
     * @returns Ext.form.Basic this
     */
-  var applyIfToFields: js.UndefOr[js.Function1[/* obj */ js.UndefOr[js.Any], IBasic]] = js.undefined
+  var applyIfToFields: js.UndefOr[js.Function1[/* obj */ js.UndefOr[Any], IBasic]] = js.undefined
   
   /** [Method] Calls Ext apply for all fields in this form with the passed object
     * @param obj Object The object to be applied
     * @returns Ext.form.Basic this
     */
-  var applyToFields: js.UndefOr[js.Function1[/* obj */ js.UndefOr[js.Any], IBasic]] = js.undefined
+  var applyToFields: js.UndefOr[js.Function1[/* obj */ js.UndefOr[Any], IBasic]] = js.undefined
   
   /** [Config Option] (Object) */
-  var baseParams: js.UndefOr[js.Any] = js.undefined
+  var baseParams: js.UndefOr[Any] = js.undefined
   
   /** [Method] Check whether the dirty state of the entire form has changed since it was last checked and if so fire the dirtychang  */
   var checkDirty: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -50,23 +50,23 @@ trait IBasicForm
     * @returns Ext.form.Basic this
     */
   var doAction: js.UndefOr[
-    js.Function2[/* action */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], IBasic]
+    js.Function2[/* action */ js.UndefOr[Any], /* options */ js.UndefOr[Any], IBasic]
   ] = js.undefined
   
   /** [Config Option] (Object/Ext.data.reader.Reader) */
-  var errorReader: js.UndefOr[js.Any] = js.undefined
+  var errorReader: js.UndefOr[Any] = js.undefined
   
   /** [Method] Find a specific Ext form field Field in this form by id or name
     * @param id String The value to search for (specify either a id or name or hiddenName).
     * @returns any The first matching field, or null if none was found.
     */
-  var findField: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], js.Any]] = js.undefined
+  var findField: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], Any]] = js.undefined
   
   /** [Method] Retrieves the fields in the form as a set of key value pairs using their getModelData  method to collect the values
     * @param dirtyOnly Boolean If true, only fields that are dirty will be included in the result.
     * @returns Object
     */
-  var getFieldValues: js.UndefOr[js.Function1[/* dirtyOnly */ js.UndefOr[Boolean], js.Any]] = js.undefined
+  var getFieldValues: js.UndefOr[js.Function1[/* dirtyOnly */ js.UndefOr[Boolean], Any]] = js.undefined
   
   /** [Method] Return all the Ext form field Field components in the owner container
     * @returns Ext.util.MixedCollection Collection of the Field objects
@@ -91,7 +91,7 @@ trait IBasicForm
       /* dirtyOnly */ js.UndefOr[Boolean], 
       /* includeEmptyText */ js.UndefOr[Boolean], 
       /* useDataValues */ js.UndefOr[Boolean], 
-      js.Any
+      Any
     ]
   ] = js.undefined
   
@@ -120,7 +120,7 @@ trait IBasicForm
     * @param options Object The options to pass to the action (see doAction for details)
     * @returns Ext.form.Basic this
     */
-  var load: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], IBasic]] = js.undefined
+  var load: js.UndefOr[js.Function1[/* options */ js.UndefOr[Any], IBasic]] = js.undefined
   
   /** [Method] Loads an Ext data Model into this form by calling setValues with the record data
     * @param record Ext.data.Model The record to load
@@ -132,7 +132,7 @@ trait IBasicForm
     * @param errors Object/Object[]/Ext.data.Errors Either an array in the form [{id:'fieldId', msg:'The message'}, ...], an object hash of {id: msg, id2: msg2}, or a Ext.data.Errors object.
     * @returns Ext.form.Basic this
     */
-  var markInvalid: js.UndefOr[js.Function1[/* errors */ js.UndefOr[js.Any], IBasic]] = js.undefined
+  var markInvalid: js.UndefOr[js.Function1[/* errors */ js.UndefOr[Any], IBasic]] = js.undefined
   
   /** [Config Option] (String) */
   var method: js.UndefOr[String] = js.undefined
@@ -141,13 +141,13 @@ trait IBasicForm
   var owner: js.UndefOr[IContainer] = js.undefined
   
   /** [Config Option] (String/String[]) */
-  var paramOrder: js.UndefOr[js.Any] = js.undefined
+  var paramOrder: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean) */
   var paramsAsHash: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Object/Ext.data.reader.Reader) */
-  var reader: js.UndefOr[js.Any] = js.undefined
+  var reader: js.UndefOr[Any] = js.undefined
   
   /** [Method] Resets all fields in this form
     * @param resetRecord Boolean True to unbind any record set by loadRecord
@@ -159,7 +159,7 @@ trait IBasicForm
     * @param values Object/Object[] Either an array in the form: [{id:'clientName', value:'Fred. Olsen Lines'}, {id:'portOfLoading', value:'FXT'}, {id:'portOfDischarge', value:'OSL'} ]  or an object hash of the form: {  clientName: 'Fred. Olsen Lines',  portOfLoading: 'FXT',  portOfDischarge: 'OSL' }
     * @returns Ext.form.Basic this
     */
-  var setValues: js.UndefOr[js.Function1[/* values */ js.UndefOr[js.Any], IBasic]] = js.undefined
+  var setValues: js.UndefOr[js.Function1[/* values */ js.UndefOr[Any], IBasic]] = js.undefined
   
   /** [Config Option] (Boolean) */
   var standardSubmit: js.UndefOr[Boolean] = js.undefined
@@ -168,7 +168,7 @@ trait IBasicForm
     * @param options Object The options to pass to the action (see doAction for details).
     * @returns Ext.form.Basic this
     */
-  var submit: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], IBasic]] = js.undefined
+  var submit: js.UndefOr[js.Function1[/* options */ js.UndefOr[Any], IBasic]] = js.undefined
   
   /** [Config Option] (Number) */
   var timeout: js.UndefOr[Double] = js.undefined
@@ -186,7 +186,7 @@ trait IBasicForm
   var url: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String/HTMLElement/Ext.Element) */
-  var waitMsgTarget: js.UndefOr[js.Any] = js.undefined
+  var waitMsgTarget: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var waitTitle: js.UndefOr[String] = js.undefined
@@ -200,19 +200,19 @@ object IBasicForm {
   
   extension [Self <: IBasicForm](x: Self) {
     
-    inline def setApi(value: js.Any): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+    inline def setApi(value: Any): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     
     inline def setApiUndefined: Self = StObject.set(x, "api", js.undefined)
     
-    inline def setApplyIfToFields(value: /* obj */ js.UndefOr[js.Any] => IBasic): Self = StObject.set(x, "applyIfToFields", js.Any.fromFunction1(value))
+    inline def setApplyIfToFields(value: /* obj */ js.UndefOr[Any] => IBasic): Self = StObject.set(x, "applyIfToFields", js.Any.fromFunction1(value))
     
     inline def setApplyIfToFieldsUndefined: Self = StObject.set(x, "applyIfToFields", js.undefined)
     
-    inline def setApplyToFields(value: /* obj */ js.UndefOr[js.Any] => IBasic): Self = StObject.set(x, "applyToFields", js.Any.fromFunction1(value))
+    inline def setApplyToFields(value: /* obj */ js.UndefOr[Any] => IBasic): Self = StObject.set(x, "applyToFields", js.Any.fromFunction1(value))
     
     inline def setApplyToFieldsUndefined: Self = StObject.set(x, "applyToFields", js.undefined)
     
-    inline def setBaseParams(value: js.Any): Self = StObject.set(x, "baseParams", value.asInstanceOf[js.Any])
+    inline def setBaseParams(value: Any): Self = StObject.set(x, "baseParams", value.asInstanceOf[js.Any])
     
     inline def setBaseParamsUndefined: Self = StObject.set(x, "baseParams", js.undefined)
     
@@ -232,19 +232,19 @@ object IBasicForm {
     
     inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
-    inline def setDoAction(value: (/* action */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => IBasic): Self = StObject.set(x, "doAction", js.Any.fromFunction2(value))
+    inline def setDoAction(value: (/* action */ js.UndefOr[Any], /* options */ js.UndefOr[Any]) => IBasic): Self = StObject.set(x, "doAction", js.Any.fromFunction2(value))
     
     inline def setDoActionUndefined: Self = StObject.set(x, "doAction", js.undefined)
     
-    inline def setErrorReader(value: js.Any): Self = StObject.set(x, "errorReader", value.asInstanceOf[js.Any])
+    inline def setErrorReader(value: Any): Self = StObject.set(x, "errorReader", value.asInstanceOf[js.Any])
     
     inline def setErrorReaderUndefined: Self = StObject.set(x, "errorReader", js.undefined)
     
-    inline def setFindField(value: /* id */ js.UndefOr[String] => js.Any): Self = StObject.set(x, "findField", js.Any.fromFunction1(value))
+    inline def setFindField(value: /* id */ js.UndefOr[String] => Any): Self = StObject.set(x, "findField", js.Any.fromFunction1(value))
     
     inline def setFindFieldUndefined: Self = StObject.set(x, "findField", js.undefined)
     
-    inline def setGetFieldValues(value: /* dirtyOnly */ js.UndefOr[Boolean] => js.Any): Self = StObject.set(x, "getFieldValues", js.Any.fromFunction1(value))
+    inline def setGetFieldValues(value: /* dirtyOnly */ js.UndefOr[Boolean] => Any): Self = StObject.set(x, "getFieldValues", js.Any.fromFunction1(value))
     
     inline def setGetFieldValuesUndefined: Self = StObject.set(x, "getFieldValues", js.undefined)
     
@@ -257,7 +257,7 @@ object IBasicForm {
     inline def setGetRecordUndefined: Self = StObject.set(x, "getRecord", js.undefined)
     
     inline def setGetValues(
-      value: (/* asString */ js.UndefOr[Boolean], /* dirtyOnly */ js.UndefOr[Boolean], /* includeEmptyText */ js.UndefOr[Boolean], /* useDataValues */ js.UndefOr[Boolean]) => js.Any
+      value: (/* asString */ js.UndefOr[Boolean], /* dirtyOnly */ js.UndefOr[Boolean], /* includeEmptyText */ js.UndefOr[Boolean], /* useDataValues */ js.UndefOr[Boolean]) => Any
     ): Self = StObject.set(x, "getValues", js.Any.fromFunction4(value))
     
     inline def setGetValuesUndefined: Self = StObject.set(x, "getValues", js.undefined)
@@ -282,7 +282,7 @@ object IBasicForm {
     
     inline def setJsonSubmitUndefined: Self = StObject.set(x, "jsonSubmit", js.undefined)
     
-    inline def setLoad(value: /* options */ js.UndefOr[js.Any] => IBasic): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+    inline def setLoad(value: /* options */ js.UndefOr[Any] => IBasic): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
     
     inline def setLoadRecord(value: /* record */ js.UndefOr[IModel] => IBasic): Self = StObject.set(x, "loadRecord", js.Any.fromFunction1(value))
     
@@ -290,7 +290,7 @@ object IBasicForm {
     
     inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
     
-    inline def setMarkInvalid(value: /* errors */ js.UndefOr[js.Any] => IBasic): Self = StObject.set(x, "markInvalid", js.Any.fromFunction1(value))
+    inline def setMarkInvalid(value: /* errors */ js.UndefOr[Any] => IBasic): Self = StObject.set(x, "markInvalid", js.Any.fromFunction1(value))
     
     inline def setMarkInvalidUndefined: Self = StObject.set(x, "markInvalid", js.undefined)
     
@@ -302,7 +302,7 @@ object IBasicForm {
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    inline def setParamOrder(value: js.Any): Self = StObject.set(x, "paramOrder", value.asInstanceOf[js.Any])
+    inline def setParamOrder(value: Any): Self = StObject.set(x, "paramOrder", value.asInstanceOf[js.Any])
     
     inline def setParamOrderUndefined: Self = StObject.set(x, "paramOrder", js.undefined)
     
@@ -310,7 +310,7 @@ object IBasicForm {
     
     inline def setParamsAsHashUndefined: Self = StObject.set(x, "paramsAsHash", js.undefined)
     
-    inline def setReader(value: js.Any): Self = StObject.set(x, "reader", value.asInstanceOf[js.Any])
+    inline def setReader(value: Any): Self = StObject.set(x, "reader", value.asInstanceOf[js.Any])
     
     inline def setReaderUndefined: Self = StObject.set(x, "reader", js.undefined)
     
@@ -318,7 +318,7 @@ object IBasicForm {
     
     inline def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
     
-    inline def setSetValues(value: /* values */ js.UndefOr[js.Any] => IBasic): Self = StObject.set(x, "setValues", js.Any.fromFunction1(value))
+    inline def setSetValues(value: /* values */ js.UndefOr[Any] => IBasic): Self = StObject.set(x, "setValues", js.Any.fromFunction1(value))
     
     inline def setSetValuesUndefined: Self = StObject.set(x, "setValues", js.undefined)
     
@@ -326,7 +326,7 @@ object IBasicForm {
     
     inline def setStandardSubmitUndefined: Self = StObject.set(x, "standardSubmit", js.undefined)
     
-    inline def setSubmit(value: /* options */ js.UndefOr[js.Any] => IBasic): Self = StObject.set(x, "submit", js.Any.fromFunction1(value))
+    inline def setSubmit(value: /* options */ js.UndefOr[Any] => IBasic): Self = StObject.set(x, "submit", js.Any.fromFunction1(value))
     
     inline def setSubmitUndefined: Self = StObject.set(x, "submit", js.undefined)
     
@@ -346,7 +346,7 @@ object IBasicForm {
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    inline def setWaitMsgTarget(value: js.Any): Self = StObject.set(x, "waitMsgTarget", value.asInstanceOf[js.Any])
+    inline def setWaitMsgTarget(value: Any): Self = StObject.set(x, "waitMsgTarget", value.asInstanceOf[js.Any])
     
     inline def setWaitMsgTargetUndefined: Self = StObject.set(x, "waitMsgTarget", js.undefined)
     

@@ -16,7 +16,7 @@ trait pg
     * The service name to be used for this plugin. If a function is used, it will be passed the connection parameters and its return value will be used as the service name.
     */
   @JSName("service")
-  var service_pg: js.UndefOr[String | (js.Function1[/* params */ js.Any, String])] = js.undefined
+  var service_pg: js.UndefOr[String | (js.Function1[/* params */ Any, String])] = js.undefined
 }
 object pg {
   
@@ -27,9 +27,9 @@ object pg {
   
   extension [Self <: pg](x: Self) {
     
-    inline def setService(value: String | (js.Function1[/* params */ js.Any, String])): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: String | (js.Function1[/* params */ Any, String])): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
-    inline def setServiceFunction1(value: /* params */ js.Any => String): Self = StObject.set(x, "service", js.Any.fromFunction1(value))
+    inline def setServiceFunction1(value: /* params */ Any => String): Self = StObject.set(x, "service", js.Any.fromFunction1(value))
     
     inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
   }

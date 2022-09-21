@@ -8,11 +8,11 @@ trait AggregatedResultsByOutcome extends StObject {
   
   var count: Double
   
-  var duration: js.Any
+  var duration: Any
   
   var groupByField: String
   
-  var groupByValue: js.Any
+  var groupByValue: Any
   
   var outcome: TestOutcome
   
@@ -22,9 +22,9 @@ object AggregatedResultsByOutcome {
   
   inline def apply(
     count: Double,
-    duration: js.Any,
+    duration: Any,
     groupByField: String,
-    groupByValue: js.Any,
+    groupByValue: Any,
     outcome: TestOutcome,
     rerunResultCount: Double
   ): AggregatedResultsByOutcome = {
@@ -36,11 +36,11 @@ object AggregatedResultsByOutcome {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    inline def setDuration(value: js.Any): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Any): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     inline def setGroupByField(value: String): Self = StObject.set(x, "groupByField", value.asInstanceOf[js.Any])
     
-    inline def setGroupByValue(value: js.Any): Self = StObject.set(x, "groupByValue", value.asInstanceOf[js.Any])
+    inline def setGroupByValue(value: Any): Self = StObject.set(x, "groupByValue", value.asInstanceOf[js.Any])
     
     inline def setOutcome(value: TestOutcome): Self = StObject.set(x, "outcome", value.asInstanceOf[js.Any])
     

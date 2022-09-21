@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("exceljs", "Anchor")
 @js.native
-class Anchor ()
+open class Anchor ()
   extends StObject
      with IAnchor {
   def this(model: js.Object) = this()

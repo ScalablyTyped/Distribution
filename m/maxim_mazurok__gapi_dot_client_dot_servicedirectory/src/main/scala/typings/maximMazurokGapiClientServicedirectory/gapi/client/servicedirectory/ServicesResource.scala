@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ServicesResource extends StObject {
   
-  /** Creates a service, and returns the new Service. */
+  /** Creates a service, and returns the new service. */
   def create(request: Oauthtoken): Request[Service] = js.native
   def create(request: Parent, body: Service): Request[Service] = js.native
   

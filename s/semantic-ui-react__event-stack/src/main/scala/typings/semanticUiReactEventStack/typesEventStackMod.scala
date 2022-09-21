@@ -16,7 +16,7 @@ object typesEventStackMod {
   
   @JSImport("@semantic-ui-react/event-stack/lib/types/EventStack", JSImport.Default)
   @js.native
-  class default () extends EventStack
+  open class default () extends EventStack
   /* static members */
   object default {
     
@@ -37,7 +37,7 @@ object typesEventStackMod {
   
   @js.native
   trait EventStack
-    extends PureComponent[EventStackProps, js.Object, js.Any] {
+    extends PureComponent[EventStackProps, js.Object, Any] {
     
     @JSName("componentDidMount")
     def componentDidMount_MEventStack(): Unit = js.native
@@ -82,7 +82,7 @@ object typesEventStackMod {
       
       inline def setOnFunction1(value: /* evt */ Event => Unit): Self = StObject.set(x, "on", js.Any.fromFunction1(value))
       
-      inline def setOnVarargs(value: EventListener*): Self = StObject.set(x, "on", js.Array(value :_*))
+      inline def setOnVarargs(value: EventListener*): Self = StObject.set(x, "on", js.Array(value*))
       
       inline def setPool(value: String): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
       

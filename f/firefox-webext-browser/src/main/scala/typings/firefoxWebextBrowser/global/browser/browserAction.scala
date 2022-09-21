@@ -16,9 +16,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Use browser actions to put icons in the main browser toolbar, to the right of the address bar. In addition to its icon, a browser action can also have a tooltip, a badge, and a popup.
+  * Manifest keys: `action`, `browser_action`
   *
-  * Manifest keys: `browser_action`
+  * Not supported on manifest versions above 2.
   *
   * Not allowed in: Content scripts, Devtools pages
   */
@@ -51,7 +51,7 @@ object browserAction {
   inline def getBadgeText(details: Details): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBadgeText")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
   /** Gets the text color of the browser action badge. */
-  inline def getBadgeTextColor(details: Details): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBadgeTextColor")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def getBadgeTextColor(details: Details): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBadgeTextColor")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
   
   /** Gets the html document set as the popup for this browser action. */
   inline def getPopup(details: Details): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPopup")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
@@ -60,7 +60,7 @@ object browserAction {
   inline def getTitle(details: Details): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTitle")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
   /** Checks whether the browser action is enabled. */
-  inline def isEnabled(details: Details): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("isEnabled")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def isEnabled(details: Details): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("isEnabled")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
   
   /* browserAction events */
   /**
@@ -89,7 +89,7 @@ object browserAction {
     * Sets the text color for the badge.
     * @param details Specifies to which tab or window the value should be set, or from which one it should be retrieved. If no tab nor window is specified, the global value is set or retrieved.
     */
-  inline def setBadgeTextColor(details: SetBadgeTextColorDetails): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("setBadgeTextColor")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def setBadgeTextColor(details: SetBadgeTextColorDetails): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("setBadgeTextColor")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
   
   /**
     * Sets the icon for the browser action. The icon can be specified either as the path to an image file or as the pixel data from a canvas element, or as dictionary of either one of those. Either the **path** or the **imageData** property must be specified.

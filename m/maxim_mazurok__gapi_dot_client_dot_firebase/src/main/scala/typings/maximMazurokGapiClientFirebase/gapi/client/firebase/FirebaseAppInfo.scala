@@ -7,6 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FirebaseAppInfo extends StObject {
   
   /**
+    * The globally unique, Google-assigned identifier (UID) for the Firebase API key associated with the App. Be aware that this value is the UID of the API key, _not_ the
+    * [`keyString`](https://cloud.google.com/api-keys/docs/reference/rest/v2/projects.locations.keys#Key.FIELDS.key_string) of the API key. The `keyString` is the value that can be found
+    * in the App's configuration artifact ([`AndroidApp`](../../rest/v1beta1/projects.androidApps/getConfig) | [`IosApp`](../../rest/v1beta1/projects.iosApps/getConfig) |
+    * [`WebApp`](../../rest/v1beta1/projects.webApps/getConfig)). If `api_key_id` is not set in requests to create the App ([`AndroidApp`](../../rest/v1beta1/projects.androidApps/create)
+    * | [`IosApp`](../../rest/v1beta1/projects.iosApps/create) | [`WebApp`](../../rest/v1beta1/projects.webApps/create)), then Firebase automatically associates an `api_key_id` with the
+    * App. This auto-associated key may be an existing valid key or, if no valid key exists, a new one will be provisioned.
+    */
+  var apiKeyId: js.UndefOr[String] = js.undefined
+  
+  /**
     * Output only. Immutable. The globally unique, Firebase-assigned identifier for the `WebApp`. This identifier should be treated as an opaque token, as the data format is not
     * specified.
     */
@@ -27,6 +37,9 @@ trait FirebaseAppInfo extends StObject {
   
   /** The platform of the Firebase App. */
   var platform: js.UndefOr[String] = js.undefined
+  
+  /** Output only. The lifecycle state of the App. */
+  var state: js.UndefOr[String] = js.undefined
 }
 object FirebaseAppInfo {
   
@@ -36,6 +49,10 @@ object FirebaseAppInfo {
   }
   
   extension [Self <: FirebaseAppInfo](x: Self) {
+    
+    inline def setApiKeyId(value: String): Self = StObject.set(x, "apiKeyId", value.asInstanceOf[js.Any])
+    
+    inline def setApiKeyIdUndefined: Self = StObject.set(x, "apiKeyId", js.undefined)
     
     inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
@@ -56,5 +73,9 @@ object FirebaseAppInfo {
     inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+    
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

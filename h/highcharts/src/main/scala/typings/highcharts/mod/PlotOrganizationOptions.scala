@@ -132,7 +132,7 @@ trait PlotOrganizationOptions extends StObject {
     * the development of the series against each other. Adds a `change` field
     * to every point object.
     */
-  var compare: js.UndefOr[String] = js.undefined
+  var compare: js.UndefOr[OptionsCompareValue] = js.undefined
   
   /**
     * (Highstock) When compare is `percent`, this option dictates whether to
@@ -158,6 +158,15 @@ trait PlotOrganizationOptions extends StObject {
   var connectors: js.UndefOr[SeriesConnectorsOptionsObject] = js.undefined
   
   /**
+    * (Highstock) Cumulative Sum feature replaces points' values with the
+    * following formula: `sum of all previous points' values + current point's
+    * value`. Works only for points in a visible range. Adds the
+    * `cumulativeSum` field to each point object that can be accessed e.g. in
+    * the tooltip.pointFormat.
+    */
+  var cumulative: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * (Highcharts) You can set the cursor to "pointer" if you have click events
     * attached to the series, to signal to the user that the points and lines
     * can be clicked.
@@ -172,7 +181,7 @@ trait PlotOrganizationOptions extends StObject {
     * customized functionality. Here you can add additional data for your own
     * event callbacks and formatter callbacks.
     */
-  var custom: js.UndefOr[Dictionary[js.Any]] = js.undefined
+  var custom: js.UndefOr[Dictionary[Any]] = js.undefined
   
   /**
     * (Highcharts) Name of the dash style to use for the graph, or for some
@@ -184,11 +193,16 @@ trait PlotOrganizationOptions extends StObject {
   var dashStyle: js.UndefOr[DashStyleValue] = js.undefined
   
   /**
+    * (Highcharts) Indicates data is structured as columns instead of rows.
+    */
+  var dataAsColumns: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * (Highstock) Data grouping is the concept of sampling the data values into
     * larger blocks in order to ease readability and increase performance of
-    * the JavaScript charts. Highstock by default applies data grouping when
-    * the points become closer than a certain pixel value, determined by the
-    * `groupPixelWidth` option.
+    * the JavaScript charts. Highcharts Stock by default applies data grouping
+    * when the points become closer than a certain pixel value, determined by
+    * the `groupPixelWidth` option.
     *
     * If data grouping is applied, the grouping information of grouped points
     * can be read from the Point.dataGroup. If point options other than the
@@ -243,6 +257,22 @@ trait PlotOrganizationOptions extends StObject {
     * parent has layout set to `hanging`.
     */
   var hangingIndent: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highcharts) Defines the indentation of a `hanging` layout parent's
+    * children. Possible options:
+    *
+    * - `inherit` (default): Only the first child adds the indentation,
+    * children of a child with indentation inherit the indentation.
+    *
+    * - `cumulative`: All children of a child with indentation add its own
+    * indent. The option may cause overlapping of nodes. Then use `shrink`
+    * option:
+    *
+    * - `shrink`: Nodes shrink by the hangingIndent value until they reach the
+    * minNodeLength.
+    */
+  var hangingIndentTranslation: js.UndefOr[OrganizationHangingIndentTranslationValue] = js.undefined
   
   /**
     * (Highcharts) When set to `false` will prevent the series data from being
@@ -344,6 +374,15 @@ trait PlotOrganizationOptions extends StObject {
   var minLinkWidth: js.UndefOr[Double] = js.undefined
   
   /**
+    * (Highcharts) In a horizontal chart, the minimum width of the **hanging**
+    * nodes only, in pixels. In a vertical chart, the minimum height of the
+    * **haning** nodes only, in pixels too.
+    *
+    * Note: Used only when hangingIndentTranslation is set to `shrink`.
+    */
+  var minNodeLength: js.UndefOr[Double] = js.undefined
+  
+  /**
     * (Highstock) Options for the corresponding navigator series if
     * `showInNavigator` is `true` for this series. Available options are the
     * same as any series, documented at plotOptions and series.
@@ -365,14 +404,19 @@ trait PlotOrganizationOptions extends StObject {
   
   /**
     * (Highcharts) In a horizontal chart, the width of the nodes in pixels.
-    * Node that most organization charts are vertical, so the name of this
+    * Note that most organization charts are vertical, so the name of this
     * option is counterintuitive.
     */
   var nodeWidth: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highcharts) Opacity of a series parts: line, fill (e.g. area) and
-    * dataLabels.
+    * (Highcharts) Options for the _Series on point_ feature. Only `pie` and
+    * `sunburst` series are supported at this moment.
+    */
+  var onPoint: js.UndefOr[js.Object | PlotOrganizationOnPointOptions] = js.undefined
+  
+  /**
+    * (Highcharts) Opacity for the nodes in the sankey diagram.
     */
   var opacity: js.UndefOr[Double] = js.undefined
   
@@ -382,10 +426,22 @@ trait PlotOrganizationOptions extends StObject {
   var point: js.UndefOr[PlotSeriesPointOptions] = js.undefined
   
   /**
-    * (Highcharts) Same as accessibility.pointDescriptionFormatter, but for an
-    * individual series. Overrides the chart wide configuration.
+    * (Highcharts) Same as accessibility.series.descriptionFormatter, but for
+    * an individual series. Overrides the chart wide configuration.
     */
   var pointDescriptionFormatter: js.UndefOr[js.Function] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock) When true, X values in the data set are relative
+    * to the current `pointStart`, `pointInterval` and `pointIntervalUnit`
+    * settings. This allows compression of the data for datasets with irregular
+    * X values.
+    *
+    * The real X values are computed on the formula `f(x) = ax + b`, where `a`
+    * is the `pointInterval` (optionally with a time unit given by
+    * `pointIntervalUnit`), and `b` is the `pointStart`.
+    */
+  var relativeXValue: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) Whether to select the series initially. If `showCheckbox` is
@@ -529,9 +585,9 @@ object PlotOrganizationOptions {
     
     inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    inline def setColorsVarargs(value: (ColorString | GradientColorObject | PatternObject)*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: (ColorString | GradientColorObject | PatternObject)*): Self = StObject.set(x, "colors", js.Array(value*))
     
-    inline def setCompare(value: String): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
+    inline def setCompare(value: OptionsCompareValue): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
     
     inline def setCompareBase(value: `0` | `100`): Self = StObject.set(x, "compareBase", value.asInstanceOf[js.Any])
     
@@ -547,17 +603,25 @@ object PlotOrganizationOptions {
     
     inline def setConnectorsUndefined: Self = StObject.set(x, "connectors", js.undefined)
     
+    inline def setCumulative(value: Boolean): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
+    
+    inline def setCumulativeUndefined: Self = StObject.set(x, "cumulative", js.undefined)
+    
     inline def setCursor(value: String | CursorValue): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
     inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
-    inline def setCustom(value: Dictionary[js.Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: Dictionary[Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
     inline def setDashStyle(value: DashStyleValue): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
     
     inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
+    
+    inline def setDataAsColumns(value: Boolean): Self = StObject.set(x, "dataAsColumns", value.asInstanceOf[js.Any])
+    
+    inline def setDataAsColumnsUndefined: Self = StObject.set(x, "dataAsColumns", js.undefined)
     
     inline def setDataGrouping(value: DataGroupingOptionsObject): Self = StObject.set(x, "dataGrouping", value.asInstanceOf[js.Any])
     
@@ -569,7 +633,7 @@ object PlotOrganizationOptions {
     
     inline def setDataLabelsUndefined: Self = StObject.set(x, "dataLabels", js.undefined)
     
-    inline def setDataLabelsVarargs(value: SeriesOrganizationDataLabelsOptionsObject*): Self = StObject.set(x, "dataLabels", js.Array(value :_*))
+    inline def setDataLabelsVarargs(value: SeriesOrganizationDataLabelsOptionsObject*): Self = StObject.set(x, "dataLabels", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -589,6 +653,10 @@ object PlotOrganizationOptions {
     
     inline def setHangingIndent(value: Double): Self = StObject.set(x, "hangingIndent", value.asInstanceOf[js.Any])
     
+    inline def setHangingIndentTranslation(value: OrganizationHangingIndentTranslationValue): Self = StObject.set(x, "hangingIndentTranslation", value.asInstanceOf[js.Any])
+    
+    inline def setHangingIndentTranslationUndefined: Self = StObject.set(x, "hangingIndentTranslation", js.undefined)
+    
     inline def setHangingIndentUndefined: Self = StObject.set(x, "hangingIndent", js.undefined)
     
     inline def setIncludeInDataExport(value: Boolean): Self = StObject.set(x, "includeInDataExport", value.asInstanceOf[js.Any])
@@ -599,13 +667,13 @@ object PlotOrganizationOptions {
     
     inline def setJoinByUndefined: Self = StObject.set(x, "joinBy", js.undefined)
     
-    inline def setJoinByVarargs(value: String*): Self = StObject.set(x, "joinBy", js.Array(value :_*))
+    inline def setJoinByVarargs(value: String*): Self = StObject.set(x, "joinBy", js.Array(value*))
     
     inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
     inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value*))
     
     inline def setLabel(value: SeriesLabelOptionsObject): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
@@ -623,7 +691,7 @@ object PlotOrganizationOptions {
     
     inline def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
     
-    inline def setLevelsVarargs(value: PlotOrganizationLevelsOptions*): Self = StObject.set(x, "levels", js.Array(value :_*))
+    inline def setLevelsVarargs(value: PlotOrganizationLevelsOptions*): Self = StObject.set(x, "levels", js.Array(value*))
     
     inline def setLinkColor(value: ColorString): Self = StObject.set(x, "linkColor", value.asInstanceOf[js.Any])
     
@@ -649,6 +717,10 @@ object PlotOrganizationOptions {
     
     inline def setMinLinkWidthUndefined: Self = StObject.set(x, "minLinkWidth", js.undefined)
     
+    inline def setMinNodeLength(value: Double): Self = StObject.set(x, "minNodeLength", value.asInstanceOf[js.Any])
+    
+    inline def setMinNodeLengthUndefined: Self = StObject.set(x, "minNodeLength", js.undefined)
+    
     inline def setNavigatorOptions(value: PlotSeriesOptions): Self = StObject.set(x, "navigatorOptions", value.asInstanceOf[js.Any])
     
     inline def setNavigatorOptionsUndefined: Self = StObject.set(x, "navigatorOptions", js.undefined)
@@ -661,6 +733,10 @@ object PlotOrganizationOptions {
     
     inline def setNodeWidthUndefined: Self = StObject.set(x, "nodeWidth", js.undefined)
     
+    inline def setOnPoint(value: js.Object | PlotOrganizationOnPointOptions): Self = StObject.set(x, "onPoint", value.asInstanceOf[js.Any])
+    
+    inline def setOnPointUndefined: Self = StObject.set(x, "onPoint", js.undefined)
+    
     inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
@@ -672,6 +748,10 @@ object PlotOrganizationOptions {
     inline def setPointDescriptionFormatterUndefined: Self = StObject.set(x, "pointDescriptionFormatter", js.undefined)
     
     inline def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
+    
+    inline def setRelativeXValue(value: Boolean): Self = StObject.set(x, "relativeXValue", value.asInstanceOf[js.Any])
+    
+    inline def setRelativeXValueUndefined: Self = StObject.set(x, "relativeXValue", js.undefined)
     
     inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     

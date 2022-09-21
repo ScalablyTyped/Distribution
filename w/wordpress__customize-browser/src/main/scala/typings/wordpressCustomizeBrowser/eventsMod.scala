@@ -10,7 +10,7 @@ object eventsMod {
   
   @JSImport("@wordpress/customize-browser/Events", "Events")
   @js.native
-  class Events[T /* <: /* keyof any */ String */] () extends StObject {
+  open class Events[T /* <: /* keyof any */ String */] () extends StObject {
     
     def bind(id: T): this.type = js.native
     

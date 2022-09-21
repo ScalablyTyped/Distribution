@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-uid
 
-Typings are for version 2.3.0
+Typings are for version 2.3.2
 
 ## Library description:
 Render-less container for ID generation
@@ -11,9 +11,9 @@ Render-less container for ID generation
 | Full name          | react-uid |
 | Keywords           | react, uid, counter, context |
 | # releases         | 3 |
-| # dependents       | 82 |
-| # downloads        | 4003373 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 584204.0 |
+| # stars            | 293.0 |
 
 ## Links
 - [Homepage](https://github.com/thearnica/react-uid#readme)

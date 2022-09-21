@@ -1,6 +1,5 @@
 package typings.lokijs
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,8 +16,8 @@ trait LokiPersistenceAdapter extends StObject {
   
   var deleteDatabase: js.UndefOr[
     js.Function2[
-      /* dbnameOrOptions */ js.Any, 
-      /* callback */ js.Function2[/* err */ js.UndefOr[Error | Null], /* data */ js.UndefOr[js.Any], Unit], 
+      /* dbnameOrOptions */ Any, 
+      /* callback */ js.Function2[/* err */ js.UndefOr[js.Error | Null], /* data */ js.UndefOr[Any], Unit], 
       Unit
     ]
   ] = js.undefined
@@ -27,27 +26,27 @@ trait LokiPersistenceAdapter extends StObject {
     js.Function3[
       /* dbname */ String, 
       /* dbref */ Loki, 
-      /* callback */ js.Function1[/* err */ Error | Null, Unit], 
+      /* callback */ js.Function1[/* err */ js.Error | Null, Unit], 
       Unit
     ]
   ] = js.undefined
   
-  def loadDatabase(dbname: String, callback: js.Function1[/* value */ js.Any, Unit]): Unit
+  def loadDatabase(dbname: String, callback: js.Function1[/* value */ Any, Unit]): Unit
   
   var mode: js.UndefOr[String] = js.undefined
   
   var saveDatabase: js.UndefOr[
     js.Function3[
       /* dbname */ String, 
-      /* dbstring */ js.Any, 
-      /* callback */ js.Function1[/* err */ js.UndefOr[Error | Null], Unit], 
+      /* dbstring */ Any, 
+      /* callback */ js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit], 
       Unit
     ]
   ] = js.undefined
 }
 object LokiPersistenceAdapter {
   
-  inline def apply(loadDatabase: (String, js.Function1[/* value */ js.Any, Unit]) => Unit): LokiPersistenceAdapter = {
+  inline def apply(loadDatabase: (String, js.Function1[/* value */ Any, Unit]) => Unit): LokiPersistenceAdapter = {
     val __obj = js.Dynamic.literal(loadDatabase = js.Any.fromFunction2(loadDatabase))
     __obj.asInstanceOf[LokiPersistenceAdapter]
   }
@@ -55,25 +54,25 @@ object LokiPersistenceAdapter {
   extension [Self <: LokiPersistenceAdapter](x: Self) {
     
     inline def setDeleteDatabase(
-      value: (/* dbnameOrOptions */ js.Any, /* callback */ js.Function2[/* err */ js.UndefOr[Error | Null], /* data */ js.UndefOr[js.Any], Unit]) => Unit
+      value: (/* dbnameOrOptions */ Any, /* callback */ js.Function2[/* err */ js.UndefOr[js.Error | Null], /* data */ js.UndefOr[Any], Unit]) => Unit
     ): Self = StObject.set(x, "deleteDatabase", js.Any.fromFunction2(value))
     
     inline def setDeleteDatabaseUndefined: Self = StObject.set(x, "deleteDatabase", js.undefined)
     
     inline def setExportDatabase(
-      value: (/* dbname */ String, /* dbref */ Loki, /* callback */ js.Function1[/* err */ Error | Null, Unit]) => Unit
+      value: (/* dbname */ String, /* dbref */ Loki, /* callback */ js.Function1[/* err */ js.Error | Null, Unit]) => Unit
     ): Self = StObject.set(x, "exportDatabase", js.Any.fromFunction3(value))
     
     inline def setExportDatabaseUndefined: Self = StObject.set(x, "exportDatabase", js.undefined)
     
-    inline def setLoadDatabase(value: (String, js.Function1[/* value */ js.Any, Unit]) => Unit): Self = StObject.set(x, "loadDatabase", js.Any.fromFunction2(value))
+    inline def setLoadDatabase(value: (String, js.Function1[/* value */ Any, Unit]) => Unit): Self = StObject.set(x, "loadDatabase", js.Any.fromFunction2(value))
     
     inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     inline def setSaveDatabase(
-      value: (/* dbname */ String, /* dbstring */ js.Any, /* callback */ js.Function1[/* err */ js.UndefOr[Error | Null], Unit]) => Unit
+      value: (/* dbname */ String, /* dbstring */ Any, /* callback */ js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]) => Unit
     ): Self = StObject.set(x, "saveDatabase", js.Any.fromFunction3(value))
     
     inline def setSaveDatabaseUndefined: Self = StObject.set(x, "saveDatabase", js.undefined)

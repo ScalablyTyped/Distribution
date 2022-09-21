@@ -7,20 +7,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // 3.6
 trait WebCLMemoryObject extends StObject {
   
-  def getInfo(name: MemInfo): js.Any
+  def getInfo(name: MemInfo): Any
   
   def release(): Unit
 }
 object WebCLMemoryObject {
   
-  inline def apply(getInfo: MemInfo => js.Any, release: () => Unit): WebCLMemoryObject = {
+  inline def apply(getInfo: MemInfo => Any, release: () => Unit): WebCLMemoryObject = {
     val __obj = js.Dynamic.literal(getInfo = js.Any.fromFunction1(getInfo), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[WebCLMemoryObject]
   }
   
   extension [Self <: WebCLMemoryObject](x: Self) {
     
-    inline def setGetInfo(value: MemInfo => js.Any): Self = StObject.set(x, "getInfo", js.Any.fromFunction1(value))
+    inline def setGetInfo(value: MemInfo => Any): Self = StObject.set(x, "getInfo", js.Any.fromFunction1(value))
     
     inline def setRelease(value: () => Unit): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
   }

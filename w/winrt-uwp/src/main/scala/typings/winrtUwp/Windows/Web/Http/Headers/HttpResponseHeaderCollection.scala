@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Web.Http.Headers
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Foundation.Collections.IKeyValuePair
 import typings.winrtUwp.Windows.Foundation.Collections.IMapView
@@ -35,13 +34,13 @@ trait HttpResponseHeaderCollection extends StObject {
   var connection: HttpConnectionOptionHeaderValueCollection
   
   /** Gets or sets the DateTime object that represents the value of a Date HTTP header on an HTTP response. */
-  var date: Date
+  var date: js.Date
   
   /**
     * Retrieves an iterator to the first item in the HttpResponseHeaderCollection .
     * @return An object that can be used to enumerate the items in the collection. The iterator points to the first item in the HttpResponseHeaderCollection .
     */
-  def first(): IIterator[IKeyValuePair[js.Any, js.Any]]
+  def first(): IIterator[IKeyValuePair[Any, Any]]
   
   /**
     * Returns an immutable view of the HttpResponseHeaderCollection .
@@ -112,8 +111,8 @@ object HttpResponseHeaderCollection {
     cacheControl: HttpCacheDirectiveHeaderValueCollection,
     clear: () => Unit,
     connection: HttpConnectionOptionHeaderValueCollection,
-    date: Date,
-    first: () => IIterator[IKeyValuePair[js.Any, js.Any]],
+    date: js.Date,
+    first: () => IIterator[IKeyValuePair[Any, Any]],
     getView: () => IMapView[String, String],
     hasKey: String => Boolean,
     insert: (String, String) => Boolean,
@@ -145,9 +144,9 @@ object HttpResponseHeaderCollection {
     
     inline def setConnection(value: HttpConnectionOptionHeaderValueCollection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
-    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    inline def setFirst(value: () => IIterator[IKeyValuePair[js.Any, js.Any]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+    inline def setFirst(value: () => IIterator[IKeyValuePair[Any, Any]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
     
     inline def setGetView(value: () => IMapView[String, String]): Self = StObject.set(x, "getView", js.Any.fromFunction0(value))
     

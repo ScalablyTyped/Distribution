@@ -43,6 +43,6 @@ object EventRecordRequest {
     
     inline def setTimePeriodsUndefined: Self = StObject.set(x, "timePeriods", js.undefined)
     
-    inline def setTimePeriodsVarargs(value: EventPeriodUpdate*): Self = StObject.set(x, "timePeriods", js.Array(value :_*))
+    inline def setTimePeriodsVarargs(value: EventPeriodUpdate*): Self = StObject.set(x, "timePeriods", js.Array(value*))
   }
 }

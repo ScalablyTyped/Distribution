@@ -10,10 +10,10 @@ An utility to deeply clone objects.
 | ------------------ | :-------------: |
 | Full name          | cloner |
 | Keywords           | clone, object, deep, utility |
-| # releases         | 2 |
-| # dependents       | 4 |
-| # downloads        | 85184 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5501.333333333333 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/cloner)

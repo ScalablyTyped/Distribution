@@ -1,5 +1,7 @@
 package typings.popperjsCore.anon
 
+import typings.popperjsCore.computeStylesMod.RoundOffsets
+import typings.popperjsCore.typesMod.Offsets
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +12,8 @@ trait PartialOptionsAdaptive extends StObject {
   var adaptive: js.UndefOr[Boolean] = js.undefined
   
   var gpuAcceleration: js.UndefOr[Boolean] = js.undefined
+  
+  var roundOffsets: js.UndefOr[Boolean | RoundOffsets] = js.undefined
 }
 object PartialOptionsAdaptive {
   
@@ -27,5 +31,11 @@ object PartialOptionsAdaptive {
     inline def setGpuAcceleration(value: Boolean): Self = StObject.set(x, "gpuAcceleration", value.asInstanceOf[js.Any])
     
     inline def setGpuAccelerationUndefined: Self = StObject.set(x, "gpuAcceleration", js.undefined)
+    
+    inline def setRoundOffsets(value: Boolean | RoundOffsets): Self = StObject.set(x, "roundOffsets", value.asInstanceOf[js.Any])
+    
+    inline def setRoundOffsetsFunction1(value: /* offsets */ Partialxnumberynumbercent => Offsets): Self = StObject.set(x, "roundOffsets", js.Any.fromFunction1(value))
+    
+    inline def setRoundOffsetsUndefined: Self = StObject.set(x, "roundOffsets", js.undefined)
   }
 }

@@ -79,15 +79,15 @@ object distributedTaskCommonInterfacesMod {
       
       inline def setDataSourceBindings(value: js.Array[DataSourceBindingBase]): Self = StObject.set(x, "dataSourceBindings", value.asInstanceOf[js.Any])
       
-      inline def setDataSourceBindingsVarargs(value: DataSourceBindingBase*): Self = StObject.set(x, "dataSourceBindings", js.Array(value :_*))
+      inline def setDataSourceBindingsVarargs(value: DataSourceBindingBase*): Self = StObject.set(x, "dataSourceBindings", js.Array(value*))
       
       inline def setInputs(value: js.Array[TaskInputDefinitionBase]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
       
-      inline def setInputsVarargs(value: TaskInputDefinitionBase*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+      inline def setInputsVarargs(value: TaskInputDefinitionBase*): Self = StObject.set(x, "inputs", js.Array(value*))
       
       inline def setSourceDefinitions(value: js.Array[TaskSourceDefinitionBase]): Self = StObject.set(x, "sourceDefinitions", value.asInstanceOf[js.Any])
       
-      inline def setSourceDefinitionsVarargs(value: TaskSourceDefinitionBase*): Self = StObject.set(x, "sourceDefinitions", js.Array(value :_*))
+      inline def setSourceDefinitionsVarargs(value: TaskSourceDefinitionBase*): Self = StObject.set(x, "sourceDefinitions", js.Array(value*))
     }
   }
   

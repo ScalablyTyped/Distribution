@@ -14,17 +14,17 @@ trait ASPxClientHtmlEditorCustomDialogCloseEventArgsBase
   /**
     * Gets the status of the closed custom dialog.
     */
-  var status: js.Any
+  var status: Any
 }
 object ASPxClientHtmlEditorCustomDialogCloseEventArgsBase {
   
-  inline def apply(name: String, status: js.Any): ASPxClientHtmlEditorCustomDialogCloseEventArgsBase = {
+  inline def apply(name: String, status: Any): ASPxClientHtmlEditorCustomDialogCloseEventArgsBase = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientHtmlEditorCustomDialogCloseEventArgsBase]
   }
   
   extension [Self <: ASPxClientHtmlEditorCustomDialogCloseEventArgsBase](x: Self) {
     
-    inline def setStatus(value: js.Any): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Any): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

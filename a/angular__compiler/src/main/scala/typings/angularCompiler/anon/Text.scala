@@ -1,6 +1,6 @@
 package typings.angularCompiler.anon
 
-import typings.angularCompiler.outputAstMod.JSDocTag
+import typings.angularCompiler.mod.JSDocTag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("matrix-appservice-bridge", "UserBridgeStore")
 @js.native
-class UserBridgeStore protected ()
+open class UserBridgeStore protected ()
   extends typings.matrixAppserviceBridge.userBridgeStoreMod.UserBridgeStore {
   /**
     * Construct a store suitable for user bridging information.
     * @param db The connected NEDB database instance
     */
-  def this(db: typings.nedb.mod.^[js.Any]) = this()
+  def this(db: typings.nedb.mod.^[Any]) = this()
 }

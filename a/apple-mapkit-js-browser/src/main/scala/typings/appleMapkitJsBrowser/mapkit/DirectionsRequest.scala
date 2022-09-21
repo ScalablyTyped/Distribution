@@ -1,7 +1,6 @@
 package typings.appleMapkitJsBrowser.mapkit
 
 import typings.appleMapkitJsBrowser.mapkit.Directions.Transport
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,12 +13,12 @@ trait DirectionsRequest extends StObject {
   /**
     * The arrival date for the trip.
     */
-  var arrivalDate: js.UndefOr[Date] = js.undefined
+  var arrivalDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The departure date for the trip.
     */
-  var departureDate: js.UndefOr[Date] = js.undefined
+  var departureDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The end point for routing directions.
@@ -51,11 +50,11 @@ object DirectionsRequest {
   
   extension [Self <: DirectionsRequest](x: Self) {
     
-    inline def setArrivalDate(value: Date): Self = StObject.set(x, "arrivalDate", value.asInstanceOf[js.Any])
+    inline def setArrivalDate(value: js.Date): Self = StObject.set(x, "arrivalDate", value.asInstanceOf[js.Any])
     
     inline def setArrivalDateUndefined: Self = StObject.set(x, "arrivalDate", js.undefined)
     
-    inline def setDepartureDate(value: Date): Self = StObject.set(x, "departureDate", value.asInstanceOf[js.Any])
+    inline def setDepartureDate(value: js.Date): Self = StObject.set(x, "departureDate", value.asInstanceOf[js.Any])
     
     inline def setDepartureDateUndefined: Self = StObject.set(x, "departureDate", js.undefined)
     

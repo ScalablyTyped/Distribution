@@ -10,10 +10,10 @@ A Twitter loging component
 | ------------------ | :-------------: |
 | Full name          | react-twitter-auth |
 | Keywords           | React, Twitter, Login, Auth, oauth, component |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 72138 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9855.0 |
+| # stars            | 88.0 |
 
 ## Links
 - [Homepage](https://github.com/GenFirst/react-twitter-auth#readme)

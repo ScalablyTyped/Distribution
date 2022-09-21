@@ -123,7 +123,7 @@ object AccessCache {
       */
     def getMany(startIndex: Double): ItemsAccessListEntry = js.native
     
-    def indexOf(value: AccessListEntry, extra: js.Any*): Index = js.native
+    def indexOf(value: AccessListEntry, extra: Any*): Index = js.native
     /* hack */
     @JSName("indexOf")
     def indexOf_Double(searchElement: AccessListEntry): Double = js.native
@@ -284,7 +284,7 @@ object AccessCache {
       */
     def add(file: IStorageItem, metadata: String, visibility: RecentStorageItemVisibility): String = js.native
     
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_itemremoved(
       `type`: itemremoved,
@@ -390,7 +390,7 @@ object AccessCache {
       */
     def remove(token: String): Unit = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_itemremoved(
       `type`: itemremoved,

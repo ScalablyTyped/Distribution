@@ -35,18 +35,18 @@ object ojloggerMod {
   def LEVEL_WARN: Double = js.native
   inline def LEVEL_WARN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEVEL_WARN")(x.asInstanceOf[js.Any])
   
-  inline def error(args: (js.Object | String | Double)*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def error(args: (js.Object | String | Double)*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
   
-  inline def info(args: (js.Object | String | Double)*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def info(args: (js.Object | String | Double)*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
   
-  inline def log(args: (js.Object | String | Double)*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def log(args: (js.Object | String | Double)*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
   
-  inline def option(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("option")().asInstanceOf[js.Any]
-  inline def option(key: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("option")(key.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def option(key: String, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("option")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def option(key: js.Object): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("option")(key.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def option(key: js.Object, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("option")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def option(key: Unit, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("option")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def option(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("option")().asInstanceOf[Any]
+  inline def option(key: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("option")(key.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def option(key: String, value: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("option")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def option(key: js.Object): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("option")(key.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def option(key: js.Object, value: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("option")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def option(key: Unit, value: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("option")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def warn(args: (js.Object | String | Double)*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def warn(args: (js.Object | String | Double)*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
 }

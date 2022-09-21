@@ -34,7 +34,7 @@ object AnalyticsResult {
     
     inline def setData(value: js.Array[AnalyticsDataPoint]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: AnalyticsDataPoint*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: AnalyticsDataPoint*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setGroup(value: AnalyticsGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     

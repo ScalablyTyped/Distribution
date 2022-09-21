@@ -11,14 +11,11 @@ easier than regex string matching patterns for urls and other strings. turn stri
 | Full name          | url-pattern |
 | Keywords           | url, string, matching, pattern, matching, routing, route, regex, match, segment, parsing, parser, parse, combinator, combinators, custom, customizable, filepath, path, domain, separator, stringify, generate, text, processing |
 | # releases         | 0 |
-| # dependents       | 263 |
-| # downloads        | 3667875 |
-| # stars            | 20 |
+| # dependents       | 0.0 |
+| # downloads        | 531608.6666666666 |
+| # stars            | 549.0 |
 
 ## Links
-- [Homepage](http://github.com/snd/url-pattern)
-- [Bugs](http://github.com/snd/url-pattern/issues)
-- [Repository](https://github.com/snd/url-pattern)
 - [Npm](https://www.npmjs.com/package/url-pattern)
     
 

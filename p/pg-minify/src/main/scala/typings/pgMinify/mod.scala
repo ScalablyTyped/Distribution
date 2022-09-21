@@ -16,7 +16,7 @@ object mod {
   
   @JSImport("pg-minify", "SQLParsingError")
   @js.native
-  class SQLParsingError ()
+  open class SQLParsingError ()
     extends StObject
        with Error {
     
@@ -24,9 +24,11 @@ object mod {
     
     var error: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     

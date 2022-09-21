@@ -10,10 +10,10 @@ Install ---------
 | ------------------ | :-------------: |
 | Full name          | angular-fullscreen |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 3876 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 919.3333333333334 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/angular-fullscreen)

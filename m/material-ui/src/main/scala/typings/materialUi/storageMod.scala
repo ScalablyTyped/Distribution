@@ -10,10 +10,10 @@ object storageMod {
   
   @JSImport("material-ui/svg-icons/device/storage", JSImport.Default)
   @js.native
-  class default () extends DeviceStorage
+  open class default () extends DeviceStorage
   
   @JSImport("material-ui/svg-icons/device/storage", "DeviceStorage")
   @js.native
-  class DeviceStorage ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class DeviceStorage ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

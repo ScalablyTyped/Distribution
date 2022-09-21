@@ -8,26 +8,26 @@ object Switches {
   
   @JSGlobal("__MaterialUI.Switches.Checkbox")
   @js.native
-  class Checkbox ()
+  open class Checkbox ()
     extends typings.materialUi.MaterialUI.Switches.Checkbox
   
   @JSGlobal("__MaterialUI.Switches.EnhancedSwitch")
   @js.native
-  class EnhancedSwitch ()
+  open class EnhancedSwitch ()
     extends typings.materialUi.MaterialUI.Switches.EnhancedSwitch
   
   @JSGlobal("__MaterialUI.Switches.RadioButton")
   @js.native
-  class RadioButton ()
+  open class RadioButton ()
     extends typings.materialUi.MaterialUI.Switches.RadioButton
   
   @JSGlobal("__MaterialUI.Switches.RadioButtonGroup")
   @js.native
-  class RadioButtonGroup ()
+  open class RadioButtonGroup ()
     extends typings.materialUi.MaterialUI.Switches.RadioButtonGroup
   
   @JSGlobal("__MaterialUI.Switches.Toggle")
   @js.native
-  class Toggle ()
+  open class Toggle ()
     extends typings.materialUi.MaterialUI.Switches.Toggle
 }

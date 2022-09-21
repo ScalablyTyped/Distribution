@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the border formatting of a chart element.
   *
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 trait ChartBorderLoadOptions extends StObject {
@@ -19,25 +19,25 @@ trait ChartBorderLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * HTML color code representing the color of borders in the chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var color: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents the line style of the border. See `Excel.ChartLineStyle` for details.
     *
-    * Represents the line style of the border. See Excel.ChartLineStyle for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var lineStyle: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents weight of the border, in points.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var weight: js.UndefOr[Boolean] = js.undefined

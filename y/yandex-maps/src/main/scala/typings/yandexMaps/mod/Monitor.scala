@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("yandex-maps", "Monitor")
 @js.native
-class Monitor protected () extends StObject {
+open class Monitor protected () extends StObject {
   def this(dataManager: IDataManager) = this()
   def this(dataManager: IOptionManager) = this()
   
@@ -17,19 +17,19 @@ class Monitor protected () extends StObject {
   def add(
     name: String,
     changeCallback: js.Function1[/* event */ js.Object | (IEvent[js.Object, js.Object]), Unit],
-    context: js.Any
+    context: Any
   ): Monitor = js.native
   def add(
     name: String,
     changeCallback: js.Function1[/* event */ js.Object | (IEvent[js.Object, js.Object]), Unit],
-    context: js.Any,
-    params: js.Any
+    context: Any,
+    params: Any
   ): Monitor = js.native
   def add(
     name: String,
     changeCallback: js.Function1[/* event */ js.Object | (IEvent[js.Object, js.Object]), Unit],
     context: Unit,
-    params: js.Any
+    params: Any
   ): Monitor = js.native
   def add(
     name: js.Array[String],
@@ -38,24 +38,24 @@ class Monitor protected () extends StObject {
   def add(
     name: js.Array[String],
     changeCallback: js.Function1[/* event */ js.Object | (IEvent[js.Object, js.Object]), Unit],
-    context: js.Any
+    context: Any
   ): Monitor = js.native
   def add(
     name: js.Array[String],
     changeCallback: js.Function1[/* event */ js.Object | (IEvent[js.Object, js.Object]), Unit],
-    context: js.Any,
-    params: js.Any
+    context: Any,
+    params: Any
   ): Monitor = js.native
   def add(
     name: js.Array[String],
     changeCallback: js.Function1[/* event */ js.Object | (IEvent[js.Object, js.Object]), Unit],
     context: Unit,
-    params: js.Any
+    params: Any
   ): Monitor = js.native
   
   def forceChange(): Monitor = js.native
   
-  def get(name: String): js.Any = js.native
+  def get(name: String): Any = js.native
   
   def remove(name: String): Monitor = js.native
   

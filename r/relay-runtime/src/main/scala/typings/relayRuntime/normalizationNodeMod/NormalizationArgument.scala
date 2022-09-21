@@ -5,19 +5,31 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.relayRuntime.normalizationNodeMod.NormalizationLiteral
-  - typings.relayRuntime.normalizationNodeMod.NormalizationVariable
+  - typings.relayRuntime.normalizationNodeMod.NormalizationListValueArgument
+  - typings.relayRuntime.normalizationNodeMod.NormalizationLiteralArgument
+  - typings.relayRuntime.normalizationNodeMod.NormalizationObjectValueArgument
+  - typings.relayRuntime.normalizationNodeMod.NormalizationVariableArgument
 */
 trait NormalizationArgument extends StObject
 object NormalizationArgument {
   
-  inline def NormalizationLiteral(kind: String, name: String): typings.relayRuntime.normalizationNodeMod.NormalizationLiteral = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.asInstanceOf[typings.relayRuntime.normalizationNodeMod.NormalizationLiteral]
+  inline def NormalizationListValueArgument(items: js.Array[NormalizationArgument | Null], kind: String, name: String): typings.relayRuntime.normalizationNodeMod.NormalizationListValueArgument = {
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.relayRuntime.normalizationNodeMod.NormalizationListValueArgument]
   }
   
-  inline def NormalizationVariable(kind: String, name: String, variableName: String): typings.relayRuntime.normalizationNodeMod.NormalizationVariable = {
+  inline def NormalizationLiteralArgument(kind: String, name: String, value: Any): typings.relayRuntime.normalizationNodeMod.NormalizationLiteralArgument = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.relayRuntime.normalizationNodeMod.NormalizationLiteralArgument]
+  }
+  
+  inline def NormalizationObjectValueArgument(fields: js.Array[NormalizationArgument], kind: String, name: String): typings.relayRuntime.normalizationNodeMod.NormalizationObjectValueArgument = {
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.relayRuntime.normalizationNodeMod.NormalizationObjectValueArgument]
+  }
+  
+  inline def NormalizationVariableArgument(kind: String, name: String, variableName: String): typings.relayRuntime.normalizationNodeMod.NormalizationVariableArgument = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], variableName = variableName.asInstanceOf[js.Any])
-    __obj.asInstanceOf[typings.relayRuntime.normalizationNodeMod.NormalizationVariable]
+    __obj.asInstanceOf[typings.relayRuntime.normalizationNodeMod.NormalizationVariableArgument]
   }
 }

@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UIManagerStatic extends StObject {
   
   def dispatchViewManagerCommand(reactTag: Double, commandID: String): Unit = js.native
-  def dispatchViewManagerCommand(reactTag: Double, commandID: String, commandArgs: js.Array[js.Any]): Unit = js.native
+  def dispatchViewManagerCommand(reactTag: Double, commandID: String, commandArgs: js.Array[Any]): Unit = js.native
   /**
     * Used to call a native view method from JavaScript
     *
@@ -21,13 +21,15 @@ trait UIManagerStatic extends StObject {
     * commandArgs - Args of the native method that we can pass from JS to native.
     */
   def dispatchViewManagerCommand(reactTag: Double, commandID: Double): Unit = js.native
-  def dispatchViewManagerCommand(reactTag: Double, commandID: Double, commandArgs: js.Array[js.Any]): Unit = js.native
+  def dispatchViewManagerCommand(reactTag: Double, commandID: Double, commandArgs: js.Array[Any]): Unit = js.native
   def dispatchViewManagerCommand(reactTag: Null, commandID: String): Unit = js.native
-  def dispatchViewManagerCommand(reactTag: Null, commandID: String, commandArgs: js.Array[js.Any]): Unit = js.native
+  def dispatchViewManagerCommand(reactTag: Null, commandID: String, commandArgs: js.Array[Any]): Unit = js.native
   def dispatchViewManagerCommand(reactTag: Null, commandID: Double): Unit = js.native
-  def dispatchViewManagerCommand(reactTag: Null, commandID: Double, commandArgs: js.Array[js.Any]): Unit = js.native
+  def dispatchViewManagerCommand(reactTag: Null, commandID: Double, commandArgs: js.Array[Any]): Unit = js.native
   
   def getViewManagerConfig(name: String): Commands = js.native
+  
+  def hasViewManagerConfig(name: String): Boolean = js.native
   
   /**
     * Determines the location on screen, width, and height of the given view and

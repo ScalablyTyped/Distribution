@@ -24,7 +24,7 @@ trait GoogleCloudMlV1HyperparameterOutput extends StObject {
   var hyperparameters: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ GoogleCloudMlV1__HyperparameterOutput & TopLevel[js.Any]
+    */ GoogleCloudMlV1__HyperparameterOutput & TopLevel[Any]
   ] = js.undefined
   
   /** True if the trial is stopped early. */
@@ -38,6 +38,18 @@ trait GoogleCloudMlV1HyperparameterOutput extends StObject {
   
   /** The trial id for these results. */
   var trialId: js.UndefOr[String] = js.undefined
+  
+  /**
+    * URIs for accessing [interactive shells](https://cloud.google.com/ai-platform/training/docs/monitor-debug-interactive-shell) (one URI for each training node). Only available if this
+    * trial is part of a hyperparameter tuning job and the job's training_input.enable_web_access is `true`. The keys are names of each node in the training job; for example,
+    * `master-replica-0` for the master node, `worker-replica-0` for the first worker, and `ps-replica-0` for the first parameter server. The values are the URIs for each node's
+    * interactive shell.
+    */
+  var webAccessUris: js.UndefOr[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in string ]: string}
+    */ GoogleCloudMlV1__HyperparameterOutput & TopLevel[Any]
+  ] = js.undefined
 }
 object GoogleCloudMlV1HyperparameterOutput {
   
@@ -52,7 +64,7 @@ object GoogleCloudMlV1HyperparameterOutput {
     
     inline def setAllMetricsUndefined: Self = StObject.set(x, "allMetrics", js.undefined)
     
-    inline def setAllMetricsVarargs(value: GoogleCloudMlV1HyperparameterOutputHyperparameterMetric*): Self = StObject.set(x, "allMetrics", js.Array(value :_*))
+    inline def setAllMetricsVarargs(value: GoogleCloudMlV1HyperparameterOutputHyperparameterMetric*): Self = StObject.set(x, "allMetrics", js.Array(value*))
     
     inline def setBuiltInAlgorithmOutput(value: GoogleCloudMlV1BuiltInAlgorithmOutput): Self = StObject.set(x, "builtInAlgorithmOutput", value.asInstanceOf[js.Any])
     
@@ -69,7 +81,7 @@ object GoogleCloudMlV1HyperparameterOutput {
     inline def setHyperparameters(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ GoogleCloudMlV1__HyperparameterOutput & TopLevel[js.Any]
+      */ GoogleCloudMlV1__HyperparameterOutput & TopLevel[Any]
     ): Self = StObject.set(x, "hyperparameters", value.asInstanceOf[js.Any])
     
     inline def setHyperparametersUndefined: Self = StObject.set(x, "hyperparameters", js.undefined)
@@ -89,5 +101,13 @@ object GoogleCloudMlV1HyperparameterOutput {
     inline def setTrialId(value: String): Self = StObject.set(x, "trialId", value.asInstanceOf[js.Any])
     
     inline def setTrialIdUndefined: Self = StObject.set(x, "trialId", js.undefined)
+    
+    inline def setWebAccessUris(
+      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ P in string ]: string}
+      */ GoogleCloudMlV1__HyperparameterOutput & TopLevel[Any]
+    ): Self = StObject.set(x, "webAccessUris", value.asInstanceOf[js.Any])
+    
+    inline def setWebAccessUrisUndefined: Self = StObject.set(x, "webAccessUris", js.undefined)
   }
 }

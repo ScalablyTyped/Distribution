@@ -15,7 +15,7 @@ trait ExecuteSqlRequest extends StObject {
   var paramTypes: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.spanner.gapi.client.spanner.Type}
-    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.ExecuteSqlRequest & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.ExecuteSqlRequest & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -27,7 +27,7 @@ trait ExecuteSqlRequest extends StObject {
   var params: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.ExecuteSqlRequest & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.ExecuteSqlRequest & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -41,6 +41,9 @@ trait ExecuteSqlRequest extends StObject {
   
   /** Query optimizer configuration to use for the given query. */
   var queryOptions: js.UndefOr[QueryOptions] = js.undefined
+  
+  /** Common options for this request. */
+  var requestOptions: js.UndefOr[RequestOptions] = js.undefined
   
   /**
     * If this request is resuming a previously interrupted SQL statement execution, `resume_token` should be copied from the last PartialResultSet yielded before the interruption. Doing
@@ -77,7 +80,7 @@ object ExecuteSqlRequest {
     inline def setParamTypes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.spanner.gapi.client.spanner.Type}
-      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.ExecuteSqlRequest & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.ExecuteSqlRequest & TopLevel[Any]
     ): Self = StObject.set(x, "paramTypes", value.asInstanceOf[js.Any])
     
     inline def setParamTypesUndefined: Self = StObject.set(x, "paramTypes", js.undefined)
@@ -85,7 +88,7 @@ object ExecuteSqlRequest {
     inline def setParams(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.ExecuteSqlRequest & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.ExecuteSqlRequest & TopLevel[Any]
     ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
@@ -101,6 +104,10 @@ object ExecuteSqlRequest {
     inline def setQueryOptions(value: QueryOptions): Self = StObject.set(x, "queryOptions", value.asInstanceOf[js.Any])
     
     inline def setQueryOptionsUndefined: Self = StObject.set(x, "queryOptions", js.undefined)
+    
+    inline def setRequestOptions(value: RequestOptions): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
+    
+    inline def setRequestOptionsUndefined: Self = StObject.set(x, "requestOptions", js.undefined)
     
     inline def setResumeToken(value: String): Self = StObject.set(x, "resumeToken", value.asInstanceOf[js.Any])
     

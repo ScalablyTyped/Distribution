@@ -11,12 +11,12 @@ object popperOffsetsMod extends Shortcut {
   
   @JSImport("@popperjs/core/lib/modifiers/popperOffsets", JSImport.Default)
   @js.native
-  val default: Modifier[popperOffsets, js.Object] = js.native
+  val default: PopperOffsetsModifier = js.native
   
   type PopperOffsetsModifier = Modifier[popperOffsets, js.Object]
   
-  type _To = Modifier[popperOffsets, js.Object]
+  type _To = PopperOffsetsModifier
   
   /* This means you don't have to write `default`, but can instead just say `popperOffsetsMod.foo` */
-  override def _to: Modifier[popperOffsets, js.Object] = default
+  override def _to: PopperOffsetsModifier = default
 }

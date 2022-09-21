@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("jsrsasign.KJUR.asn1.DERSet")
 @js.native
-class DERSet ()
+open class DERSet ()
   extends typings.jsrsasign.mod.KJUR.asn1.DERSet {
   def this(params: ArrayParam[typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object]) = this()
 }

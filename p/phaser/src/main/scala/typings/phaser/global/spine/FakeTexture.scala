@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.FakeTexture")
 @js.native
-class FakeTexture ()
+open class FakeTexture ()
   extends StObject
      with typings.phaser.spine.FakeTexture {
   

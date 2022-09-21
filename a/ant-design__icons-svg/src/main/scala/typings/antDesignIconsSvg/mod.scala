@@ -1595,6 +1595,10 @@ object mod {
   @js.native
   val HistoryOutlined: IconDefinition = js.native
   
+  @JSImport("@ant-design/icons-svg/lib", "HolderOutlined")
+  @js.native
+  val HolderOutlined: IconDefinition = js.native
+  
   @JSImport("@ant-design/icons-svg/lib", "HomeFilled")
   @js.native
   val HomeFilled: IconDefinition = js.native

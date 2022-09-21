@@ -30,7 +30,7 @@ object XGroupsSupplier {
     Groups: XNameAccess,
     acquire: () => Unit,
     getGroups: () => XNameAccess,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XGroupsSupplier = {
     val __obj = js.Dynamic.literal(Groups = Groups.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getGroups = js.Any.fromFunction0(getGroups), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

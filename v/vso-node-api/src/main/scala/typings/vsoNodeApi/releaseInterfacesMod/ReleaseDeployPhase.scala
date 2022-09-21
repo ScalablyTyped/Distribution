@@ -48,7 +48,7 @@ object ReleaseDeployPhase {
     
     inline def setDeploymentJobs(value: js.Array[DeploymentJob]): Self = StObject.set(x, "deploymentJobs", value.asInstanceOf[js.Any])
     
-    inline def setDeploymentJobsVarargs(value: DeploymentJob*): Self = StObject.set(x, "deploymentJobs", js.Array(value :_*))
+    inline def setDeploymentJobsVarargs(value: DeploymentJob*): Self = StObject.set(x, "deploymentJobs", js.Array(value*))
     
     inline def setErrorLog(value: String): Self = StObject.set(x, "errorLog", value.asInstanceOf[js.Any])
     
@@ -56,7 +56,7 @@ object ReleaseDeployPhase {
     
     inline def setManualInterventions(value: js.Array[ManualIntervention]): Self = StObject.set(x, "manualInterventions", value.asInstanceOf[js.Any])
     
-    inline def setManualInterventionsVarargs(value: ManualIntervention*): Self = StObject.set(x, "manualInterventions", js.Array(value :_*))
+    inline def setManualInterventionsVarargs(value: ManualIntervention*): Self = StObject.set(x, "manualInterventions", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

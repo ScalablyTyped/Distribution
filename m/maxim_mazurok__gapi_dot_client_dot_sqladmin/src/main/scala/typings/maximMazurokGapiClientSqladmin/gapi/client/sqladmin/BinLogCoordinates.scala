@@ -12,7 +12,7 @@ trait BinLogCoordinates extends StObject {
   /** Position (offset) within the binary log file. */
   var binLogPosition: js.UndefOr[String] = js.undefined
   
-  /** This is always *sql#binLogCoordinates*. */
+  /** This is always `sql#binLogCoordinates`. */
   var kind: js.UndefOr[String] = js.undefined
 }
 object BinLogCoordinates {

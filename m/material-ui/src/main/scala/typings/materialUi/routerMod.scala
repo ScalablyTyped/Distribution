@@ -10,10 +10,10 @@ object routerMod {
   
   @JSImport("material-ui/svg-icons/hardware/router", JSImport.Default)
   @js.native
-  class default () extends HardwareRouter
+  open class default () extends HardwareRouter
   
   @JSImport("material-ui/svg-icons/hardware/router", "HardwareRouter")
   @js.native
-  class HardwareRouter ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class HardwareRouter ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

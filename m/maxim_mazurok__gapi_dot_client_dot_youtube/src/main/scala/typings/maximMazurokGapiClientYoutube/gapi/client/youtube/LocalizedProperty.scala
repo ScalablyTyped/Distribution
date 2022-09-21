@@ -34,6 +34,6 @@ object LocalizedProperty {
     
     inline def setLocalizedUndefined: Self = StObject.set(x, "localized", js.undefined)
     
-    inline def setLocalizedVarargs(value: LocalizedString*): Self = StObject.set(x, "localized", js.Array(value :_*))
+    inline def setLocalizedVarargs(value: LocalizedString*): Self = StObject.set(x, "localized", js.Array(value*))
   }
 }

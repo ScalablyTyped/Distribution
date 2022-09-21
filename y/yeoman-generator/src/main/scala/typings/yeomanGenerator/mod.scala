@@ -13,7 +13,6 @@ import typings.node.childProcessMod.SpawnOptions
 import typings.node.childProcessMod.SpawnSyncOptions
 import typings.node.eventsMod.EventEmitter
 import typings.node.streamMod.Transform
-import typings.rxjs.mod.Observable_
 import typings.std.ArrayConstructor
 import typings.std.BooleanConstructor
 import typings.std.NumberConstructor
@@ -39,16 +38,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   /**
-    * The `Generator` class provides the common API shared by all generators.
+    * The {@link Generator `Generator`} class provides the common API shared by all generators.
     * It define options, arguments, file, prompt, log, API, etc.
     *
     * Every generator should extend this base class.
     */
   @JSImport("yeoman-generator", JSImport.Namespace)
   @js.native
-  class ^[T /* <: GeneratorOptions */] protected () extends Generator[T] {
+  open class ^[T /* <: GeneratorOptions */] protected () extends Generator[T] {
     def this(args: String, options: T) = this()
     def this(args: js.Array[String], options: T) = this()
+    def this(args: String, options: T, features: GeneratorFeatures) = this()
+    def this(args: js.Array[String], options: T, features: GeneratorFeatures) = this()
   }
   
   /**
@@ -64,7 +65,7 @@ object mod {
     /**
       * The default value of the argument.
       */
-    var default: js.UndefOr[js.Any] = js.undefined
+    var default: js.UndefOr[Any] = js.undefined
     
     /**
       * Description for the argument.
@@ -95,7 +96,7 @@ object mod {
     
     extension [Self <: ArgumentConfig](x: Self) {
       
-      inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
       inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
@@ -125,7 +126,7 @@ object mod {
     *
     * @param err The error that occurred.
     */
-  js.Function1[/* err */ js.Any, Unit]
+  js.Function1[/* err */ Any, Unit]
   
   /**
     * Represents options for composing a generator.
@@ -158,7 +159,7 @@ object mod {
   }
   
   /**
-    * The `Generator` class provides the common API shared by all generators.
+    * The {@link Generator `Generator`} class provides the common API shared by all generators.
     * It define options, arguments, file, prompt, log, API, etc.
     *
     * Every generator should extend this base class.
@@ -171,13 +172,45 @@ object mod {
       *
       * @param path The property-path of the option to get.
       */
-    def _templateData(): js.Any = js.native
-    def _templateData(path: String): js.Any = js.native
+    def _templateData(): Any = js.native
+    def _templateData(path: String): Any = js.native
+    
+    def addDependencies(dependencies: String): js.Promise[Record[String, String]] = js.native
+    def addDependencies(dependencies: js.Array[String]): js.Promise[Record[String, String]] = js.native
+    // actions/package.json
+    /**
+      * Adds dependencies to the destination `package.json`.
+      *
+      * @param dependencies
+      * The packages to add.
+      *
+      * @returns
+      * The newly added dependencies.
+      */
+    def addDependencies(dependencies: Record[String, String]): js.Promise[Record[String, String]] = js.native
+    
+    def addDevDependencies(devDependencies: String): js.Promise[Record[String, String]] = js.native
+    def addDevDependencies(devDependencies: js.Array[String]): js.Promise[Record[String, String]] = js.native
+    /**
+      * Adds development-dependencies to the destination `package.json`.
+      *
+      * @param devDependencies
+      * The packages to add to the development-dependencies.
+      *
+      * @returns
+      * The newly added development-dependencies.
+      */
+    def addDevDependencies(devDependencies: Record[String, String]): js.Promise[Record[String, String]] = js.native
     
     /**
       * The application name.
       */
     var appname: String = js.native
+    
+    /**
+      * Provides arguments at initialization.
+      */
+    var args: js.Array[String] = js.native
     
     /**
       * Adds an argument to the class and creates an attribute getter for it.
@@ -186,8 +219,8 @@ object mod {
       * is how they are parsed from the command line, arguments are retrieved
       * based on their position.
       *
-      * Besides, arguments are used inside your code as a property (`this.argument`),
-      * while options are all kept in a hash (`this.options`).
+      * Besides, arguments are used inside your code as a property ({@link Generator.args `this.args`}),
+      * while options are all kept in a hash ({@link Generator.options `this.options`}).
       *
       *
       * @param name Argument name.
@@ -206,26 +239,27 @@ object mod {
     
     // actions/install mixin
     /**
-      * Receives a list of `components` and an `options` object to install through bower.
+      * @deprecated
+      * Receives a list of {@link components `components`} and an {@link options `options`} object to install through bower.
       *
       * The installation will automatically run during the run loop `install` phase.
       *
-      * @param component Components to install
+      * @param components Components to install
       * @param options Options to pass to `dargs` as arguments
-      * @param spawnOptions Options to pass `child_process.spawn`.
+      * @param spawnOptions Options to pass {@link spawn `child_process.spawn`}.
       */
     def bowerInstall(): Unit = js.native
-    def bowerInstall(component: String): Unit = js.native
-    def bowerInstall(component: String, options: js.Object): Unit = js.native
-    def bowerInstall(component: String, options: js.Object, spawnOptions: SpawnOptions): Unit = js.native
-    def bowerInstall(component: String, options: Unit, spawnOptions: SpawnOptions): Unit = js.native
-    def bowerInstall(component: js.Array[String]): Unit = js.native
-    def bowerInstall(component: js.Array[String], options: js.Object): Unit = js.native
-    def bowerInstall(component: js.Array[String], options: js.Object, spawnOptions: SpawnOptions): Unit = js.native
-    def bowerInstall(component: js.Array[String], options: Unit, spawnOptions: SpawnOptions): Unit = js.native
-    def bowerInstall(component: Unit, options: js.Object): Unit = js.native
-    def bowerInstall(component: Unit, options: js.Object, spawnOptions: SpawnOptions): Unit = js.native
-    def bowerInstall(component: Unit, options: Unit, spawnOptions: SpawnOptions): Unit = js.native
+    def bowerInstall(components: String): Unit = js.native
+    def bowerInstall(components: String, options: js.Object): Unit = js.native
+    def bowerInstall(components: String, options: js.Object, spawnOptions: SpawnOptions): Unit = js.native
+    def bowerInstall(components: String, options: Unit, spawnOptions: SpawnOptions): Unit = js.native
+    def bowerInstall(components: js.Array[String]): Unit = js.native
+    def bowerInstall(components: js.Array[String], options: js.Object): Unit = js.native
+    def bowerInstall(components: js.Array[String], options: js.Object, spawnOptions: SpawnOptions): Unit = js.native
+    def bowerInstall(components: js.Array[String], options: Unit, spawnOptions: SpawnOptions): Unit = js.native
+    def bowerInstall(components: Unit, options: js.Object): Unit = js.native
+    def bowerInstall(components: Unit, options: js.Object, spawnOptions: SpawnOptions): Unit = js.native
+    def bowerInstall(components: Unit, options: Unit, spawnOptions: SpawnOptions): Unit = js.native
     
     /**
       * Cancels all cancellable tasks.
@@ -240,7 +274,7 @@ object mod {
       * @param generator The path to the generator module or an object (see examples).
       * @param options The options passed to the Generator.
       * @param returnNewGenerator Returns the created generator instead of returning this.
-      * @return This generator or the composed generator when `returnNewGenerator` is `true`.
+      * @return This generator or the composed generator when {@link returnNewGenerator `returnNewGenerator`} is `true`.
       *
       * @example
       * this.composeWith('bootstrap', { sass: true });
@@ -331,7 +365,7 @@ object mod {
     var config: typings.yeomanGenerator.storageMod.^ = js.native
     
     /**
-      * The path from where the user is running `yo`
+      * The path from where the user is running `yo`.
       */
     var contextRoot: String = js.native
     
@@ -361,7 +395,7 @@ object mod {
       *
       * @param storagePath The path to the `json`-file of the storage.
       * @param key The key in which the options are stored inside the `json`.
-      * @param lodashPath A value indicating whether the `key` argument should be treated as a lodash path.
+      * @param lodashPath A value indicating whether the {@link key `key`} argument should be treated as a lodash path.
       */
     def createStorage(storagePath: String): typings.yeomanGenerator.storageMod.^ = js.native
     def createStorage(storagePath: String, key: String): typings.yeomanGenerator.storageMod.^ = js.native
@@ -386,7 +420,7 @@ object mod {
     var deleteDestination: FnCallFilepathOptions = js.native
     
     /**
-      * Sets a custom `description` for the help output.
+      * Sets a custom {@link description `description`} for the help output.
       *
       * @param description The new description.
       */
@@ -407,10 +441,11 @@ object mod {
     /**
       * Changes the generator destination root directory.
       *
-      * This path is used to find storage, when using file system helper methods (such as `this.writeDestination` and `this.copyDestination`).
+      * This path is used to find storage, when using file system helper methods
+      * (such as {@link Generator.writeDestination `this.writeDestination`} and {@link Generator.copyDestination `this.copyDestination`}).
       *
       * @param rootPath The new destination root path.
-      * @param skipEnvironment A value indicating whether `this.env.cwd` and the current working directory shouldn't be changed.
+      * @param skipEnvironment A value indicating whether {@link Environment.cwd `this.env.cwd`} and the current working directory shouldn't be changed.
       */
     def destinationRoot(): String = js.native
     def destinationRoot(rootPath: String): String = js.native
@@ -430,7 +465,7 @@ object mod {
     /**
       * The current Environment being run.
       */
-    var env: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Environment */ js.Any = js.native
+    var env: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Environment */ Any = js.native
     
     /**
       * Checks whether a file exists in the destination folder.
@@ -453,6 +488,7 @@ object mod {
     def help(): String = js.native
     
     /**
+      * @deprecated
       * Runs `npm` and `bower`, in sequence, in the generated directory and prints a
       * message to let the user know.
       *
@@ -475,7 +511,7 @@ object mod {
     /**
       * Provides the functionality to log messages.
       */
-    var log: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Logger */ js.Any = js.native
+    var log: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Logger */ Any = js.native
     
     /**
       * Move file from destination folder to another destination folder.
@@ -488,35 +524,37 @@ object mod {
     var moveDestination: FnCallFromToOptions = js.native
     
     /**
-      * Receives a list of `packages` and an `options` object to install through npm.
+      * @deprecated
+      * Receives a list of {@link packages `packages`} and an {@link options `options`} object to install through npm.
       *
       * The installation will automatically run during the run loop `install` phase.
       *
-      * @param pkgs Packages to install
+      * @param packages Packages to install
       * @param options Options to pass to `dargs` as arguments
-      * @param spawnOptions Options to pass `child_process.spawn`.
+      * @param spawnOptions Options to pass {@link spawn `child_process.spawn`}.
       */
     def npmInstall(): Unit = js.native
-    def npmInstall(pkgs: String): Unit = js.native
-    def npmInstall(pkgs: String, options: js.Object): Unit = js.native
-    def npmInstall(pkgs: String, options: js.Object, spawnOptions: SpawnOptions): Unit = js.native
-    def npmInstall(pkgs: String, options: Unit, spawnOptions: SpawnOptions): Unit = js.native
-    def npmInstall(pkgs: js.Array[String]): Unit = js.native
-    def npmInstall(pkgs: js.Array[String], options: js.Object): Unit = js.native
-    def npmInstall(pkgs: js.Array[String], options: js.Object, spawnOptions: SpawnOptions): Unit = js.native
-    def npmInstall(pkgs: js.Array[String], options: Unit, spawnOptions: SpawnOptions): Unit = js.native
-    def npmInstall(pkgs: Unit, options: js.Object): Unit = js.native
-    def npmInstall(pkgs: Unit, options: js.Object, spawnOptions: SpawnOptions): Unit = js.native
-    def npmInstall(pkgs: Unit, options: Unit, spawnOptions: SpawnOptions): Unit = js.native
+    def npmInstall(packages: String): Unit = js.native
+    def npmInstall(packages: String, options: js.Object): Unit = js.native
+    def npmInstall(packages: String, options: js.Object, spawnOptions: SpawnOptions): Unit = js.native
+    def npmInstall(packages: String, options: Unit, spawnOptions: SpawnOptions): Unit = js.native
+    def npmInstall(packages: js.Array[String]): Unit = js.native
+    def npmInstall(packages: js.Array[String], options: js.Object): Unit = js.native
+    def npmInstall(packages: js.Array[String], options: js.Object, spawnOptions: SpawnOptions): Unit = js.native
+    def npmInstall(packages: js.Array[String], options: Unit, spawnOptions: SpawnOptions): Unit = js.native
+    def npmInstall(packages: Unit, options: js.Object): Unit = js.native
+    def npmInstall(packages: Unit, options: js.Object, spawnOptions: SpawnOptions): Unit = js.native
+    def npmInstall(packages: Unit, options: Unit, spawnOptions: SpawnOptions): Unit = js.native
     
     /**
       * Adds an option to the set of generator expected options, only used to generate generator usage.
-      * By default, generators get all the cli options parsed by nopt as a `this.options` hash object.
+      * By default, generators get all the cli options parsed by nopt as a {@link Generator.options `this.options`} hash object.
       *
       * @param name The name of the option.
       * @param config The configuration of the option.
       * @returns This generator
       */
+    def option(name: String): this.type = js.native
     def option(name: String, config: OptionConfig): this.type = js.native
     
     /**
@@ -530,9 +568,14 @@ object mod {
     def optionsHelp(): String = js.native
     
     /**
+      * The storage containing the destination-`package.json`.
+      */
+    var packageJson: typings.yeomanGenerator.storageMod.^ = js.native
+    
+    /**
       * Prompt user to answer questions.
       */
-    def prompt[T](questions: Questions[T]): js.Promise[T] = js.native
+    def prompt[T /* <: typings.inquirer.mod.Answers */](questions: Questions[T]): js.Promise[T] = js.native
     
     /**
       * Queues the basic tasks of the generator.
@@ -547,66 +590,57 @@ object mod {
       * @param queueName The name of the queue to schedule on.
       * @param reject A callback for handling rejections.
       */
-    def queueMethod(method: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
-    def queueMethod(method: js.Function1[/* repeated */ js.Any, js.Any], methodName: String): Unit = js.native
-    def queueMethod(method: js.Function1[/* repeated */ js.Any, js.Any], methodName: String, queueName: String): Unit = js.native
+    def queueMethod(method: js.Function1[/* repeated */ Any, Any]): Unit = js.native
+    def queueMethod(method: js.Function1[/* repeated */ Any, Any], methodName: String): Unit = js.native
+    def queueMethod(method: js.Function1[/* repeated */ Any, Any], methodName: String, queueName: String): Unit = js.native
     def queueMethod(
-      method: js.Function1[/* repeated */ js.Any, js.Any],
+      method: js.Function1[/* repeated */ Any, Any],
       methodName: String,
       queueName: String,
       reject: Callback
     ): Unit = js.native
     def queueMethod(
-      method: js.Function1[/* repeated */ js.Any, js.Any],
+      method: js.Function1[/* repeated */ Any, Any],
       methodName: String,
       queueName: Unit,
       reject: Callback
     ): Unit = js.native
-    def queueMethod(method: js.Function1[/* repeated */ js.Any, js.Any], methodName: Unit, queueName: String): Unit = js.native
+    def queueMethod(method: js.Function1[/* repeated */ Any, Any], methodName: Unit, queueName: String): Unit = js.native
     def queueMethod(
-      method: js.Function1[/* repeated */ js.Any, js.Any],
+      method: js.Function1[/* repeated */ Any, Any],
       methodName: Unit,
       queueName: String,
       reject: Callback
     ): Unit = js.native
+    def queueMethod(method: js.Function1[/* repeated */ Any, Any], methodName: Unit, queueName: Unit, reject: Callback): Unit = js.native
+    def queueMethod(method: Record[String, js.Function1[/* repeated */ Any, Any]]): Unit = js.native
+    def queueMethod(method: Record[String, js.Function1[/* repeated */ Any, Any]], methodName: String): Unit = js.native
     def queueMethod(
-      method: js.Function1[/* repeated */ js.Any, js.Any],
-      methodName: Unit,
-      queueName: Unit,
-      reject: Callback
-    ): Unit = js.native
-    def queueMethod(method: Record[String, js.Function1[/* repeated */ js.Any, js.Any]]): Unit = js.native
-    def queueMethod(method: Record[String, js.Function1[/* repeated */ js.Any, js.Any]], methodName: String): Unit = js.native
-    def queueMethod(
-      method: Record[String, js.Function1[/* repeated */ js.Any, js.Any]],
+      method: Record[String, js.Function1[/* repeated */ Any, Any]],
       methodName: String,
       queueName: String
     ): Unit = js.native
     def queueMethod(
-      method: Record[String, js.Function1[/* repeated */ js.Any, js.Any]],
+      method: Record[String, js.Function1[/* repeated */ Any, Any]],
       methodName: String,
       queueName: String,
       reject: Callback
     ): Unit = js.native
     def queueMethod(
-      method: Record[String, js.Function1[/* repeated */ js.Any, js.Any]],
+      method: Record[String, js.Function1[/* repeated */ Any, Any]],
       methodName: String,
       queueName: Unit,
       reject: Callback
     ): Unit = js.native
+    def queueMethod(method: Record[String, js.Function1[/* repeated */ Any, Any]], methodName: Unit, queueName: String): Unit = js.native
     def queueMethod(
-      method: Record[String, js.Function1[/* repeated */ js.Any, js.Any]],
-      methodName: Unit,
-      queueName: String
-    ): Unit = js.native
-    def queueMethod(
-      method: Record[String, js.Function1[/* repeated */ js.Any, js.Any]],
+      method: Record[String, js.Function1[/* repeated */ Any, Any]],
       methodName: Unit,
       queueName: String,
       reject: Callback
     ): Unit = js.native
     def queueMethod(
-      method: Record[String, js.Function1[/* repeated */ js.Any, js.Any]],
+      method: Record[String, js.Function1[/* repeated */ Any, Any]],
       methodName: Unit,
       queueName: Unit,
       reject: Callback
@@ -625,8 +659,16 @@ object mod {
       * @param taskGroup An object containing tasks.
       * @param taskOptions The options for creating the tasks.
       */
-    def queueTaskGroup(taskGroup: Record[String, js.Function1[/* repeated */ js.Any, js.Any]]): Unit = js.native
-    def queueTaskGroup(taskGroup: Record[String, js.Function1[/* repeated */ js.Any, js.Any]], taskOptions: TaskOptions): Unit = js.native
+    def queueTaskGroup(taskGroup: Record[String, js.Function1[/* repeated */ Any, Any]]): Unit = js.native
+    def queueTaskGroup(taskGroup: Record[String, js.Function1[/* repeated */ Any, Any]], taskOptions: TaskOptions): Unit = js.native
+    
+    def queueTransformStream(stream: js.Array[Transform]): this.type = js.native
+    /**
+      * Adds a transform stream to the commit stream.
+      *
+      * @param stream An array of transform streams or a single one.
+      */
+    def queueTransformStream(stream: Transform): this.type = js.native
     
     /**
       * Read file from destination folder.
@@ -658,28 +700,28 @@ object mod {
       */
     var readTemplate: Fn0 = js.native
     
-    def registerConfigPrompts[TAnswers](questions: js.Array[QuestionRegistrationOptions[TAnswers]]): Unit = js.native
+    def registerConfigPrompts[TAnswers /* <: typings.inquirer.mod.Answers */](questions: js.Array[QuestionRegistrationOptions[TAnswers]]): Unit = js.native
     /**
       * Registers stored config prompts and optional option alternatives.
       *
       * @param questions
       * The questions to register.
       */
-    def registerConfigPrompts[TAnswers](questions: QuestionRegistrationOptions[TAnswers]): Unit = js.native
+    def registerConfigPrompts[TAnswers /* <: typings.inquirer.mod.Answers */](questions: QuestionRegistrationOptions[TAnswers]): Unit = js.native
     
-    def registerTransformStream(stream: js.Array[Transform]): this.type = js.native
     /**
-      * Adds a transform stream to the commit stream.
+      * Registers the specified {@link priorities `priorities`}.
       *
-      * @param stream An array of transform streams or a single one.
+      * @param priorities
+      * The priorities to register.
       */
-    def registerTransformStream(stream: Transform): this.type = js.native
+    def registerPriorities(priorities: js.Array[Priority]): Unit = js.native
     
     /**
       * Copies a template from templates folder to the destination.
       *
-      * @param source The template file, absolute or relative to `templatePath()`.
-      * @param destination The destination, absolute or relative to `destinationPath()`.
+      * @param source The template file, absolute or relative to {@link Generator.templatePath `templatePath()`}.
+      * @param destination The destination, absolute or relative to {@link Generator.destinationPath `destinationPath()`}.
       * @param templateData The `ejs`-data or the name of the storage-key to get the data from.
       * @param templateOptions The `ejs`-options.
       * @param copyOptions The `mem-fs-editor` copy options.
@@ -739,6 +781,7 @@ object mod {
     def run(cb: Callback): js.Promise[Unit] = js.native
     
     /**
+      * @deprecated
       * Combine package manager cmd line arguments and run the `install` command.
       *
       * During the `install` step, every command will be scheduled to run once, on the
@@ -747,7 +790,7 @@ object mod {
       * @param installer Which package manager to use
       * @param paths Packages to install. Use an empty string for `npm install`
       * @param options Options to pass to `dargs` as arguments
-      * @param spawnOptions Options to pass `child_process.spawn`.
+      * @param spawnOptions Options to pass {@link spawn `child_process.spawn`}.
       */
     def scheduleInstallTask(installer: String): Unit = js.native
     def scheduleInstallTask(installer: String, paths: String): Unit = js.native
@@ -779,8 +822,8 @@ object mod {
       * @param args A list of arguments to pass to the program.
       * @param opt Any cross-spawn options.
       */
-    def spawnCommand(command: String, args: js.Array[String]): js.Any = js.native
-    def spawnCommand(command: String, args: js.Array[String], opt: SpawnOptions): js.Any = js.native
+    def spawnCommand(command: String, args: js.Array[String]): Any = js.native
+    def spawnCommand(command: String, args: js.Array[String], opt: SpawnOptions): Any = js.native
     
     /**
       * Normalizes a command across the OS and spawns it (synchronously).
@@ -789,8 +832,8 @@ object mod {
       * @param args A list of arguments to pass to the program
       * @param opt Any cross-spawn options.
       */
-    def spawnCommandSync(command: String, args: js.Array[String]): js.Any = js.native
-    def spawnCommandSync(command: String, args: js.Array[String], opt: SpawnSyncOptions): js.Any = js.native
+    def spawnCommandSync(command: String, args: js.Array[String]): Any = js.native
+    def spawnCommandSync(command: String, args: js.Array[String], opt: SpawnSyncOptions): Any = js.native
     
     /**
       * Starts the generator again.
@@ -836,26 +879,27 @@ object mod {
     var writeDestinationJSON: FnCallFilepathContentsReplacerSpace = js.native
     
     /**
-      * Receives a list of `packages` and an `options` object to install through npm.
+      * @deprecated
+      * Receives a list of {@link packages `packages`} and an {@link options `options`} object to install through npm.
       *
       * The installation will automatically run during the run loop `install` phase.
       *
-      * @param pkgs Packages to install
+      * @param packages Packages to install
       * @param options Options to pass to `dargs` as arguments
-      * @param spawnOptions Options to pass `child_process.spawn`.
+      * @param spawnOptions Options to pass {@link spawn `child_process.spawn`}.
       */
     def yarnInstall(): Unit = js.native
-    def yarnInstall(pkgs: String): Unit = js.native
-    def yarnInstall(pkgs: String, options: js.Object): Unit = js.native
-    def yarnInstall(pkgs: String, options: js.Object, spawnOptions: SpawnOptions): Unit = js.native
-    def yarnInstall(pkgs: String, options: Unit, spawnOptions: SpawnOptions): Unit = js.native
-    def yarnInstall(pkgs: js.Array[String]): Unit = js.native
-    def yarnInstall(pkgs: js.Array[String], options: js.Object): Unit = js.native
-    def yarnInstall(pkgs: js.Array[String], options: js.Object, spawnOptions: SpawnOptions): Unit = js.native
-    def yarnInstall(pkgs: js.Array[String], options: Unit, spawnOptions: SpawnOptions): Unit = js.native
-    def yarnInstall(pkgs: Unit, options: js.Object): Unit = js.native
-    def yarnInstall(pkgs: Unit, options: js.Object, spawnOptions: SpawnOptions): Unit = js.native
-    def yarnInstall(pkgs: Unit, options: Unit, spawnOptions: SpawnOptions): Unit = js.native
+    def yarnInstall(packages: String): Unit = js.native
+    def yarnInstall(packages: String, options: js.Object): Unit = js.native
+    def yarnInstall(packages: String, options: js.Object, spawnOptions: SpawnOptions): Unit = js.native
+    def yarnInstall(packages: String, options: Unit, spawnOptions: SpawnOptions): Unit = js.native
+    def yarnInstall(packages: js.Array[String]): Unit = js.native
+    def yarnInstall(packages: js.Array[String], options: js.Object): Unit = js.native
+    def yarnInstall(packages: js.Array[String], options: js.Object, spawnOptions: SpawnOptions): Unit = js.native
+    def yarnInstall(packages: js.Array[String], options: Unit, spawnOptions: SpawnOptions): Unit = js.native
+    def yarnInstall(packages: Unit, options: js.Object): Unit = js.native
+    def yarnInstall(packages: Unit, options: js.Object, spawnOptions: SpawnOptions): Unit = js.native
+    def yarnInstall(packages: Unit, options: Unit, spawnOptions: SpawnOptions): Unit = js.native
   }
   
   /**
@@ -864,7 +908,90 @@ object mod {
   @js.native
   trait GeneratorConstructor
     extends StObject
-       with Instantiable1[/* args (repeated) */ js.Any, Generator[js.Any]]
+       with Instantiable1[/* args (repeated) */ Any, Generator[Any]]
+  
+  /**
+    * Represents generators feature
+    */
+  trait GeneratorFeatures extends StObject {
+    
+    /**
+      * Enable customCommitTask()
+      */
+    var customCommitTask: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Enable customInstallTask()
+      */
+    var customInstallTask: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Tasks methods starts with prefix. Allows api methods (non tasks) without prefix.
+      */
+    var taskPrefix: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Only queue methods that matches a priority
+      */
+    var tasksMatchingPriority: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The Generator instance unique identifier.
+      * The Environment will ignore duplicated identifiers.
+      */
+    var unique: js.UndefOr[String] = js.undefined
+    
+    /**
+      * uniqueBy calculation method (undefined/argument/namespace)
+      */
+    var uniqueBy: js.UndefOr[GeneratorFeaturesUniqueBy] = js.undefined
+  }
+  object GeneratorFeatures {
+    
+    inline def apply(): GeneratorFeatures = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[GeneratorFeatures]
+    }
+    
+    extension [Self <: GeneratorFeatures](x: Self) {
+      
+      inline def setCustomCommitTask(value: Boolean): Self = StObject.set(x, "customCommitTask", value.asInstanceOf[js.Any])
+      
+      inline def setCustomCommitTaskUndefined: Self = StObject.set(x, "customCommitTask", js.undefined)
+      
+      inline def setCustomInstallTask(value: Boolean): Self = StObject.set(x, "customInstallTask", value.asInstanceOf[js.Any])
+      
+      inline def setCustomInstallTaskUndefined: Self = StObject.set(x, "customInstallTask", js.undefined)
+      
+      inline def setTaskPrefix(value: String): Self = StObject.set(x, "taskPrefix", value.asInstanceOf[js.Any])
+      
+      inline def setTaskPrefixUndefined: Self = StObject.set(x, "taskPrefix", js.undefined)
+      
+      inline def setTasksMatchingPriority(value: Boolean): Self = StObject.set(x, "tasksMatchingPriority", value.asInstanceOf[js.Any])
+      
+      inline def setTasksMatchingPriorityUndefined: Self = StObject.set(x, "tasksMatchingPriority", js.undefined)
+      
+      inline def setUnique(value: String): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
+      
+      inline def setUniqueBy(value: GeneratorFeaturesUniqueBy): Self = StObject.set(x, "uniqueBy", value.asInstanceOf[js.Any])
+      
+      inline def setUniqueByUndefined: Self = StObject.set(x, "uniqueBy", js.undefined)
+      
+      inline def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
+    }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.yeomanGenerator.yeomanGeneratorStrings.argument
+    - typings.yeomanGenerator.yeomanGeneratorStrings.namespacep
+  */
+  trait GeneratorFeaturesUniqueBy extends StObject
+  object GeneratorFeaturesUniqueBy {
+    
+    inline def argument: typings.yeomanGenerator.yeomanGeneratorStrings.argument = "argument".asInstanceOf[typings.yeomanGenerator.yeomanGeneratorStrings.argument]
+    
+    inline def namespacep: typings.yeomanGenerator.yeomanGeneratorStrings.namespacep = "namespacep".asInstanceOf[typings.yeomanGenerator.yeomanGeneratorStrings.namespacep]
+  }
   
   /**
     * Provides options for generators.
@@ -874,12 +1001,29 @@ object mod {
        with /**
     * Gets or sets additional properties.
     */
-  /* name */ StringDictionary[js.Any] {
+  /* name */ StringDictionary[Any] {
     
     /**
       * Gets or sets a collection of custom priorities.
       */
     var customPriorities: js.UndefOr[js.Array[Priority]] = js.undefined
+    
+    /**
+      * The destination-root to write the files to.
+      */
+    var destinationRoot: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The environment to use for creating the generator.
+      */
+    var env: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Environment */ Any
+      ] = js.undefined
+    
+    /**
+      * The path to the generator.
+      */
+    var resolved: js.UndefOr[String] = js.undefined
   }
   object GeneratorOptions {
     
@@ -894,7 +1038,21 @@ object mod {
       
       inline def setCustomPrioritiesUndefined: Self = StObject.set(x, "customPriorities", js.undefined)
       
-      inline def setCustomPrioritiesVarargs(value: Priority*): Self = StObject.set(x, "customPriorities", js.Array(value :_*))
+      inline def setCustomPrioritiesVarargs(value: Priority*): Self = StObject.set(x, "customPriorities", js.Array(value*))
+      
+      inline def setDestinationRoot(value: String): Self = StObject.set(x, "destinationRoot", value.asInstanceOf[js.Any])
+      
+      inline def setDestinationRootUndefined: Self = StObject.set(x, "destinationRoot", js.undefined)
+      
+      inline def setEnv(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Environment */ Any
+      ): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      
+      inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+      
+      inline def setResolved(value: String): Self = StObject.set(x, "resolved", value.asInstanceOf[js.Any])
+      
+      inline def setResolvedUndefined: Self = StObject.set(x, "resolved", js.undefined)
     }
   }
   
@@ -958,7 +1116,7 @@ object mod {
     /**
       * The default value.
       */
-    var default: js.UndefOr[js.Any] = js.undefined
+    var default: js.UndefOr[Any] = js.undefined
     
     /**
       * The option name alias (example `-h` and --help`).
@@ -983,11 +1141,13 @@ object mod {
     /**
       * The type of the option.
       */
-    var `type`: BooleanConstructor | StringConstructor | NumberConstructor
+    var `type`: BooleanConstructor | StringConstructor | NumberConstructor | (js.Function1[/* opt */ String, Any])
   }
   object OptionConfig {
     
-    inline def apply(`type`: BooleanConstructor | StringConstructor | NumberConstructor): OptionConfig = {
+    inline def apply(
+      `type`: BooleanConstructor | StringConstructor | NumberConstructor | (js.Function1[/* opt */ String, Any])
+    ): OptionConfig = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionConfig]
@@ -999,7 +1159,7 @@ object mod {
       
       inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
       
-      inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
       inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
@@ -1015,7 +1175,11 @@ object mod {
       
       inline def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
       
-      inline def setType(value: BooleanConstructor | StringConstructor | NumberConstructor): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(
+        value: BooleanConstructor | StringConstructor | NumberConstructor | (js.Function1[/* opt */ String, Any])
+      ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeFunction1(value: /* opt */ String => Any): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
     }
   }
   
@@ -1071,7 +1235,7 @@ object mod {
   /**
     * Provides a set of questions.
     */
-  type Questions[A /* <: Answers */] = Question[A] | js.Array[Question[A]] | Observable_[Question[A]]
+  type Questions[A /* <: Answers */] = Question[A] | js.Array[Question[A]] | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<Question<A>> */ Any)
   
   /**
     * Provides options for queues.
@@ -1127,8 +1291,8 @@ object mod {
       * The function to queue.
       */
     def method(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
-    ): js.Any
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: Any
+    ): Any
     
     /**
       * The name of the task.
@@ -1137,14 +1301,14 @@ object mod {
   }
   object Task {
     
-    inline def apply(method: js.Any => js.Any, taskName: String): Task = {
+    inline def apply(method: Any => Any, taskName: String): Task = {
       val __obj = js.Dynamic.literal(method = js.Any.fromFunction1(method), taskName = taskName.asInstanceOf[js.Any])
       __obj.asInstanceOf[Task]
     }
     
     extension [Self <: Task](x: Self) {
       
-      inline def setMethod(value: js.Any => js.Any): Self = StObject.set(x, "method", js.Any.fromFunction1(value))
+      inline def setMethod(value: Any => Any): Self = StObject.set(x, "method", js.Any.fromFunction1(value))
       
       inline def setTaskName(value: String): Self = StObject.set(x, "taskName", value.asInstanceOf[js.Any])
     }
@@ -1171,7 +1335,7 @@ object mod {
     
     extension [Self <: TaskOptions](x: Self) {
       
-      inline def setReject(value: /* err */ js.Any => Unit): Self = StObject.set(x, "reject", js.Any.fromFunction1(value))
+      inline def setReject(value: /* err */ Any => Unit): Self = StObject.set(x, "reject", js.Any.fromFunction1(value))
       
       inline def setRejectUndefined: Self = StObject.set(x, "reject", js.undefined)
     }
@@ -1180,7 +1344,7 @@ object mod {
   /**
     * Provides settings for rendering a template.
     */
-  trait TemplateRenderOptions[T /* <: Generator[js.Any] */] extends StObject {
+  trait TemplateRenderOptions[T /* <: Generator[Any] */] extends StObject {
     
     /**
       * The `mem-fs-editor` copy-options.
@@ -1188,12 +1352,12 @@ object mod {
     var copyOptions: js.UndefOr[CopyOptions] = js.undefined
     
     /**
-      * The destination, absolute or relative to `destinationPath()`.
+      * The destination, absolute or relative to {@link Generator.destinationPath `destinationPath()`}.
       */
     var destination: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
-      * The template file, absolute or relative to `templatePath()`.
+      * The template file, absolute or relative to {@link Generator.templatePath `templatePath()`}.
       */
     var source: String | js.Array[String]
     
@@ -1209,12 +1373,12 @@ object mod {
   }
   object TemplateRenderOptions {
     
-    inline def apply[T /* <: Generator[js.Any] */](source: String | js.Array[String]): TemplateRenderOptions[T] = {
+    inline def apply[T /* <: Generator[Any] */](source: String | js.Array[String]): TemplateRenderOptions[T] = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[TemplateRenderOptions[T]]
     }
     
-    extension [Self <: TemplateRenderOptions[?], T /* <: Generator[js.Any] */](x: Self & TemplateRenderOptions[T]) {
+    extension [Self <: TemplateRenderOptions[?], T /* <: Generator[Any] */](x: Self & TemplateRenderOptions[T]) {
       
       inline def setCopyOptions(value: CopyOptions): Self = StObject.set(x, "copyOptions", value.asInstanceOf[js.Any])
       
@@ -1224,11 +1388,11 @@ object mod {
       
       inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
       
-      inline def setDestinationVarargs(value: String*): Self = StObject.set(x, "destination", js.Array(value :_*))
+      inline def setDestinationVarargs(value: String*): Self = StObject.set(x, "destination", js.Array(value*))
       
       inline def setSource(value: String | js.Array[String]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      inline def setSourceVarargs(value: String*): Self = StObject.set(x, "source", js.Array(value :_*))
+      inline def setSourceVarargs(value: String*): Self = StObject.set(x, "source", js.Array(value*))
       
       inline def setTemplateOptions(value: Options): Self = StObject.set(x, "templateOptions", value.asInstanceOf[js.Any])
       

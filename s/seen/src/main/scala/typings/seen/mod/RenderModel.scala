@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "RenderModel")
 @js.native
-class RenderModel protected () extends StObject {
+open class RenderModel protected () extends StObject {
   def this(surface: Surface, transform: Matrix, projection: Matrix, viewport: Matrix) = this()
   
   def update(transform: Matrix, projection: Matrix, viewport: Matrix): Unit = js.native

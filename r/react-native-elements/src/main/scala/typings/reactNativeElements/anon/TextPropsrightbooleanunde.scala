@@ -1,10 +1,10 @@
 package typings.reactNativeElements.anon
 
+import typings.react.mod.ReactNode
 import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
 import typings.reactNative.mod.AccessibilityState
-import typings.reactNative.mod.AccessibilityTrait
 import typings.reactNative.mod.AccessibilityValue
 import typings.reactNative.mod.ColorValue
 import typings.reactNative.mod.GestureResponderEvent
@@ -18,19 +18,18 @@ import typings.reactNativeElements.reactNativeElementsStrings.all
 import typings.reactNativeElements.reactNativeElementsStrings.assertive
 import typings.reactNativeElements.reactNativeElementsStrings.auto
 import typings.reactNativeElements.reactNativeElementsStrings.balanced
-import typings.reactNativeElements.reactNativeElementsStrings.button
 import typings.reactNativeElements.reactNativeElementsStrings.clip
 import typings.reactNativeElements.reactNativeElementsStrings.email
+import typings.reactNativeElements.reactNativeElementsStrings.full
 import typings.reactNativeElements.reactNativeElementsStrings.head
 import typings.reactNativeElements.reactNativeElementsStrings.highQuality
 import typings.reactNativeElements.reactNativeElementsStrings.link
 import typings.reactNativeElements.reactNativeElementsStrings.middle
 import typings.reactNativeElements.reactNativeElementsStrings.no
 import typings.reactNativeElements.reactNativeElementsStrings.none
+import typings.reactNativeElements.reactNativeElementsStrings.normal
 import typings.reactNativeElements.reactNativeElementsStrings.phoneNumber
 import typings.reactNativeElements.reactNativeElementsStrings.polite
-import typings.reactNativeElements.reactNativeElementsStrings.radiobutton_checked
-import typings.reactNativeElements.reactNativeElementsStrings.radiobutton_unchecked
 import typings.reactNativeElements.reactNativeElementsStrings.simple
 import typings.reactNativeElements.reactNativeElementsStrings.tail
 import typings.reactNativeElements.reactNativeElementsStrings.yes
@@ -38,22 +37,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined react-native-elements.react-native-elements.TextProps & {  right :boolean | undefined} */
+/* Inlined react-native.react-native.TextProps & {  right :boolean | undefined} & std.Partial<react-native-elements.react-native-elements/dist/config.ThemeProps<react-native.react-native.TextProps & {  right :boolean | undefined}>> */
 trait TextPropsrightbooleanunde extends StObject {
   
   /**
     * Provides an array of custom actions available for accessibility.
     */
   var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.undefined
-  
-  /**
-    * In some cases, we also want to alert the end user of the type of selected component (i.e., that it is a “button”).
-    * If we were using native buttons, this would work automatically. Since we are using javascript, we need to
-    * provide a bit more context for TalkBack. To do so, you must specify the ‘accessibilityComponentType’ property
-    * for any UI component. For instances, we support ‘button’, ‘radiobutton_checked’ and ‘radiobutton_unchecked’ and so on.
-    * @platform android
-    */
-  var accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.undefined
   
   /**
     * A Boolean value indicating whether the accessibility elements contained within this accessibility element
@@ -80,6 +70,20 @@ trait TextPropsrightbooleanunde extends StObject {
   var accessibilityLabel: js.UndefOr[String] = js.undefined
   
   /**
+    * Specifies the nativeID of the associated label text. When the assistive technology focuses on the component with this props, the text is read aloud.
+    * @platform android
+    */
+  var accessibilityLabelledBy: js.UndefOr[String | js.Array[String]] = js.undefined
+  
+  /**
+    * Indicates to the accessibility services that the UI component is in
+    * a specific language. The provided string should be formatted following
+    * the BCP 47 specification (https://www.rfc-editor.org/info/bcp47).
+    * @platform ios
+    */
+  var accessibilityLanguage: js.UndefOr[String] = js.undefined
+  
+  /**
     * Indicates to accessibility services whether the user should be notified when this view changes.
     * Works for Android API >= 19 only.
     * See http://developer.android.com/reference/android/view/View.html#attr_android:accessibilityLiveRegion for references.
@@ -96,13 +100,6 @@ trait TextPropsrightbooleanunde extends StObject {
     * Accessibility State tells a person using either VoiceOver on iOS or TalkBack on Android the state of the element currently focused on.
     */
   var accessibilityState: js.UndefOr[AccessibilityState] = js.undefined
-  
-  /**
-    * Accessibility traits tell a person using VoiceOver what kind of element they have selected.
-    * Is this element a label? A button? A header? These questions are answered by accessibilityTraits.
-    * @platform ios
-    */
-  var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.undefined
   
   /**
     * Represents the current value of a component. It can be a textual description of a component's value, or for range-based components, such as sliders and progress bars,
@@ -134,6 +131,13 @@ trait TextPropsrightbooleanunde extends StObject {
   var allowFontScaling: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Hyphenation strategy
+    */
+  var android_hyphenationFrequency: js.UndefOr[normal | none | full] = js.undefined
+  
+  var children: js.UndefOr[ReactNode] = js.undefined
+  
+  /**
     * Determines the types of data converted to clickable URLs in the text element.
     * By default no data types are detected.
     */
@@ -157,46 +161,6 @@ trait TextPropsrightbooleanunde extends StObject {
     * > `clip` is working only for iOS
     */
   var ellipsizeMode: js.UndefOr[head | middle | tail | clip] = js.undefined
-  
-  /**
-    * font size 40
-    */
-  var h1: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * Styling for when `h1` is set
-    */
-  var h1Style: js.UndefOr[StyleProp[TextStyle]] = js.undefined
-  
-  /**
-    * font size 34
-    */
-  var h2: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * Styling for when `h2` is set
-    */
-  var h2Style: js.UndefOr[StyleProp[TextStyle]] = js.undefined
-  
-  /**
-    * font size 28
-    */
-  var h3: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * Styling for when `h3` is set
-    */
-  var h3Style: js.UndefOr[StyleProp[TextStyle]] = js.undefined
-  
-  /**
-    * font size 22
-    */
-  var h4: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * Styling for when `h4` is set
-    */
-  var h4Style: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   /**
     * Controls how view is important for accessibility which is if it fires accessibility events
@@ -286,10 +250,16 @@ trait TextPropsrightbooleanunde extends StObject {
     */
   var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
+  var onPressIn: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
+  
+  var onPressOut: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
+  
   /**
     * Invoked on Text layout
     */
   var onTextLayout: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[TextLayoutEventData], Unit]] = js.undefined
+  
+  var replaceTheme: js.UndefOr[js.Function1[/* updates */ RecursivePartialFullThemeAirbnbRating, Unit]] = js.undefined
   
   var right: js.UndefOr[Boolean] = js.undefined
   
@@ -304,7 +274,7 @@ trait TextPropsrightbooleanunde extends StObject {
   var selectionColor: js.UndefOr[ColorValue] = js.undefined
   
   /**
-    * Additional styling for Text
+    * @see https://reactnative.dev/docs/text#style
     */
   var style: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
@@ -324,6 +294,10 @@ trait TextPropsrightbooleanunde extends StObject {
     * default is `highQuality`.
     */
   var textBreakStrategy: js.UndefOr[simple | highQuality | balanced] = js.undefined
+  
+  var theme: js.UndefOr[ThemeTextPropsrightboolea] = js.undefined
+  
+  var updateTheme: js.UndefOr[js.Function1[/* updates */ RecursivePartialFullThemeAirbnbRating, Unit]] = js.undefined
 }
 object TextPropsrightbooleanunde {
   
@@ -338,11 +312,7 @@ object TextPropsrightbooleanunde {
     
     inline def setAccessibilityActionsUndefined: Self = StObject.set(x, "accessibilityActions", js.undefined)
     
-    inline def setAccessibilityActionsVarargs(value: AccessibilityActionInfo*): Self = StObject.set(x, "accessibilityActions", js.Array(value :_*))
-    
-    inline def setAccessibilityComponentType(value: none | button | radiobutton_checked | radiobutton_unchecked): Self = StObject.set(x, "accessibilityComponentType", value.asInstanceOf[js.Any])
-    
-    inline def setAccessibilityComponentTypeUndefined: Self = StObject.set(x, "accessibilityComponentType", js.undefined)
+    inline def setAccessibilityActionsVarargs(value: AccessibilityActionInfo*): Self = StObject.set(x, "accessibilityActions", js.Array(value*))
     
     inline def setAccessibilityElementsHidden(value: Boolean): Self = StObject.set(x, "accessibilityElementsHidden", value.asInstanceOf[js.Any])
     
@@ -360,6 +330,16 @@ object TextPropsrightbooleanunde {
     
     inline def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
     
+    inline def setAccessibilityLabelledBy(value: String | js.Array[String]): Self = StObject.set(x, "accessibilityLabelledBy", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityLabelledByUndefined: Self = StObject.set(x, "accessibilityLabelledBy", js.undefined)
+    
+    inline def setAccessibilityLabelledByVarargs(value: String*): Self = StObject.set(x, "accessibilityLabelledBy", js.Array(value*))
+    
+    inline def setAccessibilityLanguage(value: String): Self = StObject.set(x, "accessibilityLanguage", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityLanguageUndefined: Self = StObject.set(x, "accessibilityLanguage", js.undefined)
+    
     inline def setAccessibilityLiveRegion(value: none | polite | assertive): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityLiveRegionUndefined: Self = StObject.set(x, "accessibilityLiveRegion", js.undefined)
@@ -371,12 +351,6 @@ object TextPropsrightbooleanunde {
     inline def setAccessibilityState(value: AccessibilityState): Self = StObject.set(x, "accessibilityState", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityStateUndefined: Self = StObject.set(x, "accessibilityState", js.undefined)
-    
-    inline def setAccessibilityTraits(value: AccessibilityTrait | js.Array[AccessibilityTrait]): Self = StObject.set(x, "accessibilityTraits", value.asInstanceOf[js.Any])
-    
-    inline def setAccessibilityTraitsUndefined: Self = StObject.set(x, "accessibilityTraits", js.undefined)
-    
-    inline def setAccessibilityTraitsVarargs(value: AccessibilityTrait*): Self = StObject.set(x, "accessibilityTraits", js.Array(value :_*))
     
     inline def setAccessibilityValue(value: AccessibilityValue): Self = StObject.set(x, "accessibilityValue", value.asInstanceOf[js.Any])
     
@@ -398,6 +372,14 @@ object TextPropsrightbooleanunde {
     
     inline def setAllowFontScalingUndefined: Self = StObject.set(x, "allowFontScaling", js.undefined)
     
+    inline def setAndroid_hyphenationFrequency(value: normal | none | full): Self = StObject.set(x, "android_hyphenationFrequency", value.asInstanceOf[js.Any])
+    
+    inline def setAndroid_hyphenationFrequencyUndefined: Self = StObject.set(x, "android_hyphenationFrequency", js.undefined)
+    
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
     inline def setDataDetectorType(value: phoneNumber | link | email | none | all): Self = StObject.set(x, "dataDetectorType", value.asInstanceOf[js.Any])
     
     inline def setDataDetectorTypeNull: Self = StObject.set(x, "dataDetectorType", null)
@@ -407,46 +389,6 @@ object TextPropsrightbooleanunde {
     inline def setEllipsizeMode(value: head | middle | tail | clip): Self = StObject.set(x, "ellipsizeMode", value.asInstanceOf[js.Any])
     
     inline def setEllipsizeModeUndefined: Self = StObject.set(x, "ellipsizeMode", js.undefined)
-    
-    inline def setH1(value: Boolean): Self = StObject.set(x, "h1", value.asInstanceOf[js.Any])
-    
-    inline def setH1Style(value: StyleProp[TextStyle]): Self = StObject.set(x, "h1Style", value.asInstanceOf[js.Any])
-    
-    inline def setH1StyleNull: Self = StObject.set(x, "h1Style", null)
-    
-    inline def setH1StyleUndefined: Self = StObject.set(x, "h1Style", js.undefined)
-    
-    inline def setH1Undefined: Self = StObject.set(x, "h1", js.undefined)
-    
-    inline def setH2(value: Boolean): Self = StObject.set(x, "h2", value.asInstanceOf[js.Any])
-    
-    inline def setH2Style(value: StyleProp[TextStyle]): Self = StObject.set(x, "h2Style", value.asInstanceOf[js.Any])
-    
-    inline def setH2StyleNull: Self = StObject.set(x, "h2Style", null)
-    
-    inline def setH2StyleUndefined: Self = StObject.set(x, "h2Style", js.undefined)
-    
-    inline def setH2Undefined: Self = StObject.set(x, "h2", js.undefined)
-    
-    inline def setH3(value: Boolean): Self = StObject.set(x, "h3", value.asInstanceOf[js.Any])
-    
-    inline def setH3Style(value: StyleProp[TextStyle]): Self = StObject.set(x, "h3Style", value.asInstanceOf[js.Any])
-    
-    inline def setH3StyleNull: Self = StObject.set(x, "h3Style", null)
-    
-    inline def setH3StyleUndefined: Self = StObject.set(x, "h3Style", js.undefined)
-    
-    inline def setH3Undefined: Self = StObject.set(x, "h3", js.undefined)
-    
-    inline def setH4(value: Boolean): Self = StObject.set(x, "h4", value.asInstanceOf[js.Any])
-    
-    inline def setH4Style(value: StyleProp[TextStyle]): Self = StObject.set(x, "h4Style", value.asInstanceOf[js.Any])
-    
-    inline def setH4StyleNull: Self = StObject.set(x, "h4Style", null)
-    
-    inline def setH4StyleUndefined: Self = StObject.set(x, "h4Style", js.undefined)
-    
-    inline def setH4Undefined: Self = StObject.set(x, "h4", js.undefined)
     
     inline def setImportantForAccessibility(value: auto | yes | no | `no-hide-descendants`): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
     
@@ -500,11 +442,23 @@ object TextPropsrightbooleanunde {
     
     inline def setOnPress(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
     
+    inline def setOnPressIn(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPressIn", js.Any.fromFunction1(value))
+    
+    inline def setOnPressInUndefined: Self = StObject.set(x, "onPressIn", js.undefined)
+    
+    inline def setOnPressOut(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPressOut", js.Any.fromFunction1(value))
+    
+    inline def setOnPressOutUndefined: Self = StObject.set(x, "onPressOut", js.undefined)
+    
     inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     
     inline def setOnTextLayout(value: /* event */ NativeSyntheticEvent[TextLayoutEventData] => Unit): Self = StObject.set(x, "onTextLayout", js.Any.fromFunction1(value))
     
     inline def setOnTextLayoutUndefined: Self = StObject.set(x, "onTextLayout", js.undefined)
+    
+    inline def setReplaceTheme(value: /* updates */ RecursivePartialFullThemeAirbnbRating => Unit): Self = StObject.set(x, "replaceTheme", js.Any.fromFunction1(value))
+    
+    inline def setReplaceThemeUndefined: Self = StObject.set(x, "replaceTheme", js.undefined)
     
     inline def setRight(value: Boolean): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
@@ -535,5 +489,13 @@ object TextPropsrightbooleanunde {
     inline def setTextBreakStrategy(value: simple | highQuality | balanced): Self = StObject.set(x, "textBreakStrategy", value.asInstanceOf[js.Any])
     
     inline def setTextBreakStrategyUndefined: Self = StObject.set(x, "textBreakStrategy", js.undefined)
+    
+    inline def setTheme(value: ThemeTextPropsrightboolea): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    
+    inline def setUpdateTheme(value: /* updates */ RecursivePartialFullThemeAirbnbRating => Unit): Self = StObject.set(x, "updateTheme", js.Any.fromFunction1(value))
+    
+    inline def setUpdateThemeUndefined: Self = StObject.set(x, "updateTheme", js.undefined)
   }
 }

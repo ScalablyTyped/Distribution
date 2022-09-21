@@ -10,5 +10,5 @@ trait JQueryStatic extends StObject {
   def contextMenu(): JQuery = js.native
   def contextMenu(options: JQueryContextMenuOptions): JQuery = js.native
   def contextMenu(`type`: String): JQuery = js.native
-  def contextMenu(`type`: String, selector: js.Any): JQuery = js.native
+  def contextMenu(`type`: String, selector: Any): JQuery = js.native
 }

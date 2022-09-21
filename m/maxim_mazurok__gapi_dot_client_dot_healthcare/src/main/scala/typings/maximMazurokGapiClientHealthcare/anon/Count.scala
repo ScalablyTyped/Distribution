@@ -10,7 +10,7 @@ trait Count extends StObject {
   @JSName("$.xgafv")
   var $Dotxgafv: js.UndefOr[String] = js.undefined
   
-  /** Maximum number of resources in a page. Defaults to 100. */
+  /** Maximum number of resources in a page. If not specified, 100 is used. May not be larger than 1000. */
   var _count: js.UndefOr[Double] = js.undefined
   
   /**
@@ -37,7 +37,7 @@ trait Count extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
-  /** The response includes records prior to the end date. If no end date is provided, all records subsequent to the start date are in scope. */
+  /** The response includes records prior to the end date. The date uses the format YYYY-MM-DD. If no end date is provided, all records subsequent to the start date are in scope. */
   var end: js.UndefOr[String] = js.undefined
   
   /** Selector specifying which fields to include in a partial response. */
@@ -58,7 +58,7 @@ trait Count extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** The response includes records subsequent to the start date. If no start date is provided, all records prior to the end date are in scope. */
+  /** The response includes records subsequent to the start date. The date uses the format YYYY-MM-DD. If no start date is provided, all records prior to the end date are in scope. */
   var start: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */

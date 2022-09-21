@@ -10,9 +10,9 @@ simplified stream construction
 | Full name          | through |
 | Keywords           | stream, streams, user-streams, pipe |
 | # releases         | 0 |
-| # dependents       | 2076 |
-| # downloads        | 710563257 |
-| # stars            | 102 |
+| # dependents       | 0.0 |
+| # downloads        | 9.080003466666667E7 |
+| # stars            | 672.0 |
 
 ## Links
 - [Homepage](https://github.com/dominictarr/through)

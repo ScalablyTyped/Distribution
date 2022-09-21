@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "OrderPricingOptions")
 @js.native
-class OrderPricingOptions () extends StObject {
+open class OrderPricingOptions () extends StObject {
   
   /**
     * The option to determine whether or not pricing rule-based discounts are automatically applied to an order.

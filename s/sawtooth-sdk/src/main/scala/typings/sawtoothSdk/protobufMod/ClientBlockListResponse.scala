@@ -5,7 +5,6 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.sawtoothSdk.protobufMod.ClientBlockListResponse.Status
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ClientBlockListResponse.
   * @param [properties] Properties to set
   */
-class ClientBlockListResponse ()
+open class ClientBlockListResponse ()
   extends StObject
      with IClientBlockListResponse {
   def this(properties: IClientBlockListResponse) = this()
@@ -37,7 +36,7 @@ class ClientBlockListResponse ()
     * Converts this ClientBlockListResponse to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 /* static members */
 object ClientBlockListResponse {
@@ -119,6 +118,8 @@ object ClientBlockListResponse {
   inline def create(): ClientBlockListResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ClientBlockListResponse]
   inline def create(properties: IClientBlockListResponse): ClientBlockListResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ClientBlockListResponse]
   
+  inline def decode(reader: js.typedarray.Uint8Array): ClientBlockListResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientBlockListResponse]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): ClientBlockListResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ClientBlockListResponse]
   /**
     * Decodes a ClientBlockListResponse message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -129,9 +130,8 @@ object ClientBlockListResponse {
     */
   inline def decode(reader: Reader): ClientBlockListResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientBlockListResponse]
   inline def decode(reader: Reader, length: Double): ClientBlockListResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ClientBlockListResponse]
-  inline def decode(reader: Uint8Array): ClientBlockListResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientBlockListResponse]
-  inline def decode(reader: Uint8Array, length: Double): ClientBlockListResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ClientBlockListResponse]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): ClientBlockListResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientBlockListResponse]
   /**
     * Decodes a ClientBlockListResponse message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -140,7 +140,6 @@ object ClientBlockListResponse {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   inline def decodeDelimited(reader: Reader): ClientBlockListResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientBlockListResponse]
-  inline def decodeDelimited(reader: Uint8Array): ClientBlockListResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientBlockListResponse]
   
   /**
     * Encodes the specified ClientBlockListResponse message. Does not implicitly {@link ClientBlockListResponse.verify|verify} messages.
@@ -165,7 +164,7 @@ object ClientBlockListResponse {
     * @param object Plain object
     * @returns ClientBlockListResponse
     */
-  inline def fromObject(`object`: StringDictionary[js.Any]): ClientBlockListResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ClientBlockListResponse]
+  inline def fromObject(`object`: StringDictionary[Any]): ClientBlockListResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ClientBlockListResponse]
   
   /**
     * Creates a plain object from a ClientBlockListResponse message. Also converts values to other types if specified.
@@ -173,13 +172,13 @@ object ClientBlockListResponse {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  inline def toObject(message: ClientBlockListResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: ClientBlockListResponse, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ClientBlockListResponse): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: ClientBlockListResponse, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a ClientBlockListResponse message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

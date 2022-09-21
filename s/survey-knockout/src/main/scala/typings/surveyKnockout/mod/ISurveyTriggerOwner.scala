@@ -6,39 +6,49 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ISurveyTriggerOwner extends StObject {
   
-  def copyTriggerValue(name: String, fromName: String): js.Any
+  def canBeCompleted(): Unit
+  
+  def copyTriggerValue(name: String, fromName: String): Any
   
   def focusQuestion(name: String): Boolean
   
-  def getObjects(pages: js.Array[String], questions: js.Array[String]): js.Array[js.Any]
+  def getObjects(pages: Any, questions: Any): js.Array[Any]
   
-  def setCompleted(): js.Any
+  def setCompleted(): Unit
   
-  def setTriggerValue(name: String, value: js.Any, isVariable: Boolean): js.Any
+  def setTriggerValue(name: String, value: Any, isVariable: Boolean): Any
+  
+  def triggerExecuted(trigger: Trigger): Unit
 }
 object ISurveyTriggerOwner {
   
   inline def apply(
-    copyTriggerValue: (String, String) => js.Any,
+    canBeCompleted: () => Unit,
+    copyTriggerValue: (String, String) => Any,
     focusQuestion: String => Boolean,
-    getObjects: (js.Array[String], js.Array[String]) => js.Array[js.Any],
-    setCompleted: () => js.Any,
-    setTriggerValue: (String, js.Any, Boolean) => js.Any
+    getObjects: (Any, Any) => js.Array[Any],
+    setCompleted: () => Unit,
+    setTriggerValue: (String, Any, Boolean) => Any,
+    triggerExecuted: Trigger => Unit
   ): ISurveyTriggerOwner = {
-    val __obj = js.Dynamic.literal(copyTriggerValue = js.Any.fromFunction2(copyTriggerValue), focusQuestion = js.Any.fromFunction1(focusQuestion), getObjects = js.Any.fromFunction2(getObjects), setCompleted = js.Any.fromFunction0(setCompleted), setTriggerValue = js.Any.fromFunction3(setTriggerValue))
+    val __obj = js.Dynamic.literal(canBeCompleted = js.Any.fromFunction0(canBeCompleted), copyTriggerValue = js.Any.fromFunction2(copyTriggerValue), focusQuestion = js.Any.fromFunction1(focusQuestion), getObjects = js.Any.fromFunction2(getObjects), setCompleted = js.Any.fromFunction0(setCompleted), setTriggerValue = js.Any.fromFunction3(setTriggerValue), triggerExecuted = js.Any.fromFunction1(triggerExecuted))
     __obj.asInstanceOf[ISurveyTriggerOwner]
   }
   
   extension [Self <: ISurveyTriggerOwner](x: Self) {
     
-    inline def setCopyTriggerValue(value: (String, String) => js.Any): Self = StObject.set(x, "copyTriggerValue", js.Any.fromFunction2(value))
+    inline def setCanBeCompleted(value: () => Unit): Self = StObject.set(x, "canBeCompleted", js.Any.fromFunction0(value))
+    
+    inline def setCopyTriggerValue(value: (String, String) => Any): Self = StObject.set(x, "copyTriggerValue", js.Any.fromFunction2(value))
     
     inline def setFocusQuestion(value: String => Boolean): Self = StObject.set(x, "focusQuestion", js.Any.fromFunction1(value))
     
-    inline def setGetObjects(value: (js.Array[String], js.Array[String]) => js.Array[js.Any]): Self = StObject.set(x, "getObjects", js.Any.fromFunction2(value))
+    inline def setGetObjects(value: (Any, Any) => js.Array[Any]): Self = StObject.set(x, "getObjects", js.Any.fromFunction2(value))
     
-    inline def setSetCompleted(value: () => js.Any): Self = StObject.set(x, "setCompleted", js.Any.fromFunction0(value))
+    inline def setSetCompleted(value: () => Unit): Self = StObject.set(x, "setCompleted", js.Any.fromFunction0(value))
     
-    inline def setSetTriggerValue(value: (String, js.Any, Boolean) => js.Any): Self = StObject.set(x, "setTriggerValue", js.Any.fromFunction3(value))
+    inline def setSetTriggerValue(value: (String, Any, Boolean) => Any): Self = StObject.set(x, "setTriggerValue", js.Any.fromFunction3(value))
+    
+    inline def setTriggerExecuted(value: Trigger => Unit): Self = StObject.set(x, "triggerExecuted", js.Any.fromFunction1(value))
   }
 }

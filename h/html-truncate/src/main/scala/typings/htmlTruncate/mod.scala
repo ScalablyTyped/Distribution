@@ -21,17 +21,27 @@ object mod {
     /**
       * Omission symbol for truncated string, '...' by default.
       */
-    var ellipsis: Boolean | String
+    var ellipsis: js.UndefOr[Boolean | String] = js.undefined
     
     /**
       * Flag to specify if keep image tag, false by default.
       */
-    var keepImageTag: Boolean
+    var keepImageTag: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Tolerance when options.truncateLastWord is false before we give up and just truncate at the maxLength position, 10 by default (but not greater than maxLength)
+      */
+    var slop: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * truncates last word, true by default
+      */
+    var truncateLastWord: js.UndefOr[Boolean] = js.undefined
   }
   object TruncateOptions {
     
-    inline def apply(ellipsis: Boolean | String, keepImageTag: Boolean): TruncateOptions = {
-      val __obj = js.Dynamic.literal(ellipsis = ellipsis.asInstanceOf[js.Any], keepImageTag = keepImageTag.asInstanceOf[js.Any])
+    inline def apply(): TruncateOptions = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TruncateOptions]
     }
     
@@ -39,7 +49,19 @@ object mod {
       
       inline def setEllipsis(value: Boolean | String): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
       
+      inline def setEllipsisUndefined: Self = StObject.set(x, "ellipsis", js.undefined)
+      
       inline def setKeepImageTag(value: Boolean): Self = StObject.set(x, "keepImageTag", value.asInstanceOf[js.Any])
+      
+      inline def setKeepImageTagUndefined: Self = StObject.set(x, "keepImageTag", js.undefined)
+      
+      inline def setSlop(value: Double): Self = StObject.set(x, "slop", value.asInstanceOf[js.Any])
+      
+      inline def setSlopUndefined: Self = StObject.set(x, "slop", js.undefined)
+      
+      inline def setTruncateLastWord(value: Boolean): Self = StObject.set(x, "truncateLastWord", value.asInstanceOf[js.Any])
+      
+      inline def setTruncateLastWordUndefined: Self = StObject.set(x, "truncateLastWord", js.undefined)
     }
   }
 }

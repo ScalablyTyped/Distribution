@@ -8,5 +8,5 @@ object deleteGlobalSecondaryIndexActionMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/model/_DeleteGlobalSecondaryIndexAction", "_DeleteGlobalSecondaryIndexAction")
   @js.native
-  val DeleteGlobalSecondaryIndexAction: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DeleteGlobalSecondaryIndexAction: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -11,7 +11,7 @@ trait IgRadialGauge
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Event which is raised when a label of the gauge is aligned along the scale.
@@ -161,7 +161,7 @@ trait IgRadialGauge
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.undefined
+  var locale: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the maximum value of the scale.
@@ -337,13 +337,13 @@ trait IgRadialGauge
     * Gets or sets a collection of brushes to be used as the palette for gauge ranges.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var rangeBrushes: js.UndefOr[js.Any] = js.undefined
+  var rangeBrushes: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets a collection of brushes to be used as the palette for gauge outlines.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var rangeOutlines: js.UndefOr[js.Any] = js.undefined
+  var rangeOutlines: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the scale ranges to render on the linear gauge.
@@ -437,7 +437,7 @@ trait IgRadialGauge
   /**
     * Gets or sets the easing function used to morph the current series.
     */
-  var transitionEasingFunction: js.UndefOr[js.Any] = js.undefined
+  var transitionEasingFunction: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets the transition progress of the animation when the control is animating.
@@ -556,7 +556,7 @@ object IgRadialGauge {
     
     inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    inline def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
@@ -668,11 +668,11 @@ object IgRadialGauge {
     
     inline def setRadiusMultiplierUndefined: Self = StObject.set(x, "radiusMultiplier", js.undefined)
     
-    inline def setRangeBrushes(value: js.Any): Self = StObject.set(x, "rangeBrushes", value.asInstanceOf[js.Any])
+    inline def setRangeBrushes(value: Any): Self = StObject.set(x, "rangeBrushes", value.asInstanceOf[js.Any])
     
     inline def setRangeBrushesUndefined: Self = StObject.set(x, "rangeBrushes", js.undefined)
     
-    inline def setRangeOutlines(value: js.Any): Self = StObject.set(x, "rangeOutlines", value.asInstanceOf[js.Any])
+    inline def setRangeOutlines(value: Any): Self = StObject.set(x, "rangeOutlines", value.asInstanceOf[js.Any])
     
     inline def setRangeOutlinesUndefined: Self = StObject.set(x, "rangeOutlines", js.undefined)
     
@@ -680,7 +680,7 @@ object IgRadialGauge {
     
     inline def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
     
-    inline def setRangesVarargs(value: IgRadialGaugeRange*): Self = StObject.set(x, "ranges", js.Array(value :_*))
+    inline def setRangesVarargs(value: IgRadialGaugeRange*): Self = StObject.set(x, "ranges", js.Array(value*))
     
     inline def setRegional(value: String | js.Object): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
     
@@ -738,7 +738,7 @@ object IgRadialGauge {
     
     inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
     
-    inline def setTransitionEasingFunction(value: js.Any): Self = StObject.set(x, "transitionEasingFunction", value.asInstanceOf[js.Any])
+    inline def setTransitionEasingFunction(value: Any): Self = StObject.set(x, "transitionEasingFunction", value.asInstanceOf[js.Any])
     
     inline def setTransitionEasingFunctionUndefined: Self = StObject.set(x, "transitionEasingFunction", js.undefined)
     

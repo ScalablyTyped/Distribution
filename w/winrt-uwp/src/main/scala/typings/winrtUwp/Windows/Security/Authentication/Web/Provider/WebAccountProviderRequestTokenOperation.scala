@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Security.Authentication.Web.Provider
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Security.Authentication.Web.Core.WebProviderError
 import org.scalablytyped.runtime.StObject
@@ -11,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WebAccountProviderRequestTokenOperation extends StObject {
   
   /** Gets or sets the cache expiration time. */
-  var cacheExpirationTime: Date
+  var cacheExpirationTime: js.Date
   
   /** Gets the kind of web account provider operation. */
   var kind: WebAccountProviderOperationKind
@@ -37,7 +36,7 @@ trait WebAccountProviderRequestTokenOperation extends StObject {
 object WebAccountProviderRequestTokenOperation {
   
   inline def apply(
-    cacheExpirationTime: Date,
+    cacheExpirationTime: js.Date,
     kind: WebAccountProviderOperationKind,
     providerRequest: WebProviderTokenRequest,
     providerResponses: IVector[WebProviderTokenResponse],
@@ -51,7 +50,7 @@ object WebAccountProviderRequestTokenOperation {
   
   extension [Self <: WebAccountProviderRequestTokenOperation](x: Self) {
     
-    inline def setCacheExpirationTime(value: Date): Self = StObject.set(x, "cacheExpirationTime", value.asInstanceOf[js.Any])
+    inline def setCacheExpirationTime(value: js.Date): Self = StObject.set(x, "cacheExpirationTime", value.asInstanceOf[js.Any])
     
     inline def setKind(value: WebAccountProviderOperationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

@@ -1,25 +1,28 @@
 package typings.youtube.YT
 
-import typings.youtube.youtubeNumbers.`0`
-import typings.youtube.youtubeNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.youtube.youtubeNumbers.`0`
-  - typings.youtube.youtubeNumbers.`1`
-*/
-trait ModestBranding extends StObject
-object ModestBranding {
+@js.native
+sealed trait ModestBranding extends StObject
+@JSGlobal("YT.ModestBranding")
+@js.native
+object ModestBranding extends StObject {
   
   /**
     * Player will contain full YouTube branding.
     */
-  inline def Full: `0` = 0.asInstanceOf[`0`]
+  @js.native
+  sealed trait Full
+    extends StObject
+       with ModestBranding
   
   /**
     * YouTube logo will not display in the control bar.
     */
-  inline def Modest: `1` = 1.asInstanceOf[`1`]
+  @js.native
+  sealed trait Modest
+    extends StObject
+       with ModestBranding
 }

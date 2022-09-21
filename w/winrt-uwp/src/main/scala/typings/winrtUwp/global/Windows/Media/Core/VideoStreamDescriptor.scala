@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Defines an video media stream. */
 @JSGlobal("Windows.Media.Core.VideoStreamDescriptor")
 @js.native
-class VideoStreamDescriptor protected ()
+open class VideoStreamDescriptor protected ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Core.VideoStreamDescriptor {
   /**

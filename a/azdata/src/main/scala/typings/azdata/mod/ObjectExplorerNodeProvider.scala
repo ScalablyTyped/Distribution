@@ -33,7 +33,7 @@ object ObjectExplorerNodeProvider {
     handleSessionOpen: ObjectExplorerSession => Thenable[Boolean],
     providerId: String,
     refreshNode: ExpandNodeInfo => Thenable[Boolean],
-    registerOnExpandCompleted: js.Function1[/* response */ ObjectExplorerExpandInfo, js.Any] => Unit,
+    registerOnExpandCompleted: js.Function1[/* response */ ObjectExplorerExpandInfo, Any] => Unit,
     supportedProviderId: String
   ): ObjectExplorerNodeProvider = {
     val __obj = js.Dynamic.literal(expandNode = js.Any.fromFunction1(expandNode), findNodes = js.Any.fromFunction1(findNodes), handleSessionClose = js.Any.fromFunction1(handleSessionClose), handleSessionOpen = js.Any.fromFunction1(handleSessionOpen), providerId = providerId.asInstanceOf[js.Any], refreshNode = js.Any.fromFunction1(refreshNode), registerOnExpandCompleted = js.Any.fromFunction1(registerOnExpandCompleted), supportedProviderId = supportedProviderId.asInstanceOf[js.Any])

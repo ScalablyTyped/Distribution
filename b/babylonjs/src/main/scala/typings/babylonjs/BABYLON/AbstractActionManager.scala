@@ -26,15 +26,15 @@ trait AbstractActionManager
     * Does this action manager handles actions of a given trigger
     * @param trigger defines the trigger to be tested
     * @param parameterPredicate defines an optional predicate to filter triggers by parameter
-    * @return whether the trigger is handled
+    * @returns whether the trigger is handled
     */
   def hasSpecificTrigger(trigger: Double): Boolean = js.native
-  def hasSpecificTrigger(trigger: Double, parameterPredicate: js.Function1[/* parameter */ js.Any, Boolean]): Boolean = js.native
+  def hasSpecificTrigger(trigger: Double, parameterPredicate: js.Function1[/* parameter */ Any, Boolean]): Boolean = js.native
   
   /**
     * Does this action manager handles actions of any of the given triggers
     * @param triggers defines the triggers to be tested
-    * @return a boolean indicating whether one (or more) of the triggers is handled
+    * @returns a boolean indicating whether one (or more) of the triggers is handled
     */
   def hasSpecificTriggers(triggers: js.Array[Double]): Boolean = js.native
   
@@ -43,7 +43,7 @@ trait AbstractActionManager
     * speed.
     * @param triggerA defines the trigger to be tested
     * @param triggerB defines the trigger to be tested
-    * @return a boolean indicating whether one (or more) of the triggers is handled
+    * @returns a boolean indicating whether one (or more) of the triggers is handled
     */
   def hasSpecificTriggers2(triggerA: Double, triggerB: Double): Boolean = js.native
   
@@ -66,7 +66,7 @@ trait AbstractActionManager
   /**
     * Registers an action to this action manager
     * @param action defines the action to be registered
-    * @return the action amended (prepared) after registration
+    * @returns the action amended (prepared) after registration
     */
   def registerAction(action: IAction): Nullable[IAction] = js.native
   
@@ -75,12 +75,12 @@ trait AbstractActionManager
     * @param name defines the property name to store this manager
     * @returns a JSON representation of this manager
     */
-  def serialize(name: String): js.Any = js.native
+  def serialize(name: String): Any = js.native
   
   /**
     * Unregisters an action to this action manager
     * @param action defines the action to be unregistered
-    * @return a boolean indicating whether the action has been unregistered
+    * @returns a boolean indicating whether the action has been unregistered
     */
   def unregisterAction(action: IAction): Boolean = js.native
 }

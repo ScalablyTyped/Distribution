@@ -1,6 +1,9 @@
 package typings.filepond
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.filepond.filepondBooleans.`false`
+import typings.filepond.filepondStrings.`compact circle`
+import typings.filepond.filepondStrings.`integrated circle`
 import typings.filepond.filepondStrings.after
 import typings.filepond.filepondStrings.before
 import typings.filepond.filepondStrings.circle
@@ -19,6 +22,7 @@ import typings.filepond.mod.FilePondFile
 import typings.filepond.mod.FilePondInitialFile
 import typings.filepond.mod.FilePondOptions
 import typings.filepond.mod.LoadServerConfigFunction
+import typings.filepond.mod.ProcessServerChunkTransferOptions
 import typings.filepond.mod.ProcessServerConfigFunction
 import typings.filepond.mod.ProgressServerConfigFunction
 import typings.filepond.mod.RemoveFileOptions
@@ -82,7 +86,7 @@ object anon {
       inline def setLoad(value: String | ServerUrl | LoadServerConfigFunction): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
       
       inline def setLoadFunction6(
-        value: (/* source */ js.Any, /* load */ js.Function1[/* file */ ActualFileObject | Blob, Unit], /* error */ js.Function1[/* errorText */ String, Unit], /* progress */ ProgressServerConfigFunction, /* abort */ js.Function0[Unit], /* headers */ js.Function1[/* headersString */ String, Unit]) => Unit
+        value: (/* source */ Any, /* load */ js.Function1[/* file */ ActualFileObject | Blob, Unit], /* error */ js.Function1[/* errorText */ String, Unit], /* progress */ ProgressServerConfigFunction, /* abort */ js.Function0[Unit], /* headers */ js.Function1[/* headersString */ String, Unit]) => Unit
       ): Self = StObject.set(x, "load", js.Any.fromFunction6(value))
       
       inline def setLoadNull: Self = StObject.set(x, "load", null)
@@ -91,16 +95,16 @@ object anon {
       
       inline def setProcess(value: String | ServerUrl | ProcessServerConfigFunction): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
       
-      inline def setProcessFunction7(
-        value: (/* fieldName */ String, /* file */ ActualFileObject, /* metadata */ StringDictionary[js.Any], /* load */ js.Function1[/* p */ String | StringDictionary[js.Any], Unit], /* error */ js.Function1[/* errorText */ String, Unit], /* progress */ ProgressServerConfigFunction, /* abort */ js.Function0[Unit]) => Unit
-      ): Self = StObject.set(x, "process", js.Any.fromFunction7(value))
+      inline def setProcessFunction9(
+        value: (/* fieldName */ String, /* file */ ActualFileObject, /* metadata */ StringDictionary[Any], /* load */ js.Function1[/* p */ String | StringDictionary[Any], Unit], /* error */ js.Function1[/* errorText */ String, Unit], /* progress */ ProgressServerConfigFunction, /* abort */ js.Function0[Unit], /* transfer */ js.Function1[/* transferId */ String, Unit], /* options */ ProcessServerChunkTransferOptions) => Unit
+      ): Self = StObject.set(x, "process", js.Any.fromFunction9(value))
       
       inline def setProcessNull: Self = StObject.set(x, "process", null)
       
       inline def setProcessUndefined: Self = StObject.set(x, "process", js.undefined)
       
       inline def setRemove(
-        value: (/* source */ js.Any, /* load */ js.Function0[Unit], /* error */ js.Function1[/* errorText */ String, Unit]) => Unit
+        value: (/* source */ Any, /* load */ js.Function0[Unit], /* error */ js.Function1[/* errorText */ String, Unit]) => Unit
       ): Self = StObject.set(x, "remove", js.Any.fromFunction3(value))
       
       inline def setRemoveNull: Self = StObject.set(x, "remove", null)
@@ -110,7 +114,7 @@ object anon {
       inline def setRestore(value: String | ServerUrl | RestoreServerConfigFunction): Self = StObject.set(x, "restore", value.asInstanceOf[js.Any])
       
       inline def setRestoreFunction6(
-        value: (/* uniqueFileId */ js.Any, /* load */ js.Function1[/* file */ ActualFileObject, Unit], /* error */ js.Function1[/* errorText */ String, Unit], /* progress */ ProgressServerConfigFunction, /* abort */ js.Function0[Unit], /* headers */ js.Function1[/* headersString */ String, Unit]) => Unit
+        value: (/* uniqueFileId */ Any, /* load */ js.Function1[/* file */ ActualFileObject, Unit], /* error */ js.Function1[/* errorText */ String, Unit], /* progress */ ProgressServerConfigFunction, /* abort */ js.Function0[Unit], /* headers */ js.Function1[/* headersString */ String, Unit]) => Unit
       ): Self = StObject.set(x, "restore", js.Any.fromFunction6(value))
       
       inline def setRestoreNull: Self = StObject.set(x, "restore", null)
@@ -120,7 +124,7 @@ object anon {
       inline def setRevert(value: String | ServerUrl | RevertServerConfigFunction): Self = StObject.set(x, "revert", value.asInstanceOf[js.Any])
       
       inline def setRevertFunction3(
-        value: (/* uniqueFieldId */ js.Any, /* load */ js.Function0[Unit], /* error */ js.Function1[/* errorText */ String, Unit]) => Unit
+        value: (/* uniqueFieldId */ Any, /* load */ js.Function0[Unit], /* error */ js.Function1[/* errorText */ String, Unit]) => Unit
       ): Self = StObject.set(x, "revert", js.Any.fromFunction3(value))
       
       inline def setRevertNull: Self = StObject.set(x, "revert", null)
@@ -143,7 +147,7 @@ object anon {
     var file: js.UndefOr[Name] = js.undefined
     
     /** File initial metadata. */
-    var metadata: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var metadata: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     /** Origin of file being added. */
     var `type`: input | limbo | local
@@ -162,7 +166,7 @@ object anon {
       
       inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
       
-      inline def setMetadata(value: StringDictionary[js.Any]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: StringDictionary[Any]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
       inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
@@ -179,7 +183,7 @@ object anon {
       * @param event Name of the event, prefixed with `Filepond:`
       * @param fn Event handler
       */
-    def addEventListener(event: FilePondEventPrefixed, fn: js.Function1[/* e */ js.Any, Unit]): Unit = js.native
+    def addEventListener(event: FilePondEventPrefixed, fn: js.Function1[/* e */ Any, Unit]): Unit = js.native
     
     def addFile(source: String): js.Promise[FilePondFile] = js.native
     def addFile(source: String, options: Index & Partial[File]): js.Promise[FilePondFile] = js.native
@@ -256,6 +260,8 @@ object anon {
     
     var className: String = js.native
     
+    var credits: `false` = js.native
+    
     /** Destroys this FilePond instance. */
     def destroy(): Unit = js.native
     
@@ -271,6 +277,8 @@ object anon {
       * The root element of the Filepond instance.
       */
     val element: Element | Null = js.native
+    
+    var fileSizeBase: Double = js.native
     
     var files: js.Array[FilePondInitialFile | ActualFileObject | Blob | String] = js.native
     
@@ -340,7 +348,7 @@ object anon {
     
     var labelFileCountSingular: String = js.native
     
-    var labelFileLoadError: (js.Function1[/* error */ js.Any, String]) | String = js.native
+    var labelFileLoadError: (js.Function1[/* error */ Any, String]) | String = js.native
     
     var labelFileLoading: String = js.native
     
@@ -350,11 +358,11 @@ object anon {
     
     var labelFileProcessingComplete: String = js.native
     
-    var labelFileProcessingError: (js.Function1[/* error */ js.Any, String]) | String = js.native
+    var labelFileProcessingError: (js.Function1[/* error */ Any, String]) | String = js.native
     
-    var labelFileProcessingRevertError: (js.Function1[/* error */ js.Any, String]) | String = js.native
+    var labelFileProcessingRevertError: (js.Function1[/* error */ Any, String]) | String = js.native
     
-    var labelFileRemoveError: (js.Function1[/* error */ js.Any, String]) | String = js.native
+    var labelFileRemoveError: (js.Function1[/* error */ Any, String]) | String = js.native
     
     var labelFileRemoved: String = js.native
     
@@ -394,21 +402,21 @@ object anon {
       * @param event Name of the event
       * @param fn Event handler, signature is identical to the callback method
       */
-    def off(event: FilePondEvent, fn: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+    def off(event: FilePondEvent, fn: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
     
     /**
       * Listen to an event.
       * @param event Name of the event
       * @param fn Event handler, signature is identical to the callback method
       */
-    def on(event: FilePondEvent, fn: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+    def on(event: FilePondEvent, fn: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
     
     /**
       * Listen to an event once and remove the handler.
       * @param event Name of the event
       * @param fn Event handler, signature is identical to the callback method
       */
-    def onOnce(event: FilePondEvent, fn: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+    def onOnce(event: FilePondEvent, fn: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
     
     def onactivatefile(file: FilePondFile): Unit = js.native
     @JSName("onactivatefile")
@@ -428,14 +436,14 @@ object anon {
     var onaddfilestart_Original: js.Function1[/* file */ FilePondFile, Unit] = js.native
     
     def onerror(error: FilePondErrorDescription): Unit = js.native
-    def onerror(error: FilePondErrorDescription, file: Unit, status: js.Any): Unit = js.native
+    def onerror(error: FilePondErrorDescription, file: Unit, status: Any): Unit = js.native
     def onerror(error: FilePondErrorDescription, file: FilePondFile): Unit = js.native
-    def onerror(error: FilePondErrorDescription, file: FilePondFile, status: js.Any): Unit = js.native
+    def onerror(error: FilePondErrorDescription, file: FilePondFile, status: Any): Unit = js.native
     @JSName("onerror")
     var onerror_Original: js.Function3[
         /* error */ FilePondErrorDescription, 
         /* file */ js.UndefOr[FilePondFile], 
-        /* status */ js.UndefOr[js.Any], 
+        /* status */ js.UndefOr[Any], 
         Unit
       ] = js.native
     
@@ -443,9 +451,9 @@ object anon {
     @JSName("oninit")
     var oninit_Original: js.Function0[Unit] = js.native
     
-    def onpreparefile(file: FilePondFile, output: js.Any): Unit = js.native
+    def onpreparefile(file: FilePondFile, output: Any): Unit = js.native
     @JSName("onpreparefile")
-    var onpreparefile_Original: js.Function2[/* file */ FilePondFile, /* output */ js.Any, Unit] = js.native
+    var onpreparefile_Original: js.Function2[/* file */ FilePondFile, /* output */ Any, Unit] = js.native
     
     def onprocessfile(error: Null, file: FilePondFile): Unit = js.native
     def onprocessfile(error: FilePondErrorDescription, file: FilePondFile): Unit = js.native
@@ -485,15 +493,15 @@ object anon {
     @JSName("onupdatefiles")
     var onupdatefiles_Original: js.Function1[/* files */ js.Array[FilePondFile], Unit] = js.native
     
-    def onwarning(error: js.Any): Unit = js.native
-    def onwarning(error: js.Any, file: Unit, status: js.Any): Unit = js.native
-    def onwarning(error: js.Any, file: FilePondFile): Unit = js.native
-    def onwarning(error: js.Any, file: FilePondFile, status: js.Any): Unit = js.native
+    def onwarning(error: Any): Unit = js.native
+    def onwarning(error: Any, file: Unit, status: Any): Unit = js.native
+    def onwarning(error: Any, file: FilePondFile): Unit = js.native
+    def onwarning(error: Any, file: FilePondFile, status: Any): Unit = js.native
     @JSName("onwarning")
     var onwarning_Original: js.Function3[
-        /* error */ js.Any, 
+        /* error */ Any, 
         /* file */ js.UndefOr[FilePondFile], 
-        /* status */ js.UndefOr[js.Any], 
+        /* status */ js.UndefOr[Any], 
         Unit
       ] = js.native
     
@@ -588,6 +596,8 @@ object anon {
       */
     val status: Status = js.native
     
+    var storeAsFile: Boolean = js.native
+    
     var styleButtonProcessItemPosition: String = js.native
     
     var styleButtonRemoveItemAlign: Boolean = js.native
@@ -600,7 +610,7 @@ object anon {
     
     var stylePanelAspectRatio: String = js.native
     
-    var stylePanelLayout: integrated | compact | circle = js.native
+    var stylePanelLayout: integrated | compact | circle | (`integrated circle`) | (`compact circle`) = js.native
     
     var styleProgressIndicatorPosition: String = js.native
   }
@@ -676,11 +686,11 @@ object anon {
     
     var file: FilePondFile
     
-    var output: js.Any
+    var output: Any
   }
   object Output {
     
-    inline def apply(file: FilePondFile, output: js.Any): Output = {
+    inline def apply(file: FilePondFile, output: Any): Output = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any])
       __obj.asInstanceOf[Output]
     }
@@ -689,7 +699,7 @@ object anon {
       
       inline def setFile(value: FilePondFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      inline def setOutput(value: js.Any): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: Any): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     }
   }
 }

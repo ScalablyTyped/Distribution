@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@uirouter/angularjs", "core.MemoryLocationConfig")
 @js.native
-class MemoryLocationConfig ()
+open class MemoryLocationConfig ()
   extends typings.uirouterCore.mod.MemoryLocationConfig

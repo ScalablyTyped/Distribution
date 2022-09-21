@@ -29,7 +29,7 @@ object EbsConfiguration {
     
     inline def setEbsBlockDeviceConfigsUndefined: Self = StObject.set(x, "EbsBlockDeviceConfigs", js.undefined)
     
-    inline def setEbsBlockDeviceConfigsVarargs(value: EbsBlockDeviceConfig*): Self = StObject.set(x, "EbsBlockDeviceConfigs", js.Array(value :_*))
+    inline def setEbsBlockDeviceConfigsVarargs(value: EbsBlockDeviceConfig*): Self = StObject.set(x, "EbsBlockDeviceConfigs", js.Array(value*))
     
     inline def setEbsOptimized(value: BooleanObject): Self = StObject.set(x, "EbsOptimized", value.asInstanceOf[js.Any])
     

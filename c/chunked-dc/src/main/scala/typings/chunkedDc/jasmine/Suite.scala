@@ -14,7 +14,7 @@ trait Suite
       /* description */ String, 
       /* specDefinitions */ js.Function0[Unit], 
       /* parentSuite */ Suite, 
-      js.Any
+      scala.Any
     ] {
   
   def add(suiteOrSpec: SuiteOrSpec): Unit = js.native
@@ -27,7 +27,7 @@ trait Suite
   
   def beforeEach(beforeEachFunction: SpecFunction): Unit = js.native
   
-  def children(): js.Array[js.Any] = js.native
+  def children(): js.Array[scala.Any] = js.native
   
   def execute(): Unit = js.native
   def execute(onComplete: js.Function0[Unit]): Unit = js.native

@@ -7,37 +7,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ContactFlow extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the contact flow.
+    * The Amazon Resource Name (ARN) of the flow.
     */
   var Arn: js.UndefOr[ARN] = js.undefined
   
   /**
-    * The content of the contact flow.
+    * The content of the flow.
     */
   var Content: js.UndefOr[ContactFlowContent] = js.undefined
   
   /**
-    * The description of the contact flow.
+    * The description of the flow.
     */
   var Description: js.UndefOr[ContactFlowDescription] = js.undefined
   
   /**
-    * The identifier of the contact flow.
+    * The identifier of the flow.
     */
   var Id: js.UndefOr[ContactFlowId] = js.undefined
   
   /**
-    * The name of the contact flow.
+    * The name of the flow.
     */
   var Name: js.UndefOr[ContactFlowName] = js.undefined
   
   /**
-    * One or more tags.
+    * The type of flow.
+    */
+  var State: js.UndefOr[ContactFlowState] = js.undefined
+  
+  /**
+    * The tags used to organize, track, or control access for this resource. For example, { "tags": {"key1":"value1", "key2":"value2"} }.
     */
   var Tags: js.UndefOr[TagMap] = js.undefined
   
   /**
-    * The type of the contact flow. For descriptions of the available types, see Choose a Contact Flow Type in the Amazon Connect Administrator Guide.
+    * The type of the flow. For descriptions of the available types, see Choose a flow type in the Amazon Connect Administrator Guide.
     */
   var Type: js.UndefOr[ContactFlowType] = js.undefined
 }
@@ -69,6 +74,10 @@ object ContactFlow {
     inline def setName(value: ContactFlowName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    
+    inline def setState(value: ContactFlowState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
     inline def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     

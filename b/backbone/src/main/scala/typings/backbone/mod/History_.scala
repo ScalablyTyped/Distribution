@@ -1,7 +1,6 @@
 package typings.backbone.mod
 
 import typings.std.Location
-import typings.std.RegExp
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("backbone", "History")
 @js.native
-class History_ () extends StObject {
+open class History_ () extends StObject {
   
   /* private */ def _updateHash(location: Location, fragment: String, replace: Boolean): Unit = js.native
   
   def atRoot(): Boolean = js.native
   
   def checkUrl(): Unit = js.native
-  def checkUrl(e: js.Any): Unit = js.native
+  def checkUrl(e: Any): Unit = js.native
   
   def decodeFragment(fragment: String): String = js.native
   
@@ -30,7 +29,7 @@ class History_ () extends StObject {
   
   def getSearch(): String = js.native
   
-  var handlers: js.Array[js.Any] = js.native
+  var handlers: js.Array[Any] = js.native
   
   var interval: Double = js.native
   
@@ -40,12 +39,12 @@ class History_ () extends StObject {
   def matchRoot(): Boolean = js.native
   
   def navigate(fragment: String): Boolean = js.native
-  def navigate(fragment: String, options: js.Any): Boolean = js.native
+  def navigate(fragment: String, options: Any): Boolean = js.native
   
-  var options: js.Any = js.native
+  var options: Any = js.native
   
-  def route(route: String, callback: js.Function): Double = js.native
-  def route(route: RegExp, callback: js.Function): Double = js.native
+  def route(route: String, callback: js.Function1[/* fragment */ String, Unit]): Double = js.native
+  def route(route: js.RegExp, callback: js.Function1[/* fragment */ String, Unit]): Double = js.native
   
   def start(): Boolean = js.native
   def start(options: HistoryOptions): Boolean = js.native

@@ -17,10 +17,9 @@ object transitionGroupMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/modules/Transition/TransitionGroup", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[TransitionGroupProps, ComponentState, js.Any] {
+  open class default protected () extends Component[TransitionGroupProps, ComponentState, Any] {
     def this(props: TransitionGroupProps) = this()
-    def this(props: TransitionGroupProps, context: js.Any) = this()
+    def this(props: TransitionGroupProps, context: Any) = this()
   }
   @JSImport("semantic-ui-react/dist/commonjs/modules/Transition/TransitionGroup", JSImport.Default)
   @js.native
@@ -32,7 +31,7 @@ object transitionGroupMod extends Shortcut {
     var animation: js.UndefOr[SemanticTRANSITIONS | String] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -56,7 +55,7 @@ object transitionGroupMod extends Shortcut {
       
       inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -79,7 +78,7 @@ object transitionGroupMod extends Shortcut {
   trait TransitionGroupProps
     extends StObject
        with StrictTransitionGroupProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object TransitionGroupProps {
     
     inline def apply(): TransitionGroupProps = {

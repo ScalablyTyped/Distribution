@@ -29,7 +29,7 @@ object ListDimensionsResponse {
     
     inline def setDimensionNamesUndefined: Self = StObject.set(x, "dimensionNames", js.undefined)
     
-    inline def setDimensionNamesVarargs(value: DimensionName*): Self = StObject.set(x, "dimensionNames", js.Array(value :_*))
+    inline def setDimensionNamesVarargs(value: DimensionName*): Self = StObject.set(x, "dimensionNames", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

@@ -24,6 +24,6 @@ object TrafficRoute {
     
     inline def setListenerArnsUndefined: Self = StObject.set(x, "listenerArns", js.undefined)
     
-    inline def setListenerArnsVarargs(value: ListenerArn*): Self = StObject.set(x, "listenerArns", js.Array(value :_*))
+    inline def setListenerArnsVarargs(value: ListenerArn*): Self = StObject.set(x, "listenerArns", js.Array(value*))
   }
 }

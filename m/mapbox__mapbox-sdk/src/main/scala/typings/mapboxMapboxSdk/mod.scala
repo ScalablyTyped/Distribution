@@ -1,6 +1,7 @@
 package typings.mapboxMapboxSdk
 
 import typings.mapboxMapboxSdk.mapiRequestMod.MapiRequest
+import typings.mapboxMapboxSdk.mapiRequestMod.MapiRequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ object mod {
   
   @JSImport("@mapbox/mapbox-sdk/lib/classes/mapi-client", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with MapiClient {
     def this(config: SdkConfig) = this()
@@ -18,20 +19,20 @@ object mod {
     var accessToken: String = js.native
     
     /* CompleteClass */
-    override def createRequest(requestOptions: js.Any): MapiRequest = js.native
+    override def createRequest(requestOptions: MapiRequestOptions): MapiRequest[Any] = js.native
   }
   
   trait MapiClient extends StObject {
     
     var accessToken: String
     
-    def createRequest(requestOptions: js.Any): MapiRequest
+    def createRequest(requestOptions: MapiRequestOptions): MapiRequest[Any]
     
     var origin: js.UndefOr[String] = js.undefined
   }
   object MapiClient {
     
-    inline def apply(accessToken: String, createRequest: js.Any => MapiRequest): MapiClient = {
+    inline def apply(accessToken: String, createRequest: MapiRequestOptions => MapiRequest[Any]): MapiClient = {
       val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], createRequest = js.Any.fromFunction1(createRequest))
       __obj.asInstanceOf[MapiClient]
     }
@@ -40,7 +41,7 @@ object mod {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
-      inline def setCreateRequest(value: js.Any => MapiRequest): Self = StObject.set(x, "createRequest", js.Any.fromFunction1(value))
+      inline def setCreateRequest(value: MapiRequestOptions => MapiRequest[Any]): Self = StObject.set(x, "createRequest", js.Any.fromFunction1(value))
       
       inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       

@@ -35,7 +35,7 @@ object AttestationOccurrence {
     
     inline def setJwtsUndefined: Self = StObject.set(x, "jwts", js.undefined)
     
-    inline def setJwtsVarargs(value: Jwt*): Self = StObject.set(x, "jwts", js.Array(value :_*))
+    inline def setJwtsVarargs(value: Jwt*): Self = StObject.set(x, "jwts", js.Array(value*))
     
     inline def setSerializedPayload(value: String): Self = StObject.set(x, "serializedPayload", value.asInstanceOf[js.Any])
     
@@ -45,6 +45,6 @@ object AttestationOccurrence {
     
     inline def setSignaturesUndefined: Self = StObject.set(x, "signatures", js.undefined)
     
-    inline def setSignaturesVarargs(value: Signature*): Self = StObject.set(x, "signatures", js.Array(value :_*))
+    inline def setSignaturesVarargs(value: Signature*): Self = StObject.set(x, "signatures", js.Array(value*))
   }
 }

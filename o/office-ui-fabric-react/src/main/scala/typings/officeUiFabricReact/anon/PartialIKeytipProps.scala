@@ -78,7 +78,7 @@ object PartialIKeytipProps {
     
     inline def setKeySequencesUndefined: Self = StObject.set(x, "keySequences", js.undefined)
     
-    inline def setKeySequencesVarargs(value: String*): Self = StObject.set(x, "keySequences", js.Array(value :_*))
+    inline def setKeySequencesVarargs(value: String*): Self = StObject.set(x, "keySequences", js.Array(value*))
     
     inline def setOffset(value: Point): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
@@ -96,7 +96,7 @@ object PartialIKeytipProps {
     
     inline def setOverflowSetSequenceUndefined: Self = StObject.set(x, "overflowSetSequence", js.undefined)
     
-    inline def setOverflowSetSequenceVarargs(value: String*): Self = StObject.set(x, "overflowSetSequence", js.Array(value :_*))
+    inline def setOverflowSetSequenceVarargs(value: String*): Self = StObject.set(x, "overflowSetSequence", js.Array(value*))
     
     inline def setStyles(value: IStyleFunctionOrObject[IKeytipStyleProps, IKeytipStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     

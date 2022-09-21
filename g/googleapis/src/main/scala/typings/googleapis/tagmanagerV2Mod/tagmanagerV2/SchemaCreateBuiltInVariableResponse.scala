@@ -24,6 +24,6 @@ object SchemaCreateBuiltInVariableResponse {
     
     inline def setBuiltInVariableUndefined: Self = StObject.set(x, "builtInVariable", js.undefined)
     
-    inline def setBuiltInVariableVarargs(value: SchemaBuiltInVariable*): Self = StObject.set(x, "builtInVariable", js.Array(value :_*))
+    inline def setBuiltInVariableVarargs(value: SchemaBuiltInVariable*): Self = StObject.set(x, "builtInVariable", js.Array(value*))
   }
 }

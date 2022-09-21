@@ -11,18 +11,16 @@ object pagerItemMod {
   
   @JSImport("react-bootstrap/lib/PagerItem", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[PagerItemProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[PagerItemProps, js.Object, Any]
   
-  @js.native
-  trait PagerItem
-    extends Component[PagerItemProps, js.Object, js.Any]
+  type PagerItem = Component[PagerItemProps, js.Object, Any]
   
   trait PagerItemProps
     extends StObject
        with HTMLProps[PagerItem] {
     
-    var eventKey: js.UndefOr[js.Any] = js.undefined
+    var eventKey: js.UndefOr[Any] = js.undefined
     
     var next: js.UndefOr[Boolean] = js.undefined
     
@@ -40,7 +38,7 @@ object pagerItemMod {
     
     extension [Self <: PagerItemProps](x: Self) {
       
-      inline def setEventKey(value: js.Any): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
+      inline def setEventKey(value: Any): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
       
       inline def setEventKeyUndefined: Self = StObject.set(x, "eventKey", js.undefined)
       

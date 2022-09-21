@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents a trigger that launches a background task to enable device manufacturer operations. */
 @JSGlobal("Windows.ApplicationModel.Background.DeviceManufacturerNotificationTrigger")
 @js.native
-class DeviceManufacturerNotificationTrigger protected ()
+open class DeviceManufacturerNotificationTrigger protected ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Background.DeviceManufacturerNotificationTrigger {
   /**
